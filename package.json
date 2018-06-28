@@ -1,0 +1,49 @@
+{
+  "name": "eslint-config-ornikar",
+  "version": "0.0.0",
+  "description": "eslint config files",
+  "repository": "ornikar/eslint-config-ornikar",
+  "main": "index.js",
+  "license": "ISC",
+  "engines": {
+    "node": ">= 6.0.0"
+  },
+  "scripts": {
+    "lint": "eslint --ext .js --fix plugins/ rules/ settings/ *.js",
+    "release": "pob-repository-check-clean && pob-release",
+    "version": "pob-version"
+  },
+  "prettier": {
+    "trailingComma": "es5",
+    "singleQuote": true,
+    "printWidth": 100
+  },
+  "eslintConfig": {
+    "extends": [
+      "./index.js",
+      "./node.js"
+    ]
+  },
+  "dependencies": {
+    "eslint-config-airbnb-base": "^13.0.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-prefer-class-properties": "^1.0.0"
+  },
+  "peerDependencies": {
+    "eslint": "^4.0.0 || ^5.0.0",
+    "eslint-plugin-prettier": "^2.6.1",
+    "prettier": "^1.13.6"
+  },
+  "devDependencies": {
+    "eslint": "^4.0.0",
+    "eslint-config-airbnb": "^17.0.0",
+    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-prettier": "^2.6.1",
+    "eslint-plugin-react": "^7.10.0",
+    "eslint-plugin-unicorn": "^4.0.3",
+    "pob-release": "^4.1.2",
+    "prettier": "^1.13.6"
+  }
+}
