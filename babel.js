@@ -7,6 +7,7 @@ module.exports = {
     './plugins/prettier',
     './plugins/prefer-class-properties',
     './plugins/unicorn',
+    './rules/best-practices',
     './rules/code-quality',
     './rules/style',
     './rules/expert',
