@@ -1,3 +1,12 @@
+<a name="2.2.0"></a>
+# [2.2.0](https://github.com/ornikar/eslint-config-ornikar/compare/v2.1.0...v2.2.0) (2018-07-17)
+
+
+### Features
+
+* increase max complexity to 10 (#5) ([8c53b2e](https://github.com/ornikar/eslint-config-ornikar/commit/8c53b2e))
+
+
 <a name="2.1.0"></a>
 # [2.1.0](https://github.com/ornikar/eslint-config-ornikar/compare/v2.0.0...v2.1.0) (2018-07-12)
 
