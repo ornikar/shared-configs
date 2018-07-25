@@ -3,7 +3,7 @@
   "private": true,
   "repository": "ornikar/shared-configs",
   "scripts": {
-    "lint": "eslint --ext .js --fix packages/**/*.js",
+    "lint": "eslint --ext .js --fix @ornikar/**/*.js",
     "release": "lerna publish --conventional-commits -m 'chore: release'"
   },
   "prettier": {
@@ -13,8 +13,8 @@
   },
   "eslintConfig": {
     "extends": [
-      "./packages/@ornikar/eslint-config/index.js",
-      "./packages/@ornikar/eslint-config/node.js"
+      "./@ornikar/eslint-config/index.js",
+      "./@ornikar/eslint-config/node.js"
     ]
   },
   "husky": {
@@ -42,7 +42,7 @@
     ]
   },
   "workspaces": [
-    "packages/@ornikar/*"
+    "@ornikar/*"
   ],
   "devDependencies": {
     "@commitlint/cli": "^7.0.0",
