@@ -27,11 +27,11 @@
     }
   },
   "lint-staged": {
-    "packages/@ornikar/*/{.babelrc,.eslintrc.json,package.json}": [
+    "@ornikar/*/{.babelrc,.eslintrc.json,package.json}": [
       "prettier --parser json --write",
       "git add"
     ],
-    "packages/@ornikar/*/**/*.js": [
+    "@ornikar/*/**/*.js": [
       "eslint --fix --quiet",
       "git add"
     ]
