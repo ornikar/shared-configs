@@ -1,12 +1,15 @@
 {
-  "name": "eslint-config-ornikar",
+  "name": "@ornikar/eslint-config",
   "version": "2.2.0",
   "description": "eslint config files",
-  "repository": "ornikar/eslint-config-ornikar",
+  "repository": "ornikar/eslint-config",
   "main": "index.js",
   "license": "ISC",
   "engines": {
     "node": ">= 6.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "scripts": {
     "lint": "eslint --ext .js --fix plugins/ rules/ settings/ *.js",
