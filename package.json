@@ -1,20 +1,9 @@
 {
-  "name": "@ornikar/eslint-config",
-  "version": "2.2.0",
-  "description": "eslint config files",
-  "repository": "ornikar/eslint-config",
-  "main": "index.js",
-  "license": "ISC",
-  "engines": {
-    "node": ">= 6.0.0"
-  },
-  "publishConfig": {
-    "access": "public"
-  },
+  "name": "@ornikar/shared-configs",
+  "private": true,
+  "repository": "ornikar/shared-configs",
   "scripts": {
-    "lint": "eslint --ext .js --fix plugins/ rules/ settings/ *.js",
-    "release": "pob-repository-check-clean && pob-release",
-    "version": "pob-version"
+    "lint": "eslint --ext .js --fix packages/**/*.js"
   },
   "prettier": {
     "trailingComma": "es5",
@@ -23,30 +12,45 @@
   },
   "eslintConfig": {
     "extends": [
-      "./index.js",
-      "./node.js"
+      "./packages/@ornikar/eslint-config/index.js",
+      "./packages/@ornikar/eslint-config/node.js"
     ]
   },
-  "dependencies": {
-    "eslint-config-airbnb-base": "^13.0.0",
-    "eslint-config-prettier": "^2.9.0",
-    "eslint-plugin-prefer-class-properties": "^1.0.0"
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -e $HUSKY_GIT_PARAMS",
+      "pre-commit": "lint-staged",
+      "post-checkout": "yarnhook",
+      "post-merge": "yarnhook",
+      "post-rewrite": "yarnhook"
+    }
   },
-  "peerDependencies": {
-    "eslint": "^4.0.0 || ^5.0.0",
-    "eslint-plugin-prettier": "^2.6.1",
-    "prettier": "^1.13.6"
+  "lint-staged": {
+    "packages/@ornikar/*/{.babelrc,.eslintrc.json,package.json}": [
+      "prettier --parser json --write",
+      "git add"
+    ],
+    "packages/@ornikar/*/**/*.js": [
+      "eslint --fix --quiet",
+      "git add"
+    ]
   },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "workspaces": [
+    "packages/@ornikar/*"
+  ],
   "devDependencies": {
+    "@commitlint/cli": "^7.0.0",
+    "@commitlint/config-conventional": "^7.0.1",
     "eslint": "^4.0.0",
-    "eslint-config-airbnb": "^17.0.0",
-    "eslint-plugin-import": "^2.13.0",
-    "eslint-plugin-jsx-a11y": "^6.0.3",
-    "eslint-plugin-node": "^6.0.1",
-    "eslint-plugin-prettier": "^2.6.1",
-    "eslint-plugin-react": "^7.10.0",
-    "eslint-plugin-unicorn": "^4.0.3",
-    "pob-release": "^4.1.2",
-    "prettier": "^1.13.6"
+    "husky": "^1.0.0-rc.13",
+    "lerna": "^3.0.0-beta.21",
+    "lint-staged": "^7.2.0",
+    "prettier": "^1.13.7",
+    "yarnhook": "^0.3.0"
   }
 }

@@ -1,36 +1,15 @@
-# @ornikar/eslint-config
+<h3 align="center">
+  shared-configs
+</h3>
 
-Ornikar eslint config
+<p align="center">
+  Shared configs for ornikar
+</p>
 
-Based on Airbnb.
+<h1>Packages</h1>
 
-### base
+This repository is a monorepo that we manage using [Lerna](https://github.com/lerna/lerna).
 
-1. `npm install --save-dev eslint @ornikar/eslint-config eslint-plugin-prettier eslint-plugin-import`
-2. Add `"extends": "@ornikar"` to your eslint config
-
-### babel
-
-Lint with babel parser
-
-1. `npm install --save-dev eslint babel-eslint @ornikar/eslint-config eslint-plugin-prettier eslint-plugin-import`
-2. Add `"extends": "@ornikar/eslint-config/babel"` to your eslint config
-
-### react
-
-Lint with babel parser and with react
-
-1. `npm install --save-dev eslint babel-eslint @ornikar/eslint-config eslint-config-airbnb eslint-plugin-prettier eslint-plugin-import eslint-plugin-react eslint-plugin-jsx-a11y`
-2. Add `"extends": ["@ornikar/eslint-config/babel", "@ornikar/eslint-config/react"]` to your eslint config
-
-### react-native
-
-Lint with babel parser and with react for react-native
-
-1. `npm install --save-dev eslint babel-eslint @ornikar/eslint-config eslint-config-airbnb eslint-plugin-prettier eslint-plugin-import eslint-plugin-react eslint-plugin-jsx-a11y`
-2. Add `"extends": ["@ornikar/eslint-config/babel", "@ornikar/eslint-config/react-native"]` to your eslint config
-
-### node without babel
-
-1. `npm install --save-dev eslint @ornikar/eslint-config eslint-plugin-prettier eslint-plugin-node`
-2. Add `"extends": ["@ornikar", "@ornikar/eslint-config/node"]` to your eslint config
+| Package | Version | Description |
+|---------|---------|-------------|
+| [@ornikar/eslint-config](/packages/@ornikar/eslint-config) | <a href="https://npmjs.org/package/@ornikar/eslint-config"><img src="https://img.shields.io/npm/v/@ornikar/eslint-config.svg?style=flat-square"></a> | eslint config files
