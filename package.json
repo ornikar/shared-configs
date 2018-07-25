@@ -27,18 +27,18 @@
     }
   },
   "lint-staged": {
-    "packages/@ornikar/*/{.babelrc,.eslintrc.json,package.json}": [
+    "@ornikar/*/{.babelrc,.eslintrc.json,package.json}": [
       "prettier --parser json --write",
       "git add"
     ],
-    "packages/@ornikar/*/**/*.js": [
+    "@ornikar/*/**/*.js": [
       "eslint --fix --quiet",
       "git add"
     ]
   },
   "commitlint": {
     "extends": [
-      "@commitlint/config-conventional"
+      "./@ornikar/commitlint-config"
     ]
   },
   "workspaces": [
@@ -46,7 +46,6 @@
   ],
   "devDependencies": {
     "@commitlint/cli": "^7.0.0",
-    "@commitlint/config-conventional": "^7.0.1",
     "eslint": "^4.0.0",
     "husky": "^1.0.0-rc.13",
     "lerna": "^3.0.0-beta.21",
