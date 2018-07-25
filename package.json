@@ -3,7 +3,8 @@
   "private": true,
   "repository": "ornikar/shared-configs",
   "scripts": {
-    "lint": "eslint --ext .js --fix packages/**/*.js"
+    "lint": "eslint --ext .js --fix packages/**/*.js",
+    "release": "lerna publish --conventional-commits -m 'chore: release'"
   },
   "prettier": {
     "trailingComma": "es5",
