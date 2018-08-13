@@ -1,0 +1,8 @@
+[hidden] {
+  display: none;
+}
+
+.test,
+.test2 {
+  display: inline;
+}
