@@ -15,16 +15,15 @@
     "access": "public"
   },
   "dependencies": {
-    "stylelint-config-prettier": "^4.0.0"
+    "stylelint-config-prettier": "^4.0.0",
+    "stylelint-config-standard": "^18.2.0"
   },
   "peerDependencies": {
     "prettier": "^1.14.2",
-    "stylelint": "^9.4.0",
-    "stylelint-config-standard": "^18.2.0"
+    "stylelint": "^9.4.0"
   },
   "devDependencies": {
     "prettier": "^1.14.2",
-    "stylelint": "^9.4.0",
-    "stylelint-config-standard": "^18.2.0"
+    "stylelint": "^9.4.0"
   }
 }
