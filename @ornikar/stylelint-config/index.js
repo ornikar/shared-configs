@@ -7,7 +7,11 @@ module.exports = {
     'stylelint-config-prettier',
   ].map(require.resolve),
 
+  plugins: ['stylelint-order'].map(require.resolve),
+
   rules: {
     'max-nesting-depth': 3,
+
+    'order/order': ['declarations', 'rules', 'at-rules'],
   },
 };
