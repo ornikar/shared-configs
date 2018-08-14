@@ -46,11 +46,12 @@
   ],
   "devDependencies": {
     "@commitlint/cli": "^7.0.0",
-    "eslint": "^4.0.0",
+    "eslint": "^5.3.0",
+    "eslint-plugin-prettier": "^2.6.1",
     "husky": "^1.0.0-rc.13",
-    "lerna": "^3.0.0-beta.21",
-    "lint-staged": "^7.2.0",
-    "prettier": "^1.13.7",
+    "lerna": "^3.0.4",
+    "lint-staged": "^7.2.2",
+    "prettier": "^1.14.2",
     "yarnhook": "^0.3.0"
   }
 }
