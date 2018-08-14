@@ -11,6 +11,7 @@ module.exports = {
 
   rules: {
     'max-nesting-depth': 3,
+    'no-descending-specificity': null,
 
     'order/order': ['declarations', 'rules', 'at-rules'],
   },

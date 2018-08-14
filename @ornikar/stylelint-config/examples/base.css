@@ -6,3 +6,36 @@
 .test2 {
   display: inline;
 }
+
+.TextArea {
+  display: block;
+
+  &:focus,
+  :global(.kitt-focus) & {
+    border-color: var(--color-blaze-600);
+
+    & + .TextAreaShadow {
+      opacity: 1;
+    }
+  }
+
+  &.TextArea_Invalid {
+    border-color: var(--color-coquelicot-600);
+
+    + .TextAreaShadow {
+      box-shadow: 0 3px 4px 0 color(var(--color-coquelicot-600) a(30%));
+    }
+  }
+
+  &.TextArea_Valid {
+    border-color: var(--color-arlequin-600);
+
+    + .TextAreaShadow {
+      box-shadow: 0 3px 4px 0 color(var(--color-arlequin-600) a(30%));
+    }
+  }
+
+  &::placeholder {
+    color: var(--color-gunmetal-300);
+  }
+}
