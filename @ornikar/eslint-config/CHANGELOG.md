@@ -3,6 +3,30 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="4.0.0"></a>
+# [4.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/eslint-config@3.0.0...@ornikar/eslint-config@4.0.0) (2018-08-14)
+
+
+### Bug Fixes
+
+* disable react/sort-prop-types ([#16](https://github.com/ornikar/shared-configs/issues/16)) ([30ea4f4](https://github.com/ornikar/shared-configs/commit/30ea4f4))
+
+
+### Features
+
+* **eslint config:** update dependencies ([#12](https://github.com/ornikar/shared-configs/issues/12)) ([8887312](https://github.com/ornikar/shared-configs/commit/8887312))
+* enable react/jsx-sort-props and react/sort-prop-types ([#6](https://github.com/ornikar/shared-configs/issues/6)) ([4d00ff8](https://github.com/ornikar/shared-configs/commit/4d00ff8))
+
+
+### BREAKING CHANGES
+
+* new rules enabled: react/jsx-sort-props react/sort-prop-types
+* **eslint config:** eslint ^5.3, eslint-plugin-prettier ^2.6.2, eslint-plugin-unicorn ^5.0.0, prettier ^1.14.2
+
+
+
+
+
 <a name="3.0.0"></a>
 # [3.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/eslint-config@2.2.1...@ornikar/eslint-config@3.0.0) (2018-08-08)
 
