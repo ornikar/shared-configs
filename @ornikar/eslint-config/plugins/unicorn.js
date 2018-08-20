@@ -46,7 +46,18 @@ module.exports = {
     'unicorn/prefer-type-error': 'error',
 
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/master/docs/rules/no-fn-reference-in-iterator.md
-    'unicorn/no-fn-reference-in-iterator': 'error',
+    /* Can cause issues:
+```
+const formTree = shallow(tree.find(FormWithApiCall).prop('children')());
+```
+
+results in:
+
+```
+const formTree = shallow(tree.find(x => FormWithApiCall(x)).prop('children')());
+```
+    */
+    'unicorn/no-fn-reference-in-iterator': 'off',
 
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/master/docs/rules/import-index.md
     'unicorn/import-index': 'error',
