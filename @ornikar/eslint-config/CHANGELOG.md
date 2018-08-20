@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="4.0.1"></a>
+## [4.0.1](https://github.com/ornikar/shared-configs/compare/@ornikar/eslint-config@4.0.0...@ornikar/eslint-config@4.0.1) (2018-08-20)
+
+
+### Bug Fixes
+
+* **eslint-config:** unicorn disable no-fn-reference-in-iterator ([#18](https://github.com/ornikar/shared-configs/issues/18)) ([2c07c59](https://github.com/ornikar/shared-configs/commit/2c07c59))
+
+
+
+
+
 <a name="4.0.0"></a>
 # [4.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/eslint-config@3.0.0...@ornikar/eslint-config@4.0.0) (2018-08-14)
 
