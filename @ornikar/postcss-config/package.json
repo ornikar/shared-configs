@@ -1,0 +1,24 @@
+{
+  "name": "@ornikar/postcss-config",
+  "version": "0.0.0",
+  "description": "postcss config files",
+  "repository": "ornikar/shared-configs",
+  "main": "index.js",
+  "license": "ISC",
+  "engines": {
+    "node": ">= 6.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "autoprefixer": "^9.1.5",
+    "cssnano": "^4.1.4",
+    "postcss-custom-media": "^7.0.4",
+    "postcss-custom-properties": "^8.0.8",
+    "postcss-nested": "^4.1.0"
+  },
+  "peerDependencies": {
+    "postcss": "^7.0.5"
+  }
+}
