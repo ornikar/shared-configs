@@ -1,6 +1,6 @@
 {
   "name": "@ornikar/browserslist-config",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "browserslist config files",
   "repository": "ornikar/shared-configs",
   "main": "degraded-support.js",
