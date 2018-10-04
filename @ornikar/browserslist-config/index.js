@@ -1,3 +1,3 @@
 'use strict';
 
-module.exports = require('./full-support');
+module.exports = require('./degraded-support');
