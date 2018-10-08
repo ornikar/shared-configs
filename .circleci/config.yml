@@ -12,7 +12,7 @@ jobs:
             - v1-dependencies-{{ arch }}
       - run:
           name: Install dependencies
-          command: yarn --prefer-offline --frozen-lockfile
+          command: yarn --prefer-offline --frozen-lockfile --ignore-engines
       - save_cache:
           key: v1-dependencies-{{ arch }}-{{ checksum "yarn.lock" }}
           paths:
