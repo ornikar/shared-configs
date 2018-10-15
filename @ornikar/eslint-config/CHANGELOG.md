@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.0.1](https://github.com/ornikar/shared-configs/compare/@ornikar/eslint-config@5.0.0...@ornikar/eslint-config@5.0.1) (2018-10-15)
+
+
+### Bug Fixes
+
+* disable sort prop types required first ([#25](https://github.com/ornikar/shared-configs/issues/25)) ([3636081](https://github.com/ornikar/shared-configs/commit/3636081))
+
+
+
+
+
 # [5.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/eslint-config@4.0.1...@ornikar/eslint-config@5.0.0) (2018-10-15)
 
 
