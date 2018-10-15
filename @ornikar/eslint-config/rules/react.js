@@ -24,7 +24,7 @@ module.exports = {
       'error',
       {
         noSortAlphabetically: true,
-        requiredFirst: true,
+        requiredFirst: false,
         callbacksLast: true,
       },
     ],
