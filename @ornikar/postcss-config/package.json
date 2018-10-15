@@ -12,9 +12,9 @@
     "access": "public"
   },
   "dependencies": {
-    "autoprefixer": "^9.1.5",
+    "autoprefixer": "^9.2.0",
     "cssnano": "^4.1.4",
-    "postcss-custom-media": "^7.0.4",
+    "postcss-custom-media": "^7.0.6",
     "postcss-custom-properties": "^8.0.8",
     "postcss-nested": "^4.1.0"
   },
