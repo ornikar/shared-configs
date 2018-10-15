@@ -21,7 +21,7 @@ module.exports = {
 
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-sort-props.md
     'react/sort-prop-types': [
-      'off',
+      'error',
       {
         noSortAlphabetically: true,
         requiredFirst: true,
