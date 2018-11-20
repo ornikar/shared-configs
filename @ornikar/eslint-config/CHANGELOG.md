@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.1.1](https://github.com/ornikar/shared-configs/compare/@ornikar/eslint-config@5.1.0...@ornikar/eslint-config@5.1.1) (2018-11-20)
+
+
+### Bug Fixes
+
+* max-lines triggers warning instead of error ([#28](https://github.com/ornikar/shared-configs/issues/28)) ([cb46ec8](https://github.com/ornikar/shared-configs/commit/cb46ec8))
+
+
+
+
+
 # [5.1.0](https://github.com/ornikar/shared-configs/compare/@ornikar/eslint-config@5.0.1...@ornikar/eslint-config@5.1.0) (2018-10-30)
 
 
