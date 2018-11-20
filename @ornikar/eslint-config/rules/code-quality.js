@@ -5,7 +5,7 @@ module.exports = {
     complexity: ['warn', { max: 10 }],
     'max-depth': ['warn', 6],
     'max-lines': [
-      'error',
+      'warn',
       {
         max: 200,
         skipBlankLines: false,
