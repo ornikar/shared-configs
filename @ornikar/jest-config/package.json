@@ -1,9 +1,9 @@
 {
-  "name": "@ornikar/commitlint-config",
-  "version": "0.1.1",
-  "description": "commitlint config",
+  "name": "@ornikar/jest-config",
+  "version": "1.0.0-pre",
+  "description": "jest config",
   "repository": "ornikar/shared-configs",
-  "main": "index.js",
+  "main": "jest-preset.js",
   "license": "ISC",
   "engines": {
     "node": ">= 8.3.0"
@@ -12,9 +12,10 @@
     "access": "public"
   },
   "dependencies": {
-    "@commitlint/config-conventional": "^7.1.2"
+    "chalk": "^2.4.1",
+    "intl": "^1.2.5"
   },
   "peerDependencies": {
-    "@commitlint/cli": "^7.0.0"
+    "jest": ">= 23.6.0"
   }
 }
