@@ -1,0 +1,24 @@
+{
+  "name": "@ornikar/jest-config-react",
+  "version": "1.0.0-pre",
+  "description": "jest config",
+  "repository": "ornikar/shared-configs",
+  "main": "jest-preset.js",
+  "license": "ISC",
+  "engines": {
+    "node": ">= 8.3.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "peerDependencies": {
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3"
+  },
+  "dependencies": {
+    "@ornikar/jest-config": "1.0.0-pre",
+    "enzyme": "^3.2.0",
+    "enzyme-adapter-react-16": "^1.6.0",
+    "enzyme-to-json": "^3.2.2"
+  }
+}
