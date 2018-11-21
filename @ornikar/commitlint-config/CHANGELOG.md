@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.2.0](https://github.com/ornikar/shared-configs/compare/@ornikar/commitlint-config@0.1.1...@ornikar/commitlint-config@0.2.0) (2018-11-21)
+
+
+### Features
+
+* jest config ([#29](https://github.com/ornikar/shared-configs/issues/29)) ([e5043a2](https://github.com/ornikar/shared-configs/commit/e5043a2))
+
+
+
+
+
 ## [0.1.1](https://github.com/ornikar/shared-configs/compare/@ornikar/commitlint-config@0.1.0...@ornikar/commitlint-config@0.1.1) (2018-10-15)
 
 **Note:** Version bump only for package @ornikar/commitlint-config
