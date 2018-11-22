@@ -14,7 +14,9 @@ exports.storiesOf = groupName => {
     add(storyName, story) {
       describe(groupName, () => {
         it(storyName, () => {
-          expect(shallow(story())).toMatchSnapshot();
+          expect(
+            shallow(story(), { disableLifecycleMethods: true })
+          ).toMatchSnapshot();
         });
       });
 
