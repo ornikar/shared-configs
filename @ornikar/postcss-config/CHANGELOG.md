@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/postcss-config@1.1.0...@ornikar/postcss-config@2.0.0) (2018-11-28)
+
+
+### Bug Fixes
+
+* **postcss-config:** remove postcss production ([#37](https://github.com/ornikar/shared-configs/issues/37)) ([a5136d0](https://github.com/ornikar/shared-configs/commit/a5136d0))
+
+
+### BREAKING CHANGES
+
+* **postcss-config:** removed export productionPlugins
+
+cssnano should be called with https://github.com/NMFR/optimize-css-assets-webpack-plugin
+
+
+
+
+
 # [1.1.0](https://github.com/ornikar/shared-configs/compare/@ornikar/postcss-config@1.0.0...@ornikar/postcss-config@1.1.0) (2018-11-21)
 
 
