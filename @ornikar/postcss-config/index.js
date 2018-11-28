@@ -20,9 +20,3 @@ exports.customMediaPlugin = customMediaOptions =>
   require('postcss-custom-media')(customMediaOptions);
 
 exports.autoprefixerPlugin = () => require('autoprefixer');
-
-exports.productionPlugins = () => [
-  require('cssnano')({
-    preset: 'default',
-  }),
-];
