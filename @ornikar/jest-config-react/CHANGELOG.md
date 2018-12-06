@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.3.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@1.2.0...@ornikar/jest-config-react@1.3.0) (2018-12-06)
+
+
+### Features
+
+* update jest config react deps [no issue] ([#45](https://github.com/ornikar/shared-configs/issues/45)) ([6578ca6](https://github.com/ornikar/shared-configs/commit/6578ca6))
+
+
+
+
+
 # [1.2.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@1.1.0...@ornikar/jest-config-react@1.2.0) (2018-11-28)
 
 
