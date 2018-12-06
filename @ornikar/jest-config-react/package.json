@@ -17,9 +17,9 @@
   },
   "dependencies": {
     "@ornikar/jest-config": "^1.1.0",
-    "enzyme": "^3.2.0",
-    "enzyme-adapter-react-16": "^1.6.0",
-    "enzyme-to-json": "^3.2.2",
-    "identity-obj-proxy": "^3.0.0"
+    "enzyme": "3.7.0",
+    "enzyme-adapter-react-16": "1.7.0",
+    "enzyme-to-json": "3.3.4",
+    "identity-obj-proxy": "3.0.0"
   }
 }
