@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.3.1](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@1.3.0...@ornikar/jest-config-react@1.3.1) (2018-12-10)
+
+
+### Bug Fixes
+
+* **deps:** update dependency enzyme-to-json to v3.3.5 ([#46](https://github.com/ornikar/shared-configs/issues/46)) ([057c85e](https://github.com/ornikar/shared-configs/commit/057c85e))
+
+
+
+
+
 # [1.3.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@1.2.0...@ornikar/jest-config-react@1.3.0) (2018-12-06)
 
 
