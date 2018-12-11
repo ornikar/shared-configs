@@ -1,5 +1,12 @@
 {
   "extends": [
     "config:js-lib"
+  ],
+  "schedule": ["after 7pm and before 10am every weekday"],
+  "packageRules": [
+    {
+      "packagePatterns": ["^@ornikar"],
+      "schedule": ["at any time"]
+    }
   ]
 }
