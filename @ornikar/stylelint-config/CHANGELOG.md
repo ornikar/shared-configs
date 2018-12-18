@@ -3,6 +3,29 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/stylelint-config@1.1.1...@ornikar/stylelint-config@2.0.0) (2018-12-18)
+
+
+### Bug Fixes
+
+* **deps:** update dependency stylelint-order to v2 ([#36](https://github.com/ornikar/shared-configs/issues/36)) ([9fcefdc](https://github.com/ornikar/shared-configs/commit/9fcefdc))
+
+
+### chore
+
+* **deps:** update dependency prettier to v1.15.3 ([#41](https://github.com/ornikar/shared-configs/issues/41)) ([8dae791](https://github.com/ornikar/shared-configs/commit/8dae791))
+* **deps:** update dependency stylelint to v9.9.0 ([#42](https://github.com/ornikar/shared-configs/issues/42)) ([2a7c363](https://github.com/ornikar/shared-configs/commit/2a7c363))
+
+
+### BREAKING CHANGES
+
+* **deps:** changed peerdep prettier
+* **deps:** peerdep stylelint changed
+
+
+
+
+
 ## [1.1.1](https://github.com/ornikar/shared-configs/compare/@ornikar/stylelint-config@1.1.0...@ornikar/stylelint-config@1.1.1) (2018-12-06)
 
 **Note:** Version bump only for package @ornikar/stylelint-config

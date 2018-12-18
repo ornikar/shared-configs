@@ -3,6 +3,29 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/eslint-config@5.2.1...@ornikar/eslint-config@6.0.0) (2018-12-18)
+
+
+### chore
+
+* **deps:** update dependency eslint to v5.10.0 ([#47](https://github.com/ornikar/shared-configs/issues/47)) ([280a394](https://github.com/ornikar/shared-configs/commit/280a394))
+* **deps:** update dependency prettier to v1.15.3 ([#41](https://github.com/ornikar/shared-configs/issues/41)) ([8dae791](https://github.com/ornikar/shared-configs/commit/8dae791))
+
+
+### Features
+
+* update deps ([1f595ed](https://github.com/ornikar/shared-configs/commit/1f595ed))
+
+
+### BREAKING CHANGES
+
+* **deps:** eslint peerdep changed
+* **deps:** changed peerdep prettier
+
+
+
+
+
 ## [5.2.1](https://github.com/ornikar/shared-configs/compare/@ornikar/eslint-config@5.2.0...@ornikar/eslint-config@5.2.1) (2018-12-06)
 
 **Note:** Version bump only for package @ornikar/eslint-config

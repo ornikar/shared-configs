@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.1.0](https://github.com/ornikar/shared-configs/compare/@ornikar/postcss-config@2.0.0...@ornikar/postcss-config@2.1.0) (2018-12-18)
+
+
+### Features
+
+* update deps ([1f595ed](https://github.com/ornikar/shared-configs/commit/1f595ed))
+
+
+
+
+
 # [2.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/postcss-config@1.1.0...@ornikar/postcss-config@2.0.0) (2018-11-28)
 
 
