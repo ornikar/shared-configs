@@ -12,10 +12,10 @@
     "access": "public"
   },
   "dependencies": {
-    "autoprefixer": "^9.2.0",
-    "postcss-custom-media": "^7.0.6",
-    "postcss-custom-properties": "^8.0.8",
-    "postcss-nested": "^4.1.0"
+    "autoprefixer": "^9.4.3",
+    "postcss-custom-media": "^7.0.7",
+    "postcss-custom-properties": "^8.0.9",
+    "postcss-nested": "^4.1.1"
   },
   "peerDependencies": {
     "postcss": "^7.0.5"
