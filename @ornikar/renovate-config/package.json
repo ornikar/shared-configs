@@ -1,0 +1,36 @@
+{
+  "name": "@ornikar/renovate-config",
+  "version": "1.0.0-pre",
+  "description": "renovate shared config",
+  "engines": {
+    "node": ">= 8.3.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "renovate-config": {
+    "default": {
+      "extends": ["schedule:earlyMondays"],
+      "packageRules": [
+        {
+          "groupName": "Shared Configs Ornikar",
+          "packageNames": [
+            "@ornikar/browserslit-config",
+            "@ornikar/commitlint-config",
+            "@ornikar/eslint-config",
+            "@ornikar/jest-config",
+            "@ornikar/jest-config-react",
+            "@ornikar/postcss-config",
+            "@ornikar/renovate-config",
+            "@ornikar/stylelint-config"
+          ],
+          "schedule": ["at any time"]
+        },
+        {
+          "packagePatterns": ["^@ornikar"],
+          "schedule": ["at any time"]
+        }
+      ]
+    }
+  }
+}
