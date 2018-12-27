@@ -13,4 +13,12 @@ module.exports = {
       },
     ],
   },
+  overrides: [
+    {
+      files: ['stories.js'],
+      rules: {
+        'max-lines': 'off',
+      },
+    },
+  ],
 };
