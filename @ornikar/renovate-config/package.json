@@ -14,6 +14,10 @@
       "rebaseStalePrs": false,
       "packageRules": [
         {
+          "groupName": "all",
+          "updateTypes": ["minor"]
+        },
+        {
           "groupName": "Shared Configs Ornikar",
           "packageNames": [
             "@ornikar/browserslit-config",
