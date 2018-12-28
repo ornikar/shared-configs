@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.1.0](https://github.com/ornikar/shared-configs/compare/@ornikar/eslint-config@6.0.0...@ornikar/eslint-config@6.1.0) (2018-12-28)
+
+
+### Features
+
+* disable max-lines rule for storybook ([#58](https://github.com/ornikar/shared-configs/issues/58)) ([faf956e](https://github.com/ornikar/shared-configs/commit/faf956e))
+
+
+
+
+
 # [6.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/eslint-config@5.2.1...@ornikar/eslint-config@6.0.0) (2018-12-18)
 
 
