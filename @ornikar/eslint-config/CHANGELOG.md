@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.2.1](https://github.com/ornikar/shared-configs/compare/@ornikar/eslint-config@6.2.0...@ornikar/eslint-config@6.2.1) (2019-01-28)
+
+
+### Bug Fixes
+
+* **deps:** update dependency eslint-config-prettier to v4 ([#82](https://github.com/ornikar/shared-configs/issues/82)) ([24c6ae4](https://github.com/ornikar/shared-configs/commit/24c6ae4))
+
+
+
+
+
 # [6.2.0](https://github.com/ornikar/shared-configs/compare/@ornikar/eslint-config@6.0.0...@ornikar/eslint-config@6.2.0) (2019-01-02)
 
 
