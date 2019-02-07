@@ -16,7 +16,7 @@
         {
           "groupName": "Shared Configs Ornikar",
           "packageNames": [
-            "@ornikar/browserslit-config",
+            "@ornikar/browserslist-config",
             "@ornikar/commitlint-config",
             "@ornikar/eslint-config",
             "@ornikar/jest-config",
