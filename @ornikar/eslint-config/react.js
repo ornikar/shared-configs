@@ -9,6 +9,8 @@ module.exports = {
     './rules/react',
   ].map(require.resolve),
 
+  plugins: ['eslint-plugin-react-hooks'],
+
   settings: {
     'import/resolver': {
       node: {
@@ -20,5 +22,7 @@ module.exports = {
   rules: {
     'import/extensions': ['error', { extensions: ['js'] }],
     'react/jsx-filename-extension': ['error', { extensions: ['js'] }],
+
+    'react-hooks/rules-of-hooks': 'error',
   },
 };
