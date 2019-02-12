@@ -73,6 +73,9 @@ workflows:
       # release
       - hold-release:
           type: approval
+          filters:
+            branches:
+              only: master
 
       - release:
           context: npm-publish
