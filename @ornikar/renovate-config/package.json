@@ -1,6 +1,6 @@
 {
   "name": "@ornikar/renovate-config",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "renovate shared config",
   "engines": {
     "node": ">= 8.3.0"
