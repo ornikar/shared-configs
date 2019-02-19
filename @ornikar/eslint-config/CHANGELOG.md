@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/eslint-config@6.2.3...@ornikar/eslint-config@7.0.0) (2019-02-19)
+
+
+### Features
+
+* add eslint-plugin-react-hooks [no issue] ([#94](https://github.com/ornikar/shared-configs/issues/94)) ([7393818](https://github.com/ornikar/shared-configs/commit/7393818))
+
+
+### BREAKING CHANGES
+
+* if you use react, you will also need to run `yarn add --dev eslint-plugin-react-hooks`
+
+
+
+
+
 ## [6.2.3](https://github.com/ornikar/shared-configs/compare/@ornikar/eslint-config@6.2.2...@ornikar/eslint-config@6.2.3) (2019-02-19)
 
 **Note:** Version bump only for package @ornikar/eslint-config
