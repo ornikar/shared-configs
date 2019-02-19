@@ -31,6 +31,15 @@
         {
           "packagePatterns": ["^@ornikar"],
           "schedule": ["at any time"]
+        },
+        {
+          "groupName": "eslint packages",
+          "packageNames": ["babel-eslint", "prettier"],
+          "packagePatterns": ["^eslint"],
+          "automerge": true,
+          "major": {
+            "automerge": false
+          }
         }
       ]
     }
