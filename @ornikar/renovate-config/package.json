@@ -34,7 +34,7 @@
         },
         {
           "groupName": "eslint packages",
-          "packageNames": ["prettier"],
+          "packageNames": ["babel-eslint", "prettier"],
           "packagePatterns": ["^eslint"],
           "automerge": true
         }
