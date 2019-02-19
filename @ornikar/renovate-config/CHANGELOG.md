@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.3.0](https://github.com/ornikar/shared-configs/compare/@ornikar/renovate-config@1.2.1...@ornikar/renovate-config@1.3.0) (2019-02-19)
+
+
+### Features
+
+* group eslint updates [no issue] ([#101](https://github.com/ornikar/shared-configs/issues/101)) ([bc068b1](https://github.com/ornikar/shared-configs/commit/bc068b1))
+* rebase stale pr on early mondays ([#100](https://github.com/ornikar/shared-configs/issues/100)) ([02ecaa9](https://github.com/ornikar/shared-configs/commit/02ecaa9))
+
+
+
+
+
 ## [1.2.1](https://github.com/ornikar/shared-configs/compare/@ornikar/renovate-config@1.2.0...@ornikar/renovate-config@1.2.1) (2019-02-19)
 
 
