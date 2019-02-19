@@ -11,7 +11,8 @@
   "renovate-config": {
     "default": {
       "extends": ["schedule:earlyMondays"],
-      "rebaseStalePrs": false,
+      "rebaseStalePrs": true,
+      "updateNotScheduled": false,
       "packageRules": [
         {
           "groupName": "Shared Configs Ornikar",
