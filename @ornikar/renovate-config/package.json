@@ -31,6 +31,12 @@
         {
           "packagePatterns": ["^@ornikar"],
           "schedule": ["at any time"]
+        },
+        {
+          "groupName": "eslint packages",
+          "packageNames": ["prettier"],
+          "packagePatterns": ["^eslint"],
+          "automerge": true
         }
       ]
     }
