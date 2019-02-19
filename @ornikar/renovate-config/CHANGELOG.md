@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.1](https://github.com/ornikar/shared-configs/compare/@ornikar/renovate-config@1.2.0...@ornikar/renovate-config@1.2.1) (2019-02-19)
+
+
+### Bug Fixes
+
+* typo in package.json ([#89](https://github.com/ornikar/shared-configs/issues/89)) ([9fe6dcd](https://github.com/ornikar/shared-configs/commit/9fe6dcd))
+
+
+
+
+
 # [1.2.0](https://github.com/ornikar/shared-configs/compare/@ornikar/renovate-config@1.0.0...@ornikar/renovate-config@1.2.0) (2019-01-02)
 
 
