@@ -12,6 +12,7 @@
     "access": "public"
   },
   "dependencies": {
+    "@ornikar/eslint-config": "^8.0.0",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-config-prettier": "^4.0.0"
   },
