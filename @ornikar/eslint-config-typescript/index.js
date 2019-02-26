@@ -36,6 +36,11 @@ module.exports = {
     /* some exported type doesnt work. tsc check that anyway */
     'import/named': 'off',
 
+    /* disabled rules */
+
+    // for example props can extends other props without setting new ones
+    '@typescript-eslint/no-empty-interface': 'off',
+
     /* changed rules */
 
     // default is error, changed to warn
