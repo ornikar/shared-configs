@@ -1,18 +1,16 @@
-# @ornikar/eslint-config
+# @ornikar/eslint-config-typescript
 
-Ornikar eslint config
+Ornikar typescript eslint config
 
 Based on Airbnb.
 
-This is the config to use when you don't have babel on the project.
-
 Also see:
 
+- [@ornikar/eslint-config](https://github.com/ornikar/shared-configs/tree/master/%40ornikar/eslint-config)
 - [@ornikar/eslint-config-babel](https://github.com/ornikar/shared-configs/tree/master/%40ornikar/eslint-config-babel)
 - [@ornikar/eslint-config-node](https://github.com/ornikar/shared-configs/tree/master/%40ornikar/eslint-config-node)
 - [@ornikar/eslint-config-react](https://github.com/ornikar/shared-configs/tree/master/%40ornikar/eslint-config-react)
-- [@ornikar/eslint-config-typescript](https://github.com/ornikar/shared-configs/tree/master/%40ornikar/eslint-config-typescript)
 - [@ornikar/eslint-config-typescript-react](https://github.com/ornikar/shared-configs/tree/master/%40ornikar/eslint-config-typescript-react)
 
-1. `npm install --save-dev eslint @ornikar/eslint-config eslint-plugin-filenames eslint-plugin-prettier eslint-plugin-unicorn`
-2. Add `"extends": "@ornikar"` to your eslint config
+1. `npm install --save-dev eslint @ornikar/eslint-plugin-typescript eslint-plugin-filenames eslint-plugin-import eslint-plugin-prefer-class-properties eslint-plugin-prettier eslint-plugin-unicorn @typescript-eslint/eslint-plugin @typescript-eslint/parser`
+2. Add `"extends": "@ornikar/eslint-config-typescript"` to your eslint config
