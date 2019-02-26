@@ -15,7 +15,7 @@ Also see:
 ### node without babel or typescript
 
 1. `npm install --save-dev eslint @ornikar/eslint-config eslint-plugin-filenames eslint-plugin-prettier eslint-plugin-unicorn @ornikar/eslint-config-node eslint-plugin-node`
-2. Add `"extends": ["@ornikar", "@ornikar/eslint-config/node"]` to your eslint config
+2. Add `"extends": ["@ornikar/eslint-config", "@ornikar/eslint-config-node"]` to your eslint config
 
 ### node with babel
 

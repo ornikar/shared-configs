@@ -15,4 +15,4 @@ Also see:
 - [@ornikar/eslint-config-typescript-react](https://github.com/ornikar/shared-configs/tree/master/%40ornikar/eslint-config-typescript-react)
 
 1. `npm install --save-dev eslint @ornikar/eslint-config eslint-plugin-filenames eslint-plugin-prettier eslint-plugin-unicorn`
-2. Add `"extends": "@ornikar"` to your eslint config
+2. Add `"extends": "@ornikar/eslint-config"` to your eslint config
