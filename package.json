@@ -17,7 +17,7 @@
   "eslintConfig": {
     "extends": [
       "./@ornikar/eslint-config/index.js",
-      "./@ornikar/eslint-config/node.js"
+      "./@ornikar/eslint-config-node/index.js"
     ]
   },
   "husky": {

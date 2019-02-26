@@ -4,21 +4,18 @@ module.exports = {
   extends: [
     'eslint-config-airbnb-base',
     'eslint-config-airbnb-base/rules/strict',
-    './plugins/filenames',
-    './plugins/prettier',
+    '@ornikar/eslint-config/plugins/filenames',
+    '@ornikar/eslint-config/plugins/prettier',
+    '@ornikar/eslint-config/plugins/unicorn',
     './plugins/prefer-class-properties',
-    './plugins/unicorn',
-    './rules/best-practices',
-    './rules/code-quality',
-    './rules/style',
-    './rules/expert',
+    '@ornikar/eslint-config/rules/best-practices',
+    '@ornikar/eslint-config/rules/code-quality',
+    '@ornikar/eslint-config/rules/style',
+    '@ornikar/eslint-config/rules/expert',
   ].map(require.resolve),
 
   plugins: ['babel'],
   parser: 'babel-eslint',
-  parserOptions: {
-    sourceType: 'module',
-  },
 
   rules: {
     // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-commonjs.md

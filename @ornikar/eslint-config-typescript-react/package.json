@@ -1,0 +1,24 @@
+{
+  "name": "@ornikar/eslint-config-typescript-react",
+  "version": "7.0.0",
+  "description": "eslint typescript react config files",
+  "repository": "ornikar/shared-configs",
+  "main": "index.js",
+  "license": "ISC",
+  "engines": {
+    "node": ">= 8.3.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@ornikar/eslint-config-react": "^7.0.0",
+    "eslint-config-prettier": "^4.0.0"
+  },
+  "peerDependencies": {
+    "eslint": "^5.10.0"
+  },
+  "devDependencies": {
+    "eslint": "5.14.1"
+  }
+}
