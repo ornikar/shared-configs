@@ -1,10 +1,17 @@
 'use strict';
 
+const fs = require('fs');
+const path = require('fs');
 const baseJestPreset = require('@ornikar/jest-config/jest-preset');
+
+const useTypescript = fs.existsSync(path.resolve('tsconfig.json'));
 
 module.exports = {
   ...baseJestPreset,
-  testMatch: [...baseJestPreset.testMatch, '<rootDir>/src/**/stories.js'],
+  testMatch: [
+    ...baseJestPreset.testMatch,
+    `<rootDir>/src/**/stories.${useTypescript ? 'tsx' : 'js'}`,
+  ],
   snapshotSerializers: ['enzyme-to-json/serializer'],
   setupFiles: [
     baseJestPreset.setupFiles[0],
