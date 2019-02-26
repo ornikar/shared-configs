@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.4.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@1.3.4...@ornikar/jest-config-react@1.4.0) (2019-02-26)
+
+
+### Features
+
+* jest config add support typescript ([#104](https://github.com/ornikar/shared-configs/issues/104)) ([e5fa370](https://github.com/ornikar/shared-configs/commit/e5fa370))
+
+
+
+
+
 ## [1.3.4](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@1.3.3...@ornikar/jest-config-react@1.3.4) (2019-02-19)
 
 
