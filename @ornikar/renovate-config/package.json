@@ -1,6 +1,6 @@
 {
   "name": "@ornikar/renovate-config",
-  "version": "1.3.0",
+  "version": "1.3.1",
   "description": "renovate shared config",
   "engines": {
     "node": ">= 8.3.0"
@@ -10,7 +10,9 @@
   },
   "renovate-config": {
     "default": {
-      "extends": ["schedule:earlyMondays"],
+      "extends": [
+        "schedule:earlyMondays"
+      ],
       "rebaseStalePrs": false,
       "packageRules": [
         {
@@ -25,16 +27,27 @@
             "@ornikar/renovate-config",
             "@ornikar/stylelint-config"
           ],
-          "schedule": ["at any time"]
+          "schedule": [
+            "at any time"
+          ]
         },
         {
-          "packagePatterns": ["^@ornikar"],
-          "schedule": ["at any time"]
+          "packagePatterns": [
+            "^@ornikar"
+          ],
+          "schedule": [
+            "at any time"
+          ]
         },
         {
           "groupName": "eslint packages",
-          "packageNames": ["babel-eslint", "prettier"],
-          "packagePatterns": ["^eslint"],
+          "packageNames": [
+            "babel-eslint",
+            "prettier"
+          ],
+          "packagePatterns": [
+            "^eslint"
+          ],
           "automerge": true,
           "major": {
             "automerge": false

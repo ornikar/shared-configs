@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [8.0.1](https://github.com/ornikar/shared-configs/compare/@ornikar/eslint-config@8.0.0...@ornikar/eslint-config@8.0.1) (2019-02-27)
+
+
+### Bug Fixes
+
+* remove eslint-plugin-prefer-class-properties in eslint-config ([#108](https://github.com/ornikar/shared-configs/issues/108)) ([d10ce78](https://github.com/ornikar/shared-configs/commit/d10ce78))
+
+
+
+
+
 # [8.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/eslint-config@7.0.0...@ornikar/eslint-config@8.0.0) (2019-02-26)
 
 

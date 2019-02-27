@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.3.1](https://github.com/ornikar/shared-configs/compare/@ornikar/renovate-config@1.3.0...@ornikar/renovate-config@1.3.1) (2019-02-27)
+
+
+### Bug Fixes
+
+* allow rebasing in PRs ([#109](https://github.com/ornikar/shared-configs/issues/109)) ([0feb238](https://github.com/ornikar/shared-configs/commit/0feb238))
+
+
+
+
+
 # [1.3.0](https://github.com/ornikar/shared-configs/compare/@ornikar/renovate-config@1.2.1...@ornikar/renovate-config@1.3.0) (2019-02-19)
 
 
