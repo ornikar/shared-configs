@@ -1,7 +1,7 @@
 'use strict';
 
 const fs = require('fs');
-const path = require('fs');
+const path = require('path');
 const baseJestPreset = require('@ornikar/jest-config/jest-preset');
 
 const useTypescript = fs.existsSync(path.resolve('tsconfig.json'));
