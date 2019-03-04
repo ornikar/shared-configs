@@ -2679,7 +2679,7 @@ eslint-plugin-node@8.0.1:
     resolve "^1.8.1"
     semver "^5.5.0"
 
-eslint-plugin-prefer-class-properties@1.0.0, eslint-plugin-prefer-class-properties@^1.0.0:
+eslint-plugin-prefer-class-properties@1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/eslint-plugin-prefer-class-properties/-/eslint-plugin-prefer-class-properties-1.0.0.tgz#0ac117bb641385461d7e019339b77ea2f02bec2e"
   integrity sha1-CsEXu2QThUYdfgGTObd+ovAr7C4=
@@ -7631,10 +7631,10 @@ yargs@^12.0.1:
     y18n "^3.2.1 || ^4.0.0"
     yargs-parser "^10.1.0"
 
-yarnhook@0.3.0:
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/yarnhook/-/yarnhook-0.3.0.tgz#9a4bd1248b7a126ed78cb332b0800f2d76a38fa8"
-  integrity sha512-9eyVNDsA1nVl9pumtAxd/oc+H4k0PEZFazAcKSVmuT/MT40k3qUK31mnAoX5NV2wQxBEKvvwRRJqB9Z0BVuUvA==
+yarnhook@0.4.0:
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/yarnhook/-/yarnhook-0.4.0.tgz#767b22f4ad446553c6eb86090c326d6e32ad0fe2"
+  integrity sha512-ERMvT3SEVPg9eaGEczd/lY4o3ZpNeMx5aQj7WCA00/i0o02DmcXrsmO5rg/fqR3S+/JkXNYdnoFXR1rGVpNy5A==
   dependencies:
     execa "^0.8.0"
     find-parent-dir "^0.3.0"
