@@ -1,6 +1,6 @@
 {
   "name": "@ornikar/jest-config-react",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "description": "jest config",
   "repository": "ornikar/shared-configs",
   "main": "jest-preset.js",
@@ -16,7 +16,7 @@
     "react-dom": "^16.6.3"
   },
   "dependencies": {
-    "@ornikar/jest-config": "^1.2.0",
+    "@ornikar/jest-config": "^1.2.1",
     "enzyme": "3.9.0",
     "enzyme-adapter-react-16": "1.9.1",
     "enzyme-to-json": "3.3.5",

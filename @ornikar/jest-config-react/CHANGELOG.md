@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.4.1](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@1.4.0...@ornikar/jest-config-react@1.4.1) (2019-03-04)
+
+
+### Bug Fixes
+
+* path is not a function ([#116](https://github.com/ornikar/shared-configs/issues/116)) ([c6c5a30](https://github.com/ornikar/shared-configs/commit/c6c5a30))
+
+
+
+
+
 # [1.4.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@1.3.4...@ornikar/jest-config-react@1.4.0) (2019-02-26)
 
 
