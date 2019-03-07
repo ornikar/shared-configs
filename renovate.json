@@ -1,12 +1,3 @@
 {
-  "extends": [
-    "config:js-lib",
-    "schedule:earlyMondays"
-  ],
-  "packageRules": [
-    {
-      "packagePatterns": ["^@ornikar"],
-      "schedule": ["at any time"]
-    }
-  ]
+  "extends": ["config:js-lib", "@ornikar"]
 }
