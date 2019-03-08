@@ -13,6 +13,7 @@
       "extends": ["schedule:earlyMondays"],
       "rebaseStalePrs": true,
       "updateNotScheduled": false,
+      "postUpdateOptions": ["yarnDedupeHighest"],
       "packageRules": [
         {
           "groupName": "Shared Configs Ornikar",
