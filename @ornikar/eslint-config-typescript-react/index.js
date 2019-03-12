@@ -6,13 +6,21 @@ module.exports = {
   settings: {
     'import/resolver': {
       node: {
-        extensions: ['.mjs', '.js', '.json', '.ts', '.tsx'],
+        extensions: ['.js', '.ts', '.tsx'],
       },
     },
   },
 
   rules: {
-    'import/extensions': ['error', { extensions: ['ts', 'tsx', 'js'] }],
+    'import/extensions': [
+      'error',
+      'ignorePackages',
+      {
+        js: 'never',
+        ts: 'never',
+        tsx: 'never',
+      },
+    ],
     'react/jsx-filename-extension': ['error', { extensions: ['tsx', 'js'] }],
   },
 };
