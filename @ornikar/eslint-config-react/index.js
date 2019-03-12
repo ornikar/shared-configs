@@ -20,7 +20,13 @@ module.exports = {
   },
 
   rules: {
-    'import/extensions': ['error', { extensions: ['js'] }],
+    'import/extensions': [
+      'error',
+      'ignorePackages',
+      {
+        js: 'never',
+      },
+    ],
     'react/jsx-filename-extension': ['error', { extensions: ['js'] }],
 
     'react-hooks/rules-of-hooks': 'error',

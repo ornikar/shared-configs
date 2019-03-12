@@ -22,14 +22,21 @@ module.exports = {
   settings: {
     'import/resolver': {
       node: {
-        extensions: ['.js', '.json', '.ts'],
+        extensions: ['.js', '.ts'],
       },
     },
     'import/extensions': ['.js', '.ts'],
   },
 
   rules: {
-    'import/extensions': ['error', { extensions: ['ts', 'js'] }],
+    'import/extensions': [
+      'error',
+      'ignorePackages',
+      {
+        js: 'never',
+        ts: 'never',
+      },
+    ],
 
     /* issues */
 
