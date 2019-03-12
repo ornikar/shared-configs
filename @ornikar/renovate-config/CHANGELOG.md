@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.4.0](https://github.com/ornikar/shared-configs/compare/@ornikar/renovate-config@1.3.1...@ornikar/renovate-config@1.4.0) (2019-03-12)
+
+
+### Features
+
+* rebase in schedule [no issue] ([#117](https://github.com/ornikar/shared-configs/issues/117)) ([8e782b4](https://github.com/ornikar/shared-configs/commit/8e782b4))
+* **renovate-config:** enable dedupe ([#118](https://github.com/ornikar/shared-configs/issues/118)) ([ddf6918](https://github.com/ornikar/shared-configs/commit/ddf6918))
+
+
+
+
+
 ## [1.3.1](https://github.com/ornikar/shared-configs/compare/@ornikar/renovate-config@1.3.0...@ornikar/renovate-config@1.3.1) (2019-02-27)
 
 
