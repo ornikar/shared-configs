@@ -1,6 +1,6 @@
 {
   "name": "@ornikar/eslint-config-babel",
-  "version": "8.0.2",
+  "version": "8.0.3",
   "description": "eslint babel config files",
   "repository": "ornikar/shared-configs",
   "main": "index.js",
@@ -12,7 +12,7 @@
     "access": "public"
   },
   "dependencies": {
-    "@ornikar/eslint-config": "^8.0.2",
+    "@ornikar/eslint-config": "^8.0.3",
     "babel-eslint": "^10.0.1",
     "eslint-config-airbnb-base": "13.1.0"
   },
