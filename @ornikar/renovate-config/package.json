@@ -66,6 +66,14 @@
           "major": {
             "automerge": false
           }
+        },
+        {
+          "groupName": "rollup packages",
+          "packagePatterns": ["^rollup"],
+          "automerge": false,
+          "major": {
+            "automerge": false
+          }
         }
       ]
     }
