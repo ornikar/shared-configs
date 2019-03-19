@@ -10,7 +10,7 @@
   },
   "renovate-config": {
     "default": {
-      "extends": ["schedule:earlyMondays"],
+      "schedule": "every 2 week of the year starting on the 2nd week of the year on Monday before 5:00am",
       "rebaseStalePrs": true,
       "updateNotScheduled": false,
       "postUpdateOptions": ["yarnDedupeHighest"],
