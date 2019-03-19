@@ -49,6 +49,14 @@
           "major": {
             "automerge": false
           }
+        },
+        {
+          "groupName": "react packages",
+          "packageNames": ["react", "react-dom"],
+          "automerge": false,
+          "major": {
+            "automerge": false
+          }
         }
       ]
     }
