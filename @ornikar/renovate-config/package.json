@@ -10,14 +10,10 @@
   },
   "renovate-config": {
     "default": {
-      "extends": [
-        "schedule:earlyMondays"
-      ],
+      "extends": ["schedule:earlyMondays"],
       "rebaseStalePrs": true,
       "updateNotScheduled": false,
-      "postUpdateOptions": [
-        "yarnDedupeHighest"
-      ],
+      "postUpdateOptions": ["yarnDedupeHighest"],
       "packageRules": [
         {
           "groupName": "Shared Configs Ornikar",
@@ -31,28 +27,25 @@
             "@ornikar/renovate-config",
             "@ornikar/stylelint-config"
           ],
-          "schedule": [
-            "at any time"
-          ]
+          "schedule": ["at any time"]
         },
         {
-          "packagePatterns": [
-            "^@ornikar"
-          ],
-          "schedule": [
-            "at any time"
-          ]
+          "packagePatterns": ["^@ornikar"],
+          "schedule": ["at any time"]
         },
         {
           "groupName": "eslint packages",
-          "packageNames": [
-            "babel-eslint",
-            "prettier"
-          ],
-          "packagePatterns": [
-            "^eslint"
-          ],
+          "packageNames": ["babel-eslint", "prettier"],
+          "packagePatterns": ["^eslint"],
           "automerge": true,
+          "major": {
+            "automerge": false
+          }
+        },
+        {
+          "groupName": "storybook packages",
+          "packagePatterns": ["^@storybook"],
+          "automerge": false,
           "major": {
             "automerge": false
           }
