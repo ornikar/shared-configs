@@ -43,13 +43,9 @@
           }
         },
         {
-          "groupName": "storybook packages",
-          "packagePatterns": ["^@storybook"]
-        },
-        {
-          "groupName": "babel packages",
+          "groupName": "babel community packages",
           "excludePackageNames": ["babel-eslint"],
-          "packagePatterns": ["^babel", "^@babel"]
+          "packagePatterns": ["^babel"]
         },
         {
           "groupName": "rollup packages",
