@@ -44,36 +44,16 @@
         },
         {
           "groupName": "storybook packages",
-          "packagePatterns": ["^@storybook"],
-          "automerge": false,
-          "major": {
-            "automerge": false
-          }
-        },
-        {
-          "groupName": "react packages",
-          "packageNames": ["react", "react-dom"],
-          "automerge": false,
-          "major": {
-            "automerge": false
-          }
+          "packagePatterns": ["^@storybook"]
         },
         {
           "groupName": "babel packages",
           "excludePackageNames": ["babel-eslint"],
-          "packagePatterns": ["^babel", "^@babel"],
-          "automerge": false,
-          "major": {
-            "automerge": false
-          }
+          "packagePatterns": ["^babel", "^@babel"]
         },
         {
           "groupName": "rollup packages",
-          "packagePatterns": ["^rollup"],
-          "automerge": false,
-          "major": {
-            "automerge": false
-          }
+          "packagePatterns": ["^rollup"]
         }
       ]
     }
