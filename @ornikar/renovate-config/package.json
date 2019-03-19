@@ -1,6 +1,6 @@
 {
   "name": "@ornikar/renovate-config",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "description": "renovate shared config",
   "engines": {
     "node": ">= 8.3.0"
@@ -15,7 +15,9 @@
       "prConcurrentLimit": 40,
       "rebaseStalePrs": true,
       "updateNotScheduled": false,
-      "postUpdateOptions": ["yarnDedupeHighest"],
+      "postUpdateOptions": [
+        "yarnDedupeHighest"
+      ],
       "packageRules": [
         {
           "groupName": "Shared Configs Ornikar",
@@ -29,16 +31,27 @@
             "@ornikar/renovate-config",
             "@ornikar/stylelint-config"
           ],
-          "schedule": ["at any time"]
+          "schedule": [
+            "at any time"
+          ]
         },
         {
-          "packagePatterns": ["^@ornikar"],
-          "schedule": ["at any time"]
+          "packagePatterns": [
+            "^@ornikar"
+          ],
+          "schedule": [
+            "at any time"
+          ]
         },
         {
           "groupName": "eslint packages",
-          "packageNames": ["babel-eslint", "prettier"],
-          "packagePatterns": ["^eslint"],
+          "packageNames": [
+            "babel-eslint",
+            "prettier"
+          ],
+          "packagePatterns": [
+            "^eslint"
+          ],
           "automerge": true,
           "major": {
             "automerge": false
@@ -46,12 +59,18 @@
         },
         {
           "groupName": "babel community packages",
-          "excludePackageNames": ["babel-eslint"],
-          "packagePatterns": ["^babel"]
+          "excludePackageNames": [
+            "babel-eslint"
+          ],
+          "packagePatterns": [
+            "^babel"
+          ]
         },
         {
           "groupName": "rollup packages",
-          "packagePatterns": ["^rollup"]
+          "packagePatterns": [
+            "^rollup"
+          ]
         }
       ]
     }

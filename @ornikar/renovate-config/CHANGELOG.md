@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.5.0](https://github.com/ornikar/shared-configs/compare/@ornikar/renovate-config@1.4.0...@ornikar/renovate-config@1.5.0) (2019-03-19)
+
+
+### Features
+
+* group packages renovate ONK-3275 ([#125](https://github.com/ornikar/shared-configs/issues/125)) ([44586ca](https://github.com/ornikar/shared-configs/commit/44586ca))
+* increase PR limits [no issue] ([#126](https://github.com/ornikar/shared-configs/issues/126)) ([3bbe0f1](https://github.com/ornikar/shared-configs/commit/3bbe0f1))
+* update schedule to match platform days ([#124](https://github.com/ornikar/shared-configs/issues/124)) ([ad5ee9e](https://github.com/ornikar/shared-configs/commit/ad5ee9e))
+
+
+
+
+
 # [1.4.0](https://github.com/ornikar/shared-configs/compare/@ornikar/renovate-config@1.3.1...@ornikar/renovate-config@1.4.0) (2019-03-12)
 
 
