@@ -41,6 +41,15 @@
           "major": {
             "automerge": false
           }
+        },
+        {
+          "groupName": "babel community packages",
+          "excludePackageNames": ["babel-eslint"],
+          "packagePatterns": ["^babel"]
+        },
+        {
+          "groupName": "rollup packages",
+          "packagePatterns": ["^rollup"]
         }
       ]
     }
