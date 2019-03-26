@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.5.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@1.4.2...@ornikar/jest-config-react@1.5.0) (2019-03-26)
+
+
+### Features
+
+* support decorators ([#129](https://github.com/ornikar/shared-configs/issues/129)) ([97f9292](https://github.com/ornikar/shared-configs/commit/97f9292))
+
+
+
+
+
 ## [1.4.2](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@1.4.1...@ornikar/jest-config-react@1.4.2) (2019-03-18)
 
 
