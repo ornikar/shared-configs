@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.3.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config@1.2.1...@ornikar/jest-config@1.3.0) (2019-03-26)
+
+
+### Features
+
+* add timezone-mock in jest config [no issue] ([#130](https://github.com/ornikar/shared-configs/issues/130)) ([ecee74a](https://github.com/ornikar/shared-configs/commit/ecee74a))
+
+
+
+
+
 ## [1.2.1](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config@1.2.0...@ornikar/jest-config@1.2.1) (2019-03-04)
 
 
