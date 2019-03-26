@@ -12,5 +12,9 @@ module.exports = {
     `<rootDir>/src/**/*.test.${useTypescript ? 'ts?(x)' : 'js'}`,
   ],
   setupTestFrameworkScriptFile: require.resolve('./test-setup-framework.js'),
-  setupFiles: [require.resolve('./test-shim.js'), '<rootDir>/test-setup.js'],
+  setupFiles: [
+    require.resolve('./test-shim.js'),
+    require.resolve('./global-mocks.js'),
+    '<rootDir>/test-setup.js',
+  ],
 };

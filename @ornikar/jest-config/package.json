@@ -13,7 +13,8 @@
   },
   "dependencies": {
     "chalk": "^2.4.1",
-    "intl": "^1.2.5"
+    "intl": "^1.2.5",
+    "timezone-mock": "^1.0.4"
   },
   "peerDependencies": {
     "jest": ">= 23.6.0"
