@@ -83,9 +83,6 @@ const formTree = shallow(tree.find(x => FormWithApiCall(x)).prop('children')());
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/master/docs/rules/prefer-exponentiation-operator.md
     'unicorn/prefer-exponentiation-operator': 'error',
 
-    // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/master/docs/rules/prevent-abbreviations.md
-    'unicorn/prevent-abbreviations': 'error',
-
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/master/docs/rules/no-for-loop.md
     'unicorn/no-for-loop': 'error',
 
