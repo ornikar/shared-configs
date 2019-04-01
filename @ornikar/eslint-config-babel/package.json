@@ -12,15 +12,9 @@
     "access": "public"
   },
   "dependencies": {
-    "@ornikar/eslint-config": "^8.0.4",
-    "babel-eslint": "^10.0.1",
-    "eslint-config-airbnb-base": "13.1.0"
-  },
-  "peerDependencies": {
-    "eslint-plugin-babel": "^5.3.0",
-    "eslint-plugin-prefer-class-properties": "^1.0.0"
-  },
-  "devDependencies": {
+    "@ornikar/eslint-config": "8.0.4",
+    "babel-eslint": "10.0.1",
+    "eslint-config-airbnb-base": "13.1.0",
     "eslint-plugin-babel": "5.3.0",
     "eslint-plugin-prefer-class-properties": "1.0.0"
   }
