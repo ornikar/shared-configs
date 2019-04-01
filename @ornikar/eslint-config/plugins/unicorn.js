@@ -87,7 +87,7 @@ const formTree = shallow(tree.find(x => FormWithApiCall(x)).prop('children')());
     'unicorn/prevent-abbreviations': 'off',
 
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/master/docs/rules/no-for-loop.md
-    'unicorn/no-for-loop': 'error',
+    'unicorn/no-for-loop': 'off',
 
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/master/docs/rules/no-zero-fractions.md
     'unicorn/no-zero-fractions': 'error',
