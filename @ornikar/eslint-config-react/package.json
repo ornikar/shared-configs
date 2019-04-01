@@ -12,15 +12,14 @@
     "access": "public"
   },
   "dependencies": {
-    "eslint-config-airbnb": "^17.1.0",
-    "eslint-config-prettier": "^4.0.0"
+    "eslint-config-airbnb": "17.1.0",
+    "eslint-config-prettier": "4.0.0",
+    "eslint-plugin-react-hooks": "1.3.0"
   },
   "peerDependencies": {
-    "eslint": "^5.10.0",
-    "eslint-plugin-react-hooks": "^1.3.0"
+    "eslint": "^5.10.0"
   },
   "devDependencies": {
-    "eslint": "5.16.0",
-    "eslint-plugin-react-hooks": "1.6.0"
+    "eslint": "5.16.0"
   }
 }
