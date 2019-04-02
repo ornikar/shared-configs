@@ -2,6 +2,7 @@
 
 module.exports = {
   extends: [
+    '@ornikar/eslint-config-babel',
     'eslint-config-airbnb/rules/react',
     'eslint-config-airbnb/rules/react-a11y',
     'eslint-config-prettier',
