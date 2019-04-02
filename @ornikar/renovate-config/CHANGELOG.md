@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.5.1](https://github.com/ornikar/shared-configs/compare/@ornikar/renovate-config@1.5.0...@ornikar/renovate-config@1.5.1) (2019-04-02)
+
+
+### Bug Fixes
+
+* disable autorebase for any time scheduled prs [no issue] ([#135](https://github.com/ornikar/shared-configs/issues/135)) ([7e39f6b](https://github.com/ornikar/shared-configs/commit/7e39f6b))
+
+
+
+
+
 # [1.5.0](https://github.com/ornikar/shared-configs/compare/@ornikar/renovate-config@1.4.0...@ornikar/renovate-config@1.5.0) (2019-03-19)
 
 

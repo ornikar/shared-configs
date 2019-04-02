@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [8.0.6](https://github.com/ornikar/shared-configs/compare/@ornikar/eslint-config-typescript@8.0.5...@ornikar/eslint-config-typescript@8.0.6) (2019-04-02)
+
+**Note:** Version bump only for package @ornikar/eslint-config-typescript
+
+
+
+
+
 ## [8.0.5](https://github.com/ornikar/shared-configs/compare/@ornikar/eslint-config-typescript@8.0.4...@ornikar/eslint-config-typescript@8.0.5) (2019-04-01)
 
 **Note:** Version bump only for package @ornikar/eslint-config-typescript
