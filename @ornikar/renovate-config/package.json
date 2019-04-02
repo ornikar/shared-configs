@@ -31,7 +31,7 @@
             "@ornikar/renovate-config",
             "@ornikar/stylelint-config"
           ],
-          "rebaseStalePrs": true,
+          "rebaseStalePrs": false,
           "schedule": [
             "at any time"
           ]
@@ -40,7 +40,7 @@
           "packagePatterns": [
             "^@ornikar"
           ],
-          "rebaseStalePrs": true,
+          "rebaseStalePrs": false,
           "schedule": [
             "at any time"
           ]
