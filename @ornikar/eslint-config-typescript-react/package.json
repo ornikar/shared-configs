@@ -12,8 +12,8 @@
     "access": "public"
   },
   "dependencies": {
-    "@ornikar/eslint-config-react": "8.0.3",
-    "eslint-config-prettier": "4.0.0"
+    "@ornikar/eslint-config-react": "^8.0.3",
+    "eslint-config-prettier": "^4.0.0"
   },
   "peerDependencies": {
     "eslint": "^5.10.0"
