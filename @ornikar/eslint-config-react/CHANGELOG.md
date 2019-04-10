@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [8.1.0](https://github.com/ornikar/shared-configs/compare/@ornikar/eslint-config-react@8.0.4...@ornikar/eslint-config-react@8.1.0) (2019-04-10)
+
+
+### Features
+
+* enable react-hooks/exhaustive-deps [no issue] ([#137](https://github.com/ornikar/shared-configs/issues/137)) ([7c77419](https://github.com/ornikar/shared-configs/commit/7c77419))
+
+
+
+
+
 ## [8.0.4](https://github.com/ornikar/shared-configs/compare/@ornikar/eslint-config-react@8.0.3...@ornikar/eslint-config-react@8.0.4) (2019-04-02)
 
 **Note:** Version bump only for package @ornikar/eslint-config-react
