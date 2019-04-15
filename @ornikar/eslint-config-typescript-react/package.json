@@ -1,6 +1,6 @@
 {
   "name": "@ornikar/eslint-config-typescript-react",
-  "version": "8.0.6",
+  "version": "8.0.7",
   "description": "eslint typescript react config files",
   "repository": "ornikar/shared-configs",
   "main": "index.js",
@@ -12,7 +12,7 @@
     "access": "public"
   },
   "dependencies": {
-    "@ornikar/eslint-config-react": "^8.1.1",
+    "@ornikar/eslint-config-react": "^8.1.2",
     "eslint-config-prettier": "^4.0.0"
   },
   "peerDependencies": {
