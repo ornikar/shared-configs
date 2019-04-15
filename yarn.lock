@@ -6977,10 +6977,10 @@ through@2, "through@>=2.2.7 <3", through@^2.3.4, through@^2.3.6:
   resolved "https://registry.yarnpkg.com/through/-/through-2.3.8.tgz#0dd4c9ffaabc357960b1b724115d7e0e86a2e1f5"
   integrity sha1-DdTJ/6q8NXlgsbckEV1+Doai4fU=
 
-timezone-mock@^1.0.4:
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/timezone-mock/-/timezone-mock-1.0.4.tgz#878f13a5a7cf5a192b076b367956b2fe93d3ca8a"
-  integrity sha512-wBr8Ny9szNIULBH7bbed81kVphDTPzBKsXYVxStH0PZ4I+YgiygFiliZKYlgHZ9jnwUiJaWlGRydsmau8XrsDg==
+timezone-mock@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/timezone-mock/-/timezone-mock-1.0.5.tgz#c8aad75a7f207141cf6471eb22f4c33bd4ebe294"
+  integrity sha512-SBhcSV4ArM7fEDalFWvvf/2ZZx5GVgnhHgjjYZ0xIp2qz3murj8hK3nUMI4mYcRGFnrQ0DDerjI6N/ie4rdVug==
 
 tmp@^0.0.33:
   version "0.0.33"
