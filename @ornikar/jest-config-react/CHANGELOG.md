@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.5.3](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@1.5.2...@ornikar/jest-config-react@1.5.3) (2019-04-15)
+
+**Note:** Version bump only for package @ornikar/jest-config-react
+
+
+
+
+
 ## [1.5.2](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@1.5.1...@ornikar/jest-config-react@1.5.2) (2019-04-12)
 
 
