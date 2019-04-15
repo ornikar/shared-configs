@@ -1,6 +1,6 @@
 {
   "name": "@ornikar/eslint-config-typescript",
-  "version": "8.0.6",
+  "version": "8.0.7",
   "description": "eslint typescript config files",
   "repository": "ornikar/shared-configs",
   "main": "index.js",
@@ -12,7 +12,7 @@
     "access": "public"
   },
   "dependencies": {
-    "@ornikar/eslint-config": "^8.0.5",
+    "@ornikar/eslint-config": "^8.0.6",
     "@typescript-eslint/eslint-plugin": "^1.4.2",
     "@typescript-eslint/parser": "^1.4.2",
     "eslint-config-airbnb-base": "^13.1.0",
