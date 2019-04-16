@@ -13,7 +13,7 @@ module.exports = {
     `<rootDir>/src/**/stories.${useTypescript ? 'tsx' : 'js'}`,
   ],
   snapshotSerializers: ['enzyme-to-json/serializer'],
-  setupFiles: [require.resolve('./test-setup'), ...baseJestPreset.setupFiles],
+  setupFiles: [...baseJestPreset.setupFiles, require.resolve('./test-setup')],
   moduleNameMapper: {
     '\\.css$': 'identity-obj-proxy',
     '@storybook/react$': require.resolve('./__mocks__/@storybook/react'),
