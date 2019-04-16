@@ -37,7 +37,7 @@ jobs:
           name: Lint code
           command: yarn run lint
 
-  # Note: need these env variables: EMAIL, GIT_AUTHOR_NAME, GIT_COMMITTER_NAME, NPM_TOKEN, GITHUB_TOKEN
+  # Note: need these env variables: EMAIL, GIT_AUTHOR_NAME, GIT_COMMITTER_NAME, NPM_TOKEN
   release:
     docker:
       - image: circleci/node:10.15
@@ -50,7 +50,7 @@ jobs:
           command: git remote set-url origin "https://michael-robot:$GITHUB_TOKEN@github.com/$CIRCLE_PROJECT_USERNAME/$CIRCLE_PROJECT_REPONAME"
       - run:
           name: Run lerna version
-          command: "GH_TOKEN=$GITHUB_TOKEN yarn lerna version --yes --push --conventional-commits --github-release -m 'chore: release [skip ci]'"
+          command: "GH_TOKEN=$GITHUB_TOKEN yarn lerna version --yes --push --conventional-commits -m 'chore: release [skip ci]'"
       - run:
           name: Authenticate to npm registry
           command: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > .npmrc
