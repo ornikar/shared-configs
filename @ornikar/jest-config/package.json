@@ -17,6 +17,6 @@
     "timezone-mock": "^1.0.5"
   },
   "peerDependencies": {
-    "jest": ">= 23.6.0"
+    "jest": ">= 24.0.0"
   }
 }
