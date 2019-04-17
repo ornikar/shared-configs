@@ -14,9 +14,9 @@ module.exports = {
   ],
   snapshotSerializers: ['enzyme-to-json/serializer'],
   setupFiles: [
-    baseJestPreset.setupFiles[0],
+    ...baseJestPreset.setupFiles.slice(0, -1),
     require.resolve('./test-setup'),
-    baseJestPreset.setupFiles[1],
+    baseJestPreset.setupFiles[baseJestPreset.setupFiles.length - 1],
   ],
   moduleNameMapper: {
     '\\.css$': 'identity-obj-proxy',
