@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.6.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@1.5.3...@ornikar/jest-config-react@1.6.0) (2019-04-17)
+
+
+### Features
+
+* ignore decorators in snapshots [no issue] ([#146](https://github.com/ornikar/shared-configs/issues/146)) ([c792ee9](https://github.com/ornikar/shared-configs/commit/c792ee9))
+* use setupFilesAfterEnv instead of setupTestFrameworkScriptFile [no issue] ([#145](https://github.com/ornikar/shared-configs/issues/145)) ([6cbe035](https://github.com/ornikar/shared-configs/commit/6cbe035))
+
+
+
+
+
 ## [1.5.3](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@1.5.2...@ornikar/jest-config-react@1.5.3) (2019-04-15)
 
 **Note:** Version bump only for package @ornikar/jest-config-react

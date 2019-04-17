@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [8.2.0](https://github.com/ornikar/shared-configs/compare/@ornikar/eslint-config-react@8.1.2...@ornikar/eslint-config-react@8.2.0) (2019-04-17)
+
+
+### Features
+
+* ignore decorators in snapshots [no issue] ([#146](https://github.com/ornikar/shared-configs/issues/146)) ([c792ee9](https://github.com/ornikar/shared-configs/commit/c792ee9))
+
+
+
+
+
 ## [8.1.2](https://github.com/ornikar/shared-configs/compare/@ornikar/eslint-config-react@8.1.1...@ornikar/eslint-config-react@8.1.2) (2019-04-15)
 
 
