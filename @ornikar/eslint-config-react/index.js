@@ -31,6 +31,6 @@ module.exports = {
     'react/jsx-filename-extension': ['error', { extensions: ['js'] }],
 
     'react-hooks/rules-of-hooks': 'error',
-    'react-hooks/exhaustive-deps': 'error'
+    'react-hooks/exhaustive-deps': 'error',
   },
 };
