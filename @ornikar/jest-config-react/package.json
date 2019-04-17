@@ -21,5 +21,8 @@
     "enzyme-adapter-react-16": "1.12.1",
     "enzyme-to-json": "3.3.5",
     "identity-obj-proxy": "3.0.0"
+  },
+  "devDependencies": {
+    "react": "16.8.6"
   }
 }
