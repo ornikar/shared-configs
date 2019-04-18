@@ -16,6 +16,6 @@ module.exports = {
     'order/order': ['declarations', 'rules', 'at-rules'],
 
     // https://stylelint.io/user-guide/rules/comment-word-blacklist/
-    'comment-word-blacklist': ['console.log'],
+    'comment-word-blacklist': ['/^TODO:/', '/^FIXME:/'],
   },
 };
