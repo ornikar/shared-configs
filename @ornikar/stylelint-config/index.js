@@ -14,5 +14,8 @@ module.exports = {
     'no-descending-specificity': null,
 
     'order/order': ['declarations', 'rules', 'at-rules'],
+
+    // https://stylelint.io/user-guide/rules/comment-word-blacklist/
+    'comment-word-blacklist': ['console.log'],
   },
 };
