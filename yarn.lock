@@ -7560,10 +7560,10 @@ yarn-deduplicate@^1.1.1:
     commander "^2.10.0"
     semver "^5.3.0"
 
-yarn-update-lock@0.5.0:
-  version "0.5.0"
-  resolved "https://registry.yarnpkg.com/yarn-update-lock/-/yarn-update-lock-0.5.0.tgz#0bde30b3a72ad47fd2d7fff86ab788df302439dc"
-  integrity sha512-O9Fq2XM6JVcSU6WVHQEOv+mRkJc04YiWUNYQva+rL4qQxLH3YTr2fcDUqSuUG+YUUqrfpQnS/xCY61iiKeFmOA==
+yarn-update-lock@0.6.0:
+  version "0.6.0"
+  resolved "https://registry.yarnpkg.com/yarn-update-lock/-/yarn-update-lock-0.6.0.tgz#fcbdf330d1a7e12ea6da6599f0daee7d0d1214f3"
+  integrity sha512-1zbGhHSphZze+blavFqv4jDpXAB9d9nEC1OrvLrAwcbxk8s91DS9JFfDdrGhw830UDPbNst4n2+9SGYB7TGULg==
   dependencies:
     yarn-deduplicate "^1.1.1"
 
