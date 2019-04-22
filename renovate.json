@@ -1,3 +1,8 @@
 {
-  "extends": ["config:js-lib", "@ornikar"]
+  "extends": [
+    "config:js-lib",
+    "@ornikar",
+    ":masterIssue",
+    ":masterIssueApproval"
+  ]
 }
