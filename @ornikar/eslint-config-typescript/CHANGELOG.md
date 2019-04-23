@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [8.1.0](https://github.com/ornikar/shared-configs/compare/@ornikar/eslint-config-typescript@8.0.7...@ornikar/eslint-config-typescript@8.1.0) (2019-04-23)
+
+
+### Features
+
+* explicit-member-accessibility to no-public ([#138](https://github.com/ornikar/shared-configs/issues/138)) ([03079ab](https://github.com/ornikar/shared-configs/commit/03079ab))
+
+
+
+
+
 ## [8.0.7](https://github.com/ornikar/shared-configs/compare/@ornikar/eslint-config-typescript@8.0.6...@ornikar/eslint-config-typescript@8.0.7) (2019-04-15)
 
 **Note:** Version bump only for package @ornikar/eslint-config-typescript
