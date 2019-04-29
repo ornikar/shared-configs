@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.6.0](https://github.com/ornikar/shared-configs/compare/@ornikar/renovate-config@1.5.1...@ornikar/renovate-config@1.6.0) (2019-04-29)
+
+
+### Features
+
+* enable master issue in renovate preset ([#161](https://github.com/ornikar/shared-configs/issues/161)) ([76021c7](https://github.com/ornikar/shared-configs/commit/76021c7))
+
+
+
+
+
 ## [1.5.1](https://github.com/ornikar/shared-configs/compare/@ornikar/renovate-config@1.5.0...@ornikar/renovate-config@1.5.1) (2019-04-02)
 
 

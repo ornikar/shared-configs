@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.8.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@1.7.1...@ornikar/jest-config-react@1.8.0) (2019-04-29)
+
+
+### Features
+
+* add option to ignore all decorators ([#162](https://github.com/ornikar/shared-configs/issues/162)) ([7c4f77b](https://github.com/ornikar/shared-configs/commit/7c4f77b))
+* support storybook-react-router [no issue] ([#160](https://github.com/ornikar/shared-configs/issues/160)) ([fbab5d0](https://github.com/ornikar/shared-configs/commit/fbab5d0))
+
+
+
+
+
 ## [1.7.1](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@1.7.0...@ornikar/jest-config-react@1.7.1) (2019-04-29)
 
 **Note:** Version bump only for package @ornikar/jest-config-react
