@@ -51,13 +51,16 @@ exports.storiesOf = groupName => {
     add(storyName, story, storyParameters = {}) {
       const parameters = Object.assign({}, localParameters, storyParameters);
       const { jest } = parameters;
-      const { componentToTest, ignore } = jest || {};
+      const { componentToTest, ignore, ignoreDecorators } = jest || {};
 
       if (ignore) return api;
 
       describe(groupName, () => {
         it(storyName, () => {
-          if (localDecorators.length === 0 && !componentToTest) {
+          if (
+            (localDecorators.length === 0 || ignoreDecorators) &&
+            !componentToTest
+          ) {
             expect(
               shallowToJson(shallow(story(parameters), shallowOptions))
             ).toMatchSnapshot();
@@ -65,12 +68,14 @@ exports.storiesOf = groupName => {
           }
 
           const wrapper = shallow(
-            decorateStory(
-              story,
-              componentToTest
-                ? localDecorators
-                : [jestWrapperDecorator, ...localDecorators]
-            )(parameters),
+            ignoreDecorators
+              ? story(parameters)
+              : decorateStory(
+                  story,
+                  componentToTest
+                    ? localDecorators
+                    : [jestWrapperDecorator, ...localDecorators]
+                )(parameters),
             shallowOptions
           );
 
