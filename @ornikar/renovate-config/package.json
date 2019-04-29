@@ -13,11 +13,10 @@
       "schedule": "every 2 week of the year starting on the 2nd week of the year on Monday before 5:00am",
       "prHourlyLimit": 0,
       "prConcurrentLimit": 40,
+      "masterIssue": true,
       "rebaseStalePrs": true,
       "updateNotScheduled": false,
-      "postUpdateOptions": [
-        "yarnDedupeHighest"
-      ],
+      "postUpdateOptions": ["yarnDedupeHighest"],
       "packageRules": [
         {
           "groupName": "Shared Configs Ornikar",
@@ -32,28 +31,17 @@
             "@ornikar/stylelint-config"
           ],
           "rebaseStalePrs": false,
-          "schedule": [
-            "at any time"
-          ]
+          "schedule": ["at any time"]
         },
         {
-          "packagePatterns": [
-            "^@ornikar"
-          ],
+          "packagePatterns": ["^@ornikar"],
           "rebaseStalePrs": false,
-          "schedule": [
-            "at any time"
-          ]
+          "schedule": ["at any time"]
         },
         {
           "groupName": "eslint packages",
-          "packageNames": [
-            "babel-eslint",
-            "prettier"
-          ],
-          "packagePatterns": [
-            "^eslint"
-          ],
+          "packageNames": ["babel-eslint", "prettier"],
+          "packagePatterns": ["^eslint"],
           "automerge": true,
           "major": {
             "automerge": false
@@ -61,18 +49,12 @@
         },
         {
           "groupName": "babel community packages",
-          "excludePackageNames": [
-            "babel-eslint"
-          ],
-          "packagePatterns": [
-            "^babel"
-          ]
+          "excludePackageNames": ["babel-eslint"],
+          "packagePatterns": ["^babel"]
         },
         {
           "groupName": "rollup packages",
-          "packagePatterns": [
-            "^rollup"
-          ]
+          "packagePatterns": ["^rollup"]
         }
       ]
     }
