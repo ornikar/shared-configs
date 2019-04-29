@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.1.0](https://github.com/ornikar/shared-configs/compare/@ornikar/stylelint-config@3.0.2...@ornikar/stylelint-config@3.1.0) (2019-04-29)
+
+
+### Bug Fixes
+
+* **deps:** update dependency stylelint-order to v3 ([#153](https://github.com/ornikar/shared-configs/issues/153)) ([f58c6e6](https://github.com/ornikar/shared-configs/commit/f58c6e6))
+
+
+### Features
+
+* clean comments [no issue] ([#148](https://github.com/ornikar/shared-configs/issues/148)) ([32949a3](https://github.com/ornikar/shared-configs/commit/32949a3))
+
+
+
+
+
 ## [3.0.2](https://github.com/ornikar/shared-configs/compare/@ornikar/stylelint-config@3.0.1...@ornikar/stylelint-config@3.0.2) (2019-04-23)
 
 **Note:** Version bump only for package @ornikar/stylelint-config

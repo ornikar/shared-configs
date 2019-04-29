@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [8.1.0](https://github.com/ornikar/shared-configs/compare/@ornikar/eslint-config@8.0.6...@ornikar/eslint-config@8.1.0) (2019-04-29)
+
+
+### Features
+
+* clean comments [no issue] ([#148](https://github.com/ornikar/shared-configs/issues/148)) ([32949a3](https://github.com/ornikar/shared-configs/commit/32949a3))
+
+
+
+
+
 ## [8.0.6](https://github.com/ornikar/shared-configs/compare/@ornikar/eslint-config@8.0.5...@ornikar/eslint-config@8.0.6) (2019-04-15)
 
 **Note:** Version bump only for package @ornikar/eslint-config
