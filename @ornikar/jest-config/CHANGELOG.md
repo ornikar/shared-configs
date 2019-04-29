@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.1](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config@2.0.0...@ornikar/jest-config@2.0.1) (2019-04-29)
+
+
+### Bug Fixes
+
+* use new file name ([#159](https://github.com/ornikar/shared-configs/issues/159)) ([3a5ac62](https://github.com/ornikar/shared-configs/commit/3a5ac62))
+
+
+
+
+
 # [2.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config@1.3.1...@ornikar/jest-config@2.0.0) (2019-04-17)
 
 
