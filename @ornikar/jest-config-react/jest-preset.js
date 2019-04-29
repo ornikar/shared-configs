@@ -21,5 +21,8 @@ module.exports = {
   moduleNameMapper: {
     '\\.css$': 'identity-obj-proxy',
     '@storybook/react$': require.resolve('./__mocks__/@storybook/react'),
+    '@storybook/addon-knobs': require.resolve(
+      './__mocks__/@storybook/addon-knobs'
+    ),
   },
 };
