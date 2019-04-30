@@ -5,18 +5,9 @@ module.exports = {
   plugins: ['@typescript-eslint'],
 
   extends: [
-    'eslint-config-airbnb-base',
-    'eslint-config-airbnb-base/rules/strict',
+    '@ornikar/eslint-config-babel-use',
     'plugin:@typescript-eslint/recommended',
-    '@ornikar/eslint-config/plugins/filenames',
-    '@ornikar/eslint-config/plugins/prettier',
     'eslint-config-prettier/@typescript-eslint',
-    '@ornikar/eslint-config/plugins/unicorn',
-    './plugins/prefer-class-properties',
-    '@ornikar/eslint-config/rules/best-practices',
-    '@ornikar/eslint-config/rules/code-quality',
-    '@ornikar/eslint-config/rules/style',
-    '@ornikar/eslint-config/rules/expert',
   ].map(v => (v.startsWith('plugin:') ? v : require.resolve(v))),
 
   settings: {

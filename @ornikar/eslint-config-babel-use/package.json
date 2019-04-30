@@ -1,7 +1,7 @@
 {
-  "name": "@ornikar/eslint-config-typescript",
-  "version": "8.1.1",
-  "description": "eslint typescript config files",
+  "name": "@ornikar/eslint-config-babel-use",
+  "version": "1.0.0-pre",
+  "description": "eslint babel use",
   "repository": "ornikar/shared-configs",
   "main": "index.js",
   "license": "ISC",
@@ -12,10 +12,9 @@
     "access": "public"
   },
   "dependencies": {
-    "@ornikar/eslint-config-babel-use": "1.0.0-pre",
-    "@typescript-eslint/eslint-plugin": "^1.4.2",
-    "@typescript-eslint/parser": "^1.4.2",
-    "eslint-config-prettier": "^4.0.0"
+    "@ornikar/eslint-config": "^8.1.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-prefer-class-properties": "^1.0.0"
   },
   "peerDependencies": {
     "eslint": "^5.10.0"
