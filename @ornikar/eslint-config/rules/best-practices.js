@@ -6,6 +6,9 @@ module.exports = {
     'require-await': 'error',
 
     // https://eslint.org/docs/2.0.0/rules/no-warning-comments
-    'no-warning-comments': ['error', { "terms": ["todo", "fixme", "xxx", "console."], "location": "start" }],
+    'no-warning-comments': [
+      'error',
+      { terms: ['todo', 'fixme', 'xxx', 'console.'], location: 'start' },
+    ],
   },
 };
