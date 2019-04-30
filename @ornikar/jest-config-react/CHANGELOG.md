@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.9.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@1.8.0...@ornikar/jest-config-react@1.9.0) (2019-04-30)
+
+
+### Features
+
+* allow both js and ts tests [no issue] ([#164](https://github.com/ornikar/shared-configs/issues/164)) ([99feb5a](https://github.com/ornikar/shared-configs/commit/99feb5a))
+
+
+
+
+
 # [1.8.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@1.7.1...@ornikar/jest-config-react@1.8.0) (2019-04-29)
 
 
