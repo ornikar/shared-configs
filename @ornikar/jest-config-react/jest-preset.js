@@ -10,7 +10,7 @@ module.exports = {
   ...baseJestPreset,
   testMatch: [
     ...baseJestPreset.testMatch,
-    `<rootDir>/src/**/stories.${useTypescript ? 'tsx' : 'js'}`,
+    `<rootDir>/src/**/stories.${useTypescript ? '{js,tsx}' : 'js'}`,
   ],
   snapshotSerializers: ['enzyme-to-json/serializer'],
   setupFiles: [
