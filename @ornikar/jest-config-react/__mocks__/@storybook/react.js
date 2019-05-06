@@ -85,16 +85,13 @@ exports.storiesOf = groupName => {
               expect(shallowToJson(child.dive())).toMatchSnapshot();
             });
           } else {
-            let belowWrapper = true;
-            const toJsonMap = json => {
-              if (!belowWrapper) return { ...json, props: {} };
-              if (json.type === 'JestStoryWrapper') {
-                belowWrapper = false;
-              }
-              return json;
-            };
             expect(
-              shallowToJson(wrapper, { map: toJsonMap })
+              shallowToJson(
+                wrapper
+                  .find(JestStoryWrapper)
+                  .children()
+                  .shallow()
+              )
             ).toMatchSnapshot();
           }
         });
