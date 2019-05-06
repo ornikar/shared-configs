@@ -1,6 +1,6 @@
 {
   "name": "@ornikar/eslint-config",
-  "version": "8.1.0",
+  "version": "8.1.1",
   "description": "eslint config files",
   "repository": "ornikar/shared-configs",
   "main": "index.js",

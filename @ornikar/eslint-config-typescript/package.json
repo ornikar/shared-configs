@@ -1,6 +1,6 @@
 {
   "name": "@ornikar/eslint-config-typescript",
-  "version": "8.1.1",
+  "version": "8.1.2",
   "description": "eslint typescript config files",
   "repository": "ornikar/shared-configs",
   "main": "index.js",
@@ -12,7 +12,7 @@
     "access": "public"
   },
   "dependencies": {
-    "@ornikar/eslint-config-babel-use": "1.0.0-pre",
+    "@ornikar/eslint-config-babel-use": "^1.0.0",
     "@typescript-eslint/eslint-plugin": "^1.4.2",
     "@typescript-eslint/parser": "^1.4.2",
     "eslint-config-prettier": "^4.0.0"
