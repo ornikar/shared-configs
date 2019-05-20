@@ -50,7 +50,7 @@
     "eslint-plugin-prettier": "3.1.0",
     "eslint-plugin-unicorn": "8.0.2",
     "husky": "2.2.0",
-    "lerna": "3.13.4",
+    "lerna": "3.14.1",
     "lint-staged": "8.1.7",
     "prettier": "1.17.1",
     "yarn-update-lock": "1.0.0",
