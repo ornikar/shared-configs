@@ -74,6 +74,17 @@
           "packagePatterns": [
             "^rollup"
           ]
+        },
+        {
+          "packageNames": ["eslint", "husky", "lint-staged"],
+          "updateTypes": ["patch", "minor"],
+          "labels": [":soon: automerge"],
+          "schedule": ["before 5:00am"]
+        },
+        {
+          "updateTypes": ["pin"],
+          "labels": [":soon: automerge"],
+          "schedule": ["before 5:00am"]
         }
       ]
     }
