@@ -52,7 +52,7 @@
     "husky": "2.2.0",
     "lerna": "3.13.4",
     "lint-staged": "8.1.6",
-    "prettier": "1.17.0",
+    "prettier": "1.17.1",
     "yarn-update-lock": "1.0.0",
     "yarnhook": "0.4.0"
   }
