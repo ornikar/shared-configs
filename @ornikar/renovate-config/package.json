@@ -1,6 +1,6 @@
 {
   "name": "@ornikar/renovate-config",
-  "version": "1.6.0",
+  "version": "1.6.1",
   "description": "renovate shared config",
   "engines": {
     "node": ">= 8.3.0"
@@ -16,7 +16,9 @@
       "masterIssue": true,
       "rebaseStalePrs": true,
       "updateNotScheduled": false,
-      "postUpdateOptions": ["yarnDedupeHighest"],
+      "postUpdateOptions": [
+        "yarnDedupeHighest"
+      ],
       "packageRules": [
         {
           "groupName": "Shared Configs Ornikar",
@@ -31,26 +33,42 @@
             "@ornikar/stylelint-config"
           ],
           "rebaseStalePrs": false,
-          "schedule": ["at any time"]
+          "schedule": [
+            "at any time"
+          ]
         },
         {
-          "packagePatterns": ["^@ornikar"],
+          "packagePatterns": [
+            "^@ornikar"
+          ],
           "rebaseStalePrs": false,
-          "schedule": ["at any time"]
+          "schedule": [
+            "at any time"
+          ]
         },
         {
           "groupName": "eslint packages",
-          "packageNames": ["babel-eslint"],
-          "packagePatterns": ["^eslint"]
+          "packageNames": [
+            "babel-eslint"
+          ],
+          "packagePatterns": [
+            "^eslint"
+          ]
         },
         {
           "groupName": "babel community packages",
-          "excludePackageNames": ["babel-eslint"],
-          "packagePatterns": ["^babel"]
+          "excludePackageNames": [
+            "babel-eslint"
+          ],
+          "packagePatterns": [
+            "^babel"
+          ]
         },
         {
           "groupName": "rollup packages",
-          "packagePatterns": ["^rollup"]
+          "packagePatterns": [
+            "^rollup"
+          ]
         },
         {
           "packageNames": [
@@ -60,15 +78,31 @@
             "yarn-update-lock",
             "yarnhook"
           ],
-          "packagePatterns": ["^@commitlint", "^eslint"],
-          "updateTypes": ["patch", "minor"],
-          "labels": [":soon: automerge"],
-          "schedule": ["before 5:00am"]
+          "packagePatterns": [
+            "^@commitlint",
+            "^eslint"
+          ],
+          "updateTypes": [
+            "patch",
+            "minor"
+          ],
+          "labels": [
+            ":soon: automerge"
+          ],
+          "schedule": [
+            "before 5:00am"
+          ]
         },
         {
-          "updateTypes": ["pin"],
-          "labels": [":soon: automerge"],
-          "schedule": ["at any time"]
+          "updateTypes": [
+            "pin"
+          ],
+          "labels": [
+            ":soon: automerge"
+          ],
+          "schedule": [
+            "at any time"
+          ]
         }
       ]
     }

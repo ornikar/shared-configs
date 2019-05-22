@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.9.3](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@1.9.2...@ornikar/jest-config-react@1.9.3) (2019-05-22)
+
+
+### Bug Fixes
+
+* **deps:** update dependency enzyme-adapter-react-16 to v1.13.1 ([#180](https://github.com/ornikar/shared-configs/issues/180)) ([e7ef4e0](https://github.com/ornikar/shared-configs/commit/e7ef4e0))
+
+
+
+
+
 ## [1.9.2](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@1.9.1...@ornikar/jest-config-react@1.9.2) (2019-05-13)
 
 
