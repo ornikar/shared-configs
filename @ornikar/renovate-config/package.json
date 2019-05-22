@@ -19,6 +19,7 @@
       "postUpdateOptions": [
         "yarnDedupeHighest"
       ],
+      "labels": [":soon: automerge"],
       "packageRules": [
         {
           "groupName": "Shared Configs Ornikar",
