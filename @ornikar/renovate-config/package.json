@@ -19,6 +19,7 @@
       "postUpdateOptions": [
         "yarnDedupeHighest"
       ],
+      "labels": [":soon: automerge"],
       "packageRules": [
         {
           "groupName": "Shared Configs Ornikar",
@@ -87,7 +88,7 @@
             "minor"
           ],
           "labels": [
-            ":soon: automerge"
+            ":ok_hand: code/approved"
           ],
           "schedule": [
             "before 5:00am"
@@ -98,7 +99,7 @@
             "pin"
           ],
           "labels": [
-            ":soon: automerge"
+            ":ok_hand: code/approved"
           ],
           "schedule": [
             "at any time"
