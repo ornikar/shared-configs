@@ -90,7 +90,8 @@
             "minor"
           ],
           "labels": [
-            ":ok_hand: code/approved"
+            ":ok_hand: code/approved",
+            ":soon: automerge"
           ],
           "schedule": [
             "before 5:00am"
@@ -101,7 +102,8 @@
             "pin"
           ],
           "labels": [
-            ":ok_hand: code/approved"
+            ":ok_hand: code/approved",
+            ":soon: automerge"
           ],
           "schedule": [
             "at any time"
