@@ -1,6 +1,6 @@
 {
   "name": "@ornikar/renovate-config",
-  "version": "1.6.1",
+  "version": "1.7.0",
   "description": "renovate shared config",
   "engines": {
     "node": ">= 8.3.0"
@@ -19,7 +19,9 @@
       "postUpdateOptions": [
         "yarnDedupeHighest"
       ],
-      "labels": [":soon: automerge"],
+      "labels": [
+        ":soon: automerge"
+      ],
       "packageRules": [
         {
           "groupName": "Shared Configs Ornikar",

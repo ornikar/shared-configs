@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.7.0](https://github.com/ornikar/shared-configs/compare/@ornikar/renovate-config@1.6.1...@ornikar/renovate-config@1.7.0) (2019-05-25)
+
+
+### Features
+
+* renovate labels config [no issue] ([#184](https://github.com/ornikar/shared-configs/issues/184)) ([5c0e4f3](https://github.com/ornikar/shared-configs/commit/5c0e4f3))
+
+
+
+
+
 ## [1.6.1](https://github.com/ornikar/shared-configs/compare/@ornikar/renovate-config@1.6.0...@ornikar/renovate-config@1.6.1) (2019-05-22)
 
 **Note:** Version bump only for package @ornikar/renovate-config
