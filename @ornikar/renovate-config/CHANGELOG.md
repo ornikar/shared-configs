@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.8.0](https://github.com/ornikar/shared-configs/compare/@ornikar/renovate-config@1.7.0...@ornikar/renovate-config@1.8.0) (2019-05-25)
+
+
+### Features
+
+* renovate add missing label automerge ([#186](https://github.com/ornikar/shared-configs/issues/186)) ([a84f7cc](https://github.com/ornikar/shared-configs/commit/a84f7cc))
+
+
+
+
+
 # [1.7.0](https://github.com/ornikar/shared-configs/compare/@ornikar/renovate-config@1.6.1...@ornikar/renovate-config@1.7.0) (2019-05-25)
 
 
