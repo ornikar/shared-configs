@@ -1,0 +1,11 @@
+{
+  "name": "@ornikar/package-scripts",
+  "version": "1.8.0",
+  "description": "ornikar package scripts",
+  "engines": {
+    "node": ">= 8.3.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
