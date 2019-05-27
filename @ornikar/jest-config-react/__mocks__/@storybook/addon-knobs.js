@@ -1,6 +1,6 @@
 'use strict';
 
-const decorator = getStory => getStory();
+const decorator = (getStory) => getStory();
 
 exports.withKnobs = (...args) => {
   // Used without options as .addDecorator(decorator)
