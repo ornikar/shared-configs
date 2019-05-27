@@ -1,6 +1,6 @@
 {
   "name": "@ornikar/renovate-config",
-  "version": "1.6.1",
+  "version": "1.8.0",
   "description": "renovate shared config",
   "engines": {
     "node": ">= 8.3.0"
@@ -21,6 +21,9 @@
       ],
       "prBodyNotes": [
         "<!-- do not edit after this -->This will be auto filled by reviewflow.<!-- end - don't add anything after this -->"
+      ],
+      "labels": [
+        ":soon: automerge"
       ],
       "packageRules": [
         {
@@ -90,6 +93,7 @@
             "minor"
           ],
           "labels": [
+            ":ok_hand: code/approved",
             ":soon: automerge"
           ],
           "schedule": [
@@ -101,6 +105,7 @@
             "pin"
           ],
           "labels": [
+            ":ok_hand: code/approved",
             ":soon: automerge"
           ],
           "schedule": [
