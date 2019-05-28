@@ -1,0 +1,20 @@
+{
+  "name": "@ornikar/prettier-config",
+  "version": "1.0.0-pre",
+  "description": "prettier config files",
+  "repository": "ornikar/shared-configs",
+  "main": "index.js",
+  "license": "ISC",
+  "engines": {
+    "node": ">= 8.3.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "peerDependencies": {
+    "prettier": "^1.15.3"
+  },
+  "devDependencies": {
+    "prettier": "1.17.1"
+  }
+}

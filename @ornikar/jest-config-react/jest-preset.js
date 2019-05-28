@@ -8,10 +8,7 @@ const useTypescript = fs.existsSync(path.resolve('tsconfig.json'));
 
 module.exports = {
   ...baseJestPreset,
-  testMatch: [
-    ...baseJestPreset.testMatch,
-    `<rootDir>/src/**/stories.${useTypescript ? '{js,tsx}' : 'js'}`,
-  ],
+  testMatch: [...baseJestPreset.testMatch, `<rootDir>/src/**/stories.${useTypescript ? '{js,tsx}' : 'js'}`],
   snapshotSerializers: ['enzyme-to-json/serializer'],
   setupFiles: [
     ...baseJestPreset.setupFiles.slice(0, -1),
@@ -21,11 +18,7 @@ module.exports = {
   moduleNameMapper: {
     '\\.css$': 'identity-obj-proxy',
     '@storybook/react$': require.resolve('./__mocks__/@storybook/react'),
-    '@storybook/addon-knobs': require.resolve(
-      './__mocks__/@storybook/addon-knobs'
-    ),
-    'storybook-react-router': require.resolve(
-      './__mocks__/storybook-react-router'
-    ),
+    '@storybook/addon-knobs': require.resolve('./__mocks__/@storybook/addon-knobs'),
+    'storybook-react-router': require.resolve('./__mocks__/storybook-react-router'),
   },
 };

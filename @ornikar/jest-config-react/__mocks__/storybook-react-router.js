@@ -1,5 +1,5 @@
 'use strict';
 
 module.exports = () => {
-  return storyFn => storyFn();
+  return (storyFn) => storyFn();
 };

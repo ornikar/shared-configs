@@ -17,32 +17,28 @@ const decorateStory = (storyFn, decorators) =>
               context,
               p,
               {
-                parameters: Object.assign(
-                  context.parameters || {},
-                  p.parameters
-                ),
+                parameters: Object.assign(context.parameters || {}, p.parameters),
               },
-              { options: Object.assign(context.options || {}, p.options) }
-            )
+              { options: Object.assign(context.options || {}, p.options) },
+            ),
           ),
-        context
+        context,
       ),
-    storyFn
+    storyFn,
   );
 
 // Mocked version of `import { action } from '@storybook/react'`.
-exports.action = actionName => jest.fn();
+exports.action = (actionName) => jest.fn();
 
 const shallowOptions = {
   disableLifecycleMethods: true,
 };
 
 const JestStoryWrapper = ({ children }) => children;
-const jestWrapperDecorator = storyFn =>
-  React.createElement(JestStoryWrapper, {}, storyFn());
+const jestWrapperDecorator = (storyFn) => React.createElement(JestStoryWrapper, {}, storyFn());
 
 // Mocked version of: `import { storiesOf } from '@storybook/react'`
-exports.storiesOf = groupName => {
+exports.storiesOf = (groupName) => {
   const localDecorators = [];
   const localParameters = {};
 
@@ -57,31 +53,23 @@ exports.storiesOf = groupName => {
 
       describe(groupName, () => {
         it(storyName, () => {
-          if (
-            (localDecorators.length === 0 || ignoreDecorators) &&
-            !componentToTest
-          ) {
-            expect(
-              shallowToJson(shallow(story(parameters), shallowOptions))
-            ).toMatchSnapshot();
+          if ((localDecorators.length === 0 || ignoreDecorators) && !componentToTest) {
+            expect(shallowToJson(shallow(story(parameters), shallowOptions))).toMatchSnapshot();
             return;
           }
 
           const wrapper = shallow(
             ignoreDecorators
               ? story(parameters)
-              : decorateStory(
-                  story,
-                  componentToTest
-                    ? localDecorators
-                    : [jestWrapperDecorator, ...localDecorators]
-                )(parameters),
-            shallowOptions
+              : decorateStory(story, componentToTest ? localDecorators : [jestWrapperDecorator, ...localDecorators])(
+                  parameters,
+                ),
+            shallowOptions,
           );
 
           if (componentToTest) {
             const component = wrapper.find(componentToTest);
-            component.forEach(child => {
+            component.forEach((child) => {
               expect(shallowToJson(child.dive())).toMatchSnapshot();
             });
           } else {
@@ -90,8 +78,8 @@ exports.storiesOf = groupName => {
                 wrapper
                   .find(JestStoryWrapper)
                   .children()
-                  .shallow()
-              )
+                  .shallow(),
+              ),
             ).toMatchSnapshot();
           }
         });

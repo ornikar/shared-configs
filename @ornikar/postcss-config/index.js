@@ -13,10 +13,8 @@ Notes:
 
 exports.syntaxPlugins = () => [require('postcss-nested')];
 
-exports.themePlugin = customPropertiesOptions =>
-  require('postcss-custom-properties')(customPropertiesOptions);
+exports.themePlugin = (customPropertiesOptions) => require('postcss-custom-properties')(customPropertiesOptions);
 
-exports.customMediaPlugin = customMediaOptions =>
-  require('postcss-custom-media')(customMediaOptions);
+exports.customMediaPlugin = (customMediaOptions) => require('postcss-custom-media')(customMediaOptions);
 
 exports.autoprefixerPlugin = () => require('autoprefixer');

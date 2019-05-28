@@ -8,7 +8,7 @@ module.exports = {
     '@ornikar/eslint-config-babel-use',
     'plugin:@typescript-eslint/recommended',
     'eslint-config-prettier/@typescript-eslint',
-  ].map(v => (v.startsWith('plugin:') ? v : require.resolve(v))),
+  ].map((v) => (v.startsWith('plugin:') ? v : require.resolve(v))),
 
   settings: {
     'import/resolver': {
@@ -43,9 +43,6 @@ module.exports = {
 
     // https://github.com/typescript-eslint/typescript-eslint/issues/201
     // private is comming in js world and no-public will be the most common way to read a js file (and probably ts)
-    '@typescript-eslint/explicit-member-accessibility': [
-      'error',
-      { accessibility: 'no-public' },
-    ],
+    '@typescript-eslint/explicit-member-accessibility': ['error', { accessibility: 'no-public' }],
   },
 };
