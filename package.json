@@ -40,7 +40,7 @@
     "eslint-plugin-node": "9.1.0",
     "eslint-plugin-prettier": "3.1.0",
     "eslint-plugin-unicorn": "8.0.2",
-    "husky": "2.3.0",
+    "husky": "2.4.0",
     "lerna": "3.14.1",
     "lint-staged": "8.1.7",
     "prettier": "1.18.2",
