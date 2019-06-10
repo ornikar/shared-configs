@@ -12,9 +12,9 @@
     "access": "public"
   },
   "dependencies": {
-    "@commitlint/config-conventional": "^7.1.2"
+    "@commitlint/config-conventional": "^8.0.0"
   },
   "peerDependencies": {
-    "@commitlint/cli": "^7.0.0"
+    "@commitlint/cli": "^8.0.0"
   }
 }
