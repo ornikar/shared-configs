@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.9.0](https://github.com/ornikar/shared-configs/compare/@ornikar/renovate-config@1.8.0...@ornikar/renovate-config@1.9.0) (2019-06-10)
+
+
+### Features
+
+* add reviewflow infos in renovate prs [no issue] ([#183](https://github.com/ornikar/shared-configs/issues/183)) ([eec46fd](https://github.com/ornikar/shared-configs/commit/eec46fd))
+
+
+
+
+
 # [1.8.0](https://github.com/ornikar/shared-configs/compare/@ornikar/renovate-config@1.7.0...@ornikar/renovate-config@1.8.0) (2019-05-25)
 
 
