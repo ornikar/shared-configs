@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [8.2.1](https://github.com/ornikar/shared-configs/compare/@ornikar/eslint-config@8.2.0...@ornikar/eslint-config@8.2.1) (2019-06-10)
+
+
+### Bug Fixes
+
+* disable prefer-event-key rule ([#201](https://github.com/ornikar/shared-configs/issues/201)) ([2949e58](https://github.com/ornikar/shared-configs/commit/2949e58))
+
+
+
+
+
 # [8.2.0](https://github.com/ornikar/shared-configs/compare/@ornikar/eslint-config@8.1.3...@ornikar/eslint-config@8.2.0) (2019-06-10)
 
 
