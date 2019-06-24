@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.2.1](https://github.com/ornikar/shared-configs/compare/@ornikar/postcss-config@2.2.0...@ornikar/postcss-config@2.2.1) (2019-06-24)
+
+
+### Bug Fixes
+
+* **deps:** update dependency postcss-custom-properties to v9 ([#207](https://github.com/ornikar/shared-configs/issues/207)) ([fcf81a0](https://github.com/ornikar/shared-configs/commit/fcf81a0))
+
+
+
+
+
 # [2.2.0](https://github.com/ornikar/shared-configs/compare/@ornikar/postcss-config@2.1.0...@ornikar/postcss-config@2.2.0) (2019-06-10)
 
 
