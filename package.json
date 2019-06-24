@@ -42,7 +42,7 @@
     "eslint-plugin-unicorn": "9.1.1",
     "husky": "2.4.1",
     "lerna": "3.15.0",
-    "lint-staged": "8.2.0",
+    "lint-staged": "8.2.1",
     "prettier": "1.18.2",
     "yarn-update-lock": "1.0.0",
     "yarnhook": "0.4.1"
