@@ -13,12 +13,12 @@
   },
   "dependencies": {
     "@ornikar/eslint-config-react": "^8.2.7",
-    "eslint-config-prettier": "^4.0.0"
+    "eslint-config-prettier": "^5.0.0"
   },
   "peerDependencies": {
-    "eslint": "^5.10.0"
+    "eslint": "^5.10.0 || ^6.0.0"
   },
   "devDependencies": {
-    "eslint": "5.16.0"
+    "eslint": "6.0.0"
   }
 }
