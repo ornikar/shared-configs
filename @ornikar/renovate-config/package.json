@@ -67,6 +67,11 @@
           "updateTypes": ["pin"],
           "labels": [":ok_hand: code/approved", ":soon: automerge"],
           "schedule": ["at any time"]
+        },
+        {
+          "updateTypes": ["major"],
+          "schedule": ["at any time"],
+          "masterIssueApproval": true
         }
       ]
     }
