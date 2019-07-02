@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.10.0](https://github.com/ornikar/shared-configs/compare/@ornikar/renovate-config@1.9.0...@ornikar/renovate-config@1.10.0) (2019-07-02)
+
+
+### Bug Fixes
+
+* raise renovate scheduled to every week on monday ([#208](https://github.com/ornikar/shared-configs/issues/208)) ([a5dce58](https://github.com/ornikar/shared-configs/commit/a5dce58))
+
+
+### Features
+
+* enable master issue approval for majors [no issue] ([#211](https://github.com/ornikar/shared-configs/issues/211)) ([21fddf4](https://github.com/ornikar/shared-configs/commit/21fddf4))
+
+
+
+
+
 # [1.9.0](https://github.com/ornikar/shared-configs/compare/@ornikar/renovate-config@1.8.0...@ornikar/renovate-config@1.9.0) (2019-06-10)
 
 
