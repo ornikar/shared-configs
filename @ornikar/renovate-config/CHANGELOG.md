@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.11.0](https://github.com/ornikar/shared-configs/compare/@ornikar/renovate-config@1.10.0...@ornikar/renovate-config@1.11.0) (2019-07-08)
+
+
+### Features
+
+* renovate automerge types [no issue] ([#215](https://github.com/ornikar/shared-configs/issues/215)) ([e86f8ea](https://github.com/ornikar/shared-configs/commit/e86f8ea))
+
+
+
+
+
 # [1.10.0](https://github.com/ornikar/shared-configs/compare/@ornikar/renovate-config@1.9.0...@ornikar/renovate-config@1.10.0) (2019-07-02)
 
 

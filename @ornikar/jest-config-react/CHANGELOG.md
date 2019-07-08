@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.10.2](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@1.10.1...@ornikar/jest-config-react@1.10.2) (2019-07-08)
+
+
+### Bug Fixes
+
+* jest use shallow wrappingComponent [no issue] ([#171](https://github.com/ornikar/shared-configs/issues/171)) ([2c0ce37](https://github.com/ornikar/shared-configs/commit/2c0ce37))
+
+
+
+
+
 ## [1.10.1](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@1.10.0...@ornikar/jest-config-react@1.10.1) (2019-07-02)
 
 
