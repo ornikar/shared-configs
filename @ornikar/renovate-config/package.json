@@ -1,6 +1,6 @@
 {
   "name": "@ornikar/renovate-config",
-  "version": "1.9.0",
+  "version": "1.10.0",
   "description": "renovate shared config",
   "engines": {
     "node": ">= 8.3.0"
@@ -10,21 +10,17 @@
   },
   "renovate-config": {
     "default": {
-      "schedule": "every 2 week of the year starting on the 2nd week of the year on Monday before 5:00am",
+      "schedule": "before 5am on Monday",
       "prHourlyLimit": 0,
       "prConcurrentLimit": 40,
       "masterIssue": true,
       "rebaseStalePrs": true,
       "updateNotScheduled": false,
-      "postUpdateOptions": [
-        "yarnDedupeHighest"
-      ],
+      "postUpdateOptions": ["yarnDedupeHighest"],
       "prBodyNotes": [
         "<!-- do not edit after this -->This will be auto filled by reviewflow.<!-- end - don't add anything after this -->"
       ],
-      "labels": [
-        ":soon: automerge"
-      ],
+      "labels": [":soon: automerge"],
       "packageRules": [
         {
           "groupName": "Shared Configs Ornikar",
@@ -39,78 +35,43 @@
             "@ornikar/stylelint-config"
           ],
           "rebaseStalePrs": false,
-          "schedule": [
-            "at any time"
-          ]
+          "schedule": ["at any time"]
         },
         {
-          "packagePatterns": [
-            "^@ornikar"
-          ],
+          "packagePatterns": ["^@ornikar"],
           "rebaseStalePrs": false,
-          "schedule": [
-            "at any time"
-          ]
+          "schedule": ["at any time"]
         },
         {
           "groupName": "eslint packages",
-          "packageNames": [
-            "babel-eslint"
-          ],
-          "packagePatterns": [
-            "^eslint"
-          ]
+          "packageNames": ["babel-eslint"],
+          "packagePatterns": ["^eslint"]
         },
         {
           "groupName": "babel community packages",
-          "excludePackageNames": [
-            "babel-eslint"
-          ],
-          "packagePatterns": [
-            "^babel"
-          ]
+          "excludePackageNames": ["babel-eslint"],
+          "packagePatterns": ["^babel"]
         },
         {
           "groupName": "rollup packages",
-          "packagePatterns": [
-            "^rollup"
-          ]
+          "packagePatterns": ["^rollup"]
         },
         {
-          "packageNames": [
-            "husky",
-            "lint-staged",
-            "prettier",
-            "yarn-update-lock",
-            "yarnhook"
-          ],
-          "packagePatterns": [
-            "^@commitlint",
-            "^eslint"
-          ],
-          "updateTypes": [
-            "patch",
-            "minor"
-          ],
-          "labels": [
-            ":ok_hand: code/approved",
-            ":soon: automerge"
-          ],
-          "schedule": [
-            "before 5:00am"
-          ]
+          "packageNames": ["husky", "lint-staged", "prettier", "yarn-update-lock", "yarnhook"],
+          "packagePatterns": ["^@commitlint", "^eslint", "^@types"],
+          "updateTypes": ["patch", "minor"],
+          "labels": [":ok_hand: code/approved", ":soon: automerge"],
+          "schedule": ["before 5:00am"]
         },
         {
-          "updateTypes": [
-            "pin"
-          ],
-          "labels": [
-            ":ok_hand: code/approved",
-            ":soon: automerge"
-          ],
-          "schedule": [
-            "at any time"
-          ]
+          "updateTypes": ["pin"],
+          "labels": [":ok_hand: code/approved", ":soon: automerge"],
+          "schedule": ["at any time"]
+        },
+        {
+          "updateTypes": ["major"],
+          "schedule": ["at any time"],
+          "masterIssueApproval": true
         }
       ]
     }

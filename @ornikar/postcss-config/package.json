@@ -1,6 +1,6 @@
 {
   "name": "@ornikar/postcss-config",
-  "version": "2.2.0",
+  "version": "2.2.1",
   "description": "postcss config files",
   "repository": "ornikar/shared-configs",
   "main": "index.js",
@@ -14,7 +14,7 @@
   "dependencies": {
     "autoprefixer": "^9.4.3",
     "postcss-custom-media": "^7.0.7",
-    "postcss-custom-properties": "^8.0.9",
+    "postcss-custom-properties": "^9.0.0",
     "postcss-nested": "^4.1.1"
   },
   "peerDependencies": {

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.10.1](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@1.10.0...@ornikar/jest-config-react@1.10.1) (2019-07-02)
+
+
+### Bug Fixes
+
+* add storyname to parameters ([#213](https://github.com/ornikar/shared-configs/issues/213)) ([6c02a00](https://github.com/ornikar/shared-configs/commit/6c02a00))
+
+
+
+
+
 # [1.10.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@1.9.4...@ornikar/jest-config-react@1.10.0) (2019-06-10)
 
 

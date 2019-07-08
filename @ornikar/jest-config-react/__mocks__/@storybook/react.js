@@ -37,7 +37,7 @@ exports.storiesOf = (groupName) => {
   // Mocked API to generate tests from & snapshot stories.
   const api = {
     add(storyName, story, storyParameters = {}) {
-      const parameters = Object.assign({}, localParameters, storyParameters);
+      const parameters = Object.assign({ name: storyName }, localParameters, storyParameters);
       const { jest } = parameters;
       const { componentToTest, ignore, ignoreDecorators } = jest || {};
 

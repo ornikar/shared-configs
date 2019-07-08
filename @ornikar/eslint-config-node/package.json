@@ -1,6 +1,6 @@
 {
   "name": "@ornikar/eslint-config-node",
-  "version": "8.0.3",
+  "version": "8.0.4",
   "description": "eslint node config files",
   "repository": "ornikar/shared-configs",
   "main": "index.js",
@@ -16,9 +16,9 @@
     "eslint-plugin-unicorn": "^9.0.0"
   },
   "peerDependencies": {
-    "eslint": "^5.10.0"
+    "eslint": "^5.10.0 || ^6.0.0"
   },
   "devDependencies": {
-    "eslint": "5.16.0"
+    "eslint": "6.0.0"
   }
 }
