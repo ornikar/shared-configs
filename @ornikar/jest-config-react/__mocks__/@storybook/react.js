@@ -47,8 +47,7 @@ exports.storiesOf = (groupName) => {
         it(storyName, () => {
           const wrappingComponent = ignoreDecorators
             ? undefined
-            : ({ children }) =>
-                decorateStory(() => children, localDecorators)(parameters);
+            : ({ children }) => decorateStory(() => children, localDecorators)(parameters);
 
           const wrapper = shallow(story(parameters), {
             disableLifecycleMethods: true,
