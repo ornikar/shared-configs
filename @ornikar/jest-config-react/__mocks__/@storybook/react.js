@@ -2,7 +2,6 @@
 
 'use strict';
 
-const React = require('react');
 const { shallow } = require('enzyme');
 const { shallowToJson } = require('enzyme-to-json');
 
@@ -30,13 +29,6 @@ const decorateStory = (storyFn, decorators) =>
 // Mocked version of `import { action } from '@storybook/react'`.
 exports.action = (actionName) => jest.fn();
 
-const shallowOptions = {
-  disableLifecycleMethods: true,
-};
-
-const JestStoryWrapper = ({ children }) => children;
-const jestWrapperDecorator = (storyFn) => React.createElement(JestStoryWrapper, {}, storyFn());
-
 // Mocked version of: `import { storiesOf } from '@storybook/react'`
 exports.storiesOf = (groupName) => {
   const localDecorators = [];
@@ -53,19 +45,14 @@ exports.storiesOf = (groupName) => {
 
       describe(groupName, () => {
         it(storyName, () => {
-          if ((localDecorators.length === 0 || ignoreDecorators) && !componentToTest) {
-            expect(shallowToJson(shallow(story(parameters), shallowOptions))).toMatchSnapshot();
-            return;
-          }
+          const wrappingComponent = ignoreDecorators
+            ? undefined
+            : ({ children }) => decorateStory(() => children, localDecorators)(parameters);
 
-          const wrapper = shallow(
-            ignoreDecorators
-              ? story(parameters)
-              : decorateStory(story, componentToTest ? localDecorators : [jestWrapperDecorator, ...localDecorators])(
-                  parameters,
-                ),
-            shallowOptions,
-          );
+          const wrapper = shallow(story(parameters), {
+            disableLifecycleMethods: true,
+            wrappingComponent,
+          });
 
           if (componentToTest) {
             const component = wrapper.find(componentToTest);
@@ -73,14 +60,7 @@ exports.storiesOf = (groupName) => {
               expect(shallowToJson(child.dive())).toMatchSnapshot();
             });
           } else {
-            expect(
-              shallowToJson(
-                wrapper
-                  .find(JestStoryWrapper)
-                  .children()
-                  .shallow(),
-              ),
-            ).toMatchSnapshot();
+            expect(shallowToJson(wrapper)).toMatchSnapshot();
           }
         });
       });
