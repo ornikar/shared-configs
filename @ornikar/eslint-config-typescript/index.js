@@ -44,5 +44,15 @@ module.exports = {
     // https://github.com/typescript-eslint/typescript-eslint/issues/201
     // private is comming in js world and no-public will be the most common way to read a js file (and probably ts)
     '@typescript-eslint/explicit-member-accessibility': ['error', { accessibility: 'no-public' }],
+
+    '@typescript-eslint/ban-types': [
+      'error',
+      {
+        types: {
+          Omit:
+            'Prefer `Except` from type-fest. https://github.com/sindresorhus/type-fest/blob/master/source/except.d.ts',
+        },
+      },
+    ],
   },
 };
