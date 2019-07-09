@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [8.3.0](https://github.com/ornikar/shared-configs/compare/@ornikar/eslint-config-typescript@8.2.2...@ornikar/eslint-config-typescript@8.3.0) (2019-07-09)
+
+
+### Features
+
+* ban typescript Omit type [no issue] ([#218](https://github.com/ornikar/shared-configs/issues/218)) ([1596967](https://github.com/ornikar/shared-configs/commit/1596967))
+
+
+
+
+
 ## [8.2.2](https://github.com/ornikar/shared-configs/compare/@ornikar/eslint-config-typescript@8.2.1...@ornikar/eslint-config-typescript@8.2.2) (2019-06-24)
 
 **Note:** Version bump only for package @ornikar/eslint-config-typescript
