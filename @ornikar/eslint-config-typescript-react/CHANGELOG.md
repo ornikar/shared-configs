@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [8.1.0](https://github.com/ornikar/shared-configs/compare/@ornikar/eslint-config-typescript-react@8.0.16...@ornikar/eslint-config-typescript-react@8.1.0) (2019-07-15)
+
+
+### Features
+
+* disable prop types rule in eslint ts config ([#222](https://github.com/ornikar/shared-configs/issues/222)) ([fd8c6b9](https://github.com/ornikar/shared-configs/commit/fd8c6b9))
+
+
+
+
+
 ## [8.0.16](https://github.com/ornikar/shared-configs/compare/@ornikar/eslint-config-typescript-react@8.0.15...@ornikar/eslint-config-typescript-react@8.0.16) (2019-06-24)
 
 **Note:** Version bump only for package @ornikar/eslint-config-typescript-react
