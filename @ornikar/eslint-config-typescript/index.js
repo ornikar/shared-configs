@@ -39,10 +39,6 @@ module.exports = {
     // for example props can extends other props without setting new ones
     '@typescript-eslint/no-empty-interface': 'off',
 
-    // type annotations are allowed on the variable of a function expression rather than on the function directly
-    // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/explicit-function-return-type.md#allowtypedfunctionexpressions
-    '@typescript-eslint/explicit-function-return-type': ['error', { allowTypedFunctionExpressions: true }],
-
     /* changed rules */
 
     // https://github.com/typescript-eslint/typescript-eslint/issues/201
@@ -58,5 +54,9 @@ module.exports = {
         },
       },
     ],
+
+    // type annotations are allowed on the variable of a function expression rather than on the function directly
+    // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/explicit-function-return-type.md#allowtypedfunctionexpressions
+    '@typescript-eslint/explicit-function-return-type': ['error', { allowTypedFunctionExpressions: true }],
   },
 };
