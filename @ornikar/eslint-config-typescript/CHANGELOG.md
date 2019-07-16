@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [8.4.0](https://github.com/ornikar/shared-configs/compare/@ornikar/eslint-config-typescript@8.3.0...@ornikar/eslint-config-typescript@8.4.0) (2019-07-16)
+
+
+### Features
+
+* add explicit function return type rule ([#224](https://github.com/ornikar/shared-configs/issues/224)) ([e960737](https://github.com/ornikar/shared-configs/commit/e960737))
+
+
+
+
+
 # [8.3.0](https://github.com/ornikar/shared-configs/compare/@ornikar/eslint-config-typescript@8.2.2...@ornikar/eslint-config-typescript@8.3.0) (2019-07-09)
 
 
