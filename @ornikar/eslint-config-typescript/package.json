@@ -1,6 +1,6 @@
 {
   "name": "@ornikar/eslint-config-typescript",
-  "version": "8.4.1",
+  "version": "8.4.2",
   "description": "eslint typescript config files",
   "repository": "ornikar/shared-configs",
   "main": "index.js",

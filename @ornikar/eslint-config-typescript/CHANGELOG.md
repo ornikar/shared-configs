@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [8.4.2](https://github.com/ornikar/shared-configs/compare/@ornikar/eslint-config-typescript@8.4.1...@ornikar/eslint-config-typescript@8.4.2) (2019-07-16)
+
+
+### Bug Fixes
+
+* rule should be warn [no issue] ([#228](https://github.com/ornikar/shared-configs/issues/228)) ([b6717e5](https://github.com/ornikar/shared-configs/commit/b6717e5))
+
+
+
+
+
 ## [8.4.1](https://github.com/ornikar/shared-configs/compare/@ornikar/eslint-config-typescript@8.4.0...@ornikar/eslint-config-typescript@8.4.1) (2019-07-16)
 
 
