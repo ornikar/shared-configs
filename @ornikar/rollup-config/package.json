@@ -1,0 +1,27 @@
+{
+  "name": "@ornikar/rollup-config",
+  "version": "1.0.0",
+  "description": "rollup config files",
+  "repository": "ornikar/shared-configs",
+  "main": "createRollupConfig.js",
+  "license": "ISC",
+  "engines": {
+    "node": ">= 8.3.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "peerDependencies": {
+    "rollup": "^1.17.0"
+  },
+  "dependencies": {
+    "babel-plugin-discard-module-references": "^1.1.2",
+    "babel-plugin-minify-dead-code-elimination": "^0.5.0",
+    "babel-plugin-minify-replace": "^0.5.0",
+    "rollup-config-external-dependencies": "1.0.0",
+    "rollup-plugin-babel": "4.3.3",
+    "rollup-plugin-commonjs": "10.0.1",
+    "rollup-plugin-node-resolve": "5.2.0",
+    "rollup-plugin-postcss": "2.0.3"
+  }
+}
