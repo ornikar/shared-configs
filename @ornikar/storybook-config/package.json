@@ -1,0 +1,32 @@
+{
+  "name": "@ornikar/storybook-config",
+  "version": "1.0.0",
+  "description": "storybook config files",
+  "repository": "ornikar/shared-configs",
+  "main": "index.js",
+  "license": "ISC",
+  "engines": {
+    "node": ">= 10.13.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "peerDependencies": {
+    "@storybook/addon-actions": "^5.1.9",
+    "@storybook/addon-knobs": "^5.1.9",
+    "@storybook/theming": "^5.1.9",
+    "webpack": "^4.37.0"
+  },
+  "dependencies": {
+    "@chrp/typed-css-modules-loader": "0.6.0",
+    "@ornikar/webpack-config": "1.0.0",
+    "@storybook/addon-viewport": "^5.1.9",
+    "svg-react-loader": "0.4.6"
+  },
+  "devDependencies": {
+    "@storybook/addon-actions": "5.1.9",
+    "@storybook/addon-knobs": "5.1.9",
+    "@storybook/theming": "5.1.9",
+    "webpack": "4.37.0"
+  }
+}

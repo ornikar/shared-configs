@@ -68,6 +68,10 @@ exports.storiesOf = (groupName) => {
       return api;
     },
 
+    addWithPercyOptions(storyName, percyOptions, story) {
+      api.add(storyName, story);
+    },
+
     addParameters(parameters) {
       Object.assign(localParameters, parameters);
       return api;
