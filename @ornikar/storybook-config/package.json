@@ -24,9 +24,9 @@
     "svg-react-loader": "0.4.6"
   },
   "devDependencies": {
-    "@storybook/addon-actions": "^5.1.9",
-    "@storybook/addon-knobs": "^5.1.9",
-    "@storybook/theming": "^5.1.9",
-    "webpack": "^4.37.0"
+    "@storybook/addon-actions": "5.1.9",
+    "@storybook/addon-knobs": "5.1.9",
+    "@storybook/theming": "5.1.9",
+    "webpack": "4.37.0"
   }
 }
