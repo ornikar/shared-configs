@@ -49,7 +49,7 @@ const createBuildsForPackage = (packagesDir, packageName) => {
           modules: true,
           config: exportCss
             ? {
-                path: path.resolve('./config/postcss.config'),
+                path: path.resolve('./config/rollup-postcss.config'),
               }
             : false,
           minimize: false,
