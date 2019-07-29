@@ -49,7 +49,7 @@ const createBuildsForPackage = (packagesDir, packageName) => {
           modules: true,
           config: exportCss
             ? {
-                path: path.resolve('./postcss.config'),
+                path: path.resolve('./config/postcss.config'),
               }
             : false,
           minimize: false,
