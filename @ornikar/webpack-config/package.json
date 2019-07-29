@@ -1,0 +1,17 @@
+{
+  "name": "@ornikar/webpack-config",
+  "version": "1.0.0",
+  "description": "webpack config files",
+  "repository": "ornikar/shared-configs",
+  "main": "index.js",
+  "license": "ISC",
+  "engines": {
+    "node": ">= 8.3.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "peerDependencies": {},
+  "dependencies": {},
+  "devDependencies": {}
+}
