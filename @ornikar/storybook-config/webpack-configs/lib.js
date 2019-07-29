@@ -77,6 +77,7 @@ module.exports = function applyOrnikarStorybookLibWebpackConfig(config, packages
   });
 
   config.resolve.extensions = ['.js', '.jsx', '.tsx', '.ts'];
+  config.resolve.modules = ['node_modules', 'src'];
 
   config.plugins.push(
     new webpack.DefinePlugin({
