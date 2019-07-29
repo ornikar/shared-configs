@@ -81,8 +81,8 @@ module.exports = function applyOrnikarStorybookLibWebpackConfig(config, packages
 
   config.plugins.push(
     new webpack.DefinePlugin({
-      __DEV__: process.env.NODE_ENV !== 'production',
-      __TARGET__: 'browser',
+      __DEV__: JSON.stringify(process.env.NODE_ENV !== 'production'),
+      __TARGET__: JSON.stringify('browser'),
     }),
   );
 };
