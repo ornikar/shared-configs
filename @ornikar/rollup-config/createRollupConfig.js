@@ -46,20 +46,20 @@ const createBuildsForPackage = (packagesDir, packageName) => {
       external: target === 'node' ? (filePath) => (filePath.endsWith('.css') ? false : external(filePath)) : external,
 
       plugins: [
-        target !== 'browser' &&
-          ignoreImport({
-            extensions: browserOnlyExtensions,
-          }),
-        postcss({
-          extract: exportCss ? `${distPath}/styles.css` : true,
-          modules: true,
-          config: exportCss
-            ? {
-                path: path.resolve('./config/rollup-postcss.config'),
-              }
-            : false,
-          minimize: false,
-        }),
+        target === 'browser'
+          ? postcss({
+              extract: exportCss ? `${distPath}/styles.css` : true,
+              modules: true,
+              config: exportCss
+                ? {
+                    path: path.resolve('./config/rollup-postcss.config'),
+                  }
+                : false,
+              minimize: false,
+            })
+          : ignoreImport({
+              extensions: browserOnlyExtensions,
+            }),
         babel({
           babelrc: false,
           configFile: true,
