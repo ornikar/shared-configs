@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.3](https://github.com/ornikar/shared-configs/compare/@ornikar/rollup-config@1.1.2...@ornikar/rollup-config@1.1.3) (2019-07-31)
+
+
+### Bug Fixes
+
+* add remove-proptype babel plugin ([#246](https://github.com/ornikar/shared-configs/issues/246)) ([8c82465](https://github.com/ornikar/shared-configs/commit/8c82465))
+
+
+
+
+
 ## [1.1.2](https://github.com/ornikar/shared-configs/compare/@ornikar/rollup-config@1.1.1...@ornikar/rollup-config@1.1.2) (2019-07-31)
 
 
