@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.3.1](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@2.3.0...@ornikar/jest-config-react@2.3.1) (2019-07-31)
+
+
+### Bug Fixes
+
+* add svg import mock in jest config ([#244](https://github.com/ornikar/shared-configs/issues/244)) ([208afd4](https://github.com/ornikar/shared-configs/commit/208afd4))
+
+
+
+
+
 # [2.3.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@1.10.2...@ornikar/jest-config-react@2.3.0) (2019-07-29)
 
 
