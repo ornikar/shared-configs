@@ -6,14 +6,12 @@ const postcss = require('rollup-plugin-postcss');
 const babel = require('rollup-plugin-babel');
 const resolve = require('rollup-plugin-node-resolve');
 const commonjs = require('rollup-plugin-commonjs');
-const ignoreImport = require('rollup-plugin-ignore-import');
 const configExternalDependencies = require('rollup-config-external-dependencies');
 
 // eslint-disable-next-line import/no-dynamic-require
 const rootPkg = require(path.resolve('./package.json'));
 
 const extensions = ['.js', '.jsx', '.tsx', '.ts'];
-const browserOnlyExtensions = ['.css'];
 
 const createBuildsForPackage = (packagesDir, packageName) => {
   // eslint-disable-next-line import/no-dynamic-require, global-require
@@ -46,20 +44,16 @@ const createBuildsForPackage = (packagesDir, packageName) => {
       external: target === 'node' ? (filePath) => (filePath.endsWith('.css') ? false : external(filePath)) : external,
 
       plugins: [
-        target === 'browser'
-          ? postcss({
-              extract: exportCss ? `${distPath}/styles.css` : true,
-              modules: true,
-              config: exportCss
-                ? {
-                    path: path.resolve('./config/rollup-postcss.config'),
-                  }
-                : false,
-              minimize: false,
-            })
-          : ignoreImport({
-              extensions: browserOnlyExtensions,
-            }),
+        postcss({
+          extract: exportCss ? `${distPath}/styles.css` : true,
+          modules: true,
+          config: exportCss
+            ? {
+                path: path.resolve('./config/rollup-postcss.config'),
+              }
+            : false,
+          minimize: false,
+        }),
         babel({
           babelrc: false,
           configFile: true,
