@@ -1,5 +1,7 @@
 'use strict';
 
+/* eslint-disable complexity */
+
 const path = require('path');
 const fs = require('fs');
 const postcss = require('rollup-plugin-postcss');
@@ -96,6 +98,12 @@ const createBuildsForPackage = (packagesDir, packageName) => {
                     },
                   },
                 ],
+              },
+            ],
+            production && [
+              require.resolve('babel-plugin-transform-react-remove-prop-types'),
+              {
+                removeImport: true,
               },
             ],
             require.resolve('babel-plugin-minify-dead-code-elimination'),
