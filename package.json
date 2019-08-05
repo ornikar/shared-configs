@@ -14,20 +14,6 @@
   "eslintConfig": {
     "extends": ["./@ornikar/eslint-config/index.js", "./@ornikar/eslint-config-node/index.js"]
   },
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -e $HUSKY_GIT_PARAMS",
-      "pre-commit": "lint-staged",
-      "post-checkout": "yarnhook",
-      "post-merge": "yarnhook",
-      "post-rewrite": "yarnhook"
-    }
-  },
-  "lint-staged": {
-    "yarn.lock": ["yarn-update-lock", "git add"],
-    "{package.json,@ornikar/*/{.babelrc,.eslintrc.json,package.json}}": ["prettier --parser json --write", "git add"],
-    "@ornikar/*/**/*.js": ["eslint --fix --quiet", "git add"]
-  },
   "commitlint": {
     "extends": ["./@ornikar/commitlint-config"]
   },

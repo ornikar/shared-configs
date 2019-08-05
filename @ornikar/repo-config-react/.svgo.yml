@@ -1,0 +1,10 @@
+plugins:
+  - cleanupIDs:
+      force: true
+      minify: true
+  - prefixIds:
+      prefixClassNames: false
+  - removeViewBox: false
+  # remove data-name
+  - removeUnknownsAndDefaults:
+      keepDataAttrs: false
