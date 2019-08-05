@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.3.1](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config@2.3.0...@ornikar/jest-config@2.3.1) (2019-08-05)
+
+
+### Bug Fixes
+
+* add module directories for lerna and module paths for non lerna projects ONK-3913 ([#248](https://github.com/ornikar/shared-configs/issues/248)) ([f51f297](https://github.com/ornikar/shared-configs/commit/f51f297))
+
+
+
+
+
 # [2.3.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config@2.2.0...@ornikar/jest-config@2.3.0) (2019-07-29)
 
 

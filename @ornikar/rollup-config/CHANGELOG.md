@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.2.0](https://github.com/ornikar/shared-configs/compare/@ornikar/rollup-config@1.1.3...@ornikar/rollup-config@1.2.0) (2019-08-05)
+
+
+### Bug Fixes
+
+* bring back rollup plugin ignore for node and fix config ONK-3913 ([#249](https://github.com/ornikar/shared-configs/issues/249)) ([3980a39](https://github.com/ornikar/shared-configs/commit/3980a39)), closes [#245](https://github.com/ornikar/shared-configs/issues/245)
+
+
+### Features
+
+* repo config ONK-3913 ([#250](https://github.com/ornikar/shared-configs/issues/250)) ([e02c068](https://github.com/ornikar/shared-configs/commit/e02c068))
+
+
+
+
+
 ## [1.1.3](https://github.com/ornikar/shared-configs/compare/@ornikar/rollup-config@1.1.2...@ornikar/rollup-config@1.1.3) (2019-07-31)
 
 
