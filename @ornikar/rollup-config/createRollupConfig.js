@@ -48,20 +48,23 @@ const createBuildsForPackage = (packagesDir, packageName) => {
       external: target === 'node' ? (filePath) => (filePath.endsWith('.css') ? false : external(filePath)) : external,
 
       plugins: [
-        target === 'browser'
-          ? postcss({
-              extract: exportCss ? `${distPath}/styles.css` : true,
-              modules: true,
-              config: exportCss
-                ? {
-                    path: path.resolve('./config/rollup-postcss.config'),
-                  }
-                : false,
-              minimize: false,
-            })
-          : ignoreImport({
-              extensions: browserOnlyExtensions,
-            }),
+        // ignore node_modules css imports for node target. imports in browser target will be resolved by webpack.
+        target === 'node' &&
+          ignoreImport({
+            extensions: browserOnlyExtensions,
+            exclude: /\.module\.css$/, // exclude needs to be defined because default is `node_modules/**`. We ignore files that will be processed by postcss plugin.
+          }),
+        postcss({
+          include: /\.module\.css$/,
+          extract: exportCss ? `${distPath}/styles.css` : true,
+          modules: true,
+          config: exportCss
+            ? {
+                path: path.resolve('./config/rollup-postcss.config'),
+              }
+            : false,
+          minimize: false,
+        }),
         babel({
           babelrc: false,
           configFile: true,
@@ -113,7 +116,10 @@ const createBuildsForPackage = (packagesDir, packageName) => {
         commonjs(),
         resolve({
           customResolveOptions: {
-            moduleDirectory: ['src'], // don't resolve node_modules, but allow src (see baseUrl in tsconfig)
+            moduleDirectory:
+              target !== 'node'
+                ? ['src'] // don't resolve node_modules, but allow src (see baseUrl in tsconfig)
+                : ['node_modules', 'src'], // for target node we need to be able to resolve .css in node_modules and ignore them with import-ignore (they need to be resolved because there are not in external)
             extensions,
           },
         }),
