@@ -8,12 +8,14 @@ const postcss = require('rollup-plugin-postcss');
 const babel = require('rollup-plugin-babel');
 const resolve = require('rollup-plugin-node-resolve');
 const commonjs = require('rollup-plugin-commonjs');
+const ignoreImport = require('rollup-plugin-ignore-import');
 const configExternalDependencies = require('rollup-config-external-dependencies');
 
 // eslint-disable-next-line import/no-dynamic-require
 const rootPkg = require(path.resolve('./package.json'));
 
 const extensions = ['.js', '.jsx', '.tsx', '.ts'];
+const browserOnlyExtensions = ['.css'];
 
 const createBuildsForPackage = (packagesDir, packageName) => {
   // eslint-disable-next-line import/no-dynamic-require, global-require
@@ -46,7 +48,14 @@ const createBuildsForPackage = (packagesDir, packageName) => {
       external: target === 'node' ? (filePath) => (filePath.endsWith('.css') ? false : external(filePath)) : external,
 
       plugins: [
+        // ignore node_modules css imports for node target. imports in browser target will be resolved by webpack.
+        target === 'node' &&
+          ignoreImport({
+            extensions: browserOnlyExtensions,
+            exclude: /\.module\.css$/, // exclude needs to be defined because default is `node_modules/**`. We ignore files that will be processed by postcss plugin.
+          }),
         postcss({
+          include: /\.module\.css$/,
           extract: exportCss ? `${distPath}/styles.css` : true,
           modules: true,
           config: exportCss
@@ -107,7 +116,10 @@ const createBuildsForPackage = (packagesDir, packageName) => {
         commonjs(),
         resolve({
           customResolveOptions: {
-            moduleDirectory: ['src'], // don't resolve node_modules, but allow src (see baseUrl in tsconfig)
+            moduleDirectory:
+              target !== 'node'
+                ? ['src'] // don't resolve node_modules, but allow src (see baseUrl in tsconfig)
+                : ['node_modules', 'src'], // for target node we need to be able to resolve .css in node_modules and ignore them with import-ignore (they need to be resolved because there are not in external)
             extensions,
           },
         }),
