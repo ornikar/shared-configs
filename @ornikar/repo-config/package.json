@@ -1,6 +1,6 @@
 {
   "name": "@ornikar/repo-config",
-  "version": "1.0.0-pre.0",
+  "version": "1.0.0",
   "description": "repo config",
   "repository": "ornikar/shared-configs",
   "license": "ISC",
