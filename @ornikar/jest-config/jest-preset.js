@@ -21,6 +21,8 @@ module.exports = {
     `<rootDir>/${src}/**/*.test.${useTypescript ? '{js,ts,tsx}' : 'js'}`,
   ],
   testPathIgnorePatterns: [],
+  moduleDirectories: useLerna ? ['node_modules', 'src'] : ['node_modules'],
+  modulePaths: useLerna ? [] : ['<rootDir>/src'],
   setupFilesAfterEnv: [require.resolve('./test-setup-after-env.js')],
   setupFiles: [
     require.resolve('./test-shim.js'),
