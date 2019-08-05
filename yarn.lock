@@ -9230,10 +9230,10 @@ rollup-plugin-commonjs@^10.0.1:
     resolve "^1.11.0"
     rollup-pluginutils "^2.8.1"
 
-rollup-plugin-ignore-import@^1.1.2:
-  version "1.1.2"
-  resolved "https://registry.yarnpkg.com/rollup-plugin-ignore-import/-/rollup-plugin-ignore-import-1.1.2.tgz#be8e0ba6cae6d38f9579fc32b0ae9ccf38ba7fb0"
-  integrity sha512-rqRCfJl86XYplAVBgInwLLmpzp9OBA/7xLp3WydrqmtsNW9ZsrzMUOQTFQV5FsLl2rGiSE1R6nFsA1ymzDvRoQ==
+rollup-plugin-ignore-import@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/rollup-plugin-ignore-import/-/rollup-plugin-ignore-import-1.2.0.tgz#b99c6216b7622e91b68bfff08865a0cc6410eb63"
+  integrity sha512-h8HjZafcV4lAvQVDsHqjA8CsOSTrZlIsPVRQhBB91WvYr6jwRLEn7AALLoFtTzqX4ewL6lJ7RHzlR+dOfAMUUA==
 
 rollup-plugin-node-resolve@^5.2.0:
   version "5.2.0"
