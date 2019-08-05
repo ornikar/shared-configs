@@ -138,7 +138,9 @@ const createBuildsForPackage = (packagesDir, packageName) => {
 module.exports = (packagesDir = '@ornikar') => {
   const packages = process.env.ORNIKAR_ONLY
     ? [process.env.ORNIKAR_ONLY]
-    : fs.readdirSync(path.resolve(`./${packagesDir}`)).filter((packageName) => packageName !== '.DS_Store');
+    : fs
+        .readdirSync(path.resolve(`./${packagesDir}`))
+        .filter((packageName) => packageName !== '.DS_Store' && packageName !== '.eslintrc.json');
 
   return [].concat(...packages.map((packageName) => createBuildsForPackage(packagesDir, packageName)));
 };
