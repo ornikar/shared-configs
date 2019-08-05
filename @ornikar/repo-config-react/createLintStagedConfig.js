@@ -9,10 +9,7 @@ module.exports = function createLintStagedConfig(options = {}) {
   const srcDirectories = createBaseLintStagedConfig.getSrcDirectories();
 
   Object.assign(config, {
-    [`${srcDirectories}/**/*.module.css`]: (filenames) => [
-      `tcm -s '${srcDirectories}'`,
-      `git add '${srcDirectories}/*.d.ts'`,
-    ],
+    [`${srcDirectories}/**/*.module.css`]: (filenames) => ["tcm -s -p '**/*.module.css'", "git add '**/**.d.ts'"],
     '*.svg': ['svgo --multipass --config=node_modules/@ornikar/repo-config-react/.svgo.yml', 'git add'],
   });
 
