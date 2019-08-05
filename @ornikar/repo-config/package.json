@@ -1,0 +1,19 @@
+{
+  "name": "@ornikar/repo-config",
+  "version": "1.0.0-pre",
+  "description": "repo config",
+  "repository": "ornikar/shared-configs",
+  "license": "ISC",
+  "engines": {
+    "node": ">= 8.3.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@commitlint/cli": "8.1.0",
+    "@ornikar/commitlint-config": "^1.0.0",
+    "lint-staged": "9.2.1",
+    "yarn-update-lock": "1.0.0"
+  }
+}
