@@ -31,7 +31,11 @@ jobs:
             - '@ornikar/postcss-config/node_modules'
             - '@ornikar/prettier-config/node_modules'
             - '@ornikar/renovate-config/node_modules'
+            - '@ornikar/repo-config/node_modules'
+            - '@ornikar/repo-config-react/node_modules'
+            - '@ornikar/rollup-config/node_modules'
             - '@ornikar/stylelint-config/node_modules'
+            - '@ornikar/webpack-config/node_modules'
 
   lint:
     docker:
