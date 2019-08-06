@@ -14,6 +14,7 @@
       "prHourlyLimit": 0,
       "prConcurrentLimit": 40,
       "masterIssue": true,
+      "masterIssueApproval": true,
       "rebaseStalePrs": true,
       "updateNotScheduled": false,
       "postUpdateOptions": [
@@ -48,6 +49,7 @@
             "^@ornikar"
           ],
           "rebaseStalePrs": false,
+          "masterIssueApproval": false,
           "schedule": [
             "at any time"
           ]
@@ -97,6 +99,7 @@
             ":ok_hand: code/approved",
             ":soon: automerge"
           ],
+          "masterIssueApproval": false,
           "schedule": [
             "before 5:00am"
           ]
@@ -109,6 +112,7 @@
             ":ok_hand: code/approved",
             ":soon: automerge"
           ],
+          "masterIssueApproval": false,
           "schedule": [
             "at any time"
           ]
