@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.12.0](https://github.com/ornikar/shared-configs/compare/@ornikar/renovate-config@1.11.0...@ornikar/renovate-config@1.12.0) (2019-08-06)
+
+
+### Features
+
+* renovate default masterIssueApproval [no issue] ([#251](https://github.com/ornikar/shared-configs/issues/251)) ([8fcb9cb](https://github.com/ornikar/shared-configs/commit/8fcb9cb))
+
+
+
+
+
 # [1.11.0](https://github.com/ornikar/shared-configs/compare/@ornikar/renovate-config@1.10.0...@ornikar/renovate-config@1.11.0) (2019-07-08)
 
 
