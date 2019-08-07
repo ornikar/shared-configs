@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.1](https://github.com/ornikar/shared-configs/compare/@ornikar/rollup-config@1.2.0...@ornikar/rollup-config@1.2.1) (2019-08-07)
+
+
+### Bug Fixes
+
+* bring back same fix for postcss module order [no issue] ([#252](https://github.com/ornikar/shared-configs/issues/252)) ([a4e7b12](https://github.com/ornikar/shared-configs/commit/a4e7b12))
+
+
+
+
+
 # [1.2.0](https://github.com/ornikar/shared-configs/compare/@ornikar/rollup-config@1.1.3...@ornikar/rollup-config@1.2.0) (2019-08-05)
 
 
