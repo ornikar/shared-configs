@@ -1279,6 +1279,26 @@
     universal-user-agent "^3.0.0"
     url-template "^2.0.8"
 
+"@ornikar/rollup-plugin-postcss@^2.0.3":
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/@ornikar/rollup-plugin-postcss/-/rollup-plugin-postcss-2.0.3.tgz#2b9ec0131d964d4d08b1224199b09e5443284436"
+  integrity sha512-xdGB6vfhJOJEbbkA+xueondpux1IuvBUynUQ8+hd9h1iLUTCRl1blpCvGi7gE8gVYrbnkuXMTx2qBAE2BkSLYw==
+  dependencies:
+    chalk "^2.4.2"
+    concat-with-sourcemaps "^1.0.5"
+    cssnano "^4.1.8"
+    import-cwd "^2.1.0"
+    p-queue "^2.4.2"
+    pify "^3.0.0"
+    postcss "^7.0.14"
+    postcss-load-config "^2.0.0"
+    postcss-modules "^1.4.1"
+    promise.series "^0.2.0"
+    reserved-words "^0.1.2"
+    resolve "^1.5.0"
+    rollup-pluginutils "^2.0.1"
+    style-inject "^0.3.0"
+
 "@reach/router@^1.2.1":
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/@reach/router/-/router-1.2.1.tgz#34ae3541a5ac44fa7796e5506a5d7274a162be4e"
@@ -9245,26 +9265,6 @@ rollup-plugin-node-resolve@^5.2.0:
     is-module "^1.0.0"
     resolve "^1.11.1"
     rollup-pluginutils "^2.8.1"
-
-rollup-plugin-postcss@^2.0.3:
-  version "2.0.3"
-  resolved "https://registry.yarnpkg.com/rollup-plugin-postcss/-/rollup-plugin-postcss-2.0.3.tgz#1fd5b7e1fc7545cb0084d9c99d11b259e41a05e6"
-  integrity sha512-d12oKl6za/GGXmlytzVPzzTdPCKgti/Kq2kNhtfm5vv9hkNbyrTvizMBm6zZ5rRWX/sIWl3znjIJ8xy6Hofoeg==
-  dependencies:
-    chalk "^2.4.2"
-    concat-with-sourcemaps "^1.0.5"
-    cssnano "^4.1.8"
-    import-cwd "^2.1.0"
-    p-queue "^2.4.2"
-    pify "^3.0.0"
-    postcss "^7.0.14"
-    postcss-load-config "^2.0.0"
-    postcss-modules "^1.4.1"
-    promise.series "^0.2.0"
-    reserved-words "^0.1.2"
-    resolve "^1.5.0"
-    rollup-pluginutils "^2.0.1"
-    style-inject "^0.3.0"
 
 rollup-pluginutils@^2.0.1, rollup-pluginutils@^2.8.1:
   version "2.8.1"
