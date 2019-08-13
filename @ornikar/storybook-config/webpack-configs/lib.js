@@ -38,7 +38,7 @@ module.exports = function applyOrnikarStorybookLibWebpackConfig(config, packages
         loader: 'css-loader',
         options: {
           modules: true,
-          localIdentName: '[local]___[hash:base64:3]',
+          localIdentName: '[local]__[hash:base64:5]',
           importLoaders: 2,
         },
       },

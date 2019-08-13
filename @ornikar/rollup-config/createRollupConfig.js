@@ -57,7 +57,9 @@ const createBuildsForPackage = (packagesDir, packageName) => {
         postcss({
           include: /\.module\.css$/,
           extract: exportCss ? `${distPath}/styles.css` : true,
-          modules: true,
+          modules: {
+            localIdentName: '[local]__[hash:base64:5]',
+          },
           config: exportCss
             ? {
                 path: path.resolve('./config/rollup-postcss.config'),
