@@ -16,7 +16,7 @@
   "dependencies": {
     "@commitlint/cli": "8.1.0",
     "@ornikar/commitlint-config": "^1.0.0",
-    "lint-staged": "9.2.3",
+    "lint-staged": "9.2.4",
     "yarn-update-lock": "1.0.0"
   }
 }
