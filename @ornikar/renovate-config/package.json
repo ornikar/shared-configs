@@ -64,6 +64,15 @@
           ]
         },
         {
+          "groupName": "react",
+          "packageNames": [
+            "react",
+            "react-dom",
+            "@types/react",
+            "@types/react-dom",
+          ]
+        },
+        {
           "groupName": "babel community packages",
           "excludePackageNames": [
             "babel-eslint"
