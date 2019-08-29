@@ -19,7 +19,7 @@ module.exports = function createLintStagedConfig(options = {}) {
       workspaces
         ? `,${workspaces.map((workspacePath) => `${workspacePath}/{.eslintrc.json,package.json}`).join(',')}`
         : ''
-    }`]: ['prettier --parser json --write', 'git add'],
+    }}`]: ['prettier --parser json --write', 'git add'],
     [`{.storybook,${srcDirectories}}/**/*.css`]: [
       'prettier --parser css --write',
       'stylelint --quiet --fix',
