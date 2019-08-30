@@ -18,7 +18,7 @@ module.exports = function createLintStagedConfig(options = {}) {
       workspaces
         ? `,${workspaces.map((workspacePath) => `${workspacePath}/package.json`).join(',')}`
         : ''
-    }}`]: (filenames) => ['yarn-update-lock', 'git add'],
+    }}`]: (filenames) => ['yarn-update-lock', 'git add yarn.lock'],
     [`{.eslintrc.json,package.json${
       workspaces
         ? `,${workspaces.map((workspacePath) => `${workspacePath}/{.eslintrc.json,package.json}`).join(',')}`
