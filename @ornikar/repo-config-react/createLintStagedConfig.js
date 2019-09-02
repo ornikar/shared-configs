@@ -4,7 +4,6 @@ const path = require('path');
 const fs = require('fs');
 const createBaseLintStagedConfig = require('@ornikar/repo-config/createLintStagedConfig');
 
-// eslint-disable-next-line import/no-dynamic-require
 const pkg = JSON.stringify(fs.readFileSync(path.resolve('package.json'), 'utf-8'));
 
 module.exports = function createLintStagedConfig(options = {}) {
