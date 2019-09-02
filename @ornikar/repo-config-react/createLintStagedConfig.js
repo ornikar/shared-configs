@@ -1,6 +1,10 @@
 'use strict';
 
+const path = require('path');
+const fs = require('fs');
 const createBaseLintStagedConfig = require('@ornikar/repo-config/createLintStagedConfig');
+
+const pkg = JSON.stringify(fs.readFileSync(path.resolve('package.json'), 'utf-8'));
 
 module.exports = function createLintStagedConfig(options = {}) {
   const config = createBaseLintStagedConfig({ srcExtensions: ['js', 'ts', 'tsx'] });
@@ -9,12 +13,17 @@ module.exports = function createLintStagedConfig(options = {}) {
   const srcDirectories = createBaseLintStagedConfig.getSrcDirectories();
 
   Object.assign(config, {
-    [`${srcDirectories}/**/*.module.{css,css.d.ts}`]: (filenames) => [
-      "tcm -s -p '**/*.module.css'",
-      "git add '**/**.d.ts'",
-    ],
     '*.svg': ['svgo --multipass --config=node_modules/@ornikar/repo-config-react/.svgo.yml', 'git add'],
   });
+
+  if (pkg.devDependencies.typescript) {
+    Object.assign(config, {
+      [`${srcDirectories}/**/*.module.{css,css.d.ts}`]: (filenames) => [
+        "tcm -s -p '**/*.module.css'",
+        "git add '**/**.d.ts'",
+      ],
+    });
+  }
 
   return config;
 };
