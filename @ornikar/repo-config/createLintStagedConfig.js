@@ -14,7 +14,11 @@ module.exports = function createLintStagedConfig(options = {}) {
   const srcDirectories = getSrcDirectories(options.srcDirectoryName);
 
   return {
-    'yarn.lock': ['yarn-update-lock', 'git add'],
+    [`{yarn.lock,package.json${
+      workspaces
+        ? `,${workspaces.map((workspacePath) => `${workspacePath}/package.json`).join(',')}`
+        : ''
+    }}`]: (filenames) => ['yarn-update-lock', 'git add yarn.lock'],
     [`{.eslintrc.json,package.json${
       workspaces
         ? `,${workspaces.map((workspacePath) => `${workspacePath}/{.eslintrc.json,package.json}`).join(',')}`
