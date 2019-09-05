@@ -11,9 +11,11 @@ module.exports = {
     require.resolve('./test-setup'),
     baseJestPreset.setupFiles[baseJestPreset.setupFiles.length - 1],
   ],
+  transform: {
+    '\\.svg$': require.resolve('./fileTransform'),
+  },
   moduleNameMapper: {
     '\\.css$': 'identity-obj-proxy',
-    '\\.svg$': 'identity-obj-proxy',
     '@storybook/react$': require.resolve('./__mocks__/@storybook/react'),
     '@storybook/addon-knobs': require.resolve('./__mocks__/@storybook/addon-knobs'),
     'storybook-react-router': require.resolve('./__mocks__/storybook-react-router'),
