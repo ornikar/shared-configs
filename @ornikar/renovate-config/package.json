@@ -33,11 +33,21 @@
             "@ornikar/browserslist-config",
             "@ornikar/commitlint-config",
             "@ornikar/eslint-config",
+            "@ornikar/eslint-config-babel",
+            "@ornikar/eslint-config-node",
+            "@ornikar/eslint-config-react",
+            "@ornikar/eslint-config-typescript",
+            "@ornikar/eslint-config-typescript-react",
             "@ornikar/jest-config",
             "@ornikar/jest-config-react",
             "@ornikar/postcss-config",
-            "@ornikar/renovate-config",
-            "@ornikar/stylelint-config"
+            "@ornikar/prettier-config",
+            "@ornikar/repo-config",
+            "@ornikar/repo-config-react",
+            "@ornikar/rollup-config",
+            "@ornikar/storybook-config",
+            "@ornikar/stylelint-config",
+            "@ornikar/webpack-config"
           ],
           "rebaseStalePrs": false,
           "schedule": [
@@ -45,11 +55,18 @@
           ]
         },
         {
-          "packagePatterns": [
-            "^@ornikar"
+          "groupName": "Components Ornikar",
+          "packageNames": [
+            "@ornikar/api-helpers",
+            "@ornikar/auth",
+            "@ornikar/react-brand-logo",
+            "@ornikar/react-forms",
+            "@ornikar/react-header",
+            "@ornikar/react-notification",
+            "@ornikar/react-storybook",
+            "@ornikar/validators"
           ],
           "rebaseStalePrs": false,
-          "masterIssueApproval": false,
           "schedule": [
             "at any time"
           ]
