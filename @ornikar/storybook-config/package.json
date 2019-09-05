@@ -27,6 +27,6 @@
     "@storybook/addon-actions": "5.1.11",
     "@storybook/addon-knobs": "5.1.11",
     "@storybook/theming": "5.1.11",
-    "webpack": "4.37.0"
+    "webpack": "4.39.3"
   }
 }
