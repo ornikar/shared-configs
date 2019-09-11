@@ -4,7 +4,7 @@ const path = require('path');
 const fs = require('fs');
 const createBaseLintStagedConfig = require('@ornikar/repo-config/createLintStagedConfig');
 
-const pkg = JSON.stringify(fs.readFileSync(path.resolve('package.json'), 'utf-8'));
+const pkg = JSON.parse(fs.readFileSync(path.resolve('package.json'), 'utf-8'));
 
 module.exports = function createLintStagedConfig(options = {}) {
   const config = createBaseLintStagedConfig({ srcExtensions: ['js', 'ts', 'tsx'] });
