@@ -80,9 +80,12 @@
         },
         {
           "groupName": "react",
+          "description": "react monorepo",
+          "sourceUrlPrefixes": [
+            "https://github.com/facebook/react"
+          ],
           "packageNames": [
-            "react",
-            "react-dom",
+            "@hot-loader/react-dom",
             "@types/react",
             "@types/react-dom"
           ]
