@@ -105,12 +105,27 @@
           ],
           "packagePatterns": [
             "^@commitlint",
-            "^eslint",
-            "^@types"
+            "^eslint"
           ],
           "updateTypes": [
             "patch",
             "minor"
+          ],
+          "labels": [
+            ":ok_hand: code/approved",
+            ":soon: automerge"
+          ],
+          "masterIssueApproval": false,
+          "schedule": [
+            "before 5:00am"
+          ]
+        },
+        {
+          "packagePatterns": [
+            "^@types"
+          ],
+          "updateTypes": [
+            "patch"
           ],
           "labels": [
             ":ok_hand: code/approved",
