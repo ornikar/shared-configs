@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.3.3](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@2.3.2...@ornikar/jest-config-react@2.3.3) (2019-09-30)
+
+
+### Bug Fixes
+
+* svg transform [no issue] ([#269](https://github.com/ornikar/shared-configs/issues/269)) ([904d0d6](https://github.com/ornikar/shared-configs/commit/904d0d6))
+
+
+
+
+
 ## [2.3.2](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@2.3.1...@ornikar/jest-config-react@2.3.2) (2019-08-05)
 
 **Note:** Version bump only for package @ornikar/jest-config-react
