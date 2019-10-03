@@ -26,7 +26,8 @@ module.exports = function applyOrnikarStorybookLibWebpackConfig(config, packages
 
   const imageRule = config.module.rules.find(
     (rule) =>
-      rule.test.toString() === /\.(svg|ico|jpg|jpeg|png|gif|eot|otf|webp|ttf|woff|woff2|cur|ani)(\?.*)?$/.toString(),
+      rule.test.toString() ===
+      /\.(svg|ico|jpg|jpeg|png|gif|eot|otf|webp|ttf|woff|woff2|cur|ani|pdf)(\?.*)?$/.toString(),
   );
   imageRule.exclude = /\.inline\.svg$/;
 
@@ -37,8 +38,9 @@ module.exports = function applyOrnikarStorybookLibWebpackConfig(config, packages
       {
         loader: 'css-loader',
         options: {
-          modules: true,
-          localIdentName: '[local]__[hash:base64:5]',
+          modules: {
+            localIdentName: '[local]__[hash:base64:5]',
+          },
           importLoaders: 2,
         },
       },
