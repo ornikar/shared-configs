@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.13.2](https://github.com/ornikar/shared-configs/compare/@ornikar/renovate-config@1.13.1...@ornikar/renovate-config@1.13.2) (2019-10-09)
+
+
+### Bug Fixes
+
+* **renovate-config:** group react and react types packages [no issue] ([#259](https://github.com/ornikar/shared-configs/issues/259)) ([1d64ad3](https://github.com/ornikar/shared-configs/commit/1d64ad3))
+
+
+
+
+
 ## [1.13.1](https://github.com/ornikar/shared-configs/compare/@ornikar/renovate-config@1.13.0...@ornikar/renovate-config@1.13.1) (2019-09-30)
 
 

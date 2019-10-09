@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.3.4](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@2.3.3...@ornikar/jest-config-react@2.3.4) (2019-10-09)
+
+
+### Bug Fixes
+
+* **jest-config-react:** preset for non craco configs [no issue] ([#281](https://github.com/ornikar/shared-configs/issues/281)) ([aaae9f2](https://github.com/ornikar/shared-configs/commit/aaae9f2))
+
+
+
+
+
 ## [2.3.3](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@2.3.2...@ornikar/jest-config-react@2.3.3) (2019-09-30)
 
 
