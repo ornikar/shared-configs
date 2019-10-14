@@ -13,6 +13,8 @@ const configExternalDependencies = require('rollup-config-external-dependencies'
 
 // eslint-disable-next-line import/no-dynamic-require
 const rootPkg = require(path.resolve('./package.json'));
+// eslint-disable-next-line import/no-dynamic-require
+const postcssConfig = require(path.resolve('./config/rollup-postcss.config.js'));
 
 const extensions = ['.js', '.jsx', '.tsx', '.ts'];
 const browserOnlyExtensions = ['.css'];
@@ -60,11 +62,8 @@ const createBuildsForPackage = (packagesDir, packageName) => {
           modules: {
             localIdentName: '[local]__[hash:base64:5]',
           },
-          config: exportCss
-            ? {
-                path: path.resolve('./config/rollup-postcss.config'),
-              }
-            : false,
+          config: false,
+          plugins: exportCss ? postcssConfig.plugins : false,
           minimize: false,
         }),
         babel({
