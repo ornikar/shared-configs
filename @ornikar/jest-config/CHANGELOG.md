@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.4.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config@2.3.1...@ornikar/jest-config@2.4.0) (2019-10-15)
+
+
+### Features
+
+* **jest-config:** allow to add tests in config and scripts directories [no issue] ([#283](https://github.com/ornikar/shared-configs/issues/283)) ([252c7d6](https://github.com/ornikar/shared-configs/commit/252c7d6))
+
+
+
+
+
 ## [2.3.1](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config@2.3.0...@ornikar/jest-config@2.3.1) (2019-08-05)
 
 
