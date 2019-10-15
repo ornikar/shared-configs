@@ -1,6 +1,6 @@
 'use strict';
 
-/* eslint-disable complexity */
+/* eslint-disable complexity, import/no-dynamic-require */
 
 const path = require('path');
 const fs = require('fs');
@@ -11,9 +11,7 @@ const commonjs = require('rollup-plugin-commonjs');
 const ignoreImport = require('rollup-plugin-ignore-import');
 const configExternalDependencies = require('rollup-config-external-dependencies');
 
-// eslint-disable-next-line import/no-dynamic-require
 const rootPkg = require(path.resolve('./package.json'));
-// eslint-disable-next-line import/no-dynamic-require
 const postcssConfig = require(path.resolve('./config/rollup-postcss.config.js'));
 
 const extensions = ['.js', '.jsx', '.tsx', '.ts'];
