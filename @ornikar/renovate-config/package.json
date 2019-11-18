@@ -1,6 +1,6 @@
 {
   "name": "@ornikar/renovate-config",
-  "version": "1.2.0",
+  "version": "1.13.2",
   "description": "renovate shared config",
   "engines": {
     "node": ">= 8.3.0"
@@ -10,26 +10,165 @@
   },
   "renovate-config": {
     "default": {
-      "extends": ["schedule:earlyMondays"],
-      "rebaseStalePrs": false,
+      "schedule": "before 5am on Monday",
+      "prHourlyLimit": 0,
+      "prConcurrentLimit": 40,
+      "masterIssue": true,
+      "masterIssueApproval": true,
+      "rebaseStalePrs": true,
+      "updateNotScheduled": false,
+      "postUpdateOptions": [
+        "yarnDedupeHighest"
+      ],
+      "prBodyNotes": [
+        "<!-- do not edit after this -->This will be auto filled by reviewflow.<!-- end - don't add anything after this -->"
+      ],
+      "labels": [
+        ":soon: automerge"
+      ],
       "packageRules": [
         {
           "groupName": "Shared Configs Ornikar",
           "packageNames": [
-            "@ornikar/browserslit-config",
+            "@ornikar/browserslist-config",
             "@ornikar/commitlint-config",
             "@ornikar/eslint-config",
+            "@ornikar/eslint-config-babel",
+            "@ornikar/eslint-config-node",
+            "@ornikar/eslint-config-react",
+            "@ornikar/eslint-config-typescript",
+            "@ornikar/eslint-config-typescript-react",
             "@ornikar/jest-config",
             "@ornikar/jest-config-react",
             "@ornikar/postcss-config",
-            "@ornikar/renovate-config",
-            "@ornikar/stylelint-config"
+            "@ornikar/prettier-config",
+            "@ornikar/repo-config",
+            "@ornikar/repo-config-react",
+            "@ornikar/rollup-config",
+            "@ornikar/storybook-config",
+            "@ornikar/stylelint-config",
+            "@ornikar/webpack-config"
           ],
-          "schedule": ["at any time"]
+          "rebaseStalePrs": false,
+          "schedule": [
+            "at any time"
+          ]
         },
         {
-          "packagePatterns": ["^@ornikar"],
-          "schedule": ["at any time"]
+          "groupName": "Components Ornikar",
+          "packageNames": [
+            "@ornikar/api-helpers",
+            "@ornikar/auth",
+            "@ornikar/react-brand-logo",
+            "@ornikar/react-forms",
+            "@ornikar/react-header",
+            "@ornikar/react-notification",
+            "@ornikar/react-storybook",
+            "@ornikar/validators"
+          ],
+          "rebaseStalePrs": false,
+          "schedule": [
+            "at any time"
+          ]
+        },
+        {
+          "groupName": "eslint packages",
+          "packageNames": [
+            "babel-eslint"
+          ],
+          "packagePatterns": [
+            "^eslint"
+          ]
+        },
+        {
+          "groupName": "babel community packages",
+          "excludePackageNames": [
+            "babel-eslint"
+          ],
+          "packagePatterns": [
+            "^babel"
+          ]
+        },
+        {
+          "groupName": "rollup packages",
+          "packagePatterns": [
+            "^rollup"
+          ]
+        },
+        {
+          "groupName": "react",
+          "description": "react monorepo",
+          "sourceUrlPrefixes": [
+            "https://github.com/facebook/react"
+          ],
+          "packageNames": [
+            "@hot-loader/react-dom",
+            "@types/react",
+            "@types/react-dom"
+          ]
+        },
+        {
+          "packageNames": [
+            "husky",
+            "lint-staged",
+            "prettier",
+            "yarn-update-lock",
+            "yarnhook"
+          ],
+          "packagePatterns": [
+            "^@commitlint",
+            "^eslint"
+          ],
+          "updateTypes": [
+            "patch",
+            "minor"
+          ],
+          "labels": [
+            ":ok_hand: code/approved",
+            ":soon: automerge"
+          ],
+          "masterIssueApproval": false,
+          "schedule": [
+            "before 5:00am"
+          ]
+        },
+        {
+          "packagePatterns": [
+            "^@types"
+          ],
+          "updateTypes": [
+            "patch"
+          ],
+          "labels": [
+            ":ok_hand: code/approved",
+            ":soon: automerge"
+          ],
+          "masterIssueApproval": false,
+          "schedule": [
+            "before 5:00am"
+          ]
+        },
+        {
+          "updateTypes": [
+            "pin"
+          ],
+          "labels": [
+            ":ok_hand: code/approved",
+            ":soon: automerge"
+          ],
+          "masterIssueApproval": false,
+          "schedule": [
+            "at any time"
+          ]
+        },
+        {
+          "updateTypes": [
+            "major"
+          ],
+          "schedule": [
+            "at any time"
+          ],
+          "masterIssueApproval": true
         }
       ]
     }

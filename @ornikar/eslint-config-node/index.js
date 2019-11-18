@@ -19,5 +19,8 @@ module.exports = {
       'LabeledStatement',
       'WithStatement',
     ],
+
+    // Use for-of instead of for
+    'unicorn/no-for-loop': 'error',
   },
 };

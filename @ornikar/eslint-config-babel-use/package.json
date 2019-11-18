@@ -1,0 +1,25 @@
+{
+  "name": "@ornikar/eslint-config-babel-use",
+  "version": "1.1.7",
+  "description": "eslint babel use",
+  "repository": "ornikar/shared-configs",
+  "main": "index.js",
+  "license": "ISC",
+  "engines": {
+    "node": ">= 8.3.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@ornikar/eslint-config": "^8.2.4",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-prefer-class-properties": "^1.0.0"
+  },
+  "peerDependencies": {
+    "eslint": "^5.10.0 || ^6.0.0"
+  },
+  "devDependencies": {
+    "eslint": "6.1.0"
+  }
+}

@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/commitlint-config@0.2.0...@ornikar/commitlint-config@1.0.0) (2019-06-10)
+
+
+### chore
+
+* **deps:** update commitlint monorepo to v8 (major) ([#190](https://github.com/ornikar/shared-configs/issues/190)) ([68369b8](https://github.com/ornikar/shared-configs/commit/68369b8))
+
+
+### BREAKING CHANGES
+
+* **deps:** conventional-changelog/commitlint : `extends` key in config file is now used for extending other config files
+
+
+
+
+
 # [0.2.0](https://github.com/ornikar/shared-configs/compare/@ornikar/commitlint-config@0.1.1...@ornikar/commitlint-config@0.2.0) (2018-11-21)
 
 

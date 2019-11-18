@@ -1,6 +1,6 @@
 {
   "name": "@ornikar/commitlint-config",
-  "version": "0.2.0",
+  "version": "1.0.0",
   "description": "commitlint config",
   "repository": "ornikar/shared-configs",
   "main": "index.js",
@@ -12,9 +12,9 @@
     "access": "public"
   },
   "dependencies": {
-    "@commitlint/config-conventional": "^7.1.2"
+    "@commitlint/config-conventional": "^8.0.0"
   },
   "peerDependencies": {
-    "@commitlint/cli": "^7.0.0"
+    "@commitlint/cli": "^8.0.0"
   }
 }

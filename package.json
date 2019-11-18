@@ -6,52 +6,31 @@
     "lint": "eslint --ext .js --fix @ornikar/**/*.js",
     "release": "lerna publish --conventional-commits -m 'chore: release'"
   },
-  "prettier": {
-    "trailingComma": "es5",
-    "singleQuote": true
-  },
+  "prettier": "./@ornikar/prettier-config",
   "engines": {
     "node": ">=8.3.0",
     "yarn": ">=1.10.1"
   },
   "eslintConfig": {
-    "extends": [
-      "./@ornikar/eslint-config/index.js",
-      "./@ornikar/eslint-config/node.js"
-    ]
-  },
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -e $HUSKY_GIT_PARAMS",
-      "pre-commit": "lint-staged",
-      "post-checkout": "yarnhook",
-      "post-merge": "yarnhook",
-      "post-rewrite": "yarnhook"
-    }
-  },
-  "lint-staged": {
-    "{package.json,@ornikar/*/{.babelrc,.eslintrc.json,package.json}}": [
-      "prettier --parser json --write",
-      "git add"
-    ],
-    "@ornikar/*/**/*.js": ["eslint --fix --quiet", "git add"]
+    "extends": ["./@ornikar/eslint-config/index.js", "./@ornikar/eslint-config-node/index.js"]
   },
   "commitlint": {
     "extends": ["./@ornikar/commitlint-config"]
   },
   "workspaces": ["@ornikar/*"],
   "devDependencies": {
-    "@commitlint/cli": "7.2.1",
-    "eslint": "5.12.0",
+    "@commitlint/cli": "8.2.0",
+    "eslint": "6.1.0",
     "eslint-plugin-filenames": "1.3.2",
-    "eslint-plugin-import": "2.14.0",
-    "eslint-plugin-node": "8.0.1",
-    "eslint-plugin-prettier": "3.0.1",
-    "eslint-plugin-unicorn": "6.0.1",
-    "husky": "1.3.1",
-    "lerna": "3.8.5",
-    "lint-staged": "8.1.0",
-    "prettier": "1.15.3",
-    "yarnhook": "0.3.0"
+    "eslint-plugin-import": "2.18.2",
+    "eslint-plugin-node": "9.1.0",
+    "eslint-plugin-prettier": "3.1.0",
+    "eslint-plugin-unicorn": "9.1.1",
+    "husky": "3.1.0",
+    "lerna": "3.16.4",
+    "lint-staged": "9.4.3",
+    "prettier": "1.19.1",
+    "yarn-update-lock": "1.0.0",
+    "yarnhook": "0.4.3"
   }
 }

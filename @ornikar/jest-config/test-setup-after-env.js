@@ -10,17 +10,14 @@ const chalk = require('chalk');
 
 const env = jasmine.getEnv();
 
-['error', 'warn'].forEach(methodName => {
+['error', 'warn'].forEach((methodName) => {
   const unexpectedConsoleCallStacks = [];
   const newMethod = function(format, ...args) {
     // Capture the call stack now so we can warn about it later.
     // The call stack has helpful information for the test author.
     // Don't throw yet though b'c it might be accidentally caught and suppressed.
     const errorStack = new Error().stack;
-    unexpectedConsoleCallStacks.push([
-      errorStack.substr(errorStack.indexOf('\n') + 1),
-      util.format(format, ...args),
-    ]);
+    unexpectedConsoleCallStacks.push([errorStack.substr(errorStack.indexOf('\n') + 1), util.format(format, ...args)]);
   };
 
   console[methodName] = newMethod;
@@ -31,9 +28,7 @@ const env = jasmine.getEnv();
 
   env.afterEach(() => {
     if (console[methodName] !== newMethod) {
-      throw new Error(
-        `Test did not tear down console.${methodName} mock properly.`
-      );
+      throw new Error(`Test did not tear down console.${methodName} mock properly.`);
     }
 
     if (unexpectedConsoleCallStacks.length > 0) {
@@ -42,12 +37,12 @@ const env = jasmine.getEnv();
           `${chalk.red(message)}\n` +
           `${stack
             .split('\n')
-            .map(line => chalk.gray(line))
-            .join('\n')}`
+            .map((line) => chalk.gray(line))
+            .join('\n')}`,
       );
 
       const message = `Expected test not to call ${chalk.bold(
-        `console.${methodName}()`
+        `console.${methodName}()`,
       )}.\n\nIf the warning is expected, test for it explicitly.`;
 
       // throw messages;

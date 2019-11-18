@@ -3,6 +3,216 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [8.2.4](https://github.com/ornikar/shared-configs/compare/@ornikar/eslint-config@8.2.3...@ornikar/eslint-config@8.2.4) (2019-08-05)
+
+**Note:** Version bump only for package @ornikar/eslint-config
+
+
+
+
+
+## [8.2.3](https://github.com/ornikar/shared-configs/compare/@ornikar/eslint-config@8.2.2...@ornikar/eslint-config@8.2.3) (2019-07-29)
+
+**Note:** Version bump only for package @ornikar/eslint-config
+
+
+
+
+
+## [8.2.2](https://github.com/ornikar/shared-configs/compare/@ornikar/eslint-config@8.2.1...@ornikar/eslint-config@8.2.2) (2019-06-24)
+
+**Note:** Version bump only for package @ornikar/eslint-config
+
+
+
+
+
+## [8.2.1](https://github.com/ornikar/shared-configs/compare/@ornikar/eslint-config@8.2.0...@ornikar/eslint-config@8.2.1) (2019-06-10)
+
+
+### Bug Fixes
+
+* disable prefer-event-key rule ([#201](https://github.com/ornikar/shared-configs/issues/201)) ([2949e58](https://github.com/ornikar/shared-configs/commit/2949e58))
+
+
+
+
+
+# [8.2.0](https://github.com/ornikar/shared-configs/compare/@ornikar/eslint-config@8.1.3...@ornikar/eslint-config@8.2.0) (2019-06-10)
+
+
+### Features
+
+* prettier config [no issue] ([#188](https://github.com/ornikar/shared-configs/issues/188)) ([e2844dd](https://github.com/ornikar/shared-configs/commit/e2844dd))
+
+
+
+
+
+## [8.1.3](https://github.com/ornikar/shared-configs/compare/@ornikar/eslint-config@8.1.2...@ornikar/eslint-config@8.1.3) (2019-05-22)
+
+**Note:** Version bump only for package @ornikar/eslint-config
+
+
+
+
+
+## [8.1.2](https://github.com/ornikar/shared-configs/compare/@ornikar/eslint-config@8.1.1...@ornikar/eslint-config@8.1.2) (2019-05-20)
+
+**Note:** Version bump only for package @ornikar/eslint-config
+
+
+
+
+
+## [8.1.1](https://github.com/ornikar/shared-configs/compare/@ornikar/eslint-config@8.1.0...@ornikar/eslint-config@8.1.1) (2019-05-06)
+
+**Note:** Version bump only for package @ornikar/eslint-config
+
+
+
+
+
+# [8.1.0](https://github.com/ornikar/shared-configs/compare/@ornikar/eslint-config@8.0.6...@ornikar/eslint-config@8.1.0) (2019-04-29)
+
+
+### Features
+
+* clean comments [no issue] ([#148](https://github.com/ornikar/shared-configs/issues/148)) ([32949a3](https://github.com/ornikar/shared-configs/commit/32949a3))
+
+
+
+
+
+## [8.0.6](https://github.com/ornikar/shared-configs/compare/@ornikar/eslint-config@8.0.5...@ornikar/eslint-config@8.0.6) (2019-04-15)
+
+**Note:** Version bump only for package @ornikar/eslint-config
+
+
+
+
+
+## [8.0.5](https://github.com/ornikar/shared-configs/compare/@ornikar/eslint-config@8.0.4...@ornikar/eslint-config@8.0.5) (2019-04-02)
+
+
+### Bug Fixes
+
+* add new unicorn rules [no issue] ([#132](https://github.com/ornikar/shared-configs/issues/132)) ([14351c4](https://github.com/ornikar/shared-configs/commit/14351c4))
+
+
+
+
+
+## [8.0.4](https://github.com/ornikar/shared-configs/compare/@ornikar/eslint-config@8.0.3...@ornikar/eslint-config@8.0.4) (2019-04-01)
+
+**Note:** Version bump only for package @ornikar/eslint-config
+
+
+
+
+
+## [8.0.3](https://github.com/ornikar/shared-configs/compare/@ornikar/eslint-config@8.0.2...@ornikar/eslint-config@8.0.3) (2019-03-18)
+
+**Note:** Version bump only for package @ornikar/eslint-config
+
+
+
+
+
+## [8.0.2](https://github.com/ornikar/shared-configs/compare/@ornikar/eslint-config@8.0.1...@ornikar/eslint-config@8.0.2) (2019-03-12)
+
+**Note:** Version bump only for package @ornikar/eslint-config
+
+
+
+
+
+## [8.0.1](https://github.com/ornikar/shared-configs/compare/@ornikar/eslint-config@8.0.0...@ornikar/eslint-config@8.0.1) (2019-02-27)
+
+
+### Bug Fixes
+
+* remove eslint-plugin-prefer-class-properties in eslint-config ([#108](https://github.com/ornikar/shared-configs/issues/108)) ([d10ce78](https://github.com/ornikar/shared-configs/commit/d10ce78))
+
+
+
+
+
+# [8.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/eslint-config@7.0.0...@ornikar/eslint-config@8.0.0) (2019-02-26)
+
+
+### Features
+
+* split eslint configs and add typescript [no issue] ([#103](https://github.com/ornikar/shared-configs/issues/103)) ([36627d2](https://github.com/ornikar/shared-configs/commit/36627d2))
+
+
+### BREAKING CHANGES
+
+* @ornikar/eslint-config splitted
+
+* docs: update first readme
+
+* docs: missing eslint-plugin-react-hooks
+
+* feat: disable @typescript-eslint/no-empty-interface
+
+* fix: move babel-eslint in dependencies
+
+* docs: typo plugin - config
+
+* docs: eslint-config-typescript-react
+
+* docs: use /eslint-config for consistency
+
+* fix: ornikar/eslint-plugin-typescript-react
+
+
+
+
+
+# [7.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/eslint-config@6.2.3...@ornikar/eslint-config@7.0.0) (2019-02-19)
+
+
+### Features
+
+* add eslint-plugin-react-hooks [no issue] ([#94](https://github.com/ornikar/shared-configs/issues/94)) ([7393818](https://github.com/ornikar/shared-configs/commit/7393818))
+
+
+### BREAKING CHANGES
+
+* if you use react, you will also need to run `yarn add --dev eslint-plugin-react-hooks`
+
+
+
+
+
+## [6.2.3](https://github.com/ornikar/shared-configs/compare/@ornikar/eslint-config@6.2.2...@ornikar/eslint-config@6.2.3) (2019-02-19)
+
+**Note:** Version bump only for package @ornikar/eslint-config
+
+
+
+
+
+## [6.2.2](https://github.com/ornikar/shared-configs/compare/@ornikar/eslint-config@6.2.1...@ornikar/eslint-config@6.2.2) (2019-02-07)
+
+**Note:** Version bump only for package @ornikar/eslint-config
+
+
+
+
+
+## [6.2.1](https://github.com/ornikar/shared-configs/compare/@ornikar/eslint-config@6.2.0...@ornikar/eslint-config@6.2.1) (2019-01-28)
+
+
+### Bug Fixes
+
+* **deps:** update dependency eslint-config-prettier to v4 ([#82](https://github.com/ornikar/shared-configs/issues/82)) ([24c6ae4](https://github.com/ornikar/shared-configs/commit/24c6ae4))
+
+
+
+
+
 # [6.2.0](https://github.com/ornikar/shared-configs/compare/@ornikar/eslint-config@6.0.0...@ornikar/eslint-config@6.2.0) (2019-01-02)
 
 

@@ -3,6 +3,89 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.2.0](https://github.com/ornikar/shared-configs/compare/@ornikar/stylelint-config@3.1.1...@ornikar/stylelint-config@3.2.0) (2019-06-10)
+
+
+### Features
+
+* prettier config [no issue] ([#188](https://github.com/ornikar/shared-configs/issues/188)) ([e2844dd](https://github.com/ornikar/shared-configs/commit/e2844dd))
+
+
+
+
+
+## [3.1.1](https://github.com/ornikar/shared-configs/compare/@ornikar/stylelint-config@3.1.0...@ornikar/stylelint-config@3.1.1) (2019-05-22)
+
+**Note:** Version bump only for package @ornikar/stylelint-config
+
+
+
+
+
+# [3.1.0](https://github.com/ornikar/shared-configs/compare/@ornikar/stylelint-config@3.0.2...@ornikar/stylelint-config@3.1.0) (2019-04-29)
+
+
+### Bug Fixes
+
+* **deps:** update dependency stylelint-order to v3 ([#153](https://github.com/ornikar/shared-configs/issues/153)) ([f58c6e6](https://github.com/ornikar/shared-configs/commit/f58c6e6))
+
+
+### Features
+
+* clean comments [no issue] ([#148](https://github.com/ornikar/shared-configs/issues/148)) ([32949a3](https://github.com/ornikar/shared-configs/commit/32949a3))
+
+
+
+
+
+## [3.0.2](https://github.com/ornikar/shared-configs/compare/@ornikar/stylelint-config@3.0.1...@ornikar/stylelint-config@3.0.2) (2019-04-23)
+
+**Note:** Version bump only for package @ornikar/stylelint-config
+
+
+
+
+
+## [3.0.1](https://github.com/ornikar/shared-configs/compare/@ornikar/stylelint-config@3.0.0...@ornikar/stylelint-config@3.0.1) (2019-04-15)
+
+**Note:** Version bump only for package @ornikar/stylelint-config
+
+
+
+
+
+# [3.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/stylelint-config@2.0.2...@ornikar/stylelint-config@3.0.0) (2019-02-26)
+
+
+### Bug Fixes
+
+* **deps:** update dependency stylelint-config-prettier to v5 ([#102](https://github.com/ornikar/shared-configs/issues/102)) ([bf18f3a](https://github.com/ornikar/shared-configs/commit/bf18f3a))
+
+
+### BREAKING CHANGES
+
+* **deps:** declaration-block-no-redundant-longhand-properties AND declaration-block-no-shorthand-property-overrides no longer disabled by stylelint-config-prettier
+
+
+
+
+
+## [2.0.2](https://github.com/ornikar/shared-configs/compare/@ornikar/stylelint-config@2.0.1...@ornikar/stylelint-config@2.0.2) (2019-02-19)
+
+**Note:** Version bump only for package @ornikar/stylelint-config
+
+
+
+
+
+## [2.0.1](https://github.com/ornikar/shared-configs/compare/@ornikar/stylelint-config@2.0.0...@ornikar/stylelint-config@2.0.1) (2019-01-28)
+
+**Note:** Version bump only for package @ornikar/stylelint-config
+
+
+
+
+
 # [2.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/stylelint-config@1.1.1...@ornikar/stylelint-config@2.0.0) (2018-12-18)
 
 

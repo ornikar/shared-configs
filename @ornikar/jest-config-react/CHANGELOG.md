@@ -3,6 +3,298 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.3.5](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@2.3.4...@ornikar/jest-config-react@2.3.5) (2019-10-15)
+
+**Note:** Version bump only for package @ornikar/jest-config-react
+
+
+
+
+
+## [2.3.4](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@2.3.3...@ornikar/jest-config-react@2.3.4) (2019-10-09)
+
+
+### Bug Fixes
+
+* **jest-config-react:** preset for non craco configs [no issue] ([#281](https://github.com/ornikar/shared-configs/issues/281)) ([aaae9f2](https://github.com/ornikar/shared-configs/commit/aaae9f2))
+
+
+
+
+
+## [2.3.3](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@2.3.2...@ornikar/jest-config-react@2.3.3) (2019-09-30)
+
+
+### Bug Fixes
+
+* svg transform [no issue] ([#269](https://github.com/ornikar/shared-configs/issues/269)) ([904d0d6](https://github.com/ornikar/shared-configs/commit/904d0d6))
+
+
+
+
+
+## [2.3.2](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@2.3.1...@ornikar/jest-config-react@2.3.2) (2019-08-05)
+
+**Note:** Version bump only for package @ornikar/jest-config-react
+
+
+
+
+
+## [2.3.1](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@2.3.0...@ornikar/jest-config-react@2.3.1) (2019-07-31)
+
+
+### Bug Fixes
+
+* add svg import mock in jest config ([#244](https://github.com/ornikar/shared-configs/issues/244)) ([208afd4](https://github.com/ornikar/shared-configs/commit/208afd4))
+
+
+
+
+
+# [2.3.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@1.10.2...@ornikar/jest-config-react@2.3.0) (2019-07-29)
+
+
+### Features
+
+* support lerna in jest configs ONK-3913 ([#237](https://github.com/ornikar/shared-configs/issues/237)) ([8d0cd90](https://github.com/ornikar/shared-configs/commit/8d0cd90))
+
+
+
+
+
+## [1.10.2](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@1.10.1...@ornikar/jest-config-react@1.10.2) (2019-07-08)
+
+
+### Bug Fixes
+
+* jest use shallow wrappingComponent [no issue] ([#171](https://github.com/ornikar/shared-configs/issues/171)) ([2c0ce37](https://github.com/ornikar/shared-configs/commit/2c0ce37))
+
+
+
+
+
+## [1.10.1](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@1.10.0...@ornikar/jest-config-react@1.10.1) (2019-07-02)
+
+
+### Bug Fixes
+
+* add storyname to parameters ([#213](https://github.com/ornikar/shared-configs/issues/213)) ([6c02a00](https://github.com/ornikar/shared-configs/commit/6c02a00))
+
+
+
+
+
+# [1.10.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@1.9.4...@ornikar/jest-config-react@1.10.0) (2019-06-10)
+
+
+### Bug Fixes
+
+* **deps:** update dependency enzyme to v3.10.0 ([#199](https://github.com/ornikar/shared-configs/issues/199)) ([0525a85](https://github.com/ornikar/shared-configs/commit/0525a85))
+* **deps:** update dependency enzyme-adapter-react-16 to v1.14.0 ([#200](https://github.com/ornikar/shared-configs/issues/200)) ([fb46e6d](https://github.com/ornikar/shared-configs/commit/fb46e6d))
+
+
+### Features
+
+* prettier config [no issue] ([#188](https://github.com/ornikar/shared-configs/issues/188)) ([e2844dd](https://github.com/ornikar/shared-configs/commit/e2844dd))
+
+
+
+
+
+## [1.9.4](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@1.9.3...@ornikar/jest-config-react@1.9.4) (2019-05-27)
+
+
+### Bug Fixes
+
+* **deps:** update dependency enzyme-adapter-react-16 to v1.13.2 ([#187](https://github.com/ornikar/shared-configs/issues/187)) ([c5f2008](https://github.com/ornikar/shared-configs/commit/c5f2008))
+
+
+
+
+
+## [1.9.3](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@1.9.2...@ornikar/jest-config-react@1.9.3) (2019-05-22)
+
+
+### Bug Fixes
+
+* **deps:** update dependency enzyme-adapter-react-16 to v1.13.1 ([#180](https://github.com/ornikar/shared-configs/issues/180)) ([e7ef4e0](https://github.com/ornikar/shared-configs/commit/e7ef4e0))
+
+
+
+
+
+## [1.9.2](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@1.9.1...@ornikar/jest-config-react@1.9.2) (2019-05-13)
+
+
+### Bug Fixes
+
+* **deps:** update dependency enzyme-adapter-react-16 to v1.13.0 ([#175](https://github.com/ornikar/shared-configs/issues/175)) ([675239f](https://github.com/ornikar/shared-configs/commit/675239f))
+
+
+
+
+
+## [1.9.1](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@1.9.0...@ornikar/jest-config-react@1.9.1) (2019-05-06)
+
+
+### Bug Fixes
+
+* shallow snapshots with decorators [no issue] ([#170](https://github.com/ornikar/shared-configs/issues/170)) ([e98bf4e](https://github.com/ornikar/shared-configs/commit/e98bf4e))
+
+
+
+
+
+# [1.9.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@1.8.0...@ornikar/jest-config-react@1.9.0) (2019-04-30)
+
+
+### Features
+
+* allow both js and ts tests [no issue] ([#164](https://github.com/ornikar/shared-configs/issues/164)) ([99feb5a](https://github.com/ornikar/shared-configs/commit/99feb5a))
+
+
+
+
+
+# [1.8.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@1.7.1...@ornikar/jest-config-react@1.8.0) (2019-04-29)
+
+
+### Features
+
+* add option to ignore all decorators ([#162](https://github.com/ornikar/shared-configs/issues/162)) ([7c4f77b](https://github.com/ornikar/shared-configs/commit/7c4f77b))
+* support storybook-react-router [no issue] ([#160](https://github.com/ornikar/shared-configs/issues/160)) ([fbab5d0](https://github.com/ornikar/shared-configs/commit/fbab5d0))
+
+
+
+
+
+## [1.7.1](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@1.7.0...@ornikar/jest-config-react@1.7.1) (2019-04-29)
+
+**Note:** Version bump only for package @ornikar/jest-config-react
+
+
+
+
+
+# [1.7.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@1.6.0...@ornikar/jest-config-react@1.7.0) (2019-04-29)
+
+
+### Features
+
+* support addon knobs [no issue] ([#158](https://github.com/ornikar/shared-configs/issues/158)) ([0f99ccc](https://github.com/ornikar/shared-configs/commit/0f99ccc))
+
+
+
+
+
+# [1.6.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@1.5.3...@ornikar/jest-config-react@1.6.0) (2019-04-17)
+
+
+### Features
+
+* ignore decorators in snapshots [no issue] ([#146](https://github.com/ornikar/shared-configs/issues/146)) ([c792ee9](https://github.com/ornikar/shared-configs/commit/c792ee9))
+* use setupFilesAfterEnv instead of setupTestFrameworkScriptFile [no issue] ([#145](https://github.com/ornikar/shared-configs/issues/145)) ([6cbe035](https://github.com/ornikar/shared-configs/commit/6cbe035))
+
+
+
+
+
+## [1.5.3](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@1.5.2...@ornikar/jest-config-react@1.5.3) (2019-04-15)
+
+**Note:** Version bump only for package @ornikar/jest-config-react
+
+
+
+
+
+## [1.5.2](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@1.5.1...@ornikar/jest-config-react@1.5.2) (2019-04-12)
+
+
+### Bug Fixes
+
+* **deps:** update dependency enzyme-adapter-react-16 to v1.12.1 ([#136](https://github.com/ornikar/shared-configs/issues/136)) ([f06d536](https://github.com/ornikar/shared-configs/commit/f06d536))
+
+
+
+
+
+## [1.5.1](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@1.5.0...@ornikar/jest-config-react@1.5.1) (2019-03-26)
+
+**Note:** Version bump only for package @ornikar/jest-config-react
+
+
+
+
+
+# [1.5.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@1.4.2...@ornikar/jest-config-react@1.5.0) (2019-03-26)
+
+
+### Features
+
+* support decorators ([#129](https://github.com/ornikar/shared-configs/issues/129)) ([97f9292](https://github.com/ornikar/shared-configs/commit/97f9292))
+
+
+
+
+
+## [1.4.2](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@1.4.1...@ornikar/jest-config-react@1.4.2) (2019-03-18)
+
+
+### Bug Fixes
+
+* **deps:** update dependency enzyme-adapter-react-16 to v1.10.0 ([#115](https://github.com/ornikar/shared-configs/issues/115)) ([bb4bdb8](https://github.com/ornikar/shared-configs/commit/bb4bdb8))
+* **deps:** update dependency enzyme-adapter-react-16 to v1.11.2 ([#123](https://github.com/ornikar/shared-configs/issues/123)) ([434f2d2](https://github.com/ornikar/shared-configs/commit/434f2d2))
+
+
+
+
+
+## [1.4.1](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@1.4.0...@ornikar/jest-config-react@1.4.1) (2019-03-04)
+
+
+### Bug Fixes
+
+* path is not a function ([#116](https://github.com/ornikar/shared-configs/issues/116)) ([c6c5a30](https://github.com/ornikar/shared-configs/commit/c6c5a30))
+
+
+
+
+
+# [1.4.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@1.3.4...@ornikar/jest-config-react@1.4.0) (2019-02-26)
+
+
+### Features
+
+* jest config add support typescript ([#104](https://github.com/ornikar/shared-configs/issues/104)) ([e5fa370](https://github.com/ornikar/shared-configs/commit/e5fa370))
+
+
+
+
+
+## [1.3.4](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@1.3.3...@ornikar/jest-config-react@1.3.4) (2019-02-19)
+
+
+### Bug Fixes
+
+* **deps:** update dependency enzyme to v3.9.0 ([#99](https://github.com/ornikar/shared-configs/issues/99)) ([b76c58a](https://github.com/ornikar/shared-configs/commit/b76c58a))
+* **deps:** update dependency enzyme-adapter-react-16 to v1.9.1 ([#93](https://github.com/ornikar/shared-configs/issues/93)) ([fa58f8e](https://github.com/ornikar/shared-configs/commit/fa58f8e))
+
+
+
+
+
+## [1.3.3](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@1.3.2...@ornikar/jest-config-react@1.3.3) (2019-01-28)
+
+
+### Bug Fixes
+
+* **deps:** update dependency enzyme-adapter-react-16 to v1.8.0 ([#81](https://github.com/ornikar/shared-configs/issues/81)) ([8903755](https://github.com/ornikar/shared-configs/commit/8903755))
+
+
+
+
+
 ## [1.3.2](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@1.3.1...@ornikar/jest-config-react@1.3.2) (2018-12-18)
 
 
