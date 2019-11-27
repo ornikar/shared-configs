@@ -15,12 +15,12 @@
     "@storybook/addon-actions": "^5.2.6",
     "@storybook/addon-knobs": "^5.2.6",
     "@storybook/theming": "^5.2.6",
-    "@storybook/addon-viewport": "^5.2.6",
     "webpack": "^4.37.0"
   },
   "dependencies": {
     "@chrp/typed-css-modules-loader": "0.6.0",
     "@ornikar/webpack-config": "^1.1.0",
+    "@storybook/addon-viewport": "^5.2.6",
     "svg-react-loader": "0.4.6"
   },
   "devDependencies": {
