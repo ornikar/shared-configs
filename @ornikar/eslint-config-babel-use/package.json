@@ -1,6 +1,6 @@
 {
   "name": "@ornikar/eslint-config-babel-use",
-  "version": "1.1.7",
+  "version": "1.1.8",
   "description": "eslint babel use",
   "repository": "ornikar/shared-configs",
   "main": "index.js",
@@ -12,7 +12,7 @@
     "access": "public"
   },
   "dependencies": {
-    "@ornikar/eslint-config": "^8.2.4",
+    "@ornikar/eslint-config": "^8.2.5",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-prefer-class-properties": "^1.0.0"
   },

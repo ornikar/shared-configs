@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [8.0.17](https://github.com/ornikar/shared-configs/compare/@ornikar/eslint-config-babel@8.0.16...@ornikar/eslint-config-babel@8.0.17) (2019-11-27)
+
+**Note:** Version bump only for package @ornikar/eslint-config-babel
+
+
+
+
+
 ## [8.0.16](https://github.com/ornikar/shared-configs/compare/@ornikar/eslint-config-babel@8.0.15...@ornikar/eslint-config-babel@8.0.16) (2019-08-05)
 
 **Note:** Version bump only for package @ornikar/eslint-config-babel
