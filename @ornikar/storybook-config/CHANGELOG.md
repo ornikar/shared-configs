@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.2.0](https://github.com/ornikar/shared-configs/compare/@ornikar/storybook-config@1.1.4...@ornikar/storybook-config@1.2.0) (2019-11-28)
+
+
+### Features
+
+* add app storybook config ([#292](https://github.com/ornikar/shared-configs/issues/292)) ([645b893](https://github.com/ornikar/shared-configs/commit/645b893))
+
+
+
+
+
 ## [1.1.4](https://github.com/ornikar/shared-configs/compare/@ornikar/storybook-config@1.1.3...@ornikar/storybook-config@1.1.4) (2019-11-27)
 
 **Note:** Version bump only for package @ornikar/storybook-config
