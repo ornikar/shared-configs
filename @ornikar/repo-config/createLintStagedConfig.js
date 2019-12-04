@@ -16,11 +16,18 @@ module.exports = function createLintStagedConfig(options = {}) {
   return {
     [`{yarn.lock,package.json${
       workspaces ? `,${workspaces.map((workspacePath) => `${workspacePath}/package.json`).join(',')}` : ''
-    }}`]: (filenames) => ['yarn-update-lock', 'git add yarn.lock'],
-    [`{.eslintrc.json,package.json${
-      workspaces
-        ? `,${workspaces.map((workspacePath) => `${workspacePath}/{.eslintrc.json,package.json}`).join(',')}`
-        : ''
+    }}`]: (filenames) => {
+      const packagejsonFilenames = filenames.filter((filename) => filename.endsWith('.json'));
+      return [
+        'yarn-update-lock',
+        packagejsonFilenames.length === 0
+          ? undefined
+          : `prettier --parser json --write ${packagejsonFilenames.join(' ')}`,
+        `git add ${filenames.join(' ')}`,
+      ].filter(Boolean);
+    },
+    [`{.eslintrc.json${
+      workspaces ? `,${workspaces.map((workspacePath) => `${workspacePath}/{.eslintrc.json}`).join(',')}` : ''
     }}`]: ['prettier --parser json --write', 'git add'],
     [`{.storybook,${srcDirectories}}/**/*.css`]: [
       'prettier --parser css --write',
