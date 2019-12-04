@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.8](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@1.0.7...@ornikar/repo-config@1.0.8) (2019-12-04)
+
+
+### Bug Fixes
+
+* package json lint-staged racing condition [no issue] ([#293](https://github.com/ornikar/shared-configs/issues/293)) ([6328ec3](https://github.com/ornikar/shared-configs/commit/6328ec3))
+
+
+
+
+
 ## [1.0.7](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@1.0.6...@ornikar/repo-config@1.0.7) (2019-11-28)
 
 **Note:** Version bump only for package @ornikar/repo-config
