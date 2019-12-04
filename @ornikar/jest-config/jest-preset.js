@@ -19,8 +19,8 @@ module.exports = {
     // This first testMatch is used in jest-config-react
     `<rootDir>/${src}/**/__tests__/**/*.${useTypescript ? '{js,ts,tsx}' : 'js'}`,
     `<rootDir>/${src}/**/*.test.${useTypescript ? '{js,ts,tsx}' : 'js'}`,
-    `<rootDir>/{config,scripts}/**/__tests__/**/*.test.js`,
-    `<rootDir>/{config,scripts}/**/*.test.js`,
+    '<rootDir>/{config,scripts}/**/__tests__/**/*.test.js',
+    '<rootDir>/{config,scripts}/**/*.test.js',
   ],
   testPathIgnorePatterns: [],
   moduleDirectories: useLerna ? ['node_modules', 'src'] : ['node_modules'],
