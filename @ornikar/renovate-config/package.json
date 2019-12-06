@@ -37,7 +37,7 @@
             "@ornikar/eslint-config-typescript",
             "@ornikar/eslint-config-typescript-react",
             "@ornikar/prettier-config",
-            "@ornikar/stylelint-config",
+            "@ornikar/stylelint-config"
           ],
           "labels": [
             ":ok_hand: code/approved",
@@ -55,7 +55,7 @@
             "@ornikar/browserslist-config",
             "@ornikar/commitlint-config",
             "@ornikar/repo-config",
-            "@ornikar/repo-config-react",
+            "@ornikar/repo-config-react"
           ],
           "labels": [
             ":ok_hand: code/approved",
