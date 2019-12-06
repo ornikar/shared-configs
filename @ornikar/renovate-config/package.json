@@ -28,28 +28,54 @@
       ],
       "packageRules": [
         {
-          "groupName": "Shared Configs Ornikar",
+          "groupName": "Lint Ornikar Shared Configs",
           "packageNames": [
-            "@ornikar/browserslist-config",
-            "@ornikar/commitlint-config",
             "@ornikar/eslint-config",
             "@ornikar/eslint-config-babel",
             "@ornikar/eslint-config-node",
             "@ornikar/eslint-config-react",
             "@ornikar/eslint-config-typescript",
             "@ornikar/eslint-config-typescript-react",
-            "@ornikar/jest-config",
-            "@ornikar/jest-config-react",
-            "@ornikar/postcss-config",
             "@ornikar/prettier-config",
+            "@ornikar/stylelint-config",
+          ],
+          "labels": [
+            ":ok_hand: code/approved",
+            ":soon: automerge"
+          ],
+          "rebaseStalePrs": false,
+          "masterIssueApproval": false,
+          "schedule": [
+            "at any time"
+          ]
+        },
+        {
+          "groupName": "Repo Shared Configs Ornikar",
+          "packageNames": [
+            "@ornikar/browserslist-config",
+            "@ornikar/commitlint-config",
             "@ornikar/repo-config",
             "@ornikar/repo-config-react",
+          ],
+          "labels": [
+            ":ok_hand: code/approved",
+            ":soon: automerge"
+          ],
+          "rebaseStalePrs": false,
+          "masterIssueApproval": false,
+          "schedule": [
+            "at any time"
+          ]
+        },
+        {
+          "groupName": "Build Shared Configs Ornikar",
+          "packageNames": [
             "@ornikar/rollup-config",
             "@ornikar/storybook-config",
-            "@ornikar/stylelint-config",
             "@ornikar/webpack-config"
           ],
           "rebaseStalePrs": false,
+          "masterIssueApproval": false,
           "schedule": [
             "at any time"
           ]
@@ -67,6 +93,7 @@
             "@ornikar/validators"
           ],
           "rebaseStalePrs": false,
+          "masterIssueApproval": false,
           "schedule": [
             "at any time"
           ]
