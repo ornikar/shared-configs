@@ -3,7 +3,6 @@
 module.exports = {
   extends: [
     'eslint-config-airbnb-base',
-    'eslint-config-airbnb-base/rules/strict',
     '@ornikar/eslint-config/plugins/filenames',
     '@ornikar/eslint-config/plugins/prettier',
     '@ornikar/eslint-config/plugins/unicorn',
@@ -13,6 +12,10 @@ module.exports = {
     '@ornikar/eslint-config/rules/style',
     '@ornikar/eslint-config/rules/expert',
   ].map(require.resolve),
+
+  parserOptions: {
+    sourceType: 'module',
+  },
 
   rules: {
     // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-commonjs.md

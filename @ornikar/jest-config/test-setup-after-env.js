@@ -17,7 +17,7 @@ const env = jasmine.getEnv();
     // The call stack has helpful information for the test author.
     // Don't throw yet though b'c it might be accidentally caught and suppressed.
     const errorStack = new Error().stack;
-    unexpectedConsoleCallStacks.push([errorStack.substr(errorStack.indexOf('\n') + 1), util.format(format, ...args)]);
+    unexpectedConsoleCallStacks.push([errorStack.slice(errorStack.indexOf('\n') + 1), util.format(format, ...args)]);
   };
 
   console[methodName] = newMethod;
