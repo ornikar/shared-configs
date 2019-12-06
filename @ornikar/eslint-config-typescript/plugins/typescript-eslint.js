@@ -111,7 +111,7 @@ module.exports = {
     // too much errors on existing code
     '@typescript-eslint/unbound-method': 'off',
 
-    // issue when as is used to remove undefined (in liwi for example)
+    // issue when is used to remove undefined
     '@typescript-eslint/no-unnecessary-type-assertion': 'off',
   },
 };
