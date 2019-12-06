@@ -13,8 +13,8 @@
   },
   "dependencies": {
     "@ornikar/eslint-config-babel-use": "^1.1.8",
-    "@typescript-eslint/eslint-plugin": "^1.4.2",
-    "@typescript-eslint/parser": "^1.4.2",
+    "@typescript-eslint/eslint-plugin": "^2.10.0",
+    "@typescript-eslint/parser": "^2.10.0",
     "eslint-config-prettier": "^6.7.0"
   },
   "peerDependencies": {
