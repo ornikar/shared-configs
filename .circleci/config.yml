@@ -3,7 +3,7 @@ version: 2
 jobs:
   dependencies:
     docker:
-      - image: circleci/node:10.16
+      - image: circleci/node:10.17
     steps:
       - checkout
       - restore_cache:
@@ -39,7 +39,7 @@ jobs:
 
   lint:
     docker:
-      - image: circleci/node:10.16
+      - image: circleci/node:10.17
     steps:
       - checkout
       - restore_cache:
@@ -51,7 +51,7 @@ jobs:
   # Note: need these env variables: EMAIL, GIT_AUTHOR_NAME, GIT_COMMITTER_NAME, NPM_TOKEN, GITHUB_TOKEN
   release:
     docker:
-      - image: circleci/node:10.16
+      - image: circleci/node:10.17
     steps:
       - checkout
       - restore_cache:
