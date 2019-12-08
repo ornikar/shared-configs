@@ -89,7 +89,14 @@ module.exports = {
 
     // type annotations are allowed on the variable of a function expression rather than on the function directly
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/explicit-function-return-type.md#allowtypedfunctionexpressions
-    '@typescript-eslint/explicit-function-return-type': ['warn', { allowTypedFunctionExpressions: true }],
+    '@typescript-eslint/explicit-function-return-type': [
+      'warn',
+      {
+        allowExpressions: true,
+        allowTypedFunctionExpressions: true,
+        allowHigherOrderFunctions: true,
+      },
+    ],
 
     // https://github.com/typescript-eslint/typescript-eslint/issues/201
     // private is coming in js world and no-public will be the most common way to read a js file (and probably ts)
