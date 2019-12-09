@@ -92,6 +92,7 @@ module.exports = {
     '@typescript-eslint/explicit-function-return-type': [
       'warn',
       {
+        allowExpressions: false,
         allowTypedFunctionExpressions: true,
         allowHigherOrderFunctions: true,
       },
