@@ -13,15 +13,15 @@
   },
   "dependencies": {
     "@ornikar/eslint-config-babel": "^8.0.17",
-    "eslint-config-airbnb": "^17.1.0",
-    "eslint-config-prettier": "^5.0.0",
-    "eslint-plugin-react": "^7.12.4",
-    "eslint-plugin-react-hooks": "^1.3.0"
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-config-prettier": "^6.7.0",
+    "eslint-plugin-react": "^7.17.0",
+    "eslint-plugin-react-hooks": "^2.3.0"
   },
   "peerDependencies": {
-    "eslint": "^5.10.0 || ^6.0.0"
+    "eslint": "^6.7.2"
   },
   "devDependencies": {
-    "eslint": "6.1.0"
+    "eslint": "6.7.2"
   }
 }
