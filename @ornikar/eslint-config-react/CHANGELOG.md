@@ -3,6 +3,36 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [9.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/eslint-config-react@8.2.11...@ornikar/eslint-config-react@9.0.0) (2019-12-13)
+
+
+### Features
+
+* eslint 6 [no issue] ([#298](https://github.com/ornikar/shared-configs/issues/298)) ([4bd9bf8](https://github.com/ornikar/shared-configs/commit/4bd9bf8))
+
+
+### BREAKING CHANGES
+
+* changed peer deps eslint 6, prettier, and enabled new rules
+
+* refactor: comment on liwi
+
+* fix: remove todo rule, now allowed with unicorn
+
+* chore: update @typescript-eslint
+
+* feat: explicit-function-return-type allow expressions and hof
+
+* feat: remove allowExpressions: true
+
+* feat: remove allowExpressions: true
+
+* fix: prefer flat map
+
+
+
+
+
 ## [8.2.11](https://github.com/ornikar/shared-configs/compare/@ornikar/eslint-config-react@8.2.10...@ornikar/eslint-config-react@8.2.11) (2019-11-27)
 
 **Note:** Version bump only for package @ornikar/eslint-config-react
