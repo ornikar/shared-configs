@@ -30,7 +30,7 @@
     "lerna": "3.19.0",
     "lint-staged": "9.5.0",
     "prettier": "1.19.1",
-    "yarn-update-lock": "1.0.0",
+    "yarn-deduplicate": "1.1.1",
     "yarnhook": "0.4.3"
   }
 }
