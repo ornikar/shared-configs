@@ -28,6 +28,7 @@ jobs:
             - '@ornikar/eslint-config-typescript-react/node_modules'
             - '@ornikar/jest-config/node_modules'
             - '@ornikar/jest-config-react/node_modules'
+            - '@ornikar/lerna-config/node_modules'
             - '@ornikar/postcss-config/node_modules'
             - '@ornikar/prettier-config/node_modules'
             - '@ornikar/renovate-config/node_modules'
@@ -68,7 +69,6 @@ jobs:
       - run:
           name: Publish to npm
           command: yarn lerna publish from-git --yes
-
 
 workflows:
   version: 2

@@ -1,0 +1,17 @@
+{
+  "name": "@ornikar/lerna-config",
+  "version": "1.0.0-pre",
+  "description": "lerna config",
+  "repository": "ornikar/shared-configs",
+  "license": "ISC",
+  "engines": {
+    "node": ">= 8.3.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "peerDependencies": {
+    "husky": "^3.0.2"
+  },
+  "dependencies": {}
+}
