@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.0.1](https://github.com/ornikar/shared-configs/compare/@ornikar/eslint-config@9.0.0...@ornikar/eslint-config@9.0.1) (2019-12-20)
+
+
+### Bug Fixes
+
+* disable unicorn/consistent-function-scoping [no issue] ([#301](https://github.com/ornikar/shared-configs/issues/301)) ([c1aedcb](https://github.com/ornikar/shared-configs/commit/c1aedcb))
+
+
+
+
+
 # [9.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/eslint-config@8.2.5...@ornikar/eslint-config@9.0.0) (2019-12-13)
 
 
