@@ -1,3 +1,22 @@
 {
-  "extends": ["config:js-lib", "@ornikar"]
+  "extends": ["config:js-lib", "@ornikar"],
+  "packageRules": [
+    {
+      "packageNames": [
+        "yarn-deduplicate"
+      ],
+      "updateTypes": [
+        "patch",
+        "minor"
+      ],
+      "labels": [
+        ":ok_hand: code/approved",
+        ":soon: automerge"
+      ],
+      "masterIssueApproval": false,
+      "schedule": [
+        "before 5:00am"
+      ]
+    }
+  ]
 }
