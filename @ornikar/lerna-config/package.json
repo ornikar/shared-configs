@@ -10,8 +10,5 @@
   "publishConfig": {
     "access": "public"
   },
-  "peerDependencies": {
-    "husky": "^3.0.2"
-  },
   "dependencies": {}
 }
