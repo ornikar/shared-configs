@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 /* eslint-disable import/no-extraneous-dependencies, node/no-extraneous-require */
 
 'use strict';
