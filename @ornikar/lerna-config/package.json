@@ -13,5 +13,8 @@
   "bin": {
     "lerna-config-generate-tsconfig-files": "./generate-tsconfig-files.js"
   },
+  "peerDependencies": {
+    "lerna": ">= 3.19.0"
+  },
   "dependencies": {}
 }
