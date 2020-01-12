@@ -38,6 +38,7 @@ const PackageGraph = require('@lerna/package-graph');
         rootDirs: ['src'],
         baseUrl: '.',
       },
+      include: ['src', '../../typings'],
     };
 
     const tsconfigBuildContent = {
@@ -67,7 +68,6 @@ const PackageGraph = require('@lerna/package-graph');
     const hasReact = pkg.peerDependencies && pkg.peerDependencies.react;
     if (hasReact) {
       tsconfigContent.compilerOptions.jsx = 'preserve';
-      tsconfigContent.include = ['src', '../../typings'];
     }
 
     if (dependencies.length !== 0) {
