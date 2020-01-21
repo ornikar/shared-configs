@@ -13,7 +13,8 @@
   },
   "peerDependencies": {
     "react": "^16.6.3",
-    "react-dom": "^16.6.3"
+    "react-dom": "^16.6.3",
+    "react-intl": "^3.11.0"
   },
   "dependencies": {
     "@ornikar/jest-config": "^3.0.0",
@@ -23,6 +24,7 @@
     "identity-obj-proxy": "^3.0.0"
   },
   "devDependencies": {
-    "react": "16.8.6"
+    "react": "16.8.6",
+    "react-intl": "3.11.0"
   }
 }
