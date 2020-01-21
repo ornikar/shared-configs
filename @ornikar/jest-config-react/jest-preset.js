@@ -29,5 +29,6 @@ module.exports = {
     '@storybook/react$': require.resolve('./__mocks__/@storybook/react'),
     '@storybook/addon-knobs': require.resolve('./__mocks__/@storybook/addon-knobs'),
     'storybook-react-router': require.resolve('./__mocks__/storybook-react-router'),
+    enzyme: require.resolve('./__mocks__/enzyme.js'),
   },
 };
