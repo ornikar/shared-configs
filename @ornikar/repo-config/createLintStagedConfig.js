@@ -5,6 +5,9 @@ const path = require('path');
 // eslint-disable-next-line import/no-dynamic-require
 const pkg = require(path.resolve('package.json'));
 const workspaces = pkg.workspaces || false;
+const isLernaRepo = Boolean(pkg.devDependencies && pkg.devDependencies.lerna);
+const hasTypescript = Boolean(pkg.devDependencies && pkg.devDependencies.typescript);
+const shouldGenerateTsconfigInLernaRepo = isLernaRepo && hasTypescript;
 
 const getSrcDirectories = (srcDirectoryName = 'src') =>
   workspaces ? `{${workspaces.join(',')}}${srcDirectoryName && `/${srcDirectoryName}`}` : srcDirectoryName;
@@ -24,6 +27,9 @@ module.exports = function createLintStagedConfig(options = {}) {
           ? undefined
           : `prettier --parser json --write ${packagejsonFilenames.join(' ')}`,
         `git add ${filenames.join(' ')}`,
+        // eslint-disable-next-line node/no-extraneous-require
+        shouldGenerateTsconfigInLernaRepo && require.resolve('@ornikar/lerna-config/generate-tsconfig-files.js'),
+        shouldGenerateTsconfigInLernaRepo && 'git add **/tsconfig.json **/tsconfig.build.json',
       ].filter(Boolean);
     },
     [`{.eslintrc.json${
