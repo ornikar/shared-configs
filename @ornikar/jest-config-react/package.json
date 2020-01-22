@@ -23,6 +23,6 @@
     "identity-obj-proxy": "^3.0.0"
   },
   "devDependencies": {
-    "react": "16.8.6"
+    "react": "16.12.0"
   }
 }
