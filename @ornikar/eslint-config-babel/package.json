@@ -1,6 +1,6 @@
 {
   "name": "@ornikar/eslint-config-babel",
-  "version": "9.0.1",
+  "version": "9.0.2",
   "description": "eslint babel config files",
   "repository": "ornikar/shared-configs",
   "main": "index.js",
@@ -12,7 +12,7 @@
     "access": "public"
   },
   "dependencies": {
-    "@ornikar/eslint-config-babel-use": "^2.0.1",
+    "@ornikar/eslint-config-babel-use": "^2.0.2",
     "babel-eslint": "^10.0.1",
     "eslint-plugin-babel": "^5.3.0"
   },

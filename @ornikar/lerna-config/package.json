@@ -1,6 +1,6 @@
 {
   "name": "@ornikar/lerna-config",
-  "version": "1.0.0-pre",
+  "version": "1.0.0",
   "description": "lerna config",
   "repository": "ornikar/shared-configs",
   "license": "ISC",
@@ -15,6 +15,5 @@
   },
   "peerDependencies": {
     "lerna": ">= 3.19.0"
-  },
-  "dependencies": {}
+  }
 }
