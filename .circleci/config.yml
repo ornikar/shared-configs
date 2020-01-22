@@ -8,13 +8,13 @@ jobs:
       - checkout
       - restore_cache:
           keys:
-            - v1-dependencies-{{ arch }}-{{ checksum "yarn.lock" }}
-            - v1-dependencies-{{ arch }}
+            - v2-dependencies-{{ arch }}-{{ checksum "yarn.lock" }}
+            - v2-dependencies-{{ arch }}
       - run:
           name: Install dependencies
           command: yarn --prefer-offline --frozen-lockfile --ignore-engines
       - save_cache:
-          key: v1-dependencies-{{ arch }}-{{ checksum "yarn.lock" }}
+          key: v2-dependencies-{{ arch }}-{{ checksum "yarn.lock" }}
           paths:
             - node_modules
             - '@ornikar/browserlist-config/node_modules'
@@ -35,6 +35,7 @@ jobs:
             - '@ornikar/repo-config/node_modules'
             - '@ornikar/repo-config-react/node_modules'
             - '@ornikar/rollup-config/node_modules'
+            - '@ornikar/storybook-config/node_modules'
             - '@ornikar/stylelint-config/node_modules'
             - '@ornikar/webpack-config/node_modules'
 
@@ -44,7 +45,7 @@ jobs:
     steps:
       - checkout
       - restore_cache:
-          key: v1-dependencies-{{ arch }}-{{ checksum "yarn.lock" }}
+          key: v2-dependencies-{{ arch }}-{{ checksum "yarn.lock" }}
       - run:
           name: Lint code
           command: yarn run lint
@@ -56,7 +57,7 @@ jobs:
     steps:
       - checkout
       - restore_cache:
-          key: v1-dependencies-{{ arch }}-{{ checksum "yarn.lock" }}
+          key: v2-dependencies-{{ arch }}-{{ checksum "yarn.lock" }}
       - run:
           name: Setup origin with write access
           command: git remote set-url origin "https://michael-robot:$GITHUB_TOKEN@github.com/$CIRCLE_PROJECT_USERNAME/$CIRCLE_PROJECT_REPONAME"
