@@ -5,8 +5,8 @@ const path = require('path');
 // eslint-disable-next-line import/no-dynamic-require
 const pkg = require(path.resolve('package.json'));
 const workspaces = pkg.workspaces || false;
-const isLernaRepo = Boolean(pkg.devDependency && pkg.devDependency.lerna);
-const hasTypescript = Boolean(pkg.devDependency && pkg.devDependency.typescript);
+const isLernaRepo = Boolean(pkg.devDependencies && pkg.devDependencies.lerna);
+const hasTypescript = Boolean(pkg.devDependencies && pkg.devDependencies.typescript);
 const shouldGenerateTsconfigInLernaRepo = isLernaRepo && hasTypescript;
 
 const getSrcDirectories = (srcDirectoryName = 'src') =>
