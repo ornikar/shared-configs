@@ -1,0 +1,24 @@
+{
+  "name": "@ornikar/intl-config",
+  "version": "1.0.0-pre",
+  "description": "intl-config",
+  "repository": "ornikar/shared-configs",
+  "license": "ISC",
+  "engines": {
+    "node": ">= 8.3.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "bin": {
+    "generate-translations": "./generate-translations.js"
+  },
+  "dependencies": {
+    "glob": "^7.1.6"
+  },
+  "peerDependencies": {
+    "babel/core": "^7.4.3",
+    "babel-preset-react-app": "^9.1.0",
+    "babel-plugin-react-intl": "^5.1.17"
+  }
+}
