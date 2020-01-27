@@ -10,8 +10,8 @@ const babelPluginReactIntl = require('babel-plugin-react-intl');
 
 process.env.NODE_ENV = 'production';
 
-module.exports = ({ paths, babelConfig }) => {
-  paths.forEach(({ name, messageGlob, distDir }) => {
+module.exports = ({ paths, babelConfig, defaultDestinationDirectory }) => {
+  paths.forEach(({ name, messageGlob, destinationDirectory = defaultDestinationDirectory }) => {
     const defaultMessages = globSync(messageGlob, { ignore: ['**/*.module.css.d.ts', '**/stories.{ts,tsx}'] })
       .map((filename) => ({ filename, code: fs.readFileSync(filename, 'utf8') }))
       .map(
@@ -32,7 +32,7 @@ module.exports = ({ paths, babelConfig }) => {
         return collection;
       }, {});
 
-    const destinationFile = path.join(distDir, `${name ? `fr-FR/${name}` : 'fr-FR'}.json`);
+    const destinationFile = path.join(destinationDirectory, `${name ? `fr-FR/${name}` : 'fr-FR'}.json`);
     const destinationFolder = path.dirname(destinationFile);
 
     fs.mkdirSync(destinationFolder, { recursive: true });
