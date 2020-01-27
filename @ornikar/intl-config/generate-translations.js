@@ -11,6 +11,7 @@ const babelPluginReactIntl = require('babel-plugin-react-intl');
 process.env.NODE_ENV = 'production';
 
 module.exports = ({ paths, babelConfig, defaultDestinationDirectory }) => {
+  const babelPlugins = [babelPluginReactIntl, ...(babelConfig.plugins || [])];
   paths.forEach(({ name, messageGlob, destinationDirectory = defaultDestinationDirectory }) => {
     const defaultMessages = globSync(messageGlob, { ignore: ['**/*.module.css.d.ts', '**/stories.{ts,tsx}'] })
       .map((filename) => ({ filename, code: fs.readFileSync(filename, 'utf8') }))
@@ -19,7 +20,7 @@ module.exports = ({ paths, babelConfig, defaultDestinationDirectory }) => {
           babelCore.transformSync(code, {
             filename,
             ...babelConfig,
-            plugins: [babelPluginReactIntl, ...babelConfig.plugins],
+            plugins: babelPlugins,
           }).metadata['react-intl'].messages,
       )
       .reduce((collection, descriptors) => {
