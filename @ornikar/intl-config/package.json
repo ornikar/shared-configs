@@ -1,6 +1,6 @@
 {
   "name": "@ornikar/intl-config",
-  "version": "1.0.0-pre",
+  "version": "1.0.0",
   "description": "intl-config",
   "repository": "ornikar/shared-configs",
   "license": "ISC",
@@ -11,8 +11,8 @@
     "access": "public"
   },
   "dependencies": {
-    "glob": "^7.1.6",
-    "babel-plugin-react-intl": "^5.1.17"
+    "babel-plugin-react-intl": "^5.1.17",
+    "glob": "^7.1.6"
   },
   "devDependencies": {
     "@babel/core": "7.4.3"
