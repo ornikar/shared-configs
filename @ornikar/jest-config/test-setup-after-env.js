@@ -13,6 +13,13 @@ const env = jasmine.getEnv();
 ['error', 'warn'].forEach((methodName) => {
   const unexpectedConsoleCallStacks = [];
   const newMethod = function(format, ...args) {
+    if (
+      typeof format === 'string' &&
+      format.includes('componentWillReceiveProps has been renamed, and is not recommended for use.')
+    ) {
+      return;
+    }
+
     // Capture the call stack now so we can warn about it later.
     // The call stack has helpful information for the test author.
     // Don't throw yet though b'c it might be accidentally caught and suppressed.
