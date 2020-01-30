@@ -12,6 +12,7 @@
     "access": "public"
   },
   "peerDependencies": {
+    "@testing-library/react": "^9.4.0",
     "react": "^16.6.3",
     "react-dom": "^16.6.3"
   },
@@ -23,6 +24,7 @@
     "identity-obj-proxy": "^3.0.0"
   },
   "devDependencies": {
+    "@testing-library/react": "^9.4.0",
     "react": "16.12.0"
   }
 }
