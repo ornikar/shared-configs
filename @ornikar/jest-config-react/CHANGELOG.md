@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.1.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@3.0.0...@ornikar/jest-config-react@3.1.0) (2020-02-03)
+
+
+### Features
+
+* add ignore on emtpy test suites ([#321](https://github.com/ornikar/shared-configs/issues/321)) ([a56ffdf](https://github.com/ornikar/shared-configs/commit/a56ffdf))
+
+
+
+
+
 # [3.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@2.3.8...@ornikar/jest-config-react@3.0.0) (2020-01-30)
 
 
