@@ -49,7 +49,10 @@ exports.storiesOf = (groupName) => {
       const { jest } = parameters;
       const { componentToTest, ignore, ignoreDecorators, testingLibrary } = jest || {};
 
-      if (ignore) return api;
+      if (ignore) {
+        test.skip(storyName, () => {});
+        return api;
+      }
 
       describe(groupName, () => {
         it(storyName, () => {
