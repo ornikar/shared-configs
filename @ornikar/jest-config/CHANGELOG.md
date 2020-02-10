@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.1.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config@3.0.0...@ornikar/jest-config@3.1.0) (2020-02-10)
+
+
+### Features
+
+* ignore lifecycle methods warning in jest tests ([#323](https://github.com/ornikar/shared-configs/issues/323)) ([4346e04](https://github.com/ornikar/shared-configs/commit/4346e04))
+
+
+
+
+
 # [3.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config@2.4.1...@ornikar/jest-config@3.0.0) (2019-12-13)
 
 
