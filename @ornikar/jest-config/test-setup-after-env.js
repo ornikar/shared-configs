@@ -10,9 +10,25 @@ const chalk = require('chalk');
 
 const env = jasmine.getEnv();
 
+// Deprecated lifecycle methods are forbidden in our eslint config. This means any related warning is due to a dependency and can be ignored in tests.
+const deprecatedReactLifeCycleMethods = [
+  'componentWillMount',
+  'componentWillUnmount',
+  'componentWillUpdate',
+  'componentWillReceiveProps',
+];
+
 ['error', 'warn'].forEach((methodName) => {
   const unexpectedConsoleCallStacks = [];
   const newMethod = function(format, ...args) {
+    if (
+      typeof format === 'string' &&
+      deprecatedReactLifeCycleMethods.some((lifecycleMethod) =>
+        format.includes(`${lifecycleMethod} has been renamed, and is not recommended for use.`),
+      )
+    ) {
+      return;
+    }
     // Capture the call stack now so we can warn about it later.
     // The call stack has helpful information for the test author.
     // Don't throw yet though b'c it might be accidentally caught and suppressed.
