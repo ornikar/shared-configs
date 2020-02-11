@@ -1,6 +1,6 @@
 {
   "name": "@ornikar/jest-config",
-  "version": "3.1.0",
+  "version": "3.2.0",
   "description": "jest config",
   "repository": "ornikar/shared-configs",
   "main": "jest-preset.js",
@@ -12,10 +12,10 @@
     "access": "public"
   },
   "dependencies": {
+    "@formatjs/intl-pluralrules": "1.5.2",
     "chalk": "^2.4.1",
     "intl": "^1.2.5",
-    "timezone-mock": "^1.0.5",
-    "@formatjs/intl-pluralrules": "1.5.2"
+    "timezone-mock": "^1.0.5"
   },
   "peerDependencies": {
     "jest": ">= 24.0.0"

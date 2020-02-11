@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.2.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config@3.1.0...@ornikar/jest-config@3.2.0) (2020-02-11)
+
+
+### Features
+
+* add polyfill for plural rules [no issue] ([#324](https://github.com/ornikar/shared-configs/issues/324)) ([a91acfd](https://github.com/ornikar/shared-configs/commit/a91acfd))
+
+
+
+
+
 # [3.1.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config@3.0.0...@ornikar/jest-config@3.1.0) (2020-02-10)
 
 
