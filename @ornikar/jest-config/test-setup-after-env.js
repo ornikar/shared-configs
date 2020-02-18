@@ -19,15 +19,23 @@ const deprecatedReactLifeCycleMethods = [
 ];
 
 ['error', 'warn'].forEach((methodName) => {
+  const originalConsole = console;
+
   const unexpectedConsoleCallStacks = [];
   const newMethod = function(format, ...args) {
-    if (
-      typeof format === 'string' &&
-      deprecatedReactLifeCycleMethods.some((lifecycleMethod) =>
-        format.includes(`${lifecycleMethod} has been renamed, and is not recommended for use.`),
-      )
-    ) {
-      return;
+    if (typeof format === 'string') {
+      if (
+        deprecatedReactLifeCycleMethods.some((lifecycleMethod) =>
+          format.includes(`${lifecycleMethod} has been renamed, and is not recommended for use.`),
+        )
+      ) {
+        return;
+      }
+
+      if (format.match(/Warning: An update to (.*) inside a test was not wrapped in act/)) {
+        originalConsole.warn(format, ...args);
+        return;
+      }
     }
     // Capture the call stack now so we can warn about it later.
     // The call stack has helpful information for the test author.
