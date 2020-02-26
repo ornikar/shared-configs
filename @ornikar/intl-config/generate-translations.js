@@ -7,13 +7,18 @@ const path = require('path');
 const globSync = require('glob').sync;
 const babelCore = require('@babel/core');
 const babelPluginReactIntl = require('babel-plugin-react-intl');
+const sortObjectKeys = require('sort-object-keys');
 
 process.env.NODE_ENV = 'production';
+
+const sortFn = (a, b) => a.toLowerCase().localeCompare(b.toLowerCase());
 
 module.exports = ({ paths, babelConfig, defaultDestinationDirectory }) => {
   const babelPlugins = [babelPluginReactIntl, ...(babelConfig.plugins || [])];
   paths.forEach(({ name, messageGlob, destinationDirectory = defaultDestinationDirectory }) => {
-    const defaultMessages = globSync(messageGlob, { ignore: ['**/*.module.css.d.ts', '**/stories.{ts,tsx,js,jsx}', '**/*.{test.ts,test.tsx,test.js,test.jsx}'] })
+    const defaultMessages = globSync(messageGlob, {
+      ignore: ['**/*.module.css.d.ts', '**/stories.{ts,tsx,js,jsx}', '**/*.{test.ts,test.tsx,test.js,test.jsx}'],
+    })
       .map((filename) => ({ filename, code: fs.readFileSync(filename, 'utf8') }))
       .map(
         ({ filename, code }) =>
@@ -37,6 +42,6 @@ module.exports = ({ paths, babelConfig, defaultDestinationDirectory }) => {
     const destinationFolder = path.dirname(destinationFile);
 
     fs.mkdirSync(destinationFolder, { recursive: true });
-    fs.writeFileSync(destinationFile, JSON.stringify(defaultMessages, null, 2));
+    fs.writeFileSync(destinationFile, JSON.stringify(sortObjectKeys(defaultMessages, sortFn), null, 2));
   });
 };
