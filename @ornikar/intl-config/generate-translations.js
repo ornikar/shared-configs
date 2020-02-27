@@ -13,8 +13,9 @@ process.env.NODE_ENV = 'production';
 
 const sortFn = (a, b) => a.toLowerCase().localeCompare(b.toLowerCase());
 
-module.exports = ({ paths, babelConfig, defaultDestinationDirectory }) => {
-  const babelPlugins = [babelPluginReactIntl, ...(babelConfig.plugins || [])];
+module.exports = ({ paths, babelConfig, babelPluginReactIntlOptions = {}, defaultDestinationDirectory }) => {
+  const babelPlugins = [[babelPluginReactIntl, babelPluginReactIntlOptions], ...(babelConfig.plugins || [])];
+
   paths.forEach(({ name, messageGlob, destinationDirectory = defaultDestinationDirectory }) => {
     const defaultMessages = globSync(messageGlob, {
       ignore: ['**/*.module.css.d.ts', '**/stories.{ts,tsx,js,jsx}', '**/*.{test.ts,test.tsx,test.js,test.jsx}'],
