@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.3.1](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config@3.3.0...@ornikar/jest-config@3.3.1) (2020-03-10)
+
+
+### Bug Fixes
+
+* recursive warn [no issue] ([#329](https://github.com/ornikar/shared-configs/issues/329)) ([fa92bfe](https://github.com/ornikar/shared-configs/commit/fa92bfe))
+
+
+
+
+
 # [3.3.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config@3.2.1...@ornikar/jest-config@3.3.0) (2020-02-18)
 
 
