@@ -1,3 +1,5 @@
+/* eslint-disable no-console */
+
 'use strict';
 
 /* global jasmine */
@@ -19,7 +21,7 @@ const deprecatedReactLifeCycleMethods = [
 ];
 
 ['error', 'warn'].forEach((methodName) => {
-  const originalConsole = console;
+  const originalMethod = console[methodName];
 
   const unexpectedConsoleCallStacks = [];
   const newMethod = function(format, ...args) {
@@ -33,7 +35,7 @@ const deprecatedReactLifeCycleMethods = [
       }
 
       if (format.match(/Warning: An update to (.*) inside a test was not wrapped in act/)) {
-        originalConsole.warn(format, ...args);
+        originalMethod(format, ...args);
         return;
       }
     }
