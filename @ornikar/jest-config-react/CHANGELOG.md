@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.2.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@3.1.5...@ornikar/jest-config-react@3.2.0) (2020-03-30)
+
+
+### Features
+
+* make react-testing-library default snapshot provider ([#332](https://github.com/ornikar/shared-configs/issues/332)) ([883a0f7](https://github.com/ornikar/shared-configs/commit/883a0f7))
+
+
+
+
+
 ## [3.1.5](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@3.1.4...@ornikar/jest-config-react@3.1.5) (2020-03-10)
 
 **Note:** Version bump only for package @ornikar/jest-config-react
