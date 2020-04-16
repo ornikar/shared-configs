@@ -47,7 +47,7 @@ exports.storiesOf = (groupName) => {
     add(storyName, story, storyParameters = {}) {
       const parameters = { name: storyName, ...localParameters, ...storyParameters };
       const { jest } = parameters;
-      const { componentToTest, ignore, ignoreDecorators, useDeprecatedEnzyme } = jest || {};
+      const { componentToTest, ignore, ignoreDecorators, useDeprecatedEnzyme, renderOptions } = jest || {};
 
       if (ignore) {
         test.skip(storyName, () => {});
@@ -75,7 +75,7 @@ exports.storiesOf = (groupName) => {
               expect(shallowToJson(wrapper)).toMatchSnapshot();
             }
           } else {
-            const { asFragment } = render(story(parameters), { wrapper: wrappingComponent });
+            const { asFragment } = render(story(parameters), { wrapper: wrappingComponent, ...renderOptions });
             expect(asFragment()).toMatchSnapshot();
           }
         });
