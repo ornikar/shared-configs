@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.4.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@3.3.0...@ornikar/jest-config-react@3.4.0) (2020-04-20)
+
+
+### Features
+
+* **jest-config-react:** remove enzyme ([#341](https://github.com/ornikar/shared-configs/issues/341)) ([668cd00](https://github.com/ornikar/shared-configs/commit/668cd00))
+
+
+
+
+
 # [3.3.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@3.2.0...@ornikar/jest-config-react@3.3.0) (2020-04-20)
 
 
