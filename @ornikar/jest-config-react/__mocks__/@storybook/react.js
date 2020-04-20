@@ -2,8 +2,6 @@
 
 'use strict';
 
-const { shallow } = require('enzyme');
-const { shallowToJson } = require('enzyme-to-json');
 const { render } = require('@testing-library/react');
 
 const decorateStory = (storyFn, decorators) =>
@@ -47,7 +45,7 @@ exports.storiesOf = (groupName) => {
     add(storyName, story, storyParameters = {}) {
       const parameters = { name: storyName, ...localParameters, ...storyParameters };
       const { jest } = parameters;
-      const { componentToTest, ignore, ignoreDecorators, useDeprecatedEnzyme } = jest || {};
+      const { ignore, ignoreDecorators } = jest || {};
 
       if (ignore) {
         test.skip(storyName, () => {});
@@ -60,24 +58,8 @@ exports.storiesOf = (groupName) => {
             ? undefined
             : ({ children }) => decorateStory(() => children, [...globalDecorators, ...localDecorators])(parameters);
 
-          if (useDeprecatedEnzyme) {
-            const wrapper = shallow(story(parameters), {
-              disableLifecycleMethods: true,
-              wrappingComponent,
-            });
-
-            if (componentToTest) {
-              const component = wrapper.find(componentToTest);
-              component.forEach((child) => {
-                expect(shallowToJson(child.dive())).toMatchSnapshot();
-              });
-            } else {
-              expect(shallowToJson(wrapper)).toMatchSnapshot();
-            }
-          } else {
-            const { asFragment } = render(story(parameters), { wrapper: wrappingComponent });
-            expect(asFragment()).toMatchSnapshot();
-          }
+          const { asFragment } = render(story(parameters), { wrapper: wrappingComponent });
+          expect(asFragment()).toMatchSnapshot();
         });
       });
 
