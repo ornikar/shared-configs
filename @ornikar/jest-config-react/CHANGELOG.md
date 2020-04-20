@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.3.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@3.2.0...@ornikar/jest-config-react@3.3.0) (2020-04-20)
+
+
+### Features
+
+* jest mock portal for testing library ([#340](https://github.com/ornikar/shared-configs/issues/340)) ([90a7ebe](https://github.com/ornikar/shared-configs/commit/90a7ebe))
+
+
+
+
+
 # [3.2.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@3.1.5...@ornikar/jest-config-react@3.2.0) (2020-03-30)
 
 

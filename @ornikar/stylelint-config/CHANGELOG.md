@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.1.0](https://github.com/ornikar/shared-configs/compare/@ornikar/stylelint-config@4.0.0...@ornikar/stylelint-config@4.1.0) (2020-04-20)
+
+
+### Features
+
+* add blacklisted properties ([#334](https://github.com/ornikar/shared-configs/issues/334)) ([45bb2e2](https://github.com/ornikar/shared-configs/commit/45bb2e2))
+
+
+
+
+
 # [4.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/stylelint-config@3.2.1...@ornikar/stylelint-config@4.0.0) (2019-12-13)
 
 
