@@ -2,9 +2,6 @@
 
 'use strict';
 
-const { configure } = require('enzyme');
-const Adapter = require('enzyme-adapter-react-16');
-
 // Usefull to display snapshot of portals (drawer or modal for example) with react testing library
 jest.mock('react-dom', () => {
   return {
@@ -14,5 +11,3 @@ jest.mock('react-dom', () => {
     },
   };
 });
-
-configure({ adapter: new Adapter() });
