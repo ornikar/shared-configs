@@ -12,7 +12,7 @@
     "access": "public"
   },
   "peerDependencies": {
-    "prettier": "2.0.4"
+    "prettier": "^2.0.4"
   },
   "devDependencies": {
     "prettier": "2.0.4"
