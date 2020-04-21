@@ -21,11 +21,11 @@
     "stylelint-order": "^3.0.0"
   },
   "peerDependencies": {
-    "prettier": "^1.19.1",
+    "prettier": "^1.19.1 || ^2.0.0",
     "stylelint": "^9.9.0 || ^10.0.0"
   },
   "devDependencies": {
-    "prettier": "1.19.1",
+    "prettier": "2.0.4",
     "stylelint": "10.1.0"
   }
 }
