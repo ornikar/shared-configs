@@ -3,7 +3,7 @@ version: 2
 jobs:
   dependencies:
     docker:
-      - image: circleci/node:10.18
+      - image: circleci/node:12.16.2
     steps:
       - checkout
       - restore_cache:
