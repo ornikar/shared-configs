@@ -24,7 +24,7 @@ const deprecatedReactLifeCycleMethods = [
   const originalMethod = console[methodName];
 
   const unexpectedConsoleCallStacks = [];
-  const newMethod = function (format, ...args) {
+  const newMethod = function(format, ...args) {
     if (typeof format === 'string') {
       if (
         deprecatedReactLifeCycleMethods.some((lifecycleMethod) =>
