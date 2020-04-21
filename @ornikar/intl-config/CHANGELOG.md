@@ -3,6 +3,29 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/intl-config@1.2.0...@ornikar/intl-config@2.0.0) (2020-04-21)
+
+
+### Bug Fixes
+
+* **deps:** update dependency babel-plugin-react-intl to v7 ([#348](https://github.com/ornikar/shared-configs/issues/348)) ([b4b560e](https://github.com/ornikar/shared-configs/commit/b4b560e))
+
+
+### Features
+
+* update node version to 12 [no issue] ([#354](https://github.com/ornikar/shared-configs/issues/354)) ([6276917](https://github.com/ornikar/shared-configs/commit/6276917))
+
+
+### BREAKING CHANGES
+
+* node version
+
+* Update config.yml
+
+
+
+
+
 # [1.2.0](https://github.com/ornikar/shared-configs/compare/@ornikar/intl-config@1.1.0...@ornikar/intl-config@1.2.0) (2020-02-27)
 
 

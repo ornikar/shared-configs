@@ -3,6 +3,55 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/stylelint-config@4.1.0...@ornikar/stylelint-config@5.0.0) (2020-04-21)
+
+
+### Bug Fixes
+
+* **deps:** update dependency stylelint-config-css-modules to v2 ([#345](https://github.com/ornikar/shared-configs/issues/345)) ([1818e55](https://github.com/ornikar/shared-configs/commit/1818e55))
+* **deps:** update dependency stylelint-config-prettier to v8 ([#337](https://github.com/ornikar/shared-configs/issues/337)) ([500e5dc](https://github.com/ornikar/shared-configs/commit/500e5dc))
+* **deps:** update dependency stylelint-config-standard to v20 ([#344](https://github.com/ornikar/shared-configs/issues/344)) ([6afc298](https://github.com/ornikar/shared-configs/commit/6afc298))
+* **deps:** update dependency stylelint-order to v4 ([#343](https://github.com/ornikar/shared-configs/issues/343)) ([43d6bb0](https://github.com/ornikar/shared-configs/commit/43d6bb0))
+
+
+### Features
+
+* require prettier version to new major [no issue] ([#353](https://github.com/ornikar/shared-configs/issues/353)) ([e3e8237](https://github.com/ornikar/shared-configs/commit/e3e8237))
+* update node version to 12 [no issue] ([#354](https://github.com/ornikar/shared-configs/issues/354)) ([6276917](https://github.com/ornikar/shared-configs/commit/6276917))
+
+
+### Reverts
+
+* fix(deps): update dependency stylelint-order to v4 [no issue] ([#352](https://github.com/ornikar/shared-configs/issues/352)) ([3ac6ee6](https://github.com/ornikar/shared-configs/commit/3ac6ee6))
+
+
+### BREAKING CHANGES
+
+* prettier version
+
+* Update @ornikar/eslint-config/package.json
+
+Co-Authored-By: Christophe Hurpeau <christophe@hurpeau.com>
+
+* Update @ornikar/stylelint-config/package.json
+
+Co-Authored-By: Christophe Hurpeau <christophe@hurpeau.com>
+
+* Update @ornikar/prettier-config/package.json
+
+Co-Authored-By: Christophe Hurpeau <christophe@hurpeau.com>
+
+* Update package.json
+
+Co-authored-by: Christophe Hurpeau <christophe@hurpeau.com>
+* node version
+
+* Update config.yml
+
+
+
+
+
 # [4.1.0](https://github.com/ornikar/shared-configs/compare/@ornikar/stylelint-config@4.0.0...@ornikar/stylelint-config@4.1.0) (2020-04-20)
 
 

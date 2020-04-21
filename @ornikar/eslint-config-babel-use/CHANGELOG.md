@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/eslint-config-babel-use@2.0.2...@ornikar/eslint-config-babel-use@3.0.0) (2020-04-21)
+
+
+### Features
+
+* update node version to 12 [no issue] ([#354](https://github.com/ornikar/shared-configs/issues/354)) ([6276917](https://github.com/ornikar/shared-configs/commit/6276917))
+
+
+### BREAKING CHANGES
+
+* node version
+
+* Update config.yml
+
+
+
+
+
 ## [2.0.2](https://github.com/ornikar/shared-configs/compare/@ornikar/eslint-config-babel-use@2.0.1...@ornikar/eslint-config-babel-use@2.0.2) (2020-01-22)
 
 **Note:** Version bump only for package @ornikar/eslint-config-babel-use

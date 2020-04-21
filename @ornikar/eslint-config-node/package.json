@@ -1,6 +1,6 @@
 {
   "name": "@ornikar/eslint-config-node",
-  "version": "9.0.1",
+  "version": "10.0.0",
   "description": "eslint node config files",
   "repository": "ornikar/shared-configs",
   "main": "index.js",
