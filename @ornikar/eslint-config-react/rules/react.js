@@ -36,7 +36,7 @@ module.exports = {
       'error',
       {
         order: [
-          'react-statics',
+          'static-variables',
           'static-methods',
           'instance-variables',
           'lifecycle',
@@ -48,7 +48,6 @@ module.exports = {
           'rendering',
         ],
         groups: {
-          'react-statics': ['propTypes', 'defaultProps'],
           lifecycle: [
             'state',
             'constructor',
