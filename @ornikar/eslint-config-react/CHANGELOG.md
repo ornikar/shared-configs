@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [10.0.1](https://github.com/ornikar/shared-configs/compare/@ornikar/eslint-config-react@10.0.0...@ornikar/eslint-config-react@10.0.1) (2020-04-22)
+
+
+### Bug Fixes
+
+* **eslint-config-react:** react/sort-comp rule static-variables [no issue] ([#357](https://github.com/ornikar/shared-configs/issues/357)) ([17a8e90](https://github.com/ornikar/shared-configs/commit/17a8e90))
+
+
+
+
+
 # [10.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/eslint-config-react@9.0.2...@ornikar/eslint-config-react@10.0.0) (2020-04-21)
 
 
