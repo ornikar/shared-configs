@@ -25,6 +25,11 @@ const deprecatedReactLifeCycleMethods = [
 
   const unexpectedConsoleCallStacks = [];
   const newMethod = function (format, ...args) {
+    // Capture the call stack now so we can warn about it later.
+    // The call stack has helpful information for the test author.
+    // Don't throw yet though b'c it might be accidentally caught and suppressed.
+    const errorStack = new Error().stack;
+
     if (typeof format === 'string') {
       if (
         deprecatedReactLifeCycleMethods.some((lifecycleMethod) =>
@@ -35,14 +40,16 @@ const deprecatedReactLifeCycleMethods = [
       }
 
       if (format.match(/Warning: An update to (.*) inside a test was not wrapped in act/)) {
+        // Do not warn about react-final-form rerender. They are triggered by validation, which is paused at first render.
+        if (errorStack.includes('react-final-form')) {
+          return;
+        }
+        // Warn without throwing.
         originalMethod(format, ...args);
         return;
       }
     }
-    // Capture the call stack now so we can warn about it later.
-    // The call stack has helpful information for the test author.
-    // Don't throw yet though b'c it might be accidentally caught and suppressed.
-    const errorStack = new Error().stack;
+
     unexpectedConsoleCallStacks.push([errorStack.slice(errorStack.indexOf('\n') + 1), util.format(format, ...args)]);
   };
 

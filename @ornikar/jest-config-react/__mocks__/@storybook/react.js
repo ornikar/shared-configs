@@ -2,7 +2,7 @@
 
 'use strict';
 
-const { render } = require('@testing-library/react');
+const { render, act } = require('@testing-library/react');
 
 const decorateStory = (storyFn, decorators) =>
   decorators.reduce(
@@ -58,9 +58,11 @@ exports.storiesOf = (groupName) => {
             ? undefined
             : ({ children }) => decorateStory(() => children, [...globalDecorators, ...localDecorators])(parameters);
 
-          const { unmount, asFragment } = render(story(parameters), { wrapper: wrappingComponent });
-          expect(asFragment()).toMatchSnapshot();
-          unmount();
+          act(() => {
+            const { unmount, asFragment } = render(story(parameters), { wrapper: wrappingComponent });
+            expect(asFragment()).toMatchSnapshot();
+            unmount();
+          });
         });
       });
 
