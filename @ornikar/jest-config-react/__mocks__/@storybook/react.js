@@ -58,8 +58,9 @@ exports.storiesOf = (groupName) => {
             ? undefined
             : ({ children }) => decorateStory(() => children, [...globalDecorators, ...localDecorators])(parameters);
 
-          const { asFragment } = render(story(parameters), { wrapper: wrappingComponent });
+          const { unmount, asFragment } = render(story(parameters), { wrapper: wrappingComponent });
           expect(asFragment()).toMatchSnapshot();
+          unmount();
         });
       });
 
