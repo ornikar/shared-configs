@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.0.1](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@4.0.0...@ornikar/jest-config-react@4.0.1) (2020-04-27)
+
+
+### Bug Fixes
+
+* unmount components after rendering them ([#359](https://github.com/ornikar/shared-configs/issues/359)) ([6b6b0ed](https://github.com/ornikar/shared-configs/commit/6b6b0ed))
+
+
+
+
+
 # [4.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@3.4.0...@ornikar/jest-config-react@4.0.0) (2020-04-21)
 
 
