@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config@4.0.0...@ornikar/jest-config@5.0.0) (2020-04-29)
+
+
+### Features
+
+* remove intl polyfill ([#360](https://github.com/ornikar/shared-configs/issues/360)) ([a40368e](https://github.com/ornikar/shared-configs/commit/a40368e))
+
+
+### BREAKING CHANGES
+
+* project should add a devdep to node-icu and run commands with NODE_ICU_DATA env variable
+
+
+
+
+
 # [4.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config@3.3.1...@ornikar/jest-config@4.0.0) (2020-04-21)
 
 

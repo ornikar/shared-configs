@@ -1,6 +1,6 @@
 {
   "name": "@ornikar/jest-config-react",
-  "version": "4.0.1",
+  "version": "4.0.2",
   "description": "jest config",
   "repository": "ornikar/shared-configs",
   "main": "jest-preset.js",
@@ -17,7 +17,7 @@
     "react-dom": "^16.6.3"
   },
   "dependencies": {
-    "@ornikar/jest-config": "^4.0.0",
+    "@ornikar/jest-config": "^5.0.0",
     "identity-obj-proxy": "^3.0.0"
   },
   "devDependencies": {
