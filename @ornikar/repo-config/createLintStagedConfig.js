@@ -22,27 +22,27 @@ module.exports = function createLintStagedConfig(options = {}) {
     }}`]: (filenames) => {
       const packagejsonFilenames = filenames.filter((filename) => filename.endsWith('.json'));
       return [
-        'yarn-update-lock',
-        packagejsonFilenames.length === 0
-          ? undefined
-          : `prettier --parser json --write ${packagejsonFilenames.join(' ')}`,
-        `git add ${filenames.join(' ')}`,
+        'yarn --prefer-offline',
+        'yarn-deduplicate',
+        'yarn --prefer-offline',
+        packagejsonFilenames.length === 0 ? undefined : `prettier --write ${packagejsonFilenames.join(' ')}`,
+        'git add yarn.lock',
         // eslint-disable-next-line node/no-extraneous-require
         shouldGenerateTsconfigInLernaRepo && require.resolve('@ornikar/lerna-config/generate-tsconfig-files.js'),
         shouldGenerateTsconfigInLernaRepo && 'git add **/tsconfig.json **/tsconfig.build.json',
       ].filter(Boolean);
     },
-    [`{.eslintrc.json${
-      workspaces ? `,${workspaces.map((workspacePath) => `${workspacePath}/{.eslintrc.json}`).join(',')}` : ''
-    }}`]: ['prettier --parser json --write', 'git add'],
-    [`{.storybook,${srcDirectories}}/**/*.css`]: [
-      'prettier --parser css --write',
-      'stylelint --quiet --fix',
-      'git add',
-    ],
+    [`{*.json${workspaces ? `,${workspaces.map((workspacePath) => `${workspacePath}/*.json`).join(',')}` : ''}}`]: (
+      filenames,
+    ) => {
+      const filteredFilenames = filenames.filter((name) => !name.endsWith('/package.json'));
+      if (filteredFilenames.length === 0) return [];
+      return [`prettier --write ${filteredFilenames.join(' ')}`];
+    },
+    [`{.storybook,${srcDirectories}}/**/*.css`]: ['prettier --parser css --write', 'stylelint --quiet --fix'],
 
-    [`${srcDirectories}/**/*.{${srcExtensions.join(',')}}`]: ['eslint --fix --quiet', 'git add'],
-    '{scripts,config,.storyboook}/*.js': ['eslint --fix --quiet', 'git add'],
+    [`${srcDirectories}/**/*.{${srcExtensions.join(',')}}`]: ['eslint --fix --quiet'],
+    '{scripts,config,.storyboook}/*.js': ['eslint --fix --quiet'],
   };
 };
 

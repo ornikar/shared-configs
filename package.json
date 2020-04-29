@@ -4,6 +4,7 @@
   "repository": "ornikar/shared-configs",
   "scripts": {
     "lint": "eslint --ext .js --fix @ornikar/**/*.js",
+    "lint:prettier-json": "prettier --check {*.json,@ornikar/*/*.json}",
     "release": "lerna publish --conventional-commits -m 'chore: release'"
   },
   "prettier": "./@ornikar/prettier-config",
@@ -12,12 +13,19 @@
     "yarn": ">=1.10.1"
   },
   "eslintConfig": {
-    "extends": ["./@ornikar/eslint-config/index.js", "./@ornikar/eslint-config-node/index.js"]
+    "extends": [
+      "./@ornikar/eslint-config/index.js",
+      "./@ornikar/eslint-config-node/index.js"
+    ]
   },
   "commitlint": {
-    "extends": ["./@ornikar/commitlint-config"]
+    "extends": [
+      "./@ornikar/commitlint-config"
+    ]
   },
-  "workspaces": ["@ornikar/*"],
+  "workspaces": [
+    "@ornikar/*"
+  ],
   "devDependencies": {
     "@commitlint/cli": "8.3.5",
     "eslint": "6.8.0",
@@ -30,7 +38,6 @@
     "lerna": "3.20.2",
     "lint-staged": "10.2.0",
     "prettier": "2.0.5",
-    "yarn-update-lock": "1.0.0",
     "yarnhook": "0.4.3"
   }
 }
