@@ -1,32 +1,32 @@
 {
   "name": "@ornikar/eslint-config",
-  "version": "8.2.5",
+  "version": "10.0.0",
   "description": "eslint config files",
   "repository": "ornikar/shared-configs",
   "main": "index.js",
   "license": "ISC",
   "engines": {
-    "node": ">= 8.3.0"
+    "node": ">= 12.16.2"
   },
   "publishConfig": {
     "access": "public"
   },
   "dependencies": {
-    "eslint-config-airbnb": "^17.1.0",
-    "eslint-config-airbnb-base": "^13.1.0",
-    "eslint-config-prettier": "^5.0.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-config-prettier": "^6.7.0",
     "eslint-plugin-filenames": "^1.3.2",
     "eslint-plugin-import": "^2.17.0",
-    "eslint-plugin-jsx-a11y": "^6.2.1",
-    "eslint-plugin-prettier": "^3.0.0",
-    "eslint-plugin-unicorn": "^9.0.0"
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-unicorn": "^14.0.1"
   },
   "peerDependencies": {
-    "eslint": "^5.10.0 || ^6.0.0",
-    "prettier": "^1.15.3"
+    "eslint": "^6.7.2",
+    "prettier": "^2.0.4"
   },
   "devDependencies": {
-    "eslint": "6.1.0",
-    "prettier": "1.19.1"
+    "eslint": "6.8.0",
+    "prettier": "2.0.5"
   }
 }

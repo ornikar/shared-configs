@@ -1,12 +1,12 @@
 {
   "name": "@ornikar/rollup-config",
-  "version": "1.2.3",
+  "version": "2.0.0",
   "description": "rollup config files",
   "repository": "ornikar/shared-configs",
   "main": "createRollupConfig.js",
   "license": "ISC",
   "engines": {
-    "node": ">= 8.3.0"
+    "node": ">= 12.16.2"
   },
   "publishConfig": {
     "access": "public"

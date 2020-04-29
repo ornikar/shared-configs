@@ -3,6 +3,51 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@1.1.0...@ornikar/repo-config@2.0.0) (2020-04-21)
+
+
+### Bug Fixes
+
+* **deps:** update dependency cross-env to v7 ([#346](https://github.com/ornikar/shared-configs/issues/346)) ([e1f4a99](https://github.com/ornikar/shared-configs/commit/e1f4a99))
+
+
+### Features
+
+* update node version to 12 [no issue] ([#354](https://github.com/ornikar/shared-configs/issues/354)) ([6276917](https://github.com/ornikar/shared-configs/commit/6276917))
+
+
+### BREAKING CHANGES
+
+* node version
+
+* Update config.yml
+
+
+
+
+
+# [1.1.0](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@1.0.9...@ornikar/repo-config@1.1.0) (2020-01-22)
+
+
+### Features
+
+* add lerna config [no issue] ([#302](https://github.com/ornikar/shared-configs/issues/302)) ([525c4ff](https://github.com/ornikar/shared-configs/commit/525c4ff))
+
+
+
+
+
+## [1.0.9](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@1.0.8...@ornikar/repo-config@1.0.9) (2019-12-12)
+
+
+### Bug Fixes
+
+* missing dep cross-env [no issue] ([#299](https://github.com/ornikar/shared-configs/issues/299)) ([1a1ff25](https://github.com/ornikar/shared-configs/commit/1a1ff25))
+
+
+
+
+
 ## [1.0.8](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@1.0.7...@ornikar/repo-config@1.0.8) (2019-12-04)
 
 

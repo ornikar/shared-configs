@@ -1,12 +1,12 @@
 {
   "name": "@ornikar/commitlint-config",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "commitlint config",
   "repository": "ornikar/shared-configs",
   "main": "index.js",
   "license": "ISC",
   "engines": {
-    "node": ">= 8.3.0"
+    "node": ">= 12.16.2"
   },
   "publishConfig": {
     "access": "public"

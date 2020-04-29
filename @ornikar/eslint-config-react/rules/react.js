@@ -36,7 +36,7 @@ module.exports = {
       'error',
       {
         order: [
-          'react-statics',
+          'static-variables',
           'static-methods',
           'instance-variables',
           'lifecycle',
@@ -48,7 +48,6 @@ module.exports = {
           'rendering',
         ],
         groups: {
-          'react-statics': ['propTypes', 'defaultProps'],
           lifecycle: [
             'state',
             'constructor',
@@ -84,5 +83,13 @@ module.exports = {
 
     // autofix handles quotes incorrectly
     'react/jsx-curly-brace-presence': 'off',
+
+    // disable enforcing state in constructor
+    'react/state-in-constructor': 'off',
+
+    'react/static-property-placement': 'off',
+
+    // allow props spreading
+    'react/jsx-props-no-spreading': 'off',
   },
 };

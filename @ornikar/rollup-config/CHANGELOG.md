@@ -3,6 +3,35 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/rollup-config@1.3.0...@ornikar/rollup-config@2.0.0) (2020-04-21)
+
+
+### Features
+
+* update node version to 12 [no issue] ([#354](https://github.com/ornikar/shared-configs/issues/354)) ([6276917](https://github.com/ornikar/shared-configs/commit/6276917))
+
+
+### BREAKING CHANGES
+
+* node version
+
+* Update config.yml
+
+
+
+
+
+# [1.3.0](https://github.com/ornikar/shared-configs/compare/@ornikar/rollup-config@1.2.3...@ornikar/rollup-config@1.3.0) (2020-03-24)
+
+
+### Features
+
+* **rollup-config:** packages filter ignore name starting with .eslintrc [no issue] ([#331](https://github.com/ornikar/shared-configs/issues/331)) ([328dce7](https://github.com/ornikar/shared-configs/commit/328dce7))
+
+
+
+
+
 ## [1.2.3](https://github.com/ornikar/shared-configs/compare/@ornikar/rollup-config@1.2.2...@ornikar/rollup-config@1.2.3) (2019-10-15)
 
 

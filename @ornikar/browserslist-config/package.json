@@ -1,12 +1,12 @@
 {
   "name": "@ornikar/browserslist-config",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "browserslist config files",
   "repository": "ornikar/shared-configs",
   "main": "degraded-support.js",
   "license": "ISC",
   "engines": {
-    "node": ">= 8.3.0"
+    "node": ">= 12.16.2"
   },
   "publishConfig": {
     "access": "public"

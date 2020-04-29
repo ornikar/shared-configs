@@ -3,6 +3,91 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [10.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/eslint-config@9.0.2...@ornikar/eslint-config@10.0.0) (2020-04-21)
+
+
+### Features
+
+* require prettier version to new major [no issue] ([#353](https://github.com/ornikar/shared-configs/issues/353)) ([e3e8237](https://github.com/ornikar/shared-configs/commit/e3e8237))
+* update node version to 12 [no issue] ([#354](https://github.com/ornikar/shared-configs/issues/354)) ([6276917](https://github.com/ornikar/shared-configs/commit/6276917))
+
+
+### BREAKING CHANGES
+
+* prettier version
+
+* Update @ornikar/eslint-config/package.json
+
+Co-Authored-By: Christophe Hurpeau <christophe@hurpeau.com>
+
+* Update @ornikar/stylelint-config/package.json
+
+Co-Authored-By: Christophe Hurpeau <christophe@hurpeau.com>
+
+* Update @ornikar/prettier-config/package.json
+
+Co-Authored-By: Christophe Hurpeau <christophe@hurpeau.com>
+
+* Update package.json
+
+Co-authored-by: Christophe Hurpeau <christophe@hurpeau.com>
+* node version
+
+* Update config.yml
+
+
+
+
+
+## [9.0.2](https://github.com/ornikar/shared-configs/compare/@ornikar/eslint-config@9.0.1...@ornikar/eslint-config@9.0.2) (2020-01-22)
+
+**Note:** Version bump only for package @ornikar/eslint-config
+
+
+
+
+
+## [9.0.1](https://github.com/ornikar/shared-configs/compare/@ornikar/eslint-config@9.0.0...@ornikar/eslint-config@9.0.1) (2019-12-20)
+
+
+### Bug Fixes
+
+* disable unicorn/consistent-function-scoping [no issue] ([#301](https://github.com/ornikar/shared-configs/issues/301)) ([c1aedcb](https://github.com/ornikar/shared-configs/commit/c1aedcb))
+
+
+
+
+
+# [9.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/eslint-config@8.2.5...@ornikar/eslint-config@9.0.0) (2019-12-13)
+
+
+### Features
+
+* eslint 6 [no issue] ([#298](https://github.com/ornikar/shared-configs/issues/298)) ([4bd9bf8](https://github.com/ornikar/shared-configs/commit/4bd9bf8))
+
+
+### BREAKING CHANGES
+
+* changed peer deps eslint 6, prettier, and enabled new rules
+
+* refactor: comment on liwi
+
+* fix: remove todo rule, now allowed with unicorn
+
+* chore: update @typescript-eslint
+
+* feat: explicit-function-return-type allow expressions and hof
+
+* feat: remove allowExpressions: true
+
+* feat: remove allowExpressions: true
+
+* fix: prefer flat map
+
+
+
+
+
 ## [8.2.5](https://github.com/ornikar/shared-configs/compare/@ornikar/eslint-config@8.2.4...@ornikar/eslint-config@8.2.5) (2019-11-27)
 
 **Note:** Version bump only for package @ornikar/eslint-config

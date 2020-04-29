@@ -139,7 +139,7 @@ module.exports = (packagesDir = '@ornikar') => {
     ? [process.env.ORNIKAR_ONLY]
     : fs
         .readdirSync(path.resolve(`./${packagesDir}`))
-        .filter((packageName) => packageName !== '.DS_Store' && packageName !== '.eslintrc.json');
+        .filter((name) => name !== '.DS_Store' && !name.startsWith('.eslintrc'));
 
   return [].concat(...packages.map((packageName) => createBuildsForPackage(packagesDir, packageName)));
 };

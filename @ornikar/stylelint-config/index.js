@@ -15,5 +15,8 @@ module.exports = {
 
     // https://stylelint.io/user-guide/rules/comment-word-blacklist/
     'comment-word-blacklist': ['/^TODO:/', '/^FIXME:/'],
+
+    // https://stylelint.io/user-guide/rules/property-blacklist/
+    'property-blacklist': ['font-size', 'font-family'],
   },
 };

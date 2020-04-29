@@ -2,8 +2,7 @@
 
 'use strict';
 
-const { shallow } = require('enzyme');
-const { shallowToJson } = require('enzyme-to-json');
+const { render } = require('@testing-library/react');
 
 const decorateStory = (storyFn, decorators) =>
   decorators.reduce(
@@ -26,6 +25,13 @@ const decorateStory = (storyFn, decorators) =>
     storyFn,
   );
 
+const globalDecorators = [];
+
+// Mocked version of `import { addDecorator } from '@storybook/react'`.
+exports.addDecorator = (decorator) => {
+  globalDecorators.push(decorator);
+};
+
 // Mocked version of `import { action } from '@storybook/react'`.
 exports.action = (actionName) => jest.fn();
 
@@ -37,31 +43,24 @@ exports.storiesOf = (groupName) => {
   // Mocked API to generate tests from & snapshot stories.
   const api = {
     add(storyName, story, storyParameters = {}) {
-      const parameters = Object.assign({ name: storyName }, localParameters, storyParameters);
+      const parameters = { name: storyName, ...localParameters, ...storyParameters };
       const { jest } = parameters;
-      const { componentToTest, ignore, ignoreDecorators } = jest || {};
+      const { ignore, ignoreDecorators } = jest || {};
 
-      if (ignore) return api;
+      if (ignore) {
+        test.skip(storyName, () => {});
+        return api;
+      }
 
       describe(groupName, () => {
         it(storyName, () => {
           const wrappingComponent = ignoreDecorators
             ? undefined
-            : ({ children }) => decorateStory(() => children, localDecorators)(parameters);
+            : ({ children }) => decorateStory(() => children, [...globalDecorators, ...localDecorators])(parameters);
 
-          const wrapper = shallow(story(parameters), {
-            disableLifecycleMethods: true,
-            wrappingComponent,
-          });
-
-          if (componentToTest) {
-            const component = wrapper.find(componentToTest);
-            component.forEach((child) => {
-              expect(shallowToJson(child.dive())).toMatchSnapshot();
-            });
-          } else {
-            expect(shallowToJson(wrapper)).toMatchSnapshot();
-          }
+          const { unmount, asFragment } = render(story(parameters), { wrapper: wrappingComponent });
+          expect(asFragment()).toMatchSnapshot();
+          unmount();
         });
       });
 

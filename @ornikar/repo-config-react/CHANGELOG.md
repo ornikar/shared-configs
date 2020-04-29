@@ -3,6 +3,48 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config-react@1.0.11...@ornikar/repo-config-react@2.0.0) (2020-04-21)
+
+
+### Bug Fixes
+
+* **deps:** update dependency cross-env to v7 ([#346](https://github.com/ornikar/shared-configs/issues/346)) ([e1f4a99](https://github.com/ornikar/shared-configs/commit/e1f4a99))
+
+
+### Features
+
+* update node version to 12 [no issue] ([#354](https://github.com/ornikar/shared-configs/issues/354)) ([6276917](https://github.com/ornikar/shared-configs/commit/6276917))
+
+
+### BREAKING CHANGES
+
+* node version
+
+* Update config.yml
+
+
+
+
+
+## [1.0.11](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config-react@1.0.10...@ornikar/repo-config-react@1.0.11) (2020-01-22)
+
+**Note:** Version bump only for package @ornikar/repo-config-react
+
+
+
+
+
+## [1.0.10](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config-react@1.0.9...@ornikar/repo-config-react@1.0.10) (2019-12-12)
+
+
+### Bug Fixes
+
+* **deps:** update dependency typed-css-modules to v0.6.3 ([#295](https://github.com/ornikar/shared-configs/issues/295)) ([5d5e3df](https://github.com/ornikar/shared-configs/commit/5d5e3df))
+
+
+
+
+
 ## [1.0.9](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config-react@1.0.8...@ornikar/repo-config-react@1.0.9) (2019-12-04)
 
 **Note:** Version bump only for package @ornikar/repo-config-react

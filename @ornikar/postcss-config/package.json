@@ -1,12 +1,12 @@
 {
   "name": "@ornikar/postcss-config",
-  "version": "2.2.1",
+  "version": "3.0.0",
   "description": "postcss config files",
   "repository": "ornikar/shared-configs",
   "main": "index.js",
   "license": "ISC",
   "engines": {
-    "node": ">= 8.3.0"
+    "node": ">= 12.16.2"
   },
   "publishConfig": {
     "access": "public"

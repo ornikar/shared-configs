@@ -3,6 +3,130 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config@4.0.0...@ornikar/jest-config@5.0.0) (2020-04-29)
+
+
+### Features
+
+* remove intl polyfill ([#360](https://github.com/ornikar/shared-configs/issues/360)) ([a40368e](https://github.com/ornikar/shared-configs/commit/a40368e))
+
+
+### BREAKING CHANGES
+
+* project should add a devdep to node-icu and run commands with NODE_ICU_DATA env variable
+
+
+
+
+
+# [4.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config@3.3.1...@ornikar/jest-config@4.0.0) (2020-04-21)
+
+
+### Bug Fixes
+
+* **deps:** update dependency chalk to v4 ([#347](https://github.com/ornikar/shared-configs/issues/347)) ([d33ef19](https://github.com/ornikar/shared-configs/commit/d33ef19))
+
+
+### Features
+
+* update node version to 12 [no issue] ([#354](https://github.com/ornikar/shared-configs/issues/354)) ([6276917](https://github.com/ornikar/shared-configs/commit/6276917))
+
+
+### BREAKING CHANGES
+
+* node version
+
+* Update config.yml
+
+
+
+
+
+## [3.3.1](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config@3.3.0...@ornikar/jest-config@3.3.1) (2020-03-10)
+
+
+### Bug Fixes
+
+* recursive warn [no issue] ([#329](https://github.com/ornikar/shared-configs/issues/329)) ([fa92bfe](https://github.com/ornikar/shared-configs/commit/fa92bfe))
+
+
+
+
+
+# [3.3.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config@3.2.1...@ornikar/jest-config@3.3.0) (2020-02-18)
+
+
+### Features
+
+* ignore update act warning [no issue] ([#326](https://github.com/ornikar/shared-configs/issues/326)) ([02d8096](https://github.com/ornikar/shared-configs/commit/02d8096))
+
+
+
+
+
+## [3.2.1](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config@3.2.0...@ornikar/jest-config@3.2.1) (2020-02-11)
+
+
+### Bug Fixes
+
+* import order matters ([#325](https://github.com/ornikar/shared-configs/issues/325)) ([302553b](https://github.com/ornikar/shared-configs/commit/302553b))
+
+
+
+
+
+# [3.2.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config@3.1.0...@ornikar/jest-config@3.2.0) (2020-02-11)
+
+
+### Features
+
+* add polyfill for plural rules [no issue] ([#324](https://github.com/ornikar/shared-configs/issues/324)) ([a91acfd](https://github.com/ornikar/shared-configs/commit/a91acfd))
+
+
+
+
+
+# [3.1.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config@3.0.0...@ornikar/jest-config@3.1.0) (2020-02-10)
+
+
+### Features
+
+* ignore lifecycle methods warning in jest tests ([#323](https://github.com/ornikar/shared-configs/issues/323)) ([4346e04](https://github.com/ornikar/shared-configs/commit/4346e04))
+
+
+
+
+
+# [3.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config@2.4.1...@ornikar/jest-config@3.0.0) (2019-12-13)
+
+
+### Features
+
+* eslint 6 [no issue] ([#298](https://github.com/ornikar/shared-configs/issues/298)) ([4bd9bf8](https://github.com/ornikar/shared-configs/commit/4bd9bf8))
+
+
+### BREAKING CHANGES
+
+* changed peer deps eslint 6, prettier, and enabled new rules
+
+* refactor: comment on liwi
+
+* fix: remove todo rule, now allowed with unicorn
+
+* chore: update @typescript-eslint
+
+* feat: explicit-function-return-type allow expressions and hof
+
+* feat: remove allowExpressions: true
+
+* feat: remove allowExpressions: true
+
+* fix: prefer flat map
+
+
+
+
+
 ## [2.4.1](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config@2.4.0...@ornikar/jest-config@2.4.1) (2019-12-04)
 
 **Note:** Version bump only for package @ornikar/jest-config

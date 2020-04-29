@@ -49,7 +49,8 @@ module.exports = {
     'unicorn/prefer-event-key': 'off',
 
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/master/docs/rules/prefer-flat-map.md
-    'unicorn/prefer-flat-map': 'error',
+    // TODO [engine:node@>=11] flatMap only supported from node 11
+    'unicorn/prefer-flat-map': 'off',
 
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/master/docs/rules/no-fn-reference-in-iterator.md
     /* Can cause issues:
@@ -106,5 +107,38 @@ const formTree = shallow(tree.find(x => FormWithApiCall(x)).prop('children')());
 
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/master/docs/rules/prefer-node-remove.md
     'unicorn/prefer-node-remove': 'error',
+
+    // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/master/docs/rules/no-keyword-prefix.md
+    'unicorn/no-keyword-prefix': 'off',
+
+    // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/master/docs/rules/expiring-todo-comments.md
+    'unicorn/expiring-todo-comments': [
+      'error',
+      {
+        allowWarningComments: false,
+      },
+    ],
+
+    // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/master/docs/rules/no-nested-ternary.md
+    'no-nested-ternary': 'off',
+    'unicorn/no-nested-ternary': 'error',
+
+    // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/master/docs/rules/consistent-function-scoping.md
+    'unicorn/consistent-function-scoping': 'off',
+
+    // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/master/docs/rules/prefer-reflect-apply.md
+    'unicorn/prefer-reflect-apply': 'off',
+
+    // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/master/docs/rules/prefer-dataset.md
+    'unicorn/prefer-dataset': 'error',
+
+    // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/master/docs/rules/prefer-string-slice.md
+    'unicorn/prefer-string-slice': 'error',
+
+    // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/master/docs/rules/prefer-trim-start-end.md
+    'unicorn/prefer-trim-start-end': 'error',
+
+    // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/master/docs/rules/prefer-negative-index.md
+    'unicorn/prefer-negative-index': 'error',
   },
 };

@@ -1,6 +1,13 @@
+/* eslint-env jest */
+
 'use strict';
 
-const { configure } = require('enzyme');
-const Adapter = require('enzyme-adapter-react-16');
-
-configure({ adapter: new Adapter() });
+// Usefull to display snapshot of portals (drawer or modal for example) with react testing library
+jest.mock('react-dom', () => {
+  return {
+    ...jest.requireActual('react-dom'),
+    createPortal: (element) => {
+      return element;
+    },
+  };
+});

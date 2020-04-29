@@ -3,18 +3,18 @@ version: 2
 jobs:
   dependencies:
     docker:
-      - image: circleci/node:10.16
+      - image: circleci/node:12.16
     steps:
       - checkout
       - restore_cache:
           keys:
-            - v1-dependencies-{{ arch }}-{{ checksum "yarn.lock" }}
-            - v1-dependencies-{{ arch }}
+            - v2-dependencies-{{ arch }}-{{ checksum "yarn.lock" }}
+            - v2-dependencies-{{ arch }}
       - run:
           name: Install dependencies
           command: yarn --prefer-offline --frozen-lockfile --ignore-engines
       - save_cache:
-          key: v1-dependencies-{{ arch }}-{{ checksum "yarn.lock" }}
+          key: v2-dependencies-{{ arch }}-{{ checksum "yarn.lock" }}
           paths:
             - node_modules
             - '@ornikar/browserlist-config/node_modules'
@@ -22,28 +22,32 @@ jobs:
             - '@ornikar/eslint-config/node_modules'
             - '@ornikar/eslint-config-babel/node_modules'
             - '@ornikar/eslint-config-babel-use/node_modules'
+            - '@ornikar/eslint-config-formatjs/node_modules'
             - '@ornikar/eslint-config-node/node_modules'
             - '@ornikar/eslint-config-react/node_modules'
             - '@ornikar/eslint-config-typescript/node_modules'
             - '@ornikar/eslint-config-typescript-react/node_modules'
+            - '@ornikar/intl-config/node_modules'
             - '@ornikar/jest-config/node_modules'
             - '@ornikar/jest-config-react/node_modules'
+            - '@ornikar/lerna-config/node_modules'
             - '@ornikar/postcss-config/node_modules'
             - '@ornikar/prettier-config/node_modules'
             - '@ornikar/renovate-config/node_modules'
             - '@ornikar/repo-config/node_modules'
             - '@ornikar/repo-config-react/node_modules'
             - '@ornikar/rollup-config/node_modules'
+            - '@ornikar/storybook-config/node_modules'
             - '@ornikar/stylelint-config/node_modules'
             - '@ornikar/webpack-config/node_modules'
 
   lint:
     docker:
-      - image: circleci/node:10.16
+      - image: circleci/node:12.16
     steps:
       - checkout
       - restore_cache:
-          key: v1-dependencies-{{ arch }}-{{ checksum "yarn.lock" }}
+          key: v2-dependencies-{{ arch }}-{{ checksum "yarn.lock" }}
       - run:
           name: Lint code
           command: yarn run lint
@@ -51,11 +55,11 @@ jobs:
   # Note: need these env variables: EMAIL, GIT_AUTHOR_NAME, GIT_COMMITTER_NAME, NPM_TOKEN, GITHUB_TOKEN
   release:
     docker:
-      - image: circleci/node:10.16
+      - image: circleci/node:12.16
     steps:
       - checkout
       - restore_cache:
-          key: v1-dependencies-{{ arch }}-{{ checksum "yarn.lock" }}
+          key: v2-dependencies-{{ arch }}-{{ checksum "yarn.lock" }}
       - run:
           name: Setup origin with write access
           command: git remote set-url origin "https://michael-robot:$GITHUB_TOKEN@github.com/$CIRCLE_PROJECT_USERNAME/$CIRCLE_PROJECT_REPONAME"
@@ -68,7 +72,6 @@ jobs:
       - run:
           name: Publish to npm
           command: yarn lerna publish from-git --yes
-
 
 workflows:
   version: 2

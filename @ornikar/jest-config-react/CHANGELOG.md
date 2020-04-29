@@ -3,6 +3,159 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.0.2](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@4.0.1...@ornikar/jest-config-react@4.0.2) (2020-04-29)
+
+**Note:** Version bump only for package @ornikar/jest-config-react
+
+
+
+
+
+## [4.0.1](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@4.0.0...@ornikar/jest-config-react@4.0.1) (2020-04-27)
+
+
+### Bug Fixes
+
+* unmount components after rendering them ([#359](https://github.com/ornikar/shared-configs/issues/359)) ([6b6b0ed](https://github.com/ornikar/shared-configs/commit/6b6b0ed))
+
+
+
+
+
+# [4.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@3.4.0...@ornikar/jest-config-react@4.0.0) (2020-04-21)
+
+
+### Features
+
+* update node version to 12 [no issue] ([#354](https://github.com/ornikar/shared-configs/issues/354)) ([6276917](https://github.com/ornikar/shared-configs/commit/6276917))
+
+
+### BREAKING CHANGES
+
+* node version
+
+* Update config.yml
+
+
+
+
+
+# [3.4.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@3.3.0...@ornikar/jest-config-react@3.4.0) (2020-04-20)
+
+
+### Features
+
+* **jest-config-react:** remove enzyme ([#341](https://github.com/ornikar/shared-configs/issues/341)) ([668cd00](https://github.com/ornikar/shared-configs/commit/668cd00))
+
+
+
+
+
+# [3.3.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@3.2.0...@ornikar/jest-config-react@3.3.0) (2020-04-20)
+
+
+### Features
+
+* jest mock portal for testing library ([#340](https://github.com/ornikar/shared-configs/issues/340)) ([90a7ebe](https://github.com/ornikar/shared-configs/commit/90a7ebe))
+
+
+
+
+
+# [3.2.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@3.1.5...@ornikar/jest-config-react@3.2.0) (2020-03-30)
+
+
+### Features
+
+* make react-testing-library default snapshot provider ([#332](https://github.com/ornikar/shared-configs/issues/332)) ([883a0f7](https://github.com/ornikar/shared-configs/commit/883a0f7))
+
+
+
+
+
+## [3.1.5](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@3.1.4...@ornikar/jest-config-react@3.1.5) (2020-03-10)
+
+**Note:** Version bump only for package @ornikar/jest-config-react
+
+
+
+
+
+## [3.1.4](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@3.1.3...@ornikar/jest-config-react@3.1.4) (2020-02-18)
+
+**Note:** Version bump only for package @ornikar/jest-config-react
+
+
+
+
+
+## [3.1.3](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@3.1.2...@ornikar/jest-config-react@3.1.3) (2020-02-11)
+
+**Note:** Version bump only for package @ornikar/jest-config-react
+
+
+
+
+
+## [3.1.2](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@3.1.1...@ornikar/jest-config-react@3.1.2) (2020-02-11)
+
+**Note:** Version bump only for package @ornikar/jest-config-react
+
+
+
+
+
+## [3.1.1](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@3.1.0...@ornikar/jest-config-react@3.1.1) (2020-02-10)
+
+**Note:** Version bump only for package @ornikar/jest-config-react
+
+
+
+
+
+# [3.1.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@3.0.0...@ornikar/jest-config-react@3.1.0) (2020-02-03)
+
+
+### Features
+
+* add ignore on emtpy test suites ([#321](https://github.com/ornikar/shared-configs/issues/321)) ([a56ffdf](https://github.com/ornikar/shared-configs/commit/a56ffdf))
+
+
+
+
+
+# [3.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@2.3.8...@ornikar/jest-config-react@3.0.0) (2020-01-30)
+
+
+### Features
+
+* global decorators and react-testing-library [no issue] ([#318](https://github.com/ornikar/shared-configs/issues/318)) ([6535125](https://github.com/ornikar/shared-configs/commit/6535125))
+
+
+### BREAKING CHANGES
+
+* new peer dependency of @testing-library/react
+
+
+
+
+
+## [2.3.8](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@2.3.7...@ornikar/jest-config-react@2.3.8) (2020-01-22)
+
+**Note:** Version bump only for package @ornikar/jest-config-react
+
+
+
+
+
+## [2.3.7](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@2.3.6...@ornikar/jest-config-react@2.3.7) (2019-12-13)
+
+**Note:** Version bump only for package @ornikar/jest-config-react
+
+
+
+
+
 ## [2.3.6](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@2.3.5...@ornikar/jest-config-react@2.3.6) (2019-12-04)
 
 **Note:** Version bump only for package @ornikar/jest-config-react
