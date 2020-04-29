@@ -6,7 +6,7 @@
   "main": "index.js",
   "license": "ISC",
   "engines": {
-    "node": ">= 12.16.2"
+    "node": ">= 12.16.3"
   },
   "scripts": {
     "run-on-examples": "prettier --write --parser css ./examples/**/*.css && stylelint --fix ./examples"
