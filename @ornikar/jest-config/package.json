@@ -12,9 +12,7 @@
     "access": "public"
   },
   "dependencies": {
-    "@formatjs/intl-pluralrules": "1.5.2",
     "chalk": "^4.0.0",
-    "intl": "^1.2.5",
     "timezone-mock": "^1.0.5"
   },
   "peerDependencies": {
