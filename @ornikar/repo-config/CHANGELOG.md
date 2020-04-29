@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@2.0.0...@ornikar/repo-config@3.0.0) (2020-04-29)
+
+
+### chore
+
+* **deps:** update dependency husky to v4 ([#309](https://github.com/ornikar/shared-configs/issues/309)) ([3c0ac06](https://github.com/ornikar/shared-configs/commit/3c0ac06))
+
+
+### BREAKING CHANGES
+
+* **deps:** require husky 4
+
+Co-authored-by: Renovate Bot <bot@renovateapp.com>
+Co-authored-by: Christophe Hurpeau <christophe@hurpeau.com>
+
+
+
+
+
 # [2.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@1.1.0...@ornikar/repo-config@2.0.0) (2020-04-21)
 
 

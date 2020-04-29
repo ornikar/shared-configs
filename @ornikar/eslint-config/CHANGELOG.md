@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [10.0.1](https://github.com/ornikar/shared-configs/compare/@ornikar/eslint-config@10.0.0...@ornikar/eslint-config@10.0.1) (2020-04-29)
+
+**Note:** Version bump only for package @ornikar/eslint-config
+
+
+
+
+
 # [10.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/eslint-config@9.0.2...@ornikar/eslint-config@10.0.0) (2020-04-21)
 
 

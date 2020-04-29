@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.1.0](https://github.com/ornikar/shared-configs/compare/@ornikar/renovate-config@2.0.0...@ornikar/renovate-config@2.1.0) (2020-04-29)
+
+
+### Features
+
+* **renovate-config:** split shared configs and enable prs [no issue] ([#297](https://github.com/ornikar/shared-configs/issues/297)) ([95c9c22](https://github.com/ornikar/shared-configs/commit/95c9c22))
+
+
+
+
+
 # [2.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/renovate-config@1.13.3...@ornikar/renovate-config@2.0.0) (2020-04-21)
 
 
