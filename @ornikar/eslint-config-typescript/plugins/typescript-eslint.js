@@ -72,6 +72,17 @@ module.exports = {
     '@typescript-eslint/no-non-null-asserted-optional-chain': 'off',
     '@typescript-eslint/switch-exhaustiveness-check': 'off',
     '@typescript-eslint/no-unnecessary-boolean-literal-compare': 'off',
+    '@typescript-eslint/no-base-to-string': 'off',
+    '@typescript-eslint/prefer-readonly-parameters': 'off',
+    '@typescript-eslint/no-unsafe-call': 'off',
+    '@typescript-eslint/no-unsafe-member-access': 'off',
+    '@typescript-eslint/no-unsafe-return': 'off',
+    '@typescript-eslint/class-literal-property-style': 'off',
+    '@typescript-eslint/plugin-test-formatting': 'off',
+    '@typescript-eslint/no-unsafe-assignment': 'off',
+    '@typescript-eslint/prefer-ts-expect-error': 'off',
+    '@typescript-eslint/prefer-reduce-type-parameter': 'off',
+    '@typescript-eslint/no-invalid-void-type': 'off',
 
     /* enabled */
     '@typescript-eslint/array-type': 'error',
