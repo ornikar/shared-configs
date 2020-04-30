@@ -65,6 +65,13 @@ module.exports = {
     '@typescript-eslint/restrict-template-expressions': 'off',
     '@typescript-eslint/prefer-nullish-coalescing': 'off',
     '@typescript-eslint/no-unnecessary-condition': 'off',
+    '@typescript-eslint/no-throw-literal': 'off',
+    '@typescript-eslint/no-extra-semi': 'off',
+    '@typescript-eslint/default-param-last': 'off',
+    '@typescript-eslint/explicit-module-boundary-types': 'off',
+    '@typescript-eslint/no-non-null-asserted-optional-chain': 'off',
+    '@typescript-eslint/switch-exhaustiveness-check': 'off',
+    '@typescript-eslint/no-unnecessary-boolean-literal-compare': 'off',
 
     /* enabled */
     '@typescript-eslint/array-type': 'error',
