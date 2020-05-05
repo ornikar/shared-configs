@@ -51,6 +51,9 @@ jobs:
       - run:
           name: Lint code
           command: yarn run lint
+      - run:
+          name: prettier json
+          command: yarn run lint:prettier-json
 
   # Note: need these env variables: EMAIL, GIT_AUTHOR_NAME, GIT_COMMITTER_NAME, NPM_TOKEN, GITHUB_TOKEN
   release:

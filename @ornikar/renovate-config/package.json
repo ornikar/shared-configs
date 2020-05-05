@@ -139,7 +139,7 @@
             "husky",
             "lint-staged",
             "prettier",
-            "yarn-update-lock",
+            "yarn-deduplicate",
             "yarnhook"
           ],
           "packagePatterns": [
