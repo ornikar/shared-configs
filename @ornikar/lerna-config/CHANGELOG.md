@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.1](https://github.com/ornikar/shared-configs/compare/@ornikar/lerna-config@2.0.0...@ornikar/lerna-config@2.0.1) (2020-04-29)
+
+
+### Bug Fixes
+
+* tsconfig generator ([#366](https://github.com/ornikar/shared-configs/issues/366)) ([ad3b863](https://github.com/ornikar/shared-configs/commit/ad3b863))
+
+
+
+
+
 # [2.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/lerna-config@1.0.0...@ornikar/lerna-config@2.0.0) (2020-04-21)
 
 

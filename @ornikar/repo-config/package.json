@@ -1,6 +1,6 @@
 {
   "name": "@ornikar/repo-config",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "repo config",
   "repository": "ornikar/shared-configs",
   "license": "ISC",
@@ -17,7 +17,7 @@
     "@commitlint/cli": "8.3.5",
     "@ornikar/commitlint-config": "^2.0.0",
     "cross-env": "^6.0.3",
-    "lint-staged": "10.2.0",
+    "lint-staged": "10.2.2",
     "yarn-deduplicate": "2.0.0"
   }
 }

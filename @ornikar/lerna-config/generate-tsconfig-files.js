@@ -36,7 +36,10 @@ const PackageGraph = require('@lerna/package-graph');
       extends: '../../tsconfig.base.json',
       compilerOptions: {
         rootDirs: ['src'],
-        baseUrl: '.',
+        baseUrl: './src',
+        paths: {
+          [pkg.name]: ['./index.ts'],
+        },
       },
       include: ['src', '../../typings'],
     };
@@ -50,10 +53,19 @@ const PackageGraph = require('@lerna/package-graph');
         isolatedModules: false,
         emitDeclarationOnly: true,
         declarationMap: true,
-        outDir: 'dist',
+        outDir: 'dist/definitions',
         tsBuildInfoFile: 'dist/tsbuildinfo',
       },
-      exclude: ['dist', '*.test.ts'],
+      exclude: [
+        'dist',
+        '**/__mocks__',
+        '**/__tests__',
+        '**/*.test.ts',
+        '**/*.test.tsx',
+        '**/stories.ts',
+        '**/stories.tsx',
+        '**/stories/**',
+      ],
     };
 
     const dependencies = packages.filter((dep) => {
@@ -71,10 +83,9 @@ const PackageGraph = require('@lerna/package-graph');
     }
 
     if (dependencies.length !== 0) {
-      tsconfigContent.compilerOptions.paths = {};
       dependencies.forEach((pkgDep) => {
-        const depPath = `../../${pkgDep.name}/src`;
-        tsconfigContent.compilerOptions.paths[pkgDep.name] = [depPath];
+        const depPath = `../../../${pkgDep.name}/src`;
+        tsconfigContent.compilerOptions.paths[pkgDep.name] = [`${depPath}/index.ts`];
         tsconfigContent.compilerOptions.rootDirs.push(depPath);
       });
       tsconfigBuildContent.references = dependencies.map((pkgDep) => ({

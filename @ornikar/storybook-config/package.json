@@ -1,6 +1,6 @@
 {
   "name": "@ornikar/storybook-config",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "storybook config files",
   "repository": "ornikar/shared-configs",
   "main": "index.js",
@@ -27,6 +27,6 @@
     "@storybook/addon-actions": "5.2.6",
     "@storybook/addon-knobs": "5.2.6",
     "@storybook/theming": "5.2.6",
-    "webpack": "4.41.5"
+    "webpack": "4.43.0"
   }
 }
