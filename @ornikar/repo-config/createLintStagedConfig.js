@@ -29,6 +29,7 @@ module.exports = function createLintStagedConfig(options = {}) {
         'git add yarn.lock',
         // eslint-disable-next-line node/no-extraneous-require
         shouldGenerateTsconfigInLernaRepo && require.resolve('@ornikar/lerna-config/generate-tsconfig-files.js'),
+        shouldGenerateTsconfigInLernaRepo && 'prettier --write **/tsconfig.json **/tsconfig.build.json',
         shouldGenerateTsconfigInLernaRepo && 'git add **/tsconfig.json **/tsconfig.build.json',
       ].filter(Boolean);
     },
