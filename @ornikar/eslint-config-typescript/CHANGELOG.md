@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [10.1.1](https://github.com/ornikar/shared-configs/compare/@ornikar/eslint-config-typescript@10.1.0...@ornikar/eslint-config-typescript@10.1.1) (2020-05-05)
+
+
+### Bug Fixes
+
+* add missing added rules in typescrt-eslint plugin ([fb1b08f](https://github.com/ornikar/shared-configs/commit/fb1b08f))
+
+
+
+
+
 # [10.1.0](https://github.com/ornikar/shared-configs/compare/@ornikar/eslint-config-typescript@10.0.1...@ornikar/eslint-config-typescript@10.1.0) (2020-04-30)
 
 
