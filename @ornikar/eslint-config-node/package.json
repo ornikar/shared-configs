@@ -12,8 +12,8 @@
     "access": "public"
   },
   "dependencies": {
-    "eslint-plugin-node": "^10.0.0",
-    "eslint-plugin-unicorn": "^14.0.1"
+    "eslint-plugin-node": "^11.0.0",
+    "eslint-plugin-unicorn": "^19.0.0"
   },
   "peerDependencies": {
     "eslint": "^6.7.2"
