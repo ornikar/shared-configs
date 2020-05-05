@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [11.0.1](https://github.com/ornikar/shared-configs/compare/@ornikar/eslint-config@11.0.0...@ornikar/eslint-config@11.0.1) (2020-05-05)
+
+
+### Bug Fixes
+
+* update eslint-plugin-import ([4858d97](https://github.com/ornikar/shared-configs/commit/4858d97))
+
+
+
+
+
 # [11.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/eslint-config@10.0.1...@ornikar/eslint-config@11.0.0) (2020-05-05)
 
 
