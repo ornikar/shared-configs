@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.1.1](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@3.1.0...@ornikar/repo-config@3.1.1) (2020-05-05)
+
+
+### Bug Fixes
+
+* prettier generated tsconfig files ([c75ff83](https://github.com/ornikar/shared-configs/commit/c75ff83))
+
+
+
+
+
 # [3.1.0](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@3.0.1...@ornikar/repo-config@3.1.0) (2020-05-05)
 
 
