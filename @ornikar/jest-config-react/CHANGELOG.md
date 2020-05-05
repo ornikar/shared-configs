@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@5.0.1...@ornikar/jest-config-react@6.0.0) (2020-05-05)
+
+
+### chore
+
+* **deps:** update dependency @testing-library/react to v10 ([#371](https://github.com/ornikar/shared-configs/issues/371)) ([28e7efe](https://github.com/ornikar/shared-configs/commit/28e7efe))
+
+
+### BREAKING CHANGES
+
+* **deps:** require @testing-library/react ^10.0.4
+
+
+
+
+
 ## [5.0.1](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@4.0.2...@ornikar/jest-config-react@5.0.1) (2020-04-29)
 
 **Note:** Version bump only for package @ornikar/jest-config-react
