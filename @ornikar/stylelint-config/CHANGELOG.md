@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/stylelint-config@5.0.1...@ornikar/stylelint-config@6.0.0) (2020-05-05)
+
+
+### chore
+
+* checks ([#369](https://github.com/ornikar/shared-configs/issues/369)) ([a30526e](https://github.com/ornikar/shared-configs/commit/a30526e))
+
+
+### BREAKING CHANGES
+
+* some peer dependencies changed
+
+
+
+
+
 ## [5.0.1](https://github.com/ornikar/shared-configs/compare/@ornikar/stylelint-config@5.0.0...@ornikar/stylelint-config@5.0.1) (2020-04-29)
 
 **Note:** Version bump only for package @ornikar/stylelint-config

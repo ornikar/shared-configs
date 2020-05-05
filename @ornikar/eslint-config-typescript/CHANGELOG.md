@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [10.1.2](https://github.com/ornikar/shared-configs/compare/@ornikar/eslint-config-typescript@10.1.1...@ornikar/eslint-config-typescript@10.1.2) (2020-05-05)
+
+**Note:** Version bump only for package @ornikar/eslint-config-typescript
+
+
+
+
+
 ## [10.1.1](https://github.com/ornikar/shared-configs/compare/@ornikar/eslint-config-typescript@10.1.0...@ornikar/eslint-config-typescript@10.1.1) (2020-05-05)
 
 
