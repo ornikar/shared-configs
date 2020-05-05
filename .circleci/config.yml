@@ -1,9 +1,32 @@
-version: 2
+version: 2.1
+
+# -------------------------------------------------------------------------------------------------
+# EXECUTORS
+# -------------------------------------------------------------------------------------------------
+
+executors:
+  node:
+    docker:
+      - image: circleci/node:12.16
+
+# -------------------------------------------------------------------------------------------------
+# COMMANDS
+# -------------------------------------------------------------------------------------------------
+
+commands:
+  checkout-and-restore-cache:
+    steps:
+      - checkout
+      - restore_cache:
+          key: v2-dependencies-{{ arch }}-{{ checksum "yarn.lock" }}
+
+# -------------------------------------------------------------------------------------------------
+# JOBS
+# -------------------------------------------------------------------------------------------------
 
 jobs:
   dependencies:
-    docker:
-      - image: circleci/node:12.16
+    executor: node
     steps:
       - checkout
       - restore_cache:
@@ -41,13 +64,21 @@ jobs:
             - '@ornikar/stylelint-config/node_modules'
             - '@ornikar/webpack-config/node_modules'
 
-  lint:
-    docker:
-      - image: circleci/node:12.16
+  checks:
+    executor: node
     steps:
-      - checkout
-      - restore_cache:
-          key: v2-dependencies-{{ arch }}-{{ checksum "yarn.lock" }}
+      - checkout-and-restore-cache
+      - run:
+          name: Check peer dependencies
+          command: yarn check
+      - run:
+          name: Check package.json
+          command: node scripts/check-packagejson.js
+
+  lint:
+    executor: node
+    steps:
+      - checkout-and-restore-cache
       - run:
           name: Lint code
           command: yarn run lint
@@ -57,12 +88,9 @@ jobs:
 
   # Note: need these env variables: EMAIL, GIT_AUTHOR_NAME, GIT_COMMITTER_NAME, NPM_TOKEN, GITHUB_TOKEN
   release:
-    docker:
-      - image: circleci/node:12.16
+    executor: node
     steps:
-      - checkout
-      - restore_cache:
-          key: v2-dependencies-{{ arch }}-{{ checksum "yarn.lock" }}
+      - checkout-and-restore-cache
       - run:
           name: Setup origin with write access
           command: git remote set-url origin "https://michael-robot:$GITHUB_TOKEN@github.com/$CIRCLE_PROJECT_USERNAME/$CIRCLE_PROJECT_REPONAME"
@@ -83,6 +111,10 @@ workflows:
     jobs:
       - dependencies
 
+      - checks:
+          requires:
+            - dependencies
+
       - lint:
           requires:
             - dependencies
@@ -98,6 +130,7 @@ workflows:
           context: npm-publish
           requires:
             - dependencies
+            - checks
             - lint
             - hold-release
           filters:

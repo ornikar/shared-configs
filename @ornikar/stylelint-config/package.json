@@ -22,10 +22,10 @@
   },
   "peerDependencies": {
     "prettier": "^2.0.4",
-    "stylelint": "^9.9.0 || ^10.0.0"
+    "stylelint": "^11.0.0"
   },
   "devDependencies": {
     "prettier": "2.0.5",
-    "stylelint": "10.1.0"
+    "stylelint": "11.0.0"
   }
 }

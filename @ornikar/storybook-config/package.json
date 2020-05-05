@@ -26,7 +26,6 @@
   "devDependencies": {
     "@storybook/addon-actions": "5.2.6",
     "@storybook/addon-knobs": "5.2.6",
-    "@storybook/theming": "5.2.6",
-    "webpack": "4.43.0"
+    "@storybook/theming": "5.2.6"
   }
 }
