@@ -26,7 +26,7 @@ module.exports = function createLintStagedConfig(options = {}) {
         packagejsonFilenames.length === 0
           ? undefined
           : `prettier --parser json --write ${packagejsonFilenames.join(' ')}`,
-        `git add ${filenames.join(' ')}`,
+        'git add yarn.lock',
         // eslint-disable-next-line node/no-extraneous-require
         shouldGenerateTsconfigInLernaRepo && require.resolve('@ornikar/lerna-config/generate-tsconfig-files.js'),
         shouldGenerateTsconfigInLernaRepo && 'git add **/tsconfig.json **/tsconfig.build.json',
@@ -34,15 +34,11 @@ module.exports = function createLintStagedConfig(options = {}) {
     },
     [`{.eslintrc.json${
       workspaces ? `,${workspaces.map((workspacePath) => `${workspacePath}/{.eslintrc.json}`).join(',')}` : ''
-    }}`]: ['prettier --parser json --write', 'git add'],
-    [`{.storybook,${srcDirectories}}/**/*.css`]: [
-      'prettier --parser css --write',
-      'stylelint --quiet --fix',
-      'git add',
-    ],
+    }}`]: ['prettier --parser json --write'],
+    [`{.storybook,${srcDirectories}}/**/*.css`]: ['prettier --parser css --write', 'stylelint --quiet --fix'],
 
-    [`${srcDirectories}/**/*.{${srcExtensions.join(',')}}`]: ['eslint --fix --quiet', 'git add'],
-    '{scripts,config,.storyboook}/*.js': ['eslint --fix --quiet', 'git add'],
+    [`${srcDirectories}/**/*.{${srcExtensions.join(',')}}`]: ['eslint --fix --quiet'],
+    '{scripts,config,.storyboook}/*.js': ['eslint --fix --quiet'],
   };
 };
 
