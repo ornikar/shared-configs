@@ -195,7 +195,8 @@
           "schedule": [
             "at any time"
           ],
-          "masterIssueApproval": true
+          "masterIssueApproval": true,
+          "rangeStrategy": "bump"
         }
       ]
     }
