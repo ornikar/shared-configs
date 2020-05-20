@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [10.2.0](https://github.com/ornikar/shared-configs/compare/@ornikar/eslint-config-typescript@10.1.3...@ornikar/eslint-config-typescript@10.2.0) (2020-05-20)
+
+
+### Features
+
+* avoir typing when expression typed ([#374](https://github.com/ornikar/shared-configs/issues/374)) ([43d93f5](https://github.com/ornikar/shared-configs/commit/43d93f5))
+
+
+
+
+
 ## [10.1.3](https://github.com/ornikar/shared-configs/compare/@ornikar/eslint-config-typescript@10.1.2...@ornikar/eslint-config-typescript@10.1.3) (2020-05-05)
 
 **Note:** Version bump only for package @ornikar/eslint-config-typescript
