@@ -3,7 +3,7 @@
   "version": "2.2.0",
   "description": "renovate shared config",
   "engines": {
-    "node": ">= 12.16.2"
+    "node": ">= 12.16.1"
   },
   "publishConfig": {
     "access": "public"
@@ -17,15 +17,11 @@
       "masterIssueApproval": true,
       "rebaseStalePrs": true,
       "updateNotScheduled": false,
-      "postUpdateOptions": [
-        "yarnDedupeHighest"
-      ],
+      "postUpdateOptions": ["yarnDedupeHighest"],
       "prBodyNotes": [
         "<!-- do not edit after this -->This will be auto filled by reviewflow.<!-- end - don't add anything after this -->"
       ],
-      "labels": [
-        ":soon: automerge"
-      ],
+      "labels": [":soon: automerge"],
       "packageRules": [
         {
           "groupName": "Lint Ornikar Shared Configs",
@@ -39,15 +35,10 @@
             "@ornikar/prettier-config",
             "@ornikar/stylelint-config"
           ],
-          "labels": [
-            ":ok_hand: code/approved",
-            ":soon: automerge"
-          ],
+          "labels": [":ok_hand: code/approved", ":soon: automerge"],
           "rebaseStalePrs": false,
           "masterIssueApproval": false,
-          "schedule": [
-            "at any time"
-          ]
+          "schedule": ["at any time"]
         },
         {
           "groupName": "Repo Shared Configs Ornikar",
@@ -57,28 +48,17 @@
             "@ornikar/repo-config",
             "@ornikar/repo-config-react"
           ],
-          "labels": [
-            ":ok_hand: code/approved",
-            ":soon: automerge"
-          ],
+          "labels": [":ok_hand: code/approved", ":soon: automerge"],
           "rebaseStalePrs": false,
           "masterIssueApproval": false,
-          "schedule": [
-            "at any time"
-          ]
+          "schedule": ["at any time"]
         },
         {
           "groupName": "Build Shared Configs Ornikar",
-          "packageNames": [
-            "@ornikar/rollup-config",
-            "@ornikar/storybook-config",
-            "@ornikar/webpack-config"
-          ],
+          "packageNames": ["@ornikar/rollup-config", "@ornikar/storybook-config", "@ornikar/webpack-config"],
           "rebaseStalePrs": false,
           "masterIssueApproval": false,
-          "schedule": [
-            "at any time"
-          ]
+          "schedule": ["at any time"]
         },
         {
           "groupName": "Components Ornikar",
@@ -94,109 +74,53 @@
           ],
           "rebaseStalePrs": false,
           "masterIssueApproval": false,
-          "schedule": [
-            "at any time"
-          ]
+          "schedule": ["at any time"]
         },
         {
           "groupName": "eslint packages",
-          "packageNames": [
-            "babel-eslint"
-          ],
-          "packagePatterns": [
-            "^eslint"
-          ]
+          "packageNames": ["babel-eslint"],
+          "packagePatterns": ["^eslint"]
         },
         {
           "groupName": "babel community packages",
-          "excludePackageNames": [
-            "babel-eslint"
-          ],
-          "packagePatterns": [
-            "^babel"
-          ]
+          "excludePackageNames": ["babel-eslint"],
+          "packagePatterns": ["^babel"]
         },
         {
           "groupName": "rollup packages",
-          "packagePatterns": [
-            "^rollup"
-          ]
+          "packagePatterns": ["^rollup"]
         },
         {
           "groupName": "react",
           "description": "react monorepo",
-          "sourceUrlPrefixes": [
-            "https://github.com/facebook/react"
-          ],
-          "packageNames": [
-            "@hot-loader/react-dom",
-            "@types/react",
-            "@types/react-dom"
-          ]
+          "sourceUrlPrefixes": ["https://github.com/facebook/react"],
+          "packageNames": ["@hot-loader/react-dom", "@types/react", "@types/react-dom"]
         },
         {
-          "packageNames": [
-            "husky",
-            "lint-staged",
-            "prettier",
-            "yarn-deduplicate",
-            "yarnhook"
-          ],
-          "packagePatterns": [
-            "^@commitlint",
-            "^eslint"
-          ],
-          "updateTypes": [
-            "patch",
-            "minor"
-          ],
-          "labels": [
-            ":ok_hand: code/approved",
-            ":soon: automerge"
-          ],
+          "packageNames": ["husky", "lint-staged", "prettier", "yarn-update-lock", "yarnhook"],
+          "packagePatterns": ["^@commitlint", "^eslint"],
+          "updateTypes": ["patch", "minor"],
+          "labels": [":ok_hand: code/approved", ":soon: automerge"],
           "masterIssueApproval": false,
-          "schedule": [
-            "before 5:00am"
-          ]
+          "schedule": ["before 5:00am"]
         },
         {
-          "packagePatterns": [
-            "^@types"
-          ],
-          "updateTypes": [
-            "patch"
-          ],
-          "labels": [
-            ":ok_hand: code/approved",
-            ":soon: automerge"
-          ],
+          "packagePatterns": ["^@types"],
+          "updateTypes": ["patch"],
+          "labels": [":ok_hand: code/approved", ":soon: automerge"],
           "masterIssueApproval": false,
-          "schedule": [
-            "before 5:00am"
-          ]
+          "schedule": ["before 5:00am"]
         },
         {
-          "updateTypes": [
-            "pin"
-          ],
-          "labels": [
-            ":ok_hand: code/approved",
-            ":soon: automerge"
-          ],
+          "updateTypes": ["pin"],
+          "labels": [":ok_hand: code/approved", ":soon: automerge"],
           "masterIssueApproval": false,
-          "schedule": [
-            "at any time"
-          ]
+          "schedule": ["at any time"]
         },
         {
-          "updateTypes": [
-            "major"
-          ],
-          "schedule": [
-            "at any time"
-          ],
-          "masterIssueApproval": true,
-          "rangeStrategy": "bump"
+          "updateTypes": ["major"],
+          "schedule": ["at any time"],
+          "masterIssueApproval": true
         }
       ]
     }
