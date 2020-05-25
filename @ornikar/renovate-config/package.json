@@ -3,7 +3,7 @@
   "version": "2.2.0",
   "description": "renovate shared config",
   "engines": {
-    "node": ">= 12.16.2"
+    "node": ">= 12.16.1"
   },
   "publishConfig": {
     "access": "public"
@@ -139,7 +139,7 @@
             "husky",
             "lint-staged",
             "prettier",
-            "yarn-deduplicate",
+            "yarn-update-lock",
             "yarnhook"
           ],
           "packagePatterns": [
@@ -195,8 +195,7 @@
           "schedule": [
             "at any time"
           ],
-          "masterIssueApproval": true,
-          "rangeStrategy": "bump"
+          "masterIssueApproval": true
         }
       ]
     }
