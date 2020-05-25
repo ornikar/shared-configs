@@ -16,7 +16,7 @@
   "dependencies": {
     "@commitlint/cli": "8.3.5",
     "@ornikar/commitlint-config": "^2.0.0",
-    "cross-env": "^6.0.3",
+    "cross-env": "^7.0.0",
     "lint-staged": "10.2.6",
     "yarn-deduplicate": "2.0.0"
   }
