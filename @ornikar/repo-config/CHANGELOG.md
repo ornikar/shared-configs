@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.2.0](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@3.1.2...@ornikar/repo-config@3.2.0) (2020-05-25)
+
+
+### Bug Fixes
+
+* **deps:** update dependency cross-env to v7 ([#382](https://github.com/ornikar/shared-configs/issues/382)) ([9c54d8f](https://github.com/ornikar/shared-configs/commit/9c54d8f))
+
+
+### Features
+
+* support node 12.16.1 for renovate [no issue] ([#383](https://github.com/ornikar/shared-configs/issues/383)) ([77c0ef4](https://github.com/ornikar/shared-configs/commit/77c0ef4))
+
+
+
+
+
 ## [3.1.2](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@3.1.1...@ornikar/repo-config@3.1.2) (2020-05-20)
 
 **Note:** Version bump only for package @ornikar/repo-config

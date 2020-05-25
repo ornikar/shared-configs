@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.3.0](https://github.com/ornikar/shared-configs/compare/@ornikar/renovate-config@2.2.0...@ornikar/renovate-config@2.3.0) (2020-05-25)
+
+
+### Features
+
+* support node 12.16.1 for renovate [no issue] ([#383](https://github.com/ornikar/shared-configs/issues/383)) ([77c0ef4](https://github.com/ornikar/shared-configs/commit/77c0ef4))
+* **renovate-config:** configure rangeStrategy for majors ([#375](https://github.com/ornikar/shared-configs/issues/375)) ([d8f08ef](https://github.com/ornikar/shared-configs/commit/d8f08ef))
+
+
+
+
+
 # [2.2.0](https://github.com/ornikar/shared-configs/compare/@ornikar/renovate-config@2.1.0...@ornikar/renovate-config@2.2.0) (2020-05-05)
 
 

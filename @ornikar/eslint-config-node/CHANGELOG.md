@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [10.1.0](https://github.com/ornikar/shared-configs/compare/@ornikar/eslint-config-node@10.0.0...@ornikar/eslint-config-node@10.1.0) (2020-05-25)
+
+
+### Features
+
+* support node 12.16.1 for renovate [no issue] ([#383](https://github.com/ornikar/shared-configs/issues/383)) ([77c0ef4](https://github.com/ornikar/shared-configs/commit/77c0ef4))
+
+
+
+
+
 # [10.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/eslint-config-node@9.0.1...@ornikar/eslint-config-node@10.0.0) (2020-04-21)
 
 

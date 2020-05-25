@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.1.0](https://github.com/ornikar/shared-configs/compare/@ornikar/eslint-config-babel-use@4.0.1...@ornikar/eslint-config-babel-use@4.1.0) (2020-05-25)
+
+
+### Features
+
+* support node 12.16.1 for renovate [no issue] ([#383](https://github.com/ornikar/shared-configs/issues/383)) ([77c0ef4](https://github.com/ornikar/shared-configs/commit/77c0ef4))
+
+
+
+
+
 ## [4.0.1](https://github.com/ornikar/shared-configs/compare/@ornikar/eslint-config-babel-use@4.0.0...@ornikar/eslint-config-babel-use@4.0.1) (2020-05-05)
 
 **Note:** Version bump only for package @ornikar/eslint-config-babel-use

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.1.0](https://github.com/ornikar/shared-configs/compare/@ornikar/commitlint-config@2.0.0...@ornikar/commitlint-config@2.1.0) (2020-05-25)
+
+
+### Features
+
+* support node 12.16.1 for renovate [no issue] ([#383](https://github.com/ornikar/shared-configs/issues/383)) ([77c0ef4](https://github.com/ornikar/shared-configs/commit/77c0ef4))
+
+
+
+
+
 # [2.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/commitlint-config@1.0.0...@ornikar/commitlint-config@2.0.0) (2020-04-21)
 
 
