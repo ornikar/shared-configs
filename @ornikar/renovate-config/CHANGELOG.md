@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.4.0](https://github.com/ornikar/shared-configs/compare/@ornikar/renovate-config@2.3.0...@ornikar/renovate-config@2.4.0) (2020-06-05)
+
+
+### Features
+
+* **renovate-config:** remove pr body for reviewflow ([#388](https://github.com/ornikar/shared-configs/issues/388)) ([66b0a74](https://github.com/ornikar/shared-configs/commit/66b0a74))
+
+
+
+
+
 # [2.3.0](https://github.com/ornikar/shared-configs/compare/@ornikar/renovate-config@2.2.0...@ornikar/renovate-config@2.3.0) (2020-05-25)
 
 
