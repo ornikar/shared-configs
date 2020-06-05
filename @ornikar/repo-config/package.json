@@ -17,7 +17,7 @@
     "@commitlint/cli": "8.3.5",
     "@ornikar/commitlint-config": "^2.1.0",
     "cross-env": "^7.0.0",
-    "lint-staged": "10.2.8",
+    "lint-staged": "10.2.9",
     "yarn-deduplicate": "2.0.0"
   }
 }
