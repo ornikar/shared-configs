@@ -18,7 +18,8 @@
   },
   "dependencies": {
     "@ornikar/jest-config": "^5.1.0",
-    "identity-obj-proxy": "^3.0.0"
+    "identity-obj-proxy": "^3.0.0",
+    "waait": "1.0.5"
   },
   "devDependencies": {
     "@testing-library/react": "10.0.4",

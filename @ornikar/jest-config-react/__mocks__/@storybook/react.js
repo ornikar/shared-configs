@@ -2,7 +2,8 @@
 
 'use strict';
 
-const { render } = require('@testing-library/react');
+const { render, waitFor } = require('@testing-library/react');
+const wait = require('waait');
 
 const decorateStory = (storyFn, decorators) =>
   decorators.reduce(
@@ -53,12 +54,17 @@ exports.storiesOf = (groupName) => {
       }
 
       describe(groupName, () => {
-        it(storyName, () => {
+        it(storyName, async () => {
           const wrappingComponent = ignoreDecorators
             ? undefined
             : ({ children }) => decorateStory(() => children, [...globalDecorators, ...localDecorators])(parameters);
 
           const { unmount, asFragment } = render(story(parameters), { wrapper: wrappingComponent });
+
+          await waitFor(async () => {
+            await wait(0); // wait for response
+          });
+
           expect(asFragment()).toMatchSnapshot();
           unmount();
         });
