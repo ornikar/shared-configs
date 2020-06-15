@@ -7,7 +7,7 @@ version: 2.1
 executors:
   node:
     docker:
-      - image: circleci/node:12.16
+      - image: circleci/node:12.18
 
 # -------------------------------------------------------------------------------------------------
 # COMMANDS
