@@ -3,7 +3,8 @@
 'use strict';
 
 const { render, waitFor } = require('@testing-library/react');
-const wait = require('waait');
+
+const wait = (amount = 0) => new Promise((resolve) => setTimeout(resolve, amount));
 
 const decorateStory = (storyFn, decorators) =>
   decorators.reduce(
@@ -61,8 +62,11 @@ exports.storiesOf = (groupName) => {
 
           const { unmount, asFragment } = render(story(parameters), { wrapper: wrappingComponent });
 
+          // https://www.apollographql.com/docs/react/development-testing/testing/#testing-final-state
           await waitFor(async () => {
-            await wait(0); // wait for response
+            // delays until the next "tick" of the event loop, and allows time
+            // for that Promise returned from MockedProvider to be fulfilled
+            await wait(0);
           });
 
           expect(asFragment()).toMatchSnapshot();
