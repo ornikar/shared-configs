@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.1.1](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config@5.1.0...@ornikar/jest-config@5.1.1) (2020-06-18)
+
+
+### Bug Fixes
+
+* use mockdate [no issue] ([#397](https://github.com/ornikar/shared-configs/issues/397)) ([9b7ca5b](https://github.com/ornikar/shared-configs/commit/9b7ca5b))
+
+
+
+
+
 # [5.1.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config@5.0.1...@ornikar/jest-config@5.1.0) (2020-05-25)
 
 
