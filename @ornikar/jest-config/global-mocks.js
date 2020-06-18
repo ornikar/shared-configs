@@ -1,11 +1,15 @@
 'use strict';
 
+// order is: mockdate, then timezone mock
+// requiring timezone mock sets its internal _Date, so date must be mocked before.
+// eslint-disable-next-line import/order
+const mockdate = require('mockdate');
+
+mockdate.set('2018-07-30T08:52:42.679Z');
+
 const timezoneMock = require('timezone-mock');
 
 timezoneMock.register('UTC');
 
-const MockDate = global.Date;
-// 2018-07-30T08:52:42.679Z
-const mockNowTime = 1532940762679;
-MockDate.now = () => mockNowTime;
-MockDate.getFullYear = () => 2019;
+// Mock getFullYear
+Date.getFullYear = () => 2019;
