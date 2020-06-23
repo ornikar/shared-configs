@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.2.4](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@6.2.3...@ornikar/jest-config-react@6.2.4) (2020-06-23)
+
+
+### Bug Fixes
+
+* reverse global and local decorators for tests ([#399](https://github.com/ornikar/shared-configs/issues/399)) ([e96f2bf](https://github.com/ornikar/shared-configs/commit/e96f2bf))
+
+
+
+
+
 ## [6.2.3](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@6.2.2...@ornikar/jest-config-react@6.2.3) (2020-06-23)
 
 
