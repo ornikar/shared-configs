@@ -7,7 +7,7 @@ const { render } = require('@testing-library/react');
 const wait = (amount = 0) => new Promise((resolve) => setTimeout(resolve, amount));
 
 const decorateStory = (storyFn, decorators) =>
-  decorators.reverse().reduce(
+  decorators.reduce(
     (decorated, decorator) => (context = {}) =>
       decorator(
         (p = {}) =>
@@ -58,7 +58,7 @@ exports.storiesOf = (groupName) => {
         it(storyName, async () => {
           const wrappingComponent = ignoreDecorators
             ? undefined
-            : ({ children }) => decorateStory(() => children, [...globalDecorators, ...localDecorators])(parameters);
+            : ({ children }) => decorateStory(() => children, [...localDecorators, ...globalDecorators])(parameters);
 
           const { unmount, asFragment } = render(story(parameters), { wrapper: wrappingComponent });
 
