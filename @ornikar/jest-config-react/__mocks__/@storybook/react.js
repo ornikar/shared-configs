@@ -7,7 +7,7 @@ const { render } = require('@testing-library/react');
 const wait = (amount = 0) => new Promise((resolve) => setTimeout(resolve, amount));
 
 const decorateStory = (storyFn, decorators) =>
-  decorators.reverse.reduce(
+  decorators.reverse().reduce(
     (decorated, decorator) => (context = {}) =>
       decorator(
         (p = {}) =>
