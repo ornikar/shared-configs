@@ -7,7 +7,7 @@ const { render } = require('@testing-library/react');
 const wait = (amount = 0) => new Promise((resolve) => setTimeout(resolve, amount));
 
 const decorateStory = (storyFn, decorators) =>
-  decorators.reduce(
+  decorators.reverse().reduce(
     (decorated, decorator) => (context = {}) =>
       decorator(
         (p = {}) =>
@@ -66,7 +66,7 @@ exports.storiesOf = (groupName) => {
           // delays until the next "tick" of the event loop, and allows time
           // for that Promise returned from MockedProvider to be fulfilled
           await wait(0);
-          
+
           expect(asFragment()).toMatchSnapshot();
           unmount();
         });
