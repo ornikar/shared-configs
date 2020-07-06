@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.3.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@6.2.4...@ornikar/jest-config-react@6.3.0) (2020-07-06)
+
+
+### Features
+
+* wrap-rendering-in-act ([#401](https://github.com/ornikar/shared-configs/issues/401)) ([549ace2](https://github.com/ornikar/shared-configs/commit/549ace2))
+
+
+
+
+
 ## [6.2.4](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@6.2.3...@ornikar/jest-config-react@6.2.4) (2020-06-23)
 
 
