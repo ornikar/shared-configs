@@ -87,6 +87,7 @@
             "@ornikar/react-header",
             "@ornikar/react-notification",
             "@ornikar/react-storybook",
+            "@ornikar/react-validators",
             "@ornikar/validators"
           ],
           "rebaseStalePrs": false,
