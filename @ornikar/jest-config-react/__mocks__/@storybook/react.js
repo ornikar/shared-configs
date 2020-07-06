@@ -2,7 +2,7 @@
 
 'use strict';
 
-const { render } = require('@testing-library/react');
+const { act, render } = require('@testing-library/react');
 
 const wait = (amount = 0) => new Promise((resolve) => setTimeout(resolve, amount));
 
@@ -60,15 +60,15 @@ exports.storiesOf = (groupName) => {
             ? undefined
             : ({ children }) => decorateStory(() => children, [...localDecorators, ...globalDecorators])(parameters);
 
-          const { unmount, asFragment } = render(story(parameters), { wrapper: wrappingComponent });
-
-          // https://www.apollographql.com/docs/react/development-testing/testing/#testing-final-state
-          // delays until the next "tick" of the event loop, and allows time
-          // for that Promise returned from MockedProvider to be fulfilled
-          await wait(0);
-
-          expect(asFragment()).toMatchSnapshot();
-          unmount();
+          await act(async () => {
+            const { unmount, asFragment } = render(story(parameters), { wrapper: wrappingComponent });
+            // https://www.apollographql.com/docs/react/development-testing/testing/#testing-final-state
+            // delays until the next "tick" of the event loop, and allows time
+            // for that Promise returned from MockedProvider to be fulfilled
+            await wait(0);
+            expect(asFragment()).toMatchSnapshot();
+            unmount();
+          });
         });
       });
 
