@@ -21,8 +21,6 @@ const deprecatedReactLifeCycleMethods = [
 ];
 
 ['error', 'warn'].forEach((methodName) => {
-  const originalMethod = console[methodName];
-
   const unexpectedConsoleCallStacks = [];
   const newMethod = function (format, ...args) {
     if (typeof format === 'string') {
