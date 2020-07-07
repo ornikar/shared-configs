@@ -21,8 +21,6 @@ const deprecatedReactLifeCycleMethods = [
 ];
 
 ['error', 'warn'].forEach((methodName) => {
-  const originalMethod = console[methodName];
-
   const unexpectedConsoleCallStacks = [];
   const newMethod = function (format, ...args) {
     if (typeof format === 'string') {
@@ -31,11 +29,6 @@ const deprecatedReactLifeCycleMethods = [
           format.includes(`${lifecycleMethod} has been renamed, and is not recommended for use.`),
         )
       ) {
-        return;
-      }
-
-      if (format.match(/Warning: An update to (.*) inside a test was not wrapped in act/)) {
-        originalMethod(format, ...args);
         return;
       }
     }
