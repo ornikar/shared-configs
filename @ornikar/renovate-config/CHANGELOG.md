@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.5.0](https://github.com/ornikar/shared-configs/compare/@ornikar/renovate-config@2.4.0...@ornikar/renovate-config@2.5.0) (2020-07-07)
+
+
+### Features
+
+* **renovate-config:** add missing react-validators in ornikar components group [no issue] ([#402](https://github.com/ornikar/shared-configs/issues/402)) ([c10b67a](https://github.com/ornikar/shared-configs/commit/c10b67a))
+
+
+
+
+
 # [2.4.0](https://github.com/ornikar/shared-configs/compare/@ornikar/renovate-config@2.3.0...@ornikar/renovate-config@2.4.0) (2020-06-05)
 
 
