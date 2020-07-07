@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.2.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config@5.1.1...@ornikar/jest-config@5.2.0) (2020-07-07)
+
+
+### Features
+
+* act errors are not filtered anymore [no issue] ([#403](https://github.com/ornikar/shared-configs/issues/403)) ([9994edd](https://github.com/ornikar/shared-configs/commit/9994edd))
+
+
+
+
+
 ## [5.1.1](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config@5.1.0...@ornikar/jest-config@5.1.1) (2020-06-18)
 
 
