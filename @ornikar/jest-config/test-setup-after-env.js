@@ -33,11 +33,6 @@ const deprecatedReactLifeCycleMethods = [
       ) {
         return;
       }
-
-      if (format.match(/Warning: An update to (.*) inside a test was not wrapped in act/)) {
-        originalMethod(format, ...args);
-        return;
-      }
     }
     // Capture the call stack now so we can warn about it later.
     // The call stack has helpful information for the test author.
