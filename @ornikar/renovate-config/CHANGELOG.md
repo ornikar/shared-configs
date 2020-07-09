@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.6.0](https://github.com/ornikar/shared-configs/compare/@ornikar/renovate-config@2.5.0...@ornikar/renovate-config@2.6.0) (2020-07-09)
+
+
+### Features
+
+* **renovate:** add missing ornikar components [no issue] ([#404](https://github.com/ornikar/shared-configs/issues/404)) ([afbe586](https://github.com/ornikar/shared-configs/commit/afbe586))
+
+
+
+
+
 # [2.5.0](https://github.com/ornikar/shared-configs/compare/@ornikar/renovate-config@2.4.0...@ornikar/renovate-config@2.5.0) (2020-07-07)
 
 
