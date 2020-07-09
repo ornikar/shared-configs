@@ -82,9 +82,11 @@
           "packageNames": [
             "@ornikar/api-helpers",
             "@ornikar/auth",
+            "@ornikar/auth-api",
             "@ornikar/react-brand-logo",
             "@ornikar/react-forms",
             "@ornikar/react-header",
+            "@ornikar/react-intl",
             "@ornikar/react-notification",
             "@ornikar/react-storybook",
             "@ornikar/react-validators",
