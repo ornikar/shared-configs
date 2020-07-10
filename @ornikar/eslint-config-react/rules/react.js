@@ -1,5 +1,13 @@
 'use strict';
 
+// https://github.com/ornikar/learner-webapp/issues/1036
+// Keep same naming for test ids
+const forbidDomAndComponentsProps = [
+  { propName: 'data-test', message: 'Use data-testid' },
+  { propName: 'data-test-id', message: 'Use data-testid' },
+  { propName: 'data-test-class', message: 'Use data-testid' },
+];
+
 module.exports = {
   rules: {
     /* added rules */
@@ -67,6 +75,22 @@ module.exports = {
           ],
           rendering: ['/^render.+$/', 'render'],
         },
+      },
+    ],
+
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/forbid-dom-props.md
+    'react/forbid-dom-props': [
+      'error',
+      {
+        forbid: forbidDomAndComponentsProps,
+      },
+    ],
+
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/forbid-component-props.md
+    'react/forbid-component-props': [
+      'error',
+      {
+        forbid: forbidDomAndComponentsProps,
       },
     ],
 
