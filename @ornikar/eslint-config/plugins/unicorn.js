@@ -49,7 +49,7 @@ module.exports = {
     'unicorn/prefer-event-key': 'off',
 
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/master/docs/rules/prefer-flat-map.md
-    // TODO [engine:node@>=11] flatMap only supported from node 11
+    // TODO [engine:node@>=14] flatMap only supported from node 11
     'unicorn/prefer-flat-map': 'off',
 
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/master/docs/rules/no-fn-reference-in-iterator.md
