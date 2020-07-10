@@ -3,7 +3,7 @@
   "version": "2.6.0",
   "description": "renovate shared config",
   "engines": {
-    "node": ">= 12.16.1"
+    "node": ">=12.16.1"
   },
   "publishConfig": {
     "access": "public"
