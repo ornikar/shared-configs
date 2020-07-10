@@ -1,6 +1,6 @@
 {
   "name": "@ornikar/eslint-config-react",
-  "version": "11.2.0",
+  "version": "11.2.1",
   "description": "eslint react config files",
   "repository": "ornikar/shared-configs",
   "main": "index.js",
