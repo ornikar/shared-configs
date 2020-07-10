@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [11.2.0](https://github.com/ornikar/shared-configs/compare/@ornikar/eslint-config-react@11.1.0...@ornikar/eslint-config-react@11.2.0) (2020-07-10)
+
+
+### Features
+
+* forbid props to use only data-testid ([#405](https://github.com/ornikar/shared-configs/issues/405)) ([0cc4e93](https://github.com/ornikar/shared-configs/commit/0cc4e93))
+
+
+
+
+
 # [11.1.0](https://github.com/ornikar/shared-configs/compare/@ornikar/eslint-config-react@11.0.1...@ornikar/eslint-config-react@11.1.0) (2020-05-25)
 
 

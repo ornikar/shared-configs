@@ -1,6 +1,6 @@
 {
   "name": "@ornikar/repo-config-react",
-  "version": "2.1.3",
+  "version": "2.1.4",
   "description": "react repo config",
   "repository": "ornikar/shared-configs",
   "license": "ISC",
@@ -11,7 +11,7 @@
     "access": "public"
   },
   "dependencies": {
-    "@ornikar/repo-config": "^3.2.3",
+    "@ornikar/repo-config": "^3.2.4",
     "cross-env": "^7.0.0",
     "svgo": "^1.3.0",
     "typed-css-modules": "0.6.4"
