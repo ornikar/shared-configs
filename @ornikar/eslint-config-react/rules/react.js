@@ -94,6 +94,15 @@ module.exports = {
       },
     ],
 
+    // // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-pascal-case.md
+    'react/jsx-pascal-case': [
+      'error',
+      {
+        // Allow Typography.{tag}
+        ignore: ['h1', 'h2', 'h3', 'h4', 'h5', 'div', 'span', 'p', 'section'],
+      },
+    ],
+
     /* disabled rules */
 
     // https://github.com/yannickcr/eslint-plugin-react/issues/1009
