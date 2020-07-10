@@ -115,5 +115,9 @@ module.exports = {
 
     // allow props spreading
     'react/jsx-props-no-spreading': 'off',
+
+    // disabled until this issue is resolved:
+    // https://github.com/yannickcr/eslint-plugin-react/issues/1334
+    'react/jsx-pascal-case': 'off',
   },
 };
