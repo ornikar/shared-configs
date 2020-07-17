@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.6.2](https://github.com/ornikar/shared-configs/compare/@ornikar/renovate-config@2.6.1...@ornikar/renovate-config@2.6.2) (2020-07-17)
+
+
+### Bug Fixes
+
+* **renovate:** don't regroup eslint plugins for major updates [no issue] ([#411](https://github.com/ornikar/shared-configs/issues/411)) ([af0e2d4](https://github.com/ornikar/shared-configs/commit/af0e2d4))
+
+
+
+
+
 ## [2.6.1](https://github.com/ornikar/shared-configs/compare/@ornikar/renovate-config@2.6.0...@ornikar/renovate-config@2.6.1) (2020-07-10)
 
 **Note:** Version bump only for package @ornikar/renovate-config
