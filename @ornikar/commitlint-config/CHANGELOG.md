@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/commitlint-config@2.1.1...@ornikar/commitlint-config@3.0.0) (2020-07-17)
+
+
+### Features
+
+* **deps:** update commitlint monorepo to v9 (major) ([#412](https://github.com/ornikar/shared-configs/issues/412)) ([f0d4d9c](https://github.com/ornikar/shared-configs/commit/f0d4d9c3e11f3d50fe46241ca32648fc36ba72ef))
+
+
+### BREAKING CHANGES
+
+* **deps:** require commitlint v9
+
+Co-authored-by: Renovate Bot <bot@renovateapp.com>
+Co-authored-by: Christophe Hurpeau <christophe@hurpeau.com>
+
+
+
+
+
 ## [2.1.1](https://github.com/ornikar/shared-configs/compare/@ornikar/commitlint-config@2.1.0...@ornikar/commitlint-config@2.1.1) (2020-07-10)
 
 **Note:** Version bump only for package @ornikar/commitlint-config
