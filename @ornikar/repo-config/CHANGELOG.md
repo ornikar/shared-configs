@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.0.1](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@4.0.0...@ornikar/repo-config@4.0.1) (2020-07-17)
+
+
+### Bug Fixes
+
+* **deps:** update dependency yarn-deduplicate to v2.1.1 ([#413](https://github.com/ornikar/shared-configs/issues/413)) ([517ce7d](https://github.com/ornikar/shared-configs/commit/517ce7d179023010bd54009dcaa3a018908e1915))
+
+
+
+
+
 # [4.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@3.2.5...@ornikar/repo-config@4.0.0) (2020-07-17)
 
 
