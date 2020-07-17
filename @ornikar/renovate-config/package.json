@@ -100,6 +100,10 @@
         },
         {
           "groupName": "eslint packages",
+          "updateTypes": [
+            "patch",
+            "minor"
+          ],
           "packageNames": [
             "babel-eslint"
           ],
