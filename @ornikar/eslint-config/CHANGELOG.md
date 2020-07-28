@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [11.2.0](https://github.com/ornikar/shared-configs/compare/@ornikar/eslint-config@11.1.1...@ornikar/eslint-config@11.2.0) (2020-07-28)
+
+
+### Features
+
+* **eslint-config:** allow underscore dangle for __typename field [no issue] ([#416](https://github.com/ornikar/shared-configs/issues/416)) ([c77998a](https://github.com/ornikar/shared-configs/commit/c77998a2fefe6136649a18998983a2bf7519cb1c))
+
+
+
+
+
 ## [11.1.1](https://github.com/ornikar/shared-configs/compare/@ornikar/eslint-config@11.1.0...@ornikar/eslint-config@11.1.1) (2020-07-10)
 
 **Note:** Version bump only for package @ornikar/eslint-config

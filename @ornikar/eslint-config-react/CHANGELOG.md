@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [11.2.2](https://github.com/ornikar/shared-configs/compare/@ornikar/eslint-config-react@11.2.1...@ornikar/eslint-config-react@11.2.2) (2020-07-28)
+
+**Note:** Version bump only for package @ornikar/eslint-config-react
+
+
+
+
+
 ## [11.2.1](https://github.com/ornikar/shared-configs/compare/@ornikar/eslint-config-react@11.2.0...@ornikar/eslint-config-react@11.2.1) (2020-07-10)
 
 
