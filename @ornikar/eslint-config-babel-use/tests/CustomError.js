@@ -3,6 +3,7 @@ export class CustomError extends Error {
   constructor(message) {
     super(message);
 
-    this.name = 'CustomError'; // eslint-disable-line prefer-class-properties/prefer-class-properties
+    // eslint-disable-next-line prefer-class-properties/prefer-class-properties
+    this.name = 'CustomError';
   }
 }
