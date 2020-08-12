@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [11.3.0](https://github.com/ornikar/shared-configs/compare/@ornikar/eslint-config@11.2.0...@ornikar/eslint-config@11.3.0) (2020-08-12)
+
+
+### Features
+
+* **eslint-config:** remove complexity rule ([#415](https://github.com/ornikar/shared-configs/issues/415)) ([fbbb909](https://github.com/ornikar/shared-configs/commit/fbbb909cfb7042d86693bae0eba9203f64718b74))
+
+
+
+
+
 # [11.2.0](https://github.com/ornikar/shared-configs/compare/@ornikar/eslint-config@11.1.1...@ornikar/eslint-config@11.2.0) (2020-07-28)
 
 
