@@ -1,13 +1,20 @@
 version: 2.1
 
 # -------------------------------------------------------------------------------------------------
-# EXECUTORS
+# PIPELINE PARAMS
 # -------------------------------------------------------------------------------------------------
 
-executors:
-  node:
-    docker:
-      - image: circleci/node:12.18
+parameters:
+  cache-version:
+    type: string
+    default: v1
+
+# -------------------------------------------------------------------------------------------------
+# ORBS
+# -------------------------------------------------------------------------------------------------
+
+orbs:
+  frontend: ornikar/frontend-orb@dev:alpha
 
 # -------------------------------------------------------------------------------------------------
 # COMMANDS
@@ -17,8 +24,9 @@ commands:
   checkout-and-restore-cache:
     steps:
       - checkout
-      - restore_cache:
-          key: v2-dependencies-{{ arch }}-{{ checksum "yarn.lock" }}
+      - frontend/restore-cache: &restore-cache-params
+          version: << pipeline.parameters.cache-version >>
+          cache-name: dependencies
 
 # -------------------------------------------------------------------------------------------------
 # JOBS
@@ -26,83 +34,55 @@ commands:
 
 jobs:
   dependencies:
-    executor: node
+    executor: frontend/node
     steps:
       - checkout
-      - restore_cache:
-          keys:
-            - v2-dependencies-{{ arch }}-{{ checksum "yarn.lock" }}
-            - v2-dependencies-{{ arch }}
-      - run:
-          name: Install dependencies
-          command: yarn --prefer-offline --frozen-lockfile --ignore-engines
-      - save_cache:
-          key: v2-dependencies-{{ arch }}-{{ checksum "yarn.lock" }}
-          paths:
-            - node_modules
-            - '@ornikar/browserlist-config/node_modules'
-            - '@ornikar/commitlint-config/node_modules'
-            - '@ornikar/eslint-config/node_modules'
-            - '@ornikar/eslint-config-babel/node_modules'
-            - '@ornikar/eslint-config-babel-use/node_modules'
-            - '@ornikar/eslint-config-formatjs/node_modules'
-            - '@ornikar/eslint-config-node/node_modules'
-            - '@ornikar/eslint-config-react/node_modules'
-            - '@ornikar/eslint-config-typescript/node_modules'
-            - '@ornikar/eslint-config-typescript-react/node_modules'
-            - '@ornikar/intl-config/node_modules'
-            - '@ornikar/jest-config/node_modules'
-            - '@ornikar/jest-config-react/node_modules'
-            - '@ornikar/lerna-config/node_modules'
-            - '@ornikar/postcss-config/node_modules'
-            - '@ornikar/prettier-config/node_modules'
-            - '@ornikar/renovate-config/node_modules'
-            - '@ornikar/repo-config/node_modules'
-            - '@ornikar/repo-config-react/node_modules'
-            - '@ornikar/rollup-config/node_modules'
-            - '@ornikar/storybook-config/node_modules'
-            - '@ornikar/stylelint-config/node_modules'
-            - '@ornikar/webpack-config/node_modules'
-
-  checks:
-    executor: node
-    steps:
-      - checkout-and-restore-cache
-      - run:
-          name: Check peer dependencies
-          command: yarn check
-      - run:
-          name: Check package.json
-          command: node scripts/check-packagejson.js
+      - frontend/dependencies:
+          before-install:
+            - frontend/restore-cache: *restore-cache-params
+          after-install:
+            - save_cache:
+                key: << pipeline.parameters.cache-version >>-dependencies-{{ arch }}-{{ checksum "yarn.lock" }}
+                paths:
+                  - node_modules
+                  - '@ornikar/browserlist-config/node_modules'
+                  - '@ornikar/commitlint-config/node_modules'
+                  - '@ornikar/eslint-config/node_modules'
+                  - '@ornikar/eslint-config-babel/node_modules'
+                  - '@ornikar/eslint-config-babel-use/node_modules'
+                  - '@ornikar/eslint-config-formatjs/node_modules'
+                  - '@ornikar/eslint-config-node/node_modules'
+                  - '@ornikar/eslint-config-react/node_modules'
+                  - '@ornikar/eslint-config-typescript/node_modules'
+                  - '@ornikar/eslint-config-typescript-react/node_modules'
+                  - '@ornikar/intl-config/node_modules'
+                  - '@ornikar/jest-config/node_modules'
+                  - '@ornikar/jest-config-react/node_modules'
+                  - '@ornikar/lerna-config/node_modules'
+                  - '@ornikar/postcss-config/node_modules'
+                  - '@ornikar/prettier-config/node_modules'
+                  - '@ornikar/renovate-config/node_modules'
+                  - '@ornikar/repo-config/node_modules'
+                  - '@ornikar/repo-config-react/node_modules'
+                  - '@ornikar/rollup-config/node_modules'
+                  - '@ornikar/storybook-config/node_modules'
+                  - '@ornikar/stylelint-config/node_modules'
+                  - '@ornikar/webpack-config/node_modules'
 
   lint:
-    executor: node
+    executor: frontend/node
     steps:
       - checkout-and-restore-cache
-      - run:
-          name: Lint code
-          command: yarn run lint
-      - run:
-          name: prettier json
-          command: yarn run lint:prettier-json
+      - frontend/lint:
+          step-name: ESLint
+          script: eslint
+      - frontend/lint:
+          step-name: Prettier JSON
+          script: prettier-json
 
-  # Note: need these env variables: EMAIL, GIT_AUTHOR_NAME, GIT_COMMITTER_NAME, NPM_TOKEN, GITHUB_TOKEN
-  release:
-    executor: node
-    steps:
-      - checkout-and-restore-cache
-      - run:
-          name: Setup origin with write access
-          command: git remote set-url origin "https://michael-robot:$GITHUB_TOKEN@github.com/$CIRCLE_PROJECT_USERNAME/$CIRCLE_PROJECT_REPONAME"
-      - run:
-          name: Run lerna version
-          command: "GH_TOKEN=$GITHUB_TOKEN yarn lerna version --yes --push --conventional-commits --conventional-graduate --github-release -m 'chore: release [skip ci]'"
-      - run:
-          name: Authenticate to npm registry
-          command: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > .npmrc
-      - run:
-          name: Publish to npm
-          command: yarn lerna publish from-git --yes
+# -------------------------------------------------------------------------------------------------
+# WORKFLOWS
+# -------------------------------------------------------------------------------------------------
 
 workflows:
   version: 2
@@ -111,7 +91,10 @@ workflows:
     jobs:
       - dependencies
 
-      - checks:
+      - frontend/checks:
+          cache-version: << pipeline.parameters.cache-version >>
+          run-translations-check: false
+          run-queries-check: false
           requires:
             - dependencies
 
@@ -126,11 +109,12 @@ workflows:
             branches:
               only: master
 
-      - release:
+      - frontend/lerna-publish:
+          cache-version: << pipeline.parameters.cache-version >>
           context: npm-publish
           requires:
             - dependencies
-            - checks
+            - frontend/checks
             - lint
             - hold-release
           filters:
