@@ -93,8 +93,7 @@ workflows:
 
       - frontend/checks:
           cache-version: << pipeline.parameters.cache-version >>
-          run-translations-check: false
-          run-queries-check: false
+          run-yarn-check: true
           requires:
             - dependencies
 
@@ -108,7 +107,6 @@ workflows:
           filters:
             branches:
               only: master
-
       - frontend/lerna-publish:
           cache-version: << pipeline.parameters.cache-version >>
           context: npm-publish
