@@ -20,10 +20,10 @@ module.exports = {
     // https://stylelint.io/user-guide/rules/comment-word-blacklist/
     'comment-word-blacklist': ['/^TODO:/', '/^FIXME:/'],
 
-    // https://stylelint.io/user-guide/rules/property-blacklist/
-    'property-blacklist': ['font-size'],
-
     // https://stylelint.io/user-guide/rules/declaration-property-value-whitelist/
-    'declaration-property-value-whitelist': { 'font-family': ['inherit'] },
+    'declaration-property-value-whitelist': {
+      'font-family': ['inherit'],
+      'font-size': ['inherit'],
+    },
   },
 };
