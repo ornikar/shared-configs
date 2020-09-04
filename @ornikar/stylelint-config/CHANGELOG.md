@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.1.2](https://github.com/ornikar/shared-configs/compare/@ornikar/stylelint-config@6.1.1...@ornikar/stylelint-config@6.1.2) (2020-09-04)
+
+
+### Bug Fixes
+
+* **stylelint-config:** allow composes to have any case, allow font-family with inherit value ([#424](https://github.com/ornikar/shared-configs/issues/424)) ([8712248](https://github.com/ornikar/shared-configs/commit/87122487eb9dc134f2879348a41a2cf6b65dad1b))
+
+
+
+
+
 ## [6.1.1](https://github.com/ornikar/shared-configs/compare/@ornikar/stylelint-config@6.1.0...@ornikar/stylelint-config@6.1.1) (2020-07-10)
 
 **Note:** Version bump only for package @ornikar/stylelint-config
