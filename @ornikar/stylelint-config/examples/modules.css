@@ -1,0 +1,17 @@
+.DummyComponent {
+  display: inline-block;
+  padding-top: 120px;
+  text-align: center;
+}
+
+.DummyComponent > div:first-of-type {
+  margin: auto;
+}
+
+.DummyContent {
+  composes: DummyComponent;
+
+  @media (--medium-breakpoint) {
+    width: 470px;
+  }
+}

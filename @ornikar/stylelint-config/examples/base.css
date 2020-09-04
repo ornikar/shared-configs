@@ -9,6 +9,7 @@
 
 .TextArea {
   display: block;
+  font-family: inherit;
 
   &:focus,
   :global(.kitt-focus) & {
