@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.1.3](https://github.com/ornikar/shared-configs/compare/@ornikar/stylelint-config@6.1.2...@ornikar/stylelint-config@6.1.3) (2020-09-04)
+
+
+### Bug Fixes
+
+* also allow inherit font-size [no issue] ([#425](https://github.com/ornikar/shared-configs/issues/425)) ([f7b514d](https://github.com/ornikar/shared-configs/commit/f7b514d02c201a17dc10feb1828524111d19a6ff))
+
+
+
+
+
 ## [6.1.2](https://github.com/ornikar/shared-configs/compare/@ornikar/stylelint-config@6.1.1...@ornikar/stylelint-config@6.1.2) (2020-09-04)
 
 
