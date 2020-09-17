@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.3.4](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@6.3.3...@ornikar/jest-config-react@6.3.4) (2020-09-17)
+
+
+### Bug Fixes
+
+* **jest-config-react:** pass parameters in context object ([#429](https://github.com/ornikar/shared-configs/issues/429)) ([9bd4ad7](https://github.com/ornikar/shared-configs/commit/9bd4ad7b34d06ec0ad2b3e2ce9ae8e4e6e48a1fb))
+
+
+
+
+
 ## [6.3.3](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@6.3.2...@ornikar/jest-config-react@6.3.3) (2020-08-19)
 
 **Note:** Version bump only for package @ornikar/jest-config-react
