@@ -58,7 +58,7 @@ exports.storiesOf = (groupName) => {
         it(storyName, async () => {
           const wrappingComponent = ignoreDecorators
             ? undefined
-            : ({ children }) => decorateStory(() => children, [...localDecorators, ...globalDecorators])(parameters);
+            : ({ children }) => decorateStory(() => children, [...localDecorators, ...globalDecorators])({ parameters });
 
           await act(async () => {
             const { unmount, asFragment } = render(story(parameters), { wrapper: wrappingComponent });
