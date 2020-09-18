@@ -45,7 +45,8 @@ exports.storiesOf = (groupName) => {
   // Mocked API to generate tests from & snapshot stories.
   const api = {
     add(storyName, story, storyParameters = {}) {
-      const parameters = { name: storyName, ...localParameters, ...storyParameters };
+      const parameters = { ...localParameters, ...storyParameters };
+      const context = { name: storyName, parameters };
       const { jest } = parameters;
       const { ignore, ignoreDecorators } = jest || {};
 
@@ -58,10 +59,10 @@ exports.storiesOf = (groupName) => {
         it(storyName, async () => {
           const wrappingComponent = ignoreDecorators
             ? undefined
-            : ({ children }) => decorateStory(() => children, [...localDecorators, ...globalDecorators])({ parameters });
+            : ({ children }) => decorateStory(() => children, [...localDecorators, ...globalDecorators])(context);
 
           await act(async () => {
-            const { unmount, asFragment } = render(story(parameters), { wrapper: wrappingComponent });
+            const { unmount, asFragment } = render(story(context), { wrapper: wrappingComponent });
             // https://www.apollographql.com/docs/react/development-testing/testing/#testing-final-state
             // delays until the next "tick" of the event loop, and allows time
             // for that Promise returned from MockedProvider to be fulfilled
