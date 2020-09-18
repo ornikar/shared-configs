@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.3.5](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@6.3.4...@ornikar/jest-config-react@6.3.5) (2020-09-18)
+
+
+### Bug Fixes
+
+* **jest-config-react:** missing name in context ([#430](https://github.com/ornikar/shared-configs/issues/430)) ([aa6c1d3](https://github.com/ornikar/shared-configs/commit/aa6c1d3504036d982306eb03ea0af227839ce8b8))
+
+
+
+
+
 ## [6.3.4](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@6.3.3...@ornikar/jest-config-react@6.3.4) (2020-09-17)
 
 

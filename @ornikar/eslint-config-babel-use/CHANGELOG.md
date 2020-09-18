@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.1.5](https://github.com/ornikar/shared-configs/compare/@ornikar/eslint-config-babel-use@4.1.4...@ornikar/eslint-config-babel-use@4.1.5) (2020-09-18)
+
+**Note:** Version bump only for package @ornikar/eslint-config-babel-use
+
+
+
+
+
 ## [4.1.4](https://github.com/ornikar/shared-configs/compare/@ornikar/eslint-config-babel-use@4.1.3...@ornikar/eslint-config-babel-use@4.1.4) (2020-09-04)
 
 **Note:** Version bump only for package @ornikar/eslint-config-babel-use
