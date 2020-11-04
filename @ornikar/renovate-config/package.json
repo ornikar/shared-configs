@@ -160,7 +160,7 @@
           ],
           "masterIssueApproval": false,
           "schedule": [
-            "after 10am and before 11am on weekdays"
+            "after 10am and before 11am every weekdays"
           ]
         },
         {
@@ -176,7 +176,7 @@
           ],
           "masterIssueApproval": false,
           "schedule": [
-            "after 10am and before 11am on weekdays"
+            "after 10am and before 11am every weekdays"
           ]
         },
         {
@@ -189,7 +189,7 @@
           ],
           "masterIssueApproval": false,
           "schedule": [
-            "after 10am and before 5pm on weekdays"
+            "after 10am and before 5pm every weekdays"
           ]
         },
         {
