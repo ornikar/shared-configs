@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.7.0](https://github.com/ornikar/shared-configs/compare/@ornikar/renovate-config@2.6.2...@ornikar/renovate-config@2.7.0) (2020-11-05)
+
+
+### Features
+
+* change renovate schedule [no issue] ([#437](https://github.com/ornikar/shared-configs/issues/437)) ([63a372f](https://github.com/ornikar/shared-configs/commit/63a372fc5c08420eb78ebc33d05fecda98b73f87))
+
+
+
+
+
 ## [2.6.2](https://github.com/ornikar/shared-configs/compare/@ornikar/renovate-config@2.6.1...@ornikar/renovate-config@2.6.2) (2020-07-17)
 
 
