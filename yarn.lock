@@ -9648,10 +9648,10 @@ type-fest@^0.8.1:
   resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-0.8.1.tgz#09e249ebde851d3b1e48d27c105444667f17b83d"
   integrity sha512-4dbzIzqvjtgiM5rw1k5rEHtBANKmdudhGyBEajN01fEyhaAIhsoKNy6y7+IN93IfpFtwY9iqi7kD+xwKhQsNJA==
 
-typed-css-modules@0.6.4:
-  version "0.6.4"
-  resolved "https://registry.yarnpkg.com/typed-css-modules/-/typed-css-modules-0.6.4.tgz#eb7385b5e9d0e5c654c992ecc8a246d0885c4560"
-  integrity sha512-2bL0dWY66wLGcz766HAwqJl4mnlUrx7D/dyUD9SPnab2QM1OsE6U842QhZhkEI5EoQdNziSLWqetHskdZ3MCxw==
+typed-css-modules@0.6.5:
+  version "0.6.5"
+  resolved "https://registry.yarnpkg.com/typed-css-modules/-/typed-css-modules-0.6.5.tgz#a0dd27be3d9013a86fd656d4c24ad29e1643631c"
+  integrity sha512-f+RmiKmrDeeIeDHC/NnRJzrwxkTDgnWT6eJbTN0FqxV5SLFRik+WLJNrlWzjevlZ7Uuqhdh0e55lz+PgXUNflA==
   dependencies:
     "@types/css-modules-loader-core" "^1.1.0"
     camelcase "^5.3.1"
