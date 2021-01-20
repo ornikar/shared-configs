@@ -7,7 +7,7 @@ const createBaseLintStagedConfig = require('@ornikar/repo-config/createLintStage
 const pkg = JSON.parse(fs.readFileSync(path.resolve('package.json'), 'utf-8'));
 
 module.exports = function createLintStagedConfig(options = {}) {
-  const config = createBaseLintStagedConfig({ srcExtensions: ['js', 'ts', 'tsx'] });
+  const config = createBaseLintStagedConfig({ srcExtensions: ['js', 'mjs', 'ts', 'tsx'] });
 
   // eslint-disable-next-line prefer-destructuring
   const srcDirectories = createBaseLintStagedConfig.getSrcDirectories();
