@@ -13,7 +13,7 @@ const getSrcDirectories = (srcDirectoryName = 'src') =>
   workspaces ? `{${workspaces.join(',')}}${srcDirectoryName && `/${srcDirectoryName}`}` : srcDirectoryName;
 
 module.exports = function createLintStagedConfig(options = {}) {
-  const srcExtensions = options.srcExtensions || ['js'];
+  const srcExtensions = options.srcExtensions || ['js', 'mjs', 'ts'];
   const srcDirectories = getSrcDirectories(options.srcDirectoryName);
 
   return {
@@ -33,17 +33,10 @@ module.exports = function createLintStagedConfig(options = {}) {
         shouldGenerateTsconfigInLernaRepo && 'git add **/tsconfig.json **/tsconfig.build.json',
       ].filter(Boolean);
     },
-    [`{*.json${workspaces ? `,${workspaces.map((workspacePath) => `${workspacePath}/*.json`).join(',')}` : ''}}`]: (
-      filenames,
-    ) => {
-      const filteredFilenames = filenames.filter((name) => !name.endsWith('/package.json'));
-      if (filteredFilenames.length === 0) return [];
-      return [`prettier --write ${filteredFilenames.join(' ')}`];
-    },
+    '!(package).json': ['prettier --write'],
+    '*.{yml,yaml,md,html}': ['prettier --write'],
+    [`*.{${srcExtensions.join(',')}}`]: ['prettier --write', 'eslint --fix --quiet'],
     [`{.storybook,${srcDirectories}}/**/*.css`]: ['prettier --parser css --write', 'stylelint --quiet --fix'],
-
-    [`${srcDirectories}/**/*.{${srcExtensions.join(',')}}`]: ['eslint --fix --quiet'],
-    '{scripts,config,.storyboook}/*.js': ['eslint --fix --quiet'],
   };
 };
 

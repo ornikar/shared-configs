@@ -74,11 +74,11 @@ jobs:
     steps:
       - checkout-and-restore-cache
       - frontend/lint:
+          step-name: Prettier
+          script: prettier
+      - frontend/lint:
           step-name: ESLint
           script: eslint
-      - frontend/lint:
-          step-name: Prettier JSON
-          script: prettier-json
 
 # -------------------------------------------------------------------------------------------------
 # WORKFLOWS
