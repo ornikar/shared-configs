@@ -2,14 +2,12 @@
 
 Ornikar rollup config
 
-
 create a file `rollup.config.js`:
 
-```js   
+```js
 'use strict';
 
 const createConfig = require('@ornikar/rollup-config');
 
 module.exports = createConfig();
-
 ```

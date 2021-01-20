@@ -8,13 +8,13 @@ Configure browserslist with `@ornikar/browserslist-config`.
 
 Create `postcss.config.js`:
 
-```js             
+```js
 const plugins = require('@ornikar/postcss-config');
 
 module.exports = ({ options }) => ({
   plugins: [
     ...plugins.syntaxPlugins(),
-  
+
     plugins.themePlugin({
       importFrom: 'path/to/theme.css',
       preserve: process.env.NODE_ENV !== 'production',
@@ -26,13 +26,11 @@ module.exports = ({ options }) => ({
     }),
 
     plugins.autoprefixerPlugin(),
-    
+
     // add other plugins if you need to :)
-    
+
     // production
-    ...(process.env.NODE_ENV === 'production'
-      ? plugins.productionPlugins()
-      : []),
+    ...(process.env.NODE_ENV === 'production' ? plugins.productionPlugins() : []),
   ],
 });
 ```
