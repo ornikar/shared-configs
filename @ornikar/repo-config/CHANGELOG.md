@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@4.0.5...@ornikar/repo-config@5.0.0) (2021-01-20)
+
+
+### Bug Fixes
+
+* **deps:** update dependency yarn-deduplicate to v3 ([#442](https://github.com/ornikar/shared-configs/issues/442)) ([0f7e4e1](https://github.com/ornikar/shared-configs/commit/0f7e4e1a13d45b0347520073f36bb5e3c2b07bcc))
+
+
+### Features
+
+* use prettier outside eslint [no issue] ([#446](https://github.com/ornikar/shared-configs/issues/446)) ([2ad3f10](https://github.com/ornikar/shared-configs/commit/2ad3f10db28d7dcceaf388c180b2f6e8961cf552))
+
+
+### BREAKING CHANGES
+
+* requires prettier to run outside eslint
+
+
+
+
+
 ## [4.0.5](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@4.0.4...@ornikar/repo-config@4.0.5) (2020-11-05)
 
 **Note:** Version bump only for package @ornikar/repo-config

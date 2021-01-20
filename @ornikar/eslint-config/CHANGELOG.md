@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [12.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/eslint-config@11.3.2...@ornikar/eslint-config@12.0.0) (2021-01-20)
+
+
+### Features
+
+* use prettier outside eslint [no issue] ([#446](https://github.com/ornikar/shared-configs/issues/446)) ([2ad3f10](https://github.com/ornikar/shared-configs/commit/2ad3f10db28d7dcceaf388c180b2f6e8961cf552))
+
+
+### BREAKING CHANGES
+
+* requires prettier to run outside eslint
+
+
+
+
+
 ## [11.3.2](https://github.com/ornikar/shared-configs/compare/@ornikar/eslint-config@11.3.1...@ornikar/eslint-config@11.3.2) (2020-09-18)
 
 **Note:** Version bump only for package @ornikar/eslint-config

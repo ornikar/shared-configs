@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [10.1.7](https://github.com/ornikar/shared-configs/compare/@ornikar/eslint-config-typescript-react@10.1.6...@ornikar/eslint-config-typescript-react@10.1.7) (2021-01-20)
+
+**Note:** Version bump only for package @ornikar/eslint-config-typescript-react
+
+
+
+
+
 ## [10.1.6](https://github.com/ornikar/shared-configs/compare/@ornikar/eslint-config-typescript-react@10.1.5...@ornikar/eslint-config-typescript-react@10.1.6) (2020-09-18)
 
 **Note:** Version bump only for package @ornikar/eslint-config-typescript-react

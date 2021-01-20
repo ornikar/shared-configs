@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config-react@2.1.11...@ornikar/repo-config-react@3.0.0) (2021-01-20)
+
+
+### Bug Fixes
+
+* **deps:** update dependency typed-css-modules to v0.6.5 ([#444](https://github.com/ornikar/shared-configs/issues/444)) ([aac2b7a](https://github.com/ornikar/shared-configs/commit/aac2b7a6ba5ba18e9f033bae6801f63e2359b045))
+
+
+### Features
+
+* use prettier outside eslint [no issue] ([#446](https://github.com/ornikar/shared-configs/issues/446)) ([2ad3f10](https://github.com/ornikar/shared-configs/commit/2ad3f10db28d7dcceaf388c180b2f6e8961cf552))
+
+
+### BREAKING CHANGES
+
+* requires prettier to run outside eslint
+
+
+
+
+
 ## [2.1.11](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config-react@2.1.10...@ornikar/repo-config-react@2.1.11) (2020-11-05)
 
 **Note:** Version bump only for package @ornikar/repo-config-react

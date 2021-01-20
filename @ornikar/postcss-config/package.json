@@ -1,6 +1,6 @@
 {
   "name": "@ornikar/postcss-config",
-  "version": "3.1.1",
+  "version": "3.1.2",
   "description": "postcss config files",
   "repository": "ornikar/shared-configs",
   "main": "index.js",
