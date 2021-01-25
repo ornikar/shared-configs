@@ -25,4 +25,18 @@ Also see:
 ### node with typescript
 
 1. `npm install --save-dev eslint @ornikar/eslint-config-typescript @ornikar/eslint-config-node`
-2. Add `"extends": ["@ornikar/eslint-config-typescript", "@ornikar/eslint-config-node""]` to your eslint config
+2. Add `"extends": ["@ornikar/eslint-config-typescript", "@ornikar/eslint-config-node"]` to your eslint config
+
+### module override
+
+```json
+{
+  "extends": ["@ornikar/eslint-config-typescript", "@ornikar/eslint-config-node"],
+  "overrides": [
+    {
+      "files": ["test-setup.js"],
+      "extends": ["@ornikar/eslint-config-node/module-override"]
+    }
+  ]
+}
+```
