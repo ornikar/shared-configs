@@ -7,28 +7,13 @@
 const path = require('path');
 const fs = require('fs');
 const LernaProject = require('@lerna/project');
-const PackageGraph = require('@lerna/package-graph');
 
 (async () => {
   const lernaProject = new LernaProject(path.resolve('.'));
   const lernaPackages = await lernaProject.getPackages();
-  const graph = new PackageGraph(lernaPackages);
 
-  const packages = [];
-
-  while (graph.size) {
-    // pick the current set of nodes _without_ localDependencies (aka it is a "source" node)
-    const batch = [...graph.values()].filter((node) => node.localDependencies.size === 0);
-
-    // batches are composed of Package instances, not PackageGraphNodes
-    packages.push(...batch.map((node) => node.pkg));
-
-    // pruning the graph changes the node.localDependencies.size test
-    graph.prune(...batch);
-  }
-
-  packages.forEach((pkg) => {
-    const packagePath = path.resolve(`./${pkg.name}`);
+  lernaPackages.forEach((pkg) => {
+    const packagePath = pkg.location;
     const tsconfigPath = `${packagePath}/tsconfig.json`;
     const tsconfigBuildPath = `${packagePath}/tsconfig.build.json`;
 
@@ -68,12 +53,12 @@ const PackageGraph = require('@lerna/package-graph');
       ],
     };
 
-    const dependencies = packages.filter((dep) => {
-      if (dep.name === pkg.name) return false;
+    const dependencies = lernaPackages.filter((lernaPkg) => {
+      if (lernaPkg.name === pkg.name) return false;
       return (
-        (pkg.dependencies && pkg.dependencies[dep.name]) ||
-        (pkg.devDependencies && pkg.devDependencies[dep.name]) ||
-        (pkg.peerDependencies && pkg.peerDependencies[dep.name])
+        (pkg.dependencies && pkg.dependencies[lernaPkg.name]) ||
+        (pkg.devDependencies && pkg.devDependencies[lernaPkg.name]) ||
+        (pkg.peerDependencies && pkg.peerDependencies[lernaPkg.name])
       );
     });
 
