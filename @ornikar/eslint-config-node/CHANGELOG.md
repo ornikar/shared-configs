@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [10.2.0](https://github.com/ornikar/shared-configs/compare/@ornikar/eslint-config-node@10.1.1...@ornikar/eslint-config-node@10.2.0) (2021-01-26)
+
+
+### Features
+
+* **eslint-config-node:** add module-override [no issue] ([#447](https://github.com/ornikar/shared-configs/issues/447)) ([17caa2f](https://github.com/ornikar/shared-configs/commit/17caa2f2affedd1be0041fceba6581a21bc7f55e))
+
+
+
+
+
 ## [10.1.1](https://github.com/ornikar/shared-configs/compare/@ornikar/eslint-config-node@10.1.0...@ornikar/eslint-config-node@10.1.1) (2020-07-10)
 
 **Note:** Version bump only for package @ornikar/eslint-config-node
