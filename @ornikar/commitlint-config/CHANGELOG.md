@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.1.0](https://github.com/ornikar/shared-configs/compare/@ornikar/commitlint-config@3.0.0...@ornikar/commitlint-config@3.1.0) (2021-01-27)
+
+
+### Features
+
+* require node 12 fist lts [no issue] ([#449](https://github.com/ornikar/shared-configs/issues/449)) ([b8e612b](https://github.com/ornikar/shared-configs/commit/b8e612bc7e0573fd52023f8eea78e95e321567e5))
+
+
+
+
+
 # [3.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/commitlint-config@2.1.1...@ornikar/commitlint-config@3.0.0) (2020-07-17)
 
 

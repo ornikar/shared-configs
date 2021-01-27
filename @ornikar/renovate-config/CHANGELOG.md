@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.8.0](https://github.com/ornikar/shared-configs/compare/@ornikar/renovate-config@2.7.0...@ornikar/renovate-config@2.8.0) (2021-01-27)
+
+
+### Features
+
+* require node 12 fist lts [no issue] ([#449](https://github.com/ornikar/shared-configs/issues/449)) ([b8e612b](https://github.com/ornikar/shared-configs/commit/b8e612bc7e0573fd52023f8eea78e95e321567e5))
+
+
+
+
+
 # [2.7.0](https://github.com/ornikar/shared-configs/compare/@ornikar/renovate-config@2.6.2...@ornikar/renovate-config@2.7.0) (2020-11-05)
 
 
