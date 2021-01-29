@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [11.3.1](https://github.com/ornikar/shared-configs/compare/@ornikar/eslint-config-react@11.3.0...@ornikar/eslint-config-react@11.3.1) (2021-01-29)
+
+
+### Bug Fixes
+
+* **eslint-config-react:** react-native extends . [no issue] ([#450](https://github.com/ornikar/shared-configs/issues/450)) ([84aff11](https://github.com/ornikar/shared-configs/commit/84aff111d932f48c51b1b967019aedf89e912665))
+
+
+
+
+
 # [11.3.0](https://github.com/ornikar/shared-configs/compare/@ornikar/eslint-config-react@11.2.6...@ornikar/eslint-config-react@11.3.0) (2021-01-27)
 
 
