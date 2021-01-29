@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = {
-  extends: ['./react'].map(require.resolve),
+  extends: ['.'].map(require.resolve),
 
   env: {
     browser: true,
