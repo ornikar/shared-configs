@@ -14,7 +14,7 @@ parameters:
 # -------------------------------------------------------------------------------------------------
 
 orbs:
-  frontend: ornikar/frontend-orb@1.1.0
+  frontend: ornikar/frontend-orb@2.0.0
 
 # -------------------------------------------------------------------------------------------------
 # COMMANDS
@@ -61,17 +61,6 @@ jobs:
                   - '@ornikar/stylelint-config/node_modules'
                   - '@ornikar/webpack-config/node_modules'
 
-  lint:
-    executor: frontend/node
-    steps:
-      - checkout-and-restore-cache
-      - frontend/lint:
-          step-name: Prettier
-          script: prettier
-      - frontend/lint:
-          step-name: ESLint
-          script: eslint
-
 # -------------------------------------------------------------------------------------------------
 # WORKFLOWS
 # -------------------------------------------------------------------------------------------------
@@ -89,7 +78,13 @@ workflows:
           requires:
             - dependencies
 
-      - lint:
+      - frontend/lint-prettier:
+          cache-version: << pipeline.parameters.cache-version >>
+          requires:
+            - dependencies
+
+      - frontend/lint-eslint:
+          cache-version: << pipeline.parameters.cache-version >>
           requires:
             - dependencies
 
@@ -105,7 +100,8 @@ workflows:
           requires:
             - dependencies
             - frontend/checks
-            - lint
+            - frontend/lint-prettier
+            - frontend/lint-eslint
             - hold-release
           filters:
             branches:
