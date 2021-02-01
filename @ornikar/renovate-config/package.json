@@ -25,16 +25,14 @@
       ],
       "packageRules": [
         {
-          "groupName": "Lint Ornikar Shared Configs",
+          "groupName": "Eslint Ornikar Shared Configs",
           "packageNames": [
             "@ornikar/eslint-config",
             "@ornikar/eslint-config-babel",
             "@ornikar/eslint-config-node",
             "@ornikar/eslint-config-react",
             "@ornikar/eslint-config-typescript",
-            "@ornikar/eslint-config-typescript-react",
-            "@ornikar/prettier-config",
-            "@ornikar/stylelint-config"
+            "@ornikar/eslint-config-typescript-react"
           ],
           "labels": [
             ":ok_hand: code/approved",

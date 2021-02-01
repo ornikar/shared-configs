@@ -1,7 +1,0 @@
-{
-  "root": true,
-  "extends": ["../../eslint-config/index.js", "../index.js"],
-  "rules": {
-    "import/no-extraneous-dependencies": "off"
-  }
-}

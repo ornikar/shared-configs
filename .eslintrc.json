@@ -1,0 +1,3 @@
+{
+  "extends": ["@ornikar/eslint-config", "@ornikar/eslint-config-node"]
+}
