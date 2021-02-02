@@ -15,6 +15,6 @@
     "@commitlint/config-conventional": "^11.0.0"
   },
   "peerDependencies": {
-    "@commitlint/cli": "^9.0.0 || ^11.0.0"
+    "@commitlint/cli": "^11.0.0"
   }
 }
