@@ -58,7 +58,7 @@ const createBuildsForPackage = (packagesDir, packageName) => {
           include: /\.module\.css$/,
           extract: exportCss ? `${distPath}/styles.css` : true,
           modules: {
-            localIdentName: '[local]__[hash:base64:5]',
+            generateScopedName: `${packageName}_[local]_[hash:base64:5]`,
           },
           config: false,
           plugins: exportCss ? postcssConfig.plugins : false,
