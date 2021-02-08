@@ -4,6 +4,7 @@
   "description": "rollup config files",
   "repository": "ornikar/shared-configs",
   "main": "createRollupConfig.js",
+  "types": "./runtime.d.ts",
   "license": "ISC",
   "engines": {
     "node": ">=12.13.0"

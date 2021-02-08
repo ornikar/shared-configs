@@ -27,8 +27,8 @@ module.exports = function createLintStagedConfig(options = {}) {
         'yarn --prefer-offline',
         packagejsonFilenames.length === 0 ? undefined : `prettier --write ${packagejsonFilenames.join(' ')}`,
         'git add yarn.lock',
-        // eslint-disable-next-line node/no-extraneous-require
-        shouldGenerateTsconfigInLernaRepo && require.resolve('@ornikar/lerna-config/generate-tsconfig-files.js'),
+        isLernaRepo && require.resolve('@ornikar/lerna-config/bin/generate-eslintrc-files.js'),
+        shouldGenerateTsconfigInLernaRepo && require.resolve('@ornikar/lerna-config/bin/generate-tsconfig-files.js'),
         shouldGenerateTsconfigInLernaRepo && 'prettier --write **/tsconfig.json **/tsconfig.build.json',
         shouldGenerateTsconfigInLernaRepo && 'git add **/tsconfig.json **/tsconfig.build.json',
       ].filter(Boolean);

@@ -1305,14 +1305,6 @@
     universal-user-agent "^3.0.0"
     url-template "^2.0.8"
 
-"@ornikar/eslint-config-node@12.2.0":
-  version "12.2.0"
-  resolved "https://registry.yarnpkg.com/@ornikar/eslint-config-node/-/eslint-config-node-12.2.0.tgz#868029153d371903c4137fb029f029ed359f33fc"
-  integrity sha512-xXdTilBgfxxU2g//+B298SPEeL1+MhtSypghi/OQWHoD2EZbxjzvBfwD9Wo26jAEOMG8lGviKGSGpEqD39VPYA==
-  dependencies:
-    eslint-plugin-node "^10.0.0"
-    eslint-plugin-unicorn "^14.0.1"
-
 "@ornikar/eslint-config@12.3.0":
   version "12.3.0"
   resolved "https://registry.yarnpkg.com/@ornikar/eslint-config/-/eslint-config-12.3.0.tgz#142689c9477272bfa181e8f09d4962312b320e41"
@@ -1345,6 +1337,26 @@
     resolve "^1.5.0"
     rollup-pluginutils "^2.0.1"
     style-inject "^0.3.0"
+
+"@pob/pretty-eslint-config@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@pob/pretty-eslint-config/-/pretty-eslint-config-1.0.1.tgz#00c62ff52170098ee125a5d8574fa0c70c4d974e"
+  integrity sha512-1ITTg5H7xr00TYz+z6Gl8pSoBZZekAJfVTMoDSqt1obguH2lYi5vW9D0p7Q/0U9qjfEOt4YPaITa82DeSTac2Q==
+  dependencies:
+    "@pob/sort-eslint-config" "^1.0.1"
+    prettier "^2.1.2"
+
+"@pob/sort-eslint-config@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@pob/sort-eslint-config/-/sort-eslint-config-1.0.1.tgz#bb8aee27d0680b53ce82c52d62a45d49a406e759"
+  integrity sha512-ccmWLCi6XTEdmTtYWB4M4iteypyD7DkiRWmZYqAa1ixwHXNrOpQ7LEI31g3sH9Y3NuDyMnXA6V4Du6Eibmu67A==
+  dependencies:
+    "@pob/sort-object" "^2.0.1"
+
+"@pob/sort-object@^2.0.1":
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/@pob/sort-object/-/sort-object-2.0.1.tgz#bb41d0f3afe9ae1fca1db1d834eabd421c1185d6"
+  integrity sha512-z9QlMv6/7sKKnXuadmkPr88bKWoJpEPWOa87lEp1kIbuchVSUDKBOdP8peG+Ms6DM3j4OUOf3qHqiJQLEkfb0w==
 
 "@reach/router@^1.2.1":
   version "1.2.1"
@@ -7508,7 +7520,7 @@ prelude-ls@~1.1.2:
   resolved "https://registry.yarnpkg.com/prelude-ls/-/prelude-ls-1.1.2.tgz#21932a549f5e52ffd9a827f570e04be62a97da54"
   integrity sha1-IZMqVJ9eUv/ZqCf1cOBL5iqX2lQ=
 
-prettier@2.2.1:
+prettier@2.2.1, prettier@^2.1.2:
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.2.1.tgz#795a1a78dd52f073da0cd42b21f9c91381923ff5"
   integrity sha512-PqyhM2yCjg/oKkFPtTGUojv7gnZAoG80ttl45O6x2Ug/rMJw4wcc9k6aaf2hibP7BGVCCM33gZoGjyvt9mm16Q==
