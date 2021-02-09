@@ -1,3 +1,12 @@
 {
-  "extends": ["config:js-lib", "@ornikar"]
+  "extends": ["config:js-lib", "@ornikar"],
+  "packageRules": [
+    {
+      "matchPackageNames": ["lint-staged", "yarn-deduplicate"],
+      "matchUpdateTypes": ["minor", "patch"],
+      "labels": [":ok_hand: code/approved", ":soon: automerge"],
+      "rebaseStalePrs": true,
+      "masterIssueApproval": false
+    }
+  ]
 }
