@@ -105,7 +105,7 @@ const generateAndWritePackageConfig = async (configPath, { packagePath, useRollu
     ),
     ...lernaPackages.map(async (pkg) => {
       if (!pkg.get('main')) return;
-      const packagePath = path.resolve(rootPath, pkg.location);
+      const packagePath = path.relative(rootPath, pkg.location);
       const eslintSrcConfigPath = useRollupToBuild
         ? `${packagePath}/src/.eslintrc.json`
         : `${packagePath}/.eslintrc.json`;
