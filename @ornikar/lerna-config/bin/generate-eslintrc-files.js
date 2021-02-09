@@ -67,8 +67,8 @@ const generateAndWritePackageConfig = async (configPath, { packagePath, useRollu
         if (!config.extends.includes('@ornikar/eslint-config-typescript')) {
           config.extends = ['@ornikar/eslint-config-typescript', ...config.extends];
         }
-        if (!config.extends.includes('@ornikar/rollup-config/eslint-config')) {
-          config.extends = [...config.extends, '@ornikar/rollup-config/eslint-config'];
+        if (!config.extends.includes('@ornikar/eslint-config/rollup')) {
+          config.extends = [...config.extends, '@ornikar/eslint-config/rollup'];
         }
 
         if (!config.settings) config.settings = {};
