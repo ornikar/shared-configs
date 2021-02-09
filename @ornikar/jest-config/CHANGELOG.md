@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.4.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config@5.3.0...@ornikar/jest-config@5.4.0) (2021-02-09)
+
+
+### Features
+
+* **lerna-config:** generate eslintrc config files ARCH-826 ([#457](https://github.com/ornikar/shared-configs/issues/457)) ([f412489](https://github.com/ornikar/shared-configs/commit/f4124895ed15b48519826b16ed515207be97b41c))
+
+
+
+
+
 # [5.3.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config@5.2.1...@ornikar/jest-config@5.3.0) (2021-01-27)
 
 

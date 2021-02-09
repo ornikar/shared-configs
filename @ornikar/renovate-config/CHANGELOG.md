@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.10.0](https://github.com/ornikar/shared-configs/compare/@ornikar/renovate-config@2.9.1...@ornikar/renovate-config@2.10.0) (2021-02-09)
+
+
+### Features
+
+* **lerna-config:** generate eslintrc config files ARCH-826 ([#457](https://github.com/ornikar/shared-configs/issues/457)) ([f412489](https://github.com/ornikar/shared-configs/commit/f4124895ed15b48519826b16ed515207be97b41c))
+
+
+
+
+
 ## [2.9.1](https://github.com/ornikar/shared-configs/compare/@ornikar/renovate-config@2.9.0...@ornikar/renovate-config@2.9.1) (2021-02-09)
 
 
