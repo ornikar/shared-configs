@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.5.0-alpha.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@6.4.0...@ornikar/jest-config-react@6.5.0-alpha.0) (2021-02-09)
+
+
+### Features
+
+* **lerna-config:** generate eslintrc config files ([d754922](https://github.com/ornikar/shared-configs/commit/d75492251e1739461949bf9d6a29691e8136f239))
+
+
+
+
+
 # [6.4.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@6.3.5...@ornikar/jest-config-react@6.4.0) (2021-01-27)
 
 

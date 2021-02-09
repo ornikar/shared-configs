@@ -1,6 +1,6 @@
 {
   "name": "@ornikar/webpack-config",
-  "version": "2.2.0",
+  "version": "2.3.0-alpha.0",
   "description": "webpack config files",
   "repository": "ornikar/shared-configs",
   "main": "index.js",

@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.3.0-alpha.0](https://github.com/ornikar/shared-configs/compare/@ornikar/lerna-config@2.2.0...@ornikar/lerna-config@2.3.0-alpha.0) (2021-02-09)
+
+
+### Bug Fixes
+
+* use path.relative ([94356b1](https://github.com/ornikar/shared-configs/commit/94356b16e5f3db70f608bb0982eca8c7fef6deb8))
+
+
+### Features
+
+* **lerna-config:** generate eslintrc config files ([d754922](https://github.com/ornikar/shared-configs/commit/d75492251e1739461949bf9d6a29691e8136f239))
+
+
+
+
+
 # [2.2.0](https://github.com/ornikar/shared-configs/compare/@ornikar/lerna-config@2.1.1...@ornikar/lerna-config@2.2.0) (2021-01-27)
 
 

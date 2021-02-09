@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.1.0-alpha.0](https://github.com/ornikar/shared-configs/compare/@ornikar/storybook-config@2.0.3...@ornikar/storybook-config@2.1.0-alpha.0) (2021-02-09)
+
+
+### Features
+
+* **lerna-config:** generate eslintrc config files ([d754922](https://github.com/ornikar/shared-configs/commit/d75492251e1739461949bf9d6a29691e8136f239))
+
+
+
+
+
 ## [2.0.3](https://github.com/ornikar/shared-configs/compare/@ornikar/storybook-config@2.0.2...@ornikar/storybook-config@2.0.3) (2021-01-27)
 
 **Note:** Version bump only for package @ornikar/storybook-config

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.2.0-alpha.0](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config-react@3.1.0...@ornikar/repo-config-react@3.2.0-alpha.0) (2021-02-09)
+
+
+### Features
+
+* **lerna-config:** generate eslintrc config files ([d754922](https://github.com/ornikar/shared-configs/commit/d75492251e1739461949bf9d6a29691e8136f239))
+
+
+
+
+
 # [3.1.0](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config-react@3.0.0...@ornikar/repo-config-react@3.1.0) (2021-01-27)
 
 

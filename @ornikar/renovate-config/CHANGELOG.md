@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.9.0-alpha.0](https://github.com/ornikar/shared-configs/compare/@ornikar/renovate-config@2.8.0...@ornikar/renovate-config@2.9.0-alpha.0) (2021-02-09)
+
+
+### Features
+
+* **lerna-config:** generate eslintrc config files ([d754922](https://github.com/ornikar/shared-configs/commit/d75492251e1739461949bf9d6a29691e8136f239))
+
+
+
+
+
 # [2.8.0](https://github.com/ornikar/shared-configs/compare/@ornikar/renovate-config@2.7.0...@ornikar/renovate-config@2.8.0) (2021-01-27)
 
 

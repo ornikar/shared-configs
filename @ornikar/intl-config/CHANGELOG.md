@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.3.0-alpha.0](https://github.com/ornikar/shared-configs/compare/@ornikar/intl-config@2.2.0...@ornikar/intl-config@2.3.0-alpha.0) (2021-02-09)
+
+
+### Features
+
+* **lerna-config:** generate eslintrc config files ([d754922](https://github.com/ornikar/shared-configs/commit/d75492251e1739461949bf9d6a29691e8136f239))
+
+
+
+
+
 # [2.2.0](https://github.com/ornikar/shared-configs/compare/@ornikar/intl-config@2.1.5...@ornikar/intl-config@2.2.0) (2021-01-27)
 
 
