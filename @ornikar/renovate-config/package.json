@@ -1,6 +1,6 @@
 {
   "name": "@ornikar/renovate-config",
-  "version": "2.8.0",
+  "version": "2.9.1",
   "description": "renovate shared config",
   "engines": {
     "node": ">=12.13.0"
@@ -18,167 +18,36 @@
       "rebaseStalePrs": true,
       "updateNotScheduled": false,
       "postUpdateOptions": [
+        "yarnDedupeFewer",
         "yarnDedupeHighest"
       ],
       "labels": [
         ":soon: automerge"
       ],
+      "rangeStrategy": "bump",
       "packageRules": [
         {
-          "groupName": "Eslint Ornikar Shared Configs",
-          "packageNames": [
-            "@ornikar/eslint-config",
-            "@ornikar/eslint-config-babel",
-            "@ornikar/eslint-config-node",
-            "@ornikar/eslint-config-react",
-            "@ornikar/eslint-config-typescript",
-            "@ornikar/eslint-config-typescript-react"
+          "matchDepTypes": [
+            "dependencies",
+            "peerDependencies"
           ],
-          "labels": [
-            ":ok_hand: code/approved",
-            ":soon: automerge"
-          ],
-          "rebaseStalePrs": false,
-          "masterIssueApproval": false,
-          "schedule": [
-            "at any time"
-          ]
-        },
-        {
-          "groupName": "Repo Shared Configs Ornikar",
-          "packageNames": [
-            "@ornikar/browserslist-config",
-            "@ornikar/commitlint-config",
-            "@ornikar/repo-config",
-            "@ornikar/repo-config-react"
-          ],
-          "labels": [
-            ":ok_hand: code/approved",
-            ":soon: automerge"
-          ],
-          "rebaseStalePrs": false,
-          "masterIssueApproval": false,
-          "schedule": [
-            "at any time"
-          ]
-        },
-        {
-          "groupName": "Build Shared Configs Ornikar",
-          "packageNames": [
-            "@ornikar/rollup-config",
-            "@ornikar/storybook-config",
-            "@ornikar/webpack-config"
-          ],
-          "rebaseStalePrs": false,
-          "masterIssueApproval": false,
-          "schedule": [
-            "at any time"
-          ]
-        },
-        {
-          "groupName": "Components Ornikar",
-          "packageNames": [
-            "@ornikar/api-helpers",
-            "@ornikar/auth",
-            "@ornikar/auth-api",
-            "@ornikar/react-brand-logo",
-            "@ornikar/react-forms",
-            "@ornikar/react-header",
-            "@ornikar/react-intl",
-            "@ornikar/react-notification",
-            "@ornikar/react-storybook",
-            "@ornikar/react-validators",
-            "@ornikar/validators"
-          ],
-          "rebaseStalePrs": false,
-          "masterIssueApproval": false,
-          "schedule": [
-            "at any time"
-          ]
-        },
-        {
-          "groupName": "eslint packages",
-          "updateTypes": [
-            "patch",
+          "matchUpdateTypes": [
+            "major",
             "minor"
           ],
-          "packageNames": [
-            "babel-eslint"
-          ],
-          "packagePatterns": [
-            "^eslint"
-          ]
+          "semanticCommitType": "feat"
         },
         {
-          "groupName": "babel community packages",
-          "excludePackageNames": [
-            "babel-eslint"
+          "matchDepTypes": [
+            "dependencies"
           ],
-          "packagePatterns": [
-            "^babel"
-          ]
-        },
-        {
-          "groupName": "rollup packages",
-          "packagePatterns": [
-            "^rollup"
-          ]
-        },
-        {
-          "groupName": "react",
-          "description": "react monorepo",
-          "sourceUrlPrefixes": [
-            "https://github.com/facebook/react"
-          ],
-          "packageNames": [
-            "@hot-loader/react-dom",
-            "@types/react",
-            "@types/react-dom"
-          ]
-        },
-        {
-          "packageNames": [
-            "husky",
-            "lint-staged",
-            "prettier",
-            "yarn-update-lock",
-            "yarnhook"
-          ],
-          "packagePatterns": [
-            "^@commitlint",
-            "^eslint"
-          ],
-          "updateTypes": [
-            "patch",
-            "minor"
-          ],
-          "labels": [
-            ":ok_hand: code/approved",
-            ":soon: automerge"
-          ],
-          "masterIssueApproval": false,
-          "schedule": [
-            "after 10am and before 11am every weekday"
-          ]
-        },
-        {
-          "packagePatterns": [
-            "^@types"
-          ],
-          "updateTypes": [
+          "matchUpdateTypes": [
             "patch"
           ],
-          "labels": [
-            ":ok_hand: code/approved",
-            ":soon: automerge"
-          ],
-          "masterIssueApproval": false,
-          "schedule": [
-            "after 10am and before 11am every weekday"
-          ]
+          "semanticCommitType": "fix"
         },
         {
-          "updateTypes": [
+          "matchUpdateTypes": [
             "pin"
           ],
           "labels": [
@@ -191,6 +60,68 @@
           ]
         },
         {
+          "matchPackagePatterns": [
+            "^@ornikar/"
+          ],
+          "matchUpdateTypes": [
+            "patch"
+          ],
+          "labels": [
+            ":ok_hand: code/approved",
+            ":soon: automerge"
+          ]
+        },
+        {
+          "matchPackagePatterns": [
+            "^@ornikar/(.*)-config",
+            "^@commitlint",
+            "^eslint"
+          ],
+          "matchPackageNames": [
+            "husky",
+            "prettier",
+            "yarnhook"
+          ],
+          "matchUpdateTypes": [
+            "minor",
+            "patch"
+          ],
+          "labels": [
+            ":ok_hand: code/approved",
+            ":soon: automerge"
+          ],
+          "rebaseStalePrs": false,
+          "masterIssueApproval": false,
+          "schedule": [
+            "after 10am and before 11am every weekday"
+          ]
+        },
+        {
+          "matchPackagePatterns": [
+            "^@ornikar/"
+          ],
+          "schedule": [
+            "after 10am and before 6pm every weekday"
+          ]
+        },
+        {
+          "matchPackagePatterns": [
+            "^@types"
+          ],
+          "matchUpdateTypes": [
+            "patch"
+          ],
+          "labels": [
+            ":ok_hand: code/approved",
+            ":soon: automerge"
+          ],
+          "rebaseStalePrs": false,
+          "masterIssueApproval": false,
+          "schedule": [
+            "after 10am and before 11am every weekday"
+          ]
+        },
+        {
           "updateTypes": [
             "major"
           ],
@@ -198,6 +129,67 @@
             "at any time"
           ],
           "masterIssueApproval": true
+        },
+        {
+          "groupName": "Eslint Ornikar Shared Configs",
+          "matchPackageNames": [
+            "@ornikar/eslint-config",
+            "@ornikar/eslint-config-babel",
+            "@ornikar/eslint-config-node",
+            "@ornikar/eslint-config-react",
+            "@ornikar/eslint-config-typescript",
+            "@ornikar/eslint-config-typescript-react"
+          ]
+        },
+        {
+          "groupName": "Repo Shared Configs Ornikar",
+          "matchPackageNames": [
+            "@ornikar/browserslist-config",
+            "@ornikar/commitlint-config",
+            "@ornikar/prettier-config",
+            "@ornikar/repo-config",
+            "@ornikar/repo-config-react",
+            "@ornikar/intl-config",
+            "@ornikar/lerna-config"
+          ]
+        },
+        {
+          "groupName": "Build Shared Configs Ornikar",
+          "matchPackageNames": [
+            "@ornikar/postcss-config",
+            "@ornikar/rollup-config",
+            "@ornikar/storybook-config",
+            "@ornikar/webpack-config"
+          ]
+        },
+        {
+          "groupName": "Components Ornikar",
+          "matchPackageNames": [
+            "@ornikar/api-helpers",
+            "@ornikar/auth",
+            "@ornikar/auth-api",
+            "@ornikar/react-brand-logo",
+            "@ornikar/react-forms",
+            "@ornikar/react-header",
+            "@ornikar/react-intl",
+            "@ornikar/react-notification",
+            "@ornikar/react-storybook",
+            "@ornikar/react-validators",
+            "@ornikar/validators"
+          ]
+        },
+        {
+          "groupName": "eslint packages",
+          "matchUpdateTypes": [
+            "patch",
+            "minor"
+          ],
+          "matchPackageNames": [
+            "babel-eslint"
+          ],
+          "matchPackagePatterns": [
+            "^eslint"
+          ]
         }
       ]
     }
