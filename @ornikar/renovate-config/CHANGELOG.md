@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.9.0](https://github.com/ornikar/shared-configs/compare/@ornikar/renovate-config@2.8.0...@ornikar/renovate-config@2.9.0) (2021-02-09)
+
+
+### Features
+
+* **renovate-config:** update config [no issue] ([#458](https://github.com/ornikar/shared-configs/issues/458)) ([e60c158](https://github.com/ornikar/shared-configs/commit/e60c158145d14dbd9a3971899dddca5b858853f8))
+
+
+
+
+
 # [2.8.0](https://github.com/ornikar/shared-configs/compare/@ornikar/renovate-config@2.7.0...@ornikar/renovate-config@2.8.0) (2021-01-27)
 
 

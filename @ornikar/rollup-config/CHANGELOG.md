@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.2.1](https://github.com/ornikar/shared-configs/compare/@ornikar/rollup-config@2.2.0...@ornikar/rollup-config@2.2.1) (2021-02-09)
+
+
+### Bug Fixes
+
+* **rollup-config:** postcss generate scoped name [no issue] ([#454](https://github.com/ornikar/shared-configs/issues/454)) ([115a01c](https://github.com/ornikar/shared-configs/commit/115a01cefb78ba91e450cfdb5698019c8a7383b5))
+
+
+
+
+
 # [2.2.0](https://github.com/ornikar/shared-configs/compare/@ornikar/rollup-config@2.1.2...@ornikar/rollup-config@2.2.0) (2021-01-27)
 
 
