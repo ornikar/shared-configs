@@ -61,15 +61,25 @@
         },
         {
           "matchPackagePatterns": [
-            "^@ornikar/",
+            "^@ornikar/"
+          ],
+          "matchUpdateTypes": [
+            "patch"
+          ],
+          "labels": [
+            ":ok_hand: code/approved",
+            ":soon: automerge"
+          ]
+        },
+        {
+          "matchPackagePatterns": [
+            "^@ornikar/(.*)-config",
             "^@commitlint",
             "^eslint"
           ],
           "matchPackageNames": [
             "husky",
-            "lint-staged",
             "prettier",
-            "yarn-update-lock",
             "yarnhook"
           ],
           "matchUpdateTypes": [
@@ -83,7 +93,15 @@
           "rebaseStalePrs": false,
           "masterIssueApproval": false,
           "schedule": [
-            "at any time"
+            "after 10am and before 11am every weekday"
+          ]
+        },
+        {
+          "matchPackagePatterns": [
+            "^@ornikar/"
+          ],
+          "schedule": [
+            "after 10am and before 6pm every weekday"
           ]
         },
         {
