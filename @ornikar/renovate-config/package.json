@@ -25,6 +25,9 @@
         ":soon: automerge"
       ],
       "rangeStrategy": "bump",
+      "reviewers": [
+        "team:frontend-architects"
+      ],
       "packageRules": [
         {
           "matchDepTypes": [
@@ -69,7 +72,8 @@
           "labels": [
             ":ok_hand: code/approved",
             ":soon: automerge"
-          ]
+          ],
+          "reviewers": []
         },
         {
           "matchPackagePatterns": [
@@ -90,6 +94,7 @@
             ":ok_hand: code/approved",
             ":soon: automerge"
           ],
+          "reviewers": [],
           "rebaseStalePrs": false,
           "masterIssueApproval": false,
           "schedule": [
@@ -115,6 +120,7 @@
             ":ok_hand: code/approved",
             ":soon: automerge"
           ],
+          "reviewers": [],
           "rebaseStalePrs": false,
           "masterIssueApproval": false,
           "schedule": [
