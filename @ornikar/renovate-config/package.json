@@ -60,7 +60,8 @@
           "masterIssueApproval": false,
           "schedule": [
             "after 10am and before 5pm every weekday"
-          ]
+          ],
+          "reviewers": []
         },
         {
           "matchPackagePatterns": [
