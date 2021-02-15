@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.11.0](https://github.com/ornikar/shared-configs/compare/@ornikar/renovate-config@2.10.0...@ornikar/renovate-config@2.11.0) (2021-02-15)
+
+
+### Features
+
+* **renovate-confg:** auto request reviews from frontend architects ([#461](https://github.com/ornikar/shared-configs/issues/461)) ([b933efe](https://github.com/ornikar/shared-configs/commit/b933efe31bd3673946f3d6f4061481f43ef37479))
+
+
+
+
+
 # [2.10.0](https://github.com/ornikar/shared-configs/compare/@ornikar/renovate-config@2.9.1...@ornikar/renovate-config@2.10.0) (2021-02-09)
 
 
