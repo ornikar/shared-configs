@@ -106,6 +106,8 @@
           "matchPackagePatterns": [
             "^@ornikar/"
           ],
+          "rebaseStalePrs": false,
+          "masterIssueApproval": false,
           "schedule": [
             "after 10am and before 6pm every weekday"
           ]
