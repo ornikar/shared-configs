@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.11.1](https://github.com/ornikar/shared-configs/compare/@ornikar/renovate-config@2.11.0...@ornikar/renovate-config@2.11.1) (2021-02-17)
+
+
+### Bug Fixes
+
+* **renovate-config:** dont request reviews on pin [no issue] ([#462](https://github.com/ornikar/shared-configs/issues/462)) ([e62c355](https://github.com/ornikar/shared-configs/commit/e62c3553568efe129915a3904e08c8c993ba5bf1))
+* **renovate-config:** open ornikar prs in schedule [no issue] ([#463](https://github.com/ornikar/shared-configs/issues/463)) ([269f835](https://github.com/ornikar/shared-configs/commit/269f83552fd8161745225442056ba9a812b6da7d))
+
+
+
+
+
 # [2.11.0](https://github.com/ornikar/shared-configs/compare/@ornikar/renovate-config@2.10.0...@ornikar/renovate-config@2.11.0) (2021-02-15)
 
 
