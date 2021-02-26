@@ -1305,10 +1305,10 @@
     universal-user-agent "^3.0.0"
     url-template "^2.0.8"
 
-"@ornikar/eslint-config@12.4.0":
-  version "12.4.0"
-  resolved "https://registry.yarnpkg.com/@ornikar/eslint-config/-/eslint-config-12.4.0.tgz#95732471c24521e7715db5a35462d95f3576a82d"
-  integrity sha512-honskgsaj5k3E80D8l8JhAMfo7UAAnq5vRn18Jc5W9WmzV5/rizP+Ctq8gpv8+s2kD2adsqoUPWy7xMX6cFjfA==
+"@ornikar/eslint-config@13.0.1":
+  version "13.0.1"
+  resolved "https://registry.yarnpkg.com/@ornikar/eslint-config/-/eslint-config-13.0.1.tgz#f90e45dfe6850c08cc8aefb0778825a042978264"
+  integrity sha512-qwg+J1Gd3MkG/zCknm0EQauJi5jpQLI5nC4ssId5+Jo2fVQjJO2QbTzC19wW1MvroGTuzLxjOe1MKx0Unlnb8g==
   dependencies:
     eslint-config-airbnb-base "^14.1.0"
     eslint-config-prettier "^6.7.0"
