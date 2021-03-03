@@ -91,8 +91,9 @@ const createBuildsForPackage = (packagesDir, packageName, additionalPlugins = []
           babelHelpers: 'runtime',
           exclude: 'node_modules/**',
           presets: [
+            require.resolve('@babel/preset-typescript'),
             [
-              '@babel/preset-env',
+              require.resolve('@babel/preset-env'),
               {
                 modules: false,
                 targets: target === 'node' ? { node: version } : undefined,
