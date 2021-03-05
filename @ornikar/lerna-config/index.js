@@ -2,7 +2,12 @@
 
 const fs = require('fs').promises;
 // eslint-disable-next-line import/no-extraneous-dependencies
-const LernaProject = require('@lerna/project');
+let LernaProject = require('@lerna/project');
+
+// lerna 4 support
+if (LernaProject.Project) {
+  LernaProject = LernaProject.Project;
+}
 
 /**
  *
