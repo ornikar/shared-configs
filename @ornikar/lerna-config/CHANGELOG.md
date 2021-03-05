@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.3.1](https://github.com/ornikar/shared-configs/compare/@ornikar/lerna-config@2.3.0...@ornikar/lerna-config@2.3.1) (2021-03-05)
+
+
+### Bug Fixes
+
+* lerna 4 support ([71fe915](https://github.com/ornikar/shared-configs/commit/71fe915bb0fa3815892dee1287a5fa1a58380eb2))
+
+
+
+
+
 # [2.3.0](https://github.com/ornikar/shared-configs/compare/@ornikar/lerna-config@2.2.0...@ornikar/lerna-config@2.3.0) (2021-02-09)
 
 

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/rollup-config@2.4.0...@ornikar/rollup-config@3.0.0) (2021-03-05)
+
+
+### Bug Fixes
+
+* release rollup-config as major ([1299552](https://github.com/ornikar/shared-configs/commit/1299552a71cf7ed4bd185638e34cb20b5c8969ac))
+
+
+
+
+
 # [2.4.0](https://github.com/ornikar/shared-configs/compare/@ornikar/rollup-config@2.3.0...@ornikar/rollup-config@2.4.0) (2021-03-05)
 
 
