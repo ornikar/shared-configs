@@ -4,20 +4,19 @@
 
 const path = require('path');
 const fs = require('fs');
-const postcss = require('@ornikar/rollup-plugin-postcss');
-const babel = require('rollup-plugin-babel');
-const resolve = require('rollup-plugin-node-resolve');
-const commonjs = require('rollup-plugin-commonjs');
-const ignoreImport = require('rollup-plugin-ignore-import');
+const postcss = require('rollup-plugin-postcss');
+const { default: babel } = require('@rollup/plugin-babel');
+const { default: resolve } = require('@rollup/plugin-node-resolve');
 const configExternalDependencies = require('rollup-config-external-dependencies');
+const ignoreImport = require('./rollup-plugin-ignore-browser-only-imports');
 
 const rootPkg = require(path.resolve('./package.json'));
 const postcssConfig = require(path.resolve('./config/rollup-postcss.config.js'));
 
-const extensions = ['.js', '.jsx', '.tsx', '.ts'];
+const extensions = ['.tsx', '.ts', '.js', '.jsx'];
 const browserOnlyExtensions = ['.css'];
 
-const createBuildsForPackage = (packagesDir, packageName) => {
+const createBuildsForPackage = (packagesDir, packageName, additionalPlugins = []) => {
   // eslint-disable-next-line import/no-dynamic-require, global-require
   const pkg = require(path.resolve(`./${packagesDir}/${packageName}/package.json`));
   const external = configExternalDependencies({
@@ -25,17 +24,18 @@ const createBuildsForPackage = (packagesDir, packageName) => {
     dependencies: { ...rootPkg.dependencies, ...pkg.dependencies },
     peerDependencies: { ...rootPkg.peerDependencies, ...pkg.peerDependencies },
   });
+  const resolvedPackagePath = path.resolve(`${packagesDir}/${packageName}`);
+  const distPath = `${packagesDir}/${packageName}/dist`;
+  const inputBase = `./${packagesDir}/${packageName}/src/index`;
 
   const createBuild = (target, version, formats, production) => {
     const devSuffix = production ? '' : '-dev';
     const exportCss = target === 'browser' && version === 'all' && production;
+    const preferConst = !(target === 'browser' && version !== 'modern');
 
-    const inputBase = `./${packagesDir}/${packageName}/src/index`;
     const inputExt = extensions.find((ext) => fs.existsSync(path.resolve(`${inputBase}${ext}`)));
 
     if (!inputExt) throw new Error(`Could not find index file for package ${packageName}`);
-
-    const distPath = `${packagesDir}/${packageName}/dist`;
 
     return {
       input: `${inputBase}${inputExt}`,
@@ -44,8 +44,25 @@ const createBuildsForPackage = (packagesDir, packageName) => {
         format,
         sourcemap: true,
         exports: 'named',
+        preferConst,
+        externalLiveBindings: false,
+        freeze: false,
       })),
       external: target === 'node' ? (filePath) => (filePath.endsWith('.css') ? false : external(filePath)) : external,
+
+      onwarn(warning, warn) {
+        // throw on certain warnings
+        if (
+          warning.code === 'NON_EXISTENT_EXPORT' ||
+          warning.code === 'UNUSED_EXTERNAL_IMPORT' ||
+          warning.code === 'UNRESOLVED_IMPORT'
+        ) {
+          throw new Error(warning.message);
+        }
+
+        // Use default for everything else
+        warn(warning);
+      },
 
       plugins: [
         // ignore node_modules css imports for node target. imports in browser target will be resolved by webpack.
@@ -56,7 +73,8 @@ const createBuildsForPackage = (packagesDir, packageName) => {
           }),
         postcss({
           include: /\.module\.css$/,
-          extract: exportCss ? `${distPath}/styles.css` : true,
+          extract: exportCss ? path.resolve(`${distPath}/styles.css`) : true,
+          autoModules: false,
           modules: {
             generateScopedName: `${packageName}_[local]_[hash:base64:5]`,
           },
@@ -65,22 +83,33 @@ const createBuildsForPackage = (packagesDir, packageName) => {
           minimize: false,
         }),
         babel({
+          extensions,
           babelrc: false,
           configFile: true,
           envName: 'rollup',
-          externalHelpers: false,
+          skipPreflightCheck: true,
+          babelHelpers: 'runtime',
           exclude: 'node_modules/**',
-          extensions,
           presets: [
+            require.resolve('@babel/preset-typescript'),
             [
-              '@babel/env',
+              require.resolve('@babel/preset-env'),
               {
                 modules: false,
                 targets: target === 'node' ? { node: version } : undefined,
+                bugfixes: true,
+                shippedProposals: true,
               },
             ],
           ],
           plugins: [
+            [
+              require.resolve('@babel/plugin-transform-runtime'),
+              {
+                corejs: false,
+                helpers: true,
+              },
+            ],
             [
               require.resolve('babel-plugin-minify-replace'),
               {
@@ -102,26 +131,21 @@ const createBuildsForPackage = (packagesDir, packageName) => {
                 ],
               },
             ],
-            production && [
-              require.resolve('babel-plugin-transform-react-remove-prop-types'),
-              {
-                removeImport: true,
-              },
-            ],
             require.resolve('babel-plugin-minify-dead-code-elimination'),
             require.resolve('babel-plugin-discard-module-references'),
           ].filter(Boolean),
         }),
-        commonjs(),
         resolve({
+          extensions,
+          modulesOnly: true,
+          jail: `${resolvedPackagePath}/src`,
+          rootDir: resolvedPackagePath,
+          moduleDirectories: ['src'],
           customResolveOptions: {
-            moduleDirectory:
-              target !== 'node'
-                ? ['src'] // don't resolve node_modules, but allow src (see baseUrl in tsconfig)
-                : ['node_modules', 'src'], // for target node we need to be able to resolve .css in node_modules and ignore them with import-ignore (they need to be resolved because there are not in external)
-            extensions,
+            moduleDirectories: ['src'], // don't resolve node_modules, but allow src (see baseUrl in tsconfig)
           },
         }),
+        ...additionalPlugins,
       ].filter(Boolean),
     };
   };
@@ -131,7 +155,7 @@ const createBuildsForPackage = (packagesDir, packageName) => {
     createBuild(target, version, formats, false),
   ];
 
-  return [...createBuilds('node', '10.13', ['cjs']), ...createBuilds('browser', 'all', ['es'])];
+  return [...createBuilds('node', '12.13', ['cjs']), ...createBuilds('browser', 'all', ['es'])];
 };
 
 module.exports = (packagesDir = '@ornikar') => {

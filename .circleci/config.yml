@@ -74,7 +74,7 @@ workflows:
 
       - frontend/checks:
           cache-version: << pipeline.parameters.cache-version >>
-          run-yarn-check: true
+          run-yarn-check: false
           requires:
             - dependencies
 

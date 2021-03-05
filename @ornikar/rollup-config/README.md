@@ -11,3 +11,5 @@ const createConfig = require('@ornikar/rollup-config');
 
 module.exports = createConfig();
 ```
+
+Add `@babel/runtime` in you dependencies.
