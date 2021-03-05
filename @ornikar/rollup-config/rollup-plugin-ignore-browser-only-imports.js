@@ -8,7 +8,7 @@ const emptyFileName = '\0rollup_plugin_ignoreBrowserOnlyImports_empty_module_pla
 module.exports = function ignoreBrowserOnlyImports({ extensions, exclude }) {
   return {
     resolveId(importee) {
-      return extensions.some((ext) => importee.endsWith(ext) && !exclude.test(importee)) ? emptyFileName : null;
+      return extensions.some((ext) => importee.endsWith(ext)) && !exclude.test(importee) ? emptyFileName : null;
     },
     load(id) {
       return id === emptyFileName ? emptyFile : null;

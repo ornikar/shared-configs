@@ -48,7 +48,7 @@ const createBuildsForPackage = (packagesDir, packageName, additionalPlugins = []
         externalLiveBindings: false,
         freeze: false,
       })),
-      external,
+      external: target === 'node' ? (filePath) => (filePath.endsWith('.css') ? false : external(filePath)) : external,
 
       onwarn(warning, warn) {
         // throw on certain warnings
