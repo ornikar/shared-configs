@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@6.5.0...@ornikar/jest-config-react@7.0.0) (2021-03-11)
+
+
+### Features
+
+* update testing-library/react v11 & testing-library/react-hooks to v5 ([#469](https://github.com/ornikar/shared-configs/issues/469)) ([62001b2](https://github.com/ornikar/shared-configs/commit/62001b21d9400e5c40146e653178c793352d3398))
+
+
+### BREAKING CHANGES
+
+* @testing-library/react v11 introduce a breaking change
+
+
+
+
+
 # [6.5.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@6.4.0...@ornikar/jest-config-react@6.5.0) (2021-02-09)
 
 
