@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.3.2](https://github.com/ornikar/shared-configs/compare/@ornikar/lerna-config@2.3.1...@ornikar/lerna-config@2.3.2) (2021-03-12)
+
+
+### Bug Fixes
+
+* **lerna-config:** eslintrc generator fix prettier config [no issue] ([#468](https://github.com/ornikar/shared-configs/issues/468)) ([fb0e0e0](https://github.com/ornikar/shared-configs/commit/fb0e0e095135404bf152335cf428ca5adccc6784))
+
+
+
+
+
 ## [2.3.1](https://github.com/ornikar/shared-configs/compare/@ornikar/lerna-config@2.3.0...@ornikar/lerna-config@2.3.1) (2021-03-05)
 
 
