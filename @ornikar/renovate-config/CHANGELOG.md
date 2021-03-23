@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.12.0](https://github.com/ornikar/shared-configs/compare/@ornikar/renovate-config@2.11.1...@ornikar/renovate-config@2.12.0) (2021-03-23)
+
+
+### Features
+
+* **renovate-config:** add missing eslint-config-formatjs [no issue] ([#471](https://github.com/ornikar/shared-configs/issues/471)) ([cd33093](https://github.com/ornikar/shared-configs/commit/cd33093ab3c2488b6ff1a2af6fc7b57e0ab9e336))
+
+
+
+
+
 ## [2.11.1](https://github.com/ornikar/shared-configs/compare/@ornikar/renovate-config@2.11.0...@ornikar/renovate-config@2.11.1) (2021-02-17)
 
 
