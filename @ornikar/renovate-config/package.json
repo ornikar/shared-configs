@@ -144,6 +144,7 @@
           "matchPackageNames": [
             "@ornikar/eslint-config",
             "@ornikar/eslint-config-babel",
+            "@ornikar/eslint-config-formatjs",
             "@ornikar/eslint-config-node",
             "@ornikar/eslint-config-react",
             "@ornikar/eslint-config-typescript",
