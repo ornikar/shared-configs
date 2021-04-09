@@ -24,6 +24,6 @@
   "devDependencies": {
     "@testing-library/react": "11.2.5",
     "@testing-library/react-hooks": "5.1.0",
-    "react": "16.13.1"
+    "react": "16.14.0"
   }
 }
