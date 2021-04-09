@@ -4,9 +4,9 @@
 
 const path = require('path');
 // webpack is a peer dependency, and we don't want to install it as dev dependency in this repo.
+const resolveFields = require('@ornikar/webpack-config/resolveFields');
 // eslint-disable-next-line import/no-unresolved
 const webpack = require('webpack');
-const resolveFields = require('@ornikar/webpack-config/resolveFields');
 
 module.exports = function applyOrnikarStorybookBaseWebpackConfig(config, srcDir) {
   resolveFields(process.env.NODE_ENV !== 'production' ? 'dev' : 'production', config);

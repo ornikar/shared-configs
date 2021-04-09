@@ -2,12 +2,12 @@
 
 /* eslint-disable complexity, import/no-dynamic-require */
 
-const path = require('path');
 const fs = require('fs');
-const postcss = require('rollup-plugin-postcss');
+const path = require('path');
 const { default: babel } = require('@rollup/plugin-babel');
 const { default: resolve } = require('@rollup/plugin-node-resolve');
 const configExternalDependencies = require('rollup-config-external-dependencies');
+const postcss = require('rollup-plugin-postcss');
 const ignoreImport = require('./rollup-plugin-ignore-browser-only-imports');
 
 const rootPkg = require(path.resolve('./package.json'));
