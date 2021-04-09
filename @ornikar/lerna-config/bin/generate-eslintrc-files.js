@@ -2,8 +2,8 @@
 
 'use strict';
 
-const path = require('path');
 const fs = require('fs').promises;
+const path = require('path');
 const prettyEslintConfig = require('@pob/pretty-eslint-config');
 const { createLernaProject, getPackages, readJsonFile } = require('..');
 

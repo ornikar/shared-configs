@@ -4,9 +4,9 @@
 
 const fs = require('fs');
 const path = require('path');
-const globSync = require('glob').sync;
 const babelCore = require('@babel/core');
 const babelPluginReactIntl = require('babel-plugin-react-intl');
+const globSync = require('glob').sync;
 const sortObjectKeys = require('sort-object-keys');
 
 process.env.NODE_ENV = 'production';
