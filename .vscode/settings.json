@@ -1,0 +1,27 @@
+{
+  "npm.packageManager": "yarn",
+  "search.exclude": {
+    "**/yarn-error.log": true,
+    "**/yarn.lock": true
+  },
+
+  // save config
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "source.organizeImports": false
+  },
+
+  // eslint config
+  "eslint.workingDirectories": ["."],
+  "eslint.options": {
+    "extensions": [".js", ".mjs"],
+    "resolvePluginsRelativeTo": ".",
+    "reportUnusedDisableDirectives": true
+  },
+  "eslint.lintTask.enable": true,
+
+  // eslint & prettier formatter
+  "eslint.format.enable": false,
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
+}
