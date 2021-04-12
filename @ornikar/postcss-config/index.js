@@ -1,4 +1,4 @@
-/* eslint-disable global-require, no-param-reassign */
+/* eslint-disable global-require */
 
 'use strict';
 
