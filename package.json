@@ -5,7 +5,7 @@
   "scripts": {
     "lint": "yarn run lint:prettier && yarn run lint:eslint",
     "lint:prettier": "prettier --check .",
-    "lint:eslint": "eslint --ext .js --fix .",
+    "lint:eslint": "eslint --ext .js --report-unused-disable-directives .",
     "release": "lerna publish --conventional-commits -m 'chore: release'"
   },
   "prettier": "./@ornikar/prettier-config",

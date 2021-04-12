@@ -9,7 +9,6 @@ const pkg = JSON.parse(fs.readFileSync(path.resolve('package.json'), 'utf-8'));
 module.exports = function createLintStagedConfig(options = {}) {
   const config = createBaseLintStagedConfig({ srcExtensions: ['js', 'mjs', 'ts', 'tsx'] });
 
-  // eslint-disable-next-line prefer-destructuring
   const srcDirectories = createBaseLintStagedConfig.getSrcDirectories();
 
   Object.assign(config, {

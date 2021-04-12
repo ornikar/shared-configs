@@ -1,6 +1,6 @@
 'use strict';
 
-/* eslint-disable complexity, import/no-dynamic-require */
+/* eslint-disable import/no-dynamic-require */
 
 const fs = require('fs');
 const path = require('path');
@@ -17,7 +17,7 @@ const extensions = ['.tsx', '.ts', '.js', '.jsx'];
 const browserOnlyExtensions = ['.css'];
 
 const createBuildsForPackage = (packagesDir, packageName, additionalPlugins = []) => {
-  // eslint-disable-next-line import/no-dynamic-require, global-require
+  // eslint-disable-next-line global-require
   const pkg = require(path.resolve(`./${packagesDir}/${packageName}/package.json`));
   const external = configExternalDependencies({
     devDependencies: { ...rootPkg.devDependencies, ...pkg.devDependencies },
