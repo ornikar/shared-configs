@@ -66,7 +66,7 @@ const generateAndWritePackageConfig = async (configPath, prettierOptions, { pack
         if (!config.extends) config.extends = [];
         if (config.extends.includes('@ornikar/eslint-config-typescript-react')) {
           if (config.extends.includes('@ornikar/eslint-config-typescript')) {
-            config.extends = config.extends.filter('@ornikar/eslint-config-typescript');
+            config.extends = config.extends.filter(config => config !== '@ornikar/eslint-config-typescript');
           }
         } else if (!config.extends.includes('@ornikar/eslint-config-typescript')) {
           config.extends = ['@ornikar/eslint-config-typescript', ...config.extends];
