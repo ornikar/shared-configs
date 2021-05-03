@@ -64,7 +64,11 @@ const generateAndWritePackageConfig = async (configPath, prettierOptions, { pack
       callback: (configParam) => {
         const config = { ...configParam };
         if (!config.extends) config.extends = [];
-        if (!config.extends.includes('@ornikar/eslint-config-typescript')) {
+        if (config.extends.includes('@ornikar/eslint-config-typescript-react')) {
+          if (config.extends.includes('@ornikar/eslint-config-typescript')) {
+            config.extends = config.extends.filter('@ornikar/eslint-config-typescript');
+          }
+        } else if (!config.extends.includes('@ornikar/eslint-config-typescript')) {
           config.extends = ['@ornikar/eslint-config-typescript', ...config.extends];
         }
         if (!config.extends.includes('@ornikar/eslint-config/rollup')) {
