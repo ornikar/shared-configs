@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/lerna-config@2.3.3...@ornikar/lerna-config@3.0.0) (2021-05-03)
+
+
+### Features
+
+* **lerna-config:** remove @ornikar/eslint-config-typescript when @ornikar/eslint-config-typescript-react is present [no issue] ([#476](https://github.com/ornikar/shared-configs/issues/476)) ([49e3ad4](https://github.com/ornikar/shared-configs/commit/49e3ad4f20f7fa3a445cfa5a134804f59e859742))
+
+
+### BREAKING CHANGES
+
+* **lerna-config:** requires eslint 7
+
+
+
+
+
 ## [2.3.3](https://github.com/ornikar/shared-configs/compare/@ornikar/lerna-config@2.3.2...@ornikar/lerna-config@2.3.3) (2021-04-09)
 
 **Note:** Version bump only for package @ornikar/lerna-config
