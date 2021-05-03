@@ -64,7 +64,7 @@ const { getPackages } = require('..');
         tsconfigContent.compilerOptions.jsx = 'preserve';
       }
 
-      if (dependencies.length !== 0) {
+      if (dependencies.length > 0) {
         dependencies.forEach((pkgDep) => {
           const depPath = `../../../${pkgDep.name}/src`;
           tsconfigContent.compilerOptions.paths[pkgDep.name] = [`${depPath}/index.ts`];
