@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.13.0](https://github.com/ornikar/shared-configs/compare/@ornikar/renovate-config@2.12.0...@ornikar/renovate-config@2.13.0) (2021-05-04)
+
+
+### Features
+
+* **renovate-config:** automerge minor and patch testing library [no issue] ([#478](https://github.com/ornikar/shared-configs/issues/478)) ([856fcb3](https://github.com/ornikar/shared-configs/commit/856fcb385d161dca65fce25edd1a1fc6f2fac2e7))
+
+
+
+
+
 # [2.12.0](https://github.com/ornikar/shared-configs/compare/@ornikar/renovate-config@2.11.1...@ornikar/renovate-config@2.12.0) (2021-03-23)
 
 
