@@ -47,7 +47,7 @@ const generateAndWritePackageConfig = async (configPath, prettierOptions, { pack
     await overrideAndWriteConfig(configPath, prettierOptions, {
       override: {
         root: true,
-        extends: ['@ornikar/eslint-config', '@ornikar/eslint-config/node'],
+        extends: ['@ornikar/eslint-config/node'],
       },
       removeRules: ['import/no-extraneous-dependencies'],
     });

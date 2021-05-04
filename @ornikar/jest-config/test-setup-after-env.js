@@ -34,7 +34,7 @@ const deprecatedReactLifeCycleMethods = [
     // Capture the call stack now so we can warn about it later.
     // The call stack has helpful information for the test author.
     // Don't throw yet though b'c it might be accidentally caught and suppressed.
-    const errorStack = new Error().stack;
+    const errorStack = new Error('test-setup-after-env').stack;
     unexpectedConsoleCallStacks.push([errorStack.slice(errorStack.indexOf('\n') + 1), util.format(format, ...args)]);
   };
 

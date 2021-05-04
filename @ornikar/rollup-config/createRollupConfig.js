@@ -165,5 +165,5 @@ module.exports = (packagesDir = '@ornikar') => {
         .readdirSync(path.resolve(`./${packagesDir}`))
         .filter((name) => name !== '.DS_Store' && !name.startsWith('.eslintrc'));
 
-  return [].concat(...packages.map((packageName) => createBuildsForPackage(packagesDir, packageName)));
+  return packages.map((packageName) => createBuildsForPackage(packagesDir, packageName));
 };
