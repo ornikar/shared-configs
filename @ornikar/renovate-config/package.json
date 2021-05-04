@@ -80,6 +80,7 @@
           "matchPackagePatterns": [
             "^@ornikar/(.*)-config",
             "^@commitlint",
+            "^@testing-library",
             "^eslint"
           ],
           "matchPackageNames": [
