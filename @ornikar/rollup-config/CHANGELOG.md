@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.0.4](https://github.com/ornikar/shared-configs/compare/@ornikar/rollup-config@3.0.3...@ornikar/rollup-config@3.0.4) (2021-05-07)
+
+
+### Bug Fixes
+
+* **rollup-config:** use flatMap [no issue] ([#481](https://github.com/ornikar/shared-configs/issues/481)) ([bba4031](https://github.com/ornikar/shared-configs/commit/bba40313da024835950d4196113e4cb8232a15ef))
+
+
+
+
+
 ## [3.0.3](https://github.com/ornikar/shared-configs/compare/@ornikar/rollup-config@3.0.2...@ornikar/rollup-config@3.0.3) (2021-05-04)
 
 **Note:** Version bump only for package @ornikar/rollup-config
