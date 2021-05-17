@@ -22,7 +22,7 @@
     "identity-obj-proxy": "^3.0.0"
   },
   "devDependencies": {
-    "@testing-library/react": "11.2.6",
+    "@testing-library/react": "11.2.7",
     "@testing-library/react-hooks": "5.1.2",
     "react": "16.14.0"
   }
