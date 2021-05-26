@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.4.0](https://github.com/ornikar/shared-configs/compare/@ornikar/postcss-config@3.3.2...@ornikar/postcss-config@3.4.0) (2021-05-26)
+
+
+### Features
+
+* **postcss-config:** update postcss-custom-properties [no issue] ([#488](https://github.com/ornikar/shared-configs/issues/488)) ([5b4c476](https://github.com/ornikar/shared-configs/commit/5b4c4768f3fce918bf39cd2749d90ccaf2e6b25a))
+
+
+
+
+
 ## [3.3.2](https://github.com/ornikar/shared-configs/compare/@ornikar/postcss-config@3.3.1...@ornikar/postcss-config@3.3.2) (2021-05-04)
 
 **Note:** Version bump only for package @ornikar/postcss-config
