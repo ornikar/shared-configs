@@ -8,22 +8,23 @@ const wait = (amount = 0) => new Promise((resolve) => setTimeout(resolve, amount
 
 const decorateStory = (storyFn, decorators) =>
   decorators.reduce(
-    (decorated, decorator) => (context = {}) =>
-      decorator(
-        (p = {}) =>
-          decorated(
-            // MUTATION !
-            Object.assign(
-              context,
-              p,
-              {
-                parameters: Object.assign(context.parameters || {}, p.parameters),
-              },
-              { options: Object.assign(context.options || {}, p.options) },
+    (decorated, decorator) =>
+      (context = {}) =>
+        decorator(
+          (p = {}) =>
+            decorated(
+              // MUTATION !
+              Object.assign(
+                context,
+                p,
+                {
+                  parameters: Object.assign(context.parameters || {}, p.parameters),
+                },
+                { options: Object.assign(context.options || {}, p.options) },
+              ),
             ),
-          ),
-        context,
-      ),
+          context,
+        ),
     storyFn,
   );
 
