@@ -9,16 +9,19 @@ const resolveFields = require('@ornikar/webpack-config/resolveFields');
 const webpack = require('webpack');
 
 module.exports = function applyOrnikarStorybookBaseWebpackConfig(config, srcDir) {
+  // storybook defines mainFields, we want to override them
+  delete config.resolve.mainFields;
   resolveFields(process.env.NODE_ENV !== 'production' ? 'dev' : 'production', config);
 
-  const cssRule = config.module.rules.find((rule) => rule.test.toString() === /\.css$/.toString());
+  const cssRule = config.module.rules.find((rule) => rule.test && rule.test.toString() === /\.css$/.toString());
   cssRule.exclude = /\.module\.css$/;
   cssRule.sideEffects = true;
 
   const imageRule = config.module.rules.find(
     (rule) =>
+      rule.test &&
       rule.test.toString() ===
-      /\.(svg|ico|jpg|jpeg|png|gif|eot|otf|webp|ttf|woff|woff2|cur|ani|pdf)(\?.*)?$/.toString(),
+        /\.(svg|ico|jpg|jpeg|png|apng|gif|eot|otf|webp|ttf|woff|woff2|cur|ani|pdf)(\?.*)?$/.toString(),
   );
   imageRule.exclude = /\.inline\.svg$/;
 
@@ -35,16 +38,16 @@ module.exports = function applyOrnikarStorybookBaseWebpackConfig(config, srcDir)
           importLoaders: 2,
         },
       },
-      require.resolve('@chrp/typed-css-modules-loader'),
+      process.env.NODE_ENV !== 'production' && require.resolve('@chrp/typed-css-modules-loader'),
       {
         loader: 'postcss-loader',
         options: {
-          config: {
-            path: path.resolve('./.storybook/postcss.config'),
+          postcssOptions: {
+            config: path.resolve('./.storybook/postcss.config.js'),
           },
         },
       },
-    ],
+    ].filter(Boolean),
     include: path.resolve(`./${srcDir}`),
   });
 
@@ -56,20 +59,6 @@ module.exports = function applyOrnikarStorybookBaseWebpackConfig(config, srcDir)
     },
   });
 
-  config.module.rules.push({
-    test: /\.(ts|tsx)$/,
-    exclude: [path.resolve('node_modules')],
-    loaders: [
-      {
-        loader: 'babel-loader',
-        options: {
-          babelrc: true,
-        },
-      },
-    ],
-  });
-
-  config.resolve.extensions = ['.js', '.jsx', '.tsx', '.ts'];
   config.resolve.modules = ['node_modules', 'src'];
 
   config.plugins.push(
