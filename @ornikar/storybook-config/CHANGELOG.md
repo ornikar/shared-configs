@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/storybook-config@2.1.2...@ornikar/storybook-config@3.0.0) (2021-06-08)
+
+
+### Features
+
+* storybook 6 ARCH-1277 ([#490](https://github.com/ornikar/shared-configs/issues/490)) ([2a4afc2](https://github.com/ornikar/shared-configs/commit/2a4afc2f4a10ab61d8ddc7c0ba1e5b2cd3e454af))
+
+
+### BREAKING CHANGES
+
+* requires storybook 6 
+
+
+
+
+
 ## [2.1.2](https://github.com/ornikar/shared-configs/compare/@ornikar/storybook-config@2.1.1...@ornikar/storybook-config@2.1.2) (2021-05-04)
 
 **Note:** Version bump only for package @ornikar/storybook-config
