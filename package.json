@@ -23,7 +23,7 @@
   ],
   "devDependencies": {
     "@commitlint/cli": "11.0.0",
-    "@ornikar/eslint-config": "14.1.0",
+    "@ornikar/eslint-config": "14.2.0",
     "eslint": "7.29.0",
     "husky": "4.3.8",
     "lerna": "4.0.0",
