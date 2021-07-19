@@ -88,6 +88,11 @@ workflows:
           requires:
             - dependencies
 
+      - frontend/lint-css:
+          cache-version: << pipeline.parameters.cache-version >>
+          requires:
+            - dependencies
+
       # release
       - hold-release:
           type: approval
@@ -102,6 +107,7 @@ workflows:
             - frontend/checks
             - frontend/lint-prettier
             - frontend/lint-eslint
+            - frontend/lint-css
             - hold-release
           filters:
             branches:

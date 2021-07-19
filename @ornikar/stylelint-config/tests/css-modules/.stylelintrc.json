@@ -1,0 +1,4 @@
+{
+  "extends": "./css-modules.js",
+  "reportNeedlessDisables": true
+}
