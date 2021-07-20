@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.3.0](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config-react@3.2.3...@ornikar/repo-config-react@3.3.0) (2021-07-20)
+
+
+### Features
+
+* **deps:** update dependency typed-css-modules to v0.7.0 ([#497](https://github.com/ornikar/shared-configs/issues/497)) ([5e797d4](https://github.com/ornikar/shared-configs/commit/5e797d46d043591f3bdfc9e274b0384e8bb023c1))
+
+
+
+
+
 ## [3.2.3](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config-react@3.2.2...@ornikar/repo-config-react@3.2.3) (2021-05-04)
 
 **Note:** Version bump only for package @ornikar/repo-config-react

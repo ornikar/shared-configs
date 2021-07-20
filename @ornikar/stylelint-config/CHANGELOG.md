@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/stylelint-config@6.3.2...@ornikar/stylelint-config@7.0.0) (2021-07-20)
+
+
+### Features
+
+* add styled-components config INSTRUCTOR-105 ([#499](https://github.com/ornikar/shared-configs/issues/499)) ([7bc4db2](https://github.com/ornikar/shared-configs/commit/7bc4db23c4848e34e73a05191290c8aa06422bcc))
+
+
+### BREAKING CHANGES
+
+* upgrade stylelint, css-modules should be imported with @ornikar/stylelint-config/css-modules 
+
+
+
+
+
 ## [6.3.2](https://github.com/ornikar/shared-configs/compare/@ornikar/stylelint-config@6.3.1...@ornikar/stylelint-config@6.3.2) (2021-06-08)
 
 **Note:** Version bump only for package @ornikar/stylelint-config
