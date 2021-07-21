@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.0.1](https://github.com/ornikar/shared-configs/compare/@ornikar/stylelint-config@7.0.0...@ornikar/stylelint-config@7.0.1) (2021-07-21)
+
+
+### Bug Fixes
+
+* **stylelint-config:** functions in camelcase INSTRUCTOR-105 ([#501](https://github.com/ornikar/shared-configs/issues/501)) ([16947e7](https://github.com/ornikar/shared-configs/commit/16947e7f3552fd39293d20d539ad455c0c568752))
+
+
+
+
+
 # [7.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/stylelint-config@6.3.2...@ornikar/stylelint-config@7.0.0) (2021-07-20)
 
 
