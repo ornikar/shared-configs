@@ -35,3 +35,22 @@ const StyledTypography = styled.Text`
   color: ${({ theme, color }) => theme.typography.colors[color]};
   text-decoration-color: ${({ theme, color }) => theme.typography.colors[color]};
 `;
+
+export interface BlockProps {
+  color?: 'dark' | 'white' | 'primary' | 'transparent';
+}
+
+const getBackgroundColorFromBlockColor = (color: BlockProps['color'] = 'transparent'): string => {
+  switch (color) {
+    case 'dark':
+      return '#293033';
+    case 'white':
+      return '#ffffff';
+    default:
+      return 'transparent';
+  }
+};
+
+export const Block = styled.View<BlockProps>`
+  background: ${({ color }) => getBackgroundColorFromBlockColor(color)};
+`;
