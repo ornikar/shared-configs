@@ -5,8 +5,6 @@ const sharedRules = require('./rules/shared-rules');
 module.exports = {
   extends: ['stylelint-config-standard', 'stylelint-config-prettier'].map(require.resolve),
 
-  // processors: ['stylelint-processor-styled-components'].map(require.resolve),
-
   plugins: ['stylelint-order'].map(require.resolve),
 
   rules: {
@@ -18,5 +16,8 @@ module.exports = {
 
     // override default rule to disable for composes, used in css modules
     'value-keyword-case': null,
+
+    // function can use camelCase because they can be js functions
+    'function-name-case': null,
   },
 };
