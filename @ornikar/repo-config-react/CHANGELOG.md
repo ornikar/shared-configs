@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.3.1](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config-react@3.3.0...@ornikar/repo-config-react@3.3.1) (2021-07-27)
+
+
+### Bug Fixes
+
+* **repo-config-react:** svgo config for react-native compatibility [no issue] ([#502](https://github.com/ornikar/shared-configs/issues/502)) ([1b0a580](https://github.com/ornikar/shared-configs/commit/1b0a5804fe815dc38a77e2bf5c3e6b4c42af8572))
+
+
+
+
+
 # [3.3.0](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config-react@3.2.3...@ornikar/repo-config-react@3.3.0) (2021-07-20)
 
 
