@@ -8,3 +8,5 @@ plugins:
   # remove data-name
   - removeUnknownsAndDefaults:
       keepDataAttrs: false
+  - inlineStyles:
+      onlyMatchedOnce: false
