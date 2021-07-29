@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.5.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config@5.4.2...@ornikar/jest-config@5.5.0) (2021-07-29)
+
+
+### Features
+
+* **jest-config:** add test-coverage script [no issue] ([#503](https://github.com/ornikar/shared-configs/issues/503)) ([6d6e771](https://github.com/ornikar/shared-configs/commit/6d6e7711cb350e9287a0206ee207a82af36dac22))
+
+
+
+
+
 ## [5.4.2](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config@5.4.1...@ornikar/jest-config@5.4.2) (2021-05-04)
 
 **Note:** Version bump only for package @ornikar/jest-config

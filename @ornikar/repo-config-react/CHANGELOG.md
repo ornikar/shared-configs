@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.0.1](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config-react@3.3.1...@ornikar/repo-config-react@5.0.1) (2021-07-29)
+
+
+### Bug Fixes
+
+* **repo-config-react:** create new major with same major of repo-config ([053bafe](https://github.com/ornikar/shared-configs/commit/053bafe9eb273d8af078b6c022ee8cb667c9debf))
+
+
+
+
+
 ## [3.3.1](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config-react@3.3.0...@ornikar/repo-config-react@3.3.1) (2021-07-27)
 
 
