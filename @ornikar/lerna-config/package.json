@@ -19,6 +19,6 @@
     "lerna": ">= 3.19.0"
   },
   "dependencies": {
-    "@pob/pretty-eslint-config": "^1.0.1"
+    "@pob/pretty-eslint-config": "^2.0.0"
   }
 }
