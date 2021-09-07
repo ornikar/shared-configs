@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.1.0](https://github.com/ornikar/shared-configs/compare/@ornikar/lerna-config@3.0.1...@ornikar/lerna-config@3.1.0) (2021-09-07)
+
+
+### Bug Fixes
+
+* **@ornikar/lerna-config:** support private package with react [no issue] ([#512](https://github.com/ornikar/shared-configs/issues/512)) ([76f548a](https://github.com/ornikar/shared-configs/commit/76f548a84f03fcba69735e5ddbc7989a5e7a79c9))
+
+
+### Features
+
+* **deps:** update dependency @pob/pretty-eslint-config to v2 ([#508](https://github.com/ornikar/shared-configs/issues/508)) ([c15d965](https://github.com/ornikar/shared-configs/commit/c15d9650d0ec4beb76eb54a4fd35c82a10f014ea))
+
+
+
+
+
 ## [3.0.1](https://github.com/ornikar/shared-configs/compare/@ornikar/lerna-config@3.0.0...@ornikar/lerna-config@3.0.1) (2021-05-04)
 
 **Note:** Version bump only for package @ornikar/lerna-config

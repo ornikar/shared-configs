@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.1.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@7.0.7...@ornikar/jest-config-react@7.1.0) (2021-09-07)
+
+
+### Features
+
+* **deps:** update react monorepo to v17 (major) ([#509](https://github.com/ornikar/shared-configs/issues/509)) ([ad98f94](https://github.com/ornikar/shared-configs/commit/ad98f946a8dc3f10c22be8df3e856219db10eec9))
+
+
+
+
+
 ## [7.0.7](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@7.0.6...@ornikar/jest-config-react@7.0.7) (2021-07-29)
 
 **Note:** Version bump only for package @ornikar/jest-config-react

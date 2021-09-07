@@ -1,6 +1,6 @@
 {
   "name": "@ornikar/jest-config-react",
-  "version": "7.0.7",
+  "version": "7.1.0",
   "description": "jest config",
   "repository": "ornikar/shared-configs",
   "main": "jest-preset.js",
