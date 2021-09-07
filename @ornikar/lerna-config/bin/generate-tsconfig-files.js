@@ -59,7 +59,10 @@ const { getPackages } = require('..');
         );
       });
 
-      const hasReact = pkg.peerDependencies && pkg.peerDependencies.react;
+      const hasReact =
+        (pkg.peerDependencies && pkg.peerDependencies.react) ||
+        (pkg.private && pkg.dependencies && pkg.dependencies.react);
+
       if (hasReact) {
         tsconfigContent.compilerOptions.jsx = 'preserve';
       }
