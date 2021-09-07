@@ -2363,25 +2363,25 @@
     eslint-plugin-node "^11.1.0"
     eslint-plugin-unicorn "^31.0.0"
 
-"@pob/pretty-eslint-config@^2.0.0":
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/@pob/pretty-eslint-config/-/pretty-eslint-config-2.1.0.tgz#3320d898a694d73ea37ed304c92015b59f990fd4"
-  integrity sha512-XqkP+NVbzcA+R1DkxtbUEeXHZL5A+K3VitRyeLc/3YEu0CTKZCBJgBeGpOR2R9qdVzwsENqjDreALVK1QML1bw==
+"@pob/pretty-eslint-config@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@pob/pretty-eslint-config/-/pretty-eslint-config-1.0.1.tgz#00c62ff52170098ee125a5d8574fa0c70c4d974e"
+  integrity sha512-1ITTg5H7xr00TYz+z6Gl8pSoBZZekAJfVTMoDSqt1obguH2lYi5vW9D0p7Q/0U9qjfEOt4YPaITa82DeSTac2Q==
   dependencies:
-    "@pob/sort-eslint-config" "^2.0.0"
+    "@pob/sort-eslint-config" "^1.0.1"
     prettier "^2.1.2"
 
-"@pob/sort-eslint-config@^2.0.0":
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/@pob/sort-eslint-config/-/sort-eslint-config-2.0.0.tgz#2be32d1b8715679e7f9d2ea4c287ba152aceee43"
-  integrity sha512-HyMqvsV8DS9FIQUYG8T1Sj0sERbGmrRdAisK6JEUmFOmMPPkRQ5oJhpXliAg1a1PDvVxb+01n8MyK63EB8zWdQ==
+"@pob/sort-eslint-config@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@pob/sort-eslint-config/-/sort-eslint-config-1.0.1.tgz#bb8aee27d0680b53ce82c52d62a45d49a406e759"
+  integrity sha512-ccmWLCi6XTEdmTtYWB4M4iteypyD7DkiRWmZYqAa1ixwHXNrOpQ7LEI31g3sH9Y3NuDyMnXA6V4Du6Eibmu67A==
   dependencies:
-    "@pob/sort-object" "^3.0.0"
+    "@pob/sort-object" "^2.0.1"
 
-"@pob/sort-object@^3.0.0":
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/@pob/sort-object/-/sort-object-3.0.0.tgz#af537867f320e7cb8e5f43ace698478db3f5b35e"
-  integrity sha512-QCyesJnp+1D4Qezr9pgXPKyZAmauJ2bQCooDENAYlELD3LeZaPWG5T5/uL+zQmnKa6S8xPj0depUwYEss6w0pw==
+"@pob/sort-object@^2.0.1":
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/@pob/sort-object/-/sort-object-2.0.1.tgz#bb41d0f3afe9ae1fca1db1d834eabd421c1185d6"
+  integrity sha512-z9QlMv6/7sKKnXuadmkPr88bKWoJpEPWOa87lEp1kIbuchVSUDKBOdP8peG+Ms6DM3j4OUOf3qHqiJQLEkfb0w==
 
 "@popperjs/core@^2.5.4", "@popperjs/core@^2.6.0":
   version "2.9.2"
