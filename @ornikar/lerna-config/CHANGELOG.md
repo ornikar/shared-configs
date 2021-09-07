@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.1.1](https://github.com/ornikar/shared-configs/compare/@ornikar/lerna-config@3.1.0...@ornikar/lerna-config@3.1.1) (2021-09-07)
+
+
+### Reverts
+
+* feat(deps): update dependency @pob/pretty-eslint-config to v2 [no issue] ([#513](https://github.com/ornikar/shared-configs/issues/513)) ([c52e12c](https://github.com/ornikar/shared-configs/commit/c52e12cc0ae8f9946c8574875ca9bd8f46a14377))
+
+
+
+
+
 # [3.1.0](https://github.com/ornikar/shared-configs/compare/@ornikar/lerna-config@3.0.1...@ornikar/lerna-config@3.1.0) (2021-09-07)
 
 
