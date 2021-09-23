@@ -14,7 +14,7 @@ parameters:
 # -------------------------------------------------------------------------------------------------
 
 orbs:
-  frontend: ornikar/frontend-orb@2.0.0
+  frontend: ornikar/frontend-orb@4.0.0
 
 # -------------------------------------------------------------------------------------------------
 # COMMANDS
@@ -42,7 +42,7 @@ jobs:
             - frontend/restore-cache: *restore-cache-params
           after-install:
             - save_cache:
-                key: << pipeline.parameters.cache-version >>-node12-dependencies-{{ arch }}-{{ checksum "yarn.lock" }}
+                key: << pipeline.parameters.cache-version >>-node14-dependencies-{{ arch }}-{{ checksum "yarn.lock" }}
                 paths:
                   - node_modules
                   - '@ornikar/browserlist-config/node_modules'
