@@ -79,7 +79,8 @@ module.exports = function installHusky({ pkg, pm }) {
     `${pmExec} lint-staged -r${pkg.devDependencies && pkg.devDependencies.typescript ? ` && ${pmExec} tsc` : ''}`,
   );
 
-  if (isYarnPnp) {
+  const runCleanCache = shouldRunCleanCache();
+  if (isYarnPnp && !runCleanCache) {
     ensureHookDeleted('post-checkout');
     ensureHookDeleted('post-merge');
     ensureHookDeleted('post-rewrite');
@@ -93,7 +94,7 @@ if [ -n "$(git diff HEAD@{1}..HEAD@{0} -- yarn.lock)" ]; then
           isYarnBerry ? '--immutable --immutable-cache' : '--prefer-offline --pure-lockfile --ignore-optional'
         } || true`
   }
-  ${shouldRunCleanCache() ? `${pmExec} clean:cache` : ''}
+  ${runCleanCache ? `${pmExec} clean:cache` : ''}
 fi`;
 
     // https://yarnpkg.com/features/zero-installs
