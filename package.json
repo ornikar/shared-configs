@@ -7,7 +7,8 @@
     "lint:prettier": "prettier --check .",
     "lint:eslint": "eslint --ext .js --report-unused-disable-directives .",
     "lint:css": "yarn --cwd @ornikar/stylelint-config lint-tests",
-    "release": "lerna publish --conventional-commits -m 'chore: release'"
+    "release": "lerna publish --conventional-commits -m 'chore: release'",
+    "postinstall": "./@ornikar/repo-config/bin/ornikar-repo-config-postinstall.js"
   },
   "prettier": "./@ornikar/prettier-config",
   "engines": {
@@ -26,10 +27,8 @@
     "@commitlint/cli": "11.0.0",
     "@ornikar/eslint-config": "14.5.0",
     "eslint": "7.32.0",
-    "husky": "4.3.8",
     "lerna": "4.0.0",
     "lint-staged": "10.5.4",
-    "prettier": "2.4.1",
-    "yarnhook": "0.5.1"
+    "prettier": "2.4.1"
   }
 }
