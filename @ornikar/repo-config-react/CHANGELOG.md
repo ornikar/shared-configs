@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config-react@5.0.1...@ornikar/repo-config-react@6.0.0) (2021-10-19)
+
+
+### Features
+
+* **repo-config:** upgrade to husky v7 [no issue] ([#517](https://github.com/ornikar/shared-configs/issues/517)) ([0105cd8](https://github.com/ornikar/shared-configs/commit/0105cd86a715f8d699bcda7d474e8fdebacd6f4b))
+
+
+### BREAKING CHANGES
+
+* **repo-config:** requires to remove husky devDependency and add postinstall script "ornikar-repo-config-postinstall" in package.json 
+
+
+
+
+
 ## [5.0.1](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config-react@3.3.1...@ornikar/repo-config-react@5.0.1) (2021-07-29)
 
 

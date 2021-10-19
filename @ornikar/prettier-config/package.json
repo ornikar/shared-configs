@@ -1,6 +1,6 @@
 {
   "name": "@ornikar/prettier-config",
-  "version": "3.3.3",
+  "version": "3.3.4",
   "description": "prettier config files",
   "repository": "ornikar/shared-configs",
   "main": "index.js",
