@@ -10,9 +10,6 @@
   "publishConfig": {
     "access": "public"
   },
-  "peerDependencies": {
-    "husky": "^4.0.0"
-  },
   "bin": {
     "ornikar-repo-config-postinstall": "./bin/ornikar-repo-config-postinstall.js"
   },
