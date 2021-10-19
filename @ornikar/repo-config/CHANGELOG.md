@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.0.1](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@6.0.0...@ornikar/repo-config@6.0.1) (2021-10-19)
+
+
+### Bug Fixes
+
+* **repo-config:** remove invalid husky peer dependency [no issue] ([#519](https://github.com/ornikar/shared-configs/issues/519)) ([7465de3](https://github.com/ornikar/shared-configs/commit/7465de391f55f46fa49161fdd0dcb697dbd60666))
+
+
+
+
+
 # [6.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@5.2.1...@ornikar/repo-config@6.0.0) (2021-10-19)
 
 
