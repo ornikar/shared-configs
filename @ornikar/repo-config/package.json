@@ -17,7 +17,7 @@
     "@commitlint/cli": "13.2.1",
     "@ornikar/commitlint-config": "^3.2.1",
     "husky": "7.0.4",
-    "lint-staged": "10.5.4",
+    "lint-staged": "11.2.4",
     "semver": "^7.3.5",
     "which-pm-runs": "^1.0.0",
     "yarn-deduplicate": "3.1.0"
