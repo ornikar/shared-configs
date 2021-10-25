@@ -1,0 +1,11 @@
+# Change Log
+
+All notable changes to this project will be documented in this file.
+See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+# 7.0.0 (2021-10-25)
+
+
+### Features
+
+* add jest-config-react-native-web [no issue] ([#520](https://github.com/ornikar/shared-configs/issues/520)) ([1f0e3c4](https://github.com/ornikar/shared-configs/commit/1f0e3c47d3cc24a0cf8241220ba9989c6d930980))

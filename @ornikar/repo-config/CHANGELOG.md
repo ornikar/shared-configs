@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.0.2](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@6.0.1...@ornikar/repo-config@6.0.2) (2021-10-25)
+
+
+### Bug Fixes
+
+* **deps:** update dependency husky to v7.0.4 ([#521](https://github.com/ornikar/shared-configs/issues/521)) ([0eac46f](https://github.com/ornikar/shared-configs/commit/0eac46f25705decdcc4459b64f311603bd9c9160))
+
+
+
+
+
 ## [6.0.1](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@6.0.0...@ornikar/repo-config@6.0.1) (2021-10-19)
 
 
