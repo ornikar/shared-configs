@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.1.0](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@6.0.2...@ornikar/repo-config@6.1.0) (2021-10-29)
+
+
+### Features
+
+* update commitlint monorepo (major) ([#523](https://github.com/ornikar/shared-configs/issues/523)) ([f36a143](https://github.com/ornikar/shared-configs/commit/f36a143bd6a688ee13945d8520d265c29cc702ab))
+
+
+
+
+
 ## [6.0.2](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@6.0.1...@ornikar/repo-config@6.0.2) (2021-10-25)
 
 
