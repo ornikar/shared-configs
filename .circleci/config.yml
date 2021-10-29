@@ -51,6 +51,7 @@ jobs:
                   - '@ornikar/jest-config/node_modules'
                   - '@ornikar/jest-config-react/node_modules'
                   - '@ornikar/jest-config-react-native-web/node_modules'
+                  - '@ornikar/jest-config-react-native/node_modules'
                   - '@ornikar/lerna-config/node_modules'
                   - '@ornikar/postcss-config/node_modules'
                   - '@ornikar/prettier-config/node_modules'
