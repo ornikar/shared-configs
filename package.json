@@ -28,7 +28,7 @@
     "@ornikar/eslint-config": "15.2.0",
     "eslint": "7.32.0",
     "lerna": "4.0.0",
-    "lint-staged": "11.2.4",
+    "lint-staged": "11.2.6",
     "prettier": "2.4.1"
   }
 }
