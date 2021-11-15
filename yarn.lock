@@ -3052,10 +3052,10 @@
   dependencies:
     "@octokit/openapi-types" "^5.3.0"
 
-"@ornikar/eslint-config@15.2.0":
-  version "15.2.0"
-  resolved "https://registry.yarnpkg.com/@ornikar/eslint-config/-/eslint-config-15.2.0.tgz#4e9afe064626d854f9e0660dc20b977811141371"
-  integrity sha512-WJ8fUm4jih5OPLbBgSvlA0GYist4DCtlNJ8heuM2NlBs5QnpjY3gqyTfVha+qFtyCXJ9y1RTyCtYUEkiYn1UxQ==
+"@ornikar/eslint-config@15.3.0":
+  version "15.3.0"
+  resolved "https://registry.yarnpkg.com/@ornikar/eslint-config/-/eslint-config-15.3.0.tgz#e2025e70e04506ce84dc8706dcc4f1aa6a6b1d67"
+  integrity sha512-E3w8juD2+2po8WwW6ywfG/JR3QmSqzcoVTOBRjTyl3C/KIHGod/lIex1+A3RPQJ8a+JoVPUNN98jGVCspIysmA==
   dependencies:
     eslint-config-airbnb-base "^14.2.1"
     eslint-config-prettier "^8.2.0"
@@ -3063,6 +3063,7 @@
     eslint-plugin-import "^2.22.1"
     eslint-plugin-jsx-a11y "^6.4.1"
     eslint-plugin-node "^11.1.0"
+    eslint-plugin-simple-import-sort "^7.0.0"
     eslint-plugin-unicorn "^37.0.0"
 
 "@pob/pretty-eslint-config@^1.0.1":
@@ -7426,6 +7427,11 @@ eslint-plugin-node@^11.1.0:
     minimatch "^3.0.4"
     resolve "^1.10.1"
     semver "^6.1.0"
+
+eslint-plugin-simple-import-sort@^7.0.0:
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-simple-import-sort/-/eslint-plugin-simple-import-sort-7.0.0.tgz#a1dad262f46d2184a90095a60c66fef74727f0f8"
+  integrity sha512-U3vEDB5zhYPNfxT5TYR7u01dboFZp+HNpnGhkDB2g/2E4wZ/g1Q9Ton8UwCLfRV9yAKyYqDh62oHOamvkFxsvw==
 
 eslint-plugin-unicorn@^37.0.0:
   version "37.0.1"
