@@ -16,8 +16,7 @@
   },
   "dependencies": {
     "chalk": "^4.0.0",
-    "mockdate": "^3.0.2",
-    "timezone-mock": "^1.0.5"
+    "mockdate": "^3.0.2"
   },
   "peerDependencies": {
     "jest": ">= 24.0.0"
