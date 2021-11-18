@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.0.1](https://github.com/ornikar/shared-configs/compare/@ornikar/storybook-config@3.0.0...@ornikar/storybook-config@3.0.1) (2021-11-18)
+
+
+### Bug Fixes
+
+* do not apply postcss addon if cra preset is present [no issue] ([#533](https://github.com/ornikar/shared-configs/issues/533)) ([ef9f324](https://github.com/ornikar/shared-configs/commit/ef9f324a77c822557389ae614de5de77607a9d41))
+
+
+
+
+
 # [3.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/storybook-config@2.1.2...@ornikar/storybook-config@3.0.0) (2021-06-08)
 
 
