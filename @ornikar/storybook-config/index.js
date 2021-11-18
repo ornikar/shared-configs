@@ -14,26 +14,27 @@ exports.createMainConfig = function createMainConfig({
     },
     stories: [`../${srcPath}/**/@(stories.ts?(x)|stories.ts?(x))`],
     addons: [
-      {
-        name: '@storybook/addon-postcss',
-        options: {
-          postcssLoaderOptions: {
-            implementation: postcssImplementation,
-            postcssOptions: {
-              config: path.resolve('./.storybook/postcss.config.js'),
+      // When cra preset is already installed, we should not have postcss addon
+      addons.includes('@storybook/preset-create-react-app')
+        ? null
+        : {
+            name: '@storybook/addon-postcss',
+            options: {
+              postcssLoaderOptions: {
+                implementation: postcssImplementation,
+                postcssOptions: {
+                  config: path.resolve('./.storybook/postcss.config.js'),
+                },
+              },
             },
           },
-        },
-      },
-
       {
         name: '@storybook/addon-essentials',
         options: {
           controls: enableControls,
         },
       },
-
       ...addons,
-    ],
+    ].filter(Boolean),
   };
 };
