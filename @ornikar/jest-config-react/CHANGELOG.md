@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.1.1](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@7.1.0...@ornikar/jest-config-react@7.1.1) (2021-11-18)
+
+**Note:** Version bump only for package @ornikar/jest-config-react
+
+
+
+
+
 # [7.1.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@7.0.7...@ornikar/jest-config-react@7.1.0) (2021-09-07)
 
 

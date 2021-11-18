@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config@5.5.0...@ornikar/jest-config@6.0.0) (2021-11-18)
+
+
+### Features
+
+* drop timezone-mock in favor of env variable [no issue] ([#534](https://github.com/ornikar/shared-configs/issues/534)) ([bf1ac61](https://github.com/ornikar/shared-configs/commit/bf1ac619aaf785fff2f3328a73934bcc74a64a6b))
+
+
+### BREAKING CHANGES
+
+* you should add TZ env variable `"test": "TZ='UTC' jest"` 
+
+
+
+
+
 # [5.5.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config@5.4.2...@ornikar/jest-config@5.5.0) (2021-07-29)
 
 
