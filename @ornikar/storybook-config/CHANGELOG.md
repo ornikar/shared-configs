@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.1.0](https://github.com/ornikar/shared-configs/compare/@ornikar/storybook-config@3.0.1...@ornikar/storybook-config@3.1.0) (2021-11-22)
+
+
+### Features
+
+* **storybook-config:** default layout fullscreen [no issue] ([#536](https://github.com/ornikar/shared-configs/issues/536)) ([cfe5f26](https://github.com/ornikar/shared-configs/commit/cfe5f2602502d776b886d93b56b8c4609092c7b5))
+
+
+
+
+
 ## [3.0.1](https://github.com/ornikar/shared-configs/compare/@ornikar/storybook-config@3.0.0...@ornikar/storybook-config@3.0.1) (2021-11-18)
 
 
