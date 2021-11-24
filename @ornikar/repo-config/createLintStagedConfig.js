@@ -35,7 +35,10 @@ module.exports = function createLintStagedConfig(options = {}) {
     },
     '!(package).json': ['prettier --write'],
     '*.{yml,yaml,md,html}': ['prettier --write'],
-    [`*.{${srcExtensions.join(',')}}`]: ['prettier --write', 'eslint --fix --quiet'],
+    [`*.{${srcExtensions.join(',')}}`]: (files) => [
+      `prettier --write ${files.join(' ')}`,
+      `eslint --fix --quiet ${files.length < 20 ? files.join(' ') : '.'}`,
+    ],
     [`{.storybook,${srcDirectories}}/**/*.css`]: ['prettier --parser css --write', 'stylelint --quiet --fix'],
   };
 };
