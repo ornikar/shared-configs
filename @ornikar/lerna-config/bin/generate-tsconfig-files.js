@@ -3,27 +3,36 @@
 'use strict';
 
 const fs = require('fs').promises;
+const path = require('path');
 const { getPackages } = require('..');
 
 (async () => {
   const lernaPackages = await getPackages();
 
+  const tsconfigFiles = [];
+  const tsconfigBuildFiles = [];
+
   await Promise.all(
     lernaPackages.map(async (pkg) => {
-      const packagePath = pkg.location;
+      const packagePath = path.relative(path.resolve('.'), pkg.location);
       const tsconfigPath = `${packagePath}/tsconfig.json`;
       const tsconfigBuildPath = `${packagePath}/tsconfig.build.json`;
 
+      // override is only available for private package, which is examples or apps
+      const tsconfigCurrentContent = pkg.private ? JSON.parse(await fs.readFile(tsconfigPath)) : {};
+
       const tsconfigContent = {
+        ...tsconfigCurrentContent,
         extends: '../../tsconfig.base.json',
         compilerOptions: {
           rootDirs: ['src'],
           baseUrl: './src',
+          ...tsconfigCurrentContent.compilerOptions,
           paths: {
             [pkg.name]: ['./index.ts'],
           },
         },
-        include: ['src', '../../typings'],
+        include: tsconfigCurrentContent.include || ['src', '../../typings'],
       };
 
       const tsconfigBuildContent = {
@@ -80,12 +89,29 @@ const { getPackages } = require('..');
         tsconfigBuildContent.compilerOptions.paths = {};
       }
 
+      tsconfigFiles.push(tsconfigPath);
+      if (!pkg.private) tsconfigBuildFiles.push(tsconfigBuildPath);
+
       await Promise.all([
         fs.writeFile(tsconfigPath, `${JSON.stringify(tsconfigContent, undefined, 2)}\n`),
-        fs.writeFile(tsconfigBuildPath, `${JSON.stringify(tsconfigBuildContent, undefined, 2)}\n`),
+        pkg.private
+          ? fs.unlink(tsconfigBuildPath).catch(() => {})
+          : fs.writeFile(tsconfigBuildPath, `${JSON.stringify(tsconfigBuildContent, undefined, 2)}\n`),
       ]);
     }),
   );
+
+  const [tsConfigContent, tsconfigBuildContent] = [tsconfigFiles, tsconfigBuildFiles].map((files) => ({
+    files: [],
+    references: files.map((filePath) => ({ path: filePath })),
+  }));
+
+  await Promise.all([
+    fs.writeFile('tsconfig.json', `${JSON.stringify(tsConfigContent, undefined, 2)}\n`),
+    tsconfigBuildFiles.length === 0
+      ? fs.unlink('tsconfig.build.json').catch(() => {})
+      : fs.writeFile('tsconfig.build.json', `${JSON.stringify(tsconfigBuildContent, undefined, 2)}\n`),
+  ]);
 })().catch((err) => {
   console.error(err);
   process.exit(1);
