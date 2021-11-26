@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.3.5](https://github.com/ornikar/shared-configs/compare/@ornikar/prettier-config@3.3.4...@ornikar/prettier-config@3.3.5) (2021-11-26)
+
+**Note:** Version bump only for package @ornikar/prettier-config
+
+
+
+
+
 ## [3.3.4](https://github.com/ornikar/shared-configs/compare/@ornikar/prettier-config@3.3.3...@ornikar/prettier-config@3.3.4) (2021-10-19)
 
 **Note:** Version bump only for package @ornikar/prettier-config

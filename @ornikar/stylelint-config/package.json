@@ -1,6 +1,6 @@
 {
   "name": "@ornikar/stylelint-config",
-  "version": "7.0.2",
+  "version": "7.0.3",
   "description": "stylelint config files",
   "repository": "ornikar/shared-configs",
   "main": "index.js",

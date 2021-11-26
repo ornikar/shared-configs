@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.2.0](https://github.com/ornikar/shared-configs/compare/@ornikar/storybook-config@3.1.0...@ornikar/storybook-config@3.2.0) (2021-11-26)
+
+
+### Features
+
+* **deps:** update dependency @chrp/typed-css-modules-loader to v0.7.0 ([#540](https://github.com/ornikar/shared-configs/issues/540)) ([40e7a89](https://github.com/ornikar/shared-configs/commit/40e7a891022407ced8f09f830aa04d4211562e21))
+
+
+
+
+
 # [3.1.0](https://github.com/ornikar/shared-configs/compare/@ornikar/storybook-config@3.0.1...@ornikar/storybook-config@3.1.0) (2021-11-22)
 
 
