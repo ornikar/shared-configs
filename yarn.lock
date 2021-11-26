@@ -1222,10 +1222,10 @@
   resolved "https://registry.yarnpkg.com/@bcoe/v8-coverage/-/v8-coverage-0.2.3.tgz#75a2e8b51cb758a7553d6804a5932d7aace75c39"
   integrity sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==
 
-"@chrp/typed-css-modules-loader@0.6.0":
-  version "0.6.0"
-  resolved "https://registry.yarnpkg.com/@chrp/typed-css-modules-loader/-/typed-css-modules-loader-0.6.0.tgz#ca955fef36b2af18ffa15588d2066bcd505c2699"
-  integrity sha512-3WZo+NwlZKFmnQqHGHm0oupUIuLWoYjx3X/trSaEZloQlbTukP8HiPUaN2NosWrdO2knRREOnTzWPIe0QbGZ5A==
+"@chrp/typed-css-modules-loader@0.7.0":
+  version "0.7.0"
+  resolved "https://registry.yarnpkg.com/@chrp/typed-css-modules-loader/-/typed-css-modules-loader-0.7.0.tgz#72cb728f6b6cf84ec0e004cbef5b3a161f89b37b"
+  integrity sha512-ki8QmPk6SrFDxT57GW8kUA3pcQXYkvaeEZlLVnBalysel1COgDDOpHK5nr/+MH0c3P2fpUeCq7irSk8MiwbChg==
   dependencies:
     loader-utils "^1.1.0"
 

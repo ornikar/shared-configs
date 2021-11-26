@@ -15,7 +15,7 @@
     "webpack": "^4.37.0"
   },
   "dependencies": {
-    "@chrp/typed-css-modules-loader": "0.6.0",
+    "@chrp/typed-css-modules-loader": "0.7.0",
     "@ornikar/webpack-config": "^2.3.1",
     "@storybook/addon-essentials": "^6.2.9",
     "svg-react-loader": "0.4.6"
