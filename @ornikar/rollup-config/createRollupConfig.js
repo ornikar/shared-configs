@@ -19,6 +19,7 @@ const browserOnlyExtensions = ['.css'];
 const createBuildsForPackage = (packagesDir, packageName, additionalPlugins = []) => {
   // eslint-disable-next-line global-require
   const pkg = require(path.resolve(`./${packagesDir}/${packageName}/package.json`));
+  if (pkg.private) return [];
   const external = configExternalDependencies({
     devDependencies: { ...rootPkg.devDependencies, ...pkg.devDependencies },
     dependencies: { ...rootPkg.dependencies, ...pkg.dependencies },
