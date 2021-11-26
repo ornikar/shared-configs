@@ -64,7 +64,7 @@ const { getPackages } = require('..');
         (pkg.private && pkg.dependencies && pkg.dependencies.react);
 
       if (hasReact) {
-        tsconfigContent.compilerOptions.jsx = 'preserve';
+        tsconfigContent.compilerOptions.jsx = 'react-jsx';
       }
 
       if (dependencies.length > 0) {
