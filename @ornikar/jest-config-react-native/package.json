@@ -23,7 +23,7 @@
     "lodash.mergewith": "4.6.2"
   },
   "devDependencies": {
-    "@testing-library/react-hooks": "7.0.1",
+    "@testing-library/react-hooks": "7.0.2",
     "@testing-library/react-native": "7.2.0",
     "jest-expo": "41.0.0",
     "react": "16.13.1"
