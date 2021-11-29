@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.3.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@7.2.0...@ornikar/jest-config-react@7.3.0) (2021-11-29)
+
+
+### Features
+
+* add waitFor in stories mock [no issue] ([#550](https://github.com/ornikar/shared-configs/issues/550)) ([9a4f254](https://github.com/ornikar/shared-configs/commit/9a4f25431cf556099b6c48dd52670937526c19b7))
+
+
+
+
+
 # [7.2.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@7.1.1...@ornikar/jest-config-react@7.2.0) (2021-11-29)
 
 
