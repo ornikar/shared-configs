@@ -2,7 +2,7 @@
 
 'use strict';
 
-const { render } = require('@testing-library/react-native');
+const { render, waitFor } = require('@testing-library/react-native');
 const React = require('react');
 
 const decorateStory = (storyFn, decorators) =>
@@ -51,7 +51,7 @@ exports.storiesOf = (groupName) => {
       const parameters = { ...localParameters, ...storyParameters };
       const context = { name: storyName, parameters };
       const { jest } = parameters;
-      const { ignore, ignoreDecorators, createBeforeAfterEachCallbacks } = jest || {};
+      const { ignore, ignoreDecorators, createBeforeAfterEachCallbacks, waitFor: waitForExpectation } = jest || {};
 
       if (ignore) {
         test.skip(storyName, () => {});
@@ -65,13 +65,14 @@ exports.storiesOf = (groupName) => {
           if (after) afterEach(after);
         }
 
-        it(storyName, () => {
+        it(storyName, async () => {
           const WrappingComponent = ignoreDecorators
             ? undefined
             : ({ children }) => decorateStory(() => children, [...localDecorators, ...globalDecorators])(context);
 
-          const component = render(React.createElement(WrappingComponent, { children: story(context) }));
-          expect(component.toJSON()).toMatchSnapshot();
+          const rtlApi = render(React.createElement(WrappingComponent, { children: story(context) }));
+          if (waitForExpectation) await waitFor(() => waitForExpectation(rtlApi, expect));
+          expect(rtlApi.toJSON()).toMatchSnapshot();
         });
       });
 
