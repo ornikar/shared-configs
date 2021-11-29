@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.0.6](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config-react@6.0.5...@ornikar/repo-config-react@6.0.6) (2021-11-29)
+
+
+### Bug Fixes
+
+* remove manual git add as lint-staged does it now [no issue] ([#546](https://github.com/ornikar/shared-configs/issues/546)) ([92ed60e](https://github.com/ornikar/shared-configs/commit/92ed60ee49710c09d15dba465e1ffbf7f1031979))
+
+
+
+
+
 ## [6.0.5](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config-react@6.0.4...@ornikar/repo-config-react@6.0.5) (2021-11-29)
 
 **Note:** Version bump only for package @ornikar/repo-config-react

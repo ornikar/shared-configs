@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.1.3](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@6.1.2...@ornikar/repo-config@6.1.3) (2021-11-29)
+
+
+### Bug Fixes
+
+* remove manual git add as lint-staged does it now [no issue] ([#546](https://github.com/ornikar/shared-configs/issues/546)) ([92ed60e](https://github.com/ornikar/shared-configs/commit/92ed60ee49710c09d15dba465e1ffbf7f1031979))
+
+
+
+
+
 ## [6.1.2](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@6.1.1...@ornikar/repo-config@6.1.2) (2021-11-29)
 
 
