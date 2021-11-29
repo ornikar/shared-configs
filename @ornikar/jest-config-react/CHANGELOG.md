@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.2.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@7.1.1...@ornikar/jest-config-react@7.2.0) (2021-11-29)
+
+
+### Features
+
+* **deps:** update dependency @testing-library/react to v12 ([#547](https://github.com/ornikar/shared-configs/issues/547)) ([31eefb7](https://github.com/ornikar/shared-configs/commit/31eefb74293eb36f304d65a396abd10a61589f29))
+* **deps:** update dependency @testing-library/react-hooks to v7.0.2 ([#548](https://github.com/ornikar/shared-configs/issues/548)) ([2dfb8c7](https://github.com/ornikar/shared-configs/commit/2dfb8c79b31ad4211cd2a41fc31c432b39b1de3b))
+
+
+
+
+
 ## [7.1.1](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@7.1.0...@ornikar/jest-config-react@7.1.1) (2021-11-18)
 
 **Note:** Version bump only for package @ornikar/jest-config-react

@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.1.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react-native@1.0.1...@ornikar/jest-config-react-native@1.1.0) (2021-11-29)
+
+
+### Features
+
+* **deps:** update dependency @testing-library/react-hooks to v7.0.2 ([#548](https://github.com/ornikar/shared-configs/issues/548)) ([2dfb8c7](https://github.com/ornikar/shared-configs/commit/2dfb8c79b31ad4211cd2a41fc31c432b39b1de3b))
+* **deps:** update dependency @testing-library/react-native to v8 ([#549](https://github.com/ornikar/shared-configs/issues/549)) ([eebf3ef](https://github.com/ornikar/shared-configs/commit/eebf3ef93d92b4729dd2e80358c98ed13d9ee0e8))
+
+
+
+
+
 ## [1.0.1](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react-native@1.0.0...@ornikar/jest-config-react-native@1.0.1) (2021-11-18)
 
 **Note:** Version bump only for package @ornikar/jest-config-react-native
