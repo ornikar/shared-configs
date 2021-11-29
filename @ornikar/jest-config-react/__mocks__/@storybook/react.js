@@ -2,7 +2,7 @@
 
 'use strict';
 
-const { act, render } = require('@testing-library/react');
+const { act, render, waitFor } = require('@testing-library/react');
 
 const wait = (amount = 0) => new Promise((resolve) => setTimeout(resolve, amount));
 
@@ -49,7 +49,7 @@ exports.storiesOf = (groupName) => {
       const parameters = { ...localParameters, ...storyParameters };
       const context = { name: storyName, parameters };
       const { jest } = parameters;
-      const { ignore, ignoreDecorators } = jest || {};
+      const { ignore, ignoreDecorators, createBeforeAfterEachCallbacks, waitFor: waitForExpectation } = jest || {};
 
       if (ignore) {
         test.skip(storyName, () => {});
@@ -57,6 +57,12 @@ exports.storiesOf = (groupName) => {
       }
 
       describe(groupName, () => {
+        if (createBeforeAfterEachCallbacks) {
+          const { before, after } = createBeforeAfterEachCallbacks();
+          if (before) beforeEach(before);
+          if (after) afterEach(after);
+        }
+
         it(storyName, async () => {
           const wrappingComponent = ignoreDecorators
             ? undefined
@@ -67,7 +73,7 @@ exports.storiesOf = (groupName) => {
             // https://www.apollographql.com/docs/react/development-testing/testing/#testing-final-state
             // delays until the next "tick" of the event loop, and allows time
             // for that Promise returned from MockedProvider to be fulfilled
-            await wait(0);
+            await (waitForExpectation ? waitFor(waitForExpectation) : wait(0));
             expect(asFragment()).toMatchSnapshot();
             unmount();
           });
