@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.1.2](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@6.1.1...@ornikar/repo-config@6.1.2) (2021-11-29)
+
+
+### Bug Fixes
+
+* **repo-config:** allow repo to have no tsconfig.build.json for prettier [no issue] ([#545](https://github.com/ornikar/shared-configs/issues/545)) ([218410d](https://github.com/ornikar/shared-configs/commit/218410df8b2014d8a9789f58f582a12caaaaceb3))
+
+
+
+
+
 ## [6.1.1](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@6.1.0...@ornikar/repo-config@6.1.1) (2021-11-18)
 
 **Note:** Version bump only for package @ornikar/repo-config

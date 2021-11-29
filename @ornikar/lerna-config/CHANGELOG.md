@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.2.1](https://github.com/ornikar/shared-configs/compare/@ornikar/lerna-config@3.2.0...@ornikar/lerna-config@3.2.1) (2021-11-29)
+
+
+### Bug Fixes
+
+* **lerna-config:** dont add paths in tsconfig for private packages [no issue] ([#544](https://github.com/ornikar/shared-configs/issues/544)) ([b11c2d5](https://github.com/ornikar/shared-configs/commit/b11c2d508549ec5183a2f60c4d2c9974621b6ec5))
+
+
+
+
+
 # [3.2.0](https://github.com/ornikar/shared-configs/compare/@ornikar/lerna-config@3.1.1...@ornikar/lerna-config@3.2.0) (2021-11-29)
 
 
