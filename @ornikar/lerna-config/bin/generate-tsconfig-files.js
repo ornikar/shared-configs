@@ -28,12 +28,16 @@ const { getPackages } = require('..');
           rootDirs: ['src'],
           baseUrl: './src',
           ...tsconfigCurrentContent.compilerOptions,
-          paths: {
-            [pkg.name]: ['./index.ts'],
-          },
         },
         include: tsconfigCurrentContent.include || ['src', '../../typings'],
       };
+
+      if (!pkg.private) {
+        // react-scripts doesn't like paths
+        tsconfigContent.compilerOptions.paths = {
+          [pkg.name]: ['./index.ts'],
+        };
+      }
 
       const tsconfigBuildContent = {
         extends: './tsconfig.json',
@@ -77,11 +81,13 @@ const { getPackages } = require('..');
       }
 
       if (dependencies.length > 0) {
-        dependencies.forEach((pkgDep) => {
-          const depPath = `../../../${pkgDep.name}/src`;
-          tsconfigContent.compilerOptions.paths[pkgDep.name] = [`${depPath}/index.ts`];
-          tsconfigContent.compilerOptions.rootDirs.push(depPath);
-        });
+        if (!pkg.private) {
+          dependencies.forEach((pkgDep) => {
+            const depPath = `../../../${pkgDep.name}/src`;
+            tsconfigContent.compilerOptions.paths[pkgDep.name] = [`${depPath}/index.ts`];
+            tsconfigContent.compilerOptions.rootDirs.push(depPath);
+          });
+        }
         tsconfigBuildContent.references = dependencies.map((pkgDep) => ({
           path: `../../${pkgDep.name}/tsconfig.build.json`,
         }));
