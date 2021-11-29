@@ -26,12 +26,10 @@ module.exports = function createLintStagedConfig(options = {}) {
         'yarn-deduplicate',
         'yarn --prefer-offline',
         packagejsonFilenames.length === 0 ? undefined : `prettier --write ${packagejsonFilenames.join(' ')}`,
-        'git add yarn.lock',
         isLernaRepo && require.resolve('@ornikar/lerna-config/bin/generate-eslintrc-files.js'),
         shouldGenerateTsconfigInLernaRepo && require.resolve('@ornikar/lerna-config/bin/generate-tsconfig-files.js'),
         shouldGenerateTsconfigInLernaRepo &&
           'prettier --write --no-error-on-unmatched-pattern **/tsconfig.json **/tsconfig.build.json',
-        shouldGenerateTsconfigInLernaRepo && 'git add **/tsconfig.json **/tsconfig.build.json',
       ].filter(Boolean);
     },
     '!(package).json': ['prettier --write'],
