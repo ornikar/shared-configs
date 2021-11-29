@@ -69,11 +69,12 @@ exports.storiesOf = (groupName) => {
             : ({ children }) => decorateStory(() => children, [...localDecorators, ...globalDecorators])(context);
 
           await act(async () => {
-            const { unmount, asFragment } = render(story(context), { wrapper: wrappingComponent });
+            const rtlApi = render(story(context), { wrapper: wrappingComponent });
+            const { unmount, asFragment } = rtlApi;
             // https://www.apollographql.com/docs/react/development-testing/testing/#testing-final-state
             // delays until the next "tick" of the event loop, and allows time
             // for that Promise returned from MockedProvider to be fulfilled
-            await (waitForExpectation ? waitFor(waitForExpectation) : wait(0));
+            await (waitForExpectation ? waitFor(() => waitForExpectation(rtlApi, expect)) : wait(0));
             expect(asFragment()).toMatchSnapshot();
             unmount();
           });

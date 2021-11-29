@@ -70,9 +70,9 @@ exports.storiesOf = (groupName) => {
             ? undefined
             : ({ children }) => decorateStory(() => children, [...localDecorators, ...globalDecorators])(context);
 
-          const component = render(React.createElement(WrappingComponent, { children: story(context) }));
-          if (waitForExpectation) await waitFor(waitForExpectation);
-          expect(component.toJSON()).toMatchSnapshot();
+          const rtlApi = render(React.createElement(WrappingComponent, { children: story(context) }));
+          if (waitForExpectation) await waitFor(() => waitForExpectation(rtlApi, expect));
+          expect(rtlApi.toJSON()).toMatchSnapshot();
         });
       });
 
