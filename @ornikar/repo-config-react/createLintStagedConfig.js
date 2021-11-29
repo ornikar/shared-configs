@@ -12,15 +12,12 @@ module.exports = function createLintStagedConfig(options = {}) {
   const srcDirectories = createBaseLintStagedConfig.getSrcDirectories();
 
   Object.assign(config, {
-    '*.svg': ['svgo --multipass --config=node_modules/@ornikar/repo-config-react/.svgo.yml', 'git add'],
+    '*.svg': ['svgo --multipass --config=node_modules/@ornikar/repo-config-react/.svgo.yml'],
   });
 
   if (pkg.devDependencies.typescript) {
     Object.assign(config, {
-      [`${srcDirectories}/**/*.module.{css,css.d.ts}`]: (filenames) => [
-        "tcm -s -p '**/*.module.css'",
-        "git add '**/**.d.ts'",
-      ],
+      [`${srcDirectories}/**/*.module.{css,css.d.ts}`]: (filenames) => ["tcm -s -p '**/*.module.css'"],
     });
   }
 
