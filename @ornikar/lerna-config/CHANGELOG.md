@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.2.0](https://github.com/ornikar/shared-configs/compare/@ornikar/lerna-config@3.1.1...@ornikar/lerna-config@3.2.0) (2021-11-29)
+
+
+### Features
+
+* **lerna-config:** support monorepo with apps or examples [no issue] ([#542](https://github.com/ornikar/shared-configs/issues/542)) ([540afc4](https://github.com/ornikar/shared-configs/commit/540afc4c97e5d76dd915531be835f30ad82519ba))
+* **lerna-config:** support react 17 [no issue] ([#541](https://github.com/ornikar/shared-configs/issues/541)) ([1b7eea4](https://github.com/ornikar/shared-configs/commit/1b7eea41f5cfb5219dea12d5abcfbfcdc3a82376))
+
+
+
+
+
 ## [3.1.1](https://github.com/ornikar/shared-configs/compare/@ornikar/lerna-config@3.1.0...@ornikar/lerna-config@3.1.1) (2021-09-07)
 
 

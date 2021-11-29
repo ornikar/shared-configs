@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.0.6](https://github.com/ornikar/shared-configs/compare/@ornikar/rollup-config@3.0.5...@ornikar/rollup-config@3.0.6) (2021-11-29)
+
+
+### Bug Fixes
+
+* **rollup-config:** do not build private packages [no issue] ([#543](https://github.com/ornikar/shared-configs/issues/543)) ([a71714c](https://github.com/ornikar/shared-configs/commit/a71714c2b52c617cce48040ab49cdc2d755ac727))
+
+
+
+
+
 ## [3.0.5](https://github.com/ornikar/shared-configs/compare/@ornikar/rollup-config@3.0.4...@ornikar/rollup-config@3.0.5) (2021-11-26)
 
 **Note:** Version bump only for package @ornikar/rollup-config
