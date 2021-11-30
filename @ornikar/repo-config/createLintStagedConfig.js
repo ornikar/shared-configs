@@ -10,7 +10,11 @@ const hasTypescript = Boolean(pkg.devDependencies && pkg.devDependencies.typescr
 const shouldGenerateTsconfigInLernaRepo = isLernaRepo && hasTypescript;
 
 const getSrcDirectories = (srcDirectoryName = 'src') =>
-  workspaces ? `{${workspaces.join(',')}}${srcDirectoryName && `/${srcDirectoryName}`}` : srcDirectoryName;
+  workspaces
+    ? `${workspaces.length === 1 ? workspaces[0] : `{${workspaces.join(',')}}`}${
+        srcDirectoryName && `/${srcDirectoryName}`
+      }`
+    : srcDirectoryName;
 
 module.exports = function createLintStagedConfig(options = {}) {
   const srcExtensions = options.srcExtensions || ['js', 'mjs', 'ts'];
