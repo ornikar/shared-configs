@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.1.4](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@6.1.3...@ornikar/repo-config@6.1.4) (2021-11-30)
+
+
+### Bug Fixes
+
+* **repo-config:** fix lint-staged warnings [no issue] ([#552](https://github.com/ornikar/shared-configs/issues/552)) ([fae3636](https://github.com/ornikar/shared-configs/commit/fae36365d736001b45db217c38f302b9d6ba5370))
+
+
+
+
+
 ## [6.1.3](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@6.1.2...@ornikar/repo-config@6.1.3) (2021-11-29)
 
 
