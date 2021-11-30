@@ -14,7 +14,7 @@ parameters:
 # -------------------------------------------------------------------------------------------------
 
 orbs:
-  frontend: ornikar/frontend-orb@4.1.0
+  frontend: ornikar/frontend-orb@4.3.1
 
 # -------------------------------------------------------------------------------------------------
 # COMMANDS
@@ -101,9 +101,11 @@ workflows:
           filters:
             branches:
               only: master
-      - frontend/lerna-publish:
+      - frontend/monorepo-release:
           cache-version: << pipeline.parameters.cache-version >>
           context: npm-publish
+          npm-publish: true
+          no-private: true
           requires:
             - dependencies
             - frontend/checks
