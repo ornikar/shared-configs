@@ -15,7 +15,7 @@
     "ornikar-test-coverage": "./bin/test-coverage.sh"
   },
   "dependencies": {
-    "chalk": "^4.0.0",
+    "chalk": "^5.0.0",
     "mockdate": "^3.0.2"
   },
   "peerDependencies": {
