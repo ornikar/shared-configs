@@ -4,17 +4,17 @@
 
 const fs = require('fs').promises;
 const path = require('path');
-const { getPackages } = require('..');
+const { getGraphPackages } = require('..');
 
 (async () => {
-  const lernaPackages = await getPackages();
+  const { packages, packageLocations } = await getGraphPackages();
 
   const tsconfigFiles = [];
   const tsconfigBuildFiles = [];
 
   await Promise.all(
-    lernaPackages.map(async (pkg) => {
-      const packagePath = path.relative(path.resolve('.'), pkg.location);
+    packages.map(async (pkg, index) => {
+      const packagePath = path.relative(path.resolve('.'), packageLocations[index]);
       const tsconfigPath = `${packagePath}/tsconfig.json`;
       const tsconfigBuildPath = `${packagePath}/tsconfig.build.json`;
 
@@ -63,7 +63,7 @@ const { getPackages } = require('..');
         ],
       };
 
-      const dependencies = lernaPackages.filter((lernaPkg) => {
+      const dependencies = packages.filter((lernaPkg) => {
         if (lernaPkg.name === pkg.name) return false;
         return (
           (pkg.dependencies && pkg.dependencies[lernaPkg.name]) ||
