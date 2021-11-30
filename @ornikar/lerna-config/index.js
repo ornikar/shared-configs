@@ -2,11 +2,16 @@
 
 const fs = require('fs').promises;
 // eslint-disable-next-line import/no-extraneous-dependencies
+let PackageGraph = require('@lerna/package-graph');
+// eslint-disable-next-line import/no-extraneous-dependencies
 let LernaProject = require('@lerna/project');
 
 // lerna 4 support
 if (LernaProject.Project) {
   LernaProject = LernaProject.Project;
+}
+if (PackageGraph.PackageGraph) {
+  PackageGraph = PackageGraph.PackageGraph;
 }
 
 /**
@@ -24,6 +29,28 @@ exports.createLernaProject = function createLernaProject(cwd = process.cwd()) {
  */
 exports.getPackages = function getPackages(lernaProject = exports.createLernaProject()) {
   return lernaProject.getPackages();
+};
+
+exports.getGraphPackages = async function getGraphPackages(lernaProject = exports.createLernaProject()) {
+  const nodes = await exports.getPackages(lernaProject);
+  const graph = new PackageGraph(nodes);
+
+  const packages = [];
+  const packageLocations = [];
+
+  while (graph.size > 0) {
+    // pick the current set of nodes _without_ localDependencies (aka it is a "source" node)
+    const batch = [...graph.values()].filter((node) => node.localDependencies.size === 0);
+
+    // batches are composed of Package instances, not PackageGraphNodes
+    packages.push(...batch.map((node) => node.pkg));
+    packageLocations.push(...batch.map((node) => node.location));
+
+    // pruning the graph changes the node.localDependencies.size test
+    graph.prune(...batch);
+  }
+
+  return { packages, packageLocations };
 };
 
 exports.readJsonFile = async function readJsonFile(jsonFilePath, defaultValue) {
