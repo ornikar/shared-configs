@@ -1,15 +1,12 @@
 /* eslint-disable no-console */
+/* eslint-env jest */
 
 'use strict';
-
-/* global jasmine */
 
 // https://github.com/facebook/react/blob/master/scripts/jest/setupTests.js
 
 const util = require('util');
 const chalk = require('chalk');
-
-const env = jasmine.getEnv();
 
 // Deprecated lifecycle methods are forbidden in our eslint config. This means any related warning is due to a dependency and can be ignored in tests.
 const deprecatedReactLifeCycleMethods = [
@@ -40,11 +37,11 @@ const deprecatedReactLifeCycleMethods = [
 
   console[methodName] = newMethod;
 
-  env.beforeEach(() => {
+  beforeEach(() => {
     unexpectedConsoleCallStacks.length = 0;
   });
 
-  env.afterEach(() => {
+  afterEach(() => {
     if (console[methodName] !== newMethod) {
       throw new Error(`Test did not tear down console.${methodName} mock properly.`);
     }
