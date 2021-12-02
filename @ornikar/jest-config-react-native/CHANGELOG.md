@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.4.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react-native@1.3.0...@ornikar/jest-config-react-native@1.4.0) (2021-12-02)
+
+
+### Features
+
+* **deps:** update react monorepo to v17 (major) ([#571](https://github.com/ornikar/shared-configs/issues/571)) ([b0aa0b8](https://github.com/ornikar/shared-configs/commit/b0aa0b8138978d6722c8a5ff5374d200f4cdd099))
+
+
+
+
+
 # [1.3.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react-native@1.2.0...@ornikar/jest-config-react-native@1.3.0) (2021-12-02)
 
 
