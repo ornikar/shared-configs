@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.3.2](https://github.com/ornikar/shared-configs/compare/@ornikar/webpack-config@2.3.1...@ornikar/webpack-config@2.3.2) (2021-12-02)
+
+
+### Bug Fixes
+
+* **webpack-config:** remove throw when mainFields already defined as its often the case [no issue] ([#563](https://github.com/ornikar/shared-configs/issues/563)) ([a5debf0](https://github.com/ornikar/shared-configs/commit/a5debf07b5164521a7c8deb398a6aaf93b4f5449))
+
+
+
+
+
 ## [2.3.1](https://github.com/ornikar/shared-configs/compare/@ornikar/webpack-config@2.3.0...@ornikar/webpack-config@2.3.1) (2021-05-04)
 
 **Note:** Version bump only for package @ornikar/webpack-config

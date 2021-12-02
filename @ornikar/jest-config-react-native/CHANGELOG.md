@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.3.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react-native@1.2.0...@ornikar/jest-config-react-native@1.3.0) (2021-12-02)
+
+
+### Features
+
+* **deps:** update dependency jest-expo to v43 ([#565](https://github.com/ornikar/shared-configs/issues/565)) ([09ba17e](https://github.com/ornikar/shared-configs/commit/09ba17eca1dfecda271d772e0d3d938e080fe0c1))
+
+
+
+
+
 # [1.2.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react-native@1.1.0...@ornikar/jest-config-react-native@1.2.0) (2021-11-29)
 
 
