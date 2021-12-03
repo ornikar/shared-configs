@@ -27,6 +27,7 @@ module.exports = function createLintStagedConfig(options = {}) {
       const packagejsonFilenames = filenames.filter((filename) => filename.endsWith('.json'));
       return [
         'yarn --prefer-offline',
+        'yarn-deduplicate -s fewer',
         'yarn-deduplicate',
         'yarn --prefer-offline',
         packagejsonFilenames.length === 0 ? undefined : `prettier --write ${packagejsonFilenames.join(' ')}`,
