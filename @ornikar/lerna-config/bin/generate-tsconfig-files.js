@@ -57,9 +57,12 @@ const { getGraphPackages } = require('..');
           '**/__tests__',
           '**/*.test.ts',
           '**/*.test.tsx',
+          '**/*.stories.ts',
+          '**/*.stories.tsx',
           '**/stories.ts',
           '**/stories.tsx',
           '**/stories/**',
+          '**/stories-list.ts',
         ],
       };
 
