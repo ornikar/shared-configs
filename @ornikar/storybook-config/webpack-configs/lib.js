@@ -14,6 +14,6 @@ module.exports = function applyOrnikarStorybookLibWebpackConfig(config, packages
     .forEach((packageName) => {
       const basePath = path.resolve(`./${packagesDir}/${packageName}/src/index`);
       const isTs = fs.existsSync(path.resolve(`${basePath}.ts`));
-      config.resolve.alias[`@ornikar/${packageName}`] = path.resolve(`${basePath}.${isTs ? 'ts' : 'js'}`);
+      config.resolve.alias[`^@ornikar/${packageName}$`] = path.resolve(`${basePath}.${isTs ? 'ts' : 'js'}`);
     });
 };
