@@ -22,8 +22,8 @@ const { getGraphPackages } = require('..');
       const tsconfigCurrentContent = pkg.private ? JSON.parse(await fs.readFile(tsconfigPath)) : {};
 
       const tsconfigContent = {
-        ...tsconfigCurrentContent,
         extends: '../../tsconfig.base.json',
+        ...tsconfigCurrentContent,
         compilerOptions: {
           rootDirs: ['src'],
           baseUrl: './src',
