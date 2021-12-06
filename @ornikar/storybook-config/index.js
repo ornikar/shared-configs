@@ -12,7 +12,7 @@ exports.createMainConfig = function createMainConfig({
     typescript: {
       check: false,
     },
-    stories: [`../${srcPath}/**/@(stories.ts?(x)|stories.ts?(x))`],
+    stories: [`../${srcPath}/**/@(stories.ts?(x)|*.stories.ts?(x))`],
     addons: [
       // When cra preset is already installed, we should not have postcss addon
       addons.includes('@storybook/preset-create-react-app')
