@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.2.5](https://github.com/ornikar/shared-configs/compare/@ornikar/lerna-config@3.2.4...@ornikar/lerna-config@3.2.5) (2021-12-06)
+
+
+### Bug Fixes
+
+* **lerna-config:** match with rollup-config to determine when to build with rollup, using package.private [no issue] ([#580](https://github.com/ornikar/shared-configs/issues/580)) ([c0ca8fc](https://github.com/ornikar/shared-configs/commit/c0ca8fcf0e0e1fc7844762682ba5cedf3cc2bc33))
+
+
+
+
+
 ## [3.2.4](https://github.com/ornikar/shared-configs/compare/@ornikar/lerna-config@3.2.3...@ornikar/lerna-config@3.2.4) (2021-12-06)
 
 
