@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.2.3](https://github.com/ornikar/shared-configs/compare/@ornikar/lerna-config@3.2.2...@ornikar/lerna-config@3.2.3) (2021-12-06)
+
+
+### Bug Fixes
+
+* **lerna-config:** add missing stories files in tsconfig.build.json [no issue] ([#574](https://github.com/ornikar/shared-configs/issues/574)) ([48c98e4](https://github.com/ornikar/shared-configs/commit/48c98e4d3c2979231291777ac2ae3c16f30b178d))
+* **lerna-config:** tsconfig allow 'react-native', 'react-jsx', 'preserve' and go back to 'preserve' by default MB2C-102 ([#576](https://github.com/ornikar/shared-configs/issues/576)) ([2961280](https://github.com/ornikar/shared-configs/commit/29612805805a84536ade3b9da79423c2cddf1aef))
+
+
+
+
+
 ## [3.2.2](https://github.com/ornikar/shared-configs/compare/@ornikar/lerna-config@3.2.1...@ornikar/lerna-config@3.2.2) (2021-11-30)
 
 

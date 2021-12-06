@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.1.5](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@6.1.4...@ornikar/repo-config@6.1.5) (2021-12-06)
+
+
+### Bug Fixes
+
+* **repo-config:** run yarn dedupe fewer, like renovate does [no issue] ([#573](https://github.com/ornikar/shared-configs/issues/573)) ([efc6070](https://github.com/ornikar/shared-configs/commit/efc607007792fa8abc5b55a87cd2305bf019dd47))
+
+
+
+
+
 ## [6.1.4](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@6.1.3...@ornikar/repo-config@6.1.4) (2021-11-30)
 
 
