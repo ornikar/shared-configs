@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.2.3](https://github.com/ornikar/shared-configs/compare/@ornikar/storybook-config@3.2.2...@ornikar/storybook-config@3.2.3) (2021-12-06)
+
+
+### Bug Fixes
+
+* **storybook-config:** move addon-essentials to peer dep to avoid duplicates [no issue] ([#572](https://github.com/ornikar/shared-configs/issues/572)) ([1436686](https://github.com/ornikar/shared-configs/commit/1436686e1419a09707a3bf2e2ba407b1d0224da1))
+
+
+
+
+
 ## [3.2.2](https://github.com/ornikar/shared-configs/compare/@ornikar/storybook-config@3.2.1...@ornikar/storybook-config@3.2.2) (2021-12-06)
 
 

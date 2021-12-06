@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.2.4](https://github.com/ornikar/shared-configs/compare/@ornikar/lerna-config@3.2.3...@ornikar/lerna-config@3.2.4) (2021-12-06)
+
+
+### Bug Fixes
+
+* **lerna-config:** allow apps and examples to extends from something else [no issue] ([#578](https://github.com/ornikar/shared-configs/issues/578)) ([cd71e75](https://github.com/ornikar/shared-configs/commit/cd71e7516372d40c894365e6ec64beaf5f7c3d18))
+
+
+
+
+
 ## [3.2.3](https://github.com/ornikar/shared-configs/compare/@ornikar/lerna-config@3.2.2...@ornikar/lerna-config@3.2.3) (2021-12-06)
 
 

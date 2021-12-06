@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.0.4](https://github.com/ornikar/shared-configs/compare/@ornikar/stylelint-config@7.0.3...@ornikar/stylelint-config@7.0.4) (2021-12-06)
+
+**Note:** Version bump only for package @ornikar/stylelint-config
+
+
+
+
+
 ## [7.0.3](https://github.com/ornikar/shared-configs/compare/@ornikar/stylelint-config@7.0.2...@ornikar/stylelint-config@7.0.3) (2021-11-26)
 
 **Note:** Version bump only for package @ornikar/stylelint-config
