@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.3.0](https://github.com/ornikar/shared-configs/compare/@ornikar/storybook-config@3.2.3...@ornikar/storybook-config@3.3.0) (2021-12-06)
+
+
+### Features
+
+* **storybook-config:** add *.stories.{ts,tsx} [no issue] ([#581](https://github.com/ornikar/shared-configs/issues/581)) ([eb1189a](https://github.com/ornikar/shared-configs/commit/eb1189aa1a4f9734ae86777c3cdc866b992ad793))
+
+
+
+
+
 ## [3.2.3](https://github.com/ornikar/shared-configs/compare/@ornikar/storybook-config@3.2.2...@ornikar/storybook-config@3.2.3) (2021-12-06)
 
 
