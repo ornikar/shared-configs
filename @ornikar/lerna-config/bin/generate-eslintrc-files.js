@@ -111,7 +111,7 @@ const generateAndWritePackageConfig = async (configPath, prettierOptions, { pack
       ]),
     ),
     ...lernaPackages.map(async (pkg) => {
-      if (!pkg.get('main')) return;
+      if (pkg.private) return;
       const packagePath = path.relative(rootPath, pkg.location);
       const eslintSrcConfigPath = useRollupToBuild
         ? `${packagePath}/src/.eslintrc.json`
