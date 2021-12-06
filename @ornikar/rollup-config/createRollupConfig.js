@@ -6,6 +6,7 @@ const fs = require('fs');
 const path = require('path');
 const { default: babel } = require('@rollup/plugin-babel');
 const { default: resolve } = require('@rollup/plugin-node-resolve');
+const replace = require('@rollup/plugin-replace');
 const configExternalDependencies = require('rollup-config-external-dependencies');
 const postcss = require('rollup-plugin-postcss');
 const ignoreImport = require('./rollup-plugin-ignore-browser-only-imports');
@@ -29,9 +30,8 @@ const createBuildsForPackage = (packagesDir, packageName, additionalPlugins = []
   const distPath = `${packagesDir}/${packageName}/dist`;
   const inputBase = `./${packagesDir}/${packageName}/src/index`;
 
-  const createBuild = (target, version, formats, production) => {
-    const devSuffix = production ? '' : '-dev';
-    const exportCss = target === 'browser' && version === 'all' && production;
+  const createBuild = (target, version, formats, targetExtension) => {
+    const exportCss = target === 'browser' && version === 'all';
     const preferConst = !(target === 'browser' && version !== 'modern');
 
     const inputExt = extensions.find((ext) => fs.existsSync(path.resolve(`${inputBase}${ext}`)));
@@ -41,7 +41,7 @@ const createBuildsForPackage = (packagesDir, packageName, additionalPlugins = []
     return {
       input: `${inputBase}${inputExt}`,
       output: formats.map((format) => ({
-        file: `${distPath}/index-${target}-${version}${devSuffix}.${format}.js`,
+        file: `${distPath}/index-${target}-${version}.${format}.js`,
         format,
         sourcemap: true,
         exports: 'named',
@@ -122,19 +122,15 @@ const createBuildsForPackage = (packagesDir, packageName, additionalPlugins = []
                       value: target,
                     },
                   },
-                  {
-                    identifierName: '__DEV__',
-                    replacement: {
-                      type: 'booleanLiteral',
-                      value: !production,
-                    },
-                  },
                 ],
               },
             ],
             require.resolve('babel-plugin-minify-dead-code-elimination'),
             require.resolve('babel-plugin-discard-module-references'),
           ].filter(Boolean),
+        }),
+        replace({
+          __DEV__: 'process.env.NODE_ENV !== "production"',
         }),
         resolve({
           extensions,
@@ -151,12 +147,7 @@ const createBuildsForPackage = (packagesDir, packageName, additionalPlugins = []
     };
   };
 
-  const createBuilds = (target, version, formats) => [
-    createBuild(target, version, formats, true),
-    createBuild(target, version, formats, false),
-  ];
-
-  return [...createBuilds('node', '12.13', ['cjs']), ...createBuilds('browser', 'all', ['es'])];
+  return [createBuild('node', '12.13', ['cjs']), createBuild('browser', 'all', ['es'])];
 };
 
 module.exports = (packagesDir = '@ornikar') => {
