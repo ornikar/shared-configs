@@ -2334,22 +2334,6 @@
     eslint-plugin-simple-import-sort "^7.0.0"
     eslint-plugin-unicorn "^37.0.0"
 
-"@ornikar/jest-config-react@^7.3.0":
-  version "7.3.0"
-  resolved "https://registry.yarnpkg.com/@ornikar/jest-config-react/-/jest-config-react-7.3.0.tgz#af3cbc9304e016f346abf0aeb8f5f1baf028618a"
-  integrity sha512-4OKlynmleSa9OfKyEiW3anR6zeBGUEWcWmIfEv6iTrV7D0jknTdjGQXU12XOQF6THPjhtTHhTwAy3deHYUR7+A==
-  dependencies:
-    "@ornikar/jest-config" "^6.0.0"
-    identity-obj-proxy "^3.0.0"
-
-"@ornikar/jest-config@^6.0.0":
-  version "6.0.0"
-  resolved "https://registry.yarnpkg.com/@ornikar/jest-config/-/jest-config-6.0.0.tgz#a32afc7a604774034bb7553dd5f106646d90485b"
-  integrity sha512-f9SqkrqLTreQeFAF+9xmM8YuDfTSbCx20iV1vc52VyBLK6Cmz0ox9q23criy2EvA8a2+RDP0FUDZ9wO05CdcIA==
-  dependencies:
-    chalk "^4.0.0"
-    mockdate "^3.0.2"
-
 "@pob/pretty-eslint-config@^1.0.1":
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/@pob/pretty-eslint-config/-/pretty-eslint-config-1.0.1.tgz#00c62ff52170098ee125a5d8574fa0c70c4d974e"
@@ -9945,10 +9929,10 @@ prelude-ls@~1.1.2:
   resolved "https://registry.yarnpkg.com/prelude-ls/-/prelude-ls-1.1.2.tgz#21932a549f5e52ffd9a827f570e04be62a97da54"
   integrity sha1-IZMqVJ9eUv/ZqCf1cOBL5iqX2lQ=
 
-prettier@2.5.0, prettier@^2.1.2:
-  version "2.5.0"
-  resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.5.0.tgz#a6370e2d4594e093270419d9cc47f7670488f893"
-  integrity sha512-FM/zAKgWTxj40rH03VxzIPdXmj39SwSjwG0heUcNFwI+EMZJnY93yAiKXM3dObIKAM5TA88werc8T/EwhB45eg==
+prettier@2.5.1, prettier@^2.1.2:
+  version "2.5.1"
+  resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.5.1.tgz#fff75fa9d519c54cf0fce328c1017d94546bc56a"
+  integrity sha512-vBZcPRUR5MZJwoyi3ZoyQlc1rXeEck8KgeC9AwwOn+exuxLxq5toTRDTSaVrXHxelDMHy9zlicw8u66yxoSUFg==
 
 pretty-format@^26.6.2:
   version "26.6.2"
