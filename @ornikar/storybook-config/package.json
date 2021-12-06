@@ -12,12 +12,15 @@
     "access": "public"
   },
   "peerDependencies": {
-    "webpack": "^4.37.0"
+    "webpack": "^4.37.0",
+    "@storybook/addon-essentials": "^6.2.9"
   },
   "dependencies": {
     "@chrp/typed-css-modules-loader": "0.7.0",
     "@ornikar/webpack-config": "^2.3.2",
-    "@storybook/addon-essentials": "^6.2.9",
     "svg-react-loader": "0.4.6"
+  },
+  "devDependencies": {
+    "webpack": "4.37.0"
   }
 }
