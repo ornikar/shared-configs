@@ -141,7 +141,7 @@
           "masterIssueApproval": true
         },
         {
-          "groupName": "Eslint Ornikar Shared Configs",
+          "groupName": "Ornikar Eslint Configs",
           "matchPackageNames": [
             "@ornikar/eslint-config",
             "@ornikar/eslint-config-babel",
