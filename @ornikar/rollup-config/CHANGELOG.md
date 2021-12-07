@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.1.0](https://github.com/ornikar/shared-configs/compare/@ornikar/rollup-config@4.0.0...@ornikar/rollup-config@4.1.0) (2021-12-07)
+
+
+### Features
+
+* **rollup-config:** react-native builds [no issue] ([#588](https://github.com/ornikar/shared-configs/issues/588)) ([f31c9c1](https://github.com/ornikar/shared-configs/commit/f31c9c199b898768895c13e15c90474479cc74df))
+* **rollup-config:** support multiple entries [no issue] ([#590](https://github.com/ornikar/shared-configs/issues/590)) ([6f63668](https://github.com/ornikar/shared-configs/commit/6f63668dcbe9c22d330696205dcf6ff7439d2ffb))
+
+
+
+
+
 # [4.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/rollup-config@3.0.6...@ornikar/rollup-config@4.0.0) (2021-12-07)
 
 
