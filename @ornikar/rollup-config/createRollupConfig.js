@@ -20,7 +20,12 @@ const browserOnlyExtensions = ['.css'];
 const createBuildsForPackage = (packagesDir, packageName, additionalPlugins = []) => {
   // eslint-disable-next-line global-require
   const pkg = require(path.resolve(`./${packagesDir}/${packageName}/package.json`));
-  if (pkg.private) return [];
+  if (pkg.private || !pkg.main) return [];
+
+  if (!pkg.exports) {
+    throw new Error(`Please configure "exports" field in "${packagesDir}/${packageName}"`);
+  }
+
   const external = configExternalDependencies({
     devDependencies: { ...rootPkg.devDependencies, ...pkg.devDependencies },
     dependencies: { ...rootPkg.dependencies, ...pkg.dependencies },
@@ -30,8 +35,7 @@ const createBuildsForPackage = (packagesDir, packageName, additionalPlugins = []
   const distPath = `${packagesDir}/${packageName}/dist`;
   const inputBase = `./${packagesDir}/${packageName}/src/index`;
 
-  const createBuild = (target, version, formats, targetExtension) => {
-    const exportCss = target === 'browser' && version === 'all';
+  const createBuild = (target, version, formats, { exportCss, targetExtension } = {}) => {
     const preferConst = !(target === 'browser' && version !== 'modern');
 
     const inputExt = extensions.find((ext) => fs.existsSync(path.resolve(`${inputBase}${ext}`)));
@@ -41,7 +45,7 @@ const createBuildsForPackage = (packagesDir, packageName, additionalPlugins = []
     return {
       input: `${inputBase}${inputExt}`,
       output: formats.map((format) => ({
-        file: `${distPath}/index-${target}-${version}.${format}.js`,
+        file: `${distPath}/index-${target}-${version}.${format}${targetExtension ? `.${targetExtension}` : ''}.js`,
         format,
         sourcemap: true,
         exports: 'named',
@@ -133,7 +137,7 @@ const createBuildsForPackage = (packagesDir, packageName, additionalPlugins = []
           __DEV__: 'process.env.NODE_ENV !== "production"',
         }),
         resolve({
-          extensions,
+          extensions: targetExtension ? extensions.flatMap((ext) => [`.${targetExtension}${ext}`, ext]) : extensions,
           modulesOnly: true,
           jail: `${resolvedPackagePath}/src`,
           rootDir: resolvedPackagePath,
@@ -147,7 +151,18 @@ const createBuildsForPackage = (packagesDir, packageName, additionalPlugins = []
     };
   };
 
-  return [createBuild('node', '14.17', ['cjs']), createBuild('browser', 'all', ['es'])];
+  const hasPeerDependencyReactNative = pkg.peerDependencies && pkg.peerDependencies['react-native'];
+  return [
+    createBuild('node', '14.17', ['cjs']),
+    createBuild('browser', 'all', ['es'], { exportCss: !hasPeerDependencyReactNative }),
+    ...(hasPeerDependencyReactNative
+      ? [
+          createBuild('browser', 'all', ['es'], { targetExtension: 'web', exportCss: true }),
+          createBuild('browser', 'all', ['es'], { targetExtension: 'ios' }),
+          createBuild('browser', 'all', ['es'], { targetExtension: 'android' }),
+        ]
+      : []),
+  ].filter(Boolean);
 };
 
 module.exports = (packagesDir = '@ornikar') => {
