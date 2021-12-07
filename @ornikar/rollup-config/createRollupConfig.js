@@ -147,7 +147,7 @@ const createBuildsForPackage = (packagesDir, packageName, additionalPlugins = []
     };
   };
 
-  return [createBuild('node', '12.13', ['cjs']), createBuild('browser', 'all', ['es'])];
+  return [createBuild('node', '14.17', ['cjs']), createBuild('browser', 'all', ['es'])];
 };
 
 module.exports = (packagesDir = '@ornikar') => {

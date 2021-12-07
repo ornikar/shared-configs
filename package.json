@@ -5,7 +5,7 @@
   "scripts": {
     "lint": "yarn run lint:prettier && yarn run lint:eslint && yarn run lint:css",
     "lint:prettier": "prettier --check .",
-    "lint:eslint": "eslint --ext .js --report-unused-disable-directives .",
+    "lint:eslint": "eslint --report-unused-disable-directives .",
     "lint:css": "yarn --cwd @ornikar/stylelint-config lint-tests",
     "release": "lerna publish --conventional-commits -m 'chore: release'",
     "postinstall": "./@ornikar/repo-config/bin/ornikar-repo-config-postinstall.js"
