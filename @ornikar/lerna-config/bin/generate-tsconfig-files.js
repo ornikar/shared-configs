@@ -88,13 +88,11 @@ const { getGraphPackages } = require('..');
           dependencies.forEach((pkgDep) => {
             const depPath = `../../../${pkgDep.name}/src`;
             tsconfigContent.compilerOptions.paths[pkgDep.name] = [`${depPath}/index.ts`];
-            tsconfigContent.compilerOptions.rootDirs.push(depPath);
           });
         }
         tsconfigBuildContent.references = dependencies.map((pkgDep) => ({
           path: `../../${pkgDep.name}/tsconfig.build.json`,
         }));
-        tsconfigBuildContent.compilerOptions.rootDirs = ['src'];
         tsconfigBuildContent.compilerOptions.paths = {};
       }
 
