@@ -22,9 +22,7 @@ const createBuildsForPackage = (packagesDir, packageName, additionalPlugins = []
   const pkg = require(path.resolve(`./${packagesDir}/${packageName}/package.json`));
   if (pkg.private || !pkg.main) return [];
 
-  if (!pkg.exports) {
-    throw new Error(`Please configure "exports" field in "${packagesDir}/${packageName}"`);
-  }
+  const entries = (pkg.ornikar && pkg.ornikar.entries) || ['index'];
 
   const external = configExternalDependencies({
     devDependencies: { ...rootPkg.devDependencies, ...pkg.devDependencies },
@@ -33,19 +31,21 @@ const createBuildsForPackage = (packagesDir, packageName, additionalPlugins = []
   });
   const resolvedPackagePath = path.resolve(`${packagesDir}/${packageName}`);
   const distPath = `${packagesDir}/${packageName}/dist`;
-  const inputBase = `./${packagesDir}/${packageName}/src/index`;
+  const inputBaseDir = `./${packagesDir}/${packageName}/src/`;
 
-  const createBuild = (target, version, formats, { exportCss, targetExtension } = {}) => {
+  const createBuild = (entryName, target, version, formats, { exportCss, targetExtension } = {}) => {
     const preferConst = !(target === 'browser' && version !== 'modern');
 
-    const inputExt = extensions.find((ext) => fs.existsSync(path.resolve(`${inputBase}${ext}`)));
+    const inputExt = extensions.find((ext) => fs.existsSync(path.resolve(`${inputBaseDir}${entryName}${ext}`)));
 
-    if (!inputExt) throw new Error(`Could not find index file for package ${packageName}`);
+    if (!inputExt) throw new Error(`Could not find ${entryName} file for package ${packageName}`);
 
     return {
-      input: `${inputBase}${inputExt}`,
+      input: `${inputBaseDir}${entryName}${inputExt}`,
       output: formats.map((format) => ({
-        file: `${distPath}/index-${target}-${version}.${format}${targetExtension ? `.${targetExtension}` : ''}.js`,
+        file: `${distPath}/${entryName}-${target}-${version}.${format}${
+          targetExtension ? `.${targetExtension}` : ''
+        }.js`,
         format,
         sourcemap: true,
         exports: 'named',
@@ -152,17 +152,19 @@ const createBuildsForPackage = (packagesDir, packageName, additionalPlugins = []
   };
 
   const hasPeerDependencyReactNative = pkg.peerDependencies && pkg.peerDependencies['react-native'];
-  return [
-    createBuild('node', '14.17', ['cjs']),
-    createBuild('browser', 'all', ['es'], { exportCss: !hasPeerDependencyReactNative }),
-    ...(hasPeerDependencyReactNative
-      ? [
-          createBuild('browser', 'all', ['es'], { targetExtension: 'web', exportCss: true }),
-          createBuild('browser', 'all', ['es'], { targetExtension: 'ios' }),
-          createBuild('browser', 'all', ['es'], { targetExtension: 'android' }),
-        ]
-      : []),
-  ].filter(Boolean);
+  return entries.flatMap((entryName) =>
+    [
+      createBuild(entryName, 'node', '14.17', ['cjs']),
+      createBuild(entryName, 'browser', 'all', ['es'], { exportCss: !hasPeerDependencyReactNative }),
+      ...(hasPeerDependencyReactNative
+        ? [
+            createBuild(entryName, 'browser', 'all', ['es'], { targetExtension: 'web', exportCss: true }),
+            createBuild(entryName, 'browser', 'all', ['es'], { targetExtension: 'ios' }),
+            createBuild(entryName, 'browser', 'all', ['es'], { targetExtension: 'android' }),
+          ]
+        : []),
+    ].filter(Boolean),
+  );
 };
 
 module.exports = (packagesDir = '@ornikar') => {
