@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@6.1.5...@ornikar/repo-config@7.0.0) (2021-12-07)
+
+
+### Features
+
+* drop node 12 [no issue] ([#584](https://github.com/ornikar/shared-configs/issues/584)) ([e9c00ab](https://github.com/ornikar/shared-configs/commit/e9c00abb5ed3a9c60993b6c652566dd7e71a97e1))
+
+
+### BREAKING CHANGES
+
+* requires node 14.17 or higher 
+
+
+
+
+
 ## [6.1.5](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@6.1.4...@ornikar/repo-config@6.1.5) (2021-12-06)
 
 

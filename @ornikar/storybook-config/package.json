@@ -1,6 +1,6 @@
 {
   "name": "@ornikar/storybook-config",
-  "version": "3.3.0",
+  "version": "3.3.1",
   "description": "storybook config files",
   "repository": "ornikar/shared-configs",
   "main": "index.js",
@@ -17,7 +17,7 @@
   },
   "dependencies": {
     "@chrp/typed-css-modules-loader": "0.7.0",
-    "@ornikar/webpack-config": "^2.3.2",
+    "@ornikar/webpack-config": "^3.0.0",
     "svg-react-loader": "0.4.6"
   },
   "devDependencies": {

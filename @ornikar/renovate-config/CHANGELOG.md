@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/renovate-config@2.13.0...@ornikar/renovate-config@3.0.0) (2021-12-07)
+
+
+### Bug Fixes
+
+* **renovate-confg:** change eslint configs group as no longer in shared-configs [no issue] ([#579](https://github.com/ornikar/shared-configs/issues/579)) ([8df3de8](https://github.com/ornikar/shared-configs/commit/8df3de877eaa6bf8e903f0972b77d634efd7e8fc))
+
+
+### Features
+
+* drop node 12 [no issue] ([#584](https://github.com/ornikar/shared-configs/issues/584)) ([e9c00ab](https://github.com/ornikar/shared-configs/commit/e9c00abb5ed3a9c60993b6c652566dd7e71a97e1))
+
+
+### BREAKING CHANGES
+
+* requires node 14.17 or higher 
+
+
+
+
+
 # [2.13.0](https://github.com/ornikar/shared-configs/compare/@ornikar/renovate-config@2.12.0...@ornikar/renovate-config@2.13.0) (2021-05-04)
 
 

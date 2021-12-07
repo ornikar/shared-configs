@@ -1,6 +1,6 @@
 {
   "name": "@ornikar/jest-config-react-native-web",
-  "version": "7.0.3",
+  "version": "8.0.0",
   "description": "jest config with react-native-web",
   "repository": "ornikar/shared-configs",
   "main": "jest-preset.js",
@@ -15,7 +15,7 @@
     "react-native-web": "^0.17.5"
   },
   "dependencies": {
-    "@ornikar/jest-config-react": "^7.3.0"
+    "@ornikar/jest-config-react": "^8.0.0"
   },
   "devDependencies": {
     "react-native-web": "0.17.5"

@@ -1,6 +1,6 @@
 {
   "name": "@ornikar/repo-config",
-  "version": "6.1.5",
+  "version": "7.0.0",
   "description": "repo config",
   "repository": "ornikar/shared-configs",
   "license": "ISC",
@@ -15,7 +15,7 @@
   },
   "dependencies": {
     "@commitlint/cli": "13.2.1",
-    "@ornikar/commitlint-config": "^3.3.0",
+    "@ornikar/commitlint-config": "^4.0.0",
     "husky": "7.0.4",
     "lint-staged": "11.2.6",
     "semver": "^7.3.5",

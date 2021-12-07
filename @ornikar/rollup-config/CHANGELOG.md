@@ -3,6 +3,26 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/rollup-config@3.0.6...@ornikar/rollup-config@4.0.0) (2021-12-07)
+
+
+### Features
+
+* drop node 12 [no issue] ([#584](https://github.com/ornikar/shared-configs/issues/584)) ([e9c00ab](https://github.com/ornikar/shared-configs/commit/e9c00abb5ed3a9c60993b6c652566dd7e71a97e1))
+* **rollup-config:** build for node 14 [no issue] ([#587](https://github.com/ornikar/shared-configs/issues/587)) ([fb44c9b](https://github.com/ornikar/shared-configs/commit/fb44c9bb5b698bd354001f20527cde6893230002))
+* **rollup-config:** stop building dev version [no issue] ([#586](https://github.com/ornikar/shared-configs/issues/586)) ([7092c3a](https://github.com/ornikar/shared-configs/commit/7092c3a1e1e5ba8d775a0ac4395bf50fdbad4262))
+
+
+### BREAKING CHANGES
+
+* requires node 14.17 or higher 
+* **rollup-config:** no more dev builds 
+* **rollup-config:** dist file name changed, only supports node 14 
+
+
+
+
+
 ## [3.0.6](https://github.com/ornikar/shared-configs/compare/@ornikar/rollup-config@3.0.5...@ornikar/rollup-config@3.0.6) (2021-11-29)
 
 
