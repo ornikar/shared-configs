@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/lerna-config@4.0.0...@ornikar/lerna-config@5.0.0) (2021-12-07)
+
+
+### Bug Fixes
+
+* **lerna-config:** dont add dep path in rootDirs [no issue] ([#591](https://github.com/ornikar/shared-configs/issues/591)) ([8e0b197](https://github.com/ornikar/shared-configs/commit/8e0b197c2d87442360bcf536dbe79aeee7a623b7))
+
+
+### BREAKING CHANGES
+
+* **lerna-config:** requires to manually run generator and commit tsconfig files 
+
+
+
+
+
 # [4.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/lerna-config@3.2.5...@ornikar/lerna-config@4.0.0) (2021-12-07)
 
 

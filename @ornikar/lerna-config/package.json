@@ -1,6 +1,6 @@
 {
   "name": "@ornikar/lerna-config",
-  "version": "4.0.0",
+  "version": "5.0.0",
   "description": "lerna config",
   "repository": "ornikar/shared-configs",
   "license": "ISC",
