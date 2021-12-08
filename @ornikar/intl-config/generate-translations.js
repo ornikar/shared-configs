@@ -29,6 +29,7 @@ module.exports = ({ paths, babelConfig, babelPluginReactIntlOptions = {}, defaul
             plugins: babelPlugins,
           }).metadata['react-intl'].messages,
       )
+      // eslint-disable-next-line unicorn/prefer-object-from-entries
       .reduce((collection, descriptors) => {
         descriptors.forEach(({ id, defaultMessage }) => {
           if (Object.prototype.hasOwnProperty.call(collection, id)) {

@@ -2320,10 +2320,10 @@
   dependencies:
     "@octokit/openapi-types" "^5.3.0"
 
-"@ornikar/eslint-config@15.4.0":
-  version "15.4.0"
-  resolved "https://registry.yarnpkg.com/@ornikar/eslint-config/-/eslint-config-15.4.0.tgz#61700cdf9b694f847289f45ea2b532aa6c6364bf"
-  integrity sha512-E3BxHwypSNuMyoOo3LDgjMtbHjT45uZxUR+9EqNZibZhLT54TZ+W6DUWJZPDxL1+3spu5KiNT34GeQME83eRPQ==
+"@ornikar/eslint-config@16.0.0":
+  version "16.0.0"
+  resolved "https://registry.yarnpkg.com/@ornikar/eslint-config/-/eslint-config-16.0.0.tgz#ec2846460b4c0aa024e5c676a82cd082ee471972"
+  integrity sha512-jQ2YCeq6aqqJyW+r2aS79yf1yWPhr29zpwsUZDFeOpHF7SSagyoo8rqscuZTJ5sYq15Hboo0fu0zBCdivrEyLA==
   dependencies:
     eslint-config-airbnb-base "^14.2.1"
     eslint-config-prettier "^8.2.0"
@@ -2332,7 +2332,7 @@
     eslint-plugin-jsx-a11y "^6.4.1"
     eslint-plugin-node "^11.1.0"
     eslint-plugin-simple-import-sort "^7.0.0"
-    eslint-plugin-unicorn "^37.0.0"
+    eslint-plugin-unicorn "^39.0.0"
 
 "@pob/pretty-eslint-config@^1.0.1":
   version "1.0.1"
@@ -5299,10 +5299,10 @@ eslint-plugin-simple-import-sort@^7.0.0:
   resolved "https://registry.yarnpkg.com/eslint-plugin-simple-import-sort/-/eslint-plugin-simple-import-sort-7.0.0.tgz#a1dad262f46d2184a90095a60c66fef74727f0f8"
   integrity sha512-U3vEDB5zhYPNfxT5TYR7u01dboFZp+HNpnGhkDB2g/2E4wZ/g1Q9Ton8UwCLfRV9yAKyYqDh62oHOamvkFxsvw==
 
-eslint-plugin-unicorn@^37.0.0:
-  version "37.0.1"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-unicorn/-/eslint-plugin-unicorn-37.0.1.tgz#a2292dc302ffc0be1791e6ebbb4ae93242833f11"
-  integrity sha512-E1jq5u9ojnadisJcPi+hMXTGSiIzkIUMDvWsBudsCGXvKUB2aNSU2TcfyW2/jAS5A4ryBXfzxLykMxX1EdluSQ==
+eslint-plugin-unicorn@^39.0.0:
+  version "39.0.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-unicorn/-/eslint-plugin-unicorn-39.0.0.tgz#ee76d4f3bf37c605d89fa449d5e7c0c44c54b0cc"
+  integrity sha512-fd5RK2FtYjGcIx3wra7csIE/wkkmBo22T1gZtRTsLr1Mb+KsFKJ+JOdSqhHXQUrI/JTs/Mon64cEYzTgSCbltw==
   dependencies:
     "@babel/helper-validator-identifier" "^7.14.9"
     ci-info "^3.2.0"
