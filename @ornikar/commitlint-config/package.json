@@ -12,6 +12,6 @@
     "access": "public"
   },
   "dependencies": {
-    "@commitlint/config-conventional": "^13.0.0"
+    "@commitlint/config-conventional": "^15.0.0"
   }
 }
