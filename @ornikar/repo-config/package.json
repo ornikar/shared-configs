@@ -5,7 +5,7 @@
   "repository": "ornikar/shared-configs",
   "license": "ISC",
   "engines": {
-    "node": ">=14.17.6"
+    "node": ">=14.17.5"
   },
   "publishConfig": {
     "access": "public"
