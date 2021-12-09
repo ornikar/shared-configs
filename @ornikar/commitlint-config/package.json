@@ -1,6 +1,6 @@
 {
   "name": "@ornikar/commitlint-config",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "description": "commitlint config",
   "repository": "ornikar/shared-configs",
   "main": "index.js",

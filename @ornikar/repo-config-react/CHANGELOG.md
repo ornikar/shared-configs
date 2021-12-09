@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.0.1](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config-react@7.0.0...@ornikar/repo-config-react@7.0.1) (2021-12-09)
+
+
+### Bug Fixes
+
+* downgrade node minimum required version [no issue] ([#595](https://github.com/ornikar/shared-configs/issues/595)) ([9464687](https://github.com/ornikar/shared-configs/commit/9464687f55aed4a2e683f5d3b992300d000a2b30))
+
+
+
+
+
 # [7.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config-react@6.0.8...@ornikar/repo-config-react@7.0.0) (2021-12-07)
 
 
