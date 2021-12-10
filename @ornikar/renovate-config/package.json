@@ -165,6 +165,12 @@
           ]
         },
         {
+          "groupName": "Jest Shared Configs Ornikar",
+          "matchPackagePatterns": [
+            "^@ornikar/jest(.*)-config",
+          ]
+        },
+        {
           "groupName": "Build Shared Configs Ornikar",
           "matchPackageNames": [
             "@ornikar/postcss-config",
