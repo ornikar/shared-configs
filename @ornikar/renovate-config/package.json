@@ -167,7 +167,7 @@
         {
           "groupName": "Jest Shared Configs Ornikar",
           "matchPackagePatterns": [
-            "^@ornikar/jest(.*)-config",
+            "^@ornikar/jest(.*)-config"
           ]
         },
         {
