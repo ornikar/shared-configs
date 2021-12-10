@@ -18,6 +18,19 @@ const { getGraphPackages } = require('..');
       const tsconfigPath = `${packagePath}/tsconfig.json`;
       const tsconfigBuildPath = `${packagePath}/tsconfig.build.json`;
 
+      const ornikarConfig = pkg.get('ornikar');
+      const emptyEntries = ornikarConfig && ornikarConfig.entries ? ornikarConfig.entries.length === 0 : false;
+
+      if (emptyEntries) {
+        await Promise.all([
+          // tsconfig.json
+          fs.unlink(tsconfigPath).catch(() => {}),
+          // tsconfig.build.json
+          fs.unlink(tsconfigBuildPath).catch(() => {}),
+        ]);
+        return;
+      }
+
       // override is only available for private package, which is examples or apps
       const tsconfigCurrentContent = pkg.private ? JSON.parse(await fs.readFile(tsconfigPath)) : {};
 
@@ -100,7 +113,9 @@ const { getGraphPackages } = require('..');
       if (!pkg.private) tsconfigBuildFiles.push(tsconfigBuildPath);
 
       await Promise.all([
+        // tsconfig.json
         fs.writeFile(tsconfigPath, `${JSON.stringify(tsconfigContent, undefined, 2)}\n`),
+        // tsconfig.build.json
         pkg.private
           ? fs.unlink(tsconfigBuildPath).catch(() => {})
           : fs.writeFile(tsconfigBuildPath, `${JSON.stringify(tsconfigBuildContent, undefined, 2)}\n`),
