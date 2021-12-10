@@ -134,7 +134,10 @@ const createBuildsForPackage = (packagesDir, packageName, additionalPlugins = []
           ].filter(Boolean),
         }),
         replace({
-          __DEV__: 'process.env.NODE_ENV !== "production"',
+          preventAssignment: true,
+          values: {
+            __DEV__: 'process.env.NODE_ENV !== "production"',
+          },
         }),
         resolve({
           extensions: targetExtension ? extensions.flatMap((ext) => [`.${targetExtension}${ext}`, ext]) : extensions,
