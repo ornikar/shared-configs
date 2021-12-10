@@ -112,6 +112,9 @@ const generateAndWritePackageConfig = async (configPath, prettierOptions, { pack
     ),
     ...lernaPackages.map(async (pkg) => {
       if (pkg.private) return;
+      const ornikarConfig = pkg.get('ornikar');
+      const emptyEntries = ornikarConfig && ornikarConfig.entries ? ornikarConfig.entries.length === 0 : false;
+
       const packagePath = path.relative(rootPath, pkg.location);
       const eslintSrcConfigPath = useRollupToBuild
         ? `${packagePath}/src/.eslintrc.json`
@@ -120,7 +123,9 @@ const generateAndWritePackageConfig = async (configPath, prettierOptions, { pack
       await Promise.all([
         useRollupToBuild ? fs.unlink(`${packagePath}/.eslintrc.json`).catch(() => {}) : undefined,
         fs.unlink(`${packagePath}/.eslintrc.js`).catch(() => {}),
-        generateAndWritePackageConfig(eslintSrcConfigPath, prettierOptions, { packagePath, useRollupToBuild }),
+        emptyEntries
+          ? fs.unlink(eslintSrcConfigPath).catch(() => {})
+          : generateAndWritePackageConfig(eslintSrcConfigPath, prettierOptions, { packagePath, useRollupToBuild }),
       ]);
     }),
   ]);
