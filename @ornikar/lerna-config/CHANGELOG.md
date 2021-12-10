@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.0.2](https://github.com/ornikar/shared-configs/compare/@ornikar/lerna-config@5.0.1...@ornikar/lerna-config@5.0.2) (2021-12-10)
+
+
+### Bug Fixes
+
+* **lerna-config:** support empty entries in generators [no issue] ([#597](https://github.com/ornikar/shared-configs/issues/597)) ([6a6cdb2](https://github.com/ornikar/shared-configs/commit/6a6cdb2dd55e02676b9ff9757ec922cd2c0d3c60))
+
+
+
+
+
 ## [5.0.1](https://github.com/ornikar/shared-configs/compare/@ornikar/lerna-config@5.0.0...@ornikar/lerna-config@5.0.1) (2021-12-09)
 
 

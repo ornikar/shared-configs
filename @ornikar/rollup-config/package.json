@@ -1,6 +1,6 @@
 {
   "name": "@ornikar/rollup-config",
-  "version": "4.1.1",
+  "version": "4.1.2",
   "description": "rollup config files",
   "repository": "ornikar/shared-configs",
   "main": "createRollupConfig.js",
