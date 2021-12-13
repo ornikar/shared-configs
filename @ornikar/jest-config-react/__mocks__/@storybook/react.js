@@ -4,8 +4,6 @@
 
 const { act, render, waitFor } = require('@testing-library/react');
 
-const wait = (amount = 0) => new Promise((resolve) => setTimeout(resolve, amount));
-
 const decorateStory = (storyFn, decorators) =>
   decorators.reduce(
     (decorated, decorator) =>
@@ -29,10 +27,16 @@ const decorateStory = (storyFn, decorators) =>
   );
 
 const globalDecorators = [];
+const globalParameters = {};
 
 // Mocked version of `import { addDecorator } from '@storybook/react'`.
 exports.addDecorator = (decorator) => {
   globalDecorators.push(decorator);
+};
+
+// Mocked version of `import { addParameters } from '@storybook/react'`.
+exports.addParameters = (parameters) => {
+  Object.assign(globalParameters, parameters);
 };
 
 // Mocked version of `import { action } from '@storybook/react'`.
@@ -46,7 +50,7 @@ exports.storiesOf = (groupName) => {
   // Mocked API to generate tests from & snapshot stories.
   const api = {
     add(storyName, story, storyParameters = {}) {
-      const parameters = { ...localParameters, ...storyParameters };
+      const parameters = { ...globalParameters, ...localParameters, ...storyParameters };
       const context = { name: storyName, parameters };
       const { jest } = parameters;
       const { ignore, ignoreDecorators, createBeforeAfterEachCallbacks, waitFor: waitForExpectation } = jest || {};
@@ -71,10 +75,9 @@ exports.storiesOf = (groupName) => {
           await act(async () => {
             const rtlApi = render(story(context), { wrapper: wrappingComponent });
             const { unmount, asFragment } = rtlApi;
-            // https://www.apollographql.com/docs/react/development-testing/testing/#testing-final-state
-            // delays until the next "tick" of the event loop, and allows time
-            // for that Promise returned from MockedProvider to be fulfilled
-            await (waitForExpectation ? waitFor(() => waitForExpectation(rtlApi, expect)) : wait(0));
+            if (waitForExpectation) {
+              await waitFor(() => waitForExpectation(rtlApi, expect));
+            }
             expect(asFragment()).toMatchSnapshot();
             unmount();
           });
