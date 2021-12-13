@@ -76,7 +76,7 @@ exports.storiesOf = (groupName) => {
             const rtlApi = render(story(context), { wrapper: wrappingComponent });
             const { unmount, asFragment } = rtlApi;
             if (waitForExpectation) {
-              await waitFor(() => waitForExpectation(rtlApi, expect));
+              await waitFor(() => waitForExpectation(rtlApi, expect, { parameters }));
             }
             expect(asFragment()).toMatchSnapshot();
             unmount();

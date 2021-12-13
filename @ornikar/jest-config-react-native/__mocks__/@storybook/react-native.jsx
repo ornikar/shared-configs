@@ -77,7 +77,7 @@ exports.storiesOf = (groupName) => {
             : ({ children }) => decorateStory(() => children, [...localDecorators, ...globalDecorators])(context);
 
           const rtlApi = render(story(context), { wrapper: WrappingComponent });
-          if (waitForExpectation) await waitFor(() => waitForExpectation(rtlApi, expect));
+          if (waitForExpectation) await waitFor(() => waitForExpectation(rtlApi, expect, { parameters }));
           expect(rtlApi.toJSON()).toMatchSnapshot();
         });
       });
