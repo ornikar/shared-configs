@@ -18,7 +18,7 @@
   "dependencies": {
     "@commitlint/cli": "15.0.0",
     "@ornikar/commitlint-config": "^4.0.1",
-    "dot-properties": "1.0.1",
+    "prettier-plugin-properties": "0.1.0",
     "husky": "7.0.4",
     "lint-staged": "11.2.6",
     "semver": "^7.3.5",
