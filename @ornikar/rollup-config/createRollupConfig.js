@@ -126,6 +126,13 @@ const createBuildsForPackage = (packagesDir, packageName, additionalPlugins = []
                       value: target,
                     },
                   },
+                  {
+                    identifierName: '__TARGET_VERSION__',
+                    replacement: {
+                      type: 'stringLiteral',
+                      value: targetExtension || '',
+                    },
+                  },
                 ],
               },
             ],
