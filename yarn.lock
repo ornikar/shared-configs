@@ -2334,25 +2334,25 @@
     eslint-plugin-simple-import-sort "^7.0.0"
     eslint-plugin-unicorn "^39.0.0"
 
-"@pob/pretty-eslint-config@^3.0.0":
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/@pob/pretty-eslint-config/-/pretty-eslint-config-3.0.0.tgz#a81f4f6e94e11faac75051392661bb8d699ac485"
-  integrity sha512-2NeSD0o9YpNI9MyiDF0ERJ8xAZgy4CSmRUTGSfReNln+ymKWu78sQ0nUORbnRNehQ5gQ+oLorXGRFg+VV7kV/g==
+"@pob/pretty-eslint-config@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@pob/pretty-eslint-config/-/pretty-eslint-config-1.0.1.tgz#00c62ff52170098ee125a5d8574fa0c70c4d974e"
+  integrity sha512-1ITTg5H7xr00TYz+z6Gl8pSoBZZekAJfVTMoDSqt1obguH2lYi5vW9D0p7Q/0U9qjfEOt4YPaITa82DeSTac2Q==
   dependencies:
-    "@pob/sort-eslint-config" "^3.0.0"
+    "@pob/sort-eslint-config" "^1.0.1"
     prettier "^2.1.2"
 
-"@pob/sort-eslint-config@^3.0.0":
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/@pob/sort-eslint-config/-/sort-eslint-config-3.0.0.tgz#7d99568b161052855a859324cfb456ca5fbf12ab"
-  integrity sha512-o/Ve7ssXfvUjaTjKNcrwYMFzMBW2M+nngO8doKz8GwfvqY5Vw3vgKNAGFbyBs26hqWS/iRhvV7io2zXmlKk/AA==
+"@pob/sort-eslint-config@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@pob/sort-eslint-config/-/sort-eslint-config-1.0.1.tgz#bb8aee27d0680b53ce82c52d62a45d49a406e759"
+  integrity sha512-ccmWLCi6XTEdmTtYWB4M4iteypyD7DkiRWmZYqAa1ixwHXNrOpQ7LEI31g3sH9Y3NuDyMnXA6V4Du6Eibmu67A==
   dependencies:
-    "@pob/sort-object" "^4.0.0"
+    "@pob/sort-object" "^2.0.1"
 
-"@pob/sort-object@^4.0.0":
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/@pob/sort-object/-/sort-object-4.0.0.tgz#38e06decf640de87c5092f53fd615ea1b561f668"
-  integrity sha512-gpPuLFRcPdkyFu0nNLii8fpSG2riqnfkWDONxlH3ij7rsPiINlvw/aUEzPrQtkk/sWnsiCNQ75p5NmEod1VrKA==
+"@pob/sort-object@^2.0.1":
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/@pob/sort-object/-/sort-object-2.0.1.tgz#bb41d0f3afe9ae1fca1db1d834eabd421c1185d6"
+  integrity sha512-z9QlMv6/7sKKnXuadmkPr88bKWoJpEPWOa87lEp1kIbuchVSUDKBOdP8peG+Ms6DM3j4OUOf3qHqiJQLEkfb0w==
 
 "@rollup/plugin-babel@^5.3.0":
   version "5.3.0"
