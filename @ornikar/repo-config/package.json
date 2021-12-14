@@ -22,6 +22,7 @@
     "lint-staged": "11.2.6",
     "semver": "^7.3.5",
     "which-pm-runs": "^1.0.0",
+    "dot-properties": "1.0.1",
     "yarn-deduplicate": "3.1.0"
   }
 }

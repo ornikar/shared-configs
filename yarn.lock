@@ -5005,6 +5005,11 @@ dot-prop@^6.0.1:
   dependencies:
     is-obj "^2.0.0"
 
+dot-properties@1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/dot-properties/-/dot-properties-1.0.1.tgz#f0b8f7bf378de3ee119ff9a2d47495ca7d19553c"
+  integrity sha512-cjIHHKlf2dPINJ5Io3lPocWvWmthXn3ztqyHVzUfufRiCiPECb0oiEqEGbEGaunFZtcMvwgUcxP9CTpLG4KCsA==
+
 duplexer@^0.1.1:
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/duplexer/-/duplexer-0.1.1.tgz#ace6ff808c1ce66b57d1ebf97977acb02334cfc1"
