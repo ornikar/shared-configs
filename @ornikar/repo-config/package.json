@@ -1,6 +1,6 @@
 {
   "name": "@ornikar/repo-config",
-  "version": "7.0.1",
+  "version": "7.1.0-beta.1",
   "description": "repo config",
   "repository": "ornikar/shared-configs",
   "license": "ISC",
@@ -11,7 +11,9 @@
     "access": "public"
   },
   "bin": {
-    "ornikar-repo-config-postinstall": "./bin/ornikar-repo-config-postinstall.js"
+    "ornikar-repo-config-postinstall": "./bin/ornikar-repo-config-postinstall.js",
+    "ornikar-prettier-check": "./bin/ornikar-prettier-check.sh",
+    "ornikar-prettier-fix": "./bin/ornikar-prettier-fix.sh"
   },
   "dependencies": {
     "@commitlint/cli": "15.0.0",
