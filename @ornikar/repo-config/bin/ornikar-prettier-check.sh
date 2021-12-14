@@ -4,4 +4,4 @@
 set -e
 
 prettier --check .
-yarn prettier --parser dot-properties --key-separator '=' --no-single-quote --check '**/.env*'
+prettier --parser dot-properties --key-separator '=' --no-single-quote --check '**/.env*'

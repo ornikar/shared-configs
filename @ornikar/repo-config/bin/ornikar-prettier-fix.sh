@@ -4,4 +4,4 @@
 set -e
 
 prettier --write .
-yarn prettier --parser dot-properties --key-separator '=' --no-single-quote --write '**/.env*'
+prettier --parser dot-properties --key-separator '=' --no-single-quote --write '**/.env*'
