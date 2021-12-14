@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.1.1](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@7.1.0...@ornikar/repo-config@7.1.1) (2021-12-14)
+
+
+### Bug Fixes
+
+* **repo-config:** missing dependency [no issue] ([#603](https://github.com/ornikar/shared-configs/issues/603)) ([e6151c5](https://github.com/ornikar/shared-configs/commit/e6151c516195528bdc0da22896e6c568fe9aaca8))
+
+
+
+
+
 # [7.1.0](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@7.0.1...@ornikar/repo-config@7.1.0) (2021-12-14)
 
 

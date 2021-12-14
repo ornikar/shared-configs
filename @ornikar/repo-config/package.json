@@ -1,6 +1,6 @@
 {
   "name": "@ornikar/repo-config",
-  "version": "7.1.0",
+  "version": "7.1.1",
   "description": "repo config",
   "repository": "ornikar/shared-configs",
   "license": "ISC",
@@ -18,11 +18,11 @@
   "dependencies": {
     "@commitlint/cli": "15.0.0",
     "@ornikar/commitlint-config": "^4.0.1",
+    "dot-properties": "1.0.1",
     "husky": "7.0.4",
     "lint-staged": "11.2.6",
     "semver": "^7.3.5",
     "which-pm-runs": "^1.0.0",
-    "dot-properties": "1.0.1",
     "yarn-deduplicate": "3.1.0"
   }
 }
