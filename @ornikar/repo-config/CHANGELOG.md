@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.1.0](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@7.0.1...@ornikar/repo-config@7.1.0) (2021-12-14)
+
+
+### Features
+
+* **repo-config:** prettier env INSTRUCTOR-361 ([#602](https://github.com/ornikar/shared-configs/issues/602)) ([352fe7a](https://github.com/ornikar/shared-configs/commit/352fe7a21fbe355879c6d0766a0205d7b0127267))
+
+
+
+
+
 ## [7.0.1](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@7.0.0...@ornikar/repo-config@7.0.1) (2021-12-09)
 
 

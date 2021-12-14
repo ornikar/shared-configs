@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.1.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react-native@2.0.1...@ornikar/jest-config-react-native@2.1.0) (2021-12-14)
+
+
+### Features
+
+* **deps:** update dependency @testing-library/react-native to v9 ([#599](https://github.com/ornikar/shared-configs/issues/599)) ([97e7278](https://github.com/ornikar/shared-configs/commit/97e72787fc6301146523b9a373ed8cfedcfc40ad))
+
+
+
+
+
 ## [2.0.1](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react-native@2.0.0...@ornikar/jest-config-react-native@2.0.1) (2021-12-09)
 
 

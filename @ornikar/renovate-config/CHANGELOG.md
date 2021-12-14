@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.1.0](https://github.com/ornikar/shared-configs/compare/@ornikar/renovate-config@3.0.1...@ornikar/renovate-config@3.1.0) (2021-12-14)
+
+
+### Bug Fixes
+
+* **renovate-config:** typo ([c26ec1e](https://github.com/ornikar/shared-configs/commit/c26ec1e84e8e95c9ca351b6f362efbae58bc64f3))
+
+
+### Features
+
+* **renovate-config:** group jest configs ([4d1427a](https://github.com/ornikar/shared-configs/commit/4d1427ac21156afd81d8d29f55935ee70ec80734))
+
+
+
+
+
 ## [3.0.1](https://github.com/ornikar/shared-configs/compare/@ornikar/renovate-config@3.0.0...@ornikar/renovate-config@3.0.1) (2021-12-09)
 
 
