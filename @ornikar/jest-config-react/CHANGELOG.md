@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [9.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@8.0.1...@ornikar/jest-config-react@9.0.0) (2021-12-15)
+
+
+### Features
+
+* **jest-config-react:** remove random wait, add global addParameters [no issue] ([#601](https://github.com/ornikar/shared-configs/issues/601)) ([764ef11](https://github.com/ornikar/shared-configs/commit/764ef11d9bd29e309438040e06fbdf4f9f6a2e9e))
+
+
+### BREAKING CHANGES
+
+* **jest-config-react:** wait(0) is removed, if you need to wait add waitFor: () => wait(0) 
+
+
+
+
+
 ## [8.0.1](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@8.0.0...@ornikar/jest-config-react@8.0.1) (2021-12-09)
 
 
