@@ -127,6 +127,18 @@ const createBuildsForPackage = (packagesDir, packageName, additionalPlugins = []
                 ],
               },
             ],
+            (!platformOS || platformOS === 'web') && [
+              // https://styled-components.com/docs/tooling#usage
+              require.resolve('babel-plugin-styled-components'),
+              {
+                ssr: true,
+                displayName: true,
+                minify: true,
+                transpileTemplateLiterals: true,
+                pure: true,
+                namespace: packageName,
+              },
+            ],
             [require.resolve('babel-plugin-react-native'), { OS: platformOS }],
             require.resolve('babel-plugin-minify-dead-code-elimination'),
             require.resolve('babel-plugin-discard-module-references'),
