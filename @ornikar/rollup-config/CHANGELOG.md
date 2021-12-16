@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.3.0](https://github.com/ornikar/shared-configs/compare/@ornikar/rollup-config@4.2.0...@ornikar/rollup-config@4.3.0) (2021-12-16)
+
+
+### Features
+
+* **rollup-config:** add babel-plugin-styled-components [no issue] ([#606](https://github.com/ornikar/shared-configs/issues/606)) ([9d803ca](https://github.com/ornikar/shared-configs/commit/9d803cabab9f58607e172949fb3ad71d2ff14646))
+
+
+
+
+
 # [4.2.0](https://github.com/ornikar/shared-configs/compare/@ornikar/rollup-config@4.1.2...@ornikar/rollup-config@4.2.0) (2021-12-16)
 
 
