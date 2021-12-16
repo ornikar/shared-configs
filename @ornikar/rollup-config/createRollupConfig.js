@@ -33,7 +33,7 @@ const createBuildsForPackage = (packagesDir, packageName, additionalPlugins = []
   const distPath = `${packagesDir}/${packageName}/dist`;
   const inputBaseDir = `./${packagesDir}/${packageName}/src/`;
 
-  const createBuild = (entryName, target, version, formats, { exportCss, targetExtension } = {}) => {
+  const createBuild = (entryName, target, version, formats, { exportCss, platformOS } = {}) => {
     const preferConst = !(target === 'browser' && version !== 'modern');
 
     const inputExt = extensions.find((ext) => fs.existsSync(path.resolve(`${inputBaseDir}${entryName}${ext}`)));
@@ -43,9 +43,7 @@ const createBuildsForPackage = (packagesDir, packageName, additionalPlugins = []
     return {
       input: `${inputBaseDir}${entryName}${inputExt}`,
       output: formats.map((format) => ({
-        file: `${distPath}/${entryName}-${target}-${version}.${format}${
-          targetExtension ? `.${targetExtension}` : ''
-        }.js`,
+        file: `${distPath}/${entryName}-${target}-${version}.${format}${platformOS ? `.${platformOS}` : ''}.js`,
         format,
         sourcemap: true,
         exports: 'named',
@@ -129,6 +127,7 @@ const createBuildsForPackage = (packagesDir, packageName, additionalPlugins = []
                 ],
               },
             ],
+            [require.resolve('babel-plugin-react-native'), { OS: platformOS }],
             require.resolve('babel-plugin-minify-dead-code-elimination'),
             require.resolve('babel-plugin-discard-module-references'),
           ].filter(Boolean),
@@ -140,7 +139,7 @@ const createBuildsForPackage = (packagesDir, packageName, additionalPlugins = []
           },
         }),
         resolve({
-          extensions: targetExtension ? extensions.flatMap((ext) => [`.${targetExtension}${ext}`, ext]) : extensions,
+          extensions: platformOS ? extensions.flatMap((ext) => [`.${platformOS}${ext}`, ext]) : extensions,
           modulesOnly: true,
           jail: `${resolvedPackagePath}/src`,
           rootDir: resolvedPackagePath,
@@ -161,9 +160,9 @@ const createBuildsForPackage = (packagesDir, packageName, additionalPlugins = []
       createBuild(entryName, 'browser', 'all', ['es'], { exportCss: !hasPeerDependencyReactNative }),
       ...(hasPeerDependencyReactNative
         ? [
-            createBuild(entryName, 'browser', 'all', ['es'], { targetExtension: 'web', exportCss: true }),
-            createBuild(entryName, 'browser', 'all', ['es'], { targetExtension: 'ios' }),
-            createBuild(entryName, 'browser', 'all', ['es'], { targetExtension: 'android' }),
+            createBuild(entryName, 'browser', 'all', ['es'], { platformOS: 'web', exportCss: true }),
+            createBuild(entryName, 'browser', 'all', ['es'], { platformOS: 'ios' }),
+            createBuild(entryName, 'browser', 'all', ['es'], { platformOS: 'android' }),
           ]
         : []),
     ].filter(Boolean),
