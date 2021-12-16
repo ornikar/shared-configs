@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.2.0](https://github.com/ornikar/shared-configs/compare/@ornikar/rollup-config@4.1.2...@ornikar/rollup-config@4.2.0) (2021-12-16)
+
+
+### Features
+
+* **rollup-config:** add platform os support with specific builds [no issue] ([#605](https://github.com/ornikar/shared-configs/issues/605)) ([365dd97](https://github.com/ornikar/shared-configs/commit/365dd979323d728b9dda70fc248bb125ba2aa408))
+
+
+
+
+
 ## [4.1.2](https://github.com/ornikar/shared-configs/compare/@ornikar/rollup-config@4.1.1...@ornikar/rollup-config@4.1.2) (2021-12-10)
 
 
