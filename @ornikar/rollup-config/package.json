@@ -26,6 +26,7 @@
     "babel-plugin-minify-dead-code-elimination": "^0.5.1",
     "babel-plugin-minify-replace": "^0.5.0",
     "babel-plugin-react-native": "^1.0.0",
+    "babel-plugin-styled-components": "^2.0.2",
     "rollup-config-external-dependencies": "^2.0.0",
     "rollup-plugin-postcss": "^3.1.8"
   }
