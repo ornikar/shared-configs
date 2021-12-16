@@ -3376,6 +3376,11 @@ babel-plugin-react-intl@^7.0.0:
     intl-messageformat-parser "^5.0.0"
     schema-utils "^2.2.0"
 
+babel-plugin-react-native@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/babel-plugin-react-native/-/babel-plugin-react-native-1.0.0.tgz#395b7cdc0ac2b0f1f817cfce1f385197eb24d426"
+  integrity sha512-X1j/pjxd15uJkjACzVj6k8oSp4AU5GfgTAqMDGo1gUIDHG/CB4gfceidRhdX4NgTBsjiEYlM2aVfWYuH8FvXAA==
+
 babel-preset-current-node-syntax@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/babel-preset-current-node-syntax/-/babel-preset-current-node-syntax-1.0.1.tgz#b4399239b89b2a011f9ddbe3e4f401fc40cff73b"
