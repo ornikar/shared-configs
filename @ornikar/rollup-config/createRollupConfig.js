@@ -147,7 +147,7 @@ const createBuildsForPackage = (packagesDir, packageName, additionalPlugins = []
         replace({
           preventAssignment: true,
           values: {
-            __DEV__: 'process.env.NODE_ENV !== "production"',
+            __DEV__: '(process.env.NODE_ENV !== "production")',
           },
         }),
         resolve({
