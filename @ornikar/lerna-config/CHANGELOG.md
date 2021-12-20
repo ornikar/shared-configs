@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.1.3](https://github.com/ornikar/shared-configs/compare/@ornikar/lerna-config@5.1.2...@ornikar/lerna-config@5.1.3) (2021-12-20)
+
+
+### Bug Fixes
+
+* **lerna-config:** write json using prettier ([33421cc](https://github.com/ornikar/shared-configs/commit/33421cce9b4724aec8b5b1a6a60f9f9008766338))
+
+
+
+
+
 ## [5.1.2](https://github.com/ornikar/shared-configs/compare/@ornikar/lerna-config@5.1.1...@ornikar/lerna-config@5.1.2) (2021-12-20)
 
 

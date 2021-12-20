@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.1.3](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@7.1.2...@ornikar/repo-config@7.1.3) (2021-12-20)
+
+
+### Bug Fixes
+
+* **repo-config:** remove no longer needed call to prettier for tsconfig files ([3dfda19](https://github.com/ornikar/shared-configs/commit/3dfda19469909bef4726401e97b548c1d7cf58b0))
+
+
+
+
+
 ## [7.1.2](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@7.1.1...@ornikar/repo-config@7.1.2) (2021-12-14)
 
 
