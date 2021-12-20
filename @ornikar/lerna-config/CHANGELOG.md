@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.1.2](https://github.com/ornikar/shared-configs/compare/@ornikar/lerna-config@5.1.1...@ornikar/lerna-config@5.1.2) (2021-12-20)
+
+
+### Bug Fixes
+
+* **lerna-config:** allow library to self import [no issue] ([#609](https://github.com/ornikar/shared-configs/issues/609)) ([0603f32](https://github.com/ornikar/shared-configs/commit/0603f32e674a50b7d446734a7f92b91e69e31c11))
+* **lerna-config:** sort packages to prevent random changes [no issue] ([#604](https://github.com/ornikar/shared-configs/issues/604)) ([c031cfe](https://github.com/ornikar/shared-configs/commit/c031cfe0db76ac38d1a977eb88086905c2059ccc))
+
+
+
+
+
 ## [5.1.1](https://github.com/ornikar/shared-configs/compare/@ornikar/lerna-config@5.1.0...@ornikar/lerna-config@5.1.1) (2021-12-14)
 
 

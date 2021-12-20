@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.3.1](https://github.com/ornikar/shared-configs/compare/@ornikar/rollup-config@4.3.0...@ornikar/rollup-config@4.3.1) (2021-12-20)
+
+
+### Bug Fixes
+
+* **rollup-config:** fix `!__DEV__` [no issue] ([#607](https://github.com/ornikar/shared-configs/issues/607)) ([2606e9b](https://github.com/ornikar/shared-configs/commit/2606e9bed5110547f6bf37d44891563b046d6657))
+
+
+
+
+
 # [4.3.0](https://github.com/ornikar/shared-configs/compare/@ornikar/rollup-config@4.2.0...@ornikar/rollup-config@4.3.0) (2021-12-16)
 
 
