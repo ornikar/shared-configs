@@ -45,13 +45,6 @@ const { getGraphPackages } = require('..');
         include: tsconfigCurrentContent.include || ['src', '../../typings'],
       };
 
-      if (!pkg.private) {
-        // react-scripts doesn't like paths
-        tsconfigContent.compilerOptions.paths = {
-          [pkg.name]: ['./index.ts'],
-        };
-      }
-
       const tsconfigBuildContent = {
         extends: './tsconfig.json',
         compilerOptions: {
@@ -78,6 +71,16 @@ const { getGraphPackages } = require('..');
           '**/stories-list.ts',
         ],
       };
+
+      // react-scripts doesn't like paths
+      if (!pkg.private) {
+        tsconfigContent.compilerOptions.paths = {
+          [pkg.name]: ['./index.ts'],
+        };
+        tsconfigBuildContent.compilerOptions.paths = {
+          [pkg.name]: ['./index.ts'],
+        };
+      }
 
       const dependencies = packages.filter((lernaPkg) => {
         if (lernaPkg.name === pkg.name) return false;
