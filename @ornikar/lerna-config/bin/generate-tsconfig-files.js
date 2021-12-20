@@ -4,9 +4,23 @@
 
 const fs = require('fs').promises;
 const path = require('path');
+// eslint-disable-next-line import/no-extraneous-dependencies
+const prettierOptions = require('@ornikar/prettier-config');
+// eslint-disable-next-line import/no-extraneous-dependencies
+const prettier = require('prettier');
 const { getGraphPackages } = require('..');
 
 (async () => {
+  const writeJsonFile = (jsonFilePath, content) => {
+    return fs.writeFile(
+      jsonFilePath,
+      prettier.format(`${JSON.stringify(content, null, 2)}\n`, {
+        filepath: 'tsconfig.json',
+        ...prettierOptions,
+      }),
+    );
+  };
+
   const { packages, packageLocations } = await getGraphPackages();
 
   const tsconfigFiles = [];
@@ -109,7 +123,6 @@ const { getGraphPackages } = require('..');
         tsconfigBuildContent.references = dependencies.map((pkgDep) => ({
           path: `../../${pkgDep.name}/tsconfig.build.json`,
         }));
-        tsconfigBuildContent.compilerOptions.paths = {};
       }
 
       tsconfigFiles.push(tsconfigPath);
@@ -117,11 +130,11 @@ const { getGraphPackages } = require('..');
 
       await Promise.all([
         // tsconfig.json
-        fs.writeFile(tsconfigPath, `${JSON.stringify(tsconfigContent, undefined, 2)}\n`),
+        writeJsonFile(tsconfigPath, tsconfigContent),
         // tsconfig.build.json
         pkg.private
           ? fs.unlink(tsconfigBuildPath).catch(() => {})
-          : fs.writeFile(tsconfigBuildPath, `${JSON.stringify(tsconfigBuildContent, undefined, 2)}\n`),
+          : writeJsonFile(tsconfigBuildPath, tsconfigBuildContent),
       ]);
     }),
   );
@@ -132,10 +145,10 @@ const { getGraphPackages } = require('..');
   }));
 
   await Promise.all([
-    fs.writeFile('tsconfig.json', `${JSON.stringify(tsConfigContent, undefined, 2)}\n`),
+    writeJsonFile('tsconfig.json', tsConfigContent),
     tsconfigBuildFiles.length === 0
       ? fs.unlink('tsconfig.build.json').catch(() => {})
-      : fs.writeFile('tsconfig.build.json', `${JSON.stringify(tsconfigBuildContent, undefined, 2)}\n`),
+      : writeJsonFile('tsconfig.build.json', tsconfigBuildContent),
   ]);
 })().catch((err) => {
   console.error(err);
