@@ -33,8 +33,6 @@ module.exports = function createLintStagedConfig(options = {}) {
         packagejsonFilenames.length === 0 ? undefined : `prettier --write ${packagejsonFilenames.join(' ')}`,
         isLernaRepo && require.resolve('@ornikar/lerna-config/bin/generate-eslintrc-files.js'),
         shouldGenerateTsconfigInLernaRepo && require.resolve('@ornikar/lerna-config/bin/generate-tsconfig-files.js'),
-        shouldGenerateTsconfigInLernaRepo &&
-          'prettier --write --no-error-on-unmatched-pattern **/tsconfig.json **/tsconfig.build.json',
       ].filter(Boolean);
     },
     '!(package).json': ['prettier --write'],
