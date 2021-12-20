@@ -15,7 +15,7 @@ const sortFn = (a, b) => a.toLowerCase().localeCompare(b.toLowerCase());
 
 module.exports = ({ paths, babelConfig, babelPluginReactIntlOptions = {}, defaultDestinationDirectory }) => {
   const babelPlugins = [[babelPluginReactIntl, babelPluginReactIntlOptions], ...(babelConfig.plugins || [])];
-
+  const projectCollection = {};
   paths.forEach(({ name, messageGlob, destinationDirectory = defaultDestinationDirectory }) => {
     const defaultMessages = globSync(messageGlob, {
       ignore: ['**/*.module.css.d.ts', '**/stories.{ts,tsx,js,jsx}', '**/*.{test.ts,test.tsx,test.js,test.jsx}'],
@@ -32,10 +32,11 @@ module.exports = ({ paths, babelConfig, babelPluginReactIntlOptions = {}, defaul
       // eslint-disable-next-line unicorn/prefer-object-from-entries
       .reduce((collection, descriptors) => {
         descriptors.forEach(({ id, defaultMessage }) => {
-          if (Object.prototype.hasOwnProperty.call(collection, id)) {
+          if (Object.prototype.hasOwnProperty.call(projectCollection, id)) {
             throw new Error(`Duplicate message id: ${id}`);
           }
           collection[id] = defaultMessage;
+          projectCollection[id] = defaultMessage;
         });
         return collection;
       }, {});
