@@ -21,22 +21,29 @@ module.exports = ({ paths, babelConfig, babelPluginReactIntlOptions = {}, defaul
       ignore: ['**/*.module.css.d.ts', '**/stories.{ts,tsx,js,jsx}', '**/*.{test.ts,test.tsx,test.js,test.jsx}'],
     })
       .map((filename) => ({ filename, code: fs.readFileSync(filename, 'utf8') }))
-      .map(
-        ({ filename, code }) =>
-          babelCore.transformSync(code, {
-            filename,
-            ...babelConfig,
-            plugins: babelPlugins,
-          }).metadata['react-intl'].messages,
-      )
+      .map(({ filename, code }) => ({
+        descriptors: babelCore.transformSync(code, {
+          filename,
+          ...babelConfig,
+          plugins: babelPlugins,
+        }).metadata['react-intl'].messages,
+        filename,
+      }))
       // eslint-disable-next-line unicorn/prefer-object-from-entries
-      .reduce((collection, descriptors) => {
+      .reduce((collection, { descriptors, filename }) => {
         descriptors.forEach(({ id, defaultMessage }) => {
-          if (Object.prototype.hasOwnProperty.call(projectCollection, id)) {
+          const filenameRegExp = new RegExp(
+            `${filename.split('.')[0]}\\.((web|ios|android)\\.)*${filename.split('.').slice(-1)[0]}`,
+          );
+          if (
+            id in projectCollection &&
+            (projectCollection[id].filename.match(filenameRegExp) === null ||
+              projectCollection[id].defaultMessage !== defaultMessage)
+          ) {
             throw new Error(`Duplicate message id: ${id}`);
           }
           collection[id] = defaultMessage;
-          projectCollection[id] = defaultMessage;
+          projectCollection[id] = { defaultMessage, filename };
         });
         return collection;
       }, {});
