@@ -16,6 +16,10 @@ const sortFn = (a, b) => a.toLowerCase().localeCompare(b.toLowerCase());
 module.exports = ({ paths, babelConfig, babelPluginReactIntlOptions = {}, defaultDestinationDirectory }) => {
   const babelPlugins = [[babelPluginReactIntl, babelPluginReactIntlOptions], ...(babelConfig.plugins || [])];
   const projectCollection = {};
+  const phraseSources = [];
+  const phraseTargets = [];
+  const seenPackages = [];
+
   paths.forEach(({ name, messageGlob, destinationDirectory = defaultDestinationDirectory }) => {
     const defaultMessages = globSync(messageGlob, {
       ignore: ['**/*.module.css.d.ts', '**/stories.{ts,tsx,js,jsx}', '**/*.{test.ts,test.tsx,test.js,test.jsx}'],
@@ -48,10 +52,23 @@ module.exports = ({ paths, babelConfig, babelPluginReactIntlOptions = {}, defaul
         return collection;
       }, {});
 
+    if (!seenPackages.includes(destinationDirectory)) {
+      phraseSources.push({
+        file: path.join(destinationDirectory, 'source', '<locale_name>', '<tag>.json'),
+        params: { update_translations: true },
+      });
+      seenPackages.push(destinationDirectory);
+    }
+    phraseTargets.push({
+      file: path.join(destinationDirectory, '<locale_name>', '<tag>.json'),
+      params: { tags: name },
+    });
+
     const destinationFile = path.join(destinationDirectory, `${name ? `fr-FR/${name}` : 'fr-FR'}.json`);
     const destinationFolder = path.dirname(destinationFile);
 
     fs.mkdirSync(destinationFolder, { recursive: true });
     fs.writeFileSync(destinationFile, JSON.stringify(sortObjectKeys(defaultMessages, sortFn), null, 2));
   });
+  return { phraseSources, phraseTargets };
 };
