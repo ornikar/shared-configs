@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.1.0](https://github.com/ornikar/shared-configs/compare/@ornikar/intl-config@3.0.1...@ornikar/intl-config@3.1.0) (2022-01-03)
+
+
+### Features
+
+* check translations duplicates project wide and not only section wide ([#610](https://github.com/ornikar/shared-configs/issues/610)) ([6b9f94d](https://github.com/ornikar/shared-configs/commit/6b9f94dc821818924fbe361f5e87ba98641714d9))
+* generate translations script returns a part of phrase config ([#614](https://github.com/ornikar/shared-configs/issues/614)) ([b384356](https://github.com/ornikar/shared-configs/commit/b384356c3afa8e08e382744ba75336c836e8f123))
+* let identical translations pass if from similar file and same default messages [no issue] ([#613](https://github.com/ornikar/shared-configs/issues/613)) ([57245a2](https://github.com/ornikar/shared-configs/commit/57245a21a925928b61144c82b70ac2d22260cf65))
+
+
+
+
+
 ## [3.0.1](https://github.com/ornikar/shared-configs/compare/@ornikar/intl-config@3.0.0...@ornikar/intl-config@3.0.1) (2021-12-09)
 
 
