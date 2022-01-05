@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.1.1](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config@7.1.0...@ornikar/jest-config@7.1.1) (2022-01-05)
+
+
+### Bug Fixes
+
+* **jest-config:** add missing require.resolve for globalSetup ([a453189](https://github.com/ornikar/shared-configs/commit/a453189d2752af2f611c0f5be45ee8793cae9c99))
+
+
+
+
+
 # [7.1.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config@7.0.1...@ornikar/jest-config@7.1.0) (2022-01-05)
 
 
