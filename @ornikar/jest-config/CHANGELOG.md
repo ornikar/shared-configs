@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.1.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config@7.0.1...@ornikar/jest-config@7.1.0) (2022-01-05)
+
+
+### Features
+
+* **jest-config:** set timezone to utc in config ([#616](https://github.com/ornikar/shared-configs/issues/616)) ([8d77d7f](https://github.com/ornikar/shared-configs/commit/8d77d7fc08b27ce87a9de741980761d301042633))
+
+
+
+
+
 ## [7.0.1](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config@7.0.0...@ornikar/jest-config@7.0.1) (2021-12-09)
 
 
