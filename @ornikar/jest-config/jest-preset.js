@@ -32,5 +32,5 @@ module.exports = {
     // project setup should always be placed last.
     '<rootDir>/test-setup.js',
   ],
-  globalSetup: './jest-global-setup.js',
+  globalSetup: require.resolve('./jest-global-setup.js'),
 };
