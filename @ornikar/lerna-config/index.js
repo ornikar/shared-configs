@@ -1,6 +1,8 @@
 'use strict';
 
+const fsSync = require('fs');
 const fs = require('fs').promises;
+const path = require('path');
 // eslint-disable-next-line import/no-extraneous-dependencies
 let PackageGraph = require('@lerna/package-graph');
 // eslint-disable-next-line import/no-extraneous-dependencies
@@ -27,8 +29,26 @@ exports.createLernaProject = function createLernaProject(cwd = process.cwd()) {
  * @param {LernaProject} lernaProject
  * @returns Promise<Package[]>
  */
-exports.getPackages = function getPackages(lernaProject = exports.createLernaProject()) {
-  return lernaProject.getPackages();
+exports.getPackages = async function getPackages(lernaProject = exports.createLernaProject()) {
+  const packages = await lernaProject.getPackages();
+  packages.sort((a, b) => a.name.localeCompare(b.name, 'en'));
+  return packages;
+};
+
+exports.getSyncPackages = function getSyncPackages(packagesDir = '@ornikar') {
+  const packageNames = fsSync
+    .readdirSync(path.resolve(`./${packagesDir}`))
+    .filter((name) => name !== '.DS_Store' && !name.startsWith('.eslintrc'));
+
+  packageNames.sort((a, b) => a.localeCompare(b, 'en'));
+
+  return packageNames.map((pkgName) => {
+    const location = `${packagesDir}/${pkgName}`;
+    const pkgPath = `${location}/package.json`;
+    const pkg = JSON.parse(fsSync.readFileSync(pkgPath, 'utf-8'));
+
+    return { ...pkg, location };
+  });
 };
 
 exports.getGraphPackages = async function getGraphPackages(lernaProject = exports.createLernaProject()) {
