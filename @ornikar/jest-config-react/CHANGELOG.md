@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [9.1.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@9.0.3...@ornikar/jest-config-react@9.1.0) (2022-01-07)
+
+
+### Features
+
+* **jest-config-react:** add styled-components module name mapper [no issue] ([#617](https://github.com/ornikar/shared-configs/issues/617)) ([4df1bc8](https://github.com/ornikar/shared-configs/commit/4df1bc846768b167cbb93299b9313feae2d9d0fa))
+
+
+
+
+
 ## [9.0.3](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@9.0.2...@ornikar/jest-config-react@9.0.3) (2022-01-07)
 
 
