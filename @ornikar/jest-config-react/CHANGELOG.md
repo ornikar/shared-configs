@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.0.3](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@9.0.2...@ornikar/jest-config-react@9.0.3) (2022-01-07)
+
+
+### Bug Fixes
+
+* shared configs/fix jest configs CME-51 ([#618](https://github.com/ornikar/shared-configs/issues/618)) ([bf678b1](https://github.com/ornikar/shared-configs/commit/bf678b1e4740bdec45614caef6f46df0a1510274))
+
+
+
+
+
 ## [9.0.2](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@9.0.1...@ornikar/jest-config-react@9.0.2) (2022-01-05)
 
 **Note:** Version bump only for package @ornikar/jest-config-react
