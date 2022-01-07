@@ -12,12 +12,14 @@
     "access": "public"
   },
   "peerDependencies": {
-    "react-native-web": "^0.17.5"
+    "react-native-web": "^0.17.5",
+    "jest": "^26.6.3"
   },
   "dependencies": {
     "@ornikar/jest-config-react": "^9.0.2"
   },
   "devDependencies": {
-    "react-native-web": "0.17.5"
+    "react-native-web": "0.17.5",
+    "jest": "26.6.3"
   }
 }
