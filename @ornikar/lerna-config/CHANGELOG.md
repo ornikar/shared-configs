@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/lerna-config@5.1.3...@ornikar/lerna-config@6.0.0) (2022-01-07)
+
+
+### Features
+
+* **lerna-config:** use react-jsx in tsconfig [no issue] ([#619](https://github.com/ornikar/shared-configs/issues/619)) ([2fc4e5e](https://github.com/ornikar/shared-configs/commit/2fc4e5e8b5c36ada22791d6031231c9c4f3dea7b))
+
+
+### BREAKING CHANGES
+
+* **lerna-config:** requires to reapply manually lerna-config generators 
+
+
+
+
+
 ## [5.1.3](https://github.com/ornikar/shared-configs/compare/@ornikar/lerna-config@5.1.2...@ornikar/lerna-config@5.1.3) (2021-12-20)
 
 
