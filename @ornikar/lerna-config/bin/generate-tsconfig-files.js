@@ -110,7 +110,7 @@ const { getGraphPackages } = require('..');
         (pkg.private && pkg.dependencies && pkg.dependencies.react);
 
       if (hasReact && !['react-native', 'react-jsx', 'preserve'].includes(tsconfigContent.compilerOptions.jsx)) {
-        tsconfigContent.compilerOptions.jsx = 'preserve';
+        tsconfigContent.compilerOptions.jsx = 'react-jsx';
       }
 
       if (dependencies.length > 0) {
