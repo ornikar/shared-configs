@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [9.2.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@9.1.0...@ornikar/jest-config-react@9.2.0) (2022-01-11)
+
+
+### Features
+
+* **jest-config-react:** map @storybook/react-native to storybook react mock ([#620](https://github.com/ornikar/shared-configs/issues/620)) [no issue] ([f502e6d](https://github.com/ornikar/shared-configs/commit/f502e6d754a453153c37fd4d7e5972be4b3847b1))
+
+
+
+
+
 # [9.1.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@9.0.3...@ornikar/jest-config-react@9.1.0) (2022-01-07)
 
 
