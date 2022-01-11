@@ -27,6 +27,7 @@ module.exports = {
     '\\.css$': 'identity-obj-proxy',
     '^styled-components$': 'styled-components/native',
     '@storybook/react$': require.resolve('./__mocks__/@storybook/react'),
+    '@storybook/react-native$': require.resolve('./__mocks__/@storybook/react'),
     '@storybook/addon-knobs': require.resolve('./__mocks__/@storybook/addon-knobs'),
     'storybook-react-router': require.resolve('./__mocks__/storybook-react-router'),
   },
