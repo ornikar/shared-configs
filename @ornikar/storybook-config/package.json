@@ -21,6 +21,6 @@
     "svg-react-loader": "0.4.6"
   },
   "devDependencies": {
-    "webpack": "4.37.0"
+    "webpack": "4.46.0"
   }
 }
