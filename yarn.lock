@@ -2348,10 +2348,10 @@
   dependencies:
     "@octokit/openapi-types" "^5.3.0"
 
-"@ornikar/eslint-config@16.4.0":
-  version "16.4.0"
-  resolved "https://registry.yarnpkg.com/@ornikar/eslint-config/-/eslint-config-16.4.0.tgz#9cb69857926acc8b12e2cbad30ee39cd4c5d586a"
-  integrity sha512-3NI+nx38ZjA4ruIEEOboh8hH/IELlS5ZmU1zcbLe8ISVqE30UwHWR/HU2tgHBYmK9RuURovoAHOhQm3EnsTvlA==
+"@ornikar/eslint-config@17.0.0":
+  version "17.0.0"
+  resolved "https://registry.yarnpkg.com/@ornikar/eslint-config/-/eslint-config-17.0.0.tgz#e960e14fe1fff4b77088f61ae4d978bd2dfb6218"
+  integrity sha512-nEUCsOXIPm4bnyDSrcZ8P0zgeB7igzOe+0zEOj989La7OW4Blo2zih8fQp69zCrwnL2cP3xL9YBkjR0h5Ykc1A==
   dependencies:
     eslint-config-airbnb-base "^14.2.1"
     eslint-config-prettier "^8.2.0"
