@@ -2335,6 +2335,16 @@
   dependencies:
     "@octokit/openapi-types" "^5.3.0"
 
+"@ornikar/babel-preset-kitt-universal@^0.1.1":
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/@ornikar/babel-preset-kitt-universal/-/babel-preset-kitt-universal-0.1.1.tgz#c5c2878659cd06d56cfecf4ebd21ef8307a4b403"
+  integrity sha512-3R65L5C5uhpraNGRSnQMhY3dzxzm8SF7a2U3xjGG72b3Os3OTKzxlMHVdmAZVlGB3H+ReXHc2enXwSeR4cjvxA==
+  dependencies:
+    babel-plugin-linaria-css-to-undefined "^0.1.0"
+    babel-plugin-react-native "^1.0.0"
+    babel-plugin-styled-components "^2.0.2"
+    babel-plugin-styled-components-react-native-web "^0.2.2"
+
 "@ornikar/eslint-config@16.4.0":
   version "16.4.0"
   resolved "https://registry.yarnpkg.com/@ornikar/eslint-config/-/eslint-config-16.4.0.tgz#9cb69857926acc8b12e2cbad30ee39cd4c5d586a"
@@ -3319,6 +3329,11 @@ babel-plugin-jest-hoist@^26.6.2:
     "@types/babel__core" "^7.0.0"
     "@types/babel__traverse" "^7.0.6"
 
+babel-plugin-linaria-css-to-undefined@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/babel-plugin-linaria-css-to-undefined/-/babel-plugin-linaria-css-to-undefined-0.1.0.tgz#eacb58f4e5c394cd33e0ed1adfc3d9b706ed3f59"
+  integrity sha512-5f8X/Owg7dwHWbm152z1uazQK8raw258OTamR7vXfJEr0HWwWD96wOucCX78E04Sr8axalb3wZjOvKbcRkZuHg==
+
 babel-plugin-minify-dead-code-elimination@^0.5.1:
   version "0.5.1"
   resolved "https://registry.yarnpkg.com/babel-plugin-minify-dead-code-elimination/-/babel-plugin-minify-dead-code-elimination-0.5.1.tgz#1a0c68e44be30de4976ca69ffc535e08be13683f"
@@ -3400,6 +3415,11 @@ babel-plugin-react-native@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/babel-plugin-react-native/-/babel-plugin-react-native-1.0.0.tgz#395b7cdc0ac2b0f1f817cfce1f385197eb24d426"
   integrity sha512-X1j/pjxd15uJkjACzVj6k8oSp4AU5GfgTAqMDGo1gUIDHG/CB4gfceidRhdX4NgTBsjiEYlM2aVfWYuH8FvXAA==
+
+babel-plugin-styled-components-react-native-web@^0.2.2:
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/babel-plugin-styled-components-react-native-web/-/babel-plugin-styled-components-react-native-web-0.2.2.tgz#383bf79a5e9bb1eff26e0fb7f2dc806c42774ba9"
+  integrity sha512-EraieWkORMy38EevVlwVINLKHGIoGKACKSF1UfBBRGM2FqUKcP9lH50mKRzD6eDM23dMmCCyrtL58wj5fqNhqg==
 
 babel-plugin-styled-components@^2.0.2:
   version "2.0.2"
