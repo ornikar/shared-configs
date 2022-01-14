@@ -35,15 +35,22 @@ exports.getPackages = async function getPackages(lernaProject = exports.createLe
   return packages;
 };
 
-exports.getSyncPackages = function getSyncPackages(packagesDir = '@ornikar') {
-  const packageNames = fsSync
-    .readdirSync(path.resolve(`./${packagesDir}`))
-    .filter((name) => name !== '.DS_Store' && !name.startsWith('.eslintrc'));
+exports.getSyncPackageLocations = function getSyncPackageLocations(workspaces = ['@ornikar/*']) {
+  const packageLocations = workspaces.flatMap((workspace) => {
+    if (!workspace.endsWith('/*')) throw new Error(`Invalid workspace: "${workspace}" must end with "/*"`);
+    const packagesDir = workspace.slice(0, -2);
+    return fsSync
+      .readdirSync(path.resolve(`./${packagesDir}`))
+      .filter((name) => name !== '.DS_Store' && !name.startsWith('.eslintrc'))
+      .map((pkgName) => `${packagesDir}/${pkgName}`);
+  });
 
-  packageNames.sort((a, b) => a.localeCompare(b, 'en'));
+  packageLocations.sort((a, b) => a.localeCompare(b, 'en'));
+  return packageLocations;
+};
 
-  return packageNames.map((pkgName) => {
-    const location = `${packagesDir}/${pkgName}`;
+exports.getSyncPackages = function getSyncPackages(workspaces = ['@ornikar/*']) {
+  return exports.getSyncPackageLocations(workspaces).map((location) => {
     const pkgPath = `${location}/package.json`;
     const pkg = JSON.parse(fsSync.readFileSync(pkgPath, 'utf-8'));
 
