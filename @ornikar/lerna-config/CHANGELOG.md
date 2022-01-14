@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.1.0](https://github.com/ornikar/shared-configs/compare/@ornikar/lerna-config@6.0.0...@ornikar/lerna-config@6.1.0) (2022-01-14)
+
+
+### Features
+
+* **lerna-config:** get sync packages [no issue] ([#622](https://github.com/ornikar/shared-configs/issues/622)) ([5bf2f6f](https://github.com/ornikar/shared-configs/commit/5bf2f6f03ce53bb5461d63a0cf30750a5194f3ae))
+
+
+
+
+
 # [6.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/lerna-config@5.1.3...@ornikar/lerna-config@6.0.0) (2022-01-07)
 
 

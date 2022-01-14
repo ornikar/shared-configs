@@ -1,6 +1,6 @@
 {
   "name": "@ornikar/storybook-config",
-  "version": "3.3.2",
+  "version": "3.3.3",
   "description": "storybook config files",
   "repository": "ornikar/shared-configs",
   "main": "index.js",
