@@ -49,6 +49,16 @@ const readYarnConfigFile = () => {
   }
 };
 
+const getPackagesLocations = (pkg) => {
+  const isMonorepo = !!pkg.workspaces;
+
+  if (!isMonorepo) return ['.'];
+  // eslint-disable-next-line import/no-extraneous-dependencies, global-require
+  const { getSyncPackageLocations } = require('@ornikar/lerna-config');
+  const packageLocations = getSyncPackageLocations(pkg.workspaces);
+  return ['.', ...packageLocations];
+};
+
 module.exports = function installHusky({ pkg, pm }) {
   const yarnMajorVersion = pm.name === 'yarn' && semver.major(pm.version);
   const isYarnBerry = pm.name === 'yarn' && yarnMajorVersion >= 2;
@@ -88,6 +98,7 @@ module.exports = function installHusky({ pkg, pm }) {
     const runYarnInstallOnDiff = `
 if [ -n "$(git diff HEAD@{1}..HEAD@{0} -- yarn.lock)" ]; then
   ${
+    // https://yarnpkg.com/features/zero-installs
     isYarnPnp
       ? ''
       : `yarn install ${
@@ -97,10 +108,33 @@ if [ -n "$(git diff HEAD@{1}..HEAD@{0} -- yarn.lock)" ]; then
   ${runCleanCache ? `${pmExec} clean:cache` : ''}
 fi`;
 
-    // https://yarnpkg.com/features/zero-installs
-    writeHook('post-checkout', runYarnInstallOnDiff);
-    writeHook('post-merge', runYarnInstallOnDiff);
-    writeHook('post-rewrite', runYarnInstallOnDiff);
+    let postHookContent = runYarnInstallOnDiff;
+    const packageLocations = getPackagesLocations(pkg);
+
+    packageLocations.forEach((packageLocation) => {
+      const cdToPackageLocation = packageLocation === '.' ? '' : `cd ${packageLocation} && `;
+
+      const gemfilePath = path.join(packageLocation, 'Gemfile.lock');
+      if (fs.existsSync(gemfilePath)) {
+        postHookContent += `
+if [ -n "$(git diff HEAD@{1}..HEAD@{0} -- ${gemfilePath})" ]; then
+${cdToPackageLocation}bundle install --path vendor/bundle || true
+fi
+`;
+      }
+
+      const podfilePath = path.join(packageLocation, 'ios/Podfile.lock');
+      if (fs.existsSync(podfilePath)) {
+        postHookContent += `
+if [ -n "$(git diff HEAD@{1}..HEAD@{0} -- ${podfilePath})" ]; then
+${cdToPackageLocation}yarn pod-install || true
+fi
+      `;
+      }
+    });
+    writeHook('post-checkout', postHookContent);
+    writeHook('post-merge', postHookContent);
+    writeHook('post-rewrite', postHookContent);
   }
 
   const prePushHook = [];
