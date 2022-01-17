@@ -19,7 +19,6 @@ module.exports = mergeWith(
   {
     testMatch: ['<rootDir>/src/**/stories.{ts,tsx}', '<rootDir>/src/**/*.stories.{ts,tsx}'],
     moduleNameMapper: {
-      '\\.css': '<rootDir>/src/__mocks__/styleMock.ts',
       '^@storybook/addon-actions$': require.resolve('./__mocks__/@storybook/addon-actions.js'),
       '@storybook/react-native$': require.resolve('./__mocks__/@storybook/react-native.jsx'),
       '^@storybook/react-native$': require.resolve('./__mocks__/@storybook/react-native.jsx'),
