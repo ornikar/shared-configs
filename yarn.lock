@@ -2335,10 +2335,10 @@
   dependencies:
     "@octokit/openapi-types" "^5.3.0"
 
-"@ornikar/babel-preset-kitt-universal@^0.1.1":
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/@ornikar/babel-preset-kitt-universal/-/babel-preset-kitt-universal-0.1.1.tgz#c5c2878659cd06d56cfecf4ebd21ef8307a4b403"
-  integrity sha512-3R65L5C5uhpraNGRSnQMhY3dzxzm8SF7a2U3xjGG72b3Os3OTKzxlMHVdmAZVlGB3H+ReXHc2enXwSeR4cjvxA==
+"@ornikar/babel-preset-kitt-universal@^0.1.2":
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/@ornikar/babel-preset-kitt-universal/-/babel-preset-kitt-universal-0.1.2.tgz#445513278e3a9f2aeffb85c44fc246121ebb4241"
+  integrity sha512-KbyIov6mzI3UXP+UFcoBIRJmY3J3P4uA5yoVi+TRDYMaBonMPLk9ZkQHVaqYpTkSKyaSH/ewJgMwaLIwn7Vkow==
   dependencies:
     babel-plugin-linaria-css-to-undefined "^0.1.0"
     babel-plugin-react-native "^1.0.0"
