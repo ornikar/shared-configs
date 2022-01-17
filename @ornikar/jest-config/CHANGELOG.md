@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.1.3](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config@7.1.2...@ornikar/jest-config@7.1.3) (2022-01-17)
+
+
+### Bug Fixes
+
+* **jest-config:** support next-gen jest-circus runner [no issue] ([#570](https://github.com/ornikar/shared-configs/issues/570)) ([f02c489](https://github.com/ornikar/shared-configs/commit/f02c489413199dd4e1ef8319ad3e429273596e63))
+
+
+
+
+
 ## [7.1.2](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config@7.1.1...@ornikar/jest-config@7.1.2) (2022-01-07)
 
 
