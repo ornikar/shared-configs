@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.2.1](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react-native@3.2.0...@ornikar/jest-config-react-native@3.2.1) (2022-01-18)
+
+
+### Bug Fixes
+
+* **jest-config-react-native:** fix typo [no issue] ([#631](https://github.com/ornikar/shared-configs/issues/631)) ([41905a1](https://github.com/ornikar/shared-configs/commit/41905a1a940f31aaa700c8a7c8ddc86c1dd3ec66))
+
+
+
+
+
 # [3.2.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react-native@3.1.4...@ornikar/jest-config-react-native@3.2.0) (2022-01-18)
 
 
