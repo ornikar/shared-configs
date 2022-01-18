@@ -26,7 +26,7 @@ module.exports = {
   transform: {
     // remove svg asset transformer from expo config, as we configure svg with custom metro transformer
     ...Object.fromEntries(
-      Object.entries(basePreset.transform).map((key, value) => {
+      Object.entries(basePreset.transform).map(([key, value]) => {
         if (key.includes('|svg|')) return [key.replace('|svg|', '|'), value];
         return [key, value];
       }),
