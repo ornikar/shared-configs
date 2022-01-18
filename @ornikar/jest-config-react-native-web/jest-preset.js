@@ -5,6 +5,7 @@ const reactNativePreset = require('react-native-web/jest-preset');
 
 module.exports = {
   ...baseJestPreset,
+  moduleFileExtensions: ['js', 'jsx', 'ts', 'tsx', 'json'].flatMap((ext) => [`web.${ext}`, ext]),
   setupFiles: [...baseJestPreset.setupFiles, ...reactNativePreset.setupFiles],
   moduleNameMapper: {
     ...baseJestPreset.moduleNameMapper,

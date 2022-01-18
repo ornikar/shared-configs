@@ -25,7 +25,6 @@ module.exports = {
   transformIgnorePatterns: ['[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$', '^.+\\.css$'],
   moduleNameMapper: {
     '\\.css$': 'identity-obj-proxy',
-    '^styled-components$': 'styled-components/native',
     '@storybook/react$': require.resolve('./__mocks__/@storybook/react'),
     '@storybook/react-native$': require.resolve('./__mocks__/@storybook/react'),
     '@storybook/addon-knobs': require.resolve('./__mocks__/@storybook/addon-knobs'),
