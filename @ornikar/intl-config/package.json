@@ -1,6 +1,6 @@
 {
   "name": "@ornikar/intl-config",
-  "version": "3.1.0",
+  "version": "3.1.1",
   "description": "intl-config",
   "repository": "ornikar/shared-configs",
   "license": "ISC",
@@ -16,7 +16,7 @@
     "sort-object-keys": "^1.1.3"
   },
   "devDependencies": {
-    "@babel/core": "7.16.0"
+    "@babel/core": "7.16.7"
   },
   "peerDependencies": {
     "@babel/core": "^7.4.3"

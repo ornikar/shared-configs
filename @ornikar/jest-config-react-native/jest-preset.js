@@ -14,16 +14,23 @@ function customizer(objValue, srcValue) {
 
 const basePreset = mergeWith(expoPreset, jestPreset, customizer);
 
-module.exports = mergeWith(
-  basePreset,
-  {
-    testMatch: ['<rootDir>/src/**/stories.{ts,tsx}', '<rootDir>/src/**/*.stories.{ts,tsx}'],
-    moduleNameMapper: {
-      '\\.css': '<rootDir>/src/__mocks__/styleMock.ts',
-      '^@storybook/addon-actions$': require.resolve('./__mocks__/@storybook/addon-actions.js'),
-      '@storybook/react-native$': require.resolve('./__mocks__/@storybook/react-native.jsx'),
-      '^@storybook/react-native$': require.resolve('./__mocks__/@storybook/react-native.jsx'),
-    },
+module.exports = {
+  ...basePreset,
+  testMatch: [...basePreset.testMatch, '<rootDir>/src/**/stories.{ts,tsx}', '<rootDir>/src/**/*.stories.{ts,tsx}'],
+  moduleNameMapper: {
+    ...basePreset.moduleNameMapper,
+    '^@storybook/addon-actions$': require.resolve('./__mocks__/@storybook/addon-actions.js'),
+    '@storybook/react-native$': require.resolve('./__mocks__/@storybook/react-native.jsx'),
+    '^@storybook/react-native$': require.resolve('./__mocks__/@storybook/react-native.jsx'),
   },
-  customizer,
-);
+  transform: {
+    // remove svg asset transformer from expo config, as we configure svg with custom metro transformer
+    ...Object.fromEntries(
+      Object.entries(basePreset.transform).map(([key, value]) => {
+        if (key.includes('|svg|')) return [key.replace('|svg|', '|'), value];
+        return [key, value];
+      }),
+    ),
+    '\\.svg$': '@ornikar/jest-config-react-native/svg-transformer',
+  },
+};

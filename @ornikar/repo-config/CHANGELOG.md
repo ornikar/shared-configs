@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.2.0](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@7.1.3...@ornikar/repo-config@7.2.0) (2022-01-14)
+
+
+### Features
+
+* **repo-config:** add native lockfiles [no issue] ([#623](https://github.com/ornikar/shared-configs/issues/623)) ([01222bc](https://github.com/ornikar/shared-configs/commit/01222bc1514df926021dfa36dcbad68d7a6d6ae9))
+
+
+
+
+
 ## [7.1.3](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@7.1.2...@ornikar/repo-config@7.1.3) (2021-12-20)
 
 
