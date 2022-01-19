@@ -4,6 +4,8 @@
 
 const fs = require('fs');
 const path = require('path');
+// eslint-disable-next-line import/no-unresolved -- in peer dependencies, no gain to install it as devDependencies
+const { default: linaria } = require('@linaria/rollup');
 const { default: babel } = require('@rollup/plugin-babel');
 const { default: resolve } = require('@rollup/plugin-node-resolve');
 const replace = require('@rollup/plugin-replace');
@@ -17,7 +19,7 @@ const postcssConfig = require(path.resolve('./config/rollup-postcss.config.js'))
 const extensions = ['.tsx', '.ts', '.js', '.jsx'];
 const browserOnlyExtensions = ['.css'];
 
-const createBuildsForPackage = (packagesDir, packageName, additionalPlugins = []) => {
+const createBuildsForPackage = (packagesDir, packageName, { shouldUseLinaria, additionalPlugins = [] } = {}) => {
   // eslint-disable-next-line global-require
   const pkg = require(path.resolve(`./${packagesDir}/${packageName}/package.json`));
   if (pkg.private || !pkg.main) return [];
@@ -32,6 +34,7 @@ const createBuildsForPackage = (packagesDir, packageName, additionalPlugins = []
   const resolvedPackagePath = path.resolve(`${packagesDir}/${packageName}`);
   const distPath = `${packagesDir}/${packageName}/dist`;
   const inputBaseDir = `./${packagesDir}/${packageName}/src/`;
+  const useLinaria = shouldUseLinaria && shouldUseLinaria(packageName);
 
   const createBuild = (entryName, target, version, formats, { exportCss, platformOS } = {}) => {
     const preferConst = !(target === 'browser' && version !== 'modern');
@@ -39,6 +42,7 @@ const createBuildsForPackage = (packagesDir, packageName, additionalPlugins = []
     const inputExt = extensions.find((ext) => fs.existsSync(path.resolve(`${inputBaseDir}${entryName}${ext}`)));
 
     if (!inputExt) throw new Error(`Could not find ${entryName} file for package ${packageName}`);
+    const isLinariaEnabledForPlatform = useLinaria && (!platformOS || platformOS === 'web');
 
     return {
       input: `${inputBaseDir}${entryName}${inputExt}`,
@@ -68,23 +72,37 @@ const createBuildsForPackage = (packagesDir, packageName, additionalPlugins = []
       },
 
       plugins: [
+        isLinariaEnabledForPlatform &&
+          linaria({
+            sourceMap: true,
+            babelOptions: {
+              presets: ['@babel/preset-typescript'],
+            },
+          }),
         // ignore node_modules css imports for node target. imports in browser target will be resolved by webpack.
         target === 'node' &&
           ignoreImport({
             extensions: browserOnlyExtensions,
             exclude: /\.module\.css$/, // exclude needs to be defined because default is `node_modules/**`. We ignore files that will be processed by postcss plugin.
           }),
-        postcss({
-          include: /\.module\.css$/,
-          extract: exportCss ? path.resolve(`${distPath}/styles.css`) : true,
-          autoModules: false,
-          modules: {
-            generateScopedName: `${packageName}_[local]_[hash:base64:5]`,
-          },
-          config: false,
-          plugins: exportCss ? postcssConfig.plugins : false,
-          minimize: false,
-        }),
+        postcss(
+          useLinaria
+            ? {
+                extract: exportCss ? path.resolve(`${distPath}/styles.css`) : true,
+                config: false,
+              }
+            : {
+                include: /\.module\.css$/,
+                extract: exportCss ? path.resolve(`${distPath}/styles.css`) : true,
+                autoModules: false,
+                modules: {
+                  generateScopedName: `${packageName}_[local]_[hash:base64:5]`,
+                },
+                config: false,
+                plugins: exportCss ? postcssConfig.plugins : false,
+                minimize: false,
+              },
+        ),
         babel({
           extensions,
           babelrc: false,
@@ -104,7 +122,18 @@ const createBuildsForPackage = (packagesDir, packageName, additionalPlugins = []
                 shippedProposals: true,
               },
             ],
-          ],
+            [
+              require.resolve('@ornikar/babel-preset-kitt-universal'),
+              {
+                isWeb: platformOS === 'web' || target === 'node',
+                enableStyledComponentsReactNativeImport: platformOS === 'web',
+                styledComponentsOptions: {
+                  namespace: packageName,
+                },
+              },
+            ],
+            isLinariaEnabledForPlatform && '@linaria/babel-preset',
+          ].filter(Boolean),
           plugins: [
             [
               require.resolve('@babel/plugin-transform-runtime'),
@@ -127,19 +156,6 @@ const createBuildsForPackage = (packagesDir, packageName, additionalPlugins = []
                 ],
               },
             ],
-            (!platformOS || platformOS === 'web') && [
-              // https://styled-components.com/docs/tooling#usage
-              require.resolve('babel-plugin-styled-components'),
-              {
-                ssr: true,
-                displayName: true,
-                minify: true,
-                transpileTemplateLiterals: true,
-                pure: true,
-                namespace: packageName,
-              },
-            ],
-            [require.resolve('babel-plugin-react-native'), { OS: platformOS }],
             require.resolve('babel-plugin-minify-dead-code-elimination'),
             require.resolve('babel-plugin-discard-module-references'),
           ].filter(Boolean),
@@ -181,12 +197,23 @@ const createBuildsForPackage = (packagesDir, packageName, additionalPlugins = []
   );
 };
 
-module.exports = (packagesDir = '@ornikar') => {
+module.exports = (options) => {
+  if (typeof options === 'string') {
+    // eslint-disable-next-line no-param-reassign
+    options = {
+      packagesDir: options,
+    };
+  }
+
+  const { packagesDir = '@ornikar', ...createBuildsForPackageOptions } = options;
+
   const packages = process.env.ORNIKAR_ONLY
     ? [process.env.ORNIKAR_ONLY]
     : fs
         .readdirSync(path.resolve(`./${packagesDir}`))
         .filter((name) => name !== '.DS_Store' && !name.startsWith('.eslintrc'));
 
-  return packages.flatMap((packageName) => createBuildsForPackage(packagesDir, packageName));
+  return packages.flatMap((packageName) =>
+    createBuildsForPackage(packagesDir, packageName, createBuildsForPackageOptions),
+  );
 };
