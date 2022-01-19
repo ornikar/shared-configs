@@ -42,6 +42,7 @@ const createBuildsForPackage = (packagesDir, packageName, { shouldUseLinaria, ad
     const inputExt = extensions.find((ext) => fs.existsSync(path.resolve(`${inputBaseDir}${entryName}${ext}`)));
 
     if (!inputExt) throw new Error(`Could not find ${entryName} file for package ${packageName}`);
+    const isLinariaEnabledForPlatform = useLinaria && (!platformOS || platformOS === 'web');
 
     return {
       input: `${inputBaseDir}${entryName}${inputExt}`,
@@ -71,7 +72,7 @@ const createBuildsForPackage = (packagesDir, packageName, { shouldUseLinaria, ad
       },
 
       plugins: [
-        useLinaria &&
+        isLinariaEnabledForPlatform &&
           linaria({
             sourceMap: true,
             babelOptions: {
@@ -131,7 +132,8 @@ const createBuildsForPackage = (packagesDir, packageName, { shouldUseLinaria, ad
                 },
               },
             ],
-          ],
+            isLinariaEnabledForPlatform && '@linaria/babel-preset',
+          ].filter(Boolean),
           plugins: [
             [
               require.resolve('@babel/plugin-transform-runtime'),
@@ -154,7 +156,6 @@ const createBuildsForPackage = (packagesDir, packageName, { shouldUseLinaria, ad
                 ],
               },
             ],
-            platformOS && ['babel-plugin-react-native', { OS: target === 'node' ? 'web' : platformOS }],
             require.resolve('babel-plugin-minify-dead-code-elimination'),
             require.resolve('babel-plugin-discard-module-references'),
           ].filter(Boolean),
