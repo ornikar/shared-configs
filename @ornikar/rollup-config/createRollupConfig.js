@@ -185,6 +185,9 @@ const createBuildsForPackage = (packagesDir, packageName, { shouldUseLinaria, ad
   return entries.flatMap((entryName) =>
     [
       createBuild(entryName, 'node', '14.17', ['cjs']),
+      ...(hasPeerDependencyReactNative
+        ? [createBuild(entryName, 'node', '14.17', ['cjs'], { platformOS: 'web' })]
+        : []),
       createBuild(entryName, 'browser', 'all', ['es'], { exportCss: !hasPeerDependencyReactNative }),
       ...(hasPeerDependencyReactNative
         ? [
