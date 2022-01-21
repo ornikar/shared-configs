@@ -125,10 +125,11 @@ const createBuildsForPackage = (packagesDir, packageName, { shouldUseLinaria, ad
             [
               require.resolve('@ornikar/babel-preset-kitt-universal'),
               {
-                isWeb: platformOS === 'web' || target === 'node',
+                isWeb: platformOS === 'web',
                 enableStyledComponentsReactNativeImport: platformOS === 'web',
                 styledComponentsOptions: {
                   namespace: packageName,
+                  ssr: target === 'node' || platformOS === 'web',
                 },
               },
             ],
