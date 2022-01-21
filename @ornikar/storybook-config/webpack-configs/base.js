@@ -7,7 +7,7 @@ const path = require('path');
 const resolveFields = require('@ornikar/webpack-config/resolveFields');
 const webpack = require('webpack');
 
-module.exports = function applyOrnikarStorybookBaseWebpackConfig(config, srcDir) {
+module.exports = function applyOrnikarStorybookBaseWebpackConfig(config, srcDir, { enableLinaria = false } = {}) {
   // storybook defines mainFields, we want to override them
   delete config.resolve.mainFields;
   resolveFields(process.env.NODE_ENV !== 'production' ? 'dev' : 'production', config);
@@ -58,7 +58,33 @@ module.exports = function applyOrnikarStorybookBaseWebpackConfig(config, srcDir)
     },
   });
 
+  if (enableLinaria) {
+    config.module.rules.push({
+      test: /\.(ts|js|tsx|jsx)$/,
+      exclude: /node_modules/,
+      use: [
+        {
+          loader: require.resolve('@linaria/webpack-loader'),
+          options: {
+            sourceMap: process.env.NODE_ENV !== 'production',
+            extension: '.css',
+            babelOptions: {
+              presets: ['@babel/preset-typescript'],
+            },
+          },
+        },
+      ],
+    });
+  }
+
   config.resolve.modules = ['node_modules', 'src'];
+
+  config.resolve.alias['@storybook/react-native$'] = '@storybook/react';
+  config.resolve.alias['styled-components$'] = 'styled-components/native';
+
+  if (!config.resolve.extensions.includes('.web.js')) {
+    config.resolve.extensions = config.resolve.extensions.flatMap((ext) => [`.web${ext}`, ext]);
+  }
 
   config.plugins.push(
     new webpack.DefinePlugin({
