@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.5.1](https://github.com/ornikar/shared-configs/compare/@ornikar/rollup-config@4.5.0...@ornikar/rollup-config@4.5.1) (2022-01-21)
+
+
+### Bug Fixes
+
+* **rollup-config:** node is not web ([34b6312](https://github.com/ornikar/shared-configs/commit/34b63127f5f596db2568f6b69f13d3359a76f44f))
+
+
+
+
+
 # [4.5.0](https://github.com/ornikar/shared-configs/compare/@ornikar/rollup-config@4.4.0...@ornikar/rollup-config@4.5.0) (2022-01-20)
 
 
