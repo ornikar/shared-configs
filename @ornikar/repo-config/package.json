@@ -16,7 +16,7 @@
     "ornikar-prettier-fix": "./bin/ornikar-prettier-fix.sh"
   },
   "dependencies": {
-    "@commitlint/cli": "16.0.2",
+    "@commitlint/cli": "16.1.0",
     "@ornikar/commitlint-config": "^4.0.2",
     "husky": "7.0.4",
     "lint-staged": "12.1.7",

@@ -24,7 +24,7 @@
     "@ornikar/*"
   ],
   "devDependencies": {
-    "@commitlint/cli": "16.0.2",
+    "@commitlint/cli": "16.1.0",
     "@ornikar/eslint-config": "17.0.0",
     "eslint": "7.32.0",
     "lerna": "4.0.0",
