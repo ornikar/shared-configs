@@ -12,6 +12,7 @@
     "access": "public"
   },
   "peerDependencies": {
+    "@storybook/addons": "^6.2.9",
     "@storybook/addon-essentials": "^6.2.9",
     "webpack": "^4.37.0"
   },

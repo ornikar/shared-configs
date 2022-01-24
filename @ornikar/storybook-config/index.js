@@ -7,7 +7,18 @@ exports.createMainConfig = function createMainConfig({
   postcssImplementation,
   enableControls = false,
   addons = [],
+  ...ornikarAddonOptions
 } = {}) {
+  if (
+    addons.some(
+      (addon) => addon === '@storybook/addon-react-native-web' || addon[0] === '@storybook/addon-react-native-web',
+    )
+  ) {
+    throw new Error(
+      "We don't want to use @storybook/addon-react-native-web to make sure we have the same configuration between our web applications and storybook web. Use `enableReactNativeWeb: true` instead.",
+    );
+  }
+
   return {
     typescript: {
       check: false,
@@ -35,6 +46,7 @@ exports.createMainConfig = function createMainConfig({
         },
       },
       ...addons,
+      { name: require.resolve('./preset'), options: ornikarAddonOptions },
     ].filter(Boolean),
   };
 };
