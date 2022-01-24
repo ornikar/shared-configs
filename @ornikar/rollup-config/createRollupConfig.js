@@ -19,7 +19,11 @@ const postcssConfig = require(path.resolve('./config/rollup-postcss.config.js'))
 const extensions = ['.tsx', '.ts', '.js', '.jsx'];
 const browserOnlyExtensions = ['.css'];
 
-const createBuildsForPackage = (packagesDir, packageName, { shouldUseLinaria, additionalPlugins = [] } = {}) => {
+const createBuildsForPackage = (
+  packagesDir,
+  packageName,
+  { hasPlatformBuilds, shouldUseLinaria, additionalPlugins = [] } = {},
+) => {
   // eslint-disable-next-line global-require
   const pkg = require(path.resolve(`./${packagesDir}/${packageName}/package.json`));
   if (pkg.private || !pkg.main) return [];
@@ -42,7 +46,7 @@ const createBuildsForPackage = (packagesDir, packageName, { shouldUseLinaria, ad
     const inputExt = extensions.find((ext) => fs.existsSync(path.resolve(`${inputBaseDir}${entryName}${ext}`)));
 
     if (!inputExt) throw new Error(`Could not find ${entryName} file for package ${packageName}`);
-    const isLinariaEnabledForPlatform = useLinaria && (!platformOS || platformOS === 'web');
+    const isLinariaEnabledForPlatform = useLinaria && ((!platformOS && !hasPlatformBuilds) || platformOS === 'web');
 
     return {
       input: `${inputBaseDir}${entryName}${inputExt}`,
@@ -126,6 +130,7 @@ const createBuildsForPackage = (packagesDir, packageName, { shouldUseLinaria, ad
               require.resolve('@ornikar/babel-preset-kitt-universal'),
               {
                 isWeb: platformOS === 'web',
+                disableLinaria: !isLinariaEnabledForPlatform,
                 enableStyledComponentsReactNativeImport: platformOS === 'web',
                 styledComponentsOptions: {
                   namespace: packageName,
@@ -182,14 +187,17 @@ const createBuildsForPackage = (packagesDir, packageName, { shouldUseLinaria, ad
     };
   };
 
-  const hasPeerDependencyReactNative = pkg.peerDependencies && pkg.peerDependencies['react-native'];
+  const hasPeerDependencyReactNative = !!(pkg.peerDependencies && pkg.peerDependencies['react-native']);
   return entries.flatMap((entryName) =>
     [
-      createBuild(entryName, 'node', '14.17', ['cjs']),
+      createBuild(entryName, 'node', '14.17', ['cjs'], { hasPlatformBuilds: hasPeerDependencyReactNative }),
       ...(hasPeerDependencyReactNative
         ? [createBuild(entryName, 'node', '14.17', ['cjs'], { platformOS: 'web' })]
         : []),
-      createBuild(entryName, 'browser', 'all', ['es'], { exportCss: !hasPeerDependencyReactNative }),
+      createBuild(entryName, 'browser', 'all', ['es'], {
+        hasPlatformBuilds: hasPeerDependencyReactNative,
+        exportCss: !hasPeerDependencyReactNative,
+      }),
       ...(hasPeerDependencyReactNative
         ? [
             createBuild(entryName, 'browser', 'all', ['es'], { platformOS: 'web', exportCss: true }),

@@ -2348,12 +2348,12 @@
   dependencies:
     "@octokit/openapi-types" "^5.3.0"
 
-"@ornikar/babel-preset-kitt-universal@^0.1.3":
-  version "0.1.3"
-  resolved "https://registry.yarnpkg.com/@ornikar/babel-preset-kitt-universal/-/babel-preset-kitt-universal-0.1.3.tgz#fd2ce67377a827ad17ef3680bc8c8c4c93f168b7"
-  integrity sha512-qVbOApWPl8k4/2BmcXvTlPvcVL22AaLjCILUiGyeEkyvV60oRRNo/8lgYo/XCxUZ3opfos5Ld2ir0MTjAO8ZwA==
+"@ornikar/babel-preset-kitt-universal@^0.1.5":
+  version "0.1.5"
+  resolved "https://registry.yarnpkg.com/@ornikar/babel-preset-kitt-universal/-/babel-preset-kitt-universal-0.1.5.tgz#fec89c5c81c062818b978d55a3944f67504fb163"
+  integrity sha512-/uuGXYsjOv/8c6kTha7Sso9ECUhCnLqBZFgiFF93TTB/sba8tRwyYJv3rEXuuFzRMSOpl+U/MYPSV9/anl1aLQ==
   dependencies:
-    babel-plugin-linaria-css-to-undefined "^0.2.0"
+    babel-plugin-linaria-css-to-undefined "^0.2.1"
     babel-plugin-react-native "^1.0.1"
     babel-plugin-styled-components "^2.0.2"
     babel-plugin-styled-components-react-native-web "^0.2.2"
@@ -3376,10 +3376,10 @@ babel-plugin-jest-hoist@^26.6.2:
     "@types/babel__core" "^7.0.0"
     "@types/babel__traverse" "^7.0.6"
 
-babel-plugin-linaria-css-to-undefined@^0.2.0:
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/babel-plugin-linaria-css-to-undefined/-/babel-plugin-linaria-css-to-undefined-0.2.0.tgz#5ffea470b0f5819bdb76343e2736a3a641d3e312"
-  integrity sha512-pm+UgJdKo5y9G7NabaVylSWpMvY4Hb9rKGkUdyqRa9KIRtwOOKiApRsl1v5URV0WDeCx2xhSeNsdE86iA2hemA==
+babel-plugin-linaria-css-to-undefined@^0.2.1:
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/babel-plugin-linaria-css-to-undefined/-/babel-plugin-linaria-css-to-undefined-0.2.1.tgz#1b30ed314d522bbac229fed3cc43f1320067c21f"
+  integrity sha512-7okh4qRf+rF3yYg64rEiwj42cC+QUpZlp7YxCt7AM4/aEtYzyTS2xYaUTJH2PG4JvTFCWL7GE98dYLH5C3lQsw==
 
 babel-plugin-minify-dead-code-elimination@^0.5.1:
   version "0.5.1"
