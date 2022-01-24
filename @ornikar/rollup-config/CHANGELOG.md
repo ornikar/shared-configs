@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.5.2](https://github.com/ornikar/shared-configs/compare/@ornikar/rollup-config@4.5.1...@ornikar/rollup-config@4.5.2) (2022-01-24)
+
+
+### Bug Fixes
+
+* **rollup-config:** native build for nodejs for jest ([d844806](https://github.com/ornikar/shared-configs/commit/d844806a0ce53f7816715fa37ba83c78328563bf))
+
+
+
+
+
 ## [4.5.1](https://github.com/ornikar/shared-configs/compare/@ornikar/rollup-config@4.5.0...@ornikar/rollup-config@4.5.1) (2022-01-21)
 
 

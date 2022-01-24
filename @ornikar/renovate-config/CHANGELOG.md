@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.2.0](https://github.com/ornikar/shared-configs/compare/@ornikar/renovate-config@3.1.0...@ornikar/renovate-config@3.2.0) (2022-01-24)
+
+
+### Features
+
+* **renovate-config:** add packages in patch automerge ([5300a7e](https://github.com/ornikar/shared-configs/commit/5300a7e969b0b809d5cbc6e8f0f959ba5010e882))
+
+
+
+
+
 # [3.1.0](https://github.com/ornikar/shared-configs/compare/@ornikar/renovate-config@3.0.1...@ornikar/renovate-config@3.1.0) (2021-12-14)
 
 
