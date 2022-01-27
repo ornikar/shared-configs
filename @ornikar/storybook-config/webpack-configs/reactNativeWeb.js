@@ -48,17 +48,7 @@ module.exports = (env, webpackConfig, { nativeModulesToTranspile }) => {
         options: {
           babelrc: false,
           configFile: false,
-          presets: [
-            ['babel-preset-expo', { jsxRuntime: 'automatic' }],
-            // [
-            //   '@babel/preset-env',
-            //   {
-            //     targets: {
-            //       esmodules: true,
-            //     },
-            //   },
-            // ],
-          ],
+          presets: [['babel-preset-expo', { jsxRuntime: 'automatic' }]],
         },
       },
     ],
