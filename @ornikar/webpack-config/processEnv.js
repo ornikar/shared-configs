@@ -1,0 +1,18 @@
+'use strict';
+
+// eslint-disable-next-line import/no-extraneous-dependencies -- should be installed either directly or indirectly by app or storybook.
+const webpack = require('webpack');
+
+module.exports = (env, webpackConfig, { definitions = {}, envVariables = {} } = {}) => {
+  webpackConfig.plugins.push(
+    new webpack.DefinePlugin({
+      'process.env.NODE_ENV': JSON.stringify(env),
+      __DEV__: env !== 'production',
+      ...definitions,
+      ...Object.fromEntries(Object.entries(envVariables).map(([key, value]) => [`process.env.${key}`, value])),
+    }),
+
+    // make sure webpack don't "polyfill" process.env by setting and empty object
+    new webpack.DefinePlugin({ process: { env: {} } }),
+  );
+};
