@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.3.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react-native@3.2.1...@ornikar/jest-config-react-native@3.3.0) (2022-01-31)
+
+
+### Features
+
+* **jest-config-react-native:** support svg with svgr named loader CME-229 ([#638](https://github.com/ornikar/shared-configs/issues/638)) ([09c70f7](https://github.com/ornikar/shared-configs/commit/09c70f753217c8dfee467c79c240d36eaa041f28))
+
+
+
+
+
 ## [3.2.1](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react-native@3.2.0...@ornikar/jest-config-react-native@3.2.1) (2022-01-18)
 
 

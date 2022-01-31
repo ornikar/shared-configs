@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/storybook-config@3.3.3...@ornikar/storybook-config@4.0.0) (2022-01-31)
+
+
+### Features
+
+* **storybook-config:** support react-native-web [no issue] ([#633](https://github.com/ornikar/shared-configs/issues/633)) ([e69d4dc](https://github.com/ornikar/shared-configs/commit/e69d4dcf0d611bb396a06639c15d602f969053f6))
+
+
+### BREAKING CHANGES
+
+* **storybook-config:** removed base/lib/app webpack config, use options in createMainConfig instead 
+
+
+
+
+
 ## [3.3.3](https://github.com/ornikar/shared-configs/compare/@ornikar/storybook-config@3.3.2...@ornikar/storybook-config@3.3.3) (2022-01-14)
 
 **Note:** Version bump only for package @ornikar/storybook-config
