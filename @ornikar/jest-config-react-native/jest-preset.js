@@ -31,6 +31,8 @@ module.exports = {
         return [key, value];
       }),
     ),
+    // legacy support, use { ReactComponent } from .svg instead.
+    '\\.inline\\.svg$': '@ornikar/jest-config-react-native/svg-transformer-inline',
     '\\.svg$': '@ornikar/jest-config-react-native/svg-transformer',
   },
 };
