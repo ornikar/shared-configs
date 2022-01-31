@@ -9,7 +9,7 @@ exports.process = (src, filepath) => {
     `module.exports = new Proxy({}, {
     get: function getter(target, key) {
       if (key === '__esModule') {
-        return false;
+        return true;
       }
       if (key === 'default') {
         return $1.name;
