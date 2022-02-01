@@ -22,6 +22,8 @@ module.exports = {
     '^@storybook/addon-actions$': require.resolve('./__mocks__/@storybook/addon-actions.js'),
     '@storybook/react-native$': require.resolve('./__mocks__/@storybook/react-native.jsx'),
     '^@storybook/react-native$': require.resolve('./__mocks__/@storybook/react-native.jsx'),
+    '@storybook/react$': require.resolve('./__mocks__/@storybook/react-native.jsx'),
+    '^@storybook/react$': require.resolve('./__mocks__/@storybook/react-native.jsx'),
   },
   transform: {
     // remove svg asset transformer from expo config, as we configure svg with custom metro transformer
