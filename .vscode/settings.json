@@ -7,6 +7,7 @@
 
   // save config
   "editor.formatOnSave": true,
+  "eslint.codeActionsOnSave.mode": "all",
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true,
     "source.organizeImports": false
@@ -14,10 +15,10 @@
 
   // eslint config
   "eslint.workingDirectories": ["."],
+  "eslint.useESLintClass": true,
   "eslint.options": {
-    "extensions": [".js", ".mjs"],
     "resolvePluginsRelativeTo": ".",
-    "reportUnusedDisableDirectives": true
+    "reportUnusedDisableDirectives": "error"
   },
   "eslint.lintTask.enable": true,
 
