@@ -6,9 +6,9 @@ const fs = require('fs');
 const path = require('path');
 const linaria = require('@ornikar/webpack-config/linaria');
 const processEnv = require('@ornikar/webpack-config/processEnv');
+const reactNativeWeb = require('@ornikar/webpack-config/reactNativeWeb');
 const resolveFields = require('@ornikar/webpack-config/resolveFields');
 const cssModulesRule = require('../webpack-configs/cssModulesRule');
-const reactNativeWeb = require('../webpack-configs/reactNativeWeb');
 const svgRule = require('../webpack-configs/svgRule');
 const { defaultOptions } = require('./defaultOptions');
 
@@ -55,7 +55,10 @@ module.exports = (
   }
 
   if (enableReactNativeWeb) {
-    reactNativeWeb(env, webpackConfig, { nativeModulesToTranspile });
+    reactNativeWeb(env, webpackConfig, {
+      nativeModulesToTranspile,
+      unshiftToRules: webpackConfig.module.rules,
+    });
   }
 
   webpackConfig.resolve.modules = ['node_modules', 'src'];

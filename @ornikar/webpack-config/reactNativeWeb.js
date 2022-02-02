@@ -6,8 +6,10 @@ const path = require('path');
 
 const getModule = (name) => path.join('node_modules', name);
 
-module.exports = (env, webpackConfig, { nativeModulesToTranspile }) => {
-  webpackConfig.resolve.extensions = webpackConfig.resolve.extensions.flatMap((ext) => [`.web${ext}`, ext]);
+module.exports = (env, webpackConfig, { nativeModulesToTranspile, unshiftToRules = webpackConfig.module.rules }) => {
+  if (!webpackConfig.resolve.extensions.includes('.web.ts')) {
+    webpackConfig.resolve.extensions = webpackConfig.resolve.extensions.flatMap((ext) => [`.web${ext}`, ext]);
+  }
 
   webpackConfig.resolve.alias = {
     ...webpackConfig.resolve.alias,
@@ -32,7 +34,7 @@ module.exports = (env, webpackConfig, { nativeModulesToTranspile }) => {
     ...nativeModulesToTranspile.map(getModule),
   ];
 
-  webpackConfig.module.rules.push({
+  unshiftToRules.unshift({
     test: /\.(js|jsx|ts|tsx)$/,
     include: (inputPath) => {
       for (const possibleModule of includeModulesThatContainPaths) {
