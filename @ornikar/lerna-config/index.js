@@ -68,7 +68,7 @@ exports.getGraphPackages = async function getGraphPackages(lernaProject = export
   while (graph.size > 0) {
     // pick the current set of nodes _without_ localDependencies (aka it is a "source" node)
     const batch = [...graph.values()].filter((node) => node.localDependencies.size === 0);
-    batch.sort((a, b) => a.name.localeCompare(b.name, 'en'));
+    batch.sort((a, b) => a.pkg.name.localeCompare(b.pkg.name, 'en'));
 
     // batches are composed of Package instances, not PackageGraphNodes
     packages.push(...batch.map((node) => node.pkg));
