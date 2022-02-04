@@ -1,7 +1,7 @@
 {
   "name": "@ornikar/jest-config-react",
   "version": "9.3.0",
-  "description": "jest config",
+  "description": "✅⚛️ jest config for react",
   "repository": "ornikar/shared-configs",
   "main": "jest-preset.js",
   "license": "ISC",

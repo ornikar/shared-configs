@@ -13,6 +13,12 @@
     "source.organizeImports": false
   },
 
+  // jest config
+  "jest.autoRun": {
+    "watch": false,
+    "onStartup": []
+  },
+
   // eslint config
   "eslint.workingDirectories": ["."],
   "eslint.useESLintClass": true,

@@ -1,7 +1,7 @@
 {
   "name": "@ornikar/intl-config",
   "version": "3.1.2",
-  "description": "intl-config",
+  "description": "🌐 intl-config",
   "repository": "ornikar/shared-configs",
   "license": "ISC",
   "engines": {

@@ -1,7 +1,7 @@
 {
   "name": "@ornikar/browserslist-config",
   "version": "4.0.1",
-  "description": "browserslist config files",
+  "description": "🦔 browserslist config files",
   "repository": "ornikar/shared-configs",
   "main": "degraded-support.js",
   "license": "ISC",

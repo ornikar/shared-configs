@@ -1,7 +1,7 @@
 {
   "name": "@ornikar/stylelint-config",
   "version": "8.0.1",
-  "description": "stylelint config files",
+  "description": "🚨🎨 stylelint config files",
   "repository": "ornikar/shared-configs",
   "main": "index.js",
   "license": "ISC",
