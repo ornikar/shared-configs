@@ -28,9 +28,13 @@ const ensureHuskyNotInDevDependencies = (pkg) => {
 };
 
 const writeHook = (hookName, hookContent) => {
-  fs.writeFileSync(path.resolve(`.husky/${hookName}`), `${hookContent}\n`, {
-    mode: '755',
-  });
+  fs.writeFileSync(
+    path.resolve(`.husky/${hookName}`),
+    `#!/usr/bin/env sh\n. "$(dirname "$0")/_/husky.sh"\n\n${hookContent.trim()}\n`,
+    {
+      mode: '755',
+    },
+  );
 };
 
 const ensureHookDeleted = (hookName) => {
