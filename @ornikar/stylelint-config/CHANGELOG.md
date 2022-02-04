@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [8.0.2](https://github.com/ornikar/shared-configs/compare/@ornikar/stylelint-config@8.0.1...@ornikar/stylelint-config@8.0.2) (2022-02-04)
+
+**Note:** Version bump only for package @ornikar/stylelint-config
+
+
+
+
+
 ## [8.0.1](https://github.com/ornikar/shared-configs/compare/@ornikar/stylelint-config@8.0.0...@ornikar/stylelint-config@8.0.1) (2021-12-09)
 
 

@@ -1,6 +1,6 @@
 {
   "name": "@ornikar/webpack-config",
-  "version": "4.1.0",
+  "version": "4.1.1",
   "description": "📦 webpack config files",
   "repository": "ornikar/shared-configs",
   "main": "index.js",

@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.1.2](https://github.com/ornikar/shared-configs/compare/@ornikar/lerna-config@6.1.1...@ornikar/lerna-config@6.1.2) (2022-02-04)
+
+**Note:** Version bump only for package @ornikar/lerna-config
+
+
+
+
+
 ## [6.1.1](https://github.com/ornikar/shared-configs/compare/@ornikar/lerna-config@6.1.0...@ornikar/lerna-config@6.1.1) (2022-02-02)
 
 

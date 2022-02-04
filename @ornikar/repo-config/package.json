@@ -1,6 +1,6 @@
 {
   "name": "@ornikar/repo-config",
-  "version": "7.2.1",
+  "version": "7.2.2",
   "description": "🔧 repo config",
   "repository": "ornikar/shared-configs",
   "license": "ISC",
@@ -17,7 +17,7 @@
   },
   "dependencies": {
     "@commitlint/cli": "16.1.0",
-    "@ornikar/commitlint-config": "^4.0.2",
+    "@ornikar/commitlint-config": "^4.0.3",
     "husky": "7.0.4",
     "lint-staged": "12.3.3",
     "prettier-plugin-properties": "0.1.0",
