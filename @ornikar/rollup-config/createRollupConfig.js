@@ -4,8 +4,6 @@
 
 const fs = require('fs');
 const path = require('path');
-// eslint-disable-next-line import/no-unresolved -- in peer dependencies, no gain to install it as devDependencies
-const { default: linaria } = require('@linaria/rollup');
 const { default: babel } = require('@rollup/plugin-babel');
 const { default: resolve } = require('@rollup/plugin-node-resolve');
 const replace = require('@rollup/plugin-replace');
@@ -77,7 +75,8 @@ const createBuildsForPackage = (
 
       plugins: [
         isLinariaEnabledForPlatform &&
-          linaria({
+          // eslint-disable-next-line import/no-unresolved, global-require -- in peer dependencies, no gain to install it as devDependencies
+          require('@linaria/rollup')({
             sourceMap: true,
             babelOptions: {
               presets: ['@babel/preset-typescript'],
