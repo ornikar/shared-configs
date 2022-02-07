@@ -48,13 +48,31 @@ const { getGraphPackages } = require('..');
       // override is only available for private package, which is examples or apps
       const tsconfigCurrentContent = pkg.private ? JSON.parse(await fs.readFile(tsconfigPath)) : {};
 
+      const filteredCurrentCompilerOptions = tsconfigCurrentContent.compilerOptions || {};
+      delete filteredCurrentCompilerOptions.rootDir;
+      delete filteredCurrentCompilerOptions.rootDirs;
+      delete filteredCurrentCompilerOptions.composite;
+      delete filteredCurrentCompilerOptions.incremental;
+      delete filteredCurrentCompilerOptions.noEmit;
+      delete filteredCurrentCompilerOptions.noEmitOnError;
+      delete filteredCurrentCompilerOptions.paths;
+
       const tsconfigContent = {
         extends: '../../tsconfig.base.json',
         ...tsconfigCurrentContent,
         compilerOptions: {
-          rootDirs: ['src'],
-          baseUrl: './src',
-          ...tsconfigCurrentContent.compilerOptions,
+          rootDir: 'src',
+          composite: true,
+          incremental: true,
+          isolatedModules: true,
+          noEmit: false,
+          noEmitOnError: true,
+          declaration: true,
+          declarationMap: true,
+          emitDeclarationOnly: true,
+          outDir: 'node_modules/.cache/tsc',
+          tsBuildInfoFile: 'node_modules/.cache/tsc/tsbuildinfo',
+          ...filteredCurrentCompilerOptions,
         },
         include: tsconfigCurrentContent.include || ['src', '../../typings'],
       };
@@ -62,12 +80,6 @@ const { getGraphPackages } = require('..');
       const tsconfigBuildContent = {
         extends: './tsconfig.json',
         compilerOptions: {
-          rootDir: 'src',
-          composite: true,
-          noEmit: false,
-          isolatedModules: false,
-          emitDeclarationOnly: true,
-          declarationMap: true,
           outDir: 'dist/definitions',
           tsBuildInfoFile: 'dist/tsbuildinfo',
         },
@@ -114,12 +126,17 @@ const { getGraphPackages } = require('..');
       }
 
       if (dependencies.length > 0) {
-        if (!pkg.private) {
-          dependencies.forEach((pkgDep) => {
-            const depPath = `../../../${pkgDep.name}/src`;
-            tsconfigContent.compilerOptions.paths[pkgDep.name] = [`${depPath}/index.ts`];
-          });
-        }
+        dependencies.forEach((pkgDep) => {
+          const depPath = `../../../${pkgDep.name}/src`;
+          if (!tsconfigContent.compilerOptions.paths) {
+            tsconfigContent.compilerOptions.paths = {};
+          }
+          tsconfigContent.compilerOptions.paths[pkgDep.name] = [depPath];
+          tsconfigContent.compilerOptions.paths[`${pkgDep.name}/*`] = [`${depPath}/*`];
+        });
+        tsconfigContent.references = dependencies.map((pkgDep) => ({
+          path: `../../${pkgDep.name}/tsconfig.json`,
+        }));
         tsconfigBuildContent.references = dependencies.map((pkgDep) => ({
           path: `../../${pkgDep.name}/tsconfig.build.json`,
         }));
