@@ -101,28 +101,31 @@ module.exports = function installHusky({ pkg, pm }) {
   } else {
     const runYarnInstallOnDiff = `
 if [ -n "$(git diff HEAD@{1}..HEAD@{0} -- yarn.lock)" ]; then
-  ${
+  ${[
     // https://yarnpkg.com/features/zero-installs
     isYarnPnp
       ? ''
       : `yarn install ${
           isYarnBerry ? '--immutable --immutable-cache' : '--prefer-offline --pure-lockfile --ignore-optional'
-        } || true`
-  }
-  ${runCleanCache ? `${pmExec} clean:cache` : ''}
+        } || true`,
+    runCleanCache ? `${pmExec} clean:cache` : '',
+  ]
+    .filter(Boolean)
+    .join('\n  ')}
 fi`;
 
     let postHookContent = runYarnInstallOnDiff;
     const packageLocations = getPackagesLocations(pkg);
 
     packageLocations.forEach((packageLocation) => {
-      const cdToPackageLocation = packageLocation === '.' ? '' : `cd ${packageLocation} && `;
+      const cdToPackageLocation = packageLocation === '.' ? '' : `cd ${packageLocation}`;
+      const cdToRoot = packageLocation === '.' ? '' : `cd ${path.relative(packageLocation, '.')}`;
 
       const gemfilePath = path.join(packageLocation, 'Gemfile.lock');
       if (fs.existsSync(gemfilePath)) {
         postHookContent += `
 if [ -n "$(git diff HEAD@{1}..HEAD@{0} -- ${gemfilePath})" ]; then
-${cdToPackageLocation}bundle install --path vendor/bundle || true
+  ${[cdToPackageLocation, 'bundle install --path vendor/bundle || true', cdToRoot].filter(Boolean).join('\n  ')}
 fi
 `;
       }
@@ -131,7 +134,7 @@ fi
       if (fs.existsSync(podfilePath)) {
         postHookContent += `
 if [ -n "$(git diff HEAD@{1}..HEAD@{0} -- ${podfilePath})" ]; then
-${cdToPackageLocation}yarn pod-install || true
+  ${[cdToPackageLocation, 'yarn pod-install || true', cdToRoot].filter(Boolean).join('\n  ')}
 fi
       `;
       }
