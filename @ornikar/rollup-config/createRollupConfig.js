@@ -37,6 +37,8 @@ const createBuildsForPackage = (
   const distPath = `${packagesDir}/${packageName}/dist`;
   const inputBaseDir = `./${packagesDir}/${packageName}/src/`;
   const useLinaria = shouldUseLinaria && shouldUseLinaria(packageName);
+  // eslint-disable-next-line import/no-unresolved, global-require -- in peer dependencies, no gain to install it as devDependencies
+  const linariaPlugin = useLinaria && require('@linaria/rollup').default;
 
   const createBuild = (entryName, target, version, formats, { exportCss, platformOS } = {}) => {
     const preferConst = !(target === 'browser' && version !== 'modern');
@@ -75,8 +77,7 @@ const createBuildsForPackage = (
 
       plugins: [
         isLinariaEnabledForPlatform &&
-          // eslint-disable-next-line import/no-unresolved, global-require -- in peer dependencies, no gain to install it as devDependencies
-          require('@linaria/rollup')({
+          linariaPlugin({
             sourceMap: true,
             babelOptions: {
               presets: ['@babel/preset-typescript'],
