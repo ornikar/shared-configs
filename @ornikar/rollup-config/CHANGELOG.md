@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.5.4](https://github.com/ornikar/shared-configs/compare/@ornikar/rollup-config@4.5.3...@ornikar/rollup-config@4.5.4) (2022-02-08)
+
+
+### Bug Fixes
+
+* **rollup-config:** require .default from @linaria/rollup ([0eb210b](https://github.com/ornikar/shared-configs/commit/0eb210ba0c181b9a0dc986e1c6f38e71df52e47a))
+
+
+
+
+
 ## [4.5.3](https://github.com/ornikar/shared-configs/compare/@ornikar/rollup-config@4.5.2...@ornikar/rollup-config@4.5.3) (2022-02-04)
 
 
