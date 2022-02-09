@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.2.3](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@7.2.2...@ornikar/repo-config@7.2.3) (2022-02-09)
+
+
+### Bug Fixes
+
+* **repo-config:** cd package location [no issue] ([#647](https://github.com/ornikar/shared-configs/issues/647)) ([bbfea60](https://github.com/ornikar/shared-configs/commit/bbfea6042e64cec11deb119699c63e8e330b2e3d))
+
+
+
+
+
 ## [7.2.2](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@7.2.1...@ornikar/repo-config@7.2.2) (2022-02-04)
 
 
