@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.5.5](https://github.com/ornikar/shared-configs/compare/@ornikar/rollup-config@4.5.4...@ornikar/rollup-config@4.5.5) (2022-02-10)
+
+
+### Bug Fixes
+
+* **rollup-config:** add default value to options ([6a9553a](https://github.com/ornikar/shared-configs/commit/6a9553a5b1c59ba25f57b676f3d2cbbcd4b57583))
+
+
+
+
+
 ## [4.5.4](https://github.com/ornikar/shared-configs/compare/@ornikar/rollup-config@4.5.3...@ornikar/rollup-config@4.5.4) (2022-02-08)
 
 
