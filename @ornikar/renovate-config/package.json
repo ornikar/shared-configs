@@ -15,6 +15,7 @@
       "prConcurrentLimit": 40,
       "masterIssue": true,
       "masterIssueApproval": true,
+      "recreateClosed": true,
       "rebaseStalePrs": true,
       "updateNotScheduled": false,
       "postUpdateOptions": [
