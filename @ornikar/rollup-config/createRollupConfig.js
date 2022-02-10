@@ -209,7 +209,7 @@ const createBuildsForPackage = (
   );
 };
 
-module.exports = (options) => {
+module.exports = (options = {}) => {
   if (typeof options === 'string') {
     // eslint-disable-next-line no-param-reassign
     options = {
