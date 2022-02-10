@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.3.0](https://github.com/ornikar/shared-configs/compare/@ornikar/renovate-config@3.2.1...@ornikar/renovate-config@3.3.0) (2022-02-10)
+
+
+### Bug Fixes
+
+* **renovate-config:** prevent renovate to reopen prs ([e656299](https://github.com/ornikar/shared-configs/commit/e656299495d86a217bf03e66806336e4e25ba1a6))
+
+
+### Features
+
+* **renovate-config:** group runtime-app ([bc24eed](https://github.com/ornikar/shared-configs/commit/bc24eed7f96f3637db2ba985e8966279222fa900))
+* change lockFileMaintenance schedule ([8e761e5](https://github.com/ornikar/shared-configs/commit/8e761e5cacc75f134bb03b270dafb7f0a9a3bb71))
+* **renovate-config:** enable lockfile maintenance prs ([0bf660a](https://github.com/ornikar/shared-configs/commit/0bf660a51437cececc3275ae8f2e1a6ae94ef773))
+
+
+
+
+
 ## [3.2.1](https://github.com/ornikar/shared-configs/compare/@ornikar/renovate-config@3.2.0...@ornikar/renovate-config@3.2.1) (2022-02-04)
 
 **Note:** Version bump only for package @ornikar/renovate-config
