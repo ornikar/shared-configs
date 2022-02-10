@@ -29,6 +29,9 @@
       "reviewers": [
         "team:frontend-architects"
       ],
+      "lockFileMaintenance": {
+        "enabled": true
+      },
       "packageRules": [
         {
           "matchDepTypes": [
