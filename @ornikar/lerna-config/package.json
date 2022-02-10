@@ -12,8 +12,8 @@
   },
   "main": "./index.js",
   "bin": {
-    "lerna-config-generate-tsconfig-files": "./bin/generate-tsconfig-files.js",
-    "lerna-config-generate-eslintrc-files": "./bin/generate-eslintrc-files.js"
+    "lerna-config-generate-eslintrc-files": "./bin/generate-eslintrc-files.js",
+    "lerna-config-generate-tsconfig-files": "./bin/generate-tsconfig-files.js"
   },
   "peerDependencies": {
     "lerna": ">= 3.19.0"

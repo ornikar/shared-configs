@@ -7,6 +7,7 @@ const fs = require('fs');
 const path = require('path');
 const husky = require('husky');
 const semver = require('semver');
+const { readYarnConfigFile } = require('../yarn');
 
 const ensureLegacyHuskyConfigDeleted = () => {
   try {
@@ -42,14 +43,6 @@ const ensureHookDeleted = (hookName) => {
     fs.unlinkSync(path.resolve(`.husky/${hookName}`));
   } catch {
     // if the hook doesn't exists, continue
-  }
-};
-
-const readYarnConfigFile = () => {
-  try {
-    return fs.readFileSync(path.resolve('.yarnrc.yml'));
-  } catch {
-    return '';
   }
 };
 

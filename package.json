@@ -6,7 +6,7 @@
     "lint": "yarn run lint:prettier && yarn run lint:eslint && yarn run lint:css",
     "lint:prettier": "prettier --check .",
     "lint:eslint": "eslint --report-unused-disable-directives .",
-    "lint:css": "yarn --cwd @ornikar/stylelint-config lint-tests",
+    "lint:css": "yarn workspace @ornikar/stylelint-config lint-tests",
     "release": "lerna publish --conventional-commits -m 'chore: release'",
     "postinstall": "./@ornikar/repo-config/bin/ornikar-repo-config-postinstall.js"
   },
@@ -30,5 +30,6 @@
     "lerna": "4.0.0",
     "lint-staged": "12.3.3",
     "prettier": "2.5.1"
-  }
+  },
+  "packageManager": "yarn@3.1.1"
 }

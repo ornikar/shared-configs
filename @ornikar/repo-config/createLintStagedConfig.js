@@ -1,6 +1,7 @@
 'use strict';
 
 const path = require('path');
+const { readYarnConfigFile } = require('./lib/yarn');
 
 // eslint-disable-next-line import/no-dynamic-require
 const pkg = require(path.resolve('package.json'));
@@ -19,6 +20,7 @@ const getSrcDirectories = (srcDirectoryName = 'src') =>
 module.exports = function createLintStagedConfig(options = {}) {
   const srcExtensions = options.srcExtensions || ['js', 'mjs', 'ts'];
   const srcDirectories = getSrcDirectories(options.srcDirectoryName);
+  const yarnConfigFile = readYarnConfigFile();
 
   return {
     [`{yarn.lock,package.json${
@@ -26,10 +28,9 @@ module.exports = function createLintStagedConfig(options = {}) {
     }}`]: (filenames) => {
       const packagejsonFilenames = filenames.filter((filename) => filename.endsWith('.json'));
       return [
-        'yarn --prefer-offline',
-        'yarn-deduplicate -s fewer',
-        'yarn-deduplicate',
-        'yarn --prefer-offline',
+        ...(yarnConfigFile
+          ? ['yarn dedupe']
+          : ['yarn --prefer-offline', 'yarn-deduplicate -s fewer', 'yarn-deduplicate', 'yarn --prefer-offline']),
         packagejsonFilenames.length === 0 ? undefined : `prettier --write ${packagejsonFilenames.join(' ')}`,
         isLernaRepo && require.resolve('@ornikar/lerna-config/bin/generate-eslintrc-files.js'),
         shouldGenerateTsconfigInLernaRepo && require.resolve('@ornikar/lerna-config/bin/generate-tsconfig-files.js'),

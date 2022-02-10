@@ -11,9 +11,9 @@
     "access": "public"
   },
   "bin": {
-    "ornikar-repo-config-postinstall": "./bin/ornikar-repo-config-postinstall.js",
     "ornikar-prettier-check": "./bin/ornikar-prettier-check.sh",
-    "ornikar-prettier-fix": "./bin/ornikar-prettier-fix.sh"
+    "ornikar-prettier-fix": "./bin/ornikar-prettier-fix.sh",
+    "ornikar-repo-config-postinstall": "./bin/ornikar-repo-config-postinstall.js"
   },
   "dependencies": {
     "@commitlint/cli": "16.1.0",
