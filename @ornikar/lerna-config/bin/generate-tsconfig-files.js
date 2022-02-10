@@ -62,6 +62,7 @@ const { getGraphPackages } = require('..');
         ...tsconfigCurrentContent,
         compilerOptions: {
           rootDir: 'src',
+          baseUrl: 'src',
           composite: true,
           incremental: true,
           isolatedModules: true,
