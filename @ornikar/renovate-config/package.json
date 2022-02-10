@@ -203,6 +203,13 @@
           ]
         },
         {
+          "groupName": "Runtime App Ornikar",
+          "matchPackageNames": [
+            "@ornikar/webapp-runtime",
+            "@ornikar/runtime-app"
+          ]
+        },
+        {
           "groupName": "eslint packages",
           "matchUpdateTypes": [
             "patch",
