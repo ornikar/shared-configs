@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.2.2](https://github.com/ornikar/shared-configs/compare/@ornikar/lerna-config@6.2.1...@ornikar/lerna-config@6.2.2) (2022-02-10)
+
+
+### Bug Fixes
+
+* add missing baseUrl in tsconfig ([9ebd397](https://github.com/ornikar/shared-configs/commit/9ebd39703ba058c7d1503216a5e830c2a319f00d))
+
+
+
+
+
 ## [6.2.1](https://github.com/ornikar/shared-configs/compare/@ornikar/lerna-config@6.2.0...@ornikar/lerna-config@6.2.1) (2022-02-10)
 
 
