@@ -156,10 +156,14 @@ const { getGraphPackages } = require('..');
     }),
   );
 
-  const [tsConfigContent, tsconfigBuildContent] = [tsconfigFiles, tsconfigBuildFiles].map((files) => ({
-    files: [],
-    references: files.map((filePath) => ({ path: filePath })),
-  }));
+  const [tsConfigContent, tsconfigBuildContent] = [tsconfigFiles, tsconfigBuildFiles].map((files) => {
+    const references = files.map((filePath) => ({ path: filePath }));
+    references.sort((a, b) => a.path.localeCompare(b.path, 'en'));
+    return {
+      files: [],
+      references,
+    };
+  });
 
   await Promise.all([
     writeJsonFile('tsconfig.json', tsConfigContent),
