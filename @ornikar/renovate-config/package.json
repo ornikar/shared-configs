@@ -30,7 +30,8 @@
         "team:frontend-architects"
       ],
       "lockFileMaintenance": {
-        "enabled": true
+        "enabled": true,
+        "schedule": []
       },
       "packageRules": [
         {
