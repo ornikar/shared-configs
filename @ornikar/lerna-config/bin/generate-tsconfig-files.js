@@ -61,7 +61,7 @@ const { getGraphPackages } = require('..');
         declarationMap: true,
         emitDeclarationOnly: true,
         outDir: `../../node_modules/.cache/tsc/${pkg.name}`,
-        tsBuildInfoFile: `node_modules/.cache/tsc/${pkg.name}/tsbuildinfo`,
+        tsBuildInfoFile: `../../node_modules/.cache/tsc/${pkg.name}/tsbuildinfo`,
       };
       Object.keys(compilerOptions).forEach((key) => {
         delete filteredCurrentCompilerOptions[key];
