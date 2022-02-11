@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.3.1](https://github.com/ornikar/shared-configs/compare/@ornikar/lerna-config@6.3.0...@ornikar/lerna-config@6.3.1) (2022-02-11)
+
+
+### Bug Fixes
+
+* **lerna-config:** tsBuildInfoFile path ([3f41ec4](https://github.com/ornikar/shared-configs/commit/3f41ec46993487e8a30624fd8aceb303476c1f04))
+
+
+
+
+
 # [6.3.0](https://github.com/ornikar/shared-configs/compare/@ornikar/lerna-config@6.2.2...@ornikar/lerna-config@6.3.0) (2022-02-11)
 
 
