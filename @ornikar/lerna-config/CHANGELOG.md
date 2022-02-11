@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.3.0](https://github.com/ornikar/shared-configs/compare/@ornikar/lerna-config@6.2.2...@ornikar/lerna-config@6.3.0) (2022-02-11)
+
+
+### Features
+
+* **lerna-config:** store tsc cache in monorepo node_modules [no issue] ([#653](https://github.com/ornikar/shared-configs/issues/653)) ([25dcc33](https://github.com/ornikar/shared-configs/commit/25dcc33743d4ddc3b2a8f776fb988d3f1dc3990b))
+
+
+
+
+
 ## [6.2.2](https://github.com/ornikar/shared-configs/compare/@ornikar/lerna-config@6.2.1...@ornikar/lerna-config@6.2.2) (2022-02-10)
 
 
