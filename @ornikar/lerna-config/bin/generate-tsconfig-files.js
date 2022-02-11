@@ -49,30 +49,29 @@ const { getGraphPackages } = require('..');
       const tsconfigCurrentContent = pkg.private ? JSON.parse(await fs.readFile(tsconfigPath)) : {};
 
       const filteredCurrentCompilerOptions = tsconfigCurrentContent.compilerOptions || {};
-      delete filteredCurrentCompilerOptions.rootDir;
-      delete filteredCurrentCompilerOptions.rootDirs;
-      delete filteredCurrentCompilerOptions.composite;
-      delete filteredCurrentCompilerOptions.incremental;
-      delete filteredCurrentCompilerOptions.noEmit;
-      delete filteredCurrentCompilerOptions.noEmitOnError;
-      delete filteredCurrentCompilerOptions.paths;
+      const compilerOptions = {
+        rootDir: 'src',
+        baseUrl: './src',
+        composite: true,
+        incremental: true,
+        isolatedModules: true,
+        noEmit: false,
+        noEmitOnError: true,
+        declaration: true,
+        declarationMap: true,
+        emitDeclarationOnly: true,
+        outDir: `../../node_modules/.cache/tsc/${pkg.name}`,
+        tsBuildInfoFile: `node_modules/.cache/tsc/${pkg.name}/tsbuildinfo`,
+      };
+      Object.keys(compilerOptions).forEach((key) => {
+        delete filteredCurrentCompilerOptions[key];
+      });
 
       const tsconfigContent = {
         extends: '../../tsconfig.base.json',
         ...tsconfigCurrentContent,
         compilerOptions: {
-          rootDir: 'src',
-          baseUrl: 'src',
-          composite: true,
-          incremental: true,
-          isolatedModules: true,
-          noEmit: false,
-          noEmitOnError: true,
-          declaration: true,
-          declarationMap: true,
-          emitDeclarationOnly: true,
-          outDir: 'node_modules/.cache/tsc',
-          tsBuildInfoFile: 'node_modules/.cache/tsc/tsbuildinfo',
+          ...compilerOptions,
           ...filteredCurrentCompilerOptions,
         },
         include: tsconfigCurrentContent.include || ['src', '../../typings'],
