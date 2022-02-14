@@ -26,6 +26,12 @@ const { getGraphPackages } = require('..');
   const tsconfigFiles = [];
   const tsconfigBuildFiles = [];
 
+  const tsPackages = packages.filter((pkg) => {
+    const ornikarConfig = pkg.get('ornikar');
+    const hasEmptyEntries = ornikarConfig && ornikarConfig.entries ? ornikarConfig.entries.length === 0 : false;
+    return !hasEmptyEntries;
+  });
+
   await Promise.all(
     packages.map(async (pkg, index) => {
       const packagePath = path.relative(path.resolve('.'), packageLocations[index]);
@@ -33,10 +39,7 @@ const { getGraphPackages } = require('..');
       const tsconfigEslintPath = `${packagePath}/tsconfig.eslint.json`;
       const tsconfigBuildPath = `${packagePath}/tsconfig.build.json`;
 
-      const ornikarConfig = pkg.get('ornikar');
-      const emptyEntries = ornikarConfig && ornikarConfig.entries ? ornikarConfig.entries.length === 0 : false;
-
-      if (emptyEntries) {
+      if (!tsPackages.includes(pkg)) {
         await Promise.all([
           // tsconfig.json
           fs.unlink(tsconfigPath).catch(() => {}),
@@ -116,7 +119,7 @@ const { getGraphPackages } = require('..');
         };
       }
 
-      const dependencies = packages.filter((lernaPkg) => {
+      const tsDependencies = tsPackages.filter((lernaPkg) => {
         if (lernaPkg.name === pkg.name) return false;
         return (
           (pkg.dependencies && pkg.dependencies[lernaPkg.name]) ||
@@ -133,8 +136,8 @@ const { getGraphPackages } = require('..');
         tsconfigContent.compilerOptions.jsx = 'react-jsx';
       }
 
-      if (dependencies.length > 0) {
-        dependencies.forEach((pkgDep) => {
+      if (tsDependencies.length > 0) {
+        tsDependencies.forEach((pkgDep) => {
           const depPath = `../../../${pkgDep.name}/src`;
           if (!tsconfigContent.compilerOptions.paths) {
             tsconfigContent.compilerOptions.paths = {};
@@ -142,10 +145,10 @@ const { getGraphPackages } = require('..');
           tsconfigContent.compilerOptions.paths[pkgDep.name] = [depPath];
           tsconfigContent.compilerOptions.paths[`${pkgDep.name}/*`] = [`${depPath}/*`];
         });
-        tsconfigContent.references = dependencies.map((pkgDep) => ({
+        tsconfigContent.references = tsDependencies.map((pkgDep) => ({
           path: `../../${pkgDep.name}/tsconfig.json`,
         }));
-        tsconfigBuildContent.references = dependencies.map((pkgDep) => ({
+        tsconfigBuildContent.references = tsDependencies.map((pkgDep) => ({
           path: `../../${pkgDep.name}/tsconfig.build.json`,
         }));
       }
