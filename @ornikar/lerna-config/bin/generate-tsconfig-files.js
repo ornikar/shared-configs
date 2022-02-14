@@ -30,6 +30,7 @@ const { getGraphPackages } = require('..');
     packages.map(async (pkg, index) => {
       const packagePath = path.relative(path.resolve('.'), packageLocations[index]);
       const tsconfigPath = `${packagePath}/tsconfig.json`;
+      const tsconfigEslintPath = `${packagePath}/tsconfig.eslint.json`;
       const tsconfigBuildPath = `${packagePath}/tsconfig.build.json`;
 
       const ornikarConfig = pkg.get('ornikar');
@@ -75,6 +76,13 @@ const { getGraphPackages } = require('..');
           ...filteredCurrentCompilerOptions,
         },
         include: tsconfigCurrentContent.include || ['src', '../../typings'],
+      };
+
+      const tsconfigEslintContent = {
+        extends: './tsconfig.json',
+        compilerOptions: {
+          noEmit: true,
+        },
       };
 
       const tsconfigBuildContent = {
@@ -148,6 +156,8 @@ const { getGraphPackages } = require('..');
       await Promise.all([
         // tsconfig.json
         writeJsonFile(tsconfigPath, tsconfigContent),
+        // tsconfig.eslint.json
+        writeJsonFile(tsconfigEslintPath, tsconfigEslintContent),
         // tsconfig.build.json
         pkg.private
           ? fs.unlink(tsconfigBuildPath).catch(() => {})
