@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.3.2](https://github.com/ornikar/shared-configs/compare/@ornikar/lerna-config@6.3.1...@ornikar/lerna-config@6.3.2) (2022-02-14)
+
+
+### Bug Fixes
+
+* **lerna-config:** fix eslint by not using tsc cache [no issue] ([#655](https://github.com/ornikar/shared-configs/issues/655)) ([e60b5b1](https://github.com/ornikar/shared-configs/commit/e60b5b173dd69cf0bb75d05f66e58e29c3b7efc1))
+
+
+
+
+
 ## [6.3.1](https://github.com/ornikar/shared-configs/compare/@ornikar/lerna-config@6.3.0...@ornikar/lerna-config@6.3.1) (2022-02-11)
 
 
