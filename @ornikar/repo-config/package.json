@@ -19,7 +19,7 @@
     "@commitlint/cli": "16.1.0",
     "@ornikar/commitlint-config": "^4.0.3",
     "husky": "7.0.4",
-    "lint-staged": "12.3.3",
+    "lint-staged": "12.3.4",
     "prettier-plugin-properties": "0.1.0",
     "semver": "^7.3.5",
     "which-pm-runs": "^1.0.0",
