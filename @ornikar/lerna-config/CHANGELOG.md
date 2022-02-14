@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.3.3](https://github.com/ornikar/shared-configs/compare/@ornikar/lerna-config@6.3.2...@ornikar/lerna-config@6.3.3) (2022-02-14)
+
+
+### Bug Fixes
+
+* **lerna-config:** fix tsconfig generator with non-ts packages ([6e58239](https://github.com/ornikar/shared-configs/commit/6e5823924a26827d83360ec9c207ed836d1f41b3))
+
+
+
+
+
 ## [6.3.2](https://github.com/ornikar/shared-configs/compare/@ornikar/lerna-config@6.3.1...@ornikar/lerna-config@6.3.2) (2022-02-14)
 
 
