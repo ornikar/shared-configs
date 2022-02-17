@@ -26,16 +26,20 @@ const { getGraphPackages } = require('..');
   const tsconfigFiles = [];
   const tsconfigBuildFiles = [];
 
+  const tsPackages = packages.filter((pkg) => {
+    const ornikarConfig = pkg.get('ornikar');
+    const hasEmptyEntries = ornikarConfig && ornikarConfig.entries ? ornikarConfig.entries.length === 0 : false;
+    return !hasEmptyEntries;
+  });
+
   await Promise.all(
     packages.map(async (pkg, index) => {
       const packagePath = path.relative(path.resolve('.'), packageLocations[index]);
       const tsconfigPath = `${packagePath}/tsconfig.json`;
+      const tsconfigEslintPath = `${packagePath}/tsconfig.eslint.json`;
       const tsconfigBuildPath = `${packagePath}/tsconfig.build.json`;
 
-      const ornikarConfig = pkg.get('ornikar');
-      const emptyEntries = ornikarConfig && ornikarConfig.entries ? ornikarConfig.entries.length === 0 : false;
-
-      if (emptyEntries) {
+      if (!tsPackages.includes(pkg)) {
         await Promise.all([
           // tsconfig.json
           fs.unlink(tsconfigPath).catch(() => {}),
@@ -49,32 +53,39 @@ const { getGraphPackages } = require('..');
       const tsconfigCurrentContent = pkg.private ? JSON.parse(await fs.readFile(tsconfigPath)) : {};
 
       const filteredCurrentCompilerOptions = tsconfigCurrentContent.compilerOptions || {};
-      delete filteredCurrentCompilerOptions.rootDir;
-      delete filteredCurrentCompilerOptions.rootDirs;
-      delete filteredCurrentCompilerOptions.composite;
-      delete filteredCurrentCompilerOptions.incremental;
-      delete filteredCurrentCompilerOptions.noEmit;
-      delete filteredCurrentCompilerOptions.noEmitOnError;
-      delete filteredCurrentCompilerOptions.paths;
+      const compilerOptions = {
+        rootDir: 'src',
+        baseUrl: './src',
+        composite: true,
+        incremental: true,
+        isolatedModules: true,
+        noEmit: false,
+        noEmitOnError: true,
+        declaration: true,
+        declarationMap: true,
+        emitDeclarationOnly: true,
+        outDir: `../../node_modules/.cache/tsc/${pkg.name}`,
+        tsBuildInfoFile: `../../node_modules/.cache/tsc/${pkg.name}/tsbuildinfo`,
+      };
+      Object.keys(compilerOptions).forEach((key) => {
+        delete filteredCurrentCompilerOptions[key];
+      });
 
       const tsconfigContent = {
         extends: '../../tsconfig.base.json',
         ...tsconfigCurrentContent,
         compilerOptions: {
-          rootDir: 'src',
-          composite: true,
-          incremental: true,
-          isolatedModules: true,
-          noEmit: false,
-          noEmitOnError: true,
-          declaration: true,
-          declarationMap: true,
-          emitDeclarationOnly: true,
-          outDir: 'node_modules/.cache/tsc',
-          tsBuildInfoFile: 'node_modules/.cache/tsc/tsbuildinfo',
+          ...compilerOptions,
           ...filteredCurrentCompilerOptions,
         },
         include: tsconfigCurrentContent.include || ['src', '../../typings'],
+      };
+
+      const tsconfigEslintContent = {
+        extends: './tsconfig.json',
+        compilerOptions: {
+          noEmit: true,
+        },
       };
 
       const tsconfigBuildContent = {
@@ -108,7 +119,7 @@ const { getGraphPackages } = require('..');
         };
       }
 
-      const dependencies = packages.filter((lernaPkg) => {
+      const tsDependencies = tsPackages.filter((lernaPkg) => {
         if (lernaPkg.name === pkg.name) return false;
         return (
           (pkg.dependencies && pkg.dependencies[lernaPkg.name]) ||
@@ -125,8 +136,8 @@ const { getGraphPackages } = require('..');
         tsconfigContent.compilerOptions.jsx = 'react-jsx';
       }
 
-      if (dependencies.length > 0) {
-        dependencies.forEach((pkgDep) => {
+      if (tsDependencies.length > 0) {
+        tsDependencies.forEach((pkgDep) => {
           const depPath = `../../../${pkgDep.name}/src`;
           if (!tsconfigContent.compilerOptions.paths) {
             tsconfigContent.compilerOptions.paths = {};
@@ -134,10 +145,10 @@ const { getGraphPackages } = require('..');
           tsconfigContent.compilerOptions.paths[pkgDep.name] = [depPath];
           tsconfigContent.compilerOptions.paths[`${pkgDep.name}/*`] = [`${depPath}/*`];
         });
-        tsconfigContent.references = dependencies.map((pkgDep) => ({
+        tsconfigContent.references = tsDependencies.map((pkgDep) => ({
           path: `../../${pkgDep.name}/tsconfig.json`,
         }));
-        tsconfigBuildContent.references = dependencies.map((pkgDep) => ({
+        tsconfigBuildContent.references = tsDependencies.map((pkgDep) => ({
           path: `../../${pkgDep.name}/tsconfig.build.json`,
         }));
       }
@@ -148,6 +159,8 @@ const { getGraphPackages } = require('..');
       await Promise.all([
         // tsconfig.json
         writeJsonFile(tsconfigPath, tsconfigContent),
+        // tsconfig.eslint.json
+        writeJsonFile(tsconfigEslintPath, tsconfigEslintContent),
         // tsconfig.build.json
         pkg.private
           ? fs.unlink(tsconfigBuildPath).catch(() => {})
@@ -156,10 +169,14 @@ const { getGraphPackages } = require('..');
     }),
   );
 
-  const [tsConfigContent, tsconfigBuildContent] = [tsconfigFiles, tsconfigBuildFiles].map((files) => ({
-    files: [],
-    references: files.map((filePath) => ({ path: filePath })),
-  }));
+  const [tsConfigContent, tsconfigBuildContent] = [tsconfigFiles, tsconfigBuildFiles].map((files) => {
+    const references = files.map((filePath) => ({ path: filePath }));
+    references.sort((a, b) => a.path.localeCompare(b.path, 'en'));
+    return {
+      files: [],
+      references,
+    };
+  });
 
   await Promise.all([
     writeJsonFile('tsconfig.json', tsConfigContent),

@@ -3,6 +3,72 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.3.3](https://github.com/ornikar/shared-configs/compare/@ornikar/lerna-config@6.3.2...@ornikar/lerna-config@6.3.3) (2022-02-14)
+
+
+### Bug Fixes
+
+* **lerna-config:** fix tsconfig generator with non-ts packages ([6e58239](https://github.com/ornikar/shared-configs/commit/6e5823924a26827d83360ec9c207ed836d1f41b3))
+
+
+
+
+
+## [6.3.2](https://github.com/ornikar/shared-configs/compare/@ornikar/lerna-config@6.3.1...@ornikar/lerna-config@6.3.2) (2022-02-14)
+
+
+### Bug Fixes
+
+* **lerna-config:** fix eslint by not using tsc cache [no issue] ([#655](https://github.com/ornikar/shared-configs/issues/655)) ([e60b5b1](https://github.com/ornikar/shared-configs/commit/e60b5b173dd69cf0bb75d05f66e58e29c3b7efc1))
+
+
+
+
+
+## [6.3.1](https://github.com/ornikar/shared-configs/compare/@ornikar/lerna-config@6.3.0...@ornikar/lerna-config@6.3.1) (2022-02-11)
+
+
+### Bug Fixes
+
+* **lerna-config:** tsBuildInfoFile path ([3f41ec4](https://github.com/ornikar/shared-configs/commit/3f41ec46993487e8a30624fd8aceb303476c1f04))
+
+
+
+
+
+# [6.3.0](https://github.com/ornikar/shared-configs/compare/@ornikar/lerna-config@6.2.2...@ornikar/lerna-config@6.3.0) (2022-02-11)
+
+
+### Features
+
+* **lerna-config:** store tsc cache in monorepo node_modules [no issue] ([#653](https://github.com/ornikar/shared-configs/issues/653)) ([25dcc33](https://github.com/ornikar/shared-configs/commit/25dcc33743d4ddc3b2a8f776fb988d3f1dc3990b))
+
+
+
+
+
+## [6.2.2](https://github.com/ornikar/shared-configs/compare/@ornikar/lerna-config@6.2.1...@ornikar/lerna-config@6.2.2) (2022-02-10)
+
+
+### Bug Fixes
+
+* add missing baseUrl in tsconfig ([9ebd397](https://github.com/ornikar/shared-configs/commit/9ebd39703ba058c7d1503216a5e830c2a319f00d))
+
+
+
+
+
+## [6.2.1](https://github.com/ornikar/shared-configs/compare/@ornikar/lerna-config@6.2.0...@ornikar/lerna-config@6.2.1) (2022-02-10)
+
+
+### Bug Fixes
+
+* **lerna-config:** sort references ([17221d5](https://github.com/ornikar/shared-configs/commit/17221d5db7bb2e6c2738d903d087669aa2dafd78))
+
+
+
+
+
 # [6.2.0](https://github.com/ornikar/shared-configs/compare/@ornikar/lerna-config@6.1.2...@ornikar/lerna-config@6.2.0) (2022-02-09)
 
 

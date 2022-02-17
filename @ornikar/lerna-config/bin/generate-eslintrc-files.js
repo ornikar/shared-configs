@@ -58,7 +58,7 @@ const generateAndWritePackageConfig = async (configPath, prettierOptions, { pack
 
         parser: '@typescript-eslint/parser',
         parserOptions: {
-          project: `${packagePath}/tsconfig.json`,
+          project: `${packagePath}/tsconfig.eslint.json`,
         },
       },
       callback: (configParam) => {
