@@ -1,7 +1,7 @@
 'use strict';
 
-const path = require('path');
 const fs = require('fs');
+const path = require('path');
 
 // eslint-disable-next-line import/no-dynamic-require
 const pkg = require(path.resolve('package.json'));
