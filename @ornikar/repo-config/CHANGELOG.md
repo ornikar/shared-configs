@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.3.0](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@7.2.5...@ornikar/repo-config@7.3.0) (2022-02-24)
+
+
+### Features
+
+* add check packagejson script to lint staged config [no issue] ([#658](https://github.com/ornikar/shared-configs/issues/658)) ([e362c15](https://github.com/ornikar/shared-configs/commit/e362c1511f5155557a19a53f0e97d2e21ab39a67))
+
+
+
+
+
 ## [7.2.5](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@7.2.4...@ornikar/repo-config@7.2.5) (2022-02-14)
 
 **Note:** Version bump only for package @ornikar/repo-config
