@@ -3,7 +3,7 @@
 const fs = require('fs');
 const path = require('path');
 const createBaseLintStagedConfig = require('@ornikar/repo-config/createLintStagedConfig');
-const checkPkgScriptPath = './scripts/check-packagejson.js';
+
 const pkg = JSON.parse(fs.readFileSync(path.resolve('package.json'), 'utf-8'));
 
 module.exports = function createLintStagedConfig(options = {}) {
@@ -19,12 +19,6 @@ module.exports = function createLintStagedConfig(options = {}) {
     Object.assign(config, {
       [`${srcDirectories}/**/*.module.{css,css.d.ts}`]: (filenames) => ["tcm -s -p '**/*.module.css'"],
     });
-  }
-
-  if (fs.existsSync(checkPkgScriptPath)) {
-    Object.assign(config, {
-      ['{package.json,@ornikar/*/package.json}']: () => checkPkgScriptPath,
-    })
   }
 
   return config;
