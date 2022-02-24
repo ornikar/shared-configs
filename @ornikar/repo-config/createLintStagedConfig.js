@@ -8,7 +8,7 @@ const pkg = require(path.resolve('package.json'));
 const workspaces = pkg.workspaces || false;
 const isLernaRepo = Boolean(pkg.devDependencies && pkg.devDependencies.lerna);
 const hasTypescript = Boolean(pkg.devDependencies && pkg.devDependencies.typescript);
-const shouldGenerateTsconfigInLernaRepo = isLernaRepo && hasTypescript
+const shouldGenerateTsconfigInLernaRepo = isLernaRepo && hasTypescript;
 const shouldRunCheckPkgScript = fs.existsSync('./scripts/check-packagejson.js');
 
 const getSrcDirectories = (srcDirectoryName = 'src') =>
