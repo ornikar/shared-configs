@@ -1,5 +1,6 @@
 'use strict';
 
+const fs = require('fs');
 const path = require('path');
 
 // eslint-disable-next-line import/no-dynamic-require
@@ -8,6 +9,7 @@ const workspaces = pkg.workspaces || false;
 const isLernaRepo = Boolean(pkg.devDependencies && pkg.devDependencies.lerna);
 const hasTypescript = Boolean(pkg.devDependencies && pkg.devDependencies.typescript);
 const shouldGenerateTsconfigInLernaRepo = isLernaRepo && hasTypescript;
+const shouldRunCheckPkgScript = fs.existsSync('./scripts/check-packagejson.js');
 
 const getSrcDirectories = (srcDirectoryName = 'src') =>
   workspaces
@@ -33,6 +35,7 @@ module.exports = function createLintStagedConfig(options = {}) {
         packagejsonFilenames.length === 0 ? undefined : `prettier --write ${packagejsonFilenames.join(' ')}`,
         isLernaRepo && require.resolve('@ornikar/lerna-config/bin/generate-eslintrc-files.js'),
         shouldGenerateTsconfigInLernaRepo && require.resolve('@ornikar/lerna-config/bin/generate-tsconfig-files.js'),
+        shouldRunCheckPkgScript && './scripts/check-packagejson.js',
       ].filter(Boolean);
     },
     '!(package).json': ['prettier --write'],
