@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.3.1](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@7.3.0...@ornikar/repo-config@7.3.1) (2022-03-01)
+
+
+### Bug Fixes
+
+* use node to run check-packagejson script ([00a8219](https://github.com/ornikar/shared-configs/commit/00a8219761232c84bddc98124038a489f04d7e2c))
+
+
+
+
+
 # [7.3.0](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@7.2.5...@ornikar/repo-config@7.3.0) (2022-02-24)
 
 
