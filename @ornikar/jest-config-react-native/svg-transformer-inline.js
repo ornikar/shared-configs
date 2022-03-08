@@ -1,3 +1,5 @@
 'use strict';
 
-module.exports = require('jest-svg-transformer');
+const { process } = require('jest-svg-transformer');
+
+exports.process = process;
