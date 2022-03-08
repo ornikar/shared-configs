@@ -14,7 +14,7 @@ parameters:
 # -------------------------------------------------------------------------------------------------
 
 orbs:
-  frontend: ornikar/frontend-orb@4.6.1
+  frontend: ornikar/frontend-orb@4.7.0
 
 # -------------------------------------------------------------------------------------------------
 # COMMANDS
@@ -38,6 +38,7 @@ jobs:
     steps:
       - checkout
       - frontend/dependencies:
+          berry: true
           before-install:
             - frontend/restore-cache: *restore-cache-params
           after-install:
