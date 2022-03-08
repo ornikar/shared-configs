@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.4.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react-native@3.3.2...@ornikar/jest-config-react-native@3.4.0) (2022-03-08)
+
+
+### Bug Fixes
+
+* **jest-config-react-native:** fix to make it work with jest 27 ([cf25dcd](https://github.com/ornikar/shared-configs/commit/cf25dcdd784617c91563bf14057845f75b4e20ca))
+
+
+### Features
+
+* faster jest [no issue] ([#660](https://github.com/ornikar/shared-configs/issues/660)) ([866764e](https://github.com/ornikar/shared-configs/commit/866764e4e12d27fa5b6a12f9452b99808035c2d6))
+
+
+
+
+
 ## [3.3.2](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react-native@3.3.1...@ornikar/jest-config-react-native@3.3.2) (2022-02-04)
 
 **Note:** Version bump only for package @ornikar/jest-config-react-native

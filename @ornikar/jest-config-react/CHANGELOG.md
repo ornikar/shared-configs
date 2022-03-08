@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [9.4.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@9.3.2...@ornikar/jest-config-react@9.4.0) (2022-03-08)
+
+
+### Features
+
+* faster jest [no issue] ([#660](https://github.com/ornikar/shared-configs/issues/660)) ([866764e](https://github.com/ornikar/shared-configs/commit/866764e4e12d27fa5b6a12f9452b99808035c2d6))
+
+
+
+
+
 ## [9.3.2](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@9.3.1...@ornikar/jest-config-react@9.3.2) (2022-02-24)
 
 **Note:** Version bump only for package @ornikar/jest-config-react

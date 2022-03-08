@@ -1,6 +1,6 @@
 {
   "name": "@ornikar/jest-config-react-native",
-  "version": "3.3.2",
+  "version": "3.4.0",
   "description": "✅⚛️📱 jest config for react-native",
   "repository": "ornikar/shared-configs",
   "main": "jest-preset.js",
@@ -19,7 +19,7 @@
     "react-dom": "^17.0.0"
   },
   "dependencies": {
-    "@ornikar/jest-config-react": "^9.3.2",
+    "@ornikar/jest-config-react": "^9.4.0",
     "jest-svg-transformer": "^1.0.0"
   },
   "devDependencies": {
