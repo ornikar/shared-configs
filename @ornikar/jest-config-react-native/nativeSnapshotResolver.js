@@ -4,15 +4,11 @@ const path = require('path');
 
 module.exports = {
   resolveSnapshotPath: (testPath, snapshotExtension) => {
-    const snapshotPath = `${path.dirname(testPath)}/__native_snapshots__/${path.basename(
-      testPath,
-    )}${snapshotExtension}`;
-    return snapshotPath;
+    return `${path.dirname(testPath)}/__native_snapshots__/${path.basename(testPath)}${snapshotExtension}`;
   },
 
   resolveTestPath: (snapshotFilePath, snapshotExtension) => {
-    const testPath = snapshotFilePath.replace('/__native_snapshots__', '').slice(0, -snapshotExtension.length);
-    return testPath;
+    return snapshotFilePath.replace('/__native_snapshots__', '').slice(0, -snapshotExtension.length);
   },
 
   testPathForConsistencyCheck: 'src/shared/components/Button/Button.test.tsx',

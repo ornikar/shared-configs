@@ -19,7 +19,7 @@
     "react-dom": "^17.0.0"
   },
   "dependencies": {
-    "@ornikar/jest-config": "^7.1.4",
+    "@ornikar/jest-config-react": "^9.3.2",
     "jest-svg-transformer": "^1.0.0"
   },
   "devDependencies": {
