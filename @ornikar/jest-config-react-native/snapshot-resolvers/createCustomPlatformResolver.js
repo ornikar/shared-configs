@@ -2,7 +2,8 @@
 
 const path = require('path');
 
-module.exports = function createCustomPlatformResolver(extensionSuffix) {
+module.exports = function createCustomPlatformResolver(platform) {
+  const extensionSuffix = `.${platform}`;
   return {
     resolveSnapshotPath: (testPath, snapshotExtension) =>
       path.join(
