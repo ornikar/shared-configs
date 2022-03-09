@@ -3260,14 +3260,14 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@ornikar/repo-config-react@workspace:@ornikar/repo-config-react"
   dependencies:
-    "@ornikar/repo-config": ^7.3.2
+    "@ornikar/repo-config": ^7.3.3
     cross-env: ^7.0.0
     svgo: ^1.3.0
     typed-css-modules: 0.7.0
   languageName: unknown
   linkType: soft
 
-"@ornikar/repo-config@^7.3.2, @ornikar/repo-config@workspace:@ornikar/repo-config":
+"@ornikar/repo-config@^7.3.3, @ornikar/repo-config@workspace:@ornikar/repo-config":
   version: 0.0.0-use.local
   resolution: "@ornikar/repo-config@workspace:@ornikar/repo-config"
   dependencies:
