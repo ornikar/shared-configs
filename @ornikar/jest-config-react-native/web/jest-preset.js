@@ -6,6 +6,7 @@ const expoPreset = require('jest-expo/web/jest-preset');
 module.exports = {
   ...baseOrnikarPreset,
   ...expoPreset,
+  snapshotResolver: require.resolve('../snapshot-resolvers/resolver.web.js'),
   setupFiles: [...expoPreset.setupFiles, ...baseOrnikarPreset.setupFiles],
   testMatch: [
     ...baseOrnikarPreset.testMatch,
