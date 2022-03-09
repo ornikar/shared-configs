@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.0.1](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react-native@4.0.0...@ornikar/jest-config-react-native@4.0.1) (2022-03-09)
+
+
+### Bug Fixes
+
+* **jest-config-react-native:** fix dot missing in resolver ([878c2ab](https://github.com/ornikar/shared-configs/commit/878c2ab47340945ad780122de9b631c7c6d9a98d))
+
+
+
+
+
 # [4.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react-native@3.4.0...@ornikar/jest-config-react-native@4.0.0) (2022-03-09)
 
 
