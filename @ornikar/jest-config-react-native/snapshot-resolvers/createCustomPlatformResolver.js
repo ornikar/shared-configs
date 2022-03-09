@@ -3,18 +3,15 @@
 const path = require('path');
 
 module.exports = function createCustomPlatformResolver(platform) {
-  const extensionSuffix = `.${platform}`;
   return {
     resolveSnapshotPath: (testPath, snapshotExtension) =>
       path.join(
-        path.join(path.dirname(testPath), '__snapshots__'),
-        path.basename(testPath) + snapshotExtension + extensionSuffix,
+        path.join(path.dirname(testPath), `__snapshots_${platform}__`),
+        path.basename(testPath) + snapshotExtension,
       ),
 
     resolveTestPath: (snapshotPath, snapshotExtension) =>
-      path.normalize(
-        path.join(path.dirname(snapshotPath), '..', path.basename(snapshotPath, snapshotExtension + extensionSuffix)),
-      ),
+      path.normalize(path.join(path.dirname(snapshotPath), '..', path.basename(snapshotPath, snapshotExtension))),
 
     testPathForConsistencyCheck: path.posix.join('consistency_check', 'example.test.js'),
   };
