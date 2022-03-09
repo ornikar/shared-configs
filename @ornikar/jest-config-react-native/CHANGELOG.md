@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react-native@3.4.0...@ornikar/jest-config-react-native@4.0.0) (2022-03-09)
+
+
+### Bug Fixes
+
+* **jest-config-react-native:** custom platform resolvers ([23f4f0f](https://github.com/ornikar/shared-configs/commit/23f4f0f1c706a417c7773f96b486012b3676c8d8))
+
+
+### BREAKING CHANGES
+
+* **jest-config-react-native:** removed nativeSnapshotResolver.js
+
+
+
+
+
 # [3.4.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react-native@3.3.2...@ornikar/jest-config-react-native@3.4.0) (2022-03-08)
 
 
