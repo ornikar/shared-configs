@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.0.2](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react-native@4.0.1...@ornikar/jest-config-react-native@4.0.2) (2022-03-09)
+
+
+### Bug Fixes
+
+* **jest-config-react-native:** fix platform in directory for jest cleanup system ([9d47c6f](https://github.com/ornikar/shared-configs/commit/9d47c6ff3fb089186c3553bdb08c2f0d2a8ffac6))
+
+
+
+
+
 ## [4.0.1](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react-native@4.0.0...@ornikar/jest-config-react-native@4.0.1) (2022-03-09)
 
 
