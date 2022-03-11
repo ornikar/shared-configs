@@ -23,7 +23,7 @@ module.exports = function createOrnikarStorybookTheme(overrides) {
 
     // Text colors
     textColor: '#2C293D',
-    textMutedColor: '#CCCCCC',
+    textMutedColor: '#737373',
     textInverseColor: 'rgba(255,255,255,0.9)',
 
     // Toolbar default and active colors
