@@ -8,13 +8,13 @@ module.exports = function createOrnikarStorybookTheme(overrides) {
     brandTitle: 'Ornikar',
     brandUrl: '/',
 
-    colorPrimary: '#FF8B33',
-    colorSecondary: '#FF8B33',
+    colorPrimary: '#4C34E0',
+    colorSecondary: '#4C34E0',
 
     // UI
-    appBg: '#DAE1E6',
-    appContentBg: '#FAFBFC',
-    appBorderColor: '#CFD8DC',
+    appBg: '#E5E5E5',
+    appContentBg: '#F2F2F2',
+    appBorderColor: '#E5E5E5',
     appBorderRadius: 4,
 
     // Typography
@@ -22,18 +22,19 @@ module.exports = function createOrnikarStorybookTheme(overrides) {
     fontCode: 'monospace',
 
     // Text colors
-    textColor: '#38444C',
+    textColor: '#2C293D',
+    textMutedColor: '#CCCCCC',
     textInverseColor: 'rgba(255,255,255,0.9)',
 
     // Toolbar default and active colors
-    barTextColor: '#7B8E98',
-    barSelectedColor: '#FF8B33',
+    barTextColor: '#737373',
+    barSelectedColor: '#4C34E0',
     barBg: '#fff',
 
     // Form colors
-    inputBg: '#DAE1E6',
-    inputBorder: '#91A4AE',
-    inputTextColor: '#586A74',
+    inputBg: '#E5E5E5',
+    inputBorder: '#737373',
+    inputTextColor: '#2C293D',
     inputBorderRadius: 2,
 
     ...overrides,
