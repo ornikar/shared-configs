@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.2.0](https://github.com/ornikar/shared-configs/compare/@ornikar/storybook-config@4.1.1...@ornikar/storybook-config@4.2.0) (2022-03-14)
+
+
+### Features
+
+* **storybook-config:** update theme late-ocean [no issue] ([#665](https://github.com/ornikar/shared-configs/issues/665)) ([a3e8de9](https://github.com/ornikar/shared-configs/commit/a3e8de961dbc6387f6cc854f8b27a4446684ae4f))
+
+
+
+
+
 ## [4.1.1](https://github.com/ornikar/shared-configs/compare/@ornikar/storybook-config@4.1.0...@ornikar/storybook-config@4.1.1) (2022-02-04)
 
 **Note:** Version bump only for package @ornikar/storybook-config
