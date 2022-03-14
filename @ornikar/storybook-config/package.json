@@ -1,6 +1,6 @@
 {
   "name": "@ornikar/storybook-config",
-  "version": "4.2.0",
+  "version": "4.2.1",
   "description": "📖 storybook config files",
   "repository": "ornikar/shared-configs",
   "main": "index.js",

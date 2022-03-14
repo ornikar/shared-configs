@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.2.1](https://github.com/ornikar/shared-configs/compare/@ornikar/storybook-config@4.2.0...@ornikar/storybook-config@4.2.1) (2022-03-14)
+
+
+### Bug Fixes
+
+* fix appContentBg ([8010d22](https://github.com/ornikar/shared-configs/commit/8010d229cb6de997cfcadb03e91a8aa54c709a52))
+
+
+
+
+
 # [4.2.0](https://github.com/ornikar/shared-configs/compare/@ornikar/storybook-config@4.1.1...@ornikar/storybook-config@4.2.0) (2022-03-14)
 
 
