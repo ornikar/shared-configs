@@ -13,7 +13,7 @@ module.exports = function createOrnikarStorybookTheme(overrides) {
 
     // UI
     appBg: '#E5E5E5',
-    appContentBg: '#F2F2F2',
+    appContentBg: '#fff',
     appBorderColor: '#E5E5E5',
     appBorderRadius: 4,
 
