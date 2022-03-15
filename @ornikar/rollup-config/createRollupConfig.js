@@ -79,7 +79,7 @@ const createBuildsForPackage = (
         isLinariaEnabledForPlatform &&
           linariaPlugin({
             sourceMap: true,
-            classNameSlug: `${pkg?.ornikar?.linariaClassnamePrefix || packageName}_[title]_[hash]`,
+            classNameSlug: `${(pkg.ornikar && pkg.ornikar.linariaClassnamePrefix) || packageName}_[title]_[hash]`,
             babelOptions: {
               presets: ['@babel/preset-typescript'],
             },
