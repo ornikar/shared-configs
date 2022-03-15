@@ -1,5 +1,3 @@
-/* eslint-disable filenames/match-exported */
-
 'use strict';
 
 module.exports = function createOrnikarStorybookTheme(overrides) {

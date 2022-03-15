@@ -1,4 +1,3 @@
-/* eslint-disable filenames/match-exported */
 // see https://github.com/christophehurpeau/pob/blob/main/%40pob/root/bin/postinstall/install-husky.js
 
 'use strict';
