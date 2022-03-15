@@ -17,6 +17,9 @@
     "postcss-custom-properties": "^10.0.0",
     "postcss-nested": "^4.1.1"
   },
+  "devDependencies": {
+    "postcss": "7.0.39"
+  },
   "peerDependencies": {
     "postcss": "^7.0.5"
   }
