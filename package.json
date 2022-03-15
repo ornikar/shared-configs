@@ -3,7 +3,7 @@
   "private": true,
   "repository": "ornikar/shared-configs",
   "scripts": {
-    "preversion": "yarn && git add yarn.lock",
+    "version": "yarn && git add yarn.lock",
     "lint": "yarn run lint:prettier && yarn run lint:eslint && yarn run lint:css",
     "lint:prettier": "prettier --check .",
     "lint:eslint": "eslint --report-unused-disable-directives .",
