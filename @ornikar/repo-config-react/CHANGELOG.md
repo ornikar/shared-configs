@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.0.16](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config-react@7.0.15...@ornikar/repo-config-react@7.0.16) (2022-03-15)
+
+**Note:** Version bump only for package @ornikar/repo-config-react
+
+
+
+
+
 ## [7.0.15](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config-react@7.0.14...@ornikar/repo-config-react@7.0.15) (2022-03-09)
 
 **Note:** Version bump only for package @ornikar/repo-config-react

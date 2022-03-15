@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.6.0](https://github.com/ornikar/shared-configs/compare/@ornikar/rollup-config@4.5.5...@ornikar/rollup-config@4.6.0) (2022-03-15)
+
+
+### Features
+
+* **rollup-config:** configure classNameSlug ARCH-1503 ([#641](https://github.com/ornikar/shared-configs/issues/641)) ([117b281](https://github.com/ornikar/shared-configs/commit/117b2810034111600df224c3531d6a2604317c45))
+
+
+
+
+
 ## [4.5.5](https://github.com/ornikar/shared-configs/compare/@ornikar/rollup-config@4.5.4...@ornikar/rollup-config@4.5.5) (2022-02-10)
 
 
