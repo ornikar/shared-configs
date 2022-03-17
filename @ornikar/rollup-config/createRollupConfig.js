@@ -226,7 +226,7 @@ module.exports = (options = {}) => {
   const packages = process.env.ORNIKAR_ONLY
     ? [process.env.ORNIKAR_ONLY]
     : fs
-        .readdirSync(path.resolve(`${createBuildsForPackageOptions.rootDir}/${packagesDir}`))
+        .readdirSync(path.resolve(`${createBuildsForPackageOptions.rootDir || '.'}/${packagesDir}`))
         .filter((name) => name !== '.DS_Store' && !name.startsWith('.eslintrc'));
 
   return packages.flatMap((packageName) =>
