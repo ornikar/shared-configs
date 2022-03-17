@@ -32,7 +32,7 @@ const createBuildsForPackage = (
   const babelRuntimeMinVersion =
     pkg.dependencies && pkg.dependencies['@babel/runtime'] ? pkg.dependencies['@babel/runtime'].slice(1) : undefined;
 
-  if (babelRuntimeMinVersion && /^(^|~)?7\.[0-9]/.test(babelRuntimeMinVersion)) {
+  if (babelRuntimeMinVersion && /^(^|~)?7\.([0-9]\.|1[0-2]|13\.[0-7]$)/.test(babelRuntimeMinVersion)) {
     throw new Error(
       `Please require at least "@babel/runtime"@^7.13.8 in "dependencies" of "${packageName}". Current is "${babelRuntimeMinVersion}"`,
     );
