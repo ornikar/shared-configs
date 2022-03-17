@@ -6,8 +6,9 @@
     "version": "YARN_ENABLE_IMMUTABLE_INSTALLS=false yarn && git add yarn.lock",
     "lint": "yarn run lint:prettier && yarn run lint:eslint && yarn run lint:css",
     "lint:prettier": "prettier --check .",
-    "lint:eslint": "eslint --report-unused-disable-directives .",
+    "lint:eslint": "eslint --report-unused-disable-directives --quiet .",
     "lint:css": "yarn workspace @ornikar/stylelint-config lint-tests",
+    "test": "jest",
     "release": "lerna publish --conventional-commits -m 'chore: release'",
     "postinstall": "./@ornikar/repo-config/bin/ornikar-repo-config-postinstall.js"
   },
@@ -26,8 +27,9 @@
   ],
   "devDependencies": {
     "@commitlint/cli": "16.2.3",
-    "@ornikar/eslint-config": "18.1.0",
+    "@ornikar/eslint-config": "18.2.0",
     "eslint": "8.11.0",
+    "jest": "27.5.1",
     "lerna": "4.0.0",
     "lint-staged": "12.3.5",
     "prettier": "2.6.0"

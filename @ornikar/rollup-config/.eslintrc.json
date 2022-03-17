@@ -1,4 +1,11 @@
 {
   "root": true,
-  "extends": ["@ornikar/eslint-config/node"]
+  "extends": ["@ornikar/eslint-config/node"],
+  "ignorePatterns": ["/__fixtures__"],
+  "overrides": [
+    {
+      "files": ["*.test.js"],
+      "extends": ["@ornikar/eslint-config/tests-override"]
+    }
+  ]
 }

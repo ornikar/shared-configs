@@ -12,7 +12,10 @@ const postcss = require('rollup-plugin-postcss');
 const ignoreImport = require('./rollup-plugin-ignore-browser-only-imports');
 
 const rootPkg = require(path.resolve('./package.json'));
-const postcssConfig = require(path.resolve('./config/rollup-postcss.config.js'));
+const postcssConfigPath = path.resolve('./config/rollup-postcss.config.js');
+const postcssConfig = fs.existsSync(postcssConfigPath)
+  ? require(path.resolve('./config/rollup-postcss.config.js'))
+  : undefined;
 
 const extensions = ['.tsx', '.ts', '.js', '.jsx'];
 const browserOnlyExtensions = ['.css'];
@@ -20,10 +23,10 @@ const browserOnlyExtensions = ['.css'];
 const createBuildsForPackage = (
   packagesDir,
   packageName,
-  { hasPlatformBuilds, shouldUseLinaria, additionalPlugins = [] } = {},
+  { hasPlatformBuilds, shouldUseLinaria, additionalPlugins = [], rootDir = '.' } = {},
 ) => {
   // eslint-disable-next-line global-require
-  const pkg = require(path.resolve(`./${packagesDir}/${packageName}/package.json`));
+  const pkg = require(path.resolve(`${rootDir}/${packagesDir}/${packageName}/package.json`));
   if (pkg.private || !pkg.main) return [];
 
   const entries = (pkg.ornikar && pkg.ornikar.entries) || ['index'];
@@ -34,8 +37,8 @@ const createBuildsForPackage = (
     peerDependencies: { ...rootPkg.peerDependencies, ...pkg.peerDependencies },
   });
   const resolvedPackagePath = path.resolve(`${packagesDir}/${packageName}`);
-  const distPath = `${packagesDir}/${packageName}/dist`;
-  const inputBaseDir = `./${packagesDir}/${packageName}/src/`;
+  const distPath = `${rootDir}/${packagesDir}/${packageName}/dist`;
+  const inputBaseDir = `${rootDir}/${packagesDir}/${packageName}/src/`;
   const useLinaria = shouldUseLinaria && shouldUseLinaria(packageName);
   // eslint-disable-next-line import/no-unresolved, global-require -- in peer dependencies, no gain to install it as devDependencies
   const linariaPlugin = useLinaria && require('@linaria/rollup').default;
@@ -104,7 +107,7 @@ const createBuildsForPackage = (
                   generateScopedName: `${packageName}_[local]_[hash:base64:5]`,
                 },
                 config: false,
-                plugins: exportCss ? postcssConfig.plugins : false,
+                plugins: exportCss && postcssConfig ? postcssConfig.plugins : false,
                 minimize: false,
               },
         ),
@@ -223,7 +226,7 @@ module.exports = (options = {}) => {
   const packages = process.env.ORNIKAR_ONLY
     ? [process.env.ORNIKAR_ONLY]
     : fs
-        .readdirSync(path.resolve(`./${packagesDir}`))
+        .readdirSync(path.resolve(`${createBuildsForPackageOptions.rootDir}/${packagesDir}`))
         .filter((name) => name !== '.DS_Store' && !name.startsWith('.eslintrc'));
 
   return packages.flatMap((packageName) =>
