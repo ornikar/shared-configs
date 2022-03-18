@@ -31,10 +31,11 @@ module.exports = ({ paths, babelPluginFormatjsOptions = {}, defaultDestinationDi
             preserveWhitespace: true,
             ...babelPluginFormatjsOptions,
             onMsgExtracted(filename, descriptors) {
+              if (descriptors.length === 0) return;
+              const filenameRegExp = new RegExp(
+                `${filename.split('.')[0]}\\.((web|ios|android)\\.)*${filename.split('.').slice(-1)[0]}`,
+              );
               descriptors.forEach(({ id, defaultMessage }) => {
-                const filenameRegExp = new RegExp(
-                  `${filename.split('.')[0]}\\.((web|ios|android)\\.)*${filename.split('.').slice(-1)[0]}`,
-                );
                 if (
                   id in projectCollection &&
                   (projectCollection[id].filename.match(filenameRegExp) === null ||
