@@ -20,7 +20,7 @@ module.exports = ({ paths, babelPluginFormatjsOptions = {}, defaultDestinationDi
     const defaultMessages = {};
 
     const babelConfig = babelCore.loadPartialConfig({
-      envName: 'generate-translations',
+      envName: 'extract-translations',
       configFile: true,
       babelrc: false,
       browserslistConfigFile: false,
