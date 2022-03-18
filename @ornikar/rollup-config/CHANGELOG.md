@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.7.0](https://github.com/ornikar/shared-configs/compare/@ornikar/rollup-config@4.6.0...@ornikar/rollup-config@4.7.0) (2022-03-18)
+
+
+### Bug Fixes
+
+* **rollup-config:** spread runtime helper [no issue] ([#674](https://github.com/ornikar/shared-configs/issues/674)) ([4b51add](https://github.com/ornikar/shared-configs/commit/4b51adda48845fa815abb646799f3d2ad13abe70))
+* **rollup-config:** undefined rootDir ([4e9f022](https://github.com/ornikar/shared-configs/commit/4e9f022faf4e5201ea6ec8e1f244f144c4c49626))
+
+
+### Features
+
+* **rollup-config:** update babel plugin ([c10f4ce](https://github.com/ornikar/shared-configs/commit/c10f4cec119a2057b66002311a84667eef5063bc))
+
+
+
+
+
 # [4.6.0](https://github.com/ornikar/shared-configs/compare/@ornikar/rollup-config@4.5.5...@ornikar/rollup-config@4.6.0) (2022-03-15)
 
 
