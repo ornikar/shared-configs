@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/intl-config@3.1.6...@ornikar/intl-config@4.0.0) (2022-03-21)
+
+
+### Features
+
+* **intl-config:** babel-plugin-formatjs CME-391 ([#676](https://github.com/ornikar/shared-configs/issues/676)) ([af4ed61](https://github.com/ornikar/shared-configs/commit/af4ed61efcdec1e82e363f417eb38f10e0a4e0e9))
+
+
+### BREAKING CHANGES
+
+* **intl-config:** parameters changed and use of babel-plugin-formatjs 
+
+
+
+
+
 ## [3.1.6](https://github.com/ornikar/shared-configs/compare/@ornikar/intl-config@3.1.5...@ornikar/intl-config@3.1.6) (2022-03-15)
 
 **Note:** Version bump only for package @ornikar/intl-config
