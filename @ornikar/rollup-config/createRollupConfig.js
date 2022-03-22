@@ -9,6 +9,7 @@ const { default: resolve } = require('@rollup/plugin-node-resolve');
 const replace = require('@rollup/plugin-replace');
 const configExternalDependencies = require('rollup-config-external-dependencies');
 const postcss = require('rollup-plugin-postcss');
+const svgr = require('rollup-plugin-svgr');
 const ignoreImport = require('./rollup-plugin-ignore-browser-only-imports');
 
 const rootPkg = require(path.resolve('./package.json'));
@@ -59,6 +60,21 @@ const createBuildsForPackage = (
 
     if (!inputExt) throw new Error(`Could not find ${entryName} file for package ${packageName}`);
     const isLinariaEnabledForPlatform = useLinaria && ((!platformOS && !hasPlatformBuilds) || platformOS === 'web');
+
+    const babelPresetBaseOptions = {
+      babelRuntimeMinVersion,
+      'preset-env': {
+        modules: false,
+        targets: target === 'node' ? { node: version } : undefined,
+      },
+    };
+
+    const svgrBabelOptions = {
+      presets: [
+        ['@ornikar/babel-preset-base', { ...babelPresetBaseOptions, enableTypescript: false }],
+        '@ornikar/babel-preset-react',
+      ],
+    };
 
     return {
       input: `${inputBaseDir}${entryName}${inputExt}`,
@@ -120,6 +136,20 @@ const createBuildsForPackage = (
                 minimize: false,
               },
         ),
+        // legacy inline support
+        svgr({
+          include: '**/*.inline.svg',
+          jsxRuntime: 'automatic',
+          native: !!platformOS && platformOS !== 'web',
+          babel: svgrBabelOptions,
+        }),
+        svgr({
+          exclude: '**/*.inline.svg',
+          jsxRuntime: 'automatic',
+          native: !!platformOS && platformOS !== 'web',
+          exportType: 'named',
+          babel: svgrBabelOptions,
+        }),
         babel({
           extensions,
           babelrc: false,
@@ -129,16 +159,7 @@ const createBuildsForPackage = (
           babelHelpers: 'runtime',
           exclude: 'node_modules/**',
           presets: [
-            require.resolve('@babel/preset-typescript'),
-            [
-              require.resolve('@babel/preset-env'),
-              {
-                modules: false,
-                targets: target === 'node' ? { node: version } : undefined,
-                bugfixes: true,
-                shippedProposals: true,
-              },
-            ],
+            ['@ornikar/babel-preset-base', babelPresetBaseOptions],
             [
               require.resolve('@ornikar/babel-preset-kitt-universal'),
               {
@@ -154,14 +175,6 @@ const createBuildsForPackage = (
             isLinariaEnabledForPlatform && '@linaria/babel-preset',
           ].filter(Boolean),
           plugins: [
-            [
-              require.resolve('@babel/plugin-transform-runtime'),
-              {
-                version: babelRuntimeMinVersion,
-                corejs: false,
-                helpers: true,
-              },
-            ],
             [
               require.resolve('babel-plugin-minify-replace'),
               {

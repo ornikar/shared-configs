@@ -1,0 +1,28 @@
+{
+  "name": "@ornikar/babel-preset-base",
+  "version": "1.0.0-pre",
+  "keywords": [],
+  "repository": "ornikar/shared-configs",
+  "license": "MIT",
+  "engines": {
+    "node": ">= 14.17.5"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "prettier": "@ornikar/prettier-config",
+  "main": "./index.js",
+  "sideEffects": false,
+  "scripts": {
+    "test": "jest"
+  },
+  "peerDependencies": {
+    "@babel/core": "^7.0.0",
+    "@babel/runtime": "^7.13.8"
+  },
+  "dependencies": {
+    "@babel/plugin-transform-runtime": "^7.13.8",
+    "@babel/preset-env": "^7.13.8",
+    "@babel/preset-typescript": "^7.13.8"
+  }
+}
