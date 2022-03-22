@@ -21,10 +21,6 @@ module.exports = {
     // compilation of problematic node_modules has a simplier config
     'node_modules.*\\.(js|jsx|ts|tsx)$': require.resolve('../transformers/babel-transformer-node-modules.js'),
 
-    // legacy support, use { ReactComponent } from .svg instead.
-    '\\.inline\\.svg$': require.resolve('../transformers/svg-transformer-inline.js'),
-    '\\.svg$': require.resolve('../transformers/svg-transformer.js'),
-
     ...baseOrnikarPreset.transform,
   },
 };

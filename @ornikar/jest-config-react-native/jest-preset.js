@@ -28,7 +28,7 @@ module.exports = {
       }),
     ),
     // legacy support, use { ReactComponent } from .svg instead.
-    '\\.inline\\.svg$': require.resolve('./transformers/svg-transformer-inline.js'),
-    '\\.svg$': require.resolve('./transformers/svg-transformer.js'),
+    '\\.inline\\.svg$': require.resolve('@ornikar/jest-config-react/transformers/svg-transformer-inline.js'),
+    '\\.svg$': require.resolve('@ornikar/jest-config-react/transformers/svg-transformer.js'),
   },
 };

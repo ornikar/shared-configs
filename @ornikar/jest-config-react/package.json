@@ -20,7 +20,8 @@
   },
   "dependencies": {
     "@ornikar/jest-config": "^7.1.4",
-    "identity-obj-proxy": "^3.0.0"
+    "identity-obj-proxy": "^3.0.0",
+    "jest-svg-transformer": "^1.0.0"
   },
   "devDependencies": {
     "@testing-library/react": "12.1.4",

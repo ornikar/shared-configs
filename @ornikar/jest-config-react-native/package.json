@@ -19,8 +19,7 @@
     "react-dom": "^17.0.0"
   },
   "dependencies": {
-    "@ornikar/jest-config-react": "^9.4.1",
-    "jest-svg-transformer": "^1.0.0"
+    "@ornikar/jest-config-react": "^9.4.1"
   },
   "devDependencies": {
     "@testing-library/react-hooks": "7.0.2",
