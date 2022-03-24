@@ -3437,14 +3437,14 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@ornikar/repo-config-react@workspace:@ornikar/repo-config-react"
   dependencies:
-    "@ornikar/repo-config": ^7.3.5
+    "@ornikar/repo-config": ^7.3.6
     cross-env: ^7.0.0
     svgo: ^1.3.0
     typed-css-modules: 0.7.0
   languageName: unknown
   linkType: soft
 
-"@ornikar/repo-config@^7.3.5, @ornikar/repo-config@workspace:@ornikar/repo-config":
+"@ornikar/repo-config@^7.3.6, @ornikar/repo-config@workspace:@ornikar/repo-config":
   version: 0.0.0-use.local
   resolution: "@ornikar/repo-config@workspace:@ornikar/repo-config"
   dependencies:
@@ -3508,7 +3508,7 @@ __metadata:
   resolution: "@ornikar/storybook-config@workspace:@ornikar/storybook-config"
   dependencies:
     "@chrp/typed-css-modules-loader": 0.7.0
-    "@ornikar/webpack-config": ^4.1.1
+    "@ornikar/webpack-config": ^4.1.2
     svg-react-loader: 0.4.6
     webpack: 4.46.0
   peerDependencies:
@@ -3534,7 +3534,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ornikar/webpack-config@^4.1.1, @ornikar/webpack-config@workspace:@ornikar/webpack-config":
+"@ornikar/webpack-config@^4.1.2, @ornikar/webpack-config@workspace:@ornikar/webpack-config":
   version: 0.0.0-use.local
   resolution: "@ornikar/webpack-config@workspace:@ornikar/webpack-config"
   languageName: unknown

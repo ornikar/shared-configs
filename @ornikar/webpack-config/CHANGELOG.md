@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.1.2](https://github.com/ornikar/shared-configs/compare/@ornikar/webpack-config@4.1.1...@ornikar/webpack-config@4.1.2) (2022-03-24)
+
+
+### Bug Fixes
+
+* **webpack-config:** fix react-native-web and styled-components/native babelified when not needed ([#682](https://github.com/ornikar/shared-configs/issues/682)) ([2d96ac5](https://github.com/ornikar/shared-configs/commit/2d96ac5f3f731bdd688df22923a60ab9a62a3d0c))
+
+
+
+
+
 ## [4.1.1](https://github.com/ornikar/shared-configs/compare/@ornikar/webpack-config@4.1.0...@ornikar/webpack-config@4.1.1) (2022-02-04)
 
 **Note:** Version bump only for package @ornikar/webpack-config
