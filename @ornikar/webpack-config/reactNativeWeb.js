@@ -33,17 +33,18 @@ module.exports = (
     getModule('@use-expo'),
     getModule('@unimodules'),
     getModule('native-base'),
-    getModule('styled-components'),
     // user-defined modules for
     ...nativeModulesToTranspile.map(getModule),
-  ];
+  ].map(path.normalize);
+
+  const excludeModulesThatContainPaths = [getModule('react-native-web')];
 
   unshiftToRules.unshift({
     test: /\.(js|jsx|ts|tsx)$/,
     include: (inputPath) => {
       for (const possibleModule of includeModulesThatContainPaths) {
-        if (inputPath.includes(path.normalize(possibleModule))) {
-          return true;
+        if (inputPath.includes(possibleModule)) {
+          return excludeModulesThatContainPaths.every((excludePath) => !inputPath.includes(excludePath));
         }
       }
       return false;
