@@ -69,7 +69,8 @@ module.exports = function installHusky({ pkg, pm }) {
 
   const shouldRunTest = () => pkg.scripts && pkg.scripts.test;
   const shouldRunChecks = () => pkg.scripts && pkg.scripts.checks;
-  const shouldRunCleanCache = () => pkg.scripts && pkg.scripts['clean:cache'];
+  const shouldRunCleanCacheOnDependenciesChanges = () =>
+    pkg.scripts && pkg.scripts['clean:cache:on-dependencies-changes'];
 
   try {
     fs.mkdirSync(path.resolve('.husky'));
@@ -85,7 +86,7 @@ module.exports = function installHusky({ pkg, pm }) {
     `${pmExec} lint-staged -r${pkg.devDependencies && pkg.devDependencies.typescript ? ` && ${pmExec} tsc` : ''}`,
   );
 
-  const runCleanCache = shouldRunCleanCache();
+  const runCleanCache = shouldRunCleanCacheOnDependenciesChanges();
   if (isYarnPnp && !runCleanCache) {
     ensureHookDeleted('post-checkout');
     ensureHookDeleted('post-merge');
@@ -100,7 +101,7 @@ if [ -n "$(git diff HEAD@{1}..HEAD@{0} -- yarn.lock)" ]; then
       : `yarn install ${
           isYarnBerry ? '--immutable --immutable-cache' : '--prefer-offline --pure-lockfile --ignore-optional'
         } || true`,
-    runCleanCache ? `${pmExec} clean:cache` : '',
+    runCleanCache ? `${pmExec} clean:cache:on-dependencies-changes` : '',
   ]
     .filter(Boolean)
     .join('\n  ')}
