@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [8.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@7.3.6...@ornikar/repo-config@8.0.0) (2022-03-25)
+
+
+### chore
+
+* **repo-config:** replace clean:cache by clean:cache:on-dependencies-changes ([#681](https://github.com/ornikar/shared-configs/issues/681)) ([3fba8cd](https://github.com/ornikar/shared-configs/commit/3fba8cd387044dde9e7cb2bfa7502ab95cff4b7d))
+
+
+### BREAKING CHANGES
+
+* **repo-config:** yarn clean:cache is no longer called in husky scripts, clean:cache:on-dependencies-changes is used instead
+
+
+
+
+
 ## [7.3.6](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@7.3.5...@ornikar/repo-config@7.3.6) (2022-03-24)
 
 **Note:** Version bump only for package @ornikar/repo-config
