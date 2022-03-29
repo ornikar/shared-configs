@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.5.1](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@9.5.0...@ornikar/jest-config-react@9.5.1) (2022-03-29)
+
+
+### Bug Fixes
+
+* **jest-config-react:** add missing escape dot in raw.svg transform ([41491df](https://github.com/ornikar/shared-configs/commit/41491dfe6fab643fe47a35634e6abad32f11a2d1))
+
+
+
+
+
 # [9.5.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@9.4.1...@ornikar/jest-config-react@9.5.0) (2022-03-29)
 
 

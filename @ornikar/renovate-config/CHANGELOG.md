@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.4.0](https://github.com/ornikar/shared-configs/compare/@ornikar/renovate-config@3.3.0...@ornikar/renovate-config@3.4.0) (2022-03-29)
+
+
+### Features
+
+* **renovate-config:** auto open expo-cli prs ([150209c](https://github.com/ornikar/shared-configs/commit/150209ce5a66c9a5420897251272878ae675e502))
+
+
+
+
+
 # [3.3.0](https://github.com/ornikar/shared-configs/compare/@ornikar/renovate-config@3.2.1...@ornikar/renovate-config@3.3.0) (2022-02-10)
 
 
