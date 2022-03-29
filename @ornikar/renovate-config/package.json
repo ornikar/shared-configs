@@ -109,6 +109,20 @@
           ]
         },
         {
+          "matchPackageNames": [
+            "expo-cli"
+          ],
+          "matchUpdateTypes": [
+            "minor",
+            "patch"
+          ],
+          "rebaseStalePrs": false,
+          "masterIssueApproval": false,
+          "schedule": [
+            "after 10am and before 11am every weekday"
+          ]
+        },
+        {
           "matchPackagePatterns": [
             "^@ornikar/"
           ],
