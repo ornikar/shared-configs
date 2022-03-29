@@ -1,0 +1,22 @@
+{
+  "name": "@ornikar/babel-preset-react",
+  "version": "1.0.0-pre",
+  "keywords": [],
+  "repository": "ornikar/shared-configs",
+  "license": "MIT",
+  "engines": {
+    "node": ">= 14.17.5"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "prettier": "@ornikar/prettier-config",
+  "main": "./index.js",
+  "sideEffects": false,
+  "scripts": {
+    "test": "jest"
+  },
+  "dependencies": {
+    "@babel/preset-react": "^7.13.8"
+  }
+}

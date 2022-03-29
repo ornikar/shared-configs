@@ -1,0 +1,35 @@
+{
+  "name": "@ornikar/babel-preset-kitt-universal",
+  "version": "1.0.0-pre",
+  "keywords": [],
+  "repository": "ornikar/shared-configs",
+  "license": "MIT",
+  "engines": {
+    "node": ">= 14.17.5"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "prettier": "@ornikar/prettier-config",
+  "main": "./lib/index.js",
+  "sideEffects": false,
+  "scripts": {
+    "test": "jest"
+  },
+  "peerDependencies": {
+    "@babel/core": "^7.0.0"
+  },
+  "dependencies": {
+    "babel-plugin-linaria-css-to-undefined": "^0.2.1",
+    "babel-plugin-react-native": "^1.0.1",
+    "babel-plugin-styled-components": "^2.0.2",
+    "babel-plugin-styled-components-react-native-web": "^0.2.2"
+  },
+  "devDependencies": {
+    "@babel/core": "7.16.7",
+    "@babel/preset-react": "7.16.7",
+    "@linaria/babel-preset": "3.0.0-beta.15",
+    "@linaria/shaker": "3.0.0-beta.15",
+    "react-refresh": "0.8.3"
+  }
+}
