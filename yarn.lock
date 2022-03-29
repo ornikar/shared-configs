@@ -3421,7 +3421,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@ornikar/prettier-config@workspace:@ornikar/prettier-config"
   dependencies:
-    prettier: 2.6.0
+    prettier: 2.6.1
   peerDependencies:
     prettier: ^2.0.4
   languageName: unknown
@@ -3499,7 +3499,7 @@ __metadata:
     jest: 27.5.1
     lerna: 4.0.0
     lint-staged: 12.3.7
-    prettier: 2.6.0
+    prettier: 2.6.1
   languageName: unknown
   linkType: soft
 
@@ -3522,7 +3522,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@ornikar/stylelint-config@workspace:@ornikar/stylelint-config"
   dependencies:
-    prettier: 2.6.0
+    prettier: 2.6.1
     stylelint: 13.13.1
     stylelint-config-css-modules: ^2.2.0
     stylelint-config-prettier: ^8.0.2
@@ -14051,12 +14051,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier@npm:2.6.0, prettier@npm:^2.1.2":
-  version: 2.6.0
-  resolution: "prettier@npm:2.6.0"
+"prettier@npm:2.6.1, prettier@npm:^2.1.2":
+  version: 2.6.1
+  resolution: "prettier@npm:2.6.1"
   bin:
     prettier: bin-prettier.js
-  checksum: 3e527ad62279676778a8404d18174d7ca2365ada4caba6eebbcdd9907d1187afd3bc6ade5b4e5f5d4549bb9fb71e45ca8930d71500017635524f8fc05bc52e93
+  checksum: 78be1f8a3ddfad7c3d8a854b6c8941a3bb1ddfca4225c38d778e0fe1029a55368f71b3bbefff82c689015fbb4d391ec44add957f01308ad2725e01a7c1f37cb6
   languageName: node
   linkType: hard
 
