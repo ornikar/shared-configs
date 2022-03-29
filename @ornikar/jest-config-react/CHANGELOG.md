@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [9.5.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@9.4.1...@ornikar/jest-config-react@9.5.0) (2022-03-29)
+
+
+### Features
+
+* **jest-config-react:** use jest-svg-transformer ARCH-1506 ([#678](https://github.com/ornikar/shared-configs/issues/678)) ([0507f23](https://github.com/ornikar/shared-configs/commit/0507f23eb3938a1320e457c847dbc576316e3e7f))
+
+
+
+
+
 ## [9.4.1](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@9.4.0...@ornikar/jest-config-react@9.4.1) (2022-03-14)
 
 **Note:** Version bump only for package @ornikar/jest-config-react
