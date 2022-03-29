@@ -3342,7 +3342,7 @@ __metadata:
   dependencies:
     "@ornikar/jest-config-react": ^9.4.1
     "@testing-library/react-hooks": 7.0.2
-    "@testing-library/react-native": 9.0.0
+    "@testing-library/react-native": 9.1.0
     jest-expo: 44.0.1
     jest-svg-transformer: ^1.0.0
     react: 17.0.2
@@ -3723,16 +3723,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@testing-library/react-native@npm:9.0.0":
-  version: 9.0.0
-  resolution: "@testing-library/react-native@npm:9.0.0"
+"@testing-library/react-native@npm:9.1.0":
+  version: 9.1.0
+  resolution: "@testing-library/react-native@npm:9.1.0"
   dependencies:
     pretty-format: ^27.0.0
   peerDependencies:
     react: ">=16.0.0"
     react-native: ">=0.59"
     react-test-renderer: ">=16.0.0"
-  checksum: f30ba0ada3901185063397585d4c76a4822b9f03a5a40dad46468104c9a62f3fdc62eb66179cdec5f9a08f5bbc6f940e9d7d0424d3faff17f5fee5702f7fda4c
+  checksum: 0777cc569939bd996bdae31a8c94d8417fbfe1f34ddd84dc99aafc96709064e5e02f3c5a687a662a4f040c5c1767442fd7c4530886f716738d40e930cce446d1
   languageName: node
   linkType: hard
 
