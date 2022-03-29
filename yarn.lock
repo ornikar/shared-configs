@@ -3470,7 +3470,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@ornikar/babel-preset-base@^1.0.0-pre, @ornikar/babel-preset-base@workspace:@ornikar/babel-preset-base":
+"@ornikar/babel-preset-base@^1.0.0, @ornikar/babel-preset-base@workspace:@ornikar/babel-preset-base":
   version: 0.0.0-use.local
   resolution: "@ornikar/babel-preset-base@workspace:@ornikar/babel-preset-base"
   dependencies:
@@ -3483,7 +3483,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ornikar/babel-preset-kitt-universal@^1.0.0-pre, @ornikar/babel-preset-kitt-universal@workspace:@ornikar/babel-preset-kitt-universal":
+"@ornikar/babel-preset-kitt-universal@^1.0.0, @ornikar/babel-preset-kitt-universal@workspace:@ornikar/babel-preset-kitt-universal":
   version: 0.0.0-use.local
   resolution: "@ornikar/babel-preset-kitt-universal@workspace:@ornikar/babel-preset-kitt-universal"
   dependencies:
@@ -3501,7 +3501,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ornikar/babel-preset-react@^1.0.0-pre, @ornikar/babel-preset-react@workspace:@ornikar/babel-preset-react":
+"@ornikar/babel-preset-react@^1.0.0, @ornikar/babel-preset-react@workspace:@ornikar/babel-preset-react":
   version: 0.0.0-use.local
   resolution: "@ornikar/babel-preset-react@workspace:@ornikar/babel-preset-react"
   dependencies:
@@ -3698,9 +3698,9 @@ __metadata:
   resolution: "@ornikar/rollup-config@workspace:@ornikar/rollup-config"
   dependencies:
     "@babel/plugin-transform-runtime": ^7.13.8
-    "@ornikar/babel-preset-base": ^1.0.0-pre
-    "@ornikar/babel-preset-kitt-universal": ^1.0.0-pre
-    "@ornikar/babel-preset-react": ^1.0.0-pre
+    "@ornikar/babel-preset-base": ^1.0.0
+    "@ornikar/babel-preset-kitt-universal": ^1.0.0
+    "@ornikar/babel-preset-react": ^1.0.0
     "@rollup/plugin-babel": ^5.3.1
     "@rollup/plugin-node-resolve": ^11.2.0
     "@rollup/plugin-replace": ^3.0.0
