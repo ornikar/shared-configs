@@ -19,7 +19,7 @@ module.exports = {
     baseJestPreset.setupFiles[baseJestPreset.setupFiles.length - 1],
   ],
   transform: {
-    '\\.raw.svg$': require.resolve('./transformers/asset-name-transformer'),
+    '\\.raw\\.svg$': require.resolve('./transformers/asset-name-transformer'),
     // legacy support, use { ReactComponent } from .svg instead.
     '\\.inline\\.svg$': require.resolve('./transformers/svg-transformer-inline.js'),
     '\\.svg$': require.resolve('./transformers/svg-transformer.js'),
