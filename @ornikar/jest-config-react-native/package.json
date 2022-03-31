@@ -18,6 +18,11 @@
     "react": "^17.0.0",
     "react-dom": "^17.0.0"
   },
+  "peerDependenciesMeta": {
+    "@testing-library/react-native": {
+      "optional": true
+    }
+  },
   "dependencies": {
     "@ornikar/jest-config-react": "^9.5.1"
   },
