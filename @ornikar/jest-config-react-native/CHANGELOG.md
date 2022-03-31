@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.2.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react-native@4.1.2...@ornikar/jest-config-react-native@4.2.0) (2022-03-31)
+
+
+### Features
+
+* **jest-config-react-native:** use sucrase and transformers [no issue] ([#686](https://github.com/ornikar/shared-configs/issues/686)) ([2d67999](https://github.com/ornikar/shared-configs/commit/2d67999be78af0fec813592a6fff3d0d30e023c7))
+
+
+
+
+
 ## [4.1.2](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react-native@4.1.1...@ornikar/jest-config-react-native@4.1.2) (2022-03-31)
 
 
