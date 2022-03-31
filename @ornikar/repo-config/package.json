@@ -22,7 +22,7 @@
     "lint-staged": "12.3.7",
     "prettier-plugin-properties": "0.1.0",
     "semver": "^7.3.5",
-    "which-pm-runs": "^1.0.0",
+    "which-pm-runs": "^1.1.0",
     "yarn-deduplicate": "3.1.0"
   }
 }

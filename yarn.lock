@@ -3687,7 +3687,7 @@ __metadata:
     lint-staged: 12.3.7
     prettier-plugin-properties: 0.1.0
     semver: ^7.3.5
-    which-pm-runs: ^1.0.0
+    which-pm-runs: ^1.1.0
     yarn-deduplicate: 3.1.0
   bin:
     ornikar-prettier-check: ./bin/ornikar-prettier-check.sh
@@ -17828,10 +17828,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"which-pm-runs@npm:^1.0.0":
-  version: 1.0.0
-  resolution: "which-pm-runs@npm:1.0.0"
-  checksum: 30cf7aee31f264558070e92414316c169367bb2b84a0a32777d30392fea0892fcf9955b81c3fe7f52165ae5a33f0acfd3bc0916416cb07e6d414c90255c228ca
+"which-pm-runs@npm:^1.1.0":
+  version: 1.1.0
+  resolution: "which-pm-runs@npm:1.1.0"
+  checksum: 39a56ee50886fb33ec710e3b36dc9fe3d0096cac44850d9ca0c6186c4cb824d6c8125f013e0562e7c94744e1e8e4a6ab695592cdb12555777c7a4368143d822c
   languageName: node
   linkType: hard
 
