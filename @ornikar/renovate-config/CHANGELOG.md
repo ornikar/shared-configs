@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.4.1](https://github.com/ornikar/shared-configs/compare/@ornikar/renovate-config@3.4.0...@ornikar/renovate-config@3.4.1) (2022-03-31)
+
+
+### Bug Fixes
+
+* **renovate-config:** add runtime-native-app to Runtime App Ornikar group ([23ce057](https://github.com/ornikar/shared-configs/commit/23ce057ee3918a557a4d79a81d3229de861c5716))
+* **renovate-config:** add sourceUrlPrefixes for components ([9f92a4b](https://github.com/ornikar/shared-configs/commit/9f92a4b3d4cc88bf64b5a0ae513fa0169546c936))
+
+
+
+
+
 # [3.4.0](https://github.com/ornikar/shared-configs/compare/@ornikar/renovate-config@3.3.0...@ornikar/renovate-config@3.4.0) (2022-03-29)
 
 
