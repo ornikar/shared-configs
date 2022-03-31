@@ -37,6 +37,7 @@ module.exports = function createLintStagedConfig(options = {}) {
         isLernaRepo && require.resolve('@ornikar/lerna-config/bin/generate-eslintrc-files.js'),
         shouldGenerateTsconfigInLernaRepo && require.resolve('@ornikar/lerna-config/bin/generate-tsconfig-files.js'),
         shouldRunCheckPkgScript && 'node ./scripts/check-packagejson.js',
+        `git add yarn.lock${yarnConfigFile ? ' .yarn' : ''}`,
       ].filter(Boolean);
     },
     '!(package).json': ['prettier --write'],
