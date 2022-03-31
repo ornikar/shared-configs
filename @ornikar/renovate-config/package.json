@@ -220,7 +220,8 @@
           "groupName": "Runtime App Ornikar",
           "matchPackageNames": [
             "@ornikar/webapp-runtime",
-            "@ornikar/runtime-app"
+            "@ornikar/runtime-app",
+            "@ornikar/runtime-native-app"
           ]
         },
         {
