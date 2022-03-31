@@ -2,6 +2,8 @@
 
 const baseOrnikarPreset = require('@ornikar/jest-config-react/jest-preset');
 const expoPreset = require('jest-expo/web/jest-preset');
+const { customTransforms } = require('../customTransforms');
+const ornikarReactNativePreset = require('../jest-preset');
 
 module.exports = {
   ...baseOrnikarPreset,
@@ -17,10 +19,9 @@ module.exports = {
     ...baseOrnikarPreset.moduleNameMapper,
     ...expoPreset.moduleNameMapper,
   },
+  transformIgnorePatterns: ornikarReactNativePreset.transformIgnorePatterns,
   transform: {
-    // compilation of problematic node_modules has a simplier config
-    'node_modules.*\\.(js|jsx|ts|tsx)$': require.resolve('../transformers/babel-transformer-node-modules.js'),
-
+    ...customTransforms,
     ...baseOrnikarPreset.transform,
   },
 };

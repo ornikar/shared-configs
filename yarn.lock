@@ -3571,6 +3571,7 @@ __metadata:
   resolution: "@ornikar/jest-config-react-native@workspace:@ornikar/jest-config-react-native"
   dependencies:
     "@ornikar/jest-config-react": ^9.5.1
+    "@sucrase/jest-plugin": ^2.2.0
     "@testing-library/react-hooks": 7.0.2
     "@testing-library/react-native": 9.1.0
     jest-expo: 44.0.1
@@ -3926,6 +3927,15 @@ __metadata:
     postcss: ">=7.0.0"
     postcss-syntax: ">=0.36.2"
   checksum: 5e39bca575356992c27d59fd9ca9ee38867369bdf5bb3d9e31dc074680b77b4b820d48074e5cc0337e047edd8c1e7ef18996bc83199376138f42fbc8ed0cabeb
+  languageName: node
+  linkType: hard
+
+"@sucrase/jest-plugin@npm:^2.2.0":
+  version: 2.2.0
+  resolution: "@sucrase/jest-plugin@npm:2.2.0"
+  dependencies:
+    sucrase: ^3.18.0
+  checksum: a1b51017e2e44530b4cc7bddfb1171b2365e931ea6697c06f3e4837d63e53a0174820585a15333145b6af10cff6883db0af1b15edc8f95869d4f8f71f8c681a1
   languageName: node
   linkType: hard
 
@@ -16504,7 +16514,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"sucrase@npm:^3.20.0":
+"sucrase@npm:^3.18.0, sucrase@npm:^3.20.0":
   version: 3.20.3
   resolution: "sucrase@npm:3.20.3"
   dependencies:
