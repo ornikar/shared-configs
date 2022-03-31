@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [8.0.1](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@8.0.0...@ornikar/repo-config@8.0.1) (2022-03-31)
+
+
+### Bug Fixes
+
+* **repo-config:** git add yarn.lock and .yarn ([58af0bd](https://github.com/ornikar/shared-configs/commit/58af0bdd75bd2e05a474270f2b4796b899625f82))
+* update which-pm-runs ([8a7398b](https://github.com/ornikar/shared-configs/commit/8a7398b22b132e0e9063fb0e9108e85b9b938417))
+
+
+
+
+
 # [8.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@7.3.6...@ornikar/repo-config@8.0.0) (2022-03-25)
 
 

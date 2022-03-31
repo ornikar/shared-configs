@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.1.2](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react-native@4.1.1...@ornikar/jest-config-react-native@4.1.2) (2022-03-31)
+
+
+### Bug Fixes
+
+* **jest-config-react-native:** mark @testing-library/react-native as optional ([5dc0651](https://github.com/ornikar/shared-configs/commit/5dc06517ead838b77133117afca31b678cc3cfc7))
+
+
+
+
+
 ## [4.1.1](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react-native@4.1.0...@ornikar/jest-config-react-native@4.1.1) (2022-03-29)
 
 **Note:** Version bump only for package @ornikar/jest-config-react-native
