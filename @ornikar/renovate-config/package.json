@@ -202,6 +202,9 @@
         },
         {
           "groupName": "Components Ornikar",
+          "sourceUrlPrefixes": [
+            "https://github.com/ornikar/components"
+          ],
           "matchPackageNames": [
             "@ornikar/api-helpers",
             "@ornikar/auth",
