@@ -3700,6 +3700,7 @@ __metadata:
     which-pm-runs: ^1.1.0
     yarn-deduplicate: 3.1.0
   bin:
+    commitlint: ./bin/commitlint.js
     ornikar-lint-staged: ./bin/ornikar-lint-staged.mjs
     ornikar-prettier-check: ./bin/ornikar-prettier-check.sh
     ornikar-prettier-fix: ./bin/ornikar-prettier-fix.sh
