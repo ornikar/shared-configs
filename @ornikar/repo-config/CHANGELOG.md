@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [8.2.0](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@8.1.0...@ornikar/repo-config@8.2.0) (2022-04-01)
+
+
+### Features
+
+* **repo-config:** reexport commitlint for yarn berry ([cc41482](https://github.com/ornikar/shared-configs/commit/cc414824170d71b1aff10693983385caa0bc58ed))
+
+
+
+
+
 # [8.1.0](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@8.0.1...@ornikar/repo-config@8.1.0) (2022-04-01)
 
 
