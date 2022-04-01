@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [9.6.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@9.5.1...@ornikar/jest-config-react@9.6.0) (2022-04-01)
+
+
+### Features
+
+* **jest-config-react:** improve svg transformer [no issue] ([#688](https://github.com/ornikar/shared-configs/issues/688)) ([d353d0e](https://github.com/ornikar/shared-configs/commit/d353d0e5151a3e0b790fc5805bc73bf9350efd68))
+
+
+
+
+
 ## [9.5.1](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@9.5.0...@ornikar/jest-config-react@9.5.1) (2022-03-29)
 
 
