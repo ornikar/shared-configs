@@ -3,6 +3,7 @@
   "private": true,
   "repository": "ornikar/shared-configs",
   "scripts": {
+    "ornikar-lint-staged": "./@ornikar/repo-config/bin/ornikar-lint-staged.mjs",
     "version": "YARN_ENABLE_IMMUTABLE_INSTALLS=false yarn && git add yarn.lock",
     "lint": "yarn run lint:prettier && yarn run lint:eslint && yarn run lint:css",
     "lint:prettier": "prettier --check .",

@@ -11,6 +11,7 @@
     "access": "public"
   },
   "bin": {
+    "ornikar-lint-staged": "./bin/ornikar-lint-staged.mjs",
     "ornikar-prettier-check": "./bin/ornikar-prettier-check.sh",
     "ornikar-prettier-fix": "./bin/ornikar-prettier-fix.sh",
     "ornikar-repo-config-postinstall": "./bin/ornikar-repo-config-postinstall.js"
