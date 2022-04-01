@@ -1,9 +1,11 @@
 'use strict';
 
-const { process } = require('jest-svg-transformer');
+const path = require('path');
+const { process } = require('./svg-transformer-inline');
 
-exports.process = (src, filepath) => {
-  const content = process(src, filepath);
+exports.process = (src, filePath) => {
+  const assetFilename = JSON.stringify(path.basename(filePath));
+  const content = process(src, filePath);
   return content.replace(
     /module.exports = (.*);/,
     `module.exports = new Proxy({}, {
@@ -12,7 +14,7 @@ exports.process = (src, filepath) => {
         return true;
       }
       if (key === 'default') {
-        return $1.name;
+        return ${assetFilename};
       }
       if (key === 'ReactComponent') {
         return $1;

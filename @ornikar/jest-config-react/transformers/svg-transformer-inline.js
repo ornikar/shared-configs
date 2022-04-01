@@ -1,5 +1,17 @@
 'use strict';
 
-const { process } = require('jest-svg-transformer');
+const path = require('path');
 
-exports.process = process;
+exports.process = function process(src, filePath) {
+  const assetFilename = JSON.stringify(path.basename(filePath));
+  return `
+const { jsx } = require('react/jsx-runtime');
+function JestSvgComponent(props) {
+return jsx(
+  'svg',
+  Object.assign({}, props, {'data-file-name': ${assetFilename}})
+);
+}
+module.exports = JestSvgComponent;
+          `;
+};
