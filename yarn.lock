@@ -3607,7 +3607,6 @@ __metadata:
     "@testing-library/react-hooks": 7.0.2
     identity-obj-proxy: ^3.0.0
     jest: 26.6.3
-    jest-svg-transformer: ^1.0.0
     react: 17.0.2
     react-dom: 17.0.2
   peerDependencies:
@@ -11298,16 +11297,6 @@ __metadata:
     pretty-format: ^27.5.1
     semver: ^7.3.2
   checksum: a5cfadf0d21cd76063925d1434bc076443ed6d87847d0e248f0b245f11db3d98ff13e45cc03b15404027dabecd712d925f47b6eae4f64986f688640a7d362514
-  languageName: node
-  linkType: hard
-
-"jest-svg-transformer@npm:^1.0.0":
-  version: 1.0.0
-  resolution: "jest-svg-transformer@npm:1.0.0"
-  peerDependencies:
-    jest: ">22"
-    react: ">=16"
-  checksum: 773a9129bf628101eddd911bf54783736991f2007b10bf7f05f7566a225485b03ca6cb30fcd270bfac845d6c0075976f1def4fccdda113d0d3176cf67ee18ded
   languageName: node
   linkType: hard
 

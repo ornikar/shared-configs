@@ -3,8 +3,8 @@
 const path = require('path');
 
 module.exports = {
-  process(src, filename) {
-    const assetFilename = JSON.stringify(path.basename(filename));
+  process(src, filePath) {
+    const assetFilename = JSON.stringify(path.basename(filePath));
     return `module.exports = ${assetFilename};`;
   },
 };
