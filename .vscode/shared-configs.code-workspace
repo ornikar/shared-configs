@@ -4,6 +4,7 @@
       "EditorConfig.EditorConfig",
       "esbenp.prettier-vscode",
       "dbaeumer.vscode-eslint",
+      "Orta.vscode-jest",
       "ms-vsliveshare.vsliveshare-pack"
     ],
     "unwantedRecommendations": []
@@ -11,6 +12,9 @@
   "settings": {
     "npm.packageManager": "yarn",
     "search.exclude": {
+      "**/.yarn": true,
+      "**/.pnp.*": true,
+      "**/*.snap": true,
       "**/yarn-error.log": true,
       "**/yarn.lock": true
     },
@@ -34,7 +38,9 @@
     "eslint.format.enable": false,
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "jest.disabledWorkspaceFolders": [
-      "✨ root",
+      "babel-preset-base",
+      "babel-preset-kitt-universal",
+      "babel-preset-react",
       "🦔 browserslist-config",
       "📓 commitlint-config",
       "🌐 intl-config",
@@ -55,6 +61,18 @@
     {
       "name": "✨ root",
       "path": ".."
+    },
+    {
+      "name": "babel-preset-base",
+      "path": "../@ornikar/babel-preset-base"
+    },
+    {
+      "name": "babel-preset-kitt-universal",
+      "path": "../@ornikar/babel-preset-kitt-universal"
+    },
+    {
+      "name": "babel-preset-react",
+      "path": "../@ornikar/babel-preset-react"
     },
     {
       "name": "🦔 browserslist-config",

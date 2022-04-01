@@ -1,6 +1,9 @@
 {
   "npm.packageManager": "yarn",
   "search.exclude": {
+    "**/.yarn": true,
+    "**/.pnp.*": true,
+    "**/*.snap": true,
     "**/yarn-error.log": true,
     "**/yarn.lock": true
   },
