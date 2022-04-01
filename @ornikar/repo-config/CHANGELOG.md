@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [8.1.0](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@8.0.1...@ornikar/repo-config@8.1.0) (2022-04-01)
+
+
+### Features
+
+* ornikar-lint-staged for yarn berry ([306bc13](https://github.com/ornikar/shared-configs/commit/306bc136a4e0e5cc5e31234b6d948516f9b2352d))
+
+
+
+
+
 ## [8.0.1](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@8.0.0...@ornikar/repo-config@8.0.1) (2022-03-31)
 
 
