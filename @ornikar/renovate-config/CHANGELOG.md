@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.5.0](https://github.com/ornikar/shared-configs/compare/@ornikar/renovate-config@3.4.1...@ornikar/renovate-config@3.5.0) (2022-04-12)
+
+
+### Features
+
+* **renovate-config:** auto open and merge patch+feat type-fest ([ad08a29](https://github.com/ornikar/shared-configs/commit/ad08a29e1d3f5213521dbf9668504a7da70f12e2))
+
+
+
+
+
 ## [3.4.1](https://github.com/ornikar/shared-configs/compare/@ornikar/renovate-config@3.4.0...@ornikar/renovate-config@3.4.1) (2022-03-31)
 
 

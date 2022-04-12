@@ -3493,7 +3493,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ornikar/babel-preset-kitt-universal@^1.0.0, @ornikar/babel-preset-kitt-universal@workspace:@ornikar/babel-preset-kitt-universal":
+"@ornikar/babel-preset-kitt-universal@^1.1.0, @ornikar/babel-preset-kitt-universal@workspace:@ornikar/babel-preset-kitt-universal":
   version: 0.0.0-use.local
   resolution: "@ornikar/babel-preset-kitt-universal@workspace:@ornikar/babel-preset-kitt-universal"
   dependencies:
@@ -3714,7 +3714,7 @@ __metadata:
   dependencies:
     "@babel/plugin-transform-runtime": ^7.13.8
     "@ornikar/babel-preset-base": ^1.0.0
-    "@ornikar/babel-preset-kitt-universal": ^1.0.0
+    "@ornikar/babel-preset-kitt-universal": ^1.1.0
     "@ornikar/babel-preset-react": ^1.0.0
     "@rollup/plugin-babel": ^5.3.1
     "@rollup/plugin-node-resolve": ^11.2.0
