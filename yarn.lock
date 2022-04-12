@@ -3501,7 +3501,7 @@ __metadata:
     "@babel/preset-react": 7.16.7
     "@linaria/babel-preset": 3.0.0-beta.15
     "@linaria/shaker": 3.0.0-beta.15
-    babel-plugin-linaria-css-to-undefined: ^0.2.1
+    babel-plugin-linaria-css-to-undefined: ^0.3.0
     babel-plugin-react-native: ^1.0.1
     babel-plugin-styled-components: ^2.0.2
     babel-plugin-styled-components-react-native-web: ^0.2.2
@@ -5359,12 +5359,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"babel-plugin-linaria-css-to-undefined@npm:^0.2.1":
-  version: 0.2.1
-  resolution: "babel-plugin-linaria-css-to-undefined@npm:0.2.1"
+"babel-plugin-linaria-css-to-undefined@npm:^0.3.0":
+  version: 0.3.0
+  resolution: "babel-plugin-linaria-css-to-undefined@npm:0.3.0"
   peerDependencies:
     "@babel/core": ^7.0.0
-  checksum: c30a6ced97b1ddb16747144fd7dc49b65fe3240fecbae1fbc1d4f863feacf58a4e8e1325b9f45bcf45d34fcc7f1276f281394f316278f4203fe7fb083a1ea294
+  checksum: f02c0748482c83227639d7d1d9948bd3ccca0c6cc2de765f9eb012141036fc88072e600d6aa90d82268b3756beb926eb86a9e14e2950045f987bc29c8e9bb259
   languageName: node
   linkType: hard
 
