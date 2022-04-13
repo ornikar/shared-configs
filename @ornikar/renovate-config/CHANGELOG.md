@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.6.0](https://github.com/ornikar/shared-configs/compare/@ornikar/renovate-config@3.5.0...@ornikar/renovate-config@3.6.0) (2022-04-13)
+
+
+### Features
+
+* **renovate-config:** add react-forms-universal in components ([8ea590d](https://github.com/ornikar/shared-configs/commit/8ea590d3794b3c35589156770fd8407c1e11a4bd))
+
+
+
+
+
 # [3.5.0](https://github.com/ornikar/shared-configs/compare/@ornikar/renovate-config@3.4.1...@ornikar/renovate-config@3.5.0) (2022-04-12)
 
 
