@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.1.0](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config-react@7.0.22...@ornikar/repo-config-react@7.1.0) (2022-04-13)
+
+
+### Features
+
+* **repo-config-react:** storybook ci script [no issue] ([#691](https://github.com/ornikar/shared-configs/issues/691)) ([b5dd1d8](https://github.com/ornikar/shared-configs/commit/b5dd1d80b454dfa63b613a019401cc9435255a24))
+
+
+
+
+
 ## [7.0.22](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config-react@7.0.21...@ornikar/repo-config-react@7.0.22) (2022-04-01)
 
 **Note:** Version bump only for package @ornikar/repo-config-react

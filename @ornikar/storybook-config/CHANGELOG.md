@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.2.4](https://github.com/ornikar/shared-configs/compare/@ornikar/storybook-config@4.2.3...@ornikar/storybook-config@4.2.4) (2022-04-13)
+
+
+### Bug Fixes
+
+* **storybook-config:** modulesToAlias default should be object [no issue] ([#692](https://github.com/ornikar/shared-configs/issues/692)) ([c9f4cd9](https://github.com/ornikar/shared-configs/commit/c9f4cd98b14822460dafb38b63a15403cb0f8a8c))
+
+
+
+
+
 ## [4.2.3](https://github.com/ornikar/shared-configs/compare/@ornikar/storybook-config@4.2.2...@ornikar/storybook-config@4.2.3) (2022-03-24)
 
 **Note:** Version bump only for package @ornikar/storybook-config
