@@ -18,7 +18,7 @@ module.exports = (
     srcDirectory = './src',
     enableReactNativeWeb = false,
     enableLinaria = false,
-    modulesToAlias = [],
+    modulesToAlias = {},
     nativeModulesToTranspile = [],
     envVariables,
   } = defaultOptions,
