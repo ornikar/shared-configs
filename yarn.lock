@@ -3697,7 +3697,7 @@ __metadata:
     "@commitlint/cli": 16.2.3
     "@ornikar/commitlint-config": ^4.0.3
     husky: 7.0.4
-    lint-staged: 12.3.7
+    lint-staged: 12.3.8
     prettier-plugin-properties: 0.1.0
     semver: ^7.3.5
     which-pm-runs: ^1.1.0
@@ -3747,7 +3747,7 @@ __metadata:
     eslint: 8.13.0
     jest: 27.5.1
     lerna: 4.0.0
-    lint-staged: 12.3.7
+    lint-staged: 12.3.8
     prettier: 2.6.2
   languageName: unknown
   linkType: soft
@@ -11876,9 +11876,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lint-staged@npm:12.3.7":
-  version: 12.3.7
-  resolution: "lint-staged@npm:12.3.7"
+"lint-staged@npm:12.3.8":
+  version: 12.3.8
+  resolution: "lint-staged@npm:12.3.8"
   dependencies:
     cli-truncate: ^3.1.0
     colorette: ^2.0.16
@@ -11896,7 +11896,7 @@ __metadata:
     yaml: ^1.10.2
   bin:
     lint-staged: bin/lint-staged.js
-  checksum: b595097556880eb2ab7ce2cf105047f6f22525ccfd608fbdc63ab243259aa36a26949576fadff673748fb885e7cb37ad3f4471d964ad54c1205d57a58999ba24
+  checksum: af6a89ae4244e4eac7180c6e7da452f378fd156ff38eaa666ecbb78f1e2efb7f1a9fc766dcc1cdde2bd76e03da68e602056ca9d2f1c6e46cf10aa83d20bf4d49
   languageName: node
   linkType: hard
 
