@@ -9,6 +9,7 @@ const processEnv = require('@ornikar/webpack-config/processEnv');
 const reactNativeWeb = require('@ornikar/webpack-config/reactNativeWeb');
 const resolveFields = require('@ornikar/webpack-config/resolveFields');
 const cssModulesRule = require('../webpack-configs/cssModulesRule');
+const fixAcornRule = require('../webpack-configs/fixAcornRule');
 const svgRule = require('../webpack-configs/svgRule');
 const { defaultOptions } = require('./defaultOptions');
 
@@ -49,6 +50,7 @@ module.exports = (
   resolveFields(env, webpackConfig);
   cssModulesRule(env, webpackConfig, srcDirectories);
   svgRule(env, webpackConfig);
+  fixAcornRule(env, webpackConfig);
 
   if (enableLinaria) {
     linaria(env, webpackConfig);
