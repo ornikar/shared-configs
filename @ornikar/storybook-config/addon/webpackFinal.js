@@ -19,6 +19,7 @@ module.exports = (
     srcDirectory = './src',
     enableReactNativeWeb = false,
     enableLinaria = false,
+    disableCssModules = false,
     modulesToAlias = {},
     nativeModulesToTranspile = [],
     envVariables,
@@ -48,7 +49,9 @@ module.exports = (
   const env = process.env.NODE_ENV !== 'production' ? 'dev' : 'production';
 
   resolveFields(env, webpackConfig);
-  cssModulesRule(env, webpackConfig, srcDirectories);
+  if (!disableCssModules) {
+    cssModulesRule(env, webpackConfig, srcDirectories);
+  }
   svgRule(env, webpackConfig);
   fixStorybookBabelRules(env, webpackConfig);
 
