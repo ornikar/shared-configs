@@ -1,6 +1,6 @@
 {
   "name": "@ornikar/jest-config-react-native",
-  "version": "4.2.1",
+  "version": "4.2.2",
   "description": "✅⚛️📱 jest config for react-native",
   "repository": "ornikar/shared-configs",
   "main": "jest-preset.js",
@@ -24,7 +24,7 @@
     }
   },
   "dependencies": {
-    "@ornikar/jest-config-react": "^9.6.0",
+    "@ornikar/jest-config-react": "^9.6.1",
     "@sucrase/jest-plugin": "^2.2.0"
   },
   "devDependencies": {
