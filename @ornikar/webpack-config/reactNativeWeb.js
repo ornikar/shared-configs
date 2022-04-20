@@ -35,7 +35,15 @@ module.exports = (
     // problematic modules
     {
       test: /\.(js|jsx|ts|tsx)$/,
-      include: /node_modules\/(react-native-(calendars|reanimated)|native-base|@react-native-community\/netinfo)\//,
+      include: new RegExp(
+        `node_modules/(${[
+          '@react-native-community/netinfo',
+          'react-native-calendars',
+          'react-native-reanimated',
+          'native-base',
+          ...nativeModulesToTranspile,
+        ].join('|')})`,
+      ),
       loaders: [babelLoaderConfig],
     },
     // native modules needing transpilation
