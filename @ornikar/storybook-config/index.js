@@ -6,6 +6,8 @@ exports.createMainConfig = function createMainConfig({
   srcPath = 'src',
   postcssImplementation,
   enableControls = false,
+  disableDocsAddon = false,
+  enableDocsAddonInDev = false,
   addons = [],
   ...ornikarAddonOptions
 } = {}) {
@@ -43,6 +45,7 @@ exports.createMainConfig = function createMainConfig({
         name: '@storybook/addon-essentials',
         options: {
           controls: enableControls,
+          docs: disableDocsAddon ? false : enableDocsAddonInDev || process.env.NODE_ENV === 'production',
         },
       },
       ...addons,
