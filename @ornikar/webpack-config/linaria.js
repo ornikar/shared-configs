@@ -10,9 +10,6 @@ module.exports = (env, webpackConfig) => {
         options: {
           sourceMap: env !== 'production',
           extension: '.css',
-          babelOptions: {
-            presets: ['@babel/preset-typescript'],
-          },
         },
       },
     ],

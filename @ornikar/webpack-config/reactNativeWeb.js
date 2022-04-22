@@ -2,14 +2,14 @@
 
 'use strict';
 
-const path = require('path');
-
-const getModule = (name) => path.join('node_modules', name);
+/*
+ * If you change something here, also change in @ornikar/jest-config-react-native customTransforms.js
+ */
 
 module.exports = (
   env,
   webpackConfig,
-  { nativeModulesToTranspile = [], unshiftToRules = webpackConfig.module.rules } = {},
+  { nativeModulesToTranspile = [], unshiftToRules = webpackConfig.module.rules, unshiftToOneOfRules } = {},
 ) => {
   if (!webpackConfig.resolve.extensions.includes('.web.ts')) {
     webpackConfig.resolve.extensions = webpackConfig.resolve.extensions.flatMap((ext) => [`.web${ext}`, ext]);
@@ -22,42 +22,42 @@ module.exports = (
     'styled-components$': 'styled-components/native',
   };
 
-  const includeModulesThatContainPaths = [
-    // copied from https://github.com/expo/expo-cli/blob/master/packages/webpack-config/src/loaders/createBabelLoader.ts
-    getModule('react-native'),
-    getModule('react-navigation'),
-    getModule('expo'),
-    getModule('unimodules'),
-    getModule('@react'),
-    getModule('@expo'),
-    getModule('@use-expo'),
-    getModule('@unimodules'),
-    getModule('native-base'),
-    // user-defined modules for
-    ...nativeModulesToTranspile.map(getModule),
-  ].map(path.normalize);
-
-  const excludeModulesThatContainPaths = [getModule('react-native-web')];
-
-  unshiftToRules.unshift({
-    test: /\.(js|jsx|ts|tsx)$/,
-    include: (inputPath) => {
-      for (const possibleModule of includeModulesThatContainPaths) {
-        if (inputPath.includes(possibleModule)) {
-          return excludeModulesThatContainPaths.every((excludePath) => !inputPath.includes(excludePath));
-        }
-      }
-      return false;
+  const babelLoaderConfig = {
+    loader: 'babel-loader',
+    options: {
+      babelrc: false,
+      configFile: false,
+      presets: [['babel-preset-expo', { jsxRuntime: 'automatic' }]],
     },
-    loaders: [
-      {
-        loader: 'babel-loader',
-        options: {
-          babelrc: false,
-          configFile: false,
-          presets: [['babel-preset-expo', { jsxRuntime: 'automatic' }]],
-        },
-      },
-    ],
-  });
+  };
+
+  const oneOf = [
+    // problematic modules
+    {
+      test: /\.(js|jsx|ts|tsx)$/,
+      include: new RegExp(
+        `node_modules/(${[
+          '@react-native-community/netinfo',
+          'react-native-calendars',
+          'react-native-reanimated',
+          'native-base',
+          ...nativeModulesToTranspile,
+        ].join('|')})`,
+      ),
+      loaders: [babelLoaderConfig],
+    },
+    // native modules needing transpilation
+    {
+      test: /\.(js|jsx|ts|tsx)$/,
+      include: /node_modules\/(@?react-native.*(?!web)|@?expo.*|@?react-navigation.*)\//,
+      exclude: /node_modules\/.*\/(commonjs|modules|dist\/(modules|cjs|vendor))\//,
+      loaders: [babelLoaderConfig],
+    },
+  ];
+
+  if (unshiftToOneOfRules) {
+    unshiftToOneOfRules.unshift(...oneOf);
+  } else {
+    unshiftToRules.unshift({ oneOf });
+  }
 };

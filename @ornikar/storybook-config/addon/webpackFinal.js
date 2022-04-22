@@ -9,6 +9,7 @@ const processEnv = require('@ornikar/webpack-config/processEnv');
 const reactNativeWeb = require('@ornikar/webpack-config/reactNativeWeb');
 const resolveFields = require('@ornikar/webpack-config/resolveFields');
 const cssModulesRule = require('../webpack-configs/cssModulesRule');
+const fixStorybookBabelRules = require('../webpack-configs/fixStorybookBabelRules');
 const svgRule = require('../webpack-configs/svgRule');
 const { defaultOptions } = require('./defaultOptions');
 
@@ -18,6 +19,7 @@ module.exports = (
     srcDirectory = './src',
     enableReactNativeWeb = false,
     enableLinaria = false,
+    disableCssModules = false,
     modulesToAlias = {},
     nativeModulesToTranspile = [],
     envVariables,
@@ -47,8 +49,11 @@ module.exports = (
   const env = process.env.NODE_ENV !== 'production' ? 'dev' : 'production';
 
   resolveFields(env, webpackConfig);
-  cssModulesRule(env, webpackConfig, srcDirectories);
+  if (!disableCssModules) {
+    cssModulesRule(env, webpackConfig, srcDirectories);
+  }
   svgRule(env, webpackConfig);
+  fixStorybookBabelRules(env, webpackConfig);
 
   if (enableLinaria) {
     linaria(env, webpackConfig);
