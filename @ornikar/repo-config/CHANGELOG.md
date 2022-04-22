@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [8.3.1](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@8.3.0...@ornikar/repo-config@8.3.1) (2022-04-22)
+
+
+### Bug Fixes
+
+* typo in pre-push script ([ff75c9d](https://github.com/ornikar/shared-configs/commit/ff75c9dde4fe26b35c0a5954a50c55e02ad570a1))
+
+
+
+
+
 # [8.3.0](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@8.2.1...@ornikar/repo-config@8.3.0) (2022-04-22)
 
 
