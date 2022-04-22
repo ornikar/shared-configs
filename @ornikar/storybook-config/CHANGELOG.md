@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.3.0](https://github.com/ornikar/shared-configs/compare/@ornikar/storybook-config@4.2.4...@ornikar/storybook-config@4.3.0) (2022-04-22)
+
+
+### Features
+
+* **webpack-config:** improve config for faster webpack ARCH-1515 ([#696](https://github.com/ornikar/shared-configs/issues/696)) ([c700d2c](https://github.com/ornikar/shared-configs/commit/c700d2ce95970011e58775cbb1061562b688850a))
+
+
+
+
+
 ## [4.2.4](https://github.com/ornikar/shared-configs/compare/@ornikar/storybook-config@4.2.3...@ornikar/storybook-config@4.2.4) (2022-04-13)
 
 

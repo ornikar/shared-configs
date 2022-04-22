@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.3.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react-native@4.2.2...@ornikar/jest-config-react-native@4.3.0) (2022-04-22)
+
+
+### Features
+
+* **webpack-config:** improve config for faster webpack ARCH-1515 ([#696](https://github.com/ornikar/shared-configs/issues/696)) ([c700d2c](https://github.com/ornikar/shared-configs/commit/c700d2ce95970011e58775cbb1061562b688850a))
+
+
+
+
+
 ## [4.2.2](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react-native@4.2.1...@ornikar/jest-config-react-native@4.2.2) (2022-04-19)
 
 **Note:** Version bump only for package @ornikar/jest-config-react-native

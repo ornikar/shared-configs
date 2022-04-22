@@ -3757,7 +3757,7 @@ __metadata:
   resolution: "@ornikar/storybook-config@workspace:@ornikar/storybook-config"
   dependencies:
     "@chrp/typed-css-modules-loader": 0.7.0
-    "@ornikar/webpack-config": ^4.1.2
+    "@ornikar/webpack-config": ^4.2.0
     svg-react-loader: 0.4.6
     webpack: 4.46.0
   peerDependencies:
@@ -3783,7 +3783,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ornikar/webpack-config@^4.1.2, @ornikar/webpack-config@workspace:@ornikar/webpack-config":
+"@ornikar/webpack-config@^4.2.0, @ornikar/webpack-config@workspace:@ornikar/webpack-config":
   version: 0.0.0-use.local
   resolution: "@ornikar/webpack-config@workspace:@ornikar/webpack-config"
   languageName: unknown

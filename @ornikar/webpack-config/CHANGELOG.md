@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.2.0](https://github.com/ornikar/shared-configs/compare/@ornikar/webpack-config@4.1.2...@ornikar/webpack-config@4.2.0) (2022-04-22)
+
+
+### Features
+
+* **webpack-config:** improve config for faster webpack ARCH-1515 ([#696](https://github.com/ornikar/shared-configs/issues/696)) ([c700d2c](https://github.com/ornikar/shared-configs/commit/c700d2ce95970011e58775cbb1061562b688850a))
+
+
+
+
+
 ## [4.1.2](https://github.com/ornikar/shared-configs/compare/@ornikar/webpack-config@4.1.1...@ornikar/webpack-config@4.1.2) (2022-03-24)
 
 

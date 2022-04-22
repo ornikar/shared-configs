@@ -1,6 +1,6 @@
 {
   "name": "@ornikar/jest-config-react-native",
-  "version": "4.2.2",
+  "version": "4.3.0",
   "description": "✅⚛️📱 jest config for react-native",
   "repository": "ornikar/shared-configs",
   "main": "jest-preset.js",
