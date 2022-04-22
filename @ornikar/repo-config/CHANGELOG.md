@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [8.3.0](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@8.2.1...@ornikar/repo-config@8.3.0) (2022-04-22)
+
+
+### Features
+
+* pre-push only run test changed since main branch [no issue] ([#698](https://github.com/ornikar/shared-configs/issues/698)) ([9e7aa2d](https://github.com/ornikar/shared-configs/commit/9e7aa2d4de6e3e8ff18567555cf405663e22942d))
+
+
+
+
+
 ## [8.2.1](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@8.2.0...@ornikar/repo-config@8.2.1) (2022-04-19)
 
 **Note:** Version bump only for package @ornikar/repo-config
