@@ -137,10 +137,16 @@ fi
     writeHook('post-rewrite', postHookContent);
   }
 
+  const prePushHookPreCommands = [];
   const prePushHook = [];
 
   if (shouldRunTest()) {
-    prePushHook.push(`CI=true ${pm.name} test`);
+    prePushHookPreCommands.push(
+      '# autodetect main branch (usually master or main)',
+      'mainBranch = $(git remote show origin | grep "HEAD branch" | cut - d\' \' - f5)',
+      '',
+    );
+    prePushHook.push(`CI=true ${pm.name} test --changedSince=origin/$mainBranch`);
   }
 
   if (shouldRunChecks()) {
@@ -148,7 +154,10 @@ fi
   }
 
   if (prePushHook.length > 0) {
-    writeHook('pre-push', prePushHook.join(' && '));
+    writeHook(
+      'pre-push',
+      (prePushHookPreCommands ? [...prePushHookPreCommands, ''].join('\n') : '') + prePushHook.join(' && '),
+    );
   } else {
     ensureHookDeleted('pre-push');
   }
