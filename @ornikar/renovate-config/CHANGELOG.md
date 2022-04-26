@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.7.0](https://github.com/ornikar/shared-configs/compare/@ornikar/renovate-config@3.6.0...@ornikar/renovate-config@3.7.0) (2022-04-26)
+
+
+### Features
+
+* **renovate-config:** team frontend-shared-components-maintainers [no issue] ([#701](https://github.com/ornikar/shared-configs/issues/701)) ([d662b45](https://github.com/ornikar/shared-configs/commit/d662b45d9f1b822deb15b10005644859a0f7fcfa))
+
+
+
+
+
 # [3.6.0](https://github.com/ornikar/shared-configs/compare/@ornikar/renovate-config@3.5.0...@ornikar/renovate-config@3.6.0) (2022-04-13)
 
 
