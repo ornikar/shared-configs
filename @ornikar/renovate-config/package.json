@@ -202,7 +202,19 @@
           ]
         },
         {
+          "groupName": "Kitt Ornikar",
+          "reviewers": [
+            "team:frontend-shared-components-maintainers"
+          ],
+          "sourceUrlPrefixes": [
+            "https://github.com/ornikar/kitt"
+          ]
+        },
+        {
           "groupName": "Components Ornikar",
+          "reviewers": [
+            "team:frontend-shared-components-maintainers"
+          ],
           "sourceUrlPrefixes": [
             "https://github.com/ornikar/components"
           ],
