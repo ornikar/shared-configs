@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.1.5](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config-react@7.1.4...@ornikar/repo-config-react@7.1.5) (2022-04-27)
+
+
+### Bug Fixes
+
+* **repo-config-react:** create config lint-staged pass options [no issue] ([#702](https://github.com/ornikar/shared-configs/issues/702)) ([f28847a](https://github.com/ornikar/shared-configs/commit/f28847aa3464c3128d443f6666646b7b170441ca))
+
+
+
+
+
 ## [7.1.4](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config-react@7.1.3...@ornikar/repo-config-react@7.1.4) (2022-04-26)
 
 **Note:** Version bump only for package @ornikar/repo-config-react
