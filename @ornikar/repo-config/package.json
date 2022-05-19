@@ -18,7 +18,7 @@
     "ornikar-repo-config-postinstall": "./bin/ornikar-repo-config-postinstall.js"
   },
   "dependencies": {
-    "@commitlint/cli": "16.2.4",
+    "@commitlint/cli": "16.3.0",
     "@ornikar/commitlint-config": "^4.0.3",
     "husky": "7.0.4",
     "lint-staged": "12.4.1",
