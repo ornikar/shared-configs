@@ -35,6 +35,7 @@ module.exports = (
     // problematic modules
     {
       test: /\.(js|jsx|ts|tsx)$/,
+      // eslint-disable-next-line security/detect-non-literal-regexp
       include: new RegExp(
         `node_modules/(${[
           '@react-native-community/netinfo',

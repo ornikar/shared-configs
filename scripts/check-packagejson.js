@@ -29,6 +29,6 @@ packages.forEach((pkgName) => {
 });
 
 if (hasError) {
-  // eslint-disable-next-line unicorn/no-process-exit
+  // eslint-disable-next-line unicorn/no-process-exit, n/no-process-exit
   process.exit(1);
 }
