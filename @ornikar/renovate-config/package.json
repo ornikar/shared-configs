@@ -253,6 +253,12 @@
           "matchPackagePatterns": [
             "^eslint"
           ]
+        },
+        {
+          "groupName": "flagship packages",
+          "matchPackagePatterns": [
+            "^@flagship.io/"
+          ]
         }
       ]
     }
