@@ -164,14 +164,11 @@
         },
         {
           "groupName": "Ornikar Eslint Configs",
-          "matchPackageNames": [
-            "@ornikar/eslint-config",
-            "@ornikar/eslint-config-babel",
-            "@ornikar/eslint-config-formatjs",
-            "@ornikar/eslint-config-node",
-            "@ornikar/eslint-config-react",
-            "@ornikar/eslint-config-typescript",
-            "@ornikar/eslint-config-typescript-react"
+          "reviewers": [
+            "team:frontend-shared-components-maintainers"
+          ],
+          "sourceUrlPrefixes": [
+            "https://github.com/ornikar/eslint-configs"
           ]
         },
         {
