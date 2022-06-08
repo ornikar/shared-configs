@@ -2,7 +2,11 @@
   "name": "@ornikar/rollup-config",
   "version": "4.8.1",
   "description": "📦 rollup config files",
-  "repository": "ornikar/shared-configs",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ornikar/shared-configs.git",
+    "directory": "@ornikar/rollup-config"
+  },
   "main": "createRollupConfig.js",
   "types": "./runtime.d.ts",
   "license": "ISC",

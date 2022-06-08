@@ -2,6 +2,11 @@
   "name": "@ornikar/renovate-config",
   "version": "3.7.0",
   "description": "⬆️ renovate shared config",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ornikar/shared-configs.git",
+    "directory": "@ornikar/renovate-config"
+  },
   "engines": {
     "node": ">=14.17.5"
   },

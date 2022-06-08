@@ -10,4 +10,4 @@
       "@commitlint/config-conventional"
     ]
   }
-  ```
+```

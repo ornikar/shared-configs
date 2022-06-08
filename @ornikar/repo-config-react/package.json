@@ -2,7 +2,11 @@
   "name": "@ornikar/repo-config-react",
   "version": "7.1.5",
   "description": "🔧⚛️ react repo config",
-  "repository": "ornikar/shared-configs",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ornikar/shared-configs.git",
+    "directory": "@ornikar/repo-config-react"
+  },
   "license": "ISC",
   "engines": {
     "node": ">=14.17.5"

@@ -2,7 +2,11 @@
   "name": "@ornikar/babel-preset-react",
   "version": "1.0.0",
   "keywords": [],
-  "repository": "ornikar/shared-configs",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ornikar/shared-configs.git",
+    "directory": "@ornikar/babel-preset-react"
+  },
   "license": "MIT",
   "engines": {
     "node": ">= 14.17.5"

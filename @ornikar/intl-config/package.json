@@ -2,7 +2,11 @@
   "name": "@ornikar/intl-config",
   "version": "4.0.0",
   "description": "🌐 intl-config",
-  "repository": "ornikar/shared-configs",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ornikar/shared-configs.git",
+    "directory": "@ornikar/intl-config"
+  },
   "license": "ISC",
   "engines": {
     "node": ">=14.17.5"

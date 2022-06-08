@@ -2,7 +2,11 @@
   "name": "@ornikar/postcss-config",
   "version": "4.0.3",
   "description": "🎨 postcss config files",
-  "repository": "ornikar/shared-configs",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ornikar/shared-configs.git",
+    "directory": "@ornikar/postcss-config"
+  },
   "main": "index.js",
   "license": "ISC",
   "engines": {

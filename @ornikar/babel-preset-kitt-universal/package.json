@@ -2,7 +2,11 @@
   "name": "@ornikar/babel-preset-kitt-universal",
   "version": "1.1.0",
   "keywords": [],
-  "repository": "ornikar/shared-configs",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ornikar/shared-configs.git",
+    "directory": "@ornikar/babel-preset-kitt-universal"
+  },
   "license": "MIT",
   "engines": {
     "node": ">= 14.17.5"
