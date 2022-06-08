@@ -37,7 +37,7 @@
     "@ornikar/babel-preset-kitt-universal": "^1.1.0",
     "@ornikar/babel-preset-react": "^1.0.0",
     "@rollup/plugin-babel": "^5.3.1",
-    "@rollup/plugin-node-resolve": "^11.2.0",
+    "@rollup/plugin-node-resolve": "^13.0.0",
     "@rollup/plugin-replace": "^4.0.0",
     "babel-plugin-discard-module-references": "^1.1.2",
     "babel-plugin-minify-dead-code-elimination": "^0.5.1",
