@@ -31,7 +31,7 @@ tests.forEach((filename) => {
       if (err._babel && err instanceof SyntaxError) {
         console.log(`Unexpected error in test: ${test.name || filename}`);
         console.log(`${err.name}: ${err.message}\n${err.codeFrame}`);
-        // eslint-disable-next-line unicorn/no-process-exit, n/no-process-exit
+        // eslint-disable-next-line unicorn/no-process-exit
         process.exit(1);
       } else {
         throw err;
