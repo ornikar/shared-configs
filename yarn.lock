@@ -3634,9 +3634,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ornikar/eslint-config@npm:18.11.0":
-  version: 18.11.0
-  resolution: "@ornikar/eslint-config@npm:18.11.0"
+"@ornikar/eslint-config@npm:18.12.0":
+  version: 18.12.0
+  resolution: "@ornikar/eslint-config@npm:18.12.0"
   dependencies:
     eslint-config-airbnb-base: ^15.0.0
     eslint-config-prettier: ^8.2.0
@@ -3650,7 +3650,7 @@ __metadata:
   peerDependencies:
     eslint: ^8.9.0
     prettier: ^2.2.1
-  checksum: 340e15996f550a0e110a64558f1c9bffc9e7a26036857c88a2df7bba2e2e7102768fb61de322d9a742f14d6ac1749e331b75dca9e94041820fbc22b85091e9ca
+  checksum: ad48b76a51a832a8929eaa5f0c2ca4224d1ffd4b2127bd5f66fe681df0b3d6f9634bf97cdff38a9c16414f2a43a467247304c4c356acfaacb4fac660e1f93833
   languageName: node
   linkType: hard
 
@@ -3846,7 +3846,7 @@ __metadata:
   resolution: "@ornikar/shared-configs@workspace:."
   dependencies:
     "@commitlint/cli": 16.3.0
-    "@ornikar/eslint-config": 18.11.0
+    "@ornikar/eslint-config": 18.12.0
     eslint: 8.16.0
     jest: 27.5.1
     lerna: 5.1.0
