@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [8.4.0](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@8.3.2...@ornikar/repo-config@8.4.0) (2022-06-20)
+
+
+### Features
+
+* **deps:** update dependency husky to v8 ([#724](https://github.com/ornikar/shared-configs/issues/724)) ([9953050](https://github.com/ornikar/shared-configs/commit/995305060069efc4e74720c3cbc5e5d56d4f5507))
+
+
+
+
+
 ## [8.3.2](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@8.3.1...@ornikar/repo-config@8.3.2) (2022-04-26)
 
 **Note:** Version bump only for package @ornikar/repo-config

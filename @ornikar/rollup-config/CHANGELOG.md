@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.9.0](https://github.com/ornikar/shared-configs/compare/@ornikar/rollup-config@4.8.1...@ornikar/rollup-config@4.9.0) (2022-06-20)
+
+
+### Features
+
+* **deps:** update dependency @rollup/plugin-node-resolve to v13 ([#722](https://github.com/ornikar/shared-configs/issues/722)) ([34199ef](https://github.com/ornikar/shared-configs/commit/34199efb6d1e95238d5e0fc4f60269a70ddbb453))
+* **deps:** update dependency @rollup/plugin-replace to v4 ([#723](https://github.com/ornikar/shared-configs/issues/723)) ([642512e](https://github.com/ornikar/shared-configs/commit/642512e9221a1b8ef2da243745f08fc525aa1b5e))
+
+
+
+
+
 ## [4.8.1](https://github.com/ornikar/shared-configs/compare/@ornikar/rollup-config@4.8.0...@ornikar/rollup-config@4.8.1) (2022-04-12)
 
 **Note:** Version bump only for package @ornikar/rollup-config
