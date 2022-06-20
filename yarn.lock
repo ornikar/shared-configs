@@ -1707,19 +1707,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@expo/config-plugins@npm:4.1.0":
-  version: 4.1.0
-  resolution: "@expo/config-plugins@npm:4.1.0"
+"@expo/config-plugins@npm:4.1.5":
+  version: 4.1.5
+  resolution: "@expo/config-plugins@npm:4.1.5"
   dependencies:
-    "@expo/config-types": ^44.0.0
-    "@expo/json-file": 8.2.34
-    "@expo/plist": 0.0.17
+    "@expo/config-types": ^45.0.0
+    "@expo/json-file": 8.2.36
+    "@expo/plist": 0.0.18
     "@expo/sdk-runtime-versions": ^1.0.0
     "@react-native/normalize-color": ^2.0.0
     chalk: ^4.1.2
     debug: ^4.3.1
     find-up: ~5.0.0
-    fs-extra: 9.0.0
     getenv: ^1.0.0
     glob: 7.1.6
     resolve-from: ^5.0.0
@@ -1727,25 +1726,25 @@ __metadata:
     slash: ^3.0.0
     xcode: ^3.0.1
     xml2js: 0.4.23
-  checksum: 29ceeeb06010202e8b7d60e09b0056e19ac0608c94a41a61ef8a12909e7db3d9ecc893b06a90deab5a78c93320b32e17f1a987e90f3d49e0e837fff4f170fcdb
+  checksum: f631217251281b1e25949adbec175ef1362dd08d837ce676ed8350c1401b5764091ba100f76f42adb623e4cdcde5b270be77ad6606f978d419c07fd8c81b701c
   languageName: node
   linkType: hard
 
-"@expo/config-types@npm:^44.0.0":
-  version: 44.0.0
-  resolution: "@expo/config-types@npm:44.0.0"
-  checksum: 57ca30e791db6d6efa2c7802381cb46d312422e94c0ec032430fafa6904e5f9a6cc56c3ea1011b250f8e304db8e2d9486fe4c6b2fa1e6cea0be05b8cedc430b4
+"@expo/config-types@npm:^45.0.0":
+  version: 45.0.0
+  resolution: "@expo/config-types@npm:45.0.0"
+  checksum: 9b4866540654da61af0985ebfc975b3cb690625acf7742443a7e56263bf134b261e22719720982223407f8957d08a3646178c79f482861218882f0956d804021
   languageName: node
   linkType: hard
 
-"@expo/config@npm:^6.0.6":
-  version: 6.0.19
-  resolution: "@expo/config@npm:6.0.19"
+"@expo/config@npm:^6.0.14":
+  version: 6.0.24
+  resolution: "@expo/config@npm:6.0.24"
   dependencies:
     "@babel/code-frame": ~7.10.4
-    "@expo/config-plugins": 4.1.0
-    "@expo/config-types": ^44.0.0
-    "@expo/json-file": 8.2.34
+    "@expo/config-plugins": 4.1.5
+    "@expo/config-types": ^45.0.0
+    "@expo/json-file": 8.2.36
     getenv: ^1.0.0
     glob: 7.1.6
     require-from-string: ^2.0.2
@@ -1753,29 +1752,29 @@ __metadata:
     semver: 7.3.2
     slugify: ^1.3.4
     sucrase: ^3.20.0
-  checksum: 17ed9ca92c3f46167d99f51123cab9f651b0daf504f0b66c01226d1f6eb8714bf862daf7780498f94e612894e56e8d8bd974ead20d3b1bf595e77b97c516a1ee
+  checksum: 5d29474a4985c43e55fa40f3131d7cb2e9d252745c5dc398f38a8dfc3622e1f273d78e578681f93bf2e304a7d0da12727c680af7ea1f931e6e5440f57d92dc22
   languageName: node
   linkType: hard
 
-"@expo/json-file@npm:8.2.34":
-  version: 8.2.34
-  resolution: "@expo/json-file@npm:8.2.34"
+"@expo/json-file@npm:8.2.36":
+  version: 8.2.36
+  resolution: "@expo/json-file@npm:8.2.36"
   dependencies:
     "@babel/code-frame": ~7.10.4
     json5: ^1.0.1
     write-file-atomic: ^2.3.0
-  checksum: c047d7f638509be7ec6316f50b19aeb7134970f0531da24727d73fcd3f16e8fd626ddc044ee3bc82cc7e0098c69758196ede9f406c392baa31649c53df9118c3
+  checksum: 37ce80b3472fef2a56136ebff5993d98ab4fbd45c4d7791ff47be80438dbeabd84bc699a401da0c314357ef65d8fff87a5a1241b3119db2d575878f9321bd1e7
   languageName: node
   linkType: hard
 
-"@expo/plist@npm:0.0.17":
-  version: 0.0.17
-  resolution: "@expo/plist@npm:0.0.17"
+"@expo/plist@npm:0.0.18":
+  version: 0.0.18
+  resolution: "@expo/plist@npm:0.0.18"
   dependencies:
     "@xmldom/xmldom": ~0.7.0
     base64-js: ^1.2.3
     xmlbuilder: ^14.0.0
-  checksum: fe461530cb68721317da166d9400f3ae07165dc7d9faf497e6ad944dab4dc86b5e25f933ce57771fa5d5d04fd422f08517286f2388b033bdb6f6385858ee9f29
+  checksum: 42f5743fcd2a07b55a9f048d27cf0f273510ab35dde1f7030b22dc8c30ab2cfb65c6e68f8aa58fbcfa00177fdc7c9696d0004083c9a47c36fd4ac7fea27d6ccc
   languageName: node
   linkType: hard
 
@@ -2008,12 +2007,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@jest/create-cache-key-function@npm:^26.6.2":
-  version: 26.6.2
-  resolution: "@jest/create-cache-key-function@npm:26.6.2"
+"@jest/create-cache-key-function@npm:^27.0.1":
+  version: 27.5.1
+  resolution: "@jest/create-cache-key-function@npm:27.5.1"
   dependencies:
-    "@jest/types": ^26.6.2
-  checksum: 943a7f1f21bb77db7471ffa831fd7d35f9825cd2d9f8fabf05922a3220fe201ad0a3bcaeac54650da9907ee5c3178373ec000a8d354e288a2f4766fe0558c516
+    "@jest/types": ^27.5.1
+  checksum: a6c3a8c769aca6f66f5dc80f1c77e66980b4f213a6b2a15a92ba3595f032848a1261c06c9c798dcf2b672b1ffbefad5085af89d130548741c85ddbe0cf4284e7
   languageName: node
   linkType: hard
 
@@ -3687,12 +3686,12 @@ __metadata:
     "@sucrase/jest-plugin": ^2.2.0
     "@testing-library/react-hooks": 7.0.2
     "@testing-library/react-native": 9.1.0
-    jest-expo: 44.0.1
+    jest-expo: 45.0.1
     react: 17.0.2
   peerDependencies:
     "@testing-library/react-hooks": ^7.0.0
     "@testing-library/react-native": ^7.2.0 || ^8.0.0 || ^9.0.0
-    jest-expo: ^41.0.0 || ^42.0.0 || ^43.0.0 || ^44.0.0
+    jest-expo: ^41.0.0 || ^42.0.0 || ^43.0.0 || ^44.0.0 || ^45.0.0
     react: ^17.0.0
     react-dom: ^17.0.0
   peerDependenciesMeta:
@@ -8901,18 +8900,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fs-extra@npm:9.0.0":
-  version: 9.0.0
-  resolution: "fs-extra@npm:9.0.0"
-  dependencies:
-    at-least-node: ^1.0.0
-    graceful-fs: ^4.2.0
-    jsonfile: ^6.0.1
-    universalify: ^1.0.0
-  checksum: c4269fbfd8d8d2a1edca4257fa28545caf7e5ad218d264f723c338a154d3624d2ef098c19915b9436d3186b7ac45d5b032371a2004008ec0cd4072512e853aa8
-  languageName: node
-  linkType: hard
-
 "fs-extra@npm:^10.0.0":
   version: 10.0.1
   resolution: "fs-extra@npm:10.0.1"
@@ -10949,22 +10936,22 @@ __metadata:
   languageName: node
   linkType: hard
 
-"jest-expo@npm:44.0.1":
-  version: 44.0.1
-  resolution: "jest-expo@npm:44.0.1"
+"jest-expo@npm:45.0.1":
+  version: 45.0.1
+  resolution: "jest-expo@npm:45.0.1"
   dependencies:
-    "@expo/config": ^6.0.6
-    "@jest/create-cache-key-function": ^26.6.2
+    "@expo/config": ^6.0.14
+    "@jest/create-cache-key-function": ^27.0.1
     babel-jest: ^26.6.3
     find-up: ^5.0.0
     jest-watch-select-projects: ^2.0.0
     jest-watch-typeahead: 0.6.4
     json5: ^2.1.0
     lodash: ^4.17.19
-    react-test-renderer: ~17.0.1
+    react-test-renderer: ~17.0.2
   bin:
     jest: bin/jest.js
-  checksum: cde6be13595dc3c90aae849b8213cdc7bacb983c15c0d3cb861c4716fbcf207855fa13795c503d6bb70910480d618f9d0644349a01581089ad499c167e07daec
+  checksum: c7763d244f7c272036ce76c47f8b0ed4fc2ec2e7ef4fd532a2ee2cc07ba2bfbb29573a310b3d0069610659322fdf5e9263892619a94bded9c5e6422f64c9fd06
   languageName: node
   linkType: hard
 
@@ -15082,7 +15069,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-test-renderer@npm:~17.0.1":
+"react-test-renderer@npm:~17.0.2":
   version: 17.0.2
   resolution: "react-test-renderer@npm:17.0.2"
   dependencies:
@@ -17585,13 +17572,6 @@ __metadata:
   version: 0.1.2
   resolution: "universalify@npm:0.1.2"
   checksum: 40cdc60f6e61070fe658ca36016a8f4ec216b29bf04a55dce14e3710cc84c7448538ef4dad3728d0bfe29975ccd7bfb5f414c45e7b78883567fb31b246f02dff
-  languageName: node
-  linkType: hard
-
-"universalify@npm:^1.0.0":
-  version: 1.0.0
-  resolution: "universalify@npm:1.0.0"
-  checksum: 095a808f2b915e3b89d29b6f3b4ee4163962b02fa5b7cb686970b8d0439f4ca789bc43f319b7cbb1ce552ae724e631d148e5aee9ce04c4f46a7fe0c5bbfd2b9e
   languageName: node
   linkType: hard
 
