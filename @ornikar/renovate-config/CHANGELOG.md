@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.8.0](https://github.com/ornikar/shared-configs/compare/@ornikar/renovate-config@3.7.0...@ornikar/renovate-config@3.8.0) (2022-06-20)
+
+
+### Features
+
+* **renovate-config:** configure team frontend-shared-components-maintainers [no issue] ([#716](https://github.com/ornikar/shared-configs/issues/716)) ([c451f93](https://github.com/ornikar/shared-configs/commit/c451f936b0c27b487fc15106a9b75ea1d7787cc9))
+* **renovate-config:** group flaship packages ([#703](https://github.com/ornikar/shared-configs/issues/703)) ([3b17f75](https://github.com/ornikar/shared-configs/commit/3b17f75c162de55658cc66214db46b995be349fc))
+
+
+
+
+
 # [3.7.0](https://github.com/ornikar/shared-configs/compare/@ornikar/renovate-config@3.6.0...@ornikar/renovate-config@3.7.0) (2022-04-26)
 
 
