@@ -50,7 +50,13 @@ const { getGraphPackages } = require('..');
       }
 
       // override is only available for private package, which is examples or apps
-      const tsconfigCurrentContent = pkg.private ? JSON.parse(await fs.readFile(tsconfigPath)) : {};
+      const tsconfigCurrentContent = pkg.private
+        ? JSON.parse(
+            await fs.readFile(tsconfigPath).catch(() => {
+              return '{}';
+            }),
+          )
+        : {};
 
       const filteredCurrentCompilerOptions = tsconfigCurrentContent.compilerOptions || {};
       const compilerOptions = {
