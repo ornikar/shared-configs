@@ -7,9 +7,6 @@ on:
   release:
     types: [published]
 
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
-
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
@@ -33,24 +30,10 @@ jobs:
           blocks: |
             [
               {
-                "type": "header",
-                "text": {
-                  "type": "plain_text",
-                  "text": "${{ github.event.release.tag_name}} is published!"
-                }
-              },
-              {
                 "type": "section",
                 "text": {
                   "type": "mrkdwn",
-                  "text": "*Author:*\n${{ github.actor }}"
-                }
-              },
-               {
-                "type": "section",
-                "text": {
-                  "type": "mrkdwn",
-                  "text": "*Information:*"
+                  "text": "[${{ github.event.release.tag_name}}](${{ github.event.release.html_url }})"
                 }
               },
               {
@@ -58,13 +41,6 @@ jobs:
                 "text": {
                   "type": "mrkdwn",
                   "text": ${{ toJSON(github.event.release.body) }}
-                }
-              },
-              {
-                "type": "section",
-                "text": {
-                  "type": "mrkdwn",
-                  "text": "${{ github.event.release.html_url }}"
                 }
               }
             ]
