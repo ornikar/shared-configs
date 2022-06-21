@@ -143,7 +143,7 @@ fi
   if (shouldRunTest()) {
     prePushHookPreCommands.push(
       '# autodetect main branch (usually master or main)',
-      'mainBranch=$(git remote show origin | grep "HEAD branch" | cut -d\' \' -f5)',
+      'mainBranch=$(LANG=en_US git remote show origin | grep "HEAD branch" | cut -d\' \' -f5)',
       '',
     );
     prePushHook.push(`CI=true ${pm.name} test --changedSince=origin/$mainBranch`);
