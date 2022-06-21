@@ -11,8 +11,9 @@ const overrideConfig = (config, override) => {
   return { ...config, ...override };
 };
 
-const overrideAndWriteConfig = async (configPath, prettierOptions, { override, callback, removeRules }) => {
+const overrideAndWriteConfig = async (configPath, prettierOptions, { override, callback, removeRules, allowKeys }) => {
   let config = await readJsonFile(configPath, {});
+
   config = overrideConfig(config, override);
 
   if (config.rules && removeRules) {
@@ -29,6 +30,14 @@ const overrideAndWriteConfig = async (configPath, prettierOptions, { override, c
     delete config.rules;
   }
 
+  if (allowKeys) {
+    for (const key of Object.keys(config)) {
+      if (!allowKeys.includes(key)) {
+        delete config[key];
+      }
+    }
+  }
+
   await fs.writeFile(configPath, prettyEslintConfig(config, prettierOptions));
 };
 
@@ -42,7 +51,7 @@ const generateAndWriteRootConfig = async (configPath, prettierOptions) => {
   });
 };
 
-const generateAndWritePackageConfig = async (configPath, prettierOptions, { packagePath, useRollupToBuild }) => {
+const generateAndWritePackageSourceConfig = async (configPath, prettierOptions, { packagePath, useRollupToBuild }) => {
   if (!useRollupToBuild) {
     await overrideAndWriteConfig(configPath, prettierOptions, {
       override: {
@@ -90,6 +99,15 @@ const generateAndWritePackageConfig = async (configPath, prettierOptions, { pack
   }
 };
 
+const generateAndWritePackageRootConfig = async (configPath, prettierOptions) => {
+  await overrideAndWriteConfig(configPath, prettierOptions, {
+    override: {
+      root: false,
+    },
+    allowKeys: ['root', 'ignorePatterns'],
+  });
+};
+
 (async () => {
   const rootPath = path.resolve('.');
   const lernaProject = createLernaProject(rootPath);
@@ -116,16 +134,20 @@ const generateAndWritePackageConfig = async (configPath, prettierOptions, { pack
       const emptyEntries = ornikarConfig && ornikarConfig.entries ? ornikarConfig.entries.length === 0 : false;
 
       const packagePath = path.relative(rootPath, pkg.location);
-      const eslintSrcConfigPath = useRollupToBuild
-        ? `${packagePath}/src/.eslintrc.json`
-        : `${packagePath}/.eslintrc.json`;
+
+      const eslintPackageConfigPath = `${packagePath}/.eslintrc.json`;
+      const eslintSrcConfigPath = useRollupToBuild ? `${packagePath}/src/.eslintrc.json` : eslintPackageConfigPath;
 
       await Promise.all([
-        useRollupToBuild ? fs.unlink(`${packagePath}/.eslintrc.json`).catch(() => {}) : undefined,
-        fs.unlink(`${packagePath}/.eslintrc.js`).catch(() => {}),
+        eslintPackageConfigPath !== eslintSrcConfigPath
+          ? generateAndWritePackageRootConfig(eslintPackageConfigPath, prettierOptions)
+          : undefined,
         emptyEntries
           ? fs.unlink(eslintSrcConfigPath).catch(() => {})
-          : generateAndWritePackageConfig(eslintSrcConfigPath, prettierOptions, { packagePath, useRollupToBuild }),
+          : generateAndWritePackageSourceConfig(eslintSrcConfigPath, prettierOptions, {
+              packagePath,
+              useRollupToBuild,
+            }),
       ]);
     }),
   ]);
