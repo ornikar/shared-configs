@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.3.6](https://github.com/ornikar/shared-configs/compare/@ornikar/lerna-config@6.3.5...@ornikar/lerna-config@6.3.6) (2022-06-21)
+
+
+### Bug Fixes
+
+* **lerna-config:** eslint generator root package in monorepo ARCH-1507 ([#730](https://github.com/ornikar/shared-configs/issues/730)) ([88d2ba6](https://github.com/ornikar/shared-configs/commit/88d2ba6f0ca507c6c007b4aff9fbdb8b23163cef))
+* **lerna-config:** fix tsconfig generation when no tsconfig exists [no issue] ([#732](https://github.com/ornikar/shared-configs/issues/732)) ([6eef413](https://github.com/ornikar/shared-configs/commit/6eef4132d879b0ce1cbdb7768f452f886e8517bb))
+
+
+
+
+
 ## [6.3.5](https://github.com/ornikar/shared-configs/compare/@ornikar/lerna-config@6.3.4...@ornikar/lerna-config@6.3.5) (2022-06-20)
 
 **Note:** Version bump only for package @ornikar/lerna-config
