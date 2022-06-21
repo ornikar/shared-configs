@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [8.5.0](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@8.4.0...@ornikar/repo-config@8.5.0) (2022-06-21)
+
+
+### Features
+
+* force git language on husky pre push hook [no issue] ([#731](https://github.com/ornikar/shared-configs/issues/731)) ([6c56496](https://github.com/ornikar/shared-configs/commit/6c5649611b618b66e755ea780e360afc6444ac83))
+
+
+
+
+
 # [8.4.0](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@8.3.2...@ornikar/repo-config@8.4.0) (2022-06-20)
 
 
