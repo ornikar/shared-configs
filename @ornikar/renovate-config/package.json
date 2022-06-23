@@ -261,6 +261,12 @@
           "matchPackagePatterns": [
             "^@flagship.io/"
           ]
+        },
+        {
+          "groupName": "linaria packages",
+          "matchPackagePatterns": [
+            "^@linaria/"
+          ]
         }
       ]
     }
