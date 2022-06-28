@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.9.0](https://github.com/ornikar/shared-configs/compare/@ornikar/renovate-config@3.8.0...@ornikar/renovate-config@3.9.0) (2022-06-28)
+
+
+### Features
+
+* **renovate-config:** group linaria packages [no issue] ([#738](https://github.com/ornikar/shared-configs/issues/738)) ([d9896bf](https://github.com/ornikar/shared-configs/commit/d9896bfc88e3c91a0707f566b8b12d1b579c7c53))
+
+
+
+
+
 # [3.8.0](https://github.com/ornikar/shared-configs/compare/@ornikar/renovate-config@3.7.0...@ornikar/renovate-config@3.8.0) (2022-06-20)
 
 

@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [8.5.1](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@8.5.0...@ornikar/repo-config@8.5.1) (2022-06-28)
+
+**Note:** Version bump only for package @ornikar/repo-config
+
+
+
+
+
 # [8.5.0](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@8.4.0...@ornikar/repo-config@8.5.0) (2022-06-21)
 
 
