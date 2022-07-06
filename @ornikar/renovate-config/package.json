@@ -170,7 +170,7 @@
         {
           "groupName": "Ornikar Eslint Configs",
           "reviewers": [
-            "team:frontend-shared-components-maintainers"
+            "team:frontend-eslint-maintainers"
           ],
           "sourceUrlPrefixes": [
             "https://github.com/ornikar/eslint-configs"
