@@ -31,7 +31,7 @@
     "@ornikar/eslint-config": "18.13.0",
     "eslint": "8.19.0",
     "jest": "27.5.1",
-    "lerna": "5.1.4",
+    "lerna": "5.1.8",
     "lint-staged": "13.0.3",
     "prettier": "2.7.1"
   },
