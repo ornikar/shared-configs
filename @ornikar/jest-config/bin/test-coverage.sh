@@ -11,4 +11,4 @@ else
   yarn test --collectCoverage --watchAll=false --findRelatedTests $1 --collectCoverageOnlyFrom="$1" --passWithNoTests
 fi
 
-open test-coverage/lcov-report/index.html
+open coverage/lcov-report/index.html
