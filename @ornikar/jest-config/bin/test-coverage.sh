@@ -3,7 +3,7 @@
 # exit when any command fails
 set -e
 
-rm -Rf test-coverage
+rm -Rf coverage
 
 if [ -z "$1" ]; then
   yarn test --collectCoverage --watchAll=false
