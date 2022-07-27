@@ -2,7 +2,7 @@
 
 'use strict';
 
-const { act, render, waitFor } = require('@testing-library/react');
+const { render, waitFor } = require('@testing-library/react');
 
 const decorateStory = (storyFn, decorators) =>
   decorators.reduce(
