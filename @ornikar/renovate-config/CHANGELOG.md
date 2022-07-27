@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.10.0](https://github.com/ornikar/shared-configs/compare/@ornikar/renovate-config@3.9.0...@ornikar/renovate-config@3.10.0) (2022-07-27)
+
+
+### Features
+
+* **renovate-config:** use team frontend-eslint-maintainers [no issue] ([#742](https://github.com/ornikar/shared-configs/issues/742)) ([9036d82](https://github.com/ornikar/shared-configs/commit/9036d82342970bd23b4fb0b53a7d4b1b458d4522))
+
+
+
+
+
 # [3.9.0](https://github.com/ornikar/shared-configs/compare/@ornikar/renovate-config@3.8.0...@ornikar/renovate-config@3.9.0) (2022-06-28)
 
 

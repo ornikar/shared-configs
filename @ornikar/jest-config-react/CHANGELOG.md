@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.6.3](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@9.6.2...@ornikar/jest-config-react@9.6.3) (2022-07-27)
+
+
+### Bug Fixes
+
+* **jest-config-react:** fix act without await [no issue] ([#749](https://github.com/ornikar/shared-configs/issues/749)) ([49e6c13](https://github.com/ornikar/shared-configs/commit/49e6c1392b6722fb5d7befea737cabd26220e8fd))
+
+
+
+
+
 ## [9.6.2](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@9.6.1...@ornikar/jest-config-react@9.6.2) (2022-06-20)
 
 **Note:** Version bump only for package @ornikar/jest-config-react
