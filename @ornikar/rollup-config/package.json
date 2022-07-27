@@ -29,7 +29,7 @@
     }
   },
   "devDependencies": {
-    "rollup": "2.75.6"
+    "rollup": "2.77.2"
   },
   "dependencies": {
     "@babel/plugin-transform-runtime": "^7.13.8",
