@@ -35,5 +35,5 @@
     "lint-staged": "13.0.3",
     "prettier": "2.7.1"
   },
-  "packageManager": "yarn@3.2.1"
+  "packageManager": "yarn@3.2.2"
 }
