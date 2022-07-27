@@ -2,7 +2,7 @@
 
 'use strict';
 
-const { act, render, waitFor } = require('@testing-library/react');
+const { render, waitFor } = require('@testing-library/react');
 
 const decorateStory = (storyFn, decorators) =>
   decorators.reduce(
@@ -72,15 +72,13 @@ exports.storiesOf = (groupName) => {
             ? undefined
             : ({ children }) => decorateStory(() => children, [...localDecorators, ...globalDecorators])(context);
 
-          await act(async () => {
-            const rtlApi = render(story(context), { wrapper: wrappingComponent });
-            const { unmount, asFragment } = rtlApi;
-            if (waitForExpectation) {
-              await waitFor(() => waitForExpectation(rtlApi, expect, { parameters }));
-            }
-            expect(asFragment()).toMatchSnapshot();
-            unmount();
-          });
+          const rtlApi = render(story(context), { wrapper: wrappingComponent });
+          const { unmount, asFragment } = rtlApi;
+          if (waitForExpectation) {
+            await waitFor(() => waitForExpectation(rtlApi, expect, { parameters }));
+          }
+          expect(asFragment()).toMatchSnapshot();
+          unmount();
         });
       });
 
