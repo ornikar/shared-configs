@@ -72,23 +72,13 @@ exports.storiesOf = (groupName) => {
             ? undefined
             : ({ children }) => decorateStory(() => children, [...localDecorators, ...globalDecorators])(context);
 
-          
+          const rtlApi = render(story(context), { wrapper: wrappingComponent });
+          const { unmount, asFragment } = rtlApi;
           if (waitForExpectation) {
-            await act(async () => {
-              const rtlApi = render(story(context), { wrapper: wrappingComponent });
-              const { unmount, asFragment } = rtlApi;
-              if (waitForExpectation) {
-                await waitFor(() => waitForExpectation(rtlApi, expect, { parameters }));
-              }
-              expect(asFragment()).toMatchSnapshot();
-              unmount();
-            });
-          } else {
-            const rtlApi = render(story(context), { wrapper: wrappingComponent });
-            const { unmount, asFragment } = rtlApi;
-            expect(asFragment()).toMatchSnapshot();
-            unmount();
+            await waitFor(() => waitForExpectation(rtlApi, expect, { parameters }));
           }
+          expect(asFragment()).toMatchSnapshot();
+          unmount();
         });
       });
 
