@@ -34,6 +34,6 @@
     "@babel/preset-react": "7.16.7",
     "@linaria/babel-preset": "3.0.0-beta.15",
     "@linaria/shaker": "3.0.0-beta.15",
-    "react-refresh": "0.8.3"
+    "react-refresh": "0.14.0"
   }
 }
