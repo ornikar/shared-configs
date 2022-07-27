@@ -1,6 +1,6 @@
 {
   "name": "@ornikar/jest-config-react",
-  "version": "9.6.3",
+  "version": "9.6.4",
   "description": "✅⚛️ jest config for react",
   "repository": {
     "type": "git",
@@ -23,7 +23,7 @@
     "react-dom": "^16.6.3 || ^17.0.0"
   },
   "dependencies": {
-    "@ornikar/jest-config": "^7.1.5",
+    "@ornikar/jest-config": "^8.0.0",
     "identity-obj-proxy": "^3.0.0"
   },
   "devDependencies": {

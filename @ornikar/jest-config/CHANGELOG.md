@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [8.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config@7.1.5...@ornikar/jest-config@8.0.0) (2022-07-27)
+
+
+### Bug Fixes
+
+* **ornikar-test-coverage:** jest collect coverage output path [no issue] ([#747](https://github.com/ornikar/shared-configs/issues/747)) ([d2facdf](https://github.com/ornikar/shared-configs/commit/d2facdfb7080e2193bcf4910dd2c3f8fda9bf682))
+
+
+### BREAKING CHANGES
+
+* **ornikar-test-coverage:** jest collect coverage output directory needs to be coverage
+
+
+
+
+
 ## [7.1.5](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config@7.1.4...@ornikar/jest-config@7.1.5) (2022-06-20)
 
 **Note:** Version bump only for package @ornikar/jest-config
