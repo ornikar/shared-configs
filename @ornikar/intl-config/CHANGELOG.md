@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.0.2](https://github.com/ornikar/shared-configs/compare/@ornikar/intl-config@4.0.1...@ornikar/intl-config@4.0.2) (2022-07-29)
+
+
+### Bug Fixes
+
+* **intl-config:** fix peer dep requires min babel core ^7.13.0 [no issue] ([#755](https://github.com/ornikar/shared-configs/issues/755)) ([bc9c4f6](https://github.com/ornikar/shared-configs/commit/bc9c4f62d6f2a5140f14ce3cae013d3235d0ee94))
+
+
+
+
+
 ## [4.0.1](https://github.com/ornikar/shared-configs/compare/@ornikar/intl-config@4.0.0...@ornikar/intl-config@4.0.1) (2022-06-20)
 
 **Note:** Version bump only for package @ornikar/intl-config
