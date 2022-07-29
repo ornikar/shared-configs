@@ -18,6 +18,7 @@ module.exports = {
   moduleNameMapper: {
     ...baseOrnikarPreset.moduleNameMapper,
     ...expoPreset.moduleNameMapper,
+    '^react-native-svg$': 'react-native-svg-web',
   },
   transformIgnorePatterns: ornikarReactNativePreset.transformIgnorePatterns,
   transform: {
