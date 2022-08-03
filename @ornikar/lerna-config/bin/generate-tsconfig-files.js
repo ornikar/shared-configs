@@ -72,8 +72,8 @@ const { getGraphPackages } = require('..');
         declaration: true,
         declarationMap: true,
         emitDeclarationOnly: true,
-        outDir: `${isLegacyRootDirDot ? '.' : '..'}/../node_modules/.cache/tsc/${pkg.name}`,
-        tsBuildInfoFile: `${isLegacyRootDirDot ? '.' : '..'}/../node_modules/.cache/tsc/${pkg.name}/tsbuildinfo`,
+        outDir: `../../node_modules/.cache/tsc/${pkg.name}`,
+        tsBuildInfoFile: `../../node_modules/.cache/tsc/${pkg.name}/tsbuildinfo`,
       };
       Object.keys(compilerOptions).forEach((key) => {
         delete filteredCurrentCompilerOptions[key];
