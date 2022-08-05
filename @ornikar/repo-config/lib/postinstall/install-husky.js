@@ -162,5 +162,8 @@ fi
     ensureHookDeleted('pre-push');
   }
 
-  husky.install('.husky');
+  // skip install husky on CI as we don't need it
+  if (!process.env.CI) {
+    husky.install('.husky');
+  }
 };
