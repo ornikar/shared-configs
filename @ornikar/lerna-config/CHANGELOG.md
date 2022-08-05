@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.4.0](https://github.com/ornikar/shared-configs/compare/@ornikar/lerna-config@6.3.6...@ornikar/lerna-config@6.4.0) (2022-08-05)
+
+
+### Features
+
+* **lerna-config:** adapt generator for legacy project [no issue] ([#757](https://github.com/ornikar/shared-configs/issues/757)) ([00d8bbf](https://github.com/ornikar/shared-configs/commit/00d8bbf0d8236d99e5fe91734d4a265a11252d88))
+
+
+
+
+
 ## [6.3.6](https://github.com/ornikar/shared-configs/compare/@ornikar/lerna-config@6.3.5...@ornikar/lerna-config@6.3.6) (2022-06-21)
 
 

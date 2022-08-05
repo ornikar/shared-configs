@@ -3632,7 +3632,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ornikar/commitlint-config@^4.0.4, @ornikar/commitlint-config@workspace:@ornikar/commitlint-config":
+"@ornikar/commitlint-config@^4.0.5, @ornikar/commitlint-config@workspace:@ornikar/commitlint-config":
   version: 0.0.0-use.local
   resolution: "@ornikar/commitlint-config@workspace:@ornikar/commitlint-config"
   dependencies:
@@ -3789,7 +3789,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@ornikar/repo-config-react@workspace:@ornikar/repo-config-react"
   dependencies:
-    "@ornikar/repo-config": ^8.5.1
+    "@ornikar/repo-config": ^8.5.2
     cross-env: ^7.0.0
     node-fetch: ^3.2.3
     svgo: ^1.3.0
@@ -3799,12 +3799,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ornikar/repo-config@^8.5.1, @ornikar/repo-config@workspace:@ornikar/repo-config":
+"@ornikar/repo-config@^8.5.2, @ornikar/repo-config@workspace:@ornikar/repo-config":
   version: 0.0.0-use.local
   resolution: "@ornikar/repo-config@workspace:@ornikar/repo-config"
   dependencies:
     "@commitlint/cli": 17.0.3
-    "@ornikar/commitlint-config": ^4.0.4
+    "@ornikar/commitlint-config": ^4.0.5
     husky: 8.0.1
     lint-staged: 13.0.3
     prettier-plugin-properties: 0.1.0
