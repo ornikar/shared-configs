@@ -2,6 +2,7 @@
 
 'use strict';
 
+const { existsSync } = require('fs');
 const fs = require('fs').promises;
 const path = require('path');
 // eslint-disable-next-line import/no-extraneous-dependencies
@@ -59,9 +60,10 @@ const { getGraphPackages } = require('..');
         : {};
 
       const filteredCurrentCompilerOptions = tsconfigCurrentContent.compilerOptions || {};
+      const isLegacyRootDirDot = !existsSync('src');
       const compilerOptions = {
-        rootDir: 'src',
-        baseUrl: './src',
+        rootDir: isLegacyRootDirDot ? '.' : 'src',
+        baseUrl: isLegacyRootDirDot ? '.' : './src',
         composite: true,
         incremental: true,
         isolatedModules: true,
@@ -84,8 +86,12 @@ const { getGraphPackages } = require('..');
           ...compilerOptions,
           ...filteredCurrentCompilerOptions,
         },
-        include: tsconfigCurrentContent.include || ['src', '../../typings'],
+        include: tsconfigCurrentContent.include || [isLegacyRootDirDot ? '.' : 'src', '../../typings'],
       };
+
+      if (isLegacyRootDirDot) {
+        tsconfigContent.exclude = tsconfigCurrentContent.exclude || ['node_modules'];
+      }
 
       const tsconfigEslintContent = {
         extends: './tsconfig.json',
@@ -144,19 +150,26 @@ const { getGraphPackages } = require('..');
 
       if (tsDependencies.length > 0) {
         tsDependencies.forEach((pkgDep) => {
-          const depPath = `../../../${pkgDep.name}/src`;
+          const pkgRelativePath = path.relative(pkgDep.rootPath, pkgDep.location);
+          const depPath = `../../../${pkgRelativePath}/src`;
           if (!tsconfigContent.compilerOptions.paths) {
             tsconfigContent.compilerOptions.paths = {};
           }
           tsconfigContent.compilerOptions.paths[pkgDep.name] = [depPath];
           tsconfigContent.compilerOptions.paths[`${pkgDep.name}/*`] = [`${depPath}/*`];
         });
-        tsconfigContent.references = tsDependencies.map((pkgDep) => ({
-          path: `../../${pkgDep.name}/tsconfig.json`,
-        }));
-        tsconfigBuildContent.references = tsDependencies.map((pkgDep) => ({
-          path: `../../${pkgDep.name}/tsconfig.build.json`,
-        }));
+        tsconfigContent.references = tsDependencies.map((pkgDep) => {
+          const pkgRelativePath = path.relative(pkgDep.rootPath, pkgDep.location);
+          return {
+            path: `../../${pkgRelativePath}/tsconfig.json`,
+          };
+        });
+        tsconfigBuildContent.references = tsDependencies.map((pkgDep) => {
+          const pkgRelativePath = path.relative(pkgDep.rootPath, pkgDep.location);
+          return {
+            path: `../../${pkgRelativePath}/tsconfig.build.json`,
+          };
+        });
       }
 
       tsconfigFiles.push(tsconfigPath);
