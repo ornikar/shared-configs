@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [8.6.0](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@8.5.2...@ornikar/repo-config@8.6.0) (2022-08-05)
+
+
+### Features
+
+* **repo-config:** skip husky install on ci [no issue] ([#762](https://github.com/ornikar/shared-configs/issues/762)) ([64a4123](https://github.com/ornikar/shared-configs/commit/64a41230640849359c9e06acc80def3a6f122bc1))
+
+
+
+
+
 ## [8.5.2](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@8.5.1...@ornikar/repo-config@8.5.2) (2022-08-05)
 
 **Note:** Version bump only for package @ornikar/repo-config
