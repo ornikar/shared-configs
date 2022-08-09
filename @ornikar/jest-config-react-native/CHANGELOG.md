@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.5.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react-native@4.4.2...@ornikar/jest-config-react-native@4.5.0) (2022-08-09)
+
+
+### Features
+
+* **jest-config-react-native:** support for react-native-svg-web ELN-3031 ([#756](https://github.com/ornikar/shared-configs/issues/756)) ([4dfa295](https://github.com/ornikar/shared-configs/commit/4dfa29559c673a269ed83131ec48ff8caa5e8e6f))
+
+
+
+
+
 ## [4.4.2](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react-native@4.4.1...@ornikar/jest-config-react-native@4.4.2) (2022-07-27)
 
 **Note:** Version bump only for package @ornikar/jest-config-react-native
