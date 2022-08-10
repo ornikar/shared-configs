@@ -3,5 +3,4 @@
 # exit when any command fails
 set -e
 
-prettier --check .
-prettier --parser dot-properties --key-separator '=' --no-single-quote --check '**/.env*'
+prettier --check --no-error-on-unmatched-pattern "$@" . '**/.env*' '**/*.env'
