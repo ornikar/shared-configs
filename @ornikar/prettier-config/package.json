@@ -7,6 +7,7 @@
     "url": "https://github.com/ornikar/shared-configs.git",
     "directory": "@ornikar/prettier-config"
   },
+  "prettier": "./index.js",
   "main": "index.js",
   "license": "ISC",
   "engines": {
