@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/prettier-config@4.0.7...@ornikar/prettier-config@5.0.0) (2022-08-10)
+
+
+### Features
+
+* **prettier-config:** use overrides to configure dotenv ARCH-1558 ([#764](https://github.com/ornikar/shared-configs/issues/764)) ([d35b376](https://github.com/ornikar/shared-configs/commit/d35b376525daa154970d40bf9a2e33002269be93))
+
+
+### BREAKING CHANGES
+
+* **prettier-config:** repo-config requires latest prettier-config to work properly 
+
+
+
+
+
 ## [4.0.7](https://github.com/ornikar/shared-configs/compare/@ornikar/prettier-config@4.0.6...@ornikar/prettier-config@4.0.7) (2022-06-28)
 
 **Note:** Version bump only for package @ornikar/prettier-config
