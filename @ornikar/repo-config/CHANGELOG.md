@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.0.1](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@9.0.0...@ornikar/repo-config@9.0.1) (2022-08-10)
+
+
+### Bug Fixes
+
+* **repo-config:** fix prettier env files [no issue] ([#765](https://github.com/ornikar/shared-configs/issues/765)) ([055d518](https://github.com/ornikar/shared-configs/commit/055d518521398df3bf2e41e53cde064ec8335b98))
+
+
+
+
+
 # [9.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@8.6.0...@ornikar/repo-config@9.0.0) (2022-08-10)
 
 
