@@ -20,7 +20,7 @@
   },
   "commitlint": {
     "extends": [
-      "./@ornikar/commitlint-config"
+      "./@ornikar/commitlint-config/monorepo"
     ]
   },
   "workspaces": [

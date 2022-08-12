@@ -16,6 +16,7 @@
     "access": "public"
   },
   "dependencies": {
-    "@commitlint/config-conventional": "^17.0.0"
+    "@commitlint/config-conventional": "^17.0.3",
+    "@commitlint/config-lerna-scopes": "^17.0.2"
   }
 }
