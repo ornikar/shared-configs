@@ -1,0 +1,41 @@
+name: Push CI
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [16.x, 18.x]
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Install Dependencies
+        run: yarn install --immutable --immutable-cache
+
+      - name: Check package.json
+        run: node scripts/check-packagejson.js
+
+      - name: Prettier
+        run: yarn run lint:prettier
+        if: startsWith(matrix.node-version, '16.')
+
+      - name: Eslint
+        run: yarn run lint:eslint
+
+      - name: Check working directory is clean
+        if: startsWith(matrix.node-version, '16.')
+        run: |
+          if [ -n "$(git status --porcelain)" ]; then
+            echo "Working directory not clean:"
+            git status --porcelain --untracked-files=all
+            exit 1
+          fi

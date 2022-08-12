@@ -1,68 +1,11 @@
 version: 2.1
 
 # -------------------------------------------------------------------------------------------------
-# PIPELINE PARAMS
-# -------------------------------------------------------------------------------------------------
-
-parameters:
-  cache-version:
-    type: string
-    default: v1
-
-# -------------------------------------------------------------------------------------------------
 # ORBS
 # -------------------------------------------------------------------------------------------------
 
 orbs:
-  frontend: ornikar/frontend-orb@6.0.0
-
-# -------------------------------------------------------------------------------------------------
-# COMMANDS
-# -------------------------------------------------------------------------------------------------
-
-commands:
-  checkout-and-restore-cache:
-    steps:
-      - checkout
-      - frontend/restore-cache: &restore-cache-params
-          version: << pipeline.parameters.cache-version >>
-          cache-name: dependencies
-
-# -------------------------------------------------------------------------------------------------
-# JOBS
-# -------------------------------------------------------------------------------------------------
-
-jobs:
-  dependencies:
-    executor: frontend/node
-    steps:
-      - checkout
-      - frontend/dependencies:
-          berry: true
-          before-install:
-            - frontend/restore-cache: *restore-cache-params
-          after-install:
-            - save_cache:
-                key: << pipeline.parameters.cache-version >>-node16-dependencies-{{ arch }}-{{ checksum "yarn.lock" }}
-                paths:
-                  - node_modules
-                  - '@ornikar/browserlist-config/node_modules'
-                  - '@ornikar/commitlint-config/node_modules'
-                  - '@ornikar/intl-config/node_modules'
-                  - '@ornikar/jest-config/node_modules'
-                  - '@ornikar/jest-config-react/node_modules'
-                  - '@ornikar/jest-config-react-native-web/node_modules'
-                  - '@ornikar/jest-config-react-native/node_modules'
-                  - '@ornikar/lerna-config/node_modules'
-                  - '@ornikar/postcss-config/node_modules'
-                  - '@ornikar/prettier-config/node_modules'
-                  - '@ornikar/renovate-config/node_modules'
-                  - '@ornikar/repo-config/node_modules'
-                  - '@ornikar/repo-config-react/node_modules'
-                  - '@ornikar/rollup-config/node_modules'
-                  - '@ornikar/storybook-config/node_modules'
-                  - '@ornikar/stylelint-config/node_modules'
-                  - '@ornikar/webpack-config/node_modules'
+  frontend: ornikar/frontend-orb@7.2.0
 
 # -------------------------------------------------------------------------------------------------
 # WORKFLOWS
@@ -73,28 +16,14 @@ workflows:
 
   main-workflow:
     jobs:
-      - dependencies
-
       - frontend/checks:
-          cache-version: << pipeline.parameters.cache-version >>
-          run-yarn-check: false
-          requires:
-            - dependencies
+          name: checks
 
-      - frontend/lint-prettier:
-          cache-version: << pipeline.parameters.cache-version >>
-          requires:
-            - dependencies
-
-      - frontend/lint-eslint:
-          cache-version: << pipeline.parameters.cache-version >>
-          requires:
-            - dependencies
-
-      - frontend/lint-css:
-          cache-version: << pipeline.parameters.cache-version >>
-          requires:
-            - dependencies
+      - frontend/lint-src:
+          name: lint
+          use-cache: false
+          cache-version: none
+          run-tsc: false
 
       # release
       - hold-release:
@@ -104,16 +33,12 @@ workflows:
               only: main
 
       - frontend/monorepo-release:
-          cache-version: << pipeline.parameters.cache-version >>
           context: npm-publish
           npm-publish: true
           no-private: true
           requires:
-            - dependencies
-            - frontend/checks
-            - frontend/lint-prettier
-            - frontend/lint-eslint
-            - frontend/lint-css
+            - checks
+            - lint
             - hold-release
           filters:
             branches:
