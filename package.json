@@ -15,8 +15,7 @@
   },
   "prettier": "./@ornikar/prettier-config",
   "engines": {
-    "node": ">=16.15.1",
-    "yarn": ">=1.10.1"
+    "node": ">=16.16.0"
   },
   "commitlint": {
     "extends": [
