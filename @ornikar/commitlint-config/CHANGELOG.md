@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.1.0](https://github.com/ornikar/shared-configs/compare/@ornikar/commitlint-config@4.0.5...@ornikar/commitlint-config@4.1.0) (2022-08-12)
+
+
+### Features
+
+* **commitlint-config:** add monorepo config [no issue] ([#766](https://github.com/ornikar/shared-configs/issues/766)) ([a2daaa0](https://github.com/ornikar/shared-configs/commit/a2daaa09426aa1d93912546971a82c451a7bc951))
+
+
+
+
+
 ## [4.0.5](https://github.com/ornikar/shared-configs/compare/@ornikar/commitlint-config@4.0.4...@ornikar/commitlint-config@4.0.5) (2022-08-05)
 
 **Note:** Version bump only for package @ornikar/commitlint-config
