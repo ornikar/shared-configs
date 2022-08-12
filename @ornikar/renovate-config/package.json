@@ -168,6 +168,25 @@
           "masterIssueApproval": true
         },
         {
+          "groupName": "Ornikar Frontend Orb",
+          "reviewers": [
+            "team:frontend-architects"
+          ],
+          "matchDatasources": [
+            "orb"
+          ],
+          "matchPackageNames": [
+            "frontend"
+          ],
+          "labels": [
+            "circleci-orb"
+          ],
+          "schedule": [
+            "at any time"
+          ],
+          "masterIssueApproval": false
+        },
+        {
           "groupName": "Ornikar Eslint Configs",
           "reviewers": [
             "team:frontend-eslint-maintainers"
