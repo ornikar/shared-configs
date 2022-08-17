@@ -16,7 +16,7 @@ module.exports = {
   setupFiles: [
     ...baseJestPreset.setupFiles.slice(0, -1),
     require.resolve('./test-setup'),
-    baseJestPreset.setupFiles[baseJestPreset.setupFiles.length - 1],
+    baseJestPreset.setupFiles.at(-1),
   ],
   transform: {
     '\\.raw\\.svg$': require.resolve('./transformers/asset-name-transformer'),

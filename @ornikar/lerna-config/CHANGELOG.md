@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.4.1](https://github.com/ornikar/shared-configs/compare/@ornikar/lerna-config@6.4.0...@ornikar/lerna-config@6.4.1) (2022-08-09)
+
+
+### Bug Fixes
+
+* fix isLegacyRootDirDot test ([4448062](https://github.com/ornikar/shared-configs/commit/4448062f68ab4673335504ec76414920714de7f8))
+
+
+
+
+
 # [6.4.0](https://github.com/ornikar/shared-configs/compare/@ornikar/lerna-config@6.3.6...@ornikar/lerna-config@6.4.0) (2022-08-05)
 
 

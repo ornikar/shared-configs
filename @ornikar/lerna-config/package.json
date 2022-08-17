@@ -1,6 +1,6 @@
 {
   "name": "@ornikar/lerna-config",
-  "version": "6.4.0",
+  "version": "6.4.1",
   "description": "📚 lerna config",
   "repository": {
     "type": "git",
@@ -9,7 +9,7 @@
   },
   "license": "ISC",
   "engines": {
-    "node": ">=14.17.5"
+    "node": ">=16.16.0"
   },
   "publishConfig": {
     "access": "public"

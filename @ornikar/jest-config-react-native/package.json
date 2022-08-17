@@ -1,6 +1,6 @@
 {
   "name": "@ornikar/jest-config-react-native",
-  "version": "4.4.2",
+  "version": "4.5.0",
   "description": "✅⚛️📱 jest config for react-native",
   "repository": {
     "type": "git",
@@ -10,7 +10,7 @@
   "main": "jest-preset.js",
   "license": "ISC",
   "engines": {
-    "node": ">=14.17.5"
+    "node": ">=16.16.0"
   },
   "publishConfig": {
     "access": "public"

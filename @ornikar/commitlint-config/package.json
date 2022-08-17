@@ -1,6 +1,6 @@
 {
   "name": "@ornikar/commitlint-config",
-  "version": "4.0.5",
+  "version": "4.1.0",
   "description": "📓 commitlint config",
   "repository": {
     "type": "git",
@@ -10,12 +10,13 @@
   "main": "index.js",
   "license": "ISC",
   "engines": {
-    "node": ">=14.17.5"
+    "node": ">=16.16.0"
   },
   "publishConfig": {
     "access": "public"
   },
   "dependencies": {
-    "@commitlint/config-conventional": "^17.0.0"
+    "@commitlint/config-conventional": "^17.0.3",
+    "@commitlint/config-lerna-scopes": "^17.0.2"
   }
 }

@@ -34,7 +34,7 @@ module.exports = ({ paths, babelPluginFormatjsOptions = {}, defaultDestinationDi
               if (descriptors.length === 0) return;
               // eslint-disable-next-line security/detect-non-literal-regexp
               const filenameRegExp = new RegExp(
-                `${filename.split('.')[0]}\\.((web|ios|android)\\.)*${filename.split('.').slice(-1)[0]}`,
+                `${filename.split('.')[0]}\\.((web|ios|android)\\.)*${filename.split('.').at(-1)}`,
               );
               descriptors.forEach(({ id, defaultMessage }) => {
                 if (

@@ -347,10 +347,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/helper-validator-identifier@npm:^7.15.7, @babel/helper-validator-identifier@npm:^7.16.7":
-  version: 7.16.7
-  resolution: "@babel/helper-validator-identifier@npm:7.16.7"
-  checksum: dbb3db9d184343152520a209b5684f5e0ed416109cde82b428ca9c759c29b10c7450657785a8b5c5256aa74acc6da491c1f0cf6b784939f7931ef82982051b69
+"@babel/helper-validator-identifier@npm:^7.16.7, @babel/helper-validator-identifier@npm:^7.18.6":
+  version: 7.18.6
+  resolution: "@babel/helper-validator-identifier@npm:7.18.6"
+  checksum: e295254d616bbe26e48c196a198476ab4d42a73b90478c9842536cf910ead887f5af6b5c4df544d3052a25ccb3614866fa808dc1e3a5a4291acd444e243c0648
   languageName: node
   linkType: hard
 
@@ -1506,12 +1506,29 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@commitlint/config-conventional@npm:^17.0.0":
+"@commitlint/config-conventional@npm:^17.0.3":
   version: 17.0.3
   resolution: "@commitlint/config-conventional@npm:17.0.3"
   dependencies:
     conventional-changelog-conventionalcommits: ^5.0.0
   checksum: 1cd30d827cf43bc7b08604398d4104bc031a69c8b45777886572aff12de25f40761dfbe5ffc6cd1f0d5b05de850e6d3e22dee6d799288e9cdd80bf575d036d46
+  languageName: node
+  linkType: hard
+
+"@commitlint/config-lerna-scopes@npm:^17.0.2":
+  version: 17.0.2
+  resolution: "@commitlint/config-lerna-scopes@npm:17.0.2"
+  dependencies:
+    globby: ^11.0.1
+    import-from: 4.0.0
+    resolve-pkg: 2.0.0
+    semver: 7.3.7
+  peerDependencies:
+    lerna: ^5.0.0
+  peerDependenciesMeta:
+    lerna:
+      optional: true
+  checksum: 7ec3c40c0cbe3954b836f38194339a62bccefd72a8d05170d378356a39ed70977cbdcf50817456a387040645b99fcd6aee71582fe18ad87faf5d9611ff25bebe
   languageName: node
   linkType: hard
 
@@ -3632,17 +3649,18 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ornikar/commitlint-config@^4.0.5, @ornikar/commitlint-config@workspace:@ornikar/commitlint-config":
+"@ornikar/commitlint-config@^4.1.0, @ornikar/commitlint-config@workspace:@ornikar/commitlint-config":
   version: 0.0.0-use.local
   resolution: "@ornikar/commitlint-config@workspace:@ornikar/commitlint-config"
   dependencies:
-    "@commitlint/config-conventional": ^17.0.0
+    "@commitlint/config-conventional": ^17.0.3
+    "@commitlint/config-lerna-scopes": ^17.0.2
   languageName: unknown
   linkType: soft
 
-"@ornikar/eslint-config@npm:18.13.0":
-  version: 18.13.0
-  resolution: "@ornikar/eslint-config@npm:18.13.0"
+"@ornikar/eslint-config@npm:19.1.0":
+  version: 19.1.0
+  resolution: "@ornikar/eslint-config@npm:19.1.0"
   dependencies:
     eslint-config-airbnb-base: ^15.0.0
     eslint-config-prettier: ^8.2.0
@@ -3652,11 +3670,11 @@ __metadata:
     eslint-plugin-n: ^15.2.0
     eslint-plugin-security: ^1.5.0
     eslint-plugin-simple-import-sort: ^7.0.0
-    eslint-plugin-unicorn: ^42.0.0
+    eslint-plugin-unicorn: ^43.0.0
   peerDependencies:
-    eslint: ^8.9.0
+    eslint: ^8.18.0
     prettier: ^2.2.1
-  checksum: 85e4dff6f91493afa9033b71064cd5e21f0b689c38959db04cf70fecc90937f6b0129141bb1826fb359fa9c11605f881cf5e5a07b97e0313efc7381427ad6d83
+  checksum: b406326f9504d49746c0f1eca0d8a8f18b3f60bfe8b8dc66142770033d24617a930d881cdea12e035d7fa48e5a29ae522be10290f86be8922adf068da52b8b5d
   languageName: node
   linkType: hard
 
@@ -3789,7 +3807,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@ornikar/repo-config-react@workspace:@ornikar/repo-config-react"
   dependencies:
-    "@ornikar/repo-config": ^8.6.0
+    "@ornikar/repo-config": ^9.0.2
     cross-env: ^7.0.0
     node-fetch: ^3.2.3
     svgo: ^1.3.0
@@ -3799,12 +3817,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ornikar/repo-config@^8.6.0, @ornikar/repo-config@workspace:@ornikar/repo-config":
+"@ornikar/repo-config@^9.0.2, @ornikar/repo-config@workspace:@ornikar/repo-config":
   version: 0.0.0-use.local
   resolution: "@ornikar/repo-config@workspace:@ornikar/repo-config"
   dependencies:
     "@commitlint/cli": 17.0.3
-    "@ornikar/commitlint-config": ^4.0.5
+    "@ornikar/commitlint-config": ^4.1.0
     husky: 8.0.1
     lint-staged: 13.0.3
     prettier-plugin-properties: 0.1.0
@@ -3852,7 +3870,7 @@ __metadata:
   resolution: "@ornikar/shared-configs@workspace:."
   dependencies:
     "@commitlint/cli": 17.0.3
-    "@ornikar/eslint-config": 18.13.0
+    "@ornikar/eslint-config": 19.1.0
     eslint: 8.21.0
     jest: 27.5.1
     lerna: 5.1.8
@@ -6374,10 +6392,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ci-info@npm:^3.2.0, ci-info@npm:^3.3.0":
-  version: 3.3.0
-  resolution: "ci-info@npm:3.3.0"
-  checksum: c3d86fe374938ecda5093b1ba39acb535d8309185ba3f23587747c6a057e63f45419b406d880304dbc0e1d72392c9a33e42fe9a1e299209bc0ded5efaa232b66
+"ci-info@npm:^3.2.0, ci-info@npm:^3.3.2":
+  version: 3.3.2
+  resolution: "ci-info@npm:3.3.2"
+  checksum: fd81f1edd2d3b0f6cb077b2e84365136d87b9db8c055928c1ad69da8a76c2c2f19cba8ea51b90238302157ca927f91f92b653e933f2398dde4867500f08d6e62
   languageName: node
   linkType: hard
 
@@ -8181,12 +8199,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-unicorn@npm:^42.0.0":
-  version: 42.0.0
-  resolution: "eslint-plugin-unicorn@npm:42.0.0"
+"eslint-plugin-unicorn@npm:^43.0.0":
+  version: 43.0.2
+  resolution: "eslint-plugin-unicorn@npm:43.0.2"
   dependencies:
-    "@babel/helper-validator-identifier": ^7.15.7
-    ci-info: ^3.3.0
+    "@babel/helper-validator-identifier": ^7.18.6
+    ci-info: ^3.3.2
     clean-regexp: ^1.0.0
     eslint-utils: ^3.0.0
     esquery: ^1.4.0
@@ -8197,11 +8215,11 @@ __metadata:
     read-pkg-up: ^7.0.1
     regexp-tree: ^0.1.24
     safe-regex: ^2.1.1
-    semver: ^7.3.5
+    semver: ^7.3.7
     strip-indent: ^3.0.0
   peerDependencies:
-    eslint: ">=8.8.0"
-  checksum: 03757cbf417d39691fe04048ac9352585162a4dd68c2f26f5bc0956409625c7c4841487f0fa623e0d6dd5ff9cc3e758b74e4d170e3b0a877bbd0114995310058
+    eslint: ">=8.18.0"
+  checksum: 1b63eb013cbc0b3c9ef131a1e049b4b53d8e208393675d5f97d3fa83c050ebcb695a7fd210f4de1460f42f89c2ecca261280488834591d5c21e146d297a9ee2e
   languageName: node
   linkType: hard
 
@@ -9305,7 +9323,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"globby@npm:^11.0.2, globby@npm:^11.0.3, globby@npm:^11.1.0":
+"globby@npm:^11.0.1, globby@npm:^11.0.2, globby@npm:^11.0.3, globby@npm:^11.1.0":
   version: 11.1.0
   resolution: "globby@npm:11.1.0"
   dependencies:
@@ -9813,6 +9831,13 @@ __metadata:
     parent-module: ^1.0.0
     resolve-from: ^4.0.0
   checksum: 2cacfad06e652b1edc50be650f7ec3be08c5e5a6f6d12d035c440a42a8cc028e60a5b99ca08a77ab4d6b1346da7d971915828f33cdab730d3d42f08242d09baa
+  languageName: node
+  linkType: hard
+
+"import-from@npm:4.0.0":
+  version: 4.0.0
+  resolution: "import-from@npm:4.0.0"
+  checksum: 1fa29c05b048da18914e91d9a529e5d9b91774bebbfab10e53f59bcc1667917672b971cf102fee857f142e5e433ce69fa1f0a596e1c7d82f9947a5ec352694b9
   languageName: node
   linkType: hard
 
@@ -15371,6 +15396,15 @@ __metadata:
   dependencies:
     global-dirs: ^0.1.1
   checksum: c4e11d33e84bde7516b824503ffbe4b6cce863d5ce485680fd3db997b7c64da1df98321b1fd0703b58be8bc9bc83bc96bd83043f96194386b45eb47229efb6b6
+  languageName: node
+  linkType: hard
+
+"resolve-pkg@npm:2.0.0":
+  version: 2.0.0
+  resolution: "resolve-pkg@npm:2.0.0"
+  dependencies:
+    resolve-from: ^5.0.0
+  checksum: 4a14cc38effed20ff362c8f377719af9a45ebe27ee07d79d4802b4568858cd96033f4edc3a2add7fd27e361d24101a042047297a9ef9476696ba16b72e0a05fc
   languageName: node
   linkType: hard
 

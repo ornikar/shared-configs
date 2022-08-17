@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.11.0](https://github.com/ornikar/shared-configs/compare/@ornikar/renovate-config@3.10.0...@ornikar/renovate-config@3.11.0) (2022-08-12)
+
+
+### Features
+
+* **renovate-config:** auto open orb updates ([ef7e2f5](https://github.com/ornikar/shared-configs/commit/ef7e2f5070258b2cae74eff7063c43f7971c51a6))
+
+
+
+
+
 # [3.10.0](https://github.com/ornikar/shared-configs/compare/@ornikar/renovate-config@3.9.0...@ornikar/renovate-config@3.10.0) (2022-07-27)
 
 

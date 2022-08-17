@@ -8,7 +8,7 @@ const {
   CIRCLE_PROJECT_REPONAME: REPO,
   CIRCLE_WORKFLOW_JOB_ID: WORKFLOW_JOB_ID,
 } = process.env;
-const PR_ID = process.env.CI_PULL_REQUEST.split('/').slice(-1)[0];
+const PR_ID = process.env.CI_PULL_REQUEST.split('/').at(-1);
 
 if (!WORKFLOW_JOB_ID) {
   console.error('Missing process.env.CIRCLE_WORKFLOW_JOB_ID');

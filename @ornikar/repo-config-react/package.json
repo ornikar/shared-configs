@@ -1,6 +1,6 @@
 {
   "name": "@ornikar/repo-config-react",
-  "version": "7.1.10",
+  "version": "7.1.13",
   "description": "🔧⚛️ react repo config",
   "repository": {
     "type": "git",
@@ -9,7 +9,7 @@
   },
   "license": "ISC",
   "engines": {
-    "node": ">=14.17.5"
+    "node": ">=16.16.0"
   },
   "publishConfig": {
     "access": "public"
@@ -18,7 +18,7 @@
     "ornikar-ci-comment-pr": "./bin/ornikar-ci-comment-pr.mjs"
   },
   "dependencies": {
-    "@ornikar/repo-config": "^8.6.0",
+    "@ornikar/repo-config": "^9.0.2",
     "cross-env": "^7.0.0",
     "node-fetch": "^3.2.3",
     "svgo": "^1.3.0",

@@ -60,7 +60,7 @@ const { getGraphPackages } = require('..');
         : {};
 
       const filteredCurrentCompilerOptions = tsconfigCurrentContent.compilerOptions || {};
-      const isLegacyRootDirDot = !existsSync('src');
+      const isLegacyRootDirDot = !existsSync(path.join(packagePath, 'src'));
       const compilerOptions = {
         rootDir: isLegacyRootDirDot ? '.' : 'src',
         baseUrl: isLegacyRootDirDot ? '.' : './src',
