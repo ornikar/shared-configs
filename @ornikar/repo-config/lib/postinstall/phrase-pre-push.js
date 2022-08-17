@@ -19,7 +19,7 @@ do
         fi
 
         # Check for Translations in commit
-        translation=\`git diff "$range" @ornikar/*/src/translations/\`
+        translation=\`git --glob-pathspecs diff "$range" -- "@ornikar/*/translations/**" "@ornikar/*/src/translations/**"\`
         if [ -n "$translation" ]
         then
             branch_name=$(git branch --show-current)
