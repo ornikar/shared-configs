@@ -7,6 +7,7 @@ const path = require('path');
 const husky = require('husky');
 const semver = require('semver');
 const { readYarnConfigFile } = require('../yarn');
+const { phrasePrePush } = require('./phrase-pre-push');
 
 const ensureLegacyHuskyConfigDeleted = () => {
   try {
@@ -154,9 +155,17 @@ fi
   }
 
   if (prePushHook.length > 0) {
+    let prePushHookPostContent = '';
+    const phraseConfigPath = '.phrase.yml';
+    if (fs.existsSync(phraseConfigPath)) {
+      prePushHookPostContent += phrasePrePush;
+    }
+
     writeHook(
       'pre-push',
-      (prePushHookPreCommands ? [...prePushHookPreCommands, ''].join('\n') : '') + prePushHook.join(' && '),
+      (prePushHookPreCommands ? [...prePushHookPreCommands, ''].join('\n') : '') +
+        prePushHook.join(' && ') +
+        prePushHookPostContent,
     );
   } else {
     ensureHookDeleted('pre-push');
