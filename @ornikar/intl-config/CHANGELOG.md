@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/intl-config@4.0.2...@ornikar/intl-config@5.0.0) (2022-08-17)
+
+
+### chore
+
+* **deps:** update dependency @ornikar/eslint-config to v19 ([#759](https://github.com/ornikar/shared-configs/issues/759)) ([e05eecb](https://github.com/ornikar/shared-configs/commit/e05eecb898d047b44277ce4f65fc724831bb2ece))
+
+
+### BREAKING CHANGES
+
+* **deps:** drop node 14 
+
+
+
+
+
 ## [4.0.2](https://github.com/ornikar/shared-configs/compare/@ornikar/intl-config@4.0.1...@ornikar/intl-config@4.0.2) (2022-07-29)
 
 

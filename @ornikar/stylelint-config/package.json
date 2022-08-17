@@ -1,6 +1,6 @@
 {
   "name": "@ornikar/stylelint-config",
-  "version": "8.0.7",
+  "version": "9.0.0",
   "description": "🚨🎨 stylelint config files",
   "repository": {
     "type": "git",

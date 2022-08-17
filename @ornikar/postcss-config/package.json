@@ -1,6 +1,6 @@
 {
   "name": "@ornikar/postcss-config",
-  "version": "4.0.4",
+  "version": "5.0.0",
   "description": "🎨 postcss config files",
   "repository": {
     "type": "git",

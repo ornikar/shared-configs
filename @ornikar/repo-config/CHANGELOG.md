@@ -3,6 +3,30 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [10.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@9.0.2...@ornikar/repo-config@10.0.0) (2022-08-17)
+
+
+### chore
+
+* **deps:** update dependency @ornikar/eslint-config to v19 ([#759](https://github.com/ornikar/shared-configs/issues/759)) ([e05eecb](https://github.com/ornikar/shared-configs/commit/e05eecb898d047b44277ce4f65fc724831bb2ece))
+
+
+### Features
+
+* phrase pre-push hook [no issue] ([#763](https://github.com/ornikar/shared-configs/issues/763)) ([9e399ea](https://github.com/ornikar/shared-configs/commit/9e399ea3b84925129bbd3a13e3152349217cec74))
+* **repo-config:** drop yarn-deduplicate [no issue] ([#770](https://github.com/ornikar/shared-configs/issues/770)) ([e26be3e](https://github.com/ornikar/shared-configs/commit/e26be3e72182aea4933a10331a76ef48facbd91e))
+* **repo-config:** only run tsc on pre-commit when ts file changed [no issue] ([#769](https://github.com/ornikar/shared-configs/issues/769)) ([e66fa5b](https://github.com/ornikar/shared-configs/commit/e66fa5be47e8694ead0773db8e62a7a2ab16e7ec))
+
+
+### BREAKING CHANGES
+
+* **repo-config:** drop yarn legacy (v1) support 
+* **deps:** drop node 14 
+
+
+
+
+
 ## [9.0.2](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@9.0.1...@ornikar/repo-config@9.0.2) (2022-08-12)
 
 **Note:** Version bump only for package @ornikar/repo-config
