@@ -2,7 +2,6 @@
 
 const fs = require('fs');
 const path = require('path');
-const { readYarnConfigFile } = require('./lib/yarn');
 
 // eslint-disable-next-line import/no-dynamic-require
 const pkg = require(path.resolve('package.json'));
@@ -22,7 +21,6 @@ const getSrcDirectories = (srcDirectoryName = 'src') =>
 module.exports = function createLintStagedConfig(options = {}) {
   const srcExtensions = options.srcExtensions || ['js', 'mjs', 'ts'];
   const srcDirectories = getSrcDirectories(options.srcDirectoryName);
-  const yarnConfigFile = readYarnConfigFile();
 
   return {
     [`{yarn.lock,package.json${
@@ -30,14 +28,12 @@ module.exports = function createLintStagedConfig(options = {}) {
     }}`]: (filenames) => {
       const packagejsonFilenames = filenames.filter((filename) => filename.endsWith('.json'));
       return [
-        ...(yarnConfigFile
-          ? ['yarn dedupe']
-          : ['yarn --prefer-offline', 'yarn-deduplicate -s fewer', 'yarn-deduplicate', 'yarn --prefer-offline']),
+        'yarn dedupe',
         packagejsonFilenames.length === 0 ? undefined : `prettier --write ${packagejsonFilenames.join(' ')}`,
         isLernaRepo && require.resolve('@ornikar/lerna-config/bin/generate-eslintrc-files.js'),
         shouldGenerateTsconfigInLernaRepo && require.resolve('@ornikar/lerna-config/bin/generate-tsconfig-files.js'),
         shouldRunCheckPkgScript && 'node ./scripts/check-packagejson.js',
-        `git add yarn.lock${yarnConfigFile ? ' .yarn' : ''}`,
+        'git add yarn.lock .yarn',
       ].filter(Boolean);
     },
     '{.env*,!(package).json,*.{yml,yaml,md,html,env}}': ['prettier --write'],
