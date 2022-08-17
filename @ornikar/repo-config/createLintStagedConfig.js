@@ -43,6 +43,7 @@ module.exports = function createLintStagedConfig(options = {}) {
     '{.env*,!(package).json,*.{yml,yaml,md,html,env}}': ['prettier --write'],
     [`*.{${srcExtensions.join(',')}}`]: ['prettier --write', 'eslint --fix --quiet'],
     [`{.storybook,${srcDirectories}}/**/*.css`]: ['prettier --parser css --write', 'stylelint --quiet --fix'],
+    [`${srcDirectories}/**/*.{ts,tsx}`]: () => ['tsc'],
   };
 };
 

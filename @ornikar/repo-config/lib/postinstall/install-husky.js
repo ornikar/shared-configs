@@ -82,10 +82,7 @@ module.exports = function installHusky({ pkg, pm }) {
   const pmExec = pm.name === 'npm' ? 'npx --no-install' : pm.name;
 
   writeHook('commit-msg', `${pmExec} commitlint --edit $1`);
-  writeHook(
-    'pre-commit',
-    `${pmExec} ornikar-lint-staged${pkg.devDependencies && pkg.devDependencies.typescript ? ` && ${pmExec} tsc` : ''}`,
-  );
+  writeHook('pre-commit', `${pmExec} ornikar-lint-staged`);
 
   const runCleanCache = shouldRunCleanCacheOnDependenciesChanges();
   if (isYarnPnp && !runCleanCache) {
