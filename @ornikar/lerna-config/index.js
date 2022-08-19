@@ -52,7 +52,7 @@ exports.getSyncPackageLocations = function getSyncPackageLocations(workspaces = 
 exports.getSyncPackages = function getSyncPackages(workspaces = ['@ornikar/*']) {
   return exports.getSyncPackageLocations(workspaces).map((location) => {
     const pkgPath = `${location}/package.json`;
-    const pkg = JSON.parse(fsSync.readFileSync(pkgPath, 'utf-8'));
+    const pkg = JSON.parse(fsSync.readFileSync(pkgPath));
 
     return { ...pkg, location };
   });
@@ -84,7 +84,7 @@ exports.getGraphPackages = async function getGraphPackages(lernaProject = export
 exports.readJsonFile = async function readJsonFile(jsonFilePath, defaultValue) {
   let content;
   try {
-    content = await fs.readFile(jsonFilePath, 'utf-8');
+    content = await fs.readFile(jsonFilePath, 'utf8');
   } catch {
     return defaultValue;
   }
