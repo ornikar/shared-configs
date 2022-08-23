@@ -1,4 +1,3 @@
-/* eslint-disable filenames/match-exported */
 // see https://github.com/christophehurpeau/pob/blob/main/%40pob/root/bin/postinstall/install-husky.js
 
 'use strict';
@@ -7,6 +6,8 @@ const fs = require('fs');
 const path = require('path');
 const husky = require('husky');
 const semver = require('semver');
+const { readYarnConfigFile } = require('../yarn');
+const { phrasePrePush } = require('./phrase-pre-push');
 
 const ensureLegacyHuskyConfigDeleted = () => {
   try {
@@ -28,9 +29,13 @@ const ensureHuskyNotInDevDependencies = (pkg) => {
 };
 
 const writeHook = (hookName, hookContent) => {
-  fs.writeFileSync(path.resolve(`.husky/${hookName}`), `${hookContent}\n`, {
-    mode: '755',
-  });
+  fs.writeFileSync(
+    path.resolve(`.husky/${hookName}`),
+    `#!/usr/bin/env sh\n. "$(dirname "$0")/_/husky.sh"\n\n${hookContent.trim()}\n`,
+    {
+      mode: '755',
+    },
+  );
 };
 
 const ensureHookDeleted = (hookName) => {
@@ -41,12 +46,14 @@ const ensureHookDeleted = (hookName) => {
   }
 };
 
-const readYarnConfigFile = () => {
-  try {
-    return fs.readFileSync(path.resolve('.yarnrc.yml'));
-  } catch {
-    return '';
-  }
+const getPackagesLocations = (pkg) => {
+  const isMonorepo = !!pkg.workspaces;
+
+  if (!isMonorepo) return ['.'];
+  // eslint-disable-next-line import/no-extraneous-dependencies, global-require
+  const { getSyncPackageLocations } = require('@ornikar/lerna-config');
+  const packageLocations = getSyncPackageLocations(pkg.workspaces);
+  return ['.', ...packageLocations];
 };
 
 module.exports = function installHusky({ pkg, pm }) {
@@ -63,7 +70,8 @@ module.exports = function installHusky({ pkg, pm }) {
 
   const shouldRunTest = () => pkg.scripts && pkg.scripts.test;
   const shouldRunChecks = () => pkg.scripts && pkg.scripts.checks;
-  const shouldRunCleanCache = () => pkg.scripts && pkg.scripts['clean:cache'];
+  const shouldRunCleanCacheOnDependenciesChanges = () =>
+    pkg.scripts && pkg.scripts['clean:cache:on-dependencies-changes'];
 
   try {
     fs.mkdirSync(path.resolve('.husky'));
@@ -74,12 +82,9 @@ module.exports = function installHusky({ pkg, pm }) {
   const pmExec = pm.name === 'npm' ? 'npx --no-install' : pm.name;
 
   writeHook('commit-msg', `${pmExec} commitlint --edit $1`);
-  writeHook(
-    'pre-commit',
-    `${pmExec} lint-staged -r${pkg.devDependencies && pkg.devDependencies.typescript ? ` && ${pmExec} tsc` : ''}`,
-  );
+  writeHook('pre-commit', `${pmExec} ornikar-lint-staged`);
 
-  const runCleanCache = shouldRunCleanCache();
+  const runCleanCache = shouldRunCleanCacheOnDependenciesChanges();
   if (isYarnPnp && !runCleanCache) {
     ensureHookDeleted('post-checkout');
     ensureHookDeleted('post-merge');
@@ -87,26 +92,59 @@ module.exports = function installHusky({ pkg, pm }) {
   } else {
     const runYarnInstallOnDiff = `
 if [ -n "$(git diff HEAD@{1}..HEAD@{0} -- yarn.lock)" ]; then
-  ${
+  ${[
+    // https://yarnpkg.com/features/zero-installs
     isYarnPnp
       ? ''
       : `yarn install ${
           isYarnBerry ? '--immutable --immutable-cache' : '--prefer-offline --pure-lockfile --ignore-optional'
-        } || true`
-  }
-  ${runCleanCache ? `${pmExec} clean:cache` : ''}
+        } || true`,
+    runCleanCache ? `${pmExec} clean:cache:on-dependencies-changes` : '',
+  ]
+    .filter(Boolean)
+    .join('\n  ')}
 fi`;
 
-    // https://yarnpkg.com/features/zero-installs
-    writeHook('post-checkout', runYarnInstallOnDiff);
-    writeHook('post-merge', runYarnInstallOnDiff);
-    writeHook('post-rewrite', runYarnInstallOnDiff);
+    let postHookContent = runYarnInstallOnDiff;
+    const packageLocations = getPackagesLocations(pkg);
+
+    packageLocations.forEach((packageLocation) => {
+      const cdToPackageLocation = packageLocation === '.' ? '' : `cd ${packageLocation}`;
+      const cdToRoot = packageLocation === '.' ? '' : `cd ${path.relative(packageLocation, '.')}`;
+
+      const gemfilePath = path.join(packageLocation, 'Gemfile.lock');
+      if (fs.existsSync(gemfilePath)) {
+        postHookContent += `
+if [ -n "$(git diff HEAD@{1}..HEAD@{0} -- ${gemfilePath})" ]; then
+  ${[cdToPackageLocation, 'bundle install --path vendor/bundle || true', cdToRoot].filter(Boolean).join('\n  ')}
+fi
+`;
+      }
+
+      const podfilePath = path.join(packageLocation, 'ios/Podfile.lock');
+      if (fs.existsSync(podfilePath)) {
+        postHookContent += `
+if [ -n "$(git diff HEAD@{1}..HEAD@{0} -- ${podfilePath})" ]; then
+  ${[cdToPackageLocation, 'yarn pod-install || true', cdToRoot].filter(Boolean).join('\n  ')}
+fi
+      `;
+      }
+    });
+    writeHook('post-checkout', postHookContent);
+    writeHook('post-merge', postHookContent);
+    writeHook('post-rewrite', postHookContent);
   }
 
+  const prePushHookPreCommands = [];
   const prePushHook = [];
 
   if (shouldRunTest()) {
-    prePushHook.push(`CI=true ${pm.name} test`);
+    prePushHookPreCommands.push(
+      '# autodetect main branch (usually master or main)',
+      'mainBranch=$(LANG=en_US git remote show origin | grep "HEAD branch" | cut -d\' \' -f5)',
+      '',
+    );
+    prePushHook.push(`CI=true ${pm.name} test --changedSince=origin/$mainBranch`);
   }
 
   if (shouldRunChecks()) {
@@ -114,10 +152,24 @@ fi`;
   }
 
   if (prePushHook.length > 0) {
-    writeHook('pre-push', prePushHook.join(' && '));
+    let prePushHookPostContent = '';
+    const phraseConfigPath = '.phrase.yml';
+    if (fs.existsSync(phraseConfigPath)) {
+      prePushHookPostContent += phrasePrePush;
+    }
+
+    writeHook(
+      'pre-push',
+      (prePushHookPreCommands ? [...prePushHookPreCommands, ''].join('\n') : '') +
+        prePushHook.join(' && ') +
+        prePushHookPostContent,
+    );
   } else {
     ensureHookDeleted('pre-push');
   }
 
-  husky.install('.husky');
+  // skip install husky on CI as we don't need it
+  if (!process.env.CI) {
+    husky.install('.husky');
+  }
 };

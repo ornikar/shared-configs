@@ -3,6 +3,153 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/intl-config@4.0.2...@ornikar/intl-config@5.0.0) (2022-08-17)
+
+
+### chore
+
+* **deps:** update dependency @ornikar/eslint-config to v19 ([#759](https://github.com/ornikar/shared-configs/issues/759)) ([e05eecb](https://github.com/ornikar/shared-configs/commit/e05eecb898d047b44277ce4f65fc724831bb2ece))
+
+
+### BREAKING CHANGES
+
+* **deps:** drop node 14 
+
+
+
+
+
+## [4.0.2](https://github.com/ornikar/shared-configs/compare/@ornikar/intl-config@4.0.1...@ornikar/intl-config@4.0.2) (2022-07-29)
+
+
+### Bug Fixes
+
+* **intl-config:** fix peer dep requires min babel core ^7.13.0 [no issue] ([#755](https://github.com/ornikar/shared-configs/issues/755)) ([bc9c4f6](https://github.com/ornikar/shared-configs/commit/bc9c4f62d6f2a5140f14ce3cae013d3235d0ee94))
+
+
+
+
+
+## [4.0.1](https://github.com/ornikar/shared-configs/compare/@ornikar/intl-config@4.0.0...@ornikar/intl-config@4.0.1) (2022-06-20)
+
+**Note:** Version bump only for package @ornikar/intl-config
+
+
+
+
+
+# [4.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/intl-config@3.1.6...@ornikar/intl-config@4.0.0) (2022-03-21)
+
+
+### Features
+
+* **intl-config:** babel-plugin-formatjs CME-391 ([#676](https://github.com/ornikar/shared-configs/issues/676)) ([af4ed61](https://github.com/ornikar/shared-configs/commit/af4ed61efcdec1e82e363f417eb38f10e0a4e0e9))
+
+
+### BREAKING CHANGES
+
+* **intl-config:** parameters changed and use of babel-plugin-formatjs 
+
+
+
+
+
+## [3.1.6](https://github.com/ornikar/shared-configs/compare/@ornikar/intl-config@3.1.5...@ornikar/intl-config@3.1.6) (2022-03-15)
+
+**Note:** Version bump only for package @ornikar/intl-config
+
+
+
+
+
+## [3.1.5](https://github.com/ornikar/shared-configs/compare/@ornikar/intl-config@3.1.4...@ornikar/intl-config@3.1.5) (2022-02-11)
+
+**Note:** Version bump only for package @ornikar/intl-config
+
+
+
+
+
+## [3.1.4](https://github.com/ornikar/shared-configs/compare/@ornikar/intl-config@3.1.3...@ornikar/intl-config@3.1.4) (2022-02-08)
+
+**Note:** Version bump only for package @ornikar/intl-config
+
+
+
+
+
+## [3.1.3](https://github.com/ornikar/shared-configs/compare/@ornikar/intl-config@3.1.2...@ornikar/intl-config@3.1.3) (2022-02-04)
+
+**Note:** Version bump only for package @ornikar/intl-config
+
+
+
+
+
+## [3.1.2](https://github.com/ornikar/shared-configs/compare/@ornikar/intl-config@3.1.1...@ornikar/intl-config@3.1.2) (2022-01-24)
+
+**Note:** Version bump only for package @ornikar/intl-config
+
+
+
+
+
+## [3.1.1](https://github.com/ornikar/shared-configs/compare/@ornikar/intl-config@3.1.0...@ornikar/intl-config@3.1.1) (2022-01-14)
+
+**Note:** Version bump only for package @ornikar/intl-config
+
+
+
+
+
+# [3.1.0](https://github.com/ornikar/shared-configs/compare/@ornikar/intl-config@3.0.1...@ornikar/intl-config@3.1.0) (2022-01-03)
+
+
+### Features
+
+* check translations duplicates project wide and not only section wide ([#610](https://github.com/ornikar/shared-configs/issues/610)) ([6b9f94d](https://github.com/ornikar/shared-configs/commit/6b9f94dc821818924fbe361f5e87ba98641714d9))
+* generate translations script returns a part of phrase config ([#614](https://github.com/ornikar/shared-configs/issues/614)) ([b384356](https://github.com/ornikar/shared-configs/commit/b384356c3afa8e08e382744ba75336c836e8f123))
+* let identical translations pass if from similar file and same default messages [no issue] ([#613](https://github.com/ornikar/shared-configs/issues/613)) ([57245a2](https://github.com/ornikar/shared-configs/commit/57245a21a925928b61144c82b70ac2d22260cf65))
+
+
+
+
+
+## [3.0.1](https://github.com/ornikar/shared-configs/compare/@ornikar/intl-config@3.0.0...@ornikar/intl-config@3.0.1) (2021-12-09)
+
+
+### Bug Fixes
+
+* downgrade node minimum required version [no issue] ([#595](https://github.com/ornikar/shared-configs/issues/595)) ([9464687](https://github.com/ornikar/shared-configs/commit/9464687f55aed4a2e683f5d3b992300d000a2b30))
+
+
+
+
+
+# [3.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/intl-config@2.3.4...@ornikar/intl-config@3.0.0) (2021-12-07)
+
+
+### Features
+
+* drop node 12 [no issue] ([#584](https://github.com/ornikar/shared-configs/issues/584)) ([e9c00ab](https://github.com/ornikar/shared-configs/commit/e9c00abb5ed3a9c60993b6c652566dd7e71a97e1))
+
+
+### BREAKING CHANGES
+
+* requires node 14.17 or higher 
+
+
+
+
+
+## [2.3.4](https://github.com/ornikar/shared-configs/compare/@ornikar/intl-config@2.3.3...@ornikar/intl-config@2.3.4) (2021-12-02)
+
+**Note:** Version bump only for package @ornikar/intl-config
+
+
+
+
+
 ## [2.3.3](https://github.com/ornikar/shared-configs/compare/@ornikar/intl-config@2.3.2...@ornikar/intl-config@2.3.3) (2021-10-29)
 
 **Note:** Version bump only for package @ornikar/intl-config

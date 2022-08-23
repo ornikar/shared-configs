@@ -1,17 +1,22 @@
 {
   "name": "@ornikar/commitlint-config",
-  "version": "3.3.0",
-  "description": "commitlint config",
-  "repository": "ornikar/shared-configs",
+  "version": "5.0.0",
+  "description": "📓 commitlint config",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ornikar/shared-configs.git",
+    "directory": "@ornikar/commitlint-config"
+  },
   "main": "index.js",
   "license": "ISC",
   "engines": {
-    "node": ">=12.13.0"
+    "node": ">=16.16.0"
   },
   "publishConfig": {
     "access": "public"
   },
   "dependencies": {
-    "@commitlint/config-conventional": "^13.0.0"
+    "@commitlint/config-conventional": "^17.0.3",
+    "@commitlint/config-lerna-scopes": "^17.0.2"
   }
 }

@@ -2,7 +2,7 @@
 
 'use strict';
 
-const { render } = require('@testing-library/react-native');
+const { render, waitFor } = require('@testing-library/react-native');
 const React = require('react');
 
 const decorateStory = (storyFn, decorators) =>
@@ -31,10 +31,16 @@ const decorateStory = (storyFn, decorators) =>
 exports.decorateStory = decorateStory;
 
 const globalDecorators = [];
+const globalParameters = {};
 
 // Mocked version of `import { addDecorator } from '@storybook/react-native'`.
 exports.addDecorator = (decorator) => {
   globalDecorators.push(decorator);
+};
+
+// Mocked version of `import { addParameters } from '@storybook/react-native'`.
+exports.addParameters = (parameters) => {
+  Object.assign(globalParameters, parameters);
 };
 
 // Mocked version of `import { action } from '@storybook/react-native'`.
@@ -48,10 +54,10 @@ exports.storiesOf = (groupName) => {
   // Mocked API to generate tests from & snapshot stories.
   const api = {
     add(storyName, story, storyParameters = {}) {
-      const parameters = { ...localParameters, ...storyParameters };
+      const parameters = { ...globalParameters, ...localParameters, ...storyParameters };
       const context = { name: storyName, parameters };
       const { jest } = parameters;
-      const { ignore, ignoreDecorators, createBeforeAfterEachCallbacks } = jest || {};
+      const { ignore, ignoreDecorators, createBeforeAfterEachCallbacks, waitFor: waitForExpectation } = jest || {};
 
       if (ignore) {
         test.skip(storyName, () => {});
@@ -65,13 +71,14 @@ exports.storiesOf = (groupName) => {
           if (after) afterEach(after);
         }
 
-        it(storyName, () => {
+        it(storyName, async () => {
           const WrappingComponent = ignoreDecorators
             ? undefined
             : ({ children }) => decorateStory(() => children, [...localDecorators, ...globalDecorators])(context);
 
-          const component = render(React.createElement(WrappingComponent, { children: story(context) }));
-          expect(component.toJSON()).toMatchSnapshot();
+          const rtlApi = render(story(context), { wrapper: WrappingComponent });
+          if (waitForExpectation) await waitFor(() => waitForExpectation(rtlApi, expect, { parameters }));
+          expect(rtlApi.toJSON()).toMatchSnapshot();
         });
       });
 

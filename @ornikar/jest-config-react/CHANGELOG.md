@@ -3,6 +3,259 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [10.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@9.6.4...@ornikar/jest-config-react@10.0.0) (2022-08-17)
+
+
+### chore
+
+* **deps:** update dependency @ornikar/eslint-config to v19 ([#759](https://github.com/ornikar/shared-configs/issues/759)) ([e05eecb](https://github.com/ornikar/shared-configs/commit/e05eecb898d047b44277ce4f65fc724831bb2ece))
+
+
+### BREAKING CHANGES
+
+* **deps:** drop node 14 
+
+
+
+
+
+## [9.6.4](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@9.6.3...@ornikar/jest-config-react@9.6.4) (2022-07-27)
+
+**Note:** Version bump only for package @ornikar/jest-config-react
+
+
+
+
+
+## [9.6.3](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@9.6.2...@ornikar/jest-config-react@9.6.3) (2022-07-27)
+
+
+### Bug Fixes
+
+* **jest-config-react:** fix act without await [no issue] ([#749](https://github.com/ornikar/shared-configs/issues/749)) ([49e6c13](https://github.com/ornikar/shared-configs/commit/49e6c1392b6722fb5d7befea737cabd26220e8fd))
+
+
+
+
+
+## [9.6.2](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@9.6.1...@ornikar/jest-config-react@9.6.2) (2022-06-20)
+
+**Note:** Version bump only for package @ornikar/jest-config-react
+
+
+
+
+
+## [9.6.1](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@9.6.0...@ornikar/jest-config-react@9.6.1) (2022-04-19)
+
+**Note:** Version bump only for package @ornikar/jest-config-react
+
+
+
+
+
+# [9.6.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@9.5.1...@ornikar/jest-config-react@9.6.0) (2022-04-01)
+
+
+### Features
+
+* **jest-config-react:** improve svg transformer [no issue] ([#688](https://github.com/ornikar/shared-configs/issues/688)) ([d353d0e](https://github.com/ornikar/shared-configs/commit/d353d0e5151a3e0b790fc5805bc73bf9350efd68))
+
+
+
+
+
+## [9.5.1](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@9.5.0...@ornikar/jest-config-react@9.5.1) (2022-03-29)
+
+
+### Bug Fixes
+
+* **jest-config-react:** add missing escape dot in raw.svg transform ([41491df](https://github.com/ornikar/shared-configs/commit/41491dfe6fab643fe47a35634e6abad32f11a2d1))
+
+
+
+
+
+# [9.5.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@9.4.1...@ornikar/jest-config-react@9.5.0) (2022-03-29)
+
+
+### Features
+
+* **jest-config-react:** use jest-svg-transformer ARCH-1506 ([#678](https://github.com/ornikar/shared-configs/issues/678)) ([0507f23](https://github.com/ornikar/shared-configs/commit/0507f23eb3938a1320e457c847dbc576316e3e7f))
+
+
+
+
+
+## [9.4.1](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@9.4.0...@ornikar/jest-config-react@9.4.1) (2022-03-14)
+
+**Note:** Version bump only for package @ornikar/jest-config-react
+
+
+
+
+
+# [9.4.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@9.3.2...@ornikar/jest-config-react@9.4.0) (2022-03-08)
+
+
+### Features
+
+* faster jest [no issue] ([#660](https://github.com/ornikar/shared-configs/issues/660)) ([866764e](https://github.com/ornikar/shared-configs/commit/866764e4e12d27fa5b6a12f9452b99808035c2d6))
+
+
+
+
+
+## [9.3.2](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@9.3.1...@ornikar/jest-config-react@9.3.2) (2022-02-24)
+
+**Note:** Version bump only for package @ornikar/jest-config-react
+
+
+
+
+
+## [9.3.1](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@9.3.0...@ornikar/jest-config-react@9.3.1) (2022-02-04)
+
+**Note:** Version bump only for package @ornikar/jest-config-react
+
+
+
+
+
+# [9.3.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@9.2.1...@ornikar/jest-config-react@9.3.0) (2022-01-18)
+
+
+### Features
+
+* jest-config native and web improvements [no issue] ([#630](https://github.com/ornikar/shared-configs/issues/630)) ([0e00bf2](https://github.com/ornikar/shared-configs/commit/0e00bf2ac1fa6d40e9d4063a3c94c18385060dcd))
+
+
+
+
+
+## [9.2.1](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@9.2.0...@ornikar/jest-config-react@9.2.1) (2022-01-17)
+
+**Note:** Version bump only for package @ornikar/jest-config-react
+
+
+
+
+
+# [9.2.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@9.1.0...@ornikar/jest-config-react@9.2.0) (2022-01-11)
+
+
+### Features
+
+* **jest-config-react:** map @storybook/react-native to storybook react mock ([#620](https://github.com/ornikar/shared-configs/issues/620)) [no issue] ([f502e6d](https://github.com/ornikar/shared-configs/commit/f502e6d754a453153c37fd4d7e5972be4b3847b1))
+
+
+
+
+
+# [9.1.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@9.0.3...@ornikar/jest-config-react@9.1.0) (2022-01-07)
+
+
+### Features
+
+* **jest-config-react:** add styled-components module name mapper [no issue] ([#617](https://github.com/ornikar/shared-configs/issues/617)) ([4df1bc8](https://github.com/ornikar/shared-configs/commit/4df1bc846768b167cbb93299b9313feae2d9d0fa))
+
+
+
+
+
+## [9.0.3](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@9.0.2...@ornikar/jest-config-react@9.0.3) (2022-01-07)
+
+
+### Bug Fixes
+
+* shared configs/fix jest configs CME-51 ([#618](https://github.com/ornikar/shared-configs/issues/618)) ([bf678b1](https://github.com/ornikar/shared-configs/commit/bf678b1e4740bdec45614caef6f46df0a1510274))
+
+
+
+
+
+## [9.0.2](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@9.0.1...@ornikar/jest-config-react@9.0.2) (2022-01-05)
+
+**Note:** Version bump only for package @ornikar/jest-config-react
+
+
+
+
+
+## [9.0.1](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@9.0.0...@ornikar/jest-config-react@9.0.1) (2022-01-05)
+
+**Note:** Version bump only for package @ornikar/jest-config-react
+
+
+
+
+
+# [9.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@8.0.1...@ornikar/jest-config-react@9.0.0) (2021-12-15)
+
+
+### Features
+
+* **jest-config-react:** remove random wait, add global addParameters [no issue] ([#601](https://github.com/ornikar/shared-configs/issues/601)) ([764ef11](https://github.com/ornikar/shared-configs/commit/764ef11d9bd29e309438040e06fbdf4f9f6a2e9e))
+
+
+### BREAKING CHANGES
+
+* **jest-config-react:** wait(0) is removed, if you need to wait add waitFor: () => wait(0) 
+
+
+
+
+
+## [8.0.1](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@8.0.0...@ornikar/jest-config-react@8.0.1) (2021-12-09)
+
+
+### Bug Fixes
+
+* downgrade node minimum required version [no issue] ([#595](https://github.com/ornikar/shared-configs/issues/595)) ([9464687](https://github.com/ornikar/shared-configs/commit/9464687f55aed4a2e683f5d3b992300d000a2b30))
+
+
+
+
+
+# [8.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@7.3.0...@ornikar/jest-config-react@8.0.0) (2021-12-07)
+
+
+### Features
+
+* drop node 12 [no issue] ([#584](https://github.com/ornikar/shared-configs/issues/584)) ([e9c00ab](https://github.com/ornikar/shared-configs/commit/e9c00abb5ed3a9c60993b6c652566dd7e71a97e1))
+
+
+### BREAKING CHANGES
+
+* requires node 14.17 or higher 
+
+
+
+
+
+# [7.3.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@7.2.0...@ornikar/jest-config-react@7.3.0) (2021-11-29)
+
+
+### Features
+
+* add waitFor in stories mock [no issue] ([#550](https://github.com/ornikar/shared-configs/issues/550)) ([9a4f254](https://github.com/ornikar/shared-configs/commit/9a4f25431cf556099b6c48dd52670937526c19b7))
+
+
+
+
+
+# [7.2.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@7.1.1...@ornikar/jest-config-react@7.2.0) (2021-11-29)
+
+
+### Features
+
+* **deps:** update dependency @testing-library/react to v12 ([#547](https://github.com/ornikar/shared-configs/issues/547)) ([31eefb7](https://github.com/ornikar/shared-configs/commit/31eefb74293eb36f304d65a396abd10a61589f29))
+* **deps:** update dependency @testing-library/react-hooks to v7.0.2 ([#548](https://github.com/ornikar/shared-configs/issues/548)) ([2dfb8c7](https://github.com/ornikar/shared-configs/commit/2dfb8c79b31ad4211cd2a41fc31c432b39b1de3b))
+
+
+
+
+
 ## [7.1.1](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@7.1.0...@ornikar/jest-config-react@7.1.1) (2021-11-18)
 
 **Note:** Version bump only for package @ornikar/jest-config-react

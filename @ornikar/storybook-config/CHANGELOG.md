@@ -3,6 +3,201 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/storybook-config@4.3.1...@ornikar/storybook-config@5.0.0) (2022-08-17)
+
+
+### chore
+
+* **deps:** update dependency @ornikar/eslint-config to v19 ([#759](https://github.com/ornikar/shared-configs/issues/759)) ([e05eecb](https://github.com/ornikar/shared-configs/commit/e05eecb898d047b44277ce4f65fc724831bb2ece))
+
+
+### BREAKING CHANGES
+
+* **deps:** drop node 14 
+
+
+
+
+
+## [4.3.1](https://github.com/ornikar/shared-configs/compare/@ornikar/storybook-config@4.3.0...@ornikar/storybook-config@4.3.1) (2022-06-20)
+
+**Note:** Version bump only for package @ornikar/storybook-config
+
+
+
+
+
+# [4.3.0](https://github.com/ornikar/shared-configs/compare/@ornikar/storybook-config@4.2.4...@ornikar/storybook-config@4.3.0) (2022-04-22)
+
+
+### Features
+
+* **webpack-config:** improve config for faster webpack ARCH-1515 ([#696](https://github.com/ornikar/shared-configs/issues/696)) ([c700d2c](https://github.com/ornikar/shared-configs/commit/c700d2ce95970011e58775cbb1061562b688850a))
+
+
+
+
+
+## [4.2.4](https://github.com/ornikar/shared-configs/compare/@ornikar/storybook-config@4.2.3...@ornikar/storybook-config@4.2.4) (2022-04-13)
+
+
+### Bug Fixes
+
+* **storybook-config:** modulesToAlias default should be object [no issue] ([#692](https://github.com/ornikar/shared-configs/issues/692)) ([c9f4cd9](https://github.com/ornikar/shared-configs/commit/c9f4cd98b14822460dafb38b63a15403cb0f8a8c))
+
+
+
+
+
+## [4.2.3](https://github.com/ornikar/shared-configs/compare/@ornikar/storybook-config@4.2.2...@ornikar/storybook-config@4.2.3) (2022-03-24)
+
+**Note:** Version bump only for package @ornikar/storybook-config
+
+
+
+
+
+## [4.2.2](https://github.com/ornikar/shared-configs/compare/@ornikar/storybook-config@4.2.1...@ornikar/storybook-config@4.2.2) (2022-03-15)
+
+**Note:** Version bump only for package @ornikar/storybook-config
+
+
+
+
+
+## [4.2.1](https://github.com/ornikar/shared-configs/compare/@ornikar/storybook-config@4.2.0...@ornikar/storybook-config@4.2.1) (2022-03-14)
+
+
+### Bug Fixes
+
+* fix appContentBg ([8010d22](https://github.com/ornikar/shared-configs/commit/8010d229cb6de997cfcadb03e91a8aa54c709a52))
+
+
+
+
+
+# [4.2.0](https://github.com/ornikar/shared-configs/compare/@ornikar/storybook-config@4.1.1...@ornikar/storybook-config@4.2.0) (2022-03-14)
+
+
+### Features
+
+* **storybook-config:** update theme late-ocean [no issue] ([#665](https://github.com/ornikar/shared-configs/issues/665)) ([a3e8de9](https://github.com/ornikar/shared-configs/commit/a3e8de961dbc6387f6cc854f8b27a4446684ae4f))
+
+
+
+
+
+## [4.1.1](https://github.com/ornikar/shared-configs/compare/@ornikar/storybook-config@4.1.0...@ornikar/storybook-config@4.1.1) (2022-02-04)
+
+**Note:** Version bump only for package @ornikar/storybook-config
+
+
+
+
+
+# [4.1.0](https://github.com/ornikar/shared-configs/compare/@ornikar/storybook-config@4.0.0...@ornikar/storybook-config@4.1.0) (2022-02-02)
+
+
+### Features
+
+* **webpack-config:** move react-native-web config from storybook and fix for process.browser [no issue] ([#640](https://github.com/ornikar/shared-configs/issues/640)) ([b45df5e](https://github.com/ornikar/shared-configs/commit/b45df5e7e9a75321c6017e825dbe16e9f745fa17))
+
+
+
+
+
+# [4.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/storybook-config@3.3.3...@ornikar/storybook-config@4.0.0) (2022-01-31)
+
+
+### Features
+
+* **storybook-config:** support react-native-web [no issue] ([#633](https://github.com/ornikar/shared-configs/issues/633)) ([e69d4dc](https://github.com/ornikar/shared-configs/commit/e69d4dcf0d611bb396a06639c15d602f969053f6))
+
+
+### BREAKING CHANGES
+
+* **storybook-config:** removed base/lib/app webpack config, use options in createMainConfig instead 
+
+
+
+
+
+## [3.3.3](https://github.com/ornikar/shared-configs/compare/@ornikar/storybook-config@3.3.2...@ornikar/storybook-config@3.3.3) (2022-01-14)
+
+**Note:** Version bump only for package @ornikar/storybook-config
+
+
+
+
+
+## [3.3.2](https://github.com/ornikar/shared-configs/compare/@ornikar/storybook-config@3.3.1...@ornikar/storybook-config@3.3.2) (2021-12-09)
+
+**Note:** Version bump only for package @ornikar/storybook-config
+
+
+
+
+
+## [3.3.1](https://github.com/ornikar/shared-configs/compare/@ornikar/storybook-config@3.3.0...@ornikar/storybook-config@3.3.1) (2021-12-07)
+
+**Note:** Version bump only for package @ornikar/storybook-config
+
+
+
+
+
+# [3.3.0](https://github.com/ornikar/shared-configs/compare/@ornikar/storybook-config@3.2.3...@ornikar/storybook-config@3.3.0) (2021-12-06)
+
+
+### Features
+
+* **storybook-config:** add *.stories.{ts,tsx} [no issue] ([#581](https://github.com/ornikar/shared-configs/issues/581)) ([eb1189a](https://github.com/ornikar/shared-configs/commit/eb1189aa1a4f9734ae86777c3cdc866b992ad793))
+
+
+
+
+
+## [3.2.3](https://github.com/ornikar/shared-configs/compare/@ornikar/storybook-config@3.2.2...@ornikar/storybook-config@3.2.3) (2021-12-06)
+
+
+### Bug Fixes
+
+* **storybook-config:** move addon-essentials to peer dep to avoid duplicates [no issue] ([#572](https://github.com/ornikar/shared-configs/issues/572)) ([1436686](https://github.com/ornikar/shared-configs/commit/1436686e1419a09707a3bf2e2ba407b1d0224da1))
+
+
+
+
+
+## [3.2.2](https://github.com/ornikar/shared-configs/compare/@ornikar/storybook-config@3.2.1...@ornikar/storybook-config@3.2.2) (2021-12-06)
+
+
+### Bug Fixes
+
+* **storybook-config:** alias is a regexp [no issue] ([#575](https://github.com/ornikar/shared-configs/issues/575)) ([a671455](https://github.com/ornikar/shared-configs/commit/a67145547eabbd079adeb026cd9a63483f46b381))
+
+
+
+
+
+## [3.2.1](https://github.com/ornikar/shared-configs/compare/@ornikar/storybook-config@3.2.0...@ornikar/storybook-config@3.2.1) (2021-12-02)
+
+**Note:** Version bump only for package @ornikar/storybook-config
+
+
+
+
+
+# [3.2.0](https://github.com/ornikar/shared-configs/compare/@ornikar/storybook-config@3.1.0...@ornikar/storybook-config@3.2.0) (2021-11-26)
+
+
+### Features
+
+* **deps:** update dependency @chrp/typed-css-modules-loader to v0.7.0 ([#540](https://github.com/ornikar/shared-configs/issues/540)) ([40e7a89](https://github.com/ornikar/shared-configs/commit/40e7a891022407ced8f09f830aa04d4211562e21))
+
+
+
+
+
 # [3.1.0](https://github.com/ornikar/shared-configs/compare/@ornikar/storybook-config@3.0.1...@ornikar/storybook-config@3.1.0) (2021-11-22)
 
 

@@ -1,12 +1,16 @@
 {
   "name": "@ornikar/postcss-config",
-  "version": "3.4.0",
-  "description": "postcss config files",
-  "repository": "ornikar/shared-configs",
+  "version": "5.0.0",
+  "description": "🎨 postcss config files",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ornikar/shared-configs.git",
+    "directory": "@ornikar/postcss-config"
+  },
   "main": "index.js",
   "license": "ISC",
   "engines": {
-    "node": ">=12.13.0"
+    "node": ">=16.16.0"
   },
   "publishConfig": {
     "access": "public"
@@ -16,6 +20,9 @@
     "postcss-custom-media": "^7.0.7",
     "postcss-custom-properties": "^10.0.0",
     "postcss-nested": "^4.1.1"
+  },
+  "devDependencies": {
+    "postcss": "7.0.39"
   },
   "peerDependencies": {
     "postcss": "^7.0.5"

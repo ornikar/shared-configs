@@ -3,6 +3,392 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react-native@4.5.0...@ornikar/jest-config-react-native@5.0.0) (2022-08-17)
+
+
+### chore
+
+* **deps:** update dependency @ornikar/eslint-config to v19 ([#759](https://github.com/ornikar/shared-configs/issues/759)) ([e05eecb](https://github.com/ornikar/shared-configs/commit/e05eecb898d047b44277ce4f65fc724831bb2ece))
+
+
+### BREAKING CHANGES
+
+* **deps:** drop node 14 
+
+
+
+
+
+# [4.5.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react-native@4.4.2...@ornikar/jest-config-react-native@4.5.0) (2022-08-09)
+
+
+### Features
+
+* **jest-config-react-native:** support for react-native-svg-web ELN-3031 ([#756](https://github.com/ornikar/shared-configs/issues/756)) ([4dfa295](https://github.com/ornikar/shared-configs/commit/4dfa29559c673a269ed83131ec48ff8caa5e8e6f))
+
+
+
+
+
+## [4.4.2](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react-native@4.4.1...@ornikar/jest-config-react-native@4.4.2) (2022-07-27)
+
+**Note:** Version bump only for package @ornikar/jest-config-react-native
+
+
+
+
+
+## [4.4.1](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react-native@4.4.0...@ornikar/jest-config-react-native@4.4.1) (2022-07-27)
+
+**Note:** Version bump only for package @ornikar/jest-config-react-native
+
+
+
+
+
+# [4.4.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react-native@4.3.0...@ornikar/jest-config-react-native@4.4.0) (2022-06-20)
+
+
+### Features
+
+* **deps:** update dependency jest-expo to v45 ([#729](https://github.com/ornikar/shared-configs/issues/729)) ([72c2eed](https://github.com/ornikar/shared-configs/commit/72c2eed24a2bd23ff5aaac9ce53a8f9aabaa0ba5))
+
+
+
+
+
+# [4.3.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react-native@4.2.2...@ornikar/jest-config-react-native@4.3.0) (2022-04-22)
+
+
+### Features
+
+* **webpack-config:** improve config for faster webpack ARCH-1515 ([#696](https://github.com/ornikar/shared-configs/issues/696)) ([c700d2c](https://github.com/ornikar/shared-configs/commit/c700d2ce95970011e58775cbb1061562b688850a))
+
+
+
+
+
+## [4.2.2](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react-native@4.2.1...@ornikar/jest-config-react-native@4.2.2) (2022-04-19)
+
+**Note:** Version bump only for package @ornikar/jest-config-react-native
+
+
+
+
+
+## [4.2.1](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react-native@4.2.0...@ornikar/jest-config-react-native@4.2.1) (2022-04-01)
+
+**Note:** Version bump only for package @ornikar/jest-config-react-native
+
+
+
+
+
+# [4.2.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react-native@4.1.2...@ornikar/jest-config-react-native@4.2.0) (2022-03-31)
+
+
+### Features
+
+* **jest-config-react-native:** use sucrase and transformers [no issue] ([#686](https://github.com/ornikar/shared-configs/issues/686)) ([2d67999](https://github.com/ornikar/shared-configs/commit/2d67999be78af0fec813592a6fff3d0d30e023c7))
+
+
+
+
+
+## [4.1.2](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react-native@4.1.1...@ornikar/jest-config-react-native@4.1.2) (2022-03-31)
+
+
+### Bug Fixes
+
+* **jest-config-react-native:** mark @testing-library/react-native as optional ([5dc0651](https://github.com/ornikar/shared-configs/commit/5dc06517ead838b77133117afca31b678cc3cfc7))
+
+
+
+
+
+## [4.1.1](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react-native@4.1.0...@ornikar/jest-config-react-native@4.1.1) (2022-03-29)
+
+**Note:** Version bump only for package @ornikar/jest-config-react-native
+
+
+
+
+
+# [4.1.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react-native@4.0.3...@ornikar/jest-config-react-native@4.1.0) (2022-03-29)
+
+
+### Features
+
+* **jest-config-react:** use jest-svg-transformer ARCH-1506 ([#678](https://github.com/ornikar/shared-configs/issues/678)) ([0507f23](https://github.com/ornikar/shared-configs/commit/0507f23eb3938a1320e457c847dbc576316e3e7f))
+
+
+
+
+
+## [4.0.3](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react-native@4.0.2...@ornikar/jest-config-react-native@4.0.3) (2022-03-14)
+
+**Note:** Version bump only for package @ornikar/jest-config-react-native
+
+
+
+
+
+## [4.0.2](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react-native@4.0.1...@ornikar/jest-config-react-native@4.0.2) (2022-03-09)
+
+
+### Bug Fixes
+
+* **jest-config-react-native:** fix platform in directory for jest cleanup system ([9d47c6f](https://github.com/ornikar/shared-configs/commit/9d47c6ff3fb089186c3553bdb08c2f0d2a8ffac6))
+
+
+
+
+
+## [4.0.1](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react-native@4.0.0...@ornikar/jest-config-react-native@4.0.1) (2022-03-09)
+
+
+### Bug Fixes
+
+* **jest-config-react-native:** fix dot missing in resolver ([878c2ab](https://github.com/ornikar/shared-configs/commit/878c2ab47340945ad780122de9b631c7c6d9a98d))
+
+
+
+
+
+# [4.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react-native@3.4.0...@ornikar/jest-config-react-native@4.0.0) (2022-03-09)
+
+
+### Bug Fixes
+
+* **jest-config-react-native:** custom platform resolvers ([23f4f0f](https://github.com/ornikar/shared-configs/commit/23f4f0f1c706a417c7773f96b486012b3676c8d8))
+
+
+### BREAKING CHANGES
+
+* **jest-config-react-native:** removed nativeSnapshotResolver.js
+
+
+
+
+
+# [3.4.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react-native@3.3.2...@ornikar/jest-config-react-native@3.4.0) (2022-03-08)
+
+
+### Bug Fixes
+
+* **jest-config-react-native:** fix to make it work with jest 27 ([cf25dcd](https://github.com/ornikar/shared-configs/commit/cf25dcdd784617c91563bf14057845f75b4e20ca))
+
+
+### Features
+
+* faster jest [no issue] ([#660](https://github.com/ornikar/shared-configs/issues/660)) ([866764e](https://github.com/ornikar/shared-configs/commit/866764e4e12d27fa5b6a12f9452b99808035c2d6))
+
+
+
+
+
+## [3.3.2](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react-native@3.3.1...@ornikar/jest-config-react-native@3.3.2) (2022-02-04)
+
+**Note:** Version bump only for package @ornikar/jest-config-react-native
+
+
+
+
+
+## [3.3.1](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react-native@3.3.0...@ornikar/jest-config-react-native@3.3.1) (2022-02-01)
+
+**Note:** Version bump only for package @ornikar/jest-config-react-native
+
+
+
+
+
+# [3.3.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react-native@3.2.1...@ornikar/jest-config-react-native@3.3.0) (2022-01-31)
+
+
+### Features
+
+* **jest-config-react-native:** support svg with svgr named loader CME-229 ([#638](https://github.com/ornikar/shared-configs/issues/638)) ([09c70f7](https://github.com/ornikar/shared-configs/commit/09c70f753217c8dfee467c79c240d36eaa041f28))
+
+
+
+
+
+## [3.2.1](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react-native@3.2.0...@ornikar/jest-config-react-native@3.2.1) (2022-01-18)
+
+
+### Bug Fixes
+
+* **jest-config-react-native:** fix typo [no issue] ([#631](https://github.com/ornikar/shared-configs/issues/631)) ([41905a1](https://github.com/ornikar/shared-configs/commit/41905a1a940f31aaa700c8a7c8ddc86c1dd3ec66))
+
+
+
+
+
+# [3.2.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react-native@3.1.4...@ornikar/jest-config-react-native@3.2.0) (2022-01-18)
+
+
+### Features
+
+* jest-config native and web improvements [no issue] ([#630](https://github.com/ornikar/shared-configs/issues/630)) ([0e00bf2](https://github.com/ornikar/shared-configs/commit/0e00bf2ac1fa6d40e9d4063a3c94c18385060dcd))
+
+
+
+
+
+## [3.1.4](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react-native@3.1.3...@ornikar/jest-config-react-native@3.1.4) (2022-01-17)
+
+**Note:** Version bump only for package @ornikar/jest-config-react-native
+
+
+
+
+
+## [3.1.3](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react-native@3.1.2...@ornikar/jest-config-react-native@3.1.3) (2022-01-07)
+
+**Note:** Version bump only for package @ornikar/jest-config-react-native
+
+
+
+
+
+## [3.1.2](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react-native@3.1.1...@ornikar/jest-config-react-native@3.1.2) (2022-01-05)
+
+**Note:** Version bump only for package @ornikar/jest-config-react-native
+
+
+
+
+
+## [3.1.1](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react-native@3.1.0...@ornikar/jest-config-react-native@3.1.1) (2022-01-05)
+
+**Note:** Version bump only for package @ornikar/jest-config-react-native
+
+
+
+
+
+# [3.1.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react-native@3.0.0...@ornikar/jest-config-react-native@3.1.0) (2021-12-20)
+
+
+### Features
+
+* **deps:** update dependency jest-expo to v44 ([#608](https://github.com/ornikar/shared-configs/issues/608)) ([73df23e](https://github.com/ornikar/shared-configs/commit/73df23e2f832cc6323fd4b5dd1c812fc8a5ec9c8))
+
+
+
+
+
+# [3.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react-native@2.1.0...@ornikar/jest-config-react-native@3.0.0) (2021-12-15)
+
+
+### Features
+
+* **jest-config-react:** remove random wait, add global addParameters [no issue] ([#601](https://github.com/ornikar/shared-configs/issues/601)) ([764ef11](https://github.com/ornikar/shared-configs/commit/764ef11d9bd29e309438040e06fbdf4f9f6a2e9e))
+
+
+### BREAKING CHANGES
+
+* **jest-config-react:** wait(0) is removed, if you need to wait add waitFor: () => wait(0) 
+
+
+
+
+
+# [2.1.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react-native@2.0.1...@ornikar/jest-config-react-native@2.1.0) (2021-12-14)
+
+
+### Features
+
+* **deps:** update dependency @testing-library/react-native to v9 ([#599](https://github.com/ornikar/shared-configs/issues/599)) ([97e7278](https://github.com/ornikar/shared-configs/commit/97e72787fc6301146523b9a373ed8cfedcfc40ad))
+
+
+
+
+
+## [2.0.1](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react-native@2.0.0...@ornikar/jest-config-react-native@2.0.1) (2021-12-09)
+
+
+### Bug Fixes
+
+* downgrade node minimum required version [no issue] ([#595](https://github.com/ornikar/shared-configs/issues/595)) ([9464687](https://github.com/ornikar/shared-configs/commit/9464687f55aed4a2e683f5d3b992300d000a2b30))
+
+
+
+
+
+# [2.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react-native@1.4.1...@ornikar/jest-config-react-native@2.0.0) (2021-12-07)
+
+
+### Features
+
+* drop node 12 [no issue] ([#584](https://github.com/ornikar/shared-configs/issues/584)) ([e9c00ab](https://github.com/ornikar/shared-configs/commit/e9c00abb5ed3a9c60993b6c652566dd7e71a97e1))
+
+
+### BREAKING CHANGES
+
+* requires node 14.17 or higher 
+
+
+
+
+
+## [1.4.1](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react-native@1.4.0...@ornikar/jest-config-react-native@1.4.1) (2021-12-06)
+
+
+### Bug Fixes
+
+* **jest-config-react-native:** use wrapper option in storybook mock [no issue] ([#582](https://github.com/ornikar/shared-configs/issues/582)) ([234fdbb](https://github.com/ornikar/shared-configs/commit/234fdbb301c5e8f56ea2ef9e27623b004d2a9ae0))
+
+
+
+
+
+# [1.4.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react-native@1.3.0...@ornikar/jest-config-react-native@1.4.0) (2021-12-02)
+
+
+### Features
+
+* **deps:** update react monorepo to v17 (major) ([#571](https://github.com/ornikar/shared-configs/issues/571)) ([b0aa0b8](https://github.com/ornikar/shared-configs/commit/b0aa0b8138978d6722c8a5ff5374d200f4cdd099))
+
+
+
+
+
+# [1.3.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react-native@1.2.0...@ornikar/jest-config-react-native@1.3.0) (2021-12-02)
+
+
+### Features
+
+* **deps:** update dependency jest-expo to v43 ([#565](https://github.com/ornikar/shared-configs/issues/565)) ([09ba17e](https://github.com/ornikar/shared-configs/commit/09ba17eca1dfecda271d772e0d3d938e080fe0c1))
+
+
+
+
+
+# [1.2.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react-native@1.1.0...@ornikar/jest-config-react-native@1.2.0) (2021-11-29)
+
+
+### Features
+
+* add waitFor in stories mock [no issue] ([#550](https://github.com/ornikar/shared-configs/issues/550)) ([9a4f254](https://github.com/ornikar/shared-configs/commit/9a4f25431cf556099b6c48dd52670937526c19b7))
+
+
+
+
+
+# [1.1.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react-native@1.0.1...@ornikar/jest-config-react-native@1.1.0) (2021-11-29)
+
+
+### Features
+
+* **deps:** update dependency @testing-library/react-hooks to v7.0.2 ([#548](https://github.com/ornikar/shared-configs/issues/548)) ([2dfb8c7](https://github.com/ornikar/shared-configs/commit/2dfb8c79b31ad4211cd2a41fc31c432b39b1de3b))
+* **deps:** update dependency @testing-library/react-native to v8 ([#549](https://github.com/ornikar/shared-configs/issues/549)) ([eebf3ef](https://github.com/ornikar/shared-configs/commit/eebf3ef93d92b4729dd2e80358c98ed13d9ee0e8))
+
+
+
+
+
 ## [1.0.1](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react-native@1.0.0...@ornikar/jest-config-react-native@1.0.1) (2021-11-18)
 
 **Note:** Version bump only for package @ornikar/jest-config-react-native

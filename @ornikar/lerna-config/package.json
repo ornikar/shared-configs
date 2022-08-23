@@ -1,19 +1,23 @@
 {
   "name": "@ornikar/lerna-config",
-  "version": "3.1.1",
-  "description": "lerna config",
-  "repository": "ornikar/shared-configs",
+  "version": "7.0.0",
+  "description": "📚 lerna config",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ornikar/shared-configs.git",
+    "directory": "@ornikar/lerna-config"
+  },
   "license": "ISC",
   "engines": {
-    "node": ">=12.13.0"
+    "node": ">=16.16.0"
   },
   "publishConfig": {
     "access": "public"
   },
   "main": "./index.js",
   "bin": {
-    "lerna-config-generate-tsconfig-files": "./bin/generate-tsconfig-files.js",
-    "lerna-config-generate-eslintrc-files": "./bin/generate-eslintrc-files.js"
+    "lerna-config-generate-eslintrc-files": "./bin/generate-eslintrc-files.js",
+    "lerna-config-generate-tsconfig-files": "./bin/generate-tsconfig-files.js"
   },
   "peerDependencies": {
     "lerna": ">= 3.19.0"

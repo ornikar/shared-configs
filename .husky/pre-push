@@ -1,0 +1,7 @@
+#!/usr/bin/env sh
+. "$(dirname "$0")/_/husky.sh"
+
+# autodetect main branch (usually master or main)
+mainBranch=$(LANG=en_US git remote show origin | grep "HEAD branch" | cut -d' ' -f5)
+
+CI=true yarn test --changedSince=origin/$mainBranch

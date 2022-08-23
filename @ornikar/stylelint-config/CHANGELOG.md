@@ -3,6 +3,113 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [9.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/stylelint-config@8.0.7...@ornikar/stylelint-config@9.0.0) (2022-08-17)
+
+
+### chore
+
+* **deps:** update dependency @ornikar/eslint-config to v19 ([#759](https://github.com/ornikar/shared-configs/issues/759)) ([e05eecb](https://github.com/ornikar/shared-configs/commit/e05eecb898d047b44277ce4f65fc724831bb2ece))
+
+
+### BREAKING CHANGES
+
+* **deps:** drop node 14 
+
+
+
+
+
+## [8.0.7](https://github.com/ornikar/shared-configs/compare/@ornikar/stylelint-config@8.0.6...@ornikar/stylelint-config@8.0.7) (2022-06-28)
+
+**Note:** Version bump only for package @ornikar/stylelint-config
+
+
+
+
+
+## [8.0.6](https://github.com/ornikar/shared-configs/compare/@ornikar/stylelint-config@8.0.5...@ornikar/stylelint-config@8.0.6) (2022-06-20)
+
+**Note:** Version bump only for package @ornikar/stylelint-config
+
+
+
+
+
+## [8.0.5](https://github.com/ornikar/shared-configs/compare/@ornikar/stylelint-config@8.0.4...@ornikar/stylelint-config@8.0.5) (2022-04-12)
+
+**Note:** Version bump only for package @ornikar/stylelint-config
+
+
+
+
+
+## [8.0.4](https://github.com/ornikar/shared-configs/compare/@ornikar/stylelint-config@8.0.3...@ornikar/stylelint-config@8.0.4) (2022-03-29)
+
+**Note:** Version bump only for package @ornikar/stylelint-config
+
+
+
+
+
+## [8.0.3](https://github.com/ornikar/shared-configs/compare/@ornikar/stylelint-config@8.0.2...@ornikar/stylelint-config@8.0.3) (2022-03-18)
+
+**Note:** Version bump only for package @ornikar/stylelint-config
+
+
+
+
+
+## [8.0.2](https://github.com/ornikar/shared-configs/compare/@ornikar/stylelint-config@8.0.1...@ornikar/stylelint-config@8.0.2) (2022-02-04)
+
+**Note:** Version bump only for package @ornikar/stylelint-config
+
+
+
+
+
+## [8.0.1](https://github.com/ornikar/shared-configs/compare/@ornikar/stylelint-config@8.0.0...@ornikar/stylelint-config@8.0.1) (2021-12-09)
+
+
+### Bug Fixes
+
+* downgrade node minimum required version [no issue] ([#595](https://github.com/ornikar/shared-configs/issues/595)) ([9464687](https://github.com/ornikar/shared-configs/commit/9464687f55aed4a2e683f5d3b992300d000a2b30))
+
+
+
+
+
+# [8.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/stylelint-config@7.0.4...@ornikar/stylelint-config@8.0.0) (2021-12-07)
+
+
+### Features
+
+* drop node 12 [no issue] ([#584](https://github.com/ornikar/shared-configs/issues/584)) ([e9c00ab](https://github.com/ornikar/shared-configs/commit/e9c00abb5ed3a9c60993b6c652566dd7e71a97e1))
+
+
+### BREAKING CHANGES
+
+* requires node 14.17 or higher 
+
+
+
+
+
+## [7.0.4](https://github.com/ornikar/shared-configs/compare/@ornikar/stylelint-config@7.0.3...@ornikar/stylelint-config@7.0.4) (2021-12-06)
+
+**Note:** Version bump only for package @ornikar/stylelint-config
+
+
+
+
+
+## [7.0.3](https://github.com/ornikar/shared-configs/compare/@ornikar/stylelint-config@7.0.2...@ornikar/stylelint-config@7.0.3) (2021-11-26)
+
+**Note:** Version bump only for package @ornikar/stylelint-config
+
+
+
+
+
 ## [7.0.2](https://github.com/ornikar/shared-configs/compare/@ornikar/stylelint-config@7.0.1...@ornikar/stylelint-config@7.0.2) (2021-10-19)
 
 **Note:** Version bump only for package @ornikar/stylelint-config

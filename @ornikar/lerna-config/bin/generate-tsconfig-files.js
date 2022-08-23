@@ -2,39 +2,107 @@
 
 'use strict';
 
+const { existsSync } = require('fs');
 const fs = require('fs').promises;
-const { getPackages } = require('..');
+const path = require('path');
+// eslint-disable-next-line import/no-extraneous-dependencies
+const prettierOptions = require('@ornikar/prettier-config');
+// eslint-disable-next-line import/no-extraneous-dependencies
+const prettier = require('prettier');
+const { getGraphPackages } = require('..');
 
 (async () => {
-  const lernaPackages = await getPackages();
+  const writeJsonFile = (jsonFilePath, content) => {
+    return fs.writeFile(
+      jsonFilePath,
+      prettier.format(`${JSON.stringify(content, null, 2)}\n`, {
+        filepath: 'tsconfig.json',
+        ...prettierOptions,
+      }),
+    );
+  };
+
+  const { packages, packageLocations } = await getGraphPackages();
+
+  const tsconfigFiles = [];
+  const tsconfigBuildFiles = [];
+
+  const tsPackages = packages.filter((pkg) => {
+    const ornikarConfig = pkg.get('ornikar');
+    const hasEmptyEntries = ornikarConfig && ornikarConfig.entries ? ornikarConfig.entries.length === 0 : false;
+    return !hasEmptyEntries;
+  });
 
   await Promise.all(
-    lernaPackages.map(async (pkg) => {
-      const packagePath = pkg.location;
+    packages.map(async (pkg, index) => {
+      const packagePath = path.relative(path.resolve('.'), packageLocations[index]);
       const tsconfigPath = `${packagePath}/tsconfig.json`;
+      const tsconfigEslintPath = `${packagePath}/tsconfig.eslint.json`;
       const tsconfigBuildPath = `${packagePath}/tsconfig.build.json`;
+
+      if (!tsPackages.includes(pkg)) {
+        await Promise.all([
+          // tsconfig.json
+          fs.unlink(tsconfigPath).catch(() => {}),
+          // tsconfig.build.json
+          fs.unlink(tsconfigBuildPath).catch(() => {}),
+        ]);
+        return;
+      }
+
+      // override is only available for private package, which is examples or apps
+      const tsconfigCurrentContent = pkg.private
+        ? JSON.parse(
+            await fs.readFile(tsconfigPath).catch(() => {
+              return '{}';
+            }),
+          )
+        : {};
+
+      const filteredCurrentCompilerOptions = tsconfigCurrentContent.compilerOptions || {};
+      const isLegacyRootDirDot = !existsSync(path.join(packagePath, 'src'));
+      const compilerOptions = {
+        rootDir: isLegacyRootDirDot ? '.' : 'src',
+        baseUrl: isLegacyRootDirDot ? '.' : './src',
+        composite: true,
+        incremental: true,
+        isolatedModules: true,
+        noEmit: false,
+        noEmitOnError: true,
+        declaration: true,
+        declarationMap: true,
+        emitDeclarationOnly: true,
+        outDir: `../../node_modules/.cache/tsc/${pkg.name}`,
+        tsBuildInfoFile: `../../node_modules/.cache/tsc/${pkg.name}/tsbuildinfo`,
+      };
+      Object.keys(compilerOptions).forEach((key) => {
+        delete filteredCurrentCompilerOptions[key];
+      });
 
       const tsconfigContent = {
         extends: '../../tsconfig.base.json',
+        ...tsconfigCurrentContent,
         compilerOptions: {
-          rootDirs: ['src'],
-          baseUrl: './src',
-          paths: {
-            [pkg.name]: ['./index.ts'],
-          },
+          ...compilerOptions,
+          ...filteredCurrentCompilerOptions,
         },
-        include: ['src', '../../typings'],
+        include: tsconfigCurrentContent.include || [isLegacyRootDirDot ? '.' : 'src', '../../typings'],
+      };
+
+      if (isLegacyRootDirDot) {
+        tsconfigContent.exclude = tsconfigCurrentContent.exclude || ['node_modules'];
+      }
+
+      const tsconfigEslintContent = {
+        extends: './tsconfig.json',
+        compilerOptions: {
+          noEmit: true,
+        },
       };
 
       const tsconfigBuildContent = {
         extends: './tsconfig.json',
         compilerOptions: {
-          rootDir: 'src',
-          composite: true,
-          noEmit: false,
-          isolatedModules: false,
-          emitDeclarationOnly: true,
-          declarationMap: true,
           outDir: 'dist/definitions',
           tsBuildInfoFile: 'dist/tsbuildinfo',
         },
@@ -44,13 +112,26 @@ const { getPackages } = require('..');
           '**/__tests__',
           '**/*.test.ts',
           '**/*.test.tsx',
+          '**/*.stories.ts',
+          '**/*.stories.tsx',
           '**/stories.ts',
           '**/stories.tsx',
           '**/stories/**',
+          '**/stories-list.ts',
         ],
       };
 
-      const dependencies = lernaPackages.filter((lernaPkg) => {
+      // react-scripts doesn't like paths
+      if (!pkg.private) {
+        tsconfigContent.compilerOptions.paths = {
+          [pkg.name]: ['./index.ts'],
+        };
+        tsconfigBuildContent.compilerOptions.paths = {
+          [pkg.name]: ['./index.ts'],
+        };
+      }
+
+      const tsDependencies = tsPackages.filter((lernaPkg) => {
         if (lernaPkg.name === pkg.name) return false;
         return (
           (pkg.dependencies && pkg.dependencies[lernaPkg.name]) ||
@@ -63,29 +144,65 @@ const { getPackages } = require('..');
         (pkg.peerDependencies && pkg.peerDependencies.react) ||
         (pkg.private && pkg.dependencies && pkg.dependencies.react);
 
-      if (hasReact) {
-        tsconfigContent.compilerOptions.jsx = 'preserve';
+      if (hasReact && !['react-native', 'react-jsx', 'preserve'].includes(tsconfigContent.compilerOptions.jsx)) {
+        tsconfigContent.compilerOptions.jsx = 'react-jsx';
       }
 
-      if (dependencies.length > 0) {
-        dependencies.forEach((pkgDep) => {
-          const depPath = `../../../${pkgDep.name}/src`;
-          tsconfigContent.compilerOptions.paths[pkgDep.name] = [`${depPath}/index.ts`];
-          tsconfigContent.compilerOptions.rootDirs.push(depPath);
+      if (tsDependencies.length > 0) {
+        tsDependencies.forEach((pkgDep) => {
+          const pkgRelativePath = path.relative(pkgDep.rootPath, pkgDep.location);
+          const depPath = `../../../${pkgRelativePath}/src`;
+          if (!tsconfigContent.compilerOptions.paths) {
+            tsconfigContent.compilerOptions.paths = {};
+          }
+          tsconfigContent.compilerOptions.paths[pkgDep.name] = [depPath];
+          tsconfigContent.compilerOptions.paths[`${pkgDep.name}/*`] = [`${depPath}/*`];
         });
-        tsconfigBuildContent.references = dependencies.map((pkgDep) => ({
-          path: `../../${pkgDep.name}/tsconfig.build.json`,
-        }));
-        tsconfigBuildContent.compilerOptions.rootDirs = ['src'];
-        tsconfigBuildContent.compilerOptions.paths = {};
+        tsconfigContent.references = tsDependencies.map((pkgDep) => {
+          const pkgRelativePath = path.relative(pkgDep.rootPath, pkgDep.location);
+          return {
+            path: `../../${pkgRelativePath}/tsconfig.json`,
+          };
+        });
+        tsconfigBuildContent.references = tsDependencies.map((pkgDep) => {
+          const pkgRelativePath = path.relative(pkgDep.rootPath, pkgDep.location);
+          return {
+            path: `../../${pkgRelativePath}/tsconfig.build.json`,
+          };
+        });
       }
+
+      tsconfigFiles.push(tsconfigPath);
+      if (!pkg.private) tsconfigBuildFiles.push(tsconfigBuildPath);
 
       await Promise.all([
-        fs.writeFile(tsconfigPath, `${JSON.stringify(tsconfigContent, undefined, 2)}\n`),
-        fs.writeFile(tsconfigBuildPath, `${JSON.stringify(tsconfigBuildContent, undefined, 2)}\n`),
+        // tsconfig.json
+        writeJsonFile(tsconfigPath, tsconfigContent),
+        // tsconfig.eslint.json
+        writeJsonFile(tsconfigEslintPath, tsconfigEslintContent),
+        // tsconfig.build.json
+        pkg.private
+          ? fs.unlink(tsconfigBuildPath).catch(() => {})
+          : writeJsonFile(tsconfigBuildPath, tsconfigBuildContent),
       ]);
     }),
   );
+
+  const [tsConfigContent, tsconfigBuildContent] = [tsconfigFiles, tsconfigBuildFiles].map((files) => {
+    const references = files.map((filePath) => ({ path: filePath }));
+    references.sort((a, b) => a.path.localeCompare(b.path, 'en'));
+    return {
+      files: [],
+      references,
+    };
+  });
+
+  await Promise.all([
+    writeJsonFile('tsconfig.json', tsConfigContent),
+    tsconfigBuildFiles.length === 0
+      ? fs.unlink('tsconfig.build.json').catch(() => {})
+      : writeJsonFile('tsconfig.build.json', tsconfigBuildContent),
+  ]);
 })().catch((err) => {
   console.error(err);
   process.exit(1);

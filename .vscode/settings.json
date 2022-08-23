@@ -1,23 +1,32 @@
 {
   "npm.packageManager": "yarn",
   "search.exclude": {
+    "**/.yarn": true,
+    "**/*.snap": true,
     "**/yarn-error.log": true,
     "**/yarn.lock": true
   },
 
   // save config
   "editor.formatOnSave": true,
+  "eslint.codeActionsOnSave.mode": "all",
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true,
     "source.organizeImports": false
   },
 
+  // jest config
+  "jest.autoRun": {
+    "watch": false,
+    "onStartup": []
+  },
+
   // eslint config
   "eslint.workingDirectories": ["."],
+  "eslint.useESLintClass": true,
   "eslint.options": {
-    "extensions": [".js", ".mjs"],
     "resolvePluginsRelativeTo": ".",
-    "reportUnusedDisableDirectives": true
+    "reportUnusedDisableDirectives": "error"
   },
   "eslint.lintTask.enable": true,
 

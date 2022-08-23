@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`fixtures test-monorepo 0 1`] = `
+"const sayHello = (name = 'world') => {
+  console.log(\`hello \${name}\`);
+};
+
+export { sayHello };
+"
+`;
+
+exports[`fixtures test-monorepo 1 1`] = `
+"var sayHello = function () {
+  var name = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 'world';
+  console.log(\\"hello \\".concat(name));
+};
+
+export { sayHello };
+"
+`;
+
+exports[`fixtures test-monorepo 2 1`] = `
+"const sayHello = (...names) => {
+  console.log(\`hello \${names.join(', ')}\`);
+};
+const testSpread = ({
+  name,
+  ...rest
+} = {}) => {
+  console.log({
+    name,
+    ...rest
+  });
+};
+
+export { sayHello, testSpread };
+"
+`;
+
+exports[`fixtures test-monorepo 3 1`] = `
+"import _objectSpread from '@babel/runtime/helpers/objectSpread2';
+import _objectWithoutProperties from '@babel/runtime/helpers/objectWithoutProperties';
+
+var _excluded = [\\"name\\"];
+var sayHello = function () {
+  for (var _len = arguments.length, names = new Array(_len), _key = 0; _key < _len; _key++) {
+    names[_key] = arguments[_key];
+  }
+
+  console.log(\\"hello \\".concat(names.join(', ')));
+};
+var testSpread = function () {
+  var _ref = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {},
+      name = _ref.name,
+      rest = _objectWithoutProperties(_ref, _excluded);
+
+  console.log(_objectSpread({
+    name: name
+  }, rest));
+};
+
+export { sayHello, testSpread };
+"
+`;

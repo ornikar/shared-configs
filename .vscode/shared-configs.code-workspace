@@ -1,0 +1,145 @@
+{
+  "extensions": {
+    "recommendations": [
+      "EditorConfig.EditorConfig",
+      "esbenp.prettier-vscode",
+      "dbaeumer.vscode-eslint",
+      "Orta.vscode-jest",
+      "ms-vsliveshare.vsliveshare-pack"
+    ],
+    "unwantedRecommendations": []
+  },
+  "settings": {
+    "npm.packageManager": "yarn",
+    "search.exclude": {
+      "**/.yarn": true,
+      "**/*.snap": true,
+      "**/yarn-error.log": true,
+      "**/yarn.lock": true
+    },
+    "editor.formatOnSave": true,
+    "eslint.codeActionsOnSave.mode": "all",
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true,
+      "source.organizeImports": false
+    },
+    "jest.autoRun": {
+      "watch": false,
+      "onStartup": []
+    },
+    "eslint.workingDirectories": ["."],
+    "eslint.useESLintClass": true,
+    "eslint.options": {
+      "resolvePluginsRelativeTo": ".",
+      "reportUnusedDisableDirectives": "error"
+    },
+    "eslint.lintTask.enable": true,
+    "eslint.format.enable": false,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "jest.disabledWorkspaceFolders": [
+      "babel-preset-base",
+      "babel-preset-kitt-universal",
+      "babel-preset-react",
+      "🦔 browserslist-config",
+      "📓 commitlint-config",
+      "🌐 intl-config",
+      "✅⚛️📱 jest-config-react-native",
+      "📚 lerna-config",
+      "🎨 postcss-config",
+      "🚨📄 prettier-config",
+      "⬆️ renovate-config",
+      "🔧 repo-config",
+      "🔧⚛️ repo-config-react",
+      "📦 rollup-config",
+      "📖 storybook-config",
+      "🚨🎨 stylelint-config",
+      "📦 webpack-config"
+    ]
+  },
+  "folders": [
+    {
+      "name": "✨ root",
+      "path": ".."
+    },
+    {
+      "name": "babel-preset-base",
+      "path": "../@ornikar/babel-preset-base"
+    },
+    {
+      "name": "babel-preset-kitt-universal",
+      "path": "../@ornikar/babel-preset-kitt-universal"
+    },
+    {
+      "name": "babel-preset-react",
+      "path": "../@ornikar/babel-preset-react"
+    },
+    {
+      "name": "🦔 browserslist-config",
+      "path": "../@ornikar/browserslist-config"
+    },
+    {
+      "name": "📓 commitlint-config",
+      "path": "../@ornikar/commitlint-config"
+    },
+    {
+      "name": "🌐 intl-config",
+      "path": "../@ornikar/intl-config"
+    },
+    {
+      "name": "✅ jest-config",
+      "path": "../@ornikar/jest-config"
+    },
+    {
+      "name": "✅⚛️ jest-config-react",
+      "path": "../@ornikar/jest-config-react"
+    },
+    {
+      "name": "✅⚛️📱 jest-config-react-native",
+      "path": "../@ornikar/jest-config-react-native"
+    },
+    {
+      "name": "✅⚛️🌎 jest-config-react-native-web",
+      "path": "../@ornikar/jest-config-react-native-web"
+    },
+    {
+      "name": "📚 lerna-config",
+      "path": "../@ornikar/lerna-config"
+    },
+    {
+      "name": "🎨 postcss-config",
+      "path": "../@ornikar/postcss-config"
+    },
+    {
+      "name": "🚨📄 prettier-config",
+      "path": "../@ornikar/prettier-config"
+    },
+    {
+      "name": "⬆️ renovate-config",
+      "path": "../@ornikar/renovate-config"
+    },
+    {
+      "name": "🔧 repo-config",
+      "path": "../@ornikar/repo-config"
+    },
+    {
+      "name": "🔧⚛️ repo-config-react",
+      "path": "../@ornikar/repo-config-react"
+    },
+    {
+      "name": "📦 rollup-config",
+      "path": "../@ornikar/rollup-config"
+    },
+    {
+      "name": "📖 storybook-config",
+      "path": "../@ornikar/storybook-config"
+    },
+    {
+      "name": "🚨🎨 stylelint-config",
+      "path": "../@ornikar/stylelint-config"
+    },
+    {
+      "name": "📦 webpack-config",
+      "path": "../@ornikar/webpack-config"
+    }
+  ]
+}

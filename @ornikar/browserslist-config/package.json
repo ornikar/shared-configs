@@ -1,12 +1,16 @@
 {
   "name": "@ornikar/browserslist-config",
-  "version": "3.3.1",
-  "description": "browserslist config files",
-  "repository": "ornikar/shared-configs",
+  "version": "5.0.0",
+  "description": "🦔 browserslist config files",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ornikar/shared-configs.git",
+    "directory": "@ornikar/browserslist-config"
+  },
   "main": "degraded-support.js",
   "license": "ISC",
   "engines": {
-    "node": ">=12.13.0"
+    "node": ">=16.16.0"
   },
   "publishConfig": {
     "access": "public"

@@ -3,6 +3,208 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/renovate-config@3.11.0...@ornikar/renovate-config@4.0.0) (2022-08-17)
+
+
+### chore
+
+* **deps:** update dependency @ornikar/eslint-config to v19 ([#759](https://github.com/ornikar/shared-configs/issues/759)) ([e05eecb](https://github.com/ornikar/shared-configs/commit/e05eecb898d047b44277ce4f65fc724831bb2ece))
+
+
+### BREAKING CHANGES
+
+* **deps:** drop node 14 
+
+
+
+
+
+# [3.11.0](https://github.com/ornikar/shared-configs/compare/@ornikar/renovate-config@3.10.0...@ornikar/renovate-config@3.11.0) (2022-08-12)
+
+
+### Features
+
+* **renovate-config:** auto open orb updates ([ef7e2f5](https://github.com/ornikar/shared-configs/commit/ef7e2f5070258b2cae74eff7063c43f7971c51a6))
+
+
+
+
+
+# [3.10.0](https://github.com/ornikar/shared-configs/compare/@ornikar/renovate-config@3.9.0...@ornikar/renovate-config@3.10.0) (2022-07-27)
+
+
+### Features
+
+* **renovate-config:** use team frontend-eslint-maintainers [no issue] ([#742](https://github.com/ornikar/shared-configs/issues/742)) ([9036d82](https://github.com/ornikar/shared-configs/commit/9036d82342970bd23b4fb0b53a7d4b1b458d4522))
+
+
+
+
+
+# [3.9.0](https://github.com/ornikar/shared-configs/compare/@ornikar/renovate-config@3.8.0...@ornikar/renovate-config@3.9.0) (2022-06-28)
+
+
+### Features
+
+* **renovate-config:** group linaria packages [no issue] ([#738](https://github.com/ornikar/shared-configs/issues/738)) ([d9896bf](https://github.com/ornikar/shared-configs/commit/d9896bfc88e3c91a0707f566b8b12d1b579c7c53))
+
+
+
+
+
+# [3.8.0](https://github.com/ornikar/shared-configs/compare/@ornikar/renovate-config@3.7.0...@ornikar/renovate-config@3.8.0) (2022-06-20)
+
+
+### Features
+
+* **renovate-config:** configure team frontend-shared-components-maintainers [no issue] ([#716](https://github.com/ornikar/shared-configs/issues/716)) ([c451f93](https://github.com/ornikar/shared-configs/commit/c451f936b0c27b487fc15106a9b75ea1d7787cc9))
+* **renovate-config:** group flaship packages ([#703](https://github.com/ornikar/shared-configs/issues/703)) ([3b17f75](https://github.com/ornikar/shared-configs/commit/3b17f75c162de55658cc66214db46b995be349fc))
+
+
+
+
+
+# [3.7.0](https://github.com/ornikar/shared-configs/compare/@ornikar/renovate-config@3.6.0...@ornikar/renovate-config@3.7.0) (2022-04-26)
+
+
+### Features
+
+* **renovate-config:** team frontend-shared-components-maintainers [no issue] ([#701](https://github.com/ornikar/shared-configs/issues/701)) ([d662b45](https://github.com/ornikar/shared-configs/commit/d662b45d9f1b822deb15b10005644859a0f7fcfa))
+
+
+
+
+
+# [3.6.0](https://github.com/ornikar/shared-configs/compare/@ornikar/renovate-config@3.5.0...@ornikar/renovate-config@3.6.0) (2022-04-13)
+
+
+### Features
+
+* **renovate-config:** add react-forms-universal in components ([8ea590d](https://github.com/ornikar/shared-configs/commit/8ea590d3794b3c35589156770fd8407c1e11a4bd))
+
+
+
+
+
+# [3.5.0](https://github.com/ornikar/shared-configs/compare/@ornikar/renovate-config@3.4.1...@ornikar/renovate-config@3.5.0) (2022-04-12)
+
+
+### Features
+
+* **renovate-config:** auto open and merge patch+feat type-fest ([ad08a29](https://github.com/ornikar/shared-configs/commit/ad08a29e1d3f5213521dbf9668504a7da70f12e2))
+
+
+
+
+
+## [3.4.1](https://github.com/ornikar/shared-configs/compare/@ornikar/renovate-config@3.4.0...@ornikar/renovate-config@3.4.1) (2022-03-31)
+
+
+### Bug Fixes
+
+* **renovate-config:** add runtime-native-app to Runtime App Ornikar group ([23ce057](https://github.com/ornikar/shared-configs/commit/23ce057ee3918a557a4d79a81d3229de861c5716))
+* **renovate-config:** add sourceUrlPrefixes for components ([9f92a4b](https://github.com/ornikar/shared-configs/commit/9f92a4b3d4cc88bf64b5a0ae513fa0169546c936))
+
+
+
+
+
+# [3.4.0](https://github.com/ornikar/shared-configs/compare/@ornikar/renovate-config@3.3.0...@ornikar/renovate-config@3.4.0) (2022-03-29)
+
+
+### Features
+
+* **renovate-config:** auto open expo-cli prs ([150209c](https://github.com/ornikar/shared-configs/commit/150209ce5a66c9a5420897251272878ae675e502))
+
+
+
+
+
+# [3.3.0](https://github.com/ornikar/shared-configs/compare/@ornikar/renovate-config@3.2.1...@ornikar/renovate-config@3.3.0) (2022-02-10)
+
+
+### Bug Fixes
+
+* **renovate-config:** prevent renovate to reopen prs ([e656299](https://github.com/ornikar/shared-configs/commit/e656299495d86a217bf03e66806336e4e25ba1a6))
+
+
+### Features
+
+* **renovate-config:** group runtime-app ([bc24eed](https://github.com/ornikar/shared-configs/commit/bc24eed7f96f3637db2ba985e8966279222fa900))
+* change lockFileMaintenance schedule ([8e761e5](https://github.com/ornikar/shared-configs/commit/8e761e5cacc75f134bb03b270dafb7f0a9a3bb71))
+* **renovate-config:** enable lockfile maintenance prs ([0bf660a](https://github.com/ornikar/shared-configs/commit/0bf660a51437cececc3275ae8f2e1a6ae94ef773))
+
+
+
+
+
+## [3.2.1](https://github.com/ornikar/shared-configs/compare/@ornikar/renovate-config@3.2.0...@ornikar/renovate-config@3.2.1) (2022-02-04)
+
+**Note:** Version bump only for package @ornikar/renovate-config
+
+
+
+
+
+# [3.2.0](https://github.com/ornikar/shared-configs/compare/@ornikar/renovate-config@3.1.0...@ornikar/renovate-config@3.2.0) (2022-01-24)
+
+
+### Features
+
+* **renovate-config:** add packages in patch automerge ([5300a7e](https://github.com/ornikar/shared-configs/commit/5300a7e969b0b809d5cbc6e8f0f959ba5010e882))
+
+
+
+
+
+# [3.1.0](https://github.com/ornikar/shared-configs/compare/@ornikar/renovate-config@3.0.1...@ornikar/renovate-config@3.1.0) (2021-12-14)
+
+
+### Bug Fixes
+
+* **renovate-config:** typo ([c26ec1e](https://github.com/ornikar/shared-configs/commit/c26ec1e84e8e95c9ca351b6f362efbae58bc64f3))
+
+
+### Features
+
+* **renovate-config:** group jest configs ([4d1427a](https://github.com/ornikar/shared-configs/commit/4d1427ac21156afd81d8d29f55935ee70ec80734))
+
+
+
+
+
+## [3.0.1](https://github.com/ornikar/shared-configs/compare/@ornikar/renovate-config@3.0.0...@ornikar/renovate-config@3.0.1) (2021-12-09)
+
+
+### Bug Fixes
+
+* downgrade node minimum required version [no issue] ([#595](https://github.com/ornikar/shared-configs/issues/595)) ([9464687](https://github.com/ornikar/shared-configs/commit/9464687f55aed4a2e683f5d3b992300d000a2b30))
+
+
+
+
+
+# [3.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/renovate-config@2.13.0...@ornikar/renovate-config@3.0.0) (2021-12-07)
+
+
+### Bug Fixes
+
+* **renovate-confg:** change eslint configs group as no longer in shared-configs [no issue] ([#579](https://github.com/ornikar/shared-configs/issues/579)) ([8df3de8](https://github.com/ornikar/shared-configs/commit/8df3de877eaa6bf8e903f0972b77d634efd7e8fc))
+
+
+### Features
+
+* drop node 12 [no issue] ([#584](https://github.com/ornikar/shared-configs/issues/584)) ([e9c00ab](https://github.com/ornikar/shared-configs/commit/e9c00abb5ed3a9c60993b6c652566dd7e71a97e1))
+
+
+### BREAKING CHANGES
+
+* requires node 14.17 or higher 
+
+
+
+
+
 # [2.13.0](https://github.com/ornikar/shared-configs/compare/@ornikar/renovate-config@2.12.0...@ornikar/renovate-config@2.13.0) (2021-05-04)
 
 

@@ -1,25 +1,33 @@
 {
   "name": "@ornikar/repo-config",
-  "version": "6.1.1",
-  "description": "repo config",
-  "repository": "ornikar/shared-configs",
+  "version": "10.0.0",
+  "description": "🔧 repo config",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ornikar/shared-configs.git",
+    "directory": "@ornikar/repo-config"
+  },
   "license": "ISC",
   "engines": {
-    "node": ">=12.13.0"
+    "node": ">=16.16.0"
   },
   "publishConfig": {
     "access": "public"
   },
   "bin": {
+    "commitlint": "./bin/commitlint.js",
+    "ornikar-lint-staged": "./bin/ornikar-lint-staged.mjs",
+    "ornikar-prettier-check": "./bin/ornikar-prettier-check.sh",
+    "ornikar-prettier-fix": "./bin/ornikar-prettier-fix.sh",
     "ornikar-repo-config-postinstall": "./bin/ornikar-repo-config-postinstall.js"
   },
   "dependencies": {
-    "@commitlint/cli": "13.2.1",
-    "@ornikar/commitlint-config": "^3.3.0",
-    "husky": "7.0.4",
-    "lint-staged": "11.2.6",
+    "@commitlint/cli": "17.0.3",
+    "@ornikar/commitlint-config": "^5.0.0",
+    "husky": "8.0.1",
+    "lint-staged": "13.0.3",
+    "prettier-plugin-properties": "0.1.0",
     "semver": "^7.3.5",
-    "which-pm-runs": "^1.0.0",
-    "yarn-deduplicate": "3.1.0"
+    "which-pm-runs": "^1.1.0"
   }
 }

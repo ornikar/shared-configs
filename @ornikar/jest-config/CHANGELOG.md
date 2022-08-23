@@ -3,6 +3,125 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [9.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config@8.0.0...@ornikar/jest-config@9.0.0) (2022-08-17)
+
+
+### chore
+
+* **deps:** update dependency @ornikar/eslint-config to v19 ([#759](https://github.com/ornikar/shared-configs/issues/759)) ([e05eecb](https://github.com/ornikar/shared-configs/commit/e05eecb898d047b44277ce4f65fc724831bb2ece))
+
+
+### BREAKING CHANGES
+
+* **deps:** drop node 14 
+
+
+
+
+
+# [8.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config@7.1.5...@ornikar/jest-config@8.0.0) (2022-07-27)
+
+
+### Bug Fixes
+
+* **ornikar-test-coverage:** jest collect coverage output path [no issue] ([#747](https://github.com/ornikar/shared-configs/issues/747)) ([d2facdf](https://github.com/ornikar/shared-configs/commit/d2facdfb7080e2193bcf4910dd2c3f8fda9bf682))
+
+
+### BREAKING CHANGES
+
+* **ornikar-test-coverage:** jest collect coverage output directory needs to be coverage
+
+
+
+
+
+## [7.1.5](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config@7.1.4...@ornikar/jest-config@7.1.5) (2022-06-20)
+
+**Note:** Version bump only for package @ornikar/jest-config
+
+
+
+
+
+## [7.1.4](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config@7.1.3...@ornikar/jest-config@7.1.4) (2022-02-04)
+
+**Note:** Version bump only for package @ornikar/jest-config
+
+
+
+
+
+## [7.1.3](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config@7.1.2...@ornikar/jest-config@7.1.3) (2022-01-17)
+
+
+### Bug Fixes
+
+* **jest-config:** support next-gen jest-circus runner [no issue] ([#570](https://github.com/ornikar/shared-configs/issues/570)) ([f02c489](https://github.com/ornikar/shared-configs/commit/f02c489413199dd4e1ef8319ad3e429273596e63))
+
+
+
+
+
+## [7.1.2](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config@7.1.1...@ornikar/jest-config@7.1.2) (2022-01-07)
+
+
+### Bug Fixes
+
+* shared configs/fix jest configs CME-51 ([#618](https://github.com/ornikar/shared-configs/issues/618)) ([bf678b1](https://github.com/ornikar/shared-configs/commit/bf678b1e4740bdec45614caef6f46df0a1510274))
+
+
+
+
+
+## [7.1.1](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config@7.1.0...@ornikar/jest-config@7.1.1) (2022-01-05)
+
+
+### Bug Fixes
+
+* **jest-config:** add missing require.resolve for globalSetup ([a453189](https://github.com/ornikar/shared-configs/commit/a453189d2752af2f611c0f5be45ee8793cae9c99))
+
+
+
+
+
+# [7.1.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config@7.0.1...@ornikar/jest-config@7.1.0) (2022-01-05)
+
+
+### Features
+
+* **jest-config:** set timezone to utc in config ([#616](https://github.com/ornikar/shared-configs/issues/616)) ([8d77d7f](https://github.com/ornikar/shared-configs/commit/8d77d7fc08b27ce87a9de741980761d301042633))
+
+
+
+
+
+## [7.0.1](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config@7.0.0...@ornikar/jest-config@7.0.1) (2021-12-09)
+
+
+### Bug Fixes
+
+* downgrade node minimum required version [no issue] ([#595](https://github.com/ornikar/shared-configs/issues/595)) ([9464687](https://github.com/ornikar/shared-configs/commit/9464687f55aed4a2e683f5d3b992300d000a2b30))
+
+
+
+
+
+# [7.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config@6.0.0...@ornikar/jest-config@7.0.0) (2021-12-07)
+
+
+### Features
+
+* drop node 12 [no issue] ([#584](https://github.com/ornikar/shared-configs/issues/584)) ([e9c00ab](https://github.com/ornikar/shared-configs/commit/e9c00abb5ed3a9c60993b6c652566dd7e71a97e1))
+
+
+### BREAKING CHANGES
+
+* requires node 14.17 or higher 
+
+
+
+
+
 # [6.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config@5.5.0...@ornikar/jest-config@6.0.0) (2021-11-18)
 
 

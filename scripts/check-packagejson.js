@@ -19,6 +19,7 @@ let hasError = false;
 packages.forEach((pkgName) => {
   const pkg = require(`${packagesDir}/${pkgName}/package.json`);
   Object.keys(rootPkg.devDependencies).forEach((dep) => {
+    if (dep === 'jest') return;
     const expected = rootPkg.devDependencies[dep];
     if (pkg.devDependencies && pkg.devDependencies[dep] && pkg.devDependencies[dep] !== expected) {
       console.error(`${pkgName}: dev dependency ${dep} is ${pkg.devDependencies[dep]}, expected ${expected}`);

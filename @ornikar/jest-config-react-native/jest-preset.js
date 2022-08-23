@@ -1,29 +1,38 @@
 'use strict';
 
-const jestPreset = require('@ornikar/jest-config/jest-preset');
+const baseOrnikarPreset = require('@ornikar/jest-config-react/jest-preset');
 const expoPreset = require('jest-expo/jest-preset');
-const mergeWith = require('lodash.mergewith');
+const { customTransforms } = require('./customTransforms');
 
-function customizer(objValue, srcValue) {
-  if (Array.isArray(objValue)) {
-    // eslint-disable-next-line unicorn/prefer-spread
-    return objValue.concat(srcValue);
-  }
-  return undefined;
-}
-
-const basePreset = mergeWith(expoPreset, jestPreset, customizer);
-
-module.exports = mergeWith(
-  basePreset,
-  {
-    testMatch: ['<rootDir>/src/**/stories.{ts,tsx}', '<rootDir>/src/**/*.stories.{ts,tsx}'],
-    moduleNameMapper: {
-      '\\.css': '<rootDir>/src/__mocks__/styleMock.ts',
-      '^@storybook/addon-actions$': require.resolve('./__mocks__/@storybook/addon-actions.js'),
-      '@storybook/react-native$': require.resolve('./__mocks__/@storybook/react-native.jsx'),
-      '^@storybook/react-native$': require.resolve('./__mocks__/@storybook/react-native.jsx'),
-    },
+module.exports = {
+  ...baseOrnikarPreset,
+  ...expoPreset,
+  setupFiles: [...expoPreset.setupFiles, ...baseOrnikarPreset.setupFiles],
+  testMatch: baseOrnikarPreset.testMatch,
+  moduleNameMapper: {
+    ...expoPreset.moduleNameMapper,
+    '^@storybook/addon-actions$': require.resolve('./__mocks__/@storybook/addon-actions.js'),
+    '@storybook/react-native$': require.resolve('./__mocks__/@storybook/react-native.jsx'),
+    '^@storybook/react-native$': require.resolve('./__mocks__/@storybook/react-native.jsx'),
+    '@storybook/react$': require.resolve('./__mocks__/@storybook/react-native.jsx'),
+    '^@storybook/react$': require.resolve('./__mocks__/@storybook/react-native.jsx'),
   },
-  customizer,
-);
+  // override expo transformIgnorePatterns with custom config
+  transformIgnorePatterns: [
+    'node_modules/(?!react-native|@react-native|expo|@expo(nent)?/.*|react-navigation|@react-navigation/.*|native-base)',
+  ],
+  transform: {
+    ...customTransforms,
+
+    // remove svg asset transformer from expo config, as we configure svg with custom metro transformer
+    ...Object.fromEntries(
+      Object.entries(expoPreset.transform).map(([key, value]) => {
+        if (key.includes('|svg|')) return [key.replace('|svg|', '|'), value];
+        return [key, value];
+      }),
+    ),
+    // legacy support, use { ReactComponent } from .svg instead.
+    '\\.inline\\.svg$': require.resolve('@ornikar/jest-config-react/transformers/svg-transformer-inline.js'),
+    '\\.svg$': require.resolve('@ornikar/jest-config-react/transformers/svg-transformer.js'),
+  },
+};

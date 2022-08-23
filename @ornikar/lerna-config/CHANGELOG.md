@@ -3,6 +3,362 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/lerna-config@6.4.1...@ornikar/lerna-config@7.0.0) (2022-08-17)
+
+
+### chore
+
+* **deps:** update dependency @ornikar/eslint-config to v19 ([#759](https://github.com/ornikar/shared-configs/issues/759)) ([e05eecb](https://github.com/ornikar/shared-configs/commit/e05eecb898d047b44277ce4f65fc724831bb2ece))
+
+
+### BREAKING CHANGES
+
+* **deps:** drop node 14 
+
+
+
+
+
+## [6.4.1](https://github.com/ornikar/shared-configs/compare/@ornikar/lerna-config@6.4.0...@ornikar/lerna-config@6.4.1) (2022-08-09)
+
+
+### Bug Fixes
+
+* fix isLegacyRootDirDot test ([4448062](https://github.com/ornikar/shared-configs/commit/4448062f68ab4673335504ec76414920714de7f8))
+
+
+
+
+
+# [6.4.0](https://github.com/ornikar/shared-configs/compare/@ornikar/lerna-config@6.3.6...@ornikar/lerna-config@6.4.0) (2022-08-05)
+
+
+### Features
+
+* **lerna-config:** adapt generator for legacy project [no issue] ([#757](https://github.com/ornikar/shared-configs/issues/757)) ([00d8bbf](https://github.com/ornikar/shared-configs/commit/00d8bbf0d8236d99e5fe91734d4a265a11252d88))
+
+
+
+
+
+## [6.3.6](https://github.com/ornikar/shared-configs/compare/@ornikar/lerna-config@6.3.5...@ornikar/lerna-config@6.3.6) (2022-06-21)
+
+
+### Bug Fixes
+
+* **lerna-config:** eslint generator root package in monorepo ARCH-1507 ([#730](https://github.com/ornikar/shared-configs/issues/730)) ([88d2ba6](https://github.com/ornikar/shared-configs/commit/88d2ba6f0ca507c6c007b4aff9fbdb8b23163cef))
+* **lerna-config:** fix tsconfig generation when no tsconfig exists [no issue] ([#732](https://github.com/ornikar/shared-configs/issues/732)) ([6eef413](https://github.com/ornikar/shared-configs/commit/6eef4132d879b0ce1cbdb7768f452f886e8517bb))
+
+
+
+
+
+## [6.3.5](https://github.com/ornikar/shared-configs/compare/@ornikar/lerna-config@6.3.4...@ornikar/lerna-config@6.3.5) (2022-06-20)
+
+**Note:** Version bump only for package @ornikar/lerna-config
+
+
+
+
+
+## [6.3.4](https://github.com/ornikar/shared-configs/compare/@ornikar/lerna-config@6.3.3...@ornikar/lerna-config@6.3.4) (2022-03-08)
+
+**Note:** Version bump only for package @ornikar/lerna-config
+
+
+
+
+
+## [6.3.3](https://github.com/ornikar/shared-configs/compare/@ornikar/lerna-config@6.3.2...@ornikar/lerna-config@6.3.3) (2022-02-14)
+
+
+### Bug Fixes
+
+* **lerna-config:** fix tsconfig generator with non-ts packages ([6e58239](https://github.com/ornikar/shared-configs/commit/6e5823924a26827d83360ec9c207ed836d1f41b3))
+
+
+
+
+
+## [6.3.2](https://github.com/ornikar/shared-configs/compare/@ornikar/lerna-config@6.3.1...@ornikar/lerna-config@6.3.2) (2022-02-14)
+
+
+### Bug Fixes
+
+* **lerna-config:** fix eslint by not using tsc cache [no issue] ([#655](https://github.com/ornikar/shared-configs/issues/655)) ([e60b5b1](https://github.com/ornikar/shared-configs/commit/e60b5b173dd69cf0bb75d05f66e58e29c3b7efc1))
+
+
+
+
+
+## [6.3.1](https://github.com/ornikar/shared-configs/compare/@ornikar/lerna-config@6.3.0...@ornikar/lerna-config@6.3.1) (2022-02-11)
+
+
+### Bug Fixes
+
+* **lerna-config:** tsBuildInfoFile path ([3f41ec4](https://github.com/ornikar/shared-configs/commit/3f41ec46993487e8a30624fd8aceb303476c1f04))
+
+
+
+
+
+# [6.3.0](https://github.com/ornikar/shared-configs/compare/@ornikar/lerna-config@6.2.2...@ornikar/lerna-config@6.3.0) (2022-02-11)
+
+
+### Features
+
+* **lerna-config:** store tsc cache in monorepo node_modules [no issue] ([#653](https://github.com/ornikar/shared-configs/issues/653)) ([25dcc33](https://github.com/ornikar/shared-configs/commit/25dcc33743d4ddc3b2a8f776fb988d3f1dc3990b))
+
+
+
+
+
+## [6.2.2](https://github.com/ornikar/shared-configs/compare/@ornikar/lerna-config@6.2.1...@ornikar/lerna-config@6.2.2) (2022-02-10)
+
+
+### Bug Fixes
+
+* add missing baseUrl in tsconfig ([9ebd397](https://github.com/ornikar/shared-configs/commit/9ebd39703ba058c7d1503216a5e830c2a319f00d))
+
+
+
+
+
+## [6.2.1](https://github.com/ornikar/shared-configs/compare/@ornikar/lerna-config@6.2.0...@ornikar/lerna-config@6.2.1) (2022-02-10)
+
+
+### Bug Fixes
+
+* **lerna-config:** sort references ([17221d5](https://github.com/ornikar/shared-configs/commit/17221d5db7bb2e6c2738d903d087669aa2dafd78))
+
+
+
+
+
+# [6.2.0](https://github.com/ornikar/shared-configs/compare/@ornikar/lerna-config@6.1.2...@ornikar/lerna-config@6.2.0) (2022-02-09)
+
+
+### Features
+
+* **lerna-config:** update tsconfig generator [no issue] ([#646](https://github.com/ornikar/shared-configs/issues/646)) ([42965f9](https://github.com/ornikar/shared-configs/commit/42965f969c395db4e38c95f2ba40197ec5345385))
+
+
+
+
+
+## [6.1.2](https://github.com/ornikar/shared-configs/compare/@ornikar/lerna-config@6.1.1...@ornikar/lerna-config@6.1.2) (2022-02-04)
+
+**Note:** Version bump only for package @ornikar/lerna-config
+
+
+
+
+
+## [6.1.1](https://github.com/ornikar/shared-configs/compare/@ornikar/lerna-config@6.1.0...@ornikar/lerna-config@6.1.1) (2022-02-02)
+
+
+### Bug Fixes
+
+* **lerna-config:** fix package order in graph packages ([8126db8](https://github.com/ornikar/shared-configs/commit/8126db89bbe23950f8509c0e98feb5acb84c2d2b))
+
+
+
+
+
+# [6.1.0](https://github.com/ornikar/shared-configs/compare/@ornikar/lerna-config@6.0.0...@ornikar/lerna-config@6.1.0) (2022-01-14)
+
+
+### Features
+
+* **lerna-config:** get sync packages [no issue] ([#622](https://github.com/ornikar/shared-configs/issues/622)) ([5bf2f6f](https://github.com/ornikar/shared-configs/commit/5bf2f6f03ce53bb5461d63a0cf30750a5194f3ae))
+
+
+
+
+
+# [6.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/lerna-config@5.1.3...@ornikar/lerna-config@6.0.0) (2022-01-07)
+
+
+### Features
+
+* **lerna-config:** use react-jsx in tsconfig [no issue] ([#619](https://github.com/ornikar/shared-configs/issues/619)) ([2fc4e5e](https://github.com/ornikar/shared-configs/commit/2fc4e5e8b5c36ada22791d6031231c9c4f3dea7b))
+
+
+### BREAKING CHANGES
+
+* **lerna-config:** requires to reapply manually lerna-config generators 
+
+
+
+
+
+## [5.1.3](https://github.com/ornikar/shared-configs/compare/@ornikar/lerna-config@5.1.2...@ornikar/lerna-config@5.1.3) (2021-12-20)
+
+
+### Bug Fixes
+
+* **lerna-config:** write json using prettier ([33421cc](https://github.com/ornikar/shared-configs/commit/33421cce9b4724aec8b5b1a6a60f9f9008766338))
+
+
+
+
+
+## [5.1.2](https://github.com/ornikar/shared-configs/compare/@ornikar/lerna-config@5.1.1...@ornikar/lerna-config@5.1.2) (2021-12-20)
+
+
+### Bug Fixes
+
+* **lerna-config:** allow library to self import [no issue] ([#609](https://github.com/ornikar/shared-configs/issues/609)) ([0603f32](https://github.com/ornikar/shared-configs/commit/0603f32e674a50b7d446734a7f92b91e69e31c11))
+* **lerna-config:** sort packages to prevent random changes [no issue] ([#604](https://github.com/ornikar/shared-configs/issues/604)) ([c031cfe](https://github.com/ornikar/shared-configs/commit/c031cfe0db76ac38d1a977eb88086905c2059ccc))
+
+
+
+
+
+## [5.1.1](https://github.com/ornikar/shared-configs/compare/@ornikar/lerna-config@5.1.0...@ornikar/lerna-config@5.1.1) (2021-12-14)
+
+
+### Reverts
+
+* feat(deps): update dependency @pob/pretty-eslint-config to v3 ([#600](https://github.com/ornikar/shared-configs/issues/600)) ([adf27e8](https://github.com/ornikar/shared-configs/commit/adf27e800405ac1c3e39f75370907507ac2a58a2))
+
+
+
+
+
+# [5.1.0](https://github.com/ornikar/shared-configs/compare/@ornikar/lerna-config@5.0.2...@ornikar/lerna-config@5.1.0) (2021-12-14)
+
+
+### Features
+
+* **deps:** update dependency @pob/pretty-eslint-config to v3 ([#600](https://github.com/ornikar/shared-configs/issues/600)) ([e861979](https://github.com/ornikar/shared-configs/commit/e8619796a127676f4460a517ff52bf5449f1104c))
+
+
+
+
+
+## [5.0.2](https://github.com/ornikar/shared-configs/compare/@ornikar/lerna-config@5.0.1...@ornikar/lerna-config@5.0.2) (2021-12-10)
+
+
+### Bug Fixes
+
+* **lerna-config:** support empty entries in generators [no issue] ([#597](https://github.com/ornikar/shared-configs/issues/597)) ([6a6cdb2](https://github.com/ornikar/shared-configs/commit/6a6cdb2dd55e02676b9ff9757ec922cd2c0d3c60))
+
+
+
+
+
+## [5.0.1](https://github.com/ornikar/shared-configs/compare/@ornikar/lerna-config@5.0.0...@ornikar/lerna-config@5.0.1) (2021-12-09)
+
+
+### Bug Fixes
+
+* downgrade node minimum required version [no issue] ([#595](https://github.com/ornikar/shared-configs/issues/595)) ([9464687](https://github.com/ornikar/shared-configs/commit/9464687f55aed4a2e683f5d3b992300d000a2b30))
+
+
+
+
+
+# [5.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/lerna-config@4.0.0...@ornikar/lerna-config@5.0.0) (2021-12-07)
+
+
+### Bug Fixes
+
+* **lerna-config:** dont add dep path in rootDirs [no issue] ([#591](https://github.com/ornikar/shared-configs/issues/591)) ([8e0b197](https://github.com/ornikar/shared-configs/commit/8e0b197c2d87442360bcf536dbe79aeee7a623b7))
+
+
+### BREAKING CHANGES
+
+* **lerna-config:** requires to manually run generator and commit tsconfig files 
+
+
+
+
+
+# [4.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/lerna-config@3.2.5...@ornikar/lerna-config@4.0.0) (2021-12-07)
+
+
+### Features
+
+* drop node 12 [no issue] ([#584](https://github.com/ornikar/shared-configs/issues/584)) ([e9c00ab](https://github.com/ornikar/shared-configs/commit/e9c00abb5ed3a9c60993b6c652566dd7e71a97e1))
+
+
+### BREAKING CHANGES
+
+* requires node 14.17 or higher 
+
+
+
+
+
+## [3.2.5](https://github.com/ornikar/shared-configs/compare/@ornikar/lerna-config@3.2.4...@ornikar/lerna-config@3.2.5) (2021-12-06)
+
+
+### Bug Fixes
+
+* **lerna-config:** match with rollup-config to determine when to build with rollup, using package.private [no issue] ([#580](https://github.com/ornikar/shared-configs/issues/580)) ([c0ca8fc](https://github.com/ornikar/shared-configs/commit/c0ca8fcf0e0e1fc7844762682ba5cedf3cc2bc33))
+
+
+
+
+
+## [3.2.4](https://github.com/ornikar/shared-configs/compare/@ornikar/lerna-config@3.2.3...@ornikar/lerna-config@3.2.4) (2021-12-06)
+
+
+### Bug Fixes
+
+* **lerna-config:** allow apps and examples to extends from something else [no issue] ([#578](https://github.com/ornikar/shared-configs/issues/578)) ([cd71e75](https://github.com/ornikar/shared-configs/commit/cd71e7516372d40c894365e6ec64beaf5f7c3d18))
+
+
+
+
+
+## [3.2.3](https://github.com/ornikar/shared-configs/compare/@ornikar/lerna-config@3.2.2...@ornikar/lerna-config@3.2.3) (2021-12-06)
+
+
+### Bug Fixes
+
+* **lerna-config:** add missing stories files in tsconfig.build.json [no issue] ([#574](https://github.com/ornikar/shared-configs/issues/574)) ([48c98e4](https://github.com/ornikar/shared-configs/commit/48c98e4d3c2979231291777ac2ae3c16f30b178d))
+* **lerna-config:** tsconfig allow 'react-native', 'react-jsx', 'preserve' and go back to 'preserve' by default MB2C-102 ([#576](https://github.com/ornikar/shared-configs/issues/576)) ([2961280](https://github.com/ornikar/shared-configs/commit/29612805805a84536ade3b9da79423c2cddf1aef))
+
+
+
+
+
+## [3.2.2](https://github.com/ornikar/shared-configs/compare/@ornikar/lerna-config@3.2.1...@ornikar/lerna-config@3.2.2) (2021-11-30)
+
+
+### Bug Fixes
+
+* **lerna-config:** sort packages [no issue] ([#551](https://github.com/ornikar/shared-configs/issues/551)) ([5c0cb86](https://github.com/ornikar/shared-configs/commit/5c0cb86656eee3fbfde984c054b3548d5e38d7e7))
+
+
+
+
+
+## [3.2.1](https://github.com/ornikar/shared-configs/compare/@ornikar/lerna-config@3.2.0...@ornikar/lerna-config@3.2.1) (2021-11-29)
+
+
+### Bug Fixes
+
+* **lerna-config:** dont add paths in tsconfig for private packages [no issue] ([#544](https://github.com/ornikar/shared-configs/issues/544)) ([b11c2d5](https://github.com/ornikar/shared-configs/commit/b11c2d508549ec5183a2f60c4d2c9974621b6ec5))
+
+
+
+
+
+# [3.2.0](https://github.com/ornikar/shared-configs/compare/@ornikar/lerna-config@3.1.1...@ornikar/lerna-config@3.2.0) (2021-11-29)
+
+
+### Features
+
+* **lerna-config:** support monorepo with apps or examples [no issue] ([#542](https://github.com/ornikar/shared-configs/issues/542)) ([540afc4](https://github.com/ornikar/shared-configs/commit/540afc4c97e5d76dd915531be835f30ad82519ba))
+* **lerna-config:** support react 17 [no issue] ([#541](https://github.com/ornikar/shared-configs/issues/541)) ([1b7eea4](https://github.com/ornikar/shared-configs/commit/1b7eea41f5cfb5219dea12d5abcfbfcdc3a82376))
+
+
+
+
+
 ## [3.1.1](https://github.com/ornikar/shared-configs/compare/@ornikar/lerna-config@3.1.0...@ornikar/lerna-config@3.1.1) (2021-09-07)
 
 

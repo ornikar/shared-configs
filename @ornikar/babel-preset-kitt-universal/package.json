@@ -1,0 +1,39 @@
+{
+  "name": "@ornikar/babel-preset-kitt-universal",
+  "version": "2.0.0",
+  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ornikar/shared-configs.git",
+    "directory": "@ornikar/babel-preset-kitt-universal"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=16.16.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "prettier": "@ornikar/prettier-config",
+  "main": "./lib/index.js",
+  "sideEffects": false,
+  "scripts": {
+    "test": "jest"
+  },
+  "peerDependencies": {
+    "@babel/core": "^7.0.0"
+  },
+  "dependencies": {
+    "babel-plugin-linaria-css-to-undefined": "^0.3.0",
+    "babel-plugin-react-native": "^1.0.1",
+    "babel-plugin-styled-components": "^2.0.2",
+    "babel-plugin-styled-components-react-native-web": "^0.2.2"
+  },
+  "devDependencies": {
+    "@babel/core": "7.16.7",
+    "@babel/preset-react": "7.16.7",
+    "@linaria/babel-preset": "3.0.0-beta.15",
+    "@linaria/shaker": "3.0.0-beta.15",
+    "react-refresh": "0.14.0"
+  }
+}

@@ -1,12 +1,17 @@
 {
   "name": "@ornikar/prettier-config",
-  "version": "3.3.4",
-  "description": "prettier config files",
-  "repository": "ornikar/shared-configs",
+  "version": "6.0.0",
+  "description": "🚨📄 prettier config files",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ornikar/shared-configs.git",
+    "directory": "@ornikar/prettier-config"
+  },
+  "prettier": "./index.js",
   "main": "index.js",
   "license": "ISC",
   "engines": {
-    "node": ">=12.13.0"
+    "node": ">=16.16.0"
   },
   "publishConfig": {
     "access": "public"
@@ -15,6 +20,6 @@
     "prettier": "^2.0.4"
   },
   "devDependencies": {
-    "prettier": "2.4.1"
+    "prettier": "2.7.1"
   }
 }

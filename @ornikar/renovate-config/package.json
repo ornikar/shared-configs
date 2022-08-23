@@ -1,9 +1,14 @@
 {
   "name": "@ornikar/renovate-config",
-  "version": "2.13.0",
-  "description": "renovate shared config",
+  "version": "4.0.0",
+  "description": "⬆️ renovate shared config",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ornikar/shared-configs.git",
+    "directory": "@ornikar/renovate-config"
+  },
   "engines": {
-    "node": ">=12.13.0"
+    "node": ">=16.16.0"
   },
   "publishConfig": {
     "access": "public"
@@ -15,6 +20,7 @@
       "prConcurrentLimit": 40,
       "masterIssue": true,
       "masterIssueApproval": true,
+      "recreateClosed": true,
       "rebaseStalePrs": true,
       "updateNotScheduled": false,
       "postUpdateOptions": [
@@ -28,6 +34,10 @@
       "reviewers": [
         "team:frontend-architects"
       ],
+      "lockFileMaintenance": {
+        "enabled": true,
+        "schedule": []
+      },
       "packageRules": [
         {
           "matchDepTypes": [
@@ -86,7 +96,8 @@
           "matchPackageNames": [
             "husky",
             "prettier",
-            "yarnhook"
+            "yarnhook",
+            "type-fest"
           ],
           "matchUpdateTypes": [
             "minor",
@@ -97,6 +108,20 @@
             ":soon: automerge"
           ],
           "reviewers": [],
+          "rebaseStalePrs": false,
+          "masterIssueApproval": false,
+          "schedule": [
+            "after 10am and before 11am every weekday"
+          ]
+        },
+        {
+          "matchPackageNames": [
+            "expo-cli"
+          ],
+          "matchUpdateTypes": [
+            "minor",
+            "patch"
+          ],
           "rebaseStalePrs": false,
           "masterIssueApproval": false,
           "schedule": [
@@ -115,7 +140,9 @@
         },
         {
           "matchPackagePatterns": [
-            "^@types"
+            "^@types/",
+            "typescript",
+            "chromatic"
           ],
           "matchUpdateTypes": [
             "patch"
@@ -141,15 +168,31 @@
           "masterIssueApproval": true
         },
         {
-          "groupName": "Eslint Ornikar Shared Configs",
+          "groupName": "Ornikar Frontend Orb",
+          "reviewers": [
+            "team:frontend-architects"
+          ],
+          "matchDatasources": [
+            "orb"
+          ],
           "matchPackageNames": [
-            "@ornikar/eslint-config",
-            "@ornikar/eslint-config-babel",
-            "@ornikar/eslint-config-formatjs",
-            "@ornikar/eslint-config-node",
-            "@ornikar/eslint-config-react",
-            "@ornikar/eslint-config-typescript",
-            "@ornikar/eslint-config-typescript-react"
+            "frontend"
+          ],
+          "labels": [
+            "circleci-orb"
+          ],
+          "schedule": [
+            "at any time"
+          ],
+          "masterIssueApproval": false
+        },
+        {
+          "groupName": "Ornikar Eslint Configs",
+          "reviewers": [
+            "team:frontend-eslint-maintainers"
+          ],
+          "sourceUrlPrefixes": [
+            "https://github.com/ornikar/eslint-configs"
           ]
         },
         {
@@ -165,6 +208,12 @@
           ]
         },
         {
+          "groupName": "Jest Shared Configs Ornikar",
+          "matchPackagePatterns": [
+            "^@ornikar/jest(.*)-config"
+          ]
+        },
+        {
           "groupName": "Build Shared Configs Ornikar",
           "matchPackageNames": [
             "@ornikar/postcss-config",
@@ -174,19 +223,43 @@
           ]
         },
         {
+          "groupName": "Kitt Ornikar",
+          "reviewers": [
+            "team:frontend-shared-components-maintainers"
+          ],
+          "sourceUrlPrefixes": [
+            "https://github.com/ornikar/kitt"
+          ]
+        },
+        {
           "groupName": "Components Ornikar",
+          "reviewers": [
+            "team:frontend-shared-components-maintainers"
+          ],
+          "sourceUrlPrefixes": [
+            "https://github.com/ornikar/components"
+          ],
           "matchPackageNames": [
             "@ornikar/api-helpers",
             "@ornikar/auth",
             "@ornikar/auth-api",
             "@ornikar/react-brand-logo",
             "@ornikar/react-forms",
+            "@ornikar/react-forms-universal",
             "@ornikar/react-header",
             "@ornikar/react-intl",
             "@ornikar/react-notification",
             "@ornikar/react-storybook",
             "@ornikar/react-validators",
             "@ornikar/validators"
+          ]
+        },
+        {
+          "groupName": "Runtime App Ornikar",
+          "matchPackageNames": [
+            "@ornikar/webapp-runtime",
+            "@ornikar/runtime-app",
+            "@ornikar/runtime-native-app"
           ]
         },
         {
@@ -200,6 +273,18 @@
           ],
           "matchPackagePatterns": [
             "^eslint"
+          ]
+        },
+        {
+          "groupName": "flagship packages",
+          "matchPackagePatterns": [
+            "^@flagship.io/"
+          ]
+        },
+        {
+          "groupName": "linaria packages",
+          "matchPackagePatterns": [
+            "^@linaria/"
           ]
         }
       ]

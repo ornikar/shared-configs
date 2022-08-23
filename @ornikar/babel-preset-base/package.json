@@ -1,0 +1,32 @@
+{
+  "name": "@ornikar/babel-preset-base",
+  "version": "2.0.0",
+  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ornikar/shared-configs.git",
+    "directory": "@ornikar/babel-preset-base"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=16.16.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "prettier": "@ornikar/prettier-config",
+  "main": "./index.js",
+  "sideEffects": false,
+  "scripts": {
+    "test": "jest"
+  },
+  "peerDependencies": {
+    "@babel/core": "^7.0.0",
+    "@babel/runtime": "^7.13.8"
+  },
+  "dependencies": {
+    "@babel/plugin-transform-runtime": "^7.13.8",
+    "@babel/preset-env": "^7.13.8",
+    "@babel/preset-typescript": "^7.13.8"
+  }
+}

@@ -1,4 +1,7 @@
 {
   "root": true,
-  "extends": ["@ornikar/eslint-config", "@ornikar/eslint-config/node"]
+  "extends": ["@ornikar/eslint-config/node"],
+  "rules": {
+    "security/detect-non-literal-fs-filename": "off"
+  }
 }

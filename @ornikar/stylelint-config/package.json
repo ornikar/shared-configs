@@ -1,12 +1,16 @@
 {
   "name": "@ornikar/stylelint-config",
-  "version": "7.0.2",
-  "description": "stylelint config files",
-  "repository": "ornikar/shared-configs",
+  "version": "9.0.0",
+  "description": "🚨🎨 stylelint config files",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ornikar/shared-configs.git",
+    "directory": "@ornikar/stylelint-config"
+  },
   "main": "index.js",
   "license": "ISC",
   "engines": {
-    "node": ">=12.13.0"
+    "node": ">=16.16.0"
   },
   "scripts": {
     "lint-tests": "yarn lint-test-css-modules && yarn lint-test-styled-components",
@@ -27,7 +31,7 @@
     "stylelint": "^13.13.1"
   },
   "devDependencies": {
-    "prettier": "2.4.1",
+    "prettier": "2.7.1",
     "stylelint": "13.13.1"
   }
 }

@@ -3,32 +3,36 @@
   "private": true,
   "repository": "ornikar/shared-configs",
   "scripts": {
-    "lint": "yarn run lint:prettier && yarn run lint:eslint && yarn run lint:css",
+    "ornikar-lint-staged": "./@ornikar/repo-config/bin/ornikar-lint-staged.mjs",
+    "version": "YARN_ENABLE_IMMUTABLE_INSTALLS=false yarn && git add yarn.lock",
+    "lint": "yarn run lint:prettier && yarn run lint:eslint && yarn run lint:stylelint",
     "lint:prettier": "prettier --check .",
-    "lint:eslint": "eslint --ext .js --report-unused-disable-directives .",
-    "lint:css": "yarn --cwd @ornikar/stylelint-config lint-tests",
+    "lint:eslint": "eslint --report-unused-disable-directives --quiet .",
+    "lint:stylelint": "yarn workspace @ornikar/stylelint-config lint-tests",
+    "test": "jest",
     "release": "lerna publish --conventional-commits -m 'chore: release'",
     "postinstall": "./@ornikar/repo-config/bin/ornikar-repo-config-postinstall.js"
   },
   "prettier": "./@ornikar/prettier-config",
   "engines": {
-    "node": ">=14.17.6",
-    "yarn": ">=1.10.1"
+    "node": ">=16.16.0"
   },
   "commitlint": {
     "extends": [
-      "./@ornikar/commitlint-config"
+      "./@ornikar/commitlint-config/monorepo"
     ]
   },
   "workspaces": [
     "@ornikar/*"
   ],
   "devDependencies": {
-    "@commitlint/cli": "13.2.1",
-    "@ornikar/eslint-config": "15.4.0",
-    "eslint": "7.32.0",
-    "lerna": "4.0.0",
-    "lint-staged": "11.2.6",
-    "prettier": "2.4.1"
-  }
+    "@commitlint/cli": "17.0.3",
+    "@ornikar/eslint-config": "19.1.0",
+    "eslint": "8.22.0",
+    "jest": "27.5.1",
+    "lerna": "5.1.8",
+    "lint-staged": "13.0.3",
+    "prettier": "2.7.1"
+  },
+  "packageManager": "yarn@3.2.2"
 }

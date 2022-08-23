@@ -5,4 +5,15 @@ module.exports = {
   singleQuote: true,
   printWidth: 120,
   arrowParens: 'always',
+  overrides: [
+    {
+      files: ['.env', '.env.*', '*.env'],
+      options: {
+        parser: 'dot-properties',
+        keySeparator: '=',
+        singleQuote: false,
+        printWidth: 0,
+      },
+    },
+  ],
 };

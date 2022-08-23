@@ -3,6 +3,373 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [8.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config-react@7.1.13...@ornikar/repo-config-react@8.0.0) (2022-08-17)
+
+
+### chore
+
+* **deps:** update dependency @ornikar/eslint-config to v19 ([#759](https://github.com/ornikar/shared-configs/issues/759)) ([e05eecb](https://github.com/ornikar/shared-configs/commit/e05eecb898d047b44277ce4f65fc724831bb2ece))
+
+
+### BREAKING CHANGES
+
+* **deps:** drop node 14 
+
+
+
+
+
+## [7.1.13](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config-react@7.1.12...@ornikar/repo-config-react@7.1.13) (2022-08-12)
+
+**Note:** Version bump only for package @ornikar/repo-config-react
+
+
+
+
+
+## [7.1.12](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config-react@7.1.11...@ornikar/repo-config-react@7.1.12) (2022-08-10)
+
+**Note:** Version bump only for package @ornikar/repo-config-react
+
+
+
+
+
+## [7.1.11](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config-react@7.1.10...@ornikar/repo-config-react@7.1.11) (2022-08-10)
+
+**Note:** Version bump only for package @ornikar/repo-config-react
+
+
+
+
+
+## [7.1.10](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config-react@7.1.9...@ornikar/repo-config-react@7.1.10) (2022-08-05)
+
+**Note:** Version bump only for package @ornikar/repo-config-react
+
+
+
+
+
+## [7.1.9](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config-react@7.1.8...@ornikar/repo-config-react@7.1.9) (2022-08-05)
+
+**Note:** Version bump only for package @ornikar/repo-config-react
+
+
+
+
+
+## [7.1.8](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config-react@7.1.7...@ornikar/repo-config-react@7.1.8) (2022-06-28)
+
+**Note:** Version bump only for package @ornikar/repo-config-react
+
+
+
+
+
+## [7.1.7](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config-react@7.1.6...@ornikar/repo-config-react@7.1.7) (2022-06-21)
+
+**Note:** Version bump only for package @ornikar/repo-config-react
+
+
+
+
+
+## [7.1.6](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config-react@7.1.5...@ornikar/repo-config-react@7.1.6) (2022-06-20)
+
+
+### Bug Fixes
+
+* **deps:** update dependency typed-css-modules to v0.7.2 ([#718](https://github.com/ornikar/shared-configs/issues/718)) ([eafbb65](https://github.com/ornikar/shared-configs/commit/eafbb6503c91010a048dfcce452f26fbd63fd7e3))
+
+
+
+
+
+## [7.1.5](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config-react@7.1.4...@ornikar/repo-config-react@7.1.5) (2022-04-27)
+
+
+### Bug Fixes
+
+* **repo-config-react:** create config lint-staged pass options [no issue] ([#702](https://github.com/ornikar/shared-configs/issues/702)) ([f28847a](https://github.com/ornikar/shared-configs/commit/f28847aa3464c3128d443f6666646b7b170441ca))
+
+
+
+
+
+## [7.1.4](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config-react@7.1.3...@ornikar/repo-config-react@7.1.4) (2022-04-26)
+
+**Note:** Version bump only for package @ornikar/repo-config-react
+
+
+
+
+
+## [7.1.3](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config-react@7.1.2...@ornikar/repo-config-react@7.1.3) (2022-04-22)
+
+**Note:** Version bump only for package @ornikar/repo-config-react
+
+
+
+
+
+## [7.1.2](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config-react@7.1.1...@ornikar/repo-config-react@7.1.2) (2022-04-22)
+
+**Note:** Version bump only for package @ornikar/repo-config-react
+
+
+
+
+
+## [7.1.1](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config-react@7.1.0...@ornikar/repo-config-react@7.1.1) (2022-04-19)
+
+**Note:** Version bump only for package @ornikar/repo-config-react
+
+
+
+
+
+# [7.1.0](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config-react@7.0.22...@ornikar/repo-config-react@7.1.0) (2022-04-13)
+
+
+### Features
+
+* **repo-config-react:** storybook ci script [no issue] ([#691](https://github.com/ornikar/shared-configs/issues/691)) ([b5dd1d8](https://github.com/ornikar/shared-configs/commit/b5dd1d80b454dfa63b613a019401cc9435255a24))
+
+
+
+
+
+## [7.0.22](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config-react@7.0.21...@ornikar/repo-config-react@7.0.22) (2022-04-01)
+
+**Note:** Version bump only for package @ornikar/repo-config-react
+
+
+
+
+
+## [7.0.21](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config-react@7.0.20...@ornikar/repo-config-react@7.0.21) (2022-04-01)
+
+**Note:** Version bump only for package @ornikar/repo-config-react
+
+
+
+
+
+## [7.0.20](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config-react@7.0.19...@ornikar/repo-config-react@7.0.20) (2022-03-31)
+
+**Note:** Version bump only for package @ornikar/repo-config-react
+
+
+
+
+
+## [7.0.19](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config-react@7.0.18...@ornikar/repo-config-react@7.0.19) (2022-03-25)
+
+**Note:** Version bump only for package @ornikar/repo-config-react
+
+
+
+
+
+## [7.0.18](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config-react@7.0.17...@ornikar/repo-config-react@7.0.18) (2022-03-24)
+
+**Note:** Version bump only for package @ornikar/repo-config-react
+
+
+
+
+
+## [7.0.17](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config-react@7.0.16...@ornikar/repo-config-react@7.0.17) (2022-03-18)
+
+**Note:** Version bump only for package @ornikar/repo-config-react
+
+
+
+
+
+## [7.0.16](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config-react@7.0.15...@ornikar/repo-config-react@7.0.16) (2022-03-15)
+
+**Note:** Version bump only for package @ornikar/repo-config-react
+
+
+
+
+
+## [7.0.15](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config-react@7.0.14...@ornikar/repo-config-react@7.0.15) (2022-03-09)
+
+**Note:** Version bump only for package @ornikar/repo-config-react
+
+
+
+
+
+## [7.0.14](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config-react@7.0.13...@ornikar/repo-config-react@7.0.14) (2022-03-08)
+
+**Note:** Version bump only for package @ornikar/repo-config-react
+
+
+
+
+
+## [7.0.13](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config-react@7.0.12...@ornikar/repo-config-react@7.0.13) (2022-03-01)
+
+**Note:** Version bump only for package @ornikar/repo-config-react
+
+
+
+
+
+## [7.0.12](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config-react@7.0.11...@ornikar/repo-config-react@7.0.12) (2022-02-24)
+
+**Note:** Version bump only for package @ornikar/repo-config-react
+
+
+
+
+
+## [7.0.11](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config-react@7.0.10...@ornikar/repo-config-react@7.0.11) (2022-02-14)
+
+**Note:** Version bump only for package @ornikar/repo-config-react
+
+
+
+
+
+## [7.0.10](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config-react@7.0.9...@ornikar/repo-config-react@7.0.10) (2022-02-10)
+
+**Note:** Version bump only for package @ornikar/repo-config-react
+
+
+
+
+
+## [7.0.9](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config-react@7.0.8...@ornikar/repo-config-react@7.0.9) (2022-02-09)
+
+**Note:** Version bump only for package @ornikar/repo-config-react
+
+
+
+
+
+## [7.0.8](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config-react@7.0.7...@ornikar/repo-config-react@7.0.8) (2022-02-04)
+
+**Note:** Version bump only for package @ornikar/repo-config-react
+
+
+
+
+
+## [7.0.7](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config-react@7.0.6...@ornikar/repo-config-react@7.0.7) (2022-01-24)
+
+**Note:** Version bump only for package @ornikar/repo-config-react
+
+
+
+
+
+## [7.0.6](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config-react@7.0.5...@ornikar/repo-config-react@7.0.6) (2022-01-14)
+
+**Note:** Version bump only for package @ornikar/repo-config-react
+
+
+
+
+
+## [7.0.5](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config-react@7.0.4...@ornikar/repo-config-react@7.0.5) (2021-12-20)
+
+**Note:** Version bump only for package @ornikar/repo-config-react
+
+
+
+
+
+## [7.0.4](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config-react@7.0.3...@ornikar/repo-config-react@7.0.4) (2021-12-14)
+
+**Note:** Version bump only for package @ornikar/repo-config-react
+
+
+
+
+
+## [7.0.3](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config-react@7.0.2...@ornikar/repo-config-react@7.0.3) (2021-12-14)
+
+**Note:** Version bump only for package @ornikar/repo-config-react
+
+
+
+
+
+## [7.0.2](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config-react@7.0.1...@ornikar/repo-config-react@7.0.2) (2021-12-14)
+
+**Note:** Version bump only for package @ornikar/repo-config-react
+
+
+
+
+
+## [7.0.1](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config-react@7.0.0...@ornikar/repo-config-react@7.0.1) (2021-12-09)
+
+
+### Bug Fixes
+
+* downgrade node minimum required version [no issue] ([#595](https://github.com/ornikar/shared-configs/issues/595)) ([9464687](https://github.com/ornikar/shared-configs/commit/9464687f55aed4a2e683f5d3b992300d000a2b30))
+
+
+
+
+
+# [7.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config-react@6.0.8...@ornikar/repo-config-react@7.0.0) (2021-12-07)
+
+
+### Features
+
+* drop node 12 [no issue] ([#584](https://github.com/ornikar/shared-configs/issues/584)) ([e9c00ab](https://github.com/ornikar/shared-configs/commit/e9c00abb5ed3a9c60993b6c652566dd7e71a97e1))
+
+
+### BREAKING CHANGES
+
+* requires node 14.17 or higher 
+
+
+
+
+
+## [6.0.8](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config-react@6.0.7...@ornikar/repo-config-react@6.0.8) (2021-12-06)
+
+**Note:** Version bump only for package @ornikar/repo-config-react
+
+
+
+
+
+## [6.0.7](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config-react@6.0.6...@ornikar/repo-config-react@6.0.7) (2021-11-30)
+
+**Note:** Version bump only for package @ornikar/repo-config-react
+
+
+
+
+
+## [6.0.6](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config-react@6.0.5...@ornikar/repo-config-react@6.0.6) (2021-11-29)
+
+
+### Bug Fixes
+
+* remove manual git add as lint-staged does it now [no issue] ([#546](https://github.com/ornikar/shared-configs/issues/546)) ([92ed60e](https://github.com/ornikar/shared-configs/commit/92ed60ee49710c09d15dba465e1ffbf7f1031979))
+
+
+
+
+
+## [6.0.5](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config-react@6.0.4...@ornikar/repo-config-react@6.0.5) (2021-11-29)
+
+**Note:** Version bump only for package @ornikar/repo-config-react
+
+
+
+
+
 ## [6.0.4](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config-react@6.0.3...@ornikar/repo-config-react@6.0.4) (2021-11-18)
 
 **Note:** Version bump only for package @ornikar/repo-config-react

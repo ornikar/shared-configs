@@ -3,6 +3,436 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [10.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@9.0.2...@ornikar/repo-config@10.0.0) (2022-08-17)
+
+
+### chore
+
+* **deps:** update dependency @ornikar/eslint-config to v19 ([#759](https://github.com/ornikar/shared-configs/issues/759)) ([e05eecb](https://github.com/ornikar/shared-configs/commit/e05eecb898d047b44277ce4f65fc724831bb2ece))
+
+
+### Features
+
+* phrase pre-push hook [no issue] ([#763](https://github.com/ornikar/shared-configs/issues/763)) ([9e399ea](https://github.com/ornikar/shared-configs/commit/9e399ea3b84925129bbd3a13e3152349217cec74))
+* **repo-config:** drop yarn-deduplicate [no issue] ([#770](https://github.com/ornikar/shared-configs/issues/770)) ([e26be3e](https://github.com/ornikar/shared-configs/commit/e26be3e72182aea4933a10331a76ef48facbd91e))
+* **repo-config:** only run tsc on pre-commit when ts file changed [no issue] ([#769](https://github.com/ornikar/shared-configs/issues/769)) ([e66fa5b](https://github.com/ornikar/shared-configs/commit/e66fa5be47e8694ead0773db8e62a7a2ab16e7ec))
+
+
+### BREAKING CHANGES
+
+* **repo-config:** drop yarn legacy (v1) support 
+* **deps:** drop node 14 
+
+
+
+
+
+## [9.0.2](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@9.0.1...@ornikar/repo-config@9.0.2) (2022-08-12)
+
+**Note:** Version bump only for package @ornikar/repo-config
+
+
+
+
+
+## [9.0.1](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@9.0.0...@ornikar/repo-config@9.0.1) (2022-08-10)
+
+
+### Bug Fixes
+
+* **repo-config:** fix prettier env files [no issue] ([#765](https://github.com/ornikar/shared-configs/issues/765)) ([055d518](https://github.com/ornikar/shared-configs/commit/055d518521398df3bf2e41e53cde064ec8335b98))
+
+
+
+
+
+# [9.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@8.6.0...@ornikar/repo-config@9.0.0) (2022-08-10)
+
+
+### Features
+
+* **prettier-config:** use overrides to configure dotenv ARCH-1558 ([#764](https://github.com/ornikar/shared-configs/issues/764)) ([d35b376](https://github.com/ornikar/shared-configs/commit/d35b376525daa154970d40bf9a2e33002269be93))
+
+
+### BREAKING CHANGES
+
+* **prettier-config:** repo-config requires latest prettier-config to work properly 
+
+
+
+
+
+# [8.6.0](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@8.5.2...@ornikar/repo-config@8.6.0) (2022-08-05)
+
+
+### Features
+
+* **repo-config:** skip husky install on ci [no issue] ([#762](https://github.com/ornikar/shared-configs/issues/762)) ([64a4123](https://github.com/ornikar/shared-configs/commit/64a41230640849359c9e06acc80def3a6f122bc1))
+
+
+
+
+
+## [8.5.2](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@8.5.1...@ornikar/repo-config@8.5.2) (2022-08-05)
+
+**Note:** Version bump only for package @ornikar/repo-config
+
+
+
+
+
+## [8.5.1](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@8.5.0...@ornikar/repo-config@8.5.1) (2022-06-28)
+
+**Note:** Version bump only for package @ornikar/repo-config
+
+
+
+
+
+# [8.5.0](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@8.4.0...@ornikar/repo-config@8.5.0) (2022-06-21)
+
+
+### Features
+
+* force git language on husky pre push hook [no issue] ([#731](https://github.com/ornikar/shared-configs/issues/731)) ([6c56496](https://github.com/ornikar/shared-configs/commit/6c5649611b618b66e755ea780e360afc6444ac83))
+
+
+
+
+
+# [8.4.0](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@8.3.2...@ornikar/repo-config@8.4.0) (2022-06-20)
+
+
+### Features
+
+* **deps:** update dependency husky to v8 ([#724](https://github.com/ornikar/shared-configs/issues/724)) ([9953050](https://github.com/ornikar/shared-configs/commit/995305060069efc4e74720c3cbc5e5d56d4f5507))
+
+
+
+
+
+## [8.3.2](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@8.3.1...@ornikar/repo-config@8.3.2) (2022-04-26)
+
+**Note:** Version bump only for package @ornikar/repo-config
+
+
+
+
+
+## [8.3.1](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@8.3.0...@ornikar/repo-config@8.3.1) (2022-04-22)
+
+
+### Bug Fixes
+
+* typo in pre-push script ([ff75c9d](https://github.com/ornikar/shared-configs/commit/ff75c9dde4fe26b35c0a5954a50c55e02ad570a1))
+
+
+
+
+
+# [8.3.0](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@8.2.1...@ornikar/repo-config@8.3.0) (2022-04-22)
+
+
+### Features
+
+* pre-push only run test changed since main branch [no issue] ([#698](https://github.com/ornikar/shared-configs/issues/698)) ([9e7aa2d](https://github.com/ornikar/shared-configs/commit/9e7aa2d4de6e3e8ff18567555cf405663e22942d))
+
+
+
+
+
+## [8.2.1](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@8.2.0...@ornikar/repo-config@8.2.1) (2022-04-19)
+
+**Note:** Version bump only for package @ornikar/repo-config
+
+
+
+
+
+# [8.2.0](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@8.1.0...@ornikar/repo-config@8.2.0) (2022-04-01)
+
+
+### Features
+
+* **repo-config:** reexport commitlint for yarn berry ([cc41482](https://github.com/ornikar/shared-configs/commit/cc414824170d71b1aff10693983385caa0bc58ed))
+
+
+
+
+
+# [8.1.0](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@8.0.1...@ornikar/repo-config@8.1.0) (2022-04-01)
+
+
+### Features
+
+* ornikar-lint-staged for yarn berry ([306bc13](https://github.com/ornikar/shared-configs/commit/306bc136a4e0e5cc5e31234b6d948516f9b2352d))
+
+
+
+
+
+## [8.0.1](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@8.0.0...@ornikar/repo-config@8.0.1) (2022-03-31)
+
+
+### Bug Fixes
+
+* **repo-config:** git add yarn.lock and .yarn ([58af0bd](https://github.com/ornikar/shared-configs/commit/58af0bdd75bd2e05a474270f2b4796b899625f82))
+* update which-pm-runs ([8a7398b](https://github.com/ornikar/shared-configs/commit/8a7398b22b132e0e9063fb0e9108e85b9b938417))
+
+
+
+
+
+# [8.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@7.3.6...@ornikar/repo-config@8.0.0) (2022-03-25)
+
+
+### chore
+
+* **repo-config:** replace clean:cache by clean:cache:on-dependencies-changes ([#681](https://github.com/ornikar/shared-configs/issues/681)) ([3fba8cd](https://github.com/ornikar/shared-configs/commit/3fba8cd387044dde9e7cb2bfa7502ab95cff4b7d))
+
+
+### BREAKING CHANGES
+
+* **repo-config:** yarn clean:cache is no longer called in husky scripts, clean:cache:on-dependencies-changes is used instead
+
+
+
+
+
+## [7.3.6](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@7.3.5...@ornikar/repo-config@7.3.6) (2022-03-24)
+
+**Note:** Version bump only for package @ornikar/repo-config
+
+
+
+
+
+## [7.3.5](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@7.3.4...@ornikar/repo-config@7.3.5) (2022-03-18)
+
+**Note:** Version bump only for package @ornikar/repo-config
+
+
+
+
+
+## [7.3.4](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@7.3.3...@ornikar/repo-config@7.3.4) (2022-03-15)
+
+**Note:** Version bump only for package @ornikar/repo-config
+
+
+
+
+
+## [7.3.3](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@7.3.2...@ornikar/repo-config@7.3.3) (2022-03-09)
+
+**Note:** Version bump only for package @ornikar/repo-config
+
+
+
+
+
+## [7.3.2](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@7.3.1...@ornikar/repo-config@7.3.2) (2022-03-08)
+
+**Note:** Version bump only for package @ornikar/repo-config
+
+
+
+
+
+## [7.3.1](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@7.3.0...@ornikar/repo-config@7.3.1) (2022-03-01)
+
+
+### Bug Fixes
+
+* use node to run check-packagejson script ([00a8219](https://github.com/ornikar/shared-configs/commit/00a8219761232c84bddc98124038a489f04d7e2c))
+
+
+
+
+
+# [7.3.0](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@7.2.5...@ornikar/repo-config@7.3.0) (2022-02-24)
+
+
+### Features
+
+* add check packagejson script to lint staged config [no issue] ([#658](https://github.com/ornikar/shared-configs/issues/658)) ([e362c15](https://github.com/ornikar/shared-configs/commit/e362c1511f5155557a19a53f0e97d2e21ab39a67))
+
+
+
+
+
+## [7.2.5](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@7.2.4...@ornikar/repo-config@7.2.5) (2022-02-14)
+
+**Note:** Version bump only for package @ornikar/repo-config
+
+
+
+
+
+## [7.2.4](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@7.2.3...@ornikar/repo-config@7.2.4) (2022-02-10)
+
+**Note:** Version bump only for package @ornikar/repo-config
+
+
+
+
+
+## [7.2.3](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@7.2.2...@ornikar/repo-config@7.2.3) (2022-02-09)
+
+
+### Bug Fixes
+
+* **repo-config:** cd package location [no issue] ([#647](https://github.com/ornikar/shared-configs/issues/647)) ([bbfea60](https://github.com/ornikar/shared-configs/commit/bbfea6042e64cec11deb119699c63e8e330b2e3d))
+
+
+
+
+
+## [7.2.2](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@7.2.1...@ornikar/repo-config@7.2.2) (2022-02-04)
+
+
+### Bug Fixes
+
+* update husky hooks ([74b9498](https://github.com/ornikar/shared-configs/commit/74b94983cc37bc011992ca910f48946b205fae5e))
+
+
+
+
+
+## [7.2.1](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@7.2.0...@ornikar/repo-config@7.2.1) (2022-01-24)
+
+**Note:** Version bump only for package @ornikar/repo-config
+
+
+
+
+
+# [7.2.0](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@7.1.3...@ornikar/repo-config@7.2.0) (2022-01-14)
+
+
+### Features
+
+* **repo-config:** add native lockfiles [no issue] ([#623](https://github.com/ornikar/shared-configs/issues/623)) ([01222bc](https://github.com/ornikar/shared-configs/commit/01222bc1514df926021dfa36dcbad68d7a6d6ae9))
+
+
+
+
+
+## [7.1.3](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@7.1.2...@ornikar/repo-config@7.1.3) (2021-12-20)
+
+
+### Bug Fixes
+
+* **repo-config:** remove no longer needed call to prettier for tsconfig files ([3dfda19](https://github.com/ornikar/shared-configs/commit/3dfda19469909bef4726401e97b548c1d7cf58b0))
+
+
+
+
+
+## [7.1.2](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@7.1.1...@ornikar/repo-config@7.1.2) (2021-12-14)
+
+
+### Bug Fixes
+
+* prettier-plugin-properties ([1a9c83b](https://github.com/ornikar/shared-configs/commit/1a9c83be2ffd8ca2ed507188863b689d572db569))
+
+
+
+
+
+## [7.1.1](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@7.1.0...@ornikar/repo-config@7.1.1) (2021-12-14)
+
+
+### Bug Fixes
+
+* **repo-config:** missing dependency [no issue] ([#603](https://github.com/ornikar/shared-configs/issues/603)) ([e6151c5](https://github.com/ornikar/shared-configs/commit/e6151c516195528bdc0da22896e6c568fe9aaca8))
+
+
+
+
+
+# [7.1.0](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@7.0.1...@ornikar/repo-config@7.1.0) (2021-12-14)
+
+
+### Features
+
+* **repo-config:** prettier env INSTRUCTOR-361 ([#602](https://github.com/ornikar/shared-configs/issues/602)) ([352fe7a](https://github.com/ornikar/shared-configs/commit/352fe7a21fbe355879c6d0766a0205d7b0127267))
+
+
+
+
+
+## [7.0.1](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@7.0.0...@ornikar/repo-config@7.0.1) (2021-12-09)
+
+
+### Bug Fixes
+
+* downgrade node minimum required version [no issue] ([#595](https://github.com/ornikar/shared-configs/issues/595)) ([9464687](https://github.com/ornikar/shared-configs/commit/9464687f55aed4a2e683f5d3b992300d000a2b30))
+
+
+
+
+
+# [7.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@6.1.5...@ornikar/repo-config@7.0.0) (2021-12-07)
+
+
+### Features
+
+* drop node 12 [no issue] ([#584](https://github.com/ornikar/shared-configs/issues/584)) ([e9c00ab](https://github.com/ornikar/shared-configs/commit/e9c00abb5ed3a9c60993b6c652566dd7e71a97e1))
+
+
+### BREAKING CHANGES
+
+* requires node 14.17 or higher 
+
+
+
+
+
+## [6.1.5](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@6.1.4...@ornikar/repo-config@6.1.5) (2021-12-06)
+
+
+### Bug Fixes
+
+* **repo-config:** run yarn dedupe fewer, like renovate does [no issue] ([#573](https://github.com/ornikar/shared-configs/issues/573)) ([efc6070](https://github.com/ornikar/shared-configs/commit/efc607007792fa8abc5b55a87cd2305bf019dd47))
+
+
+
+
+
+## [6.1.4](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@6.1.3...@ornikar/repo-config@6.1.4) (2021-11-30)
+
+
+### Bug Fixes
+
+* **repo-config:** fix lint-staged warnings [no issue] ([#552](https://github.com/ornikar/shared-configs/issues/552)) ([fae3636](https://github.com/ornikar/shared-configs/commit/fae36365d736001b45db217c38f302b9d6ba5370))
+
+
+
+
+
+## [6.1.3](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@6.1.2...@ornikar/repo-config@6.1.3) (2021-11-29)
+
+
+### Bug Fixes
+
+* remove manual git add as lint-staged does it now [no issue] ([#546](https://github.com/ornikar/shared-configs/issues/546)) ([92ed60e](https://github.com/ornikar/shared-configs/commit/92ed60ee49710c09d15dba465e1ffbf7f1031979))
+
+
+
+
+
+## [6.1.2](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@6.1.1...@ornikar/repo-config@6.1.2) (2021-11-29)
+
+
+### Bug Fixes
+
+* **repo-config:** allow repo to have no tsconfig.build.json for prettier [no issue] ([#545](https://github.com/ornikar/shared-configs/issues/545)) ([218410d](https://github.com/ornikar/shared-configs/commit/218410df8b2014d8a9789f58f582a12caaaaceb3))
+
+
+
+
+
 ## [6.1.1](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@6.1.0...@ornikar/repo-config@6.1.1) (2021-11-18)
 
 **Note:** Version bump only for package @ornikar/repo-config

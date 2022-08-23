@@ -1,12 +1,16 @@
 {
   "name": "@ornikar/webpack-config",
-  "version": "2.3.1",
-  "description": "webpack config files",
-  "repository": "ornikar/shared-configs",
+  "version": "5.0.0",
+  "description": "📦 webpack config files",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ornikar/shared-configs.git",
+    "directory": "@ornikar/webpack-config"
+  },
   "main": "index.js",
   "license": "ISC",
   "engines": {
-    "node": ">=12.13.0"
+    "node": ">=16.16.0"
   },
   "publishConfig": {
     "access": "public"
