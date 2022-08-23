@@ -37,10 +37,12 @@ module.exports = function createLintStagedConfig(options = {}) {
       ].filter(Boolean);
     },
     '{.env*,!(package).json,*.{yml,yaml,md,html,env}}': ['prettier --write'],
-    [`*.{${srcExtensions.join(',')}}`]: (files) => [
-      `prettier --write ${files.join(' ')}`,
-      `eslint --fix --quiet ${files.length < 20 ? files.join(' ') : '.'}`,
-    ],
+    [`*.{${srcExtensions.join(',')}}`]: (filenames) => {
+      if (filenames.length > 150) {
+        return ['prettier --write .', 'eslint --fix --quiet .'];
+      }
+      return [`prettier --write -- ${filenames.join(' ')}`, `eslint --fix --quiet -- ${filenames.join(' ')}`];
+    },
     [`{.storybook,${srcDirectories}}/**/*.css`]: ['prettier --parser css --write', 'stylelint --quiet --fix'],
     [`${srcDirectories}/**/*.{ts,tsx}`]: () => ['tsc'],
   };
