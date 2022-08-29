@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [10.1.0](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@10.0.0...@ornikar/repo-config@10.1.0) (2022-08-29)
+
+
+### Features
+
+* **deps:** update dependency prettier-plugin-properties to v0.2.0 ([#773](https://github.com/ornikar/shared-configs/issues/773)) ([3b19544](https://github.com/ornikar/shared-configs/commit/3b19544f296123764d47c0dc69d7d1c037647b2d))
+* make create lint staged handle big commits better [no issue] ([#537](https://github.com/ornikar/shared-configs/issues/537)) ([2c240df](https://github.com/ornikar/shared-configs/commit/2c240df1bbb10d8ad012f56dc223b9e35023ba13))
+
+
+
+
+
 # [10.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@9.0.2...@ornikar/repo-config@10.0.0) (2022-08-17)
 
 
