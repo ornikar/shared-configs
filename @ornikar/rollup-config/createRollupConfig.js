@@ -109,7 +109,9 @@ const createBuildsForPackage = (
             sourceMap: true,
             classNameSlug: `${(pkg.ornikar && pkg.ornikar.linariaClassnamePrefix) || packageName}_[title]_[hash]`,
             babelOptions: {
-              presets: ['@babel/preset-typescript'],
+              configFile: true,
+              babelrc: false,
+              browserslistConfigFile: false,
             },
           }),
         // ignore node_modules css imports for node target. imports in browser target will be resolved by webpack.

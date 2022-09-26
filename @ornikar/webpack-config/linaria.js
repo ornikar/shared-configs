@@ -10,6 +10,11 @@ module.exports = (env, webpackConfig) => {
         options: {
           sourceMap: env !== 'production',
           extension: '.css',
+          babelOptions: {
+            configFile: true,
+            babelrc: false,
+            browserslistConfigFile: false,
+          },
         },
       },
     ],
