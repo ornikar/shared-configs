@@ -9,7 +9,7 @@ module.exports = {
   ...baseOrnikarPreset,
   ...expoPreset,
   snapshotResolver: require.resolve('../snapshot-resolvers/resolver.web.js'),
-  setupFiles: [...expoPreset.setupFiles, ...baseOrnikarPreset.setupFiles],
+  setupFiles: [...expoPreset.setupFiles, ...baseOrnikarPreset.setupFiles, require.resolve('../test-setup')],
   testMatch: [
     ...baseOrnikarPreset.testMatch,
     baseOrnikarPreset.testMatch[0].replace('**/__tests__/**/*.', '**/stories.'),
