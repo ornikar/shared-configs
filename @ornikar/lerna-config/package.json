@@ -16,13 +16,24 @@
   },
   "main": "./index.js",
   "bin": {
+    "lerna": "./bin/lerna",
     "lerna-config-generate-eslintrc-files": "./bin/generate-eslintrc-files.js",
     "lerna-config-generate-tsconfig-files": "./bin/generate-tsconfig-files.js"
   },
   "peerDependencies": {
-    "lerna": ">= 3.19.0"
+    "lerna": "0.0.0"
+  },
+  "peerDependenciesMeta": {
+    "lerna": {
+      "optional": true
+    }
   },
   "dependencies": {
+    "@lerna/cli": "5.6.0",
+    "@lerna/package-graph": "5.6.0",
+    "@lerna/project": "5.6.0",
+    "@lerna/publish": "5.6.0",
+    "@lerna/version": "5.6.0",
     "@pob/pretty-eslint-config": "^1.0.1"
   }
 }

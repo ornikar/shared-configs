@@ -3,9 +3,7 @@
 const fsSync = require('fs');
 const fs = require('fs').promises;
 const path = require('path');
-// eslint-disable-next-line import/no-extraneous-dependencies
 let PackageGraph = require('@lerna/package-graph');
-// eslint-disable-next-line import/no-extraneous-dependencies
 let LernaProject = require('@lerna/project');
 
 // lerna 4 support
