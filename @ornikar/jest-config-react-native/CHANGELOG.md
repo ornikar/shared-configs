@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.1.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react-native@5.0.0...@ornikar/jest-config-react-native@5.1.0) (2022-09-30)
+
+
+### Features
+
+* **jest-config-react-native:** add reanimated mock in test setup [no issue] ([#790](https://github.com/ornikar/shared-configs/issues/790)) ([19b571b](https://github.com/ornikar/shared-configs/commit/19b571b8a03dcc67ee926b54a2d31ea4cbb7bc5d))
+
+
+
+
+
 # [5.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react-native@4.5.0...@ornikar/jest-config-react-native@5.0.0) (2022-08-17)
 
 
