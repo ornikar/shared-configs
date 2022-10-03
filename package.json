@@ -5,7 +5,6 @@
   "scripts": {
     "ornikar-lint-staged": "./@ornikar/repo-config/bin/ornikar-lint-staged.mjs",
     "version": "YARN_ENABLE_IMMUTABLE_INSTALLS=false yarn && git add yarn.lock",
-    "lerna": "./@ornikar/lerna-config/bin/lerna.js",
     "lint": "yarn run lint:prettier && yarn run lint:eslint && yarn run lint:stylelint",
     "lint:prettier": "prettier --check .",
     "lint:eslint": "eslint --report-unused-disable-directives --quiet .",
@@ -31,6 +30,7 @@
     "@ornikar/eslint-config": "19.4.0",
     "eslint": "8.24.0",
     "jest": "27.5.1",
+    "lerna": "5.5.2",
     "lint-staged": "13.0.3",
     "prettier": "2.7.1"
   },
