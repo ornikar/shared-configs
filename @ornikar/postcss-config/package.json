@@ -25,6 +25,6 @@
     "postcss": "8.4.17"
   },
   "peerDependencies": {
-    "postcss": "8.4.17"
+    "postcss": "^8.2.10"
   }
 }

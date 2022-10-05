@@ -3782,7 +3782,7 @@ __metadata:
     postcss-custom-properties: ^12.1.9
     postcss-nested: ^5.0.6
   peerDependencies:
-    postcss: 8.4.17
+    postcss: ^8.2.10
   languageName: unknown
   linkType: soft
 
