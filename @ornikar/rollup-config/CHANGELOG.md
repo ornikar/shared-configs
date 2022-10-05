@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.1.0](https://github.com/ornikar/shared-configs/compare/@ornikar/rollup-config@5.0.0...@ornikar/rollup-config@5.1.0) (2022-10-05)
+
+
+### Features
+
+* update postcss and associated deps to v8 ONK-4616 ([#792](https://github.com/ornikar/shared-configs/issues/792)) ([fc8ac35](https://github.com/ornikar/shared-configs/commit/fc8ac35ab28e7076c2ba2f8d2235ff60f15a1ab3))
+
+
+
+
+
 # [5.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/rollup-config@4.9.1...@ornikar/rollup-config@5.0.0) (2022-08-17)
 
 
