@@ -26,15 +26,15 @@ tests.forEach((filename) => {
       const expected = testContent.expected.trim();
       const actual = output.code.trim();
       expect(actual).toBe(expected);
-    } catch (err) {
+    } catch (error) {
       // eslint-disable-next-line no-underscore-dangle
-      if (err._babel && err instanceof SyntaxError) {
+      if (error._babel && error instanceof SyntaxError) {
         console.log(`Unexpected error in test: ${test.name || filename}`);
-        console.log(`${err.name}: ${err.message}\n${err.codeFrame}`);
+        console.log(`${error.name}: ${error.message}\n${error.codeFrame}`);
         // eslint-disable-next-line unicorn/no-process-exit
         process.exit(1);
       } else {
-        throw err;
+        throw error;
       }
     }
   });
