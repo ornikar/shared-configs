@@ -3,6 +3,33 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/postcss-config@5.1.0...@ornikar/postcss-config@6.0.0) (2022-10-06)
+
+
+### Bug Fixes
+
+* previous release was breaking [no issue] ([#794](https://github.com/ornikar/shared-configs/issues/794)) ([f37e9b8](https://github.com/ornikar/shared-configs/commit/f37e9b89c5edd43448b740ae4d67b82f9b235ccc))
+
+
+### BREAKING CHANGES
+
+* Previous release should be breaking.
+
+
+
+
+
+# [5.1.0](https://github.com/ornikar/shared-configs/compare/@ornikar/postcss-config@5.0.0...@ornikar/postcss-config@5.1.0) (2022-10-05)
+
+
+### Features
+
+* update postcss and associated deps to v8 ONK-4616 ([#792](https://github.com/ornikar/shared-configs/issues/792)) ([fc8ac35](https://github.com/ornikar/shared-configs/commit/fc8ac35ab28e7076c2ba2f8d2235ff60f15a1ab3))
+
+
+
+
+
 # [5.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/postcss-config@4.0.4...@ornikar/postcss-config@5.0.0) (2022-08-17)
 
 

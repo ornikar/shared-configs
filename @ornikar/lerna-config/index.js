@@ -91,7 +91,7 @@ exports.readJsonFile = async function readJsonFile(jsonFilePath, defaultValue) {
 
   try {
     return JSON.parse(content);
-  } catch (err) {
-    throw new Error(`Invalid existing config "${jsonFilePath}": ${err.message}`);
+  } catch (error) {
+    throw new Error(`Invalid existing config "${jsonFilePath}": ${error.message}`);
   }
 };

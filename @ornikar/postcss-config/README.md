@@ -4,7 +4,7 @@ Ornikar postcss config
 
 ## Usage
 
-Configure browserslist with `@ornikar/browserslist-config`.
+Configure browserslist using `@ornikar/browserslist-config`.
 
 Create `postcss.config.js`:
 

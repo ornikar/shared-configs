@@ -1,6 +1,6 @@
 {
   "name": "@ornikar/postcss-config",
-  "version": "5.0.0",
+  "version": "6.0.0",
   "description": "🎨 postcss config files",
   "repository": {
     "type": "git",
@@ -16,15 +16,15 @@
     "access": "public"
   },
   "dependencies": {
-    "autoprefixer": "^9.4.3",
-    "postcss-custom-media": "^7.0.7",
-    "postcss-custom-properties": "^10.0.0",
-    "postcss-nested": "^4.1.1"
+    "autoprefixer": "^10.4.12",
+    "postcss-custom-media": "^8.0.2",
+    "postcss-custom-properties": "^12.1.9",
+    "postcss-nested": "^5.0.6"
   },
   "devDependencies": {
-    "postcss": "7.0.39"
+    "postcss": "8.4.17"
   },
   "peerDependencies": {
-    "postcss": "^7.0.5"
+    "postcss": "^8.2.10"
   }
 }
