@@ -203,7 +203,7 @@ const { getGraphPackages } = require('..');
       ? fs.unlink('tsconfig.build.json').catch(() => {})
       : writeJsonFile('tsconfig.build.json', tsconfigBuildContent),
   ]);
-})().catch((err) => {
-  console.error(err);
+})().catch((error) => {
+  console.error(error);
   process.exit(1);
 });

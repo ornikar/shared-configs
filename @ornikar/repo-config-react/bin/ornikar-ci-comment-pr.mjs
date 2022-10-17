@@ -45,8 +45,8 @@ async function cleanComments() {
         return null;
       }),
     ).catch(console.error);
-  } catch (err) {
-    console.error('Failed to check comments on GitHub, an error occurred', err);
+  } catch (error) {
+    console.error('Failed to check comments on GitHub, an error occurred', error);
   }
 }
 
