@@ -9,3 +9,4 @@
 package.json
 yarn.lock
 /.yarn
+/.yarnrc.yml
