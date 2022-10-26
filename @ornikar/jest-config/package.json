@@ -20,7 +20,7 @@
   },
   "dependencies": {
     "chalk": "^4.0.0",
-    "jest-fail-on-console": "^2.1.1",
+    "jest-fail-on-console": "^3.0.0",
     "mockdate": "^3.0.2"
   },
   "peerDependencies": {

@@ -3743,7 +3743,7 @@ __metadata:
   dependencies:
     chalk: ^4.0.0
     jest: 26.6.3
-    jest-fail-on-console: ^2.1.1
+    jest-fail-on-console: ^3.0.0
     mockdate: ^3.0.2
   peerDependencies:
     jest: ^26.6.3
@@ -10989,12 +10989,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"jest-fail-on-console@npm:^2.1.1":
-  version: 2.3.0
-  resolution: "jest-fail-on-console@npm:2.3.0"
+"jest-fail-on-console@npm:^3.0.0":
+  version: 3.0.2
+  resolution: "jest-fail-on-console@npm:3.0.2"
   dependencies:
     chalk: ^4.1.0
-  checksum: b0ce97a5f6bc11226a1eecb9406c98e42ce5e7197310019f3cb27495b43cc1d01aaee36b094ea46a23deffcb62b246ddccd5dfdefe525b72d8dad2c9f1f634ee
+  checksum: 3d14a72f38028317a3dd1d1d7118bf045b71ce7c7d815fa0be2e4303ebaee314e83f640a155c34a42a2e8819259f994ac4341d0e6743d049880b81aee27e10a0
   languageName: node
   linkType: hard
 
