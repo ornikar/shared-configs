@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.0.1](https://github.com/ornikar/shared-configs/compare/@ornikar/storybook-config@5.0.0...@ornikar/storybook-config@5.0.1) (2022-10-28)
+
+**Note:** Version bump only for package @ornikar/storybook-config
+
+
+
+
+
 # [5.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/storybook-config@4.3.1...@ornikar/storybook-config@5.0.0) (2022-08-17)
 
 

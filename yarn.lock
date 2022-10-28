@@ -3628,7 +3628,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ornikar/babel-preset-kitt-universal@^2.0.0, @ornikar/babel-preset-kitt-universal@workspace:@ornikar/babel-preset-kitt-universal":
+"@ornikar/babel-preset-kitt-universal@^2.1.0, @ornikar/babel-preset-kitt-universal@workspace:@ornikar/babel-preset-kitt-universal":
   version: 0.0.0-use.local
   resolution: "@ornikar/babel-preset-kitt-universal@workspace:@ornikar/babel-preset-kitt-universal"
   dependencies:
@@ -3705,7 +3705,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@ornikar/jest-config-react-native-web@workspace:@ornikar/jest-config-react-native-web"
   dependencies:
-    "@ornikar/jest-config-react": ^10.0.0
+    "@ornikar/jest-config-react": ^10.0.1
     jest: 26.6.3
     react-native-web: 0.17.7
   peerDependencies:
@@ -3718,7 +3718,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@ornikar/jest-config-react-native@workspace:@ornikar/jest-config-react-native"
   dependencies:
-    "@ornikar/jest-config-react": ^10.0.0
+    "@ornikar/jest-config-react": ^10.0.1
     "@sucrase/jest-plugin": ^2.2.0
     "@testing-library/react-hooks": 7.0.2
     "@testing-library/react-native": 9.1.0
@@ -3736,11 +3736,11 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ornikar/jest-config-react@^10.0.0, @ornikar/jest-config-react@workspace:@ornikar/jest-config-react":
+"@ornikar/jest-config-react@^10.0.1, @ornikar/jest-config-react@workspace:@ornikar/jest-config-react":
   version: 0.0.0-use.local
   resolution: "@ornikar/jest-config-react@workspace:@ornikar/jest-config-react"
   dependencies:
-    "@ornikar/jest-config": ^9.0.0
+    "@ornikar/jest-config": ^9.1.0
     "@testing-library/react": 12.1.5
     "@testing-library/react-hooks": 7.0.2
     identity-obj-proxy: ^3.0.0
@@ -3756,7 +3756,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ornikar/jest-config@^9.0.0, @ornikar/jest-config@workspace:@ornikar/jest-config":
+"@ornikar/jest-config@^9.1.0, @ornikar/jest-config@workspace:@ornikar/jest-config":
   version: 0.0.0-use.local
   resolution: "@ornikar/jest-config@workspace:@ornikar/jest-config"
   dependencies:
@@ -3854,7 +3854,7 @@ __metadata:
   dependencies:
     "@babel/plugin-transform-runtime": ^7.13.8
     "@ornikar/babel-preset-base": ^2.0.0
-    "@ornikar/babel-preset-kitt-universal": ^2.0.0
+    "@ornikar/babel-preset-kitt-universal": ^2.1.0
     "@ornikar/babel-preset-react": ^2.0.0
     "@rollup/plugin-babel": ^5.3.1
     "@rollup/plugin-node-resolve": ^13.0.0
@@ -3894,7 +3894,7 @@ __metadata:
   resolution: "@ornikar/storybook-config@workspace:@ornikar/storybook-config"
   dependencies:
     "@chrp/typed-css-modules-loader": 0.7.0
-    "@ornikar/webpack-config": ^5.0.0
+    "@ornikar/webpack-config": ^5.1.0
     svg-react-loader: 0.4.6
     webpack: 4.46.0
   peerDependencies:
@@ -3920,7 +3920,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ornikar/webpack-config@^5.0.0, @ornikar/webpack-config@workspace:@ornikar/webpack-config":
+"@ornikar/webpack-config@^5.1.0, @ornikar/webpack-config@workspace:@ornikar/webpack-config":
   version: 0.0.0-use.local
   resolution: "@ornikar/webpack-config@workspace:@ornikar/webpack-config"
   languageName: unknown

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [9.1.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config@9.0.0...@ornikar/jest-config@9.1.0) (2022-10-28)
+
+
+### Features
+
+* **deps:** update dependency jest-fail-on-console to v3 ([#800](https://github.com/ornikar/shared-configs/issues/800)) ([bfe7e71](https://github.com/ornikar/shared-configs/commit/bfe7e713c3baa5994113cbaae236fe59e3291266))
+
+
+
+
+
 # [9.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config@8.0.0...@ornikar/jest-config@9.0.0) (2022-08-17)
 
 

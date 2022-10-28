@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react-native@5.1.0...@ornikar/jest-config-react-native@6.0.0) (2022-10-28)
+
+
+### Features
+
+* **lerna-config:** integrate lerna cli in lerna-config ARCH-1591 ([#789](https://github.com/ornikar/shared-configs/issues/789)) ([07853d5](https://github.com/ornikar/shared-configs/commit/07853d50662d516a0b03f3e0ad38f7e090f433ab))
+
+
+### Reverts
+
+* feat(lerna-config): integrate lerna cli in lerna-config ARCH-1591 ([#791](https://github.com/ornikar/shared-configs/issues/791)) ([7679cf4](https://github.com/ornikar/shared-configs/commit/7679cf4ca3a3e58d6875dc9ef05762799b7f6ba0))
+
+
+### BREAKING CHANGES
+
+* **lerna-config:** requires to remove direct lerna in devDependencies 
+
+
+
+
+
 # [5.1.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react-native@5.0.0...@ornikar/jest-config-react-native@5.1.0) (2022-09-30)
 
 

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.1.0](https://github.com/ornikar/shared-configs/compare/@ornikar/babel-preset-kitt-universal@2.0.0...@ornikar/babel-preset-kitt-universal@2.1.0) (2022-10-28)
+
+
+### Features
+
+* update linaria to v4 ARCH-1593 ([#788](https://github.com/ornikar/shared-configs/issues/788)) ([2eebb91](https://github.com/ornikar/shared-configs/commit/2eebb91dc91a8c6b6ca3c8e88bb42843aa252dca))
+
+
+
+
+
 # [2.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/babel-preset-kitt-universal@1.1.2...@ornikar/babel-preset-kitt-universal@2.0.0) (2022-08-17)
 
 
