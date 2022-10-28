@@ -8,7 +8,20 @@ exports.presetOptions = {
   styledComponentsOptions: { ssr: false },
 };
 
-exports.babelPresets = [['@babel/preset-react', { runtime: 'automatic' }], '@linaria/babel-preset'];
+exports.babelPresets = [
+  ['@babel/preset-react', { runtime: 'automatic' }],
+  [
+    '@linaria/babel-preset',
+    {
+      babelOptions: {
+        configFile: false,
+        babelrc: false,
+        browserslistConfigFile: false,
+        presets: [['@babel/preset-react', { runtime: 'automatic' }]],
+      },
+    },
+  ],
+];
 
 exports.babelPlugins = [['react-refresh/babel', { skipEnvCheck: true }]];
 
