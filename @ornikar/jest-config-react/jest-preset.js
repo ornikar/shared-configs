@@ -8,6 +8,12 @@ const useCraco = fs.existsSync(path.resolve('craco.config.js'));
 
 module.exports = {
   ...baseJestPreset,
+
+  // default maxWorkers is number of the cores - 1. This can means a lot of threads and memory usage, resulting in slower tests
+  // 50% is a good compromise as it still adapt the number of threads based on the number of core available while reducing the memory usage
+  // This is still configurable with cli `--max-workers` option.
+  maxWorkers: '50%',
+
   testMatch: [
     ...baseJestPreset.testMatch,
     baseJestPreset.testMatch[0].replace('**/__tests__/**/*.', '**/stories.'),
