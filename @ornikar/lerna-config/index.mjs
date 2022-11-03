@@ -1,9 +1,7 @@
 import fsSync from 'fs';
 import fs from 'fs/promises';
 import path from 'path';
-// eslint-disable-next-line import/no-extraneous-dependencies
 import { PackageGraph } from '@lerna/package-graph';
-// eslint-disable-next-line import/no-extraneous-dependencies
 import { Project as LernaProject } from '@lerna/project';
 
 /**
