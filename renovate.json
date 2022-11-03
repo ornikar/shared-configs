@@ -2,7 +2,8 @@
   "extends": ["config:js-lib", "@ornikar"],
   "packageRules": [
     {
-      "matchPackageNames": ["lint-staged", "yarn-deduplicate"],
+      "packagePatterns": ["^@lerna/"],
+      "matchPackageNames": ["lint-staged"],
       "matchUpdateTypes": ["minor", "patch"],
       "labels": [":ok_hand: code/approved", ":soon: automerge"],
       "rebaseStalePrs": true,
