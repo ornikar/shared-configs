@@ -94,9 +94,9 @@
             "^eslint"
           ],
           "matchPackageNames": [
+            "yarn",
             "husky",
             "prettier",
-            "yarnhook",
             "type-fest"
           ],
           "matchUpdateTypes": [
@@ -215,7 +215,11 @@
         },
         {
           "groupName": "Build Shared Configs Ornikar",
+          "matchPackagePatterns": [
+            "^@ornikar/babel-preset-(.*)"
+          ],
           "matchPackageNames": [
+            "@ornikar/babel-preset",
             "@ornikar/postcss-config",
             "@ornikar/rollup-config",
             "@ornikar/storybook-config",
