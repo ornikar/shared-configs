@@ -19,7 +19,7 @@ module.exports = {
   },
   // override expo transformIgnorePatterns with custom config
   transformIgnorePatterns: [
-    'node_modules/(?!(react-native|@react-native|expo|@expo(nent)?/.*|react-navigation|@react-navigation/.*|native-base)/)',
+    'node_modules/(?!(react-native.*|@react-native.*|expo.*|@expo(nent)?/.*|react-navigation.*|@react-navigation/.*|native-base)/)',
   ],
   transform: {
     ...customTransforms,
