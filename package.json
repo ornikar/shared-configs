@@ -29,7 +29,7 @@
   "devDependencies": {
     "@commitlint/cli": "17.2.0",
     "@ornikar/eslint-config": "19.5.0",
-    "eslint": "8.25.0",
+    "eslint": "8.26.0",
     "jest": "27.5.1",
     "lint-staged": "13.0.3",
     "prettier": "2.7.1"
