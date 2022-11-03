@@ -2,9 +2,6 @@
 
 'use strict';
 
-const { render, waitFor } = require('@testing-library/react-native');
-const React = require('react');
-
 const decorateStory = (storyFn, decorators) =>
   // eslint-disable-next-line unicorn/no-array-reduce
   decorators.reduce(
@@ -48,6 +45,9 @@ exports.action = (actionName) => jest.fn();
 
 // Mocked version of: `import { storiesOf } from '@storybook/react-native'`
 exports.storiesOf = (groupName) => {
+  // eslint-disable-next-line global-require -- importing here allows cleanup to be called and prevent useless require in all tests as decorators/parameters are added in test-setup, before all tests
+  const { render, waitFor } = require('@testing-library/react-native');
+
   const localDecorators = [];
   const localParameters = {};
 

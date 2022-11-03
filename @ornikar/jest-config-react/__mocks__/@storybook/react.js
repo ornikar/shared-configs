@@ -2,8 +2,6 @@
 
 'use strict';
 
-const { render, waitFor } = require('@testing-library/react');
-
 const decorateStory = (storyFn, decorators) =>
   decorators.reduce(
     (decorated, decorator) =>
@@ -44,6 +42,10 @@ exports.action = (actionName) => jest.fn();
 
 // Mocked version of: `import { storiesOf } from '@storybook/react'`
 exports.storiesOf = (groupName) => {
+  // eslint-disable-next-line global-require -- importing here allows cleanup to be called and prevent useless require in all tests as decorators/parameters are added in test-setup, before all tests
+  const { render, waitFor } = require('@testing-library/react');
+  // testing-library registers cleanup via afterEach, which is not available in test-setup, only on test-setup-after-env.
+
   const localDecorators = [];
   const localParameters = {};
 
