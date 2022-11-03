@@ -3299,7 +3299,7 @@ __metadata:
     "@lerna/project": 5.5.4
     "@lerna/publish": 5.5.4
     "@lerna/version": 5.5.4
-    "@pob/pretty-eslint-config": ^1.0.1
+    "@pob/pretty-eslint-config": ^3.0.0
   peerDependencies:
     lerna: 0.0.0
   peerDependenciesMeta:
@@ -3307,8 +3307,8 @@ __metadata:
       optional: true
   bin:
     lerna: ./bin/lerna
-    lerna-config-generate-eslintrc-files: ./bin/generate-eslintrc-files.js
-    lerna-config-generate-tsconfig-files: ./bin/generate-tsconfig-files.js
+    lerna-config-generate-eslintrc-files: ./bin/generate-eslintrc-files.mjs
+    lerna-config-generate-tsconfig-files: ./bin/generate-tsconfig-files.mjs
   languageName: unknown
   linkType: soft
 
@@ -3453,31 +3453,31 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@pob/pretty-eslint-config@npm:^1.0.1":
-  version: 1.0.1
-  resolution: "@pob/pretty-eslint-config@npm:1.0.1"
+"@pob/pretty-eslint-config@npm:^3.0.0":
+  version: 3.3.0
+  resolution: "@pob/pretty-eslint-config@npm:3.3.0"
   dependencies:
-    "@pob/sort-eslint-config": ^1.0.1
-    prettier: ^2.1.2
+    "@pob/sort-eslint-config": 3.1.0
+    prettier: ^2.6.2
   bin:
     pretty-eslint-config: bin/pretty-eslint-config.js
-  checksum: 629f1b6a645ee21374be78704d166e7a9413455ff76d80ecd080d38236a0d16b7b4a4abd842654ef92e556e8ad918d1d5f36b15a6c1df8ca625d60dc43d728a4
+  checksum: 21dcf2bf17f5a5abd6317794f841651322810de96d1a6c29d083afd922f7f2e47814e1215f7470e4fd7079b0820fa83953176d54912bf1a4613e728ec5387707
   languageName: node
   linkType: hard
 
-"@pob/sort-eslint-config@npm:^1.0.1":
-  version: 1.0.1
-  resolution: "@pob/sort-eslint-config@npm:1.0.1"
+"@pob/sort-eslint-config@npm:3.1.0":
+  version: 3.1.0
+  resolution: "@pob/sort-eslint-config@npm:3.1.0"
   dependencies:
-    "@pob/sort-object": ^2.0.1
-  checksum: 763c3a37732520d118bddc420bcf28563d4aca934b0d3acfd7062c5ff1e7d94f4e53051ecd549f3dad0804a6fab05d2174715aefda88c72291523440fc9fd6b3
+    "@pob/sort-object": 4.1.0
+  checksum: 058209a080d025fbf575bfd8048200c33e4ffcddc25b2804bdc87568c825d7c78ec03c0f6aa5b01879c923a17172650cbd386d7c14a5c980d6e36fccaf063d2b
   languageName: node
   linkType: hard
 
-"@pob/sort-object@npm:^2.0.1":
-  version: 2.0.1
-  resolution: "@pob/sort-object@npm:2.0.1"
-  checksum: e7d2a6766206927df5df22eb2df977ad6ffd3c87b2d7b3c6d1e91559b00114a55f0fc5b026fc9fa59572df76b4541f014608b805525476334a4378db996a5114
+"@pob/sort-object@npm:4.1.0":
+  version: 4.1.0
+  resolution: "@pob/sort-object@npm:4.1.0"
+  checksum: 8f8348dbce592fb2da7489e9660cba356fea2c83638fde77fb0ffb2efe35a86a4cea4deaf8ccf29dec1589b399a17df942f40c02214cc7b5c571dd8440670194
   languageName: node
   linkType: hard
 
@@ -13951,7 +13951,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier@npm:2.7.1, prettier@npm:^2.1.2":
+"prettier@npm:2.7.1, prettier@npm:^2.6.2":
   version: 2.7.1
   resolution: "prettier@npm:2.7.1"
   bin:

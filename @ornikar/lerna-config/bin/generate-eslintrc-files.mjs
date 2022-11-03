@@ -1,11 +1,10 @@
 #!/usr/bin/env node
 
-'use strict';
-
-const fs = require('fs').promises;
-const path = require('path');
-const prettyEslintConfig = require('@pob/pretty-eslint-config');
-const { createLernaProject, getPackages, readJsonFile } = require('..');
+import fs from 'fs/promises';
+import { createRequire } from 'module';
+import path from 'path';
+import prettyEslintConfig from '@pob/pretty-eslint-config';
+import { createLernaProject, getPackages, readJsonFile } from '../index.mjs';
 
 const overrideConfig = (config, override) => {
   return { ...config, ...override };
@@ -109,11 +108,12 @@ const generateAndWritePackageRootConfig = async (configPath, prettierOptions) =>
 };
 
 (async () => {
+  const require = createRequire(import.meta.url);
   const rootPath = path.resolve('.');
   const lernaProject = createLernaProject(rootPath);
   const lernaPackages = await getPackages(lernaProject);
   const prettierConfig = lernaProject.manifest.get('prettier');
-  // eslint-disable-next-line import/no-dynamic-require, global-require
+  // eslint-disable-next-line import/no-dynamic-require
   const prettierOptions = require(prettierConfig.startsWith('./') ? path.resolve(prettierConfig) : prettierConfig);
   const eslintRootConfigPath = `${rootPath}/.eslintrc.json`;
 

@@ -30,8 +30,8 @@ module.exports = function createLintStagedConfig(options = {}) {
       return [
         'yarn dedupe',
         packagejsonFilenames.length === 0 ? undefined : `prettier --write ${packagejsonFilenames.join(' ')}`,
-        isLernaRepo && require.resolve('@ornikar/lerna-config/bin/generate-eslintrc-files.js'),
-        shouldGenerateTsconfigInLernaRepo && require.resolve('@ornikar/lerna-config/bin/generate-tsconfig-files.js'),
+        isLernaRepo && require.resolve('@ornikar/lerna-config/bin/generate-eslintrc-files.mjs'),
+        shouldGenerateTsconfigInLernaRepo && require.resolve('@ornikar/lerna-config/bin/generate-tsconfig-files.mjs'),
         shouldRunCheckPkgScript && 'node ./scripts/check-packagejson.js',
         'git add yarn.lock .yarn',
       ].filter(Boolean);

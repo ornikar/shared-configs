@@ -17,8 +17,8 @@
   "main": "./index.js",
   "bin": {
     "lerna": "./bin/lerna",
-    "lerna-config-generate-eslintrc-files": "./bin/generate-eslintrc-files.js",
-    "lerna-config-generate-tsconfig-files": "./bin/generate-tsconfig-files.js"
+    "lerna-config-generate-eslintrc-files": "./bin/generate-eslintrc-files.mjs",
+    "lerna-config-generate-tsconfig-files": "./bin/generate-tsconfig-files.mjs"
   },
   "peerDependencies": {
     "lerna": "0.0.0"
@@ -34,6 +34,6 @@
     "@lerna/project": "5.5.4",
     "@lerna/publish": "5.5.4",
     "@lerna/version": "5.5.4",
-    "@pob/pretty-eslint-config": "^1.0.1"
+    "@pob/pretty-eslint-config": "^3.0.0"
   }
 }
