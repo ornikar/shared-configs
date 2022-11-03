@@ -1,15 +1,13 @@
 #!/usr/bin/env node
 
-'use strict';
-
-const { existsSync } = require('fs');
-const fs = require('fs').promises;
-const path = require('path');
+import { existsSync } from 'fs';
+import fs from 'fs/promises';
+import path from 'path';
 // eslint-disable-next-line import/no-extraneous-dependencies
-const prettierOptions = require('@ornikar/prettier-config');
+import prettierOptions from '@ornikar/prettier-config';
 // eslint-disable-next-line import/no-extraneous-dependencies
-const prettier = require('prettier');
-const { getGraphPackages } = require('..');
+import prettier from 'prettier';
+import { getGraphPackages } from '../index.mjs';
 
 (async () => {
   const writeJsonFile = (jsonFilePath, content) => {

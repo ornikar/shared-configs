@@ -3779,8 +3779,8 @@ __metadata:
   peerDependencies:
     lerna: ">= 3.19.0"
   bin:
-    lerna-config-generate-eslintrc-files: ./bin/generate-eslintrc-files.js
-    lerna-config-generate-tsconfig-files: ./bin/generate-tsconfig-files.js
+    lerna-config-generate-eslintrc-files: ./bin/generate-eslintrc-files.mjs
+    lerna-config-generate-tsconfig-files: ./bin/generate-tsconfig-files.mjs
   languageName: unknown
   linkType: soft
 
