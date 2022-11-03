@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.0.1](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react-native@7.0.0...@ornikar/jest-config-react-native@7.0.1) (2022-11-03)
+
+
+### Bug Fixes
+
+* fix transformIgnorePatterns bug introduced in [#801](https://github.com/ornikar/shared-configs/issues/801) ([bf74ac2](https://github.com/ornikar/shared-configs/commit/bf74ac295ce812ffe8f123b7ce19353d8a8bd077))
+
+
+
+
+
 # [7.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react-native@6.0.0...@ornikar/jest-config-react-native@7.0.0) (2022-11-03)
 
 

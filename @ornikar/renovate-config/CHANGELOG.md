@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.1.0](https://github.com/ornikar/shared-configs/compare/@ornikar/renovate-config@4.0.0...@ornikar/renovate-config@4.1.0) (2022-11-03)
+
+
+### Features
+
+* **renovate-config:** add missing babel-presets and auto update yarn ([b0b3ef0](https://github.com/ornikar/shared-configs/commit/b0b3ef0e8ce2b9f59465871b01d4684a5624435b))
+
+
+
+
+
 # [4.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/renovate-config@3.11.0...@ornikar/renovate-config@4.0.0) (2022-08-17)
 
 
