@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [10.2.0](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@10.1.1...@ornikar/repo-config@10.2.0) (2022-11-03)
+
+
+### Features
+
+* **deps:** update dependency @pob/pretty-eslint-config to v3 ([#725](https://github.com/ornikar/shared-configs/issues/725)) ([89ccd7d](https://github.com/ornikar/shared-configs/commit/89ccd7da52c277e3e49180530e9de50c4dcbf524))
+
+
+
+
+
 ## [10.1.1](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@10.1.0...@ornikar/repo-config@10.1.1) (2022-09-21)
 
 **Note:** Version bump only for package @ornikar/repo-config

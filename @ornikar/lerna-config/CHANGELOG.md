@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [9.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/lerna-config@8.0.0...@ornikar/lerna-config@9.0.0) (2022-11-03)
+
+
+### Features
+
+* **deps:** update dependency @pob/pretty-eslint-config to v3 ([#725](https://github.com/ornikar/shared-configs/issues/725)) ([89ccd7d](https://github.com/ornikar/shared-configs/commit/89ccd7da52c277e3e49180530e9de50c4dcbf524))
+* **lerna-config:** integrate lerna cli in lerna-config ARCH-1591 ([#801](https://github.com/ornikar/shared-configs/issues/801)) ([e1f1771](https://github.com/ornikar/shared-configs/commit/e1f17719e2b925de915990cafa94dd4819ed32d5))
+
+
+### BREAKING CHANGES
+
+* **lerna-config:** requires to remove direct lerna in devDependencies 
+
+
+
+
+
 # [8.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/lerna-config@7.0.1...@ornikar/lerna-config@8.0.0) (2022-10-28)
 
 
