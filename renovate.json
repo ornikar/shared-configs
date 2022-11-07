@@ -1,5 +1,6 @@
 {
   "extends": ["config:js-lib", "@ornikar"],
+  "ignoreDeps": ["lerna"],
   "packageRules": [
     {
       "packagePatterns": ["^@lerna/"],
