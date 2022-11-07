@@ -1,9 +1,11 @@
 {
   "extends": ["config:js-lib", "@ornikar"],
-  "ignoreDeps": ["lerna"],
   "packageRules": [
     {
       "packagePatterns": ["^@lerna/"],
+      "enabled": false
+    },
+    {
       "matchPackageNames": ["lint-staged"],
       "matchUpdateTypes": ["minor", "patch"],
       "labels": [":ok_hand: code/approved", ":soon: automerge"],
