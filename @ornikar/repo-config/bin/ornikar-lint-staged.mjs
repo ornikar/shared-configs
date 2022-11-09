@@ -11,6 +11,7 @@ lintStaged({
   .then((passed) => {
     process.exitCode = passed ? 0 : 1;
   })
-  .catch(() => {
+  .catch((error) => {
+    console.log(error);
     process.exitCode = 1;
   });
