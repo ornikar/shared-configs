@@ -3,9 +3,9 @@
   "version": "9.0.1",
   "description": "✅⚛️🌎 jest config with react-native-web",
   "repository": {
+    "directory": "@ornikar/jest-config-react-native-web",
     "type": "git",
-    "url": "https://github.com/ornikar/shared-configs.git",
-    "directory": "@ornikar/jest-config-react-native-web"
+    "url": "https://github.com/ornikar/shared-configs.git"
   },
   "main": "jest-preset.js",
   "license": "ISC",
@@ -25,5 +25,8 @@
   "devDependencies": {
     "jest": "26.6.3",
     "react-native-web": "0.17.7"
+  },
+  "scripts": {
+    "lint:eslint": "yarn ../.. eslint --report-unused-disable-directives --quiet @ornikar/jest-config-react-native-web"
   }
 }

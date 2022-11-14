@@ -1,0 +1,5 @@
+{
+  "eslint.workingDirectories": ["../../"],
+  "jest.rootPath": "../..",
+  "jest.jestCommandLine": "node_modules/.bin/jest --config jest.config.js --roots ./@ornikar/jest-config-react-native-web/src"
+}

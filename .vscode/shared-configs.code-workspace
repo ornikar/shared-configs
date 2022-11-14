@@ -1,6 +1,7 @@
 {
   "extensions": {
     "recommendations": [
+      "ornikar.vscode-ornikar-extension",
       "EditorConfig.EditorConfig",
       "esbenp.prettier-vscode",
       "dbaeumer.vscode-eslint",
@@ -35,26 +36,7 @@
     },
     "eslint.lintTask.enable": true,
     "eslint.format.enable": false,
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "jest.disabledWorkspaceFolders": [
-      "babel-preset-base",
-      "babel-preset-kitt-universal",
-      "babel-preset-react",
-      "🦔 browserslist-config",
-      "📓 commitlint-config",
-      "🌐 intl-config",
-      "✅⚛️📱 jest-config-react-native",
-      "📚 lerna-config",
-      "🎨 postcss-config",
-      "🚨📄 prettier-config",
-      "⬆️ renovate-config",
-      "🔧 repo-config",
-      "🔧⚛️ repo-config-react",
-      "📦 rollup-config",
-      "📖 storybook-config",
-      "🚨🎨 stylelint-config",
-      "📦 webpack-config"
-    ]
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "folders": [
     {

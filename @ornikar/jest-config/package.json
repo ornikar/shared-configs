@@ -3,9 +3,9 @@
   "version": "9.1.0",
   "description": "✅ jest config",
   "repository": {
+    "directory": "@ornikar/jest-config",
     "type": "git",
-    "url": "https://github.com/ornikar/shared-configs.git",
-    "directory": "@ornikar/jest-config"
+    "url": "https://github.com/ornikar/shared-configs.git"
   },
   "main": "jest-preset.js",
   "license": "ISC",
@@ -28,5 +28,8 @@
   },
   "devDependencies": {
     "jest": "26.6.3"
+  },
+  "scripts": {
+    "lint:eslint": "yarn ../.. eslint --report-unused-disable-directives --quiet @ornikar/jest-config"
   }
 }

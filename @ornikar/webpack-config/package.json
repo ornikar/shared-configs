@@ -3,9 +3,9 @@
   "version": "5.1.0",
   "description": "📦 webpack config files",
   "repository": {
+    "directory": "@ornikar/webpack-config",
     "type": "git",
-    "url": "https://github.com/ornikar/shared-configs.git",
-    "directory": "@ornikar/webpack-config"
+    "url": "https://github.com/ornikar/shared-configs.git"
   },
   "main": "index.js",
   "license": "ISC",
@@ -14,5 +14,8 @@
   },
   "publishConfig": {
     "access": "public"
+  },
+  "scripts": {
+    "lint:eslint": "yarn ../.. eslint --report-unused-disable-directives --quiet @ornikar/webpack-config"
   }
 }

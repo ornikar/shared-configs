@@ -3,9 +3,9 @@
   "version": "9.0.0",
   "description": "🚨🎨 stylelint config files",
   "repository": {
+    "directory": "@ornikar/stylelint-config",
     "type": "git",
-    "url": "https://github.com/ornikar/shared-configs.git",
-    "directory": "@ornikar/stylelint-config"
+    "url": "https://github.com/ornikar/shared-configs.git"
   },
   "main": "index.js",
   "license": "ISC",
@@ -13,9 +13,10 @@
     "node": ">=16.16.0"
   },
   "scripts": {
-    "lint-tests": "yarn lint-test-css-modules && yarn lint-test-styled-components",
+    "lint-test-css-modules": "stylelint 'tests/css-modules/**/*.css' --config ./tests/css-modules/.stylelintrc.json",
     "lint-test-styled-components": "stylelint 'tests/styled-components/**/*.{ts,tsx}' --config ./tests/styled-components/.stylelintrc.json",
-    "lint-test-css-modules": "stylelint 'tests/css-modules/**/*.css' --config ./tests/css-modules/.stylelintrc.json"
+    "lint-tests": "yarn lint-test-css-modules && yarn lint-test-styled-components",
+    "lint:eslint": "yarn ../.. eslint --report-unused-disable-directives --quiet @ornikar/stylelint-config"
   },
   "publishConfig": {
     "access": "public"

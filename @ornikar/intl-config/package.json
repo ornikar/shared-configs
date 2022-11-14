@@ -3,9 +3,9 @@
   "version": "5.0.0",
   "description": "🌐 intl-config",
   "repository": {
+    "directory": "@ornikar/intl-config",
     "type": "git",
-    "url": "https://github.com/ornikar/shared-configs.git",
-    "directory": "@ornikar/intl-config"
+    "url": "https://github.com/ornikar/shared-configs.git"
   },
   "license": "ISC",
   "engines": {
@@ -23,5 +23,8 @@
   },
   "peerDependencies": {
     "@babel/core": "^7.13.0"
+  },
+  "scripts": {
+    "lint:eslint": "yarn ../.. eslint --report-unused-disable-directives --quiet @ornikar/intl-config"
   }
 }

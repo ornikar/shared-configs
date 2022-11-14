@@ -3,9 +3,9 @@
   "version": "7.0.1",
   "description": "✅⚛️📱 jest config for react-native",
   "repository": {
+    "directory": "@ornikar/jest-config-react-native",
     "type": "git",
-    "url": "https://github.com/ornikar/shared-configs.git",
-    "directory": "@ornikar/jest-config-react-native"
+    "url": "https://github.com/ornikar/shared-configs.git"
   },
   "main": "jest-preset.js",
   "license": "ISC",
@@ -36,5 +36,8 @@
     "@testing-library/react-native": "9.1.0",
     "jest-expo": "45.0.1",
     "react": "17.0.2"
+  },
+  "scripts": {
+    "lint:eslint": "yarn ../.. eslint --report-unused-disable-directives --quiet @ornikar/jest-config-react-native"
   }
 }
