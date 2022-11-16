@@ -29,7 +29,7 @@
   },
   "dependencies": {
     "@ornikar/jest-config-react": "^10.0.0",
-    "@sucrase/jest-plugin": "^2.2.0"
+    "@sucrase/jest-plugin": "^2.2.1"
   },
   "devDependencies": {
     "@testing-library/react-hooks": "7.0.2",
