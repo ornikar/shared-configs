@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [10.3.0](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@10.2.0...@ornikar/repo-config@10.3.0) (2022-11-17)
+
+
+### Bug Fixes
+
+* **deps:** update dependency husky to v8.0.2 ([#808](https://github.com/ornikar/shared-configs/issues/808)) ([26f8369](https://github.com/ornikar/shared-configs/commit/26f83693cd23441258c2b59f18a510bf2a6243b4))
+
+
+### Features
+
+* log errors during ornikar-lint-staged command [no issue] ([#810](https://github.com/ornikar/shared-configs/issues/810)) ([81352c0](https://github.com/ornikar/shared-configs/commit/81352c016051f362718518a680c3d8020830000e))
+
+
+
+
+
 # [10.2.0](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@10.1.1...@ornikar/repo-config@10.2.0) (2022-11-03)
 
 

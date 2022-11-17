@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [10.1.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@10.0.1...@ornikar/jest-config-react@10.1.0) (2022-11-17)
+
+
+### Bug Fixes
+
+* **jest-config-react:** fix testing library cleanup ECF-58 ([#804](https://github.com/ornikar/shared-configs/issues/804)) ([c23b3f4](https://github.com/ornikar/shared-configs/commit/c23b3f4d7742e40cd8e63b31f1273926185376ad))
+
+
+### Features
+
+* **jest-config-react:** configure default max workers ECF-61 ([#805](https://github.com/ornikar/shared-configs/issues/805)) ([779f48c](https://github.com/ornikar/shared-configs/commit/779f48c43e464b03482e23b1f9d4c101ed37141c))
+
+
+
+
+
 ## [10.0.1](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@10.0.0...@ornikar/jest-config-react@10.0.1) (2022-10-28)
 
 **Note:** Version bump only for package @ornikar/jest-config-react
