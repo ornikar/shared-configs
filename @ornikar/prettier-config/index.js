@@ -15,5 +15,11 @@ module.exports = {
         printWidth: 0,
       },
     },
+    {
+      files: ['*.yml', '*.yaml'],
+      options: {
+        singleQuote: false,
+      },
+    },
   ],
 };
