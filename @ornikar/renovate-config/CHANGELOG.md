@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.2.0](https://github.com/ornikar/shared-configs/compare/@ornikar/renovate-config@4.1.0...@ornikar/renovate-config@4.2.0) (2022-11-24)
+
+
+### Bug Fixes
+
+* **renovate-config:** force [@types](https://github.com/types) packages to update independantly than packages when patch or minor ([3254778](https://github.com/ornikar/shared-configs/commit/325477819c8fe6ef7c763a7a74dc6af3307def49))
+
+
+### Features
+
+* **renovate-config:** default rebaseStalePrs to false ([dd72206](https://github.com/ornikar/shared-configs/commit/dd722064dac7a1232a228eaf6c0d49279f05cc24))
+
+
+
+
+
 # [4.1.0](https://github.com/ornikar/shared-configs/compare/@ornikar/renovate-config@4.0.0...@ornikar/renovate-config@4.1.0) (2022-11-03)
 
 
