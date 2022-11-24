@@ -21,7 +21,7 @@
       "masterIssue": true,
       "masterIssueApproval": true,
       "recreateClosed": true,
-      "rebaseStalePrs": true,
+      "rebaseStalePrs": false,
       "updateNotScheduled": false,
       "postUpdateOptions": [
         "yarnDedupeFewer",
@@ -67,6 +67,7 @@
             ":ok_hand: code/approved",
             ":soon: automerge"
           ],
+          "rebaseStalePrs": true,
           "masterIssueApproval": false,
           "schedule": [
             "after 10am and before 5pm every weekday"
@@ -84,6 +85,7 @@
             ":ok_hand: code/approved",
             ":soon: automerge"
           ],
+          "rebaseStalePrs": true,
           "reviewers": []
         },
         {
@@ -184,6 +186,7 @@
           "schedule": [
             "at any time"
           ],
+          "rebaseStalePrs": true,
           "masterIssueApproval": false
         },
         {
