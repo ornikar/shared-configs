@@ -1,6 +1,7 @@
 {
   "extensions": {
     "recommendations": [
+      "ornikar.vscode-ornikar-extension",
       "EditorConfig.EditorConfig",
       "esbenp.prettier-vscode",
       "dbaeumer.vscode-eslint",
@@ -10,51 +11,33 @@
     "unwantedRecommendations": []
   },
   "settings": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true,
+      "source.organizeImports": false
+    },
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "eslint.codeActionsOnSave.mode": "all",
+    "eslint.format.enable": false,
+    "eslint.lintTask.enable": true,
+    "eslint.options": {
+      "resolvePluginsRelativeTo": ".",
+      "reportUnusedDisableDirectives": "error"
+    },
+    "eslint.useESLintClass": true,
+    "eslint.workingDirectories": ["."],
+    "jest.autoRun": {
+      "watch": false,
+      "onStartup": []
+    },
+    "jest.disabledWorkspaceFolders": ["✨ root"],
     "npm.packageManager": "yarn",
     "search.exclude": {
       "**/.yarn": true,
       "**/*.snap": true,
       "**/yarn-error.log": true,
       "**/yarn.lock": true
-    },
-    "editor.formatOnSave": true,
-    "eslint.codeActionsOnSave.mode": "all",
-    "editor.codeActionsOnSave": {
-      "source.fixAll.eslint": true,
-      "source.organizeImports": false
-    },
-    "jest.autoRun": {
-      "watch": false,
-      "onStartup": []
-    },
-    "eslint.workingDirectories": ["."],
-    "eslint.useESLintClass": true,
-    "eslint.options": {
-      "resolvePluginsRelativeTo": ".",
-      "reportUnusedDisableDirectives": "error"
-    },
-    "eslint.lintTask.enable": true,
-    "eslint.format.enable": false,
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "jest.disabledWorkspaceFolders": [
-      "babel-preset-base",
-      "babel-preset-kitt-universal",
-      "babel-preset-react",
-      "🦔 browserslist-config",
-      "📓 commitlint-config",
-      "🌐 intl-config",
-      "✅⚛️📱 jest-config-react-native",
-      "📚 lerna-config",
-      "🎨 postcss-config",
-      "🚨📄 prettier-config",
-      "⬆️ renovate-config",
-      "🔧 repo-config",
-      "🔧⚛️ repo-config-react",
-      "📦 rollup-config",
-      "📖 storybook-config",
-      "🚨🎨 stylelint-config",
-      "📦 webpack-config"
-    ]
+    }
   },
   "folders": [
     {

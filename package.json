@@ -3,20 +3,22 @@
   "private": true,
   "repository": "ornikar/shared-configs",
   "scripts": {
-    "ornikar-lint-staged": "./@ornikar/repo-config/bin/ornikar-lint-staged.mjs",
-    "version": "YARN_ENABLE_IMMUTABLE_INSTALLS=false yarn && git add yarn.lock",
     "lerna": "./@ornikar/lerna-config/bin/lerna.js",
     "lint": "yarn run lint:prettier && yarn run lint:eslint && yarn run lint:stylelint",
-    "lint:prettier": "prettier --check .",
     "lint:eslint": "eslint --report-unused-disable-directives --quiet .",
+    "lint:eslint:fix": "yarn lint:eslint --fix",
+    "lint:prettier": "$(yarn bin ornikar-prettier-check)",
+    "lint:prettier:fix": "$(yarn bin ornikar-prettier-fix)",
     "lint:stylelint": "yarn workspace @ornikar/stylelint-config lint-tests",
-    "test": "jest",
+    "ornikar-lint-staged": "./@ornikar/repo-config/bin/ornikar-lint-staged.mjs",
+    "postinstall": "./@ornikar/repo-config/bin/ornikar-repo-config-postinstall.js",
     "release": "lerna publish --conventional-commits -m 'chore: release'",
-    "postinstall": "./@ornikar/repo-config/bin/ornikar-repo-config-postinstall.js"
+    "test": "jest",
+    "version": "YARN_ENABLE_IMMUTABLE_INSTALLS=false yarn && git add yarn.lock"
   },
   "prettier": "./@ornikar/prettier-config",
   "engines": {
-    "node": ">=16.16.0"
+    "node": ">=16.10.0"
   },
   "commitlint": {
     "extends": [

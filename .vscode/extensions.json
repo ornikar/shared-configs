@@ -3,9 +3,11 @@
   // Extension identifier format: ${publisher}.${name}. Example: vscode.csharp
   // List of extensions which should be recommended for users of this workspace.
   "recommendations": [
+    "ornikar.vscode-ornikar-extension",
     "EditorConfig.EditorConfig",
     "esbenp.prettier-vscode",
     "dbaeumer.vscode-eslint",
+    "Orta.vscode-jest",
     "ms-vsliveshare.vsliveshare-pack"
   ],
   // List of extensions recommended by VS Code that should not be recommended for users of this workspace.

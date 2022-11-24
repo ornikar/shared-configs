@@ -3,9 +3,9 @@
   "version": "6.0.0",
   "description": "🎨 postcss config files",
   "repository": {
+    "directory": "@ornikar/postcss-config",
     "type": "git",
-    "url": "https://github.com/ornikar/shared-configs.git",
-    "directory": "@ornikar/postcss-config"
+    "url": "https://github.com/ornikar/shared-configs.git"
   },
   "main": "index.js",
   "license": "ISC",
@@ -26,5 +26,8 @@
   },
   "peerDependencies": {
     "postcss": "^8.2.10"
+  },
+  "scripts": {
+    "lint:eslint": "yarn ../.. eslint --report-unused-disable-directives --quiet @ornikar/postcss-config"
   }
 }

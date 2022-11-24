@@ -3,9 +3,9 @@
   "version": "10.3.0",
   "description": "🔧 repo config",
   "repository": {
+    "directory": "@ornikar/repo-config",
     "type": "git",
-    "url": "https://github.com/ornikar/shared-configs.git",
-    "directory": "@ornikar/repo-config"
+    "url": "https://github.com/ornikar/shared-configs.git"
   },
   "license": "ISC",
   "engines": {
@@ -29,5 +29,8 @@
     "prettier-plugin-properties": "0.2.0",
     "semver": "^7.3.5",
     "which-pm-runs": "^1.1.0"
+  },
+  "scripts": {
+    "lint:eslint": "yarn ../.. eslint --report-unused-disable-directives --quiet @ornikar/repo-config"
   }
 }

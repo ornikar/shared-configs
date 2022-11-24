@@ -3,9 +3,9 @@
   "version": "4.2.0",
   "description": "⬆️ renovate shared config",
   "repository": {
+    "directory": "@ornikar/renovate-config",
     "type": "git",
-    "url": "https://github.com/ornikar/shared-configs.git",
-    "directory": "@ornikar/renovate-config"
+    "url": "https://github.com/ornikar/shared-configs.git"
   },
   "engines": {
     "node": ">=16.16.0"
@@ -306,5 +306,8 @@
         }
       ]
     }
+  },
+  "scripts": {
+    "lint:eslint": "yarn ../.. eslint --report-unused-disable-directives --quiet @ornikar/renovate-config"
   }
 }

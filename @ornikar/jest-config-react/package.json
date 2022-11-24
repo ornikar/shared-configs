@@ -3,9 +3,9 @@
   "version": "10.2.0",
   "description": "✅⚛️ jest config for react",
   "repository": {
+    "directory": "@ornikar/jest-config-react",
     "type": "git",
-    "url": "https://github.com/ornikar/shared-configs.git",
-    "directory": "@ornikar/jest-config-react"
+    "url": "https://github.com/ornikar/shared-configs.git"
   },
   "main": "jest-preset.js",
   "license": "ISC",
@@ -32,5 +32,8 @@
     "jest": "27.5.1",
     "react": "17.0.2",
     "react-dom": "17.0.2"
+  },
+  "scripts": {
+    "lint:eslint": "yarn ../.. eslint --report-unused-disable-directives --quiet @ornikar/jest-config-react"
   }
 }

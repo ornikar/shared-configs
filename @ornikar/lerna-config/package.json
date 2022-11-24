@@ -3,9 +3,9 @@
   "version": "9.0.0",
   "description": "📚 lerna config",
   "repository": {
+    "directory": "@ornikar/lerna-config",
     "type": "git",
-    "url": "https://github.com/ornikar/shared-configs.git",
-    "directory": "@ornikar/lerna-config"
+    "url": "https://github.com/ornikar/shared-configs.git"
   },
   "license": "ISC",
   "engines": {
@@ -35,5 +35,8 @@
     "@lerna/publish": "5.5.4",
     "@lerna/version": "5.5.4",
     "@pob/pretty-eslint-config": "^3.0.0"
+  },
+  "scripts": {
+    "lint:eslint": "yarn ../.. eslint --report-unused-disable-directives --quiet @ornikar/lerna-config"
   }
 }
