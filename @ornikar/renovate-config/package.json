@@ -161,6 +161,16 @@
           ]
         },
         {
+          "matchPackageNames": [
+            "^@types/"
+          ],
+          "matchUpdateTypes": [
+            "patch",
+            "minor"
+          ],
+          "groupName": null
+        },
+        {
           "updateTypes": [
             "major"
           ],
