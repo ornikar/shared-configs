@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.1.1](https://github.com/ornikar/shared-configs/compare/@ornikar/webpack-config@5.1.0...@ornikar/webpack-config@5.1.1) (2022-11-29)
+
+**Note:** Version bump only for package @ornikar/webpack-config
+
+
+
+
+
 # [5.1.0](https://github.com/ornikar/shared-configs/compare/@ornikar/webpack-config@5.0.0...@ornikar/webpack-config@5.1.0) (2022-10-28)
 
 

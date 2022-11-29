@@ -1,6 +1,6 @@
 {
   "name": "@ornikar/jest-config-react-native-web",
-  "version": "9.1.0",
+  "version": "9.1.1",
   "description": "✅⚛️🌎 jest config with react-native-web",
   "repository": {
     "directory": "@ornikar/jest-config-react-native-web",
@@ -20,7 +20,7 @@
     "react-native-web": "^0.17.5"
   },
   "dependencies": {
-    "@ornikar/jest-config-react": "^10.2.0"
+    "@ornikar/jest-config-react": "^10.2.1"
   },
   "devDependencies": {
     "jest": "27.5.1",

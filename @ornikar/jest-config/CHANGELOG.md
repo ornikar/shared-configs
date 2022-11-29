@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.2.1](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config@9.2.0...@ornikar/jest-config@9.2.1) (2022-11-29)
+
+
+### Bug Fixes
+
+* remove test shim [no issue] ([#819](https://github.com/ornikar/shared-configs/issues/819)) ([b05cef7](https://github.com/ornikar/shared-configs/commit/b05cef71fa05da82500511d0be7c08a1eb43d3aa))
+
+
+
+
+
 # [9.2.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config@9.1.0...@ornikar/jest-config@9.2.0) (2022-11-22)
 
 
