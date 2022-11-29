@@ -32,4 +32,5 @@ module.exports = {
     '<rootDir>/test-setup.js',
   ],
   globalSetup: require.resolve('./jest-global-setup.js'),
+  clearMocks: true,
 };
