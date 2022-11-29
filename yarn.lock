@@ -1752,7 +1752,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@expo/config@npm:~7.0.0":
+"@expo/config@npm:~7.0.2":
   version: 7.0.3
   resolution: "@expo/config@npm:7.0.3"
   dependencies:
@@ -3088,12 +3088,12 @@ __metadata:
     "@sucrase/jest-plugin": ^2.2.1
     "@testing-library/react-hooks": 7.0.2
     "@testing-library/react-native": 9.1.0
-    jest-expo: 46.0.2
+    jest-expo: 47.0.1
     react: 17.0.2
   peerDependencies:
     "@testing-library/react-hooks": ^7.0.0
     "@testing-library/react-native": ^7.2.0 || ^8.0.0 || ^9.0.0
-    jest-expo: ^41.0.0 || ^42.0.0 || ^43.0.0 || ^44.0.0 || ^45.0.0 ||^46.0.0
+    jest-expo: ^41.0.0 || ^42.0.0 || ^43.0.0 || ^44.0.0 || ^45.0.0 ||^46.0.0 || ^47.0.0
     react: ^17.0.0
     react-dom: ^17.0.0
   peerDependenciesMeta:
@@ -9948,11 +9948,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"jest-expo@npm:46.0.2":
-  version: 46.0.2
-  resolution: "jest-expo@npm:46.0.2"
+"jest-expo@npm:47.0.1":
+  version: 47.0.1
+  resolution: "jest-expo@npm:47.0.1"
   dependencies:
-    "@expo/config": ~7.0.0
+    "@expo/config": ~7.0.2
     "@jest/create-cache-key-function": ^27.0.1
     babel-jest: ^26.6.3
     find-up: ^5.0.0
@@ -9963,7 +9963,7 @@ __metadata:
     react-test-renderer: ~18.1.0
   bin:
     jest: bin/jest.js
-  checksum: 4bbe5da5988f14887724535b790e88896f01e3cb839b1fa3e53dc872625fd501ca077d67c8ca53b1bf7def3613d2fcaa54f52f29b6f4953bf97e4f280636ea63
+  checksum: 47b68ec464f08b172125cbd0536954ad42917e7b52f12a39bd90ed5622d054ee0b5a269a1b7bbedcb1e5bb6b9a78dfcd1a07f9a328930d489c4c44c9ba8212b3
   languageName: node
   linkType: hard
 
