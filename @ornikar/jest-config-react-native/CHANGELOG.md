@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.2.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react-native@7.1.1...@ornikar/jest-config-react-native@7.2.0) (2022-11-30)
+
+
+### Bug Fixes
+
+* update config for Jest 27 ONK-4620 ([#821](https://github.com/ornikar/shared-configs/issues/821)) ([4ef02d5](https://github.com/ornikar/shared-configs/commit/4ef02d52ca7127beba853b92695786bf10d4868c))
+
+
+### Features
+
+* **deps:** update dependency jest-expo to v47 ([#760](https://github.com/ornikar/shared-configs/issues/760)) ([245d774](https://github.com/ornikar/shared-configs/commit/245d774c6b9d29bfa3cfe600a454f00218bb6118))
+
+
+
+
+
 ## [7.1.1](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react-native@7.1.0...@ornikar/jest-config-react-native@7.1.1) (2022-11-29)
 
 **Note:** Version bump only for package @ornikar/jest-config-react-native

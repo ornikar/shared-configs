@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [9.3.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config@9.2.1...@ornikar/jest-config@9.3.0) (2022-11-30)
+
+
+### Features
+
+* **jest-config:** add clearMocks config INSTRUCTOR-1858 ([#820](https://github.com/ornikar/shared-configs/issues/820)) ([0375fb2](https://github.com/ornikar/shared-configs/commit/0375fb2298baa10b14e5c325cebee377f2d518af))
+
+
+
+
+
 ## [9.2.1](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config@9.2.0...@ornikar/jest-config@9.2.1) (2022-11-29)
 
 
