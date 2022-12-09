@@ -9,7 +9,8 @@ const workspaces = pkg.workspaces || false;
 const isLernaRepo = Boolean(pkg.devDependencies && pkg.devDependencies.lerna);
 const hasTypescript = Boolean(pkg.devDependencies && pkg.devDependencies.typescript);
 const shouldGenerateTsconfigInLernaRepo = isLernaRepo && hasTypescript;
-const shouldRunCheckPkgScript = fs.existsSync('./scripts/check-packagejson.js');
+const shouldRunCheckPkgJSScript = fs.existsSync('./scripts/check-packagejson.js');
+const shouldRunCheckPkgMJSScript = fs.existsSync('./scripts/check-packagejson.mjs');
 
 const getSrcDirectories = (srcDirectoryName = 'src') =>
   workspaces
@@ -32,7 +33,8 @@ module.exports = function createLintStagedConfig(options = {}) {
         packagejsonFilenames.length === 0 ? undefined : `prettier --write ${packagejsonFilenames.join(' ')}`,
         isLernaRepo && require.resolve('@ornikar/lerna-config/bin/generate-eslintrc-files.mjs'),
         shouldGenerateTsconfigInLernaRepo && require.resolve('@ornikar/lerna-config/bin/generate-tsconfig-files.mjs'),
-        shouldRunCheckPkgScript && 'node ./scripts/check-packagejson.js',
+        shouldRunCheckPkgJSScript && 'node ./scripts/check-packagejson.js',
+        shouldRunCheckPkgMJSScript && 'node ./scripts/check-packagejson.mjs',
         'git add yarn.lock .yarn',
       ].filter(Boolean);
     },

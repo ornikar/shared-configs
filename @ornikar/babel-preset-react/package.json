@@ -21,7 +21,13 @@
     "lint:eslint": "yarn ../.. eslint --report-unused-disable-directives --quiet @ornikar/babel-preset-react",
     "test": "jest"
   },
+  "peerDependencies": {
+    "@babel/core": "^7.0.0"
+  },
   "dependencies": {
     "@babel/preset-react": "^7.13.8"
+  },
+  "devDependencies": {
+    "@babel/core": "7.18.9"
   }
 }
