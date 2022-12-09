@@ -3127,7 +3127,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@ornikar/prettier-config@workspace:@ornikar/prettier-config"
   dependencies:
-    prettier: 2.8.0
+    prettier: 2.8.1
   peerDependencies:
     prettier: ^2.0.4
   languageName: unknown
@@ -3212,10 +3212,10 @@ __metadata:
     "@commitlint/cli": 17.3.0
     "@ornikar/eslint-config": 19.5.0
     check-package-dependencies: 4.0.0
-    eslint: 8.28.0
+    eslint: 8.29.0
     jest: 27.5.1
     lint-staged: 13.0.4
-    prettier: 2.8.0
+    prettier: 2.8.1
   languageName: unknown
   linkType: soft
 
@@ -3239,7 +3239,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@ornikar/stylelint-config@workspace:@ornikar/stylelint-config"
   dependencies:
-    prettier: 2.8.0
+    prettier: 2.8.1
     stylelint: 13.13.1
     stylelint-config-css-modules: ^2.2.0
     stylelint-config-prettier: ^8.0.2
@@ -7553,9 +7553,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint@npm:8.28.0":
-  version: 8.28.0
-  resolution: "eslint@npm:8.28.0"
+"eslint@npm:8.29.0":
+  version: 8.29.0
+  resolution: "eslint@npm:8.29.0"
   dependencies:
     "@eslint/eslintrc": ^1.3.3
     "@humanwhocodes/config-array": ^0.11.6
@@ -7598,7 +7598,7 @@ __metadata:
     text-table: ^0.2.0
   bin:
     eslint: bin/eslint.js
-  checksum: 1b793486b2ec80f0602d75fff7116f7c39a3286f523608a999eead9bec4154a06841785d2b4fb87f8292a94cf85778c1dbfaec727772a09c4d604fdb9ff0809a
+  checksum: e05204b05907b82d910983995cb946e0ba62ca514eb2b6791c43f623333b143564a2eee0139909d31c10935c21877d815b1f76dd674a59cb91c471064325c4ab
   languageName: node
   linkType: hard
 
@@ -9070,14 +9070,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"inherits@npm:2, inherits@npm:2.0.3, inherits@npm:^2.0.1, inherits@npm:^2.0.3, inherits@npm:^2.0.4, inherits@npm:~2.0.1, inherits@npm:~2.0.3":
-  version: 2.0.3
-  resolution: "inherits@npm:2.0.3"
-  checksum: 78cb8d7d850d20a5e9a7f3620db31483aa00ad5f722ce03a55b110e5a723539b3716a3b463e2b96ce3fe286f33afc7c131fa2f91407528ba80cea98a7545d4c0
-  languageName: node
-  linkType: hard
-
-"inherits@npm:2.0.1":
+"inherits@npm:2, inherits@npm:2.0.1, inherits@npm:2.0.3, inherits@npm:^2.0.1, inherits@npm:^2.0.3, inherits@npm:^2.0.4, inherits@npm:~2.0.1, inherits@npm:~2.0.3":
   version: 2.0.1
   resolution: "inherits@npm:2.0.1"
   checksum: 6536b9377296d4ce8ee89c5c543cb75030934e61af42dba98a428e7d026938c5985ea4d1e3b87743a5b834f40ed1187f89c2d7479e9d59e41d2d1051aefba07b
@@ -11492,17 +11485,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ms@npm:2.0.0":
+"ms@npm:2.0.0, ms@npm:2.1.2, ms@npm:^2.0.0, ms@npm:^2.1.1":
   version: 2.0.0
   resolution: "ms@npm:2.0.0"
   checksum: 0e6a22b8b746d2e0b65a430519934fefd41b6db0682e3477c10f60c76e947c4c0ad06f63ffdf1d78d335f83edee8c0aa928aa66a36c7cd95b69b26f468d527f4
-  languageName: node
-  linkType: hard
-
-"ms@npm:2.1.2, ms@npm:^2.0.0, ms@npm:^2.1.1":
-  version: 2.1.2
-  resolution: "ms@npm:2.1.2"
-  checksum: 673cdb2c3133eb050c745908d8ce632ed2c02d85640e2edb3ace856a2266a813b30c613569bf3354fdf4ea7d1a1494add3bfa95e2713baa27d0c2c71fc44f58f
   languageName: node
   linkType: hard
 
@@ -13246,12 +13232,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier@npm:2.8.0, prettier@npm:^2.6.2":
-  version: 2.8.0
-  resolution: "prettier@npm:2.8.0"
+"prettier@npm:2.8.1, prettier@npm:^2.6.2":
+  version: 2.8.1
+  resolution: "prettier@npm:2.8.1"
   bin:
     prettier: bin-prettier.js
-  checksum: 72004ce0cc9bb097daf3e3833f62495768724392c1d5b178dd47372337616e9e50ecbb0804f236596223f7b5eb1bbe69cefc8957dca21112c5777e77ef73a564
+  checksum: 4f21a0f1269f76fb36f54e9a8a1ea4c11e27478958bf860661fb4b6d7ac69aac1581f8724fa98ea3585e56d42a2ea317a17ff6e3324f40cb11ff9e20b73785cc
   languageName: node
   linkType: hard
 
@@ -13513,14 +13499,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-is@npm:^16.12.0 || ^17.0.0 || ^18.0.0, react-is@npm:^17.0.1, react-is@npm:^17.0.2":
-  version: 17.0.2
-  resolution: "react-is@npm:17.0.2"
-  checksum: 9d6d111d8990dc98bc5402c1266a808b0459b5d54830bbea24c12d908b536df7883f268a7868cfaedde3dd9d4e0d574db456f84d2e6df9c4526f99bb4b5344d8
-  languageName: node
-  linkType: hard
-
-"react-is@npm:^16.13.1":
+"react-is@npm:^16.12.0 || ^17.0.0 || ^18.0.0, react-is@npm:^16.13.1, react-is@npm:^17.0.1, react-is@npm:^17.0.2":
   version: 16.13.1
   resolution: "react-is@npm:16.13.1"
   checksum: f7a19ac3496de32ca9ae12aa030f00f14a3d45374f1ceca0af707c831b2a6098ef0d6bdae51bd437b0a306d7f01d4677fcc8de7c0d331eb47ad0f46130e53c5f
@@ -14250,21 +14229,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"semver@npm:7.0.0":
+"semver@npm:7.0.0, semver@npm:7.3.2, semver@npm:7.3.7, semver@npm:^7.0.0, semver@npm:^7.1.1, semver@npm:^7.3.2, semver@npm:^7.3.4, semver@npm:^7.3.5, semver@npm:^7.3.7":
   version: 7.0.0
   resolution: "semver@npm:7.0.0"
   bin:
     semver: bin/semver.js
   checksum: 272c11bf8d083274ef79fe40a81c55c184dff84dd58e3c325299d0927ba48cece1f020793d138382b85f89bab5002a35a5ba59a3a68a7eebbb597eb733838778
-  languageName: node
-  linkType: hard
-
-"semver@npm:7.3.2, semver@npm:7.3.7, semver@npm:^7.0.0, semver@npm:^7.1.1, semver@npm:^7.3.2, semver@npm:^7.3.4, semver@npm:^7.3.5, semver@npm:^7.3.7":
-  version: 7.3.2
-  resolution: "semver@npm:7.3.2"
-  bin:
-    semver: bin/semver.js
-  checksum: 692f4900dadb43919614b0df9af23fe05743051cda0d1735b5e4d76f93c9e43a266fae73cfc928f5d1489f022c5c0e65dfd2900fcf5b1839c4e9a239729afa7b
   languageName: node
   linkType: hard
 
