@@ -2,4 +2,4 @@
 
 'use strict';
 
-exports.action = () => jest.fn();
+module.exports = require('@ornikar/jest-config-react/__mocks__/@storybook/addon-actions');
