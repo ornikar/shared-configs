@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.3.1](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react-native@7.3.0...@ornikar/jest-config-react-native@7.3.1) (2022-12-20)
+
+
+### Bug Fixes
+
+* **jest-config-react-native:** fix addons mock path ([ee1f5e8](https://github.com/ornikar/shared-configs/commit/ee1f5e8f0c634014f565fb12746b9cbed97d124c))
+
+
+
+
+
 # [7.3.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react-native@7.2.0...@ornikar/jest-config-react-native@7.3.0) (2022-12-16)
 
 
