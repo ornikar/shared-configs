@@ -25,7 +25,7 @@
     "postcss": "8.4.17"
   },
   "peerDependencies": {
-    "postcss": "^8.2.10"
+    "postcss": "^8.3.0"
   },
   "scripts": {
     "lint:eslint": "yarn ../.. eslint --report-unused-disable-directives --quiet @ornikar/postcss-config"

@@ -16,15 +16,20 @@
     "access": "public"
   },
   "peerDependencies": {
+    "@testing-library/react": "^11.2.5 || ^12.0.0",
     "@testing-library/react-hooks": "^7.0.0",
     "@testing-library/react-native": "^7.2.0 || ^8.0.0 || ^9.0.0",
-    "jest": "^27.0.0",
-    "jest-expo": "^41.0.0 || ^42.0.0 || ^43.0.0 || ^44.0.0 || ^45.0.0 ||^46.0.0 || ^47.0.0",
+    "jest": "^27.5.1",
+    "jest-expo": "^41.0.0 || ^42.0.0 || ^43.0.0 || ^44.0.0 || ^45.0.0 || ^46.0.0 || ^47.0.0",
     "react": "^17.0.0",
-    "react-dom": "^17.0.0"
+    "react-dom": "^17.0.0",
+    "react-native": ">=0.59"
   },
   "peerDependenciesMeta": {
     "@testing-library/react-native": {
+      "optional": true
+    },
+    "react-native": {
       "optional": true
     }
   },
@@ -35,8 +40,9 @@
   "devDependencies": {
     "@testing-library/react-hooks": "7.0.2",
     "@testing-library/react-native": "9.1.0",
-    "jest-expo": "47.0.1",
-    "react": "17.0.2"
+    "jest-expo": "45.0.1",
+    "react": "17.0.2",
+    "react-test-renderer": "17.0.2"
   },
   "scripts": {
     "lint:eslint": "yarn ../.. eslint --report-unused-disable-directives --quiet @ornikar/jest-config-react-native"

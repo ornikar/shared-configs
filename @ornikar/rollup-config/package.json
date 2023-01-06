@@ -21,8 +21,11 @@
     "test": "cd ../.. ; yarn test @ornikar/rollup-config"
   },
   "peerDependencies": {
+    "@babel/core": "^7.0.0",
+    "@babel/runtime": "^7.13.8",
     "@linaria/rollup": "*",
-    "rollup": "^2.40.0"
+    "postcss": "^8.3.0",
+    "rollup": "^2.42.0"
   },
   "peerDependenciesMeta": {
     "@linaria/rollup": {
@@ -30,6 +33,8 @@
     }
   },
   "devDependencies": {
+    "@babel/core": "7.18.9",
+    "postcss": "8.4.17",
     "rollup": "2.77.2"
   },
   "dependencies": {

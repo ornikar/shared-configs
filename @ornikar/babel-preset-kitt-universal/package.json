@@ -31,7 +31,7 @@
     "babel-plugin-styled-components-react-native-web": "^0.2.2"
   },
   "devDependencies": {
-    "@babel/core": "7.16.7",
+    "@babel/core": "7.18.9",
     "@babel/preset-react": "7.16.7",
     "@linaria/babel-preset": "4.2.0",
     "@linaria/shaker": "4.2.0",
