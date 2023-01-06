@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [10.3.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@10.2.2...@ornikar/jest-config-react@10.3.0) (2022-12-16)
+
+
+### Features
+
+* **jest-config-react:** add storybook mocks [no issue] ([#827](https://github.com/ornikar/shared-configs/issues/827)) ([3ebed2f](https://github.com/ornikar/shared-configs/commit/3ebed2fac66dc585d36712a668c040db294fb0ff))
+
+
+
+
+
 ## [10.2.2](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@10.2.1...@ornikar/jest-config-react@10.2.2) (2022-11-30)
 
 **Note:** Version bump only for package @ornikar/jest-config-react
