@@ -3221,7 +3221,7 @@ __metadata:
   dependencies:
     "@commitlint/cli": 17.4.0
     "@ornikar/eslint-config": 19.9.1
-    check-package-dependencies: 4.0.0
+    check-package-dependencies: 6.2.0
     eslint: 8.31.0
     jest: 27.5.1
     lint-staged: 13.1.0
@@ -5597,6 +5597,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"chalk@npm:^5.2.0":
+  version: 5.2.0
+  resolution: "chalk@npm:5.2.0"
+  checksum: 03d8060277de6cf2fd567dc25fcf770593eb5bb85f460ce443e49255a30ff1242edd0c90a06a03803b0466ff0687a939b41db1757bec987113e83de89a003caa
+  languageName: node
+  linkType: hard
+
 "char-regex@npm:^1.0.2":
   version: 1.0.2
   resolution: "char-regex@npm:1.0.2"
@@ -5632,18 +5639,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"check-package-dependencies@npm:4.0.0":
-  version: 4.0.0
-  resolution: "check-package-dependencies@npm:4.0.0"
+"check-package-dependencies@npm:6.2.0":
+  version: 6.2.0
+  resolution: "check-package-dependencies@npm:6.2.0"
   dependencies:
-    chalk: ^4.1.0
+    chalk: ^5.2.0
     glob: ^8.0.0
     import-meta-resolve: ^2.1.0
-    semver: ^7.3.4
+    semver: ^7.3.8
+    semver-utils: ^1.1.4
     type-fest: ^3.0.0
   bin:
     check-package-dependencies: bin/check-package-dependencies.js
-  checksum: b4378e245ff7a525da54f3ed433d3af0f3d72f586f0a30fc3a15b035045adacd487af951a50fbfc3f520f2b79d349bad6725a41cd3ebbaa1fba45bbbb7d3ef2d
+  checksum: 9c19f78449871d1446ae0fcf96270a45eb78c20adc494c17c1f716988a3d7897ac0b89bf34bb20afdd202252c454792658ab61210be83276a9634ee5ae3ca321
   languageName: node
   linkType: hard
 
@@ -14261,6 +14269,13 @@ __metadata:
     ajv-errors: ^1.0.0
     ajv-keywords: ^3.1.0
   checksum: e8273b4f6eff9ddf4a4f4c11daf7b96b900237bf8859c86fa1e9b4fab416b72d7ea92468f8db89c18a3499a1070206e1c8a750c83b42d5325fc659cbb55eee88
+  languageName: node
+  linkType: hard
+
+"semver-utils@npm:^1.1.4":
+  version: 1.1.4
+  resolution: "semver-utils@npm:1.1.4"
+  checksum: 93fd955a30f5bdf532163d94981aa03dfbaddf29dad6388415b264c95d7046a6b47d947c6e3e37c0d7867ed3f024aa6e50fc308c9487378354e9d300c9dd68b6
   languageName: node
   linkType: hard
 
