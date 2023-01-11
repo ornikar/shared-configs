@@ -12,5 +12,6 @@
       "rebaseStalePrs": true,
       "masterIssueApproval": false
     }
-  ]
+  ],
+  "reviewers": ["christophehurpeau"]
 }
