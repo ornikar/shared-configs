@@ -16,9 +16,10 @@
     "access": "public"
   },
   "peerDependencies": {
-    "@storybook/addon-essentials": "^6.2.9",
-    "@storybook/addons": "^6.2.9",
-    "webpack": "^4.37.0"
+    "@storybook/addon-essentials": "^6.5.15",
+    "@storybook/addons": "^6.5.15",
+    "@storybook/builder-webpack5": "^6.5.15",
+    "webpack": "^5.75.0"
   },
   "dependencies": {
     "@chrp/typed-css-modules-loader": "0.7.0",
@@ -27,7 +28,7 @@
     "typed-css-modules": "0.7.2"
   },
   "devDependencies": {
-    "webpack": "4.46.0"
+    "webpack": "5.75.0"
   },
   "scripts": {
     "lint:eslint": "yarn ../.. eslint --report-unused-disable-directives --quiet @ornikar/storybook-config"

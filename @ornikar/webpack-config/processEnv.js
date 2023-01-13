@@ -1,6 +1,5 @@
 'use strict';
 
-// eslint-disable-next-line import/no-extraneous-dependencies -- should be installed either directly or indirectly by app or storybook.
 const webpack = require('webpack');
 
 module.exports = (env, webpackConfig, { definitions = {}, envVariables = {} } = {}) => {

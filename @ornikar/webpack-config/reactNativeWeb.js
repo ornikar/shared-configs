@@ -45,14 +45,14 @@ module.exports = (
           ...nativeModulesToTranspile,
         ].join('|')})`,
       ),
-      loaders: [babelLoaderConfig],
+      use: [babelLoaderConfig],
     },
     // native modules needing transpilation
     {
       test: /\.(js|jsx|ts|tsx)$/,
       include: /node_modules\/(@?react-native.*(?!web)|@?expo.*|@?react-navigation.*)\//,
       exclude: /node_modules\/.*\/(commonjs|modules|dist\/(modules|cjs|vendor))\//,
-      loaders: [babelLoaderConfig],
+      use: [babelLoaderConfig],
     },
   ];
 

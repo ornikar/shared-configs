@@ -7,7 +7,6 @@ const path = require('path');
 const linaria = require('@ornikar/webpack-config/linaria');
 const processEnv = require('@ornikar/webpack-config/processEnv');
 const reactNativeWeb = require('@ornikar/webpack-config/reactNativeWeb');
-const resolveFields = require('@ornikar/webpack-config/resolveFields');
 const cssModulesRule = require('../webpack-configs/cssModulesRule');
 const fixStorybookBabelRules = require('../webpack-configs/fixStorybookBabelRules');
 const svgRule = require('../webpack-configs/svgRule');
@@ -48,7 +47,6 @@ module.exports = (
 
   const env = process.env.NODE_ENV !== 'production' ? 'dev' : 'production';
 
-  resolveFields(env, webpackConfig);
   if (!disableCssModules) {
     cssModulesRule(env, webpackConfig, srcDirectories);
   }
