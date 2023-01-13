@@ -46,14 +46,12 @@ var sayHello = function () {
   for (var _len = arguments.length, names = new Array(_len), _key = 0; _key < _len; _key++) {
     names[_key] = arguments[_key];
   }
-
   console.log(\\"hello \\".concat(names.join(', ')));
 };
 var testSpread = function () {
   var _ref = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {},
-      name = _ref.name,
-      rest = _objectWithoutProperties(_ref, _excluded);
-
+    name = _ref.name,
+    rest = _objectWithoutProperties(_ref, _excluded);
   console.log(_objectSpread({
     name: name
   }, rest));

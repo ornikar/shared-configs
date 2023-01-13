@@ -44,15 +44,11 @@ const Button = /*#__PURE__*/styled(BabelPluginStyledComponentsReactNative.View).
   displayName: "web-with-react-refresh-and-linaria__Button"
 })(["display:flex;"]);
 _c = Button;
-
 function TestComponentUsingButton() {
   return /*#__PURE__*/_jsx(Button, {});
 }
-
 _c2 = TestComponentUsingButton;
-
 var _c, _c2;
-
 $RefreshReg\$(_c, "Button");
 $RefreshReg\$(_c2, "TestComponentUsingButton");
 `;

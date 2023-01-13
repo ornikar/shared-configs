@@ -82,17 +82,14 @@ const StyledPressableIconButton = styled.Pressable\`
   const {
     iconButton
   } = theme.kitt;
-
   if ("web" !== 'web') {
     return undefined;
   }
-
   return \`
       transition: all 200ms ease;
     \`;
 }};
   \`;
-
 function TestComponentUsingButton() {
   return /*#__PURE__*/_jsx(PressableIconButtonWebWrapper, {});
 }
