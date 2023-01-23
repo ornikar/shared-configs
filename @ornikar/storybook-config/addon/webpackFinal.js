@@ -80,5 +80,9 @@ module.exports = (
     ...modulesToAlias,
   };
 
+  // https://github.com/storybookjs/storybook/pull/19358
+  // not backported yet to storybook 6
+  webpackConfig.resolve.fallback.assert = require.resolve('browser-assert');
+
   return webpackConfig;
 };

@@ -5,15 +5,20 @@ const webpack = require('webpack');
 module.exports = (env, webpackConfig, { definitions = {}, envVariables = {} } = {}) => {
   webpackConfig.plugins.push(
     new webpack.DefinePlugin({
-      'process.env.NODE_ENV': JSON.stringify(env),
+      // make sure webpack don't "polyfill" process.env by setting and empty object
+      process: {
+        env: {},
+      },
+      // NOTE: process.env.NODE_ENV is defined by storybook and CRA5.
       'process.browser': true,
       'process.title': '"browser"',
       __DEV__: env !== 'production',
       ...definitions,
-      ...Object.fromEntries(Object.entries(envVariables).map(([key, value]) => [`process.env.${key}`, value])),
+      ...Object.fromEntries(
+        Object.entries(envVariables)
+          .filter(([key]) => key !== 'NODE_ENV')
+          .map(([key, value]) => [`process.env.${key}`, JSON.stringify(value)]),
+      ),
     }),
-
-    // make sure webpack don't "polyfill" process.env by setting and empty object
-    new webpack.DefinePlugin({ process: { env: {} } }),
   );
 };
