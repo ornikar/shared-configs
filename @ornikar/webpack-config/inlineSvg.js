@@ -5,7 +5,10 @@ module.exports = (env, webpackConfig) => {
     test: /\.inline\.svg$/,
     exclude: /node_modules/,
     use: {
-      loader: 'svg-react-loader',
+      loader: '@svgr/webpack',
+      options: {
+        svgo: false, // svg are optimized via lint-staged
+      },
     },
   });
 };
