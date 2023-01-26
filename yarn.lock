@@ -2940,7 +2940,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ornikar/babel-preset-kitt-universal@^2.1.1, @ornikar/babel-preset-kitt-universal@workspace:@ornikar/babel-preset-kitt-universal":
+"@ornikar/babel-preset-kitt-universal@^2.1.2, @ornikar/babel-preset-kitt-universal@workspace:@ornikar/babel-preset-kitt-universal":
   version: 0.0.0-use.local
   resolution: "@ornikar/babel-preset-kitt-universal@workspace:@ornikar/babel-preset-kitt-universal"
   dependencies:
@@ -2958,7 +2958,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ornikar/babel-preset-react@^2.0.1, @ornikar/babel-preset-react@workspace:@ornikar/babel-preset-react":
+"@ornikar/babel-preset-react@^2.0.2, @ornikar/babel-preset-react@workspace:@ornikar/babel-preset-react":
   version: 0.0.0-use.local
   resolution: "@ornikar/babel-preset-react@workspace:@ornikar/babel-preset-react"
   dependencies:
@@ -3154,7 +3154,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@ornikar/repo-config-react@workspace:@ornikar/repo-config-react"
   dependencies:
-    "@ornikar/repo-config": ^10.3.2
+    "@ornikar/repo-config": ^10.4.0
     cross-env: ^7.0.0
     node-fetch: ^3.2.3
     svgo: ^2.8.0
@@ -3164,7 +3164,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ornikar/repo-config@^10.3.2, @ornikar/repo-config@workspace:@ornikar/repo-config":
+"@ornikar/repo-config@^10.4.0, @ornikar/repo-config@workspace:@ornikar/repo-config":
   version: 0.0.0-use.local
   resolution: "@ornikar/repo-config@workspace:@ornikar/repo-config"
   dependencies:
@@ -3191,8 +3191,8 @@ __metadata:
     "@babel/core": 7.18.9
     "@babel/plugin-transform-runtime": ^7.13.8
     "@ornikar/babel-preset-base": ^2.0.1
-    "@ornikar/babel-preset-kitt-universal": ^2.1.1
-    "@ornikar/babel-preset-react": ^2.0.1
+    "@ornikar/babel-preset-kitt-universal": ^2.1.2
+    "@ornikar/babel-preset-react": ^2.0.2
     "@rollup/plugin-babel": ^5.3.1
     "@rollup/plugin-node-resolve": ^13.0.0
     "@rollup/plugin-replace": ^4.0.0

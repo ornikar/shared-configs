@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.2.2](https://github.com/ornikar/shared-configs/compare/@ornikar/rollup-config@5.2.1...@ornikar/rollup-config@5.2.2) (2023-01-26)
+
+**Note:** Version bump only for package @ornikar/rollup-config
+
+
+
+
+
 ## [5.2.1](https://github.com/ornikar/shared-configs/compare/@ornikar/rollup-config@5.2.0...@ornikar/rollup-config@5.2.1) (2022-11-29)
 
 **Note:** Version bump only for package @ornikar/rollup-config

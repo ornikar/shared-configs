@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.1.2](https://github.com/ornikar/shared-configs/compare/@ornikar/babel-preset-kitt-universal@2.1.1...@ornikar/babel-preset-kitt-universal@2.1.2) (2023-01-26)
+
+**Note:** Version bump only for package @ornikar/babel-preset-kitt-universal
+
+
+
+
+
 ## [2.1.1](https://github.com/ornikar/shared-configs/compare/@ornikar/babel-preset-kitt-universal@2.1.0...@ornikar/babel-preset-kitt-universal@2.1.1) (2022-11-29)
 
 **Note:** Version bump only for package @ornikar/babel-preset-kitt-universal
