@@ -182,6 +182,7 @@
         {
           "groupName": "Ornikar Frontend Orb",
           "reviewers": [
+            "team:frontend-wg-foundations",
             "team:frontend-architects"
           ],
           "matchDatasources": [
@@ -201,9 +202,6 @@
         },
         {
           "groupName": "Ornikar Eslint Configs",
-          "reviewers": [
-            "team:frontend-eslint-maintainers"
-          ],
           "sourceUrlPrefixes": [
             "https://github.com/ornikar/eslint-configs"
           ]
@@ -241,18 +239,12 @@
         },
         {
           "groupName": "Kitt Ornikar",
-          "reviewers": [
-            "team:frontend-shared-components-maintainers"
-          ],
           "sourceUrlPrefixes": [
             "https://github.com/ornikar/kitt"
           ]
         },
         {
           "groupName": "Components Ornikar",
-          "reviewers": [
-            "team:frontend-shared-components-maintainers"
-          ],
           "sourceUrlPrefixes": [
             "https://github.com/ornikar/components"
           ],
