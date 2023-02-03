@@ -16,6 +16,8 @@ const deprecatedReactLifeCycleMethods = [
 
 failOnConsole({
   silenceMessage: (message) => {
+    // Do not ignore the act / await warning anymore once we are on React 18
+    if (message.includes('You called act(async () => ...) without await')) return true;
     return deprecatedReactLifeCycleMethods.some((lifecycleMethod) =>
       message.includes(`${lifecycleMethod} has been renamed, and is not recommended for use.`),
     );
