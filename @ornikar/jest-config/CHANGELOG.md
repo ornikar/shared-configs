@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [9.4.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config@9.3.0...@ornikar/jest-config@9.4.0) (2023-02-03)
+
+
+### Features
+
+* ignore act warnings from rtl [no issue] ([#857](https://github.com/ornikar/shared-configs/issues/857)) ([367e754](https://github.com/ornikar/shared-configs/commit/367e754e58209ec0832c9764b528bbe31309b9e6))
+
+
+
+
+
 # [9.3.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config@9.2.1...@ornikar/jest-config@9.3.0) (2022-11-30)
 
 
