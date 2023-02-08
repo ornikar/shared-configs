@@ -9,7 +9,7 @@ module.exports = (env, webpackConfig, srcDirectories) => {
 
   webpackConfig.module.rules.push({
     test: /\.module\.css$/,
-    loaders: [
+    use: [
       'style-loader',
       {
         loader: 'css-loader',

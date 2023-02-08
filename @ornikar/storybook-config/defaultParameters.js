@@ -6,4 +6,5 @@ const viewports = require('./parameters/viewports');
 module.exports = {
   layout: 'fullscreen',
   viewport: { viewports },
+  actions: { argTypesRegex: '^on.*' },
 };

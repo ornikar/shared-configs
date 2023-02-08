@@ -3,6 +3,35 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/storybook-config@5.1.0...@ornikar/storybook-config@6.0.0) (2023-02-08)
+
+
+### Features
+
+* use webpack 5 INS-2136 ([#841](https://github.com/ornikar/shared-configs/issues/841)) ([e7524c7](https://github.com/ornikar/shared-configs/commit/e7524c7820d7601961bf37f0ffaa927b7b017172))
+
+
+### BREAKING CHANGES
+
+* requires webpack 5
+
+Co-authored-by: theohdv <theodevilleneuve@gmail.com>
+
+
+
+
+
+# [5.1.0](https://github.com/ornikar/shared-configs/compare/@ornikar/storybook-config@5.0.3...@ornikar/storybook-config@5.1.0) (2023-02-06)
+
+
+### Features
+
+* **storybook-config:** add default actions parameters ([847e936](https://github.com/ornikar/shared-configs/commit/847e93634975bb34abea6b0f6bbd04a8a75e2df7))
+
+
+
+
+
 ## [5.0.3](https://github.com/ornikar/shared-configs/compare/@ornikar/storybook-config@5.0.2...@ornikar/storybook-config@5.0.3) (2023-01-26)
 
 **Note:** Version bump only for package @ornikar/storybook-config

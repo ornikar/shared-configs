@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/webpack-config@5.1.1...@ornikar/webpack-config@6.0.0) (2023-02-08)
+
+
+### Features
+
+* use webpack 5 INS-2136 ([#841](https://github.com/ornikar/shared-configs/issues/841)) ([e7524c7](https://github.com/ornikar/shared-configs/commit/e7524c7820d7601961bf37f0ffaa927b7b017172))
+
+
+### BREAKING CHANGES
+
+* requires webpack 5
+
+Co-authored-by: theohdv <theodevilleneuve@gmail.com>
+
+
+
+
+
 ## [5.1.1](https://github.com/ornikar/shared-configs/compare/@ornikar/webpack-config@5.1.0...@ornikar/webpack-config@5.1.1) (2022-11-29)
 
 **Note:** Version bump only for package @ornikar/webpack-config
