@@ -3323,7 +3323,7 @@ __metadata:
   resolution: "@ornikar/storybook-config@workspace:@ornikar/storybook-config"
   dependencies:
     "@chrp/typed-css-modules-loader": 0.7.0
-    "@ornikar/webpack-config": ^5.1.1
+    "@ornikar/webpack-config": ^6.0.0
     "@svgr/webpack": ^6.5.1
     typed-css-modules: 0.7.2
     webpack: 5.75.0
@@ -3351,7 +3351,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ornikar/webpack-config@^5.1.1, @ornikar/webpack-config@workspace:@ornikar/webpack-config":
+"@ornikar/webpack-config@^6.0.0, @ornikar/webpack-config@workspace:@ornikar/webpack-config":
   version: 0.0.0-use.local
   resolution: "@ornikar/webpack-config@workspace:@ornikar/webpack-config"
   peerDependencies:
