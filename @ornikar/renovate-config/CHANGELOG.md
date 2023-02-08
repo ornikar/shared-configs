@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.3.0](https://github.com/ornikar/shared-configs/compare/@ornikar/renovate-config@4.2.1...@ornikar/renovate-config@4.3.0) (2023-02-01)
+
+
+### Features
+
+* **renovate-config:** update reviewers for q1 2023 [no issue] ([#846](https://github.com/ornikar/shared-configs/issues/846)) ([f0d7f62](https://github.com/ornikar/shared-configs/commit/f0d7f624de8d99aced32d032da294c9531a70b98))
+
+
+
+
+
 ## [4.2.1](https://github.com/ornikar/shared-configs/compare/@ornikar/renovate-config@4.2.0...@ornikar/renovate-config@4.2.1) (2022-11-29)
 
 **Note:** Version bump only for package @ornikar/renovate-config

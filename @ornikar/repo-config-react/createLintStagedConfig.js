@@ -12,7 +12,7 @@ module.exports = function createLintStagedConfig(options = {}) {
   const srcDirectories = createBaseLintStagedConfig.getSrcDirectories(options.srcDirectoryName);
 
   Object.assign(config, {
-    '*.svg': ['svgo --multipass --config=node_modules/@ornikar/repo-config-react/.svgo.yml'],
+    '*.svg': ['svgo --config=node_modules/@ornikar/repo-config-react/svgo.config.js'],
   });
 
   if (pkg.devDependencies.typescript) {

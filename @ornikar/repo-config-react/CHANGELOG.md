@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [9.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config-react@8.0.7...@ornikar/repo-config-react@9.0.0) (2023-01-26)
+
+
+### Features
+
+* **repo-config-react:** update svgo ECF-132 ([#847](https://github.com/ornikar/shared-configs/issues/847)) ([508cc96](https://github.com/ornikar/shared-configs/commit/508cc9670fe3e221379f0e2c7ae0fa5d46bc23c4))
+
+
+### BREAKING CHANGES
+
+* **repo-config-react:** use svgo 2 
+
+
+
+
+
 ## [8.0.7](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config-react@8.0.6...@ornikar/repo-config-react@8.0.7) (2022-12-16)
 
 **Note:** Version bump only for package @ornikar/repo-config-react
