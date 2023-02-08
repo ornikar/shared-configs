@@ -22,6 +22,9 @@ exports.createMainConfig = function createMainConfig({
   }
 
   return {
+    core: {
+      builder: 'webpack5',
+    },
     typescript: {
       check: false,
     },

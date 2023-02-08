@@ -17,5 +17,8 @@
   },
   "scripts": {
     "lint:eslint": "yarn ../.. eslint --report-unused-disable-directives --quiet @ornikar/webpack-config"
+  },
+  "peerDependencies": {
+    "webpack": "^5.75.0"
   }
 }
