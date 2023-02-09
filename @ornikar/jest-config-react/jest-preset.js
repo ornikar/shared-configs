@@ -45,4 +45,5 @@ module.exports = {
     '@storybook/addon-knobs': require.resolve('./__mocks__/@storybook/addon-knobs'),
     'storybook-react-router': require.resolve('./__mocks__/storybook-react-router'),
   },
+  testEnvironment: 'jsdom',
 };

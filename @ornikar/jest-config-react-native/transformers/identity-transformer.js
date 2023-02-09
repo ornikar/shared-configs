@@ -1,5 +1,5 @@
 'use strict';
 
 exports.process = (src, filepath) => {
-  return src;
+  return { code: src };
 };
