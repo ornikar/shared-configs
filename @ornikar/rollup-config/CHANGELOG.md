@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.3.0](https://github.com/ornikar/shared-configs/compare/@ornikar/rollup-config@5.2.2...@ornikar/rollup-config@5.3.0) (2023-02-09)
+
+
+### Features
+
+* update to Jest v29 INS-2202 ([#793](https://github.com/ornikar/shared-configs/issues/793)) ([83cb178](https://github.com/ornikar/shared-configs/commit/83cb1786a3bdfe324135047da48e0c552ec27866))
+
+
+
+
+
 ## [5.2.2](https://github.com/ornikar/shared-configs/compare/@ornikar/rollup-config@5.2.1...@ornikar/rollup-config@5.2.2) (2023-01-26)
 
 **Note:** Version bump only for package @ornikar/rollup-config

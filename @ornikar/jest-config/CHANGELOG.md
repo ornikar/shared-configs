@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [9.5.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config@9.4.0...@ornikar/jest-config@9.5.0) (2023-02-09)
+
+
+### Features
+
+* update to Jest v29 INS-2202 ([#793](https://github.com/ornikar/shared-configs/issues/793)) ([83cb178](https://github.com/ornikar/shared-configs/commit/83cb1786a3bdfe324135047da48e0c552ec27866))
+
+
+
+
+
 # [9.4.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config@9.3.0...@ornikar/jest-config@9.4.0) (2023-02-03)
 
 
