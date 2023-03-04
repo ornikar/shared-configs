@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.3.1](https://github.com/ornikar/shared-configs/compare/@ornikar/renovate-config@4.3.0...@ornikar/renovate-config@4.3.1) (2023-03-04)
+
+**Note:** Version bump only for package @ornikar/renovate-config
+
+
+
+
+
 # [4.3.0](https://github.com/ornikar/shared-configs/compare/@ornikar/renovate-config@4.2.1...@ornikar/renovate-config@4.3.0) (2023-02-01)
 
 
