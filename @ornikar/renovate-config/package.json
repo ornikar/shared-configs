@@ -27,9 +27,6 @@
         "yarnDedupeFewer",
         "yarnDedupeHighest"
       ],
-      "labels": [
-        ":soon: automerge"
-      ],
       "rangeStrategy": "bump",
       "reviewers": [
         "team:frontend-architects"
@@ -64,8 +61,7 @@
             "pin"
           ],
           "labels": [
-            ":ok_hand: code/approved",
-            ":soon: automerge"
+            ":white_check_mark: bot approval"
           ],
           "rebaseStalePrs": true,
           "masterIssueApproval": false,
@@ -82,8 +78,7 @@
             "patch"
           ],
           "labels": [
-            ":ok_hand: code/approved",
-            ":soon: automerge"
+            ":white_check_mark: bot approval"
           ],
           "rebaseStalePrs": true,
           "reviewers": []
@@ -106,8 +101,7 @@
             "patch"
           ],
           "labels": [
-            ":ok_hand: code/approved",
-            ":soon: automerge"
+            ":white_check_mark: bot approval"
           ],
           "reviewers": [],
           "rebaseStalePrs": false,
@@ -150,8 +144,7 @@
             "patch"
           ],
           "labels": [
-            ":ok_hand: code/approved",
-            ":soon: automerge"
+            ":white_check_mark: bot approval"
           ],
           "reviewers": [],
           "rebaseStalePrs": false,
