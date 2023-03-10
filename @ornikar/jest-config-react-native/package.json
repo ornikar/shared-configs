@@ -16,14 +16,13 @@
     "access": "public"
   },
   "peerDependencies": {
-    "@testing-library/react": "^11.2.5 || ^12.0.0",
-    "@testing-library/react-hooks": "^7.0.0",
-    "@testing-library/react-native": "^7.2.0 || ^8.0.0 || ^9.0.0",
-    "jest": "^29.4.1",
-    "jest-environment-jsdom": "29.4.1",
-    "jest-expo": "^41.0.0 || ^42.0.0 || ^43.0.0 || ^44.0.0 || ^45.0.0 || ^46.0.0 || ^47.0.0",
-    "react": "^17.0.0",
-    "react-dom": "^17.0.0",
+    "@testing-library/react": "^14.0.0",
+    "@testing-library/react-native": "^11.5.4",
+    "jest": "^29.5.0",
+    "jest-environment-jsdom": "^29.5.0",
+    "jest-expo": "^48.0.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "react-native": ">=0.59"
   },
   "peerDependenciesMeta": {
@@ -33,20 +32,23 @@
     "jest-environment-jsdom": {
       "optional": true
     },
+    "react-dom": {
+      "optional": true
+    },
     "react-native": {
       "optional": true
     }
   },
   "dependencies": {
     "@ornikar/jest-config-react": "^10.4.0",
-    "@sucrase/jest-plugin": "^2.2.1"
+    "@sucrase/jest-plugin": "^3.0.0",
+    "sucrase": "^3.29.0"
   },
   "devDependencies": {
-    "@testing-library/react-hooks": "7.0.2",
-    "@testing-library/react-native": "9.1.0",
-    "jest-expo": "45.0.1",
-    "react": "17.0.2",
-    "react-test-renderer": "17.0.2"
+    "@testing-library/react-native": "11.5.4",
+    "jest-expo": "48.0.2",
+    "react": "18.2.0",
+    "react-test-renderer": "18.2.0"
   },
   "scripts": {
     "lint:eslint": "yarn ../.. eslint --report-unused-disable-directives --quiet @ornikar/jest-config-react-native"
