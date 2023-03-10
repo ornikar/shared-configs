@@ -3209,6 +3209,8 @@ __metadata:
   peerDependenciesMeta:
     "@testing-library/react-native":
       optional: true
+    jest-environment-jsdom:
+      optional: true
     react-native:
       optional: true
   languageName: unknown
