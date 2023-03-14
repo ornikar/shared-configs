@@ -7,7 +7,7 @@
 ```json
   "commitlint": {
     "extends": [
-      "@commitlint/config-conventional"
+      "@ornikar/commitlint-config"
     ]
   }
 ```
