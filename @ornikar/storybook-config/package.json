@@ -28,7 +28,7 @@
     "typed-css-modules": "0.7.2"
   },
   "devDependencies": {
-    "webpack": "5.75.0"
+    "webpack": "5.76.0"
   },
   "scripts": {
     "lint:eslint": "yarn ../.. eslint --report-unused-disable-directives --quiet @ornikar/storybook-config"
