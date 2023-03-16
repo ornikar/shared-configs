@@ -10,18 +10,29 @@ exports.customTransforms = {
     require.resolve('./transformers/babel-transformer-node-modules.js'),
 
   // dont transform node_modules when already compiled
-  'node_modules/.*/(commonjs|dist/(cjs|vendor)|build/)/.*\\.js$': require.resolve('./transformers/identity-transformer.js'),
+  'node_modules/.*/(commonjs|dist/(cjs|vendor)|build/)/.*\\.js$': require.resolve(
+    './transformers/identity-transformer.js',
+  ),
 
   // compilation of react-native with sucrase fails since expo 48 update
-  'node_modules/react-native/.*\\.(js|jsx|ts|tsx)$': require.resolve('./transformers/babel-transformer-node-modules.js'),
+  'node_modules/react-native/.*\\.(js|jsx|ts|tsx)$': require.resolve(
+    './transformers/babel-transformer-node-modules.js',
+  ),
 
   // https://github.com/expo/expo/blob/d5d454eb585bdd8fb1a07e2910ba99dca8fd8786/packages/@expo/metro-config/src/transformer/createMultiRuleTransformer.ts#L207
-  'node_modules/(expo-processing|@expo/vector-icons)/.*\\.(js|jsx|ts|tsx)$': ['@sucrase/jest-plugin', { transforms: ['jsx', 'imports'] }],
-  'node_modules/(expo-assets-utils)/.*\\.(js|jsx|ts|tsx)$': ['@sucrase/jest-plugin', { transforms: ['flow', 'imports'] }],
+  'node_modules/(expo-processing|@expo/vector-icons)/.*\\.(js|jsx|ts|tsx)$': [
+    '@sucrase/jest-plugin',
+    { transforms: ['jsx', 'imports'] },
+  ],
+  'node_modules/(expo-assets-utils)/.*\\.(js|jsx|ts|tsx)$': [
+    '@sucrase/jest-plugin',
+    { transforms: ['flow', 'imports'] },
+  ],
   'node_modules/(@?(use-)?expo.*)/.*\\.(js|jsx|ts|tsx)$': ['@sucrase/jest-plugin', { transforms: ['imports'] }],
 
   // compilation of most node_modules with sucrase for faster setup
-  'node_modules/(@react-.*|react-native-.*|.*/react-native|@?react-navigation.*|@testing-library|native-base|styled-components)/.*\\.(js|jsx|ts|tsx)$': '@sucrase/jest-plugin',
+  'node_modules/(@react-.*|react-native-.*|.*/react-native|@?react-navigation.*|@testing-library|native-base|styled-components)/.*\\.(js|jsx|ts|tsx)$':
+    '@sucrase/jest-plugin',
 
   // compilation of rest node_modules has a simpler babel config (might be additional transformIgnorePatterns)
   'node_modules.*\\.(js|jsx|ts|tsx)$': require.resolve('./transformers/babel-transformer-node-modules.js'),
