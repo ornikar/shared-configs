@@ -31,9 +31,6 @@ exports.customTransforms = {
   'node_modules/(@?(use-)?expo.*)/.*\\.(js|jsx|ts|tsx)$': ['@sucrase/jest-plugin', { transforms: ['imports'] }],
 
   // compilation of most node_modules with sucrase for faster setup
-  'node_modules/(@react-.*|react-native-.*|.*/react-native|@?react-navigation.*|@testing-library|native-base|styled-components)/.*\\.(js|jsx|ts|tsx)$':
+  'node_modules/(@react-.*|react-native-.*|.*/react-native|@?react-navigation.*|native-base)/.*\\.(js|jsx|ts|tsx)$':
     '@sucrase/jest-plugin',
-
-  // compilation of rest node_modules has a simpler babel config (might be additional transformIgnorePatterns)
-  'node_modules.*\\.(js|jsx|ts|tsx)$': require.resolve('./transformers/babel-transformer-node-modules.js'),
 };
