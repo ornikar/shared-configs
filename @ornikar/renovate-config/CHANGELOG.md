@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.4.0](https://github.com/ornikar/shared-configs/compare/@ornikar/renovate-config@4.3.1...@ornikar/renovate-config@4.4.0) (2023-03-16)
+
+
+### Features
+
+* **renovate-config:** add label dependencies ([3fd0c77](https://github.com/ornikar/shared-configs/commit/3fd0c77b619ec7e514df865504eeba2584caf2f3))
+
+
+
+
+
 ## [4.3.1](https://github.com/ornikar/shared-configs/compare/@ornikar/renovate-config@4.3.0...@ornikar/renovate-config@4.3.1) (2023-03-04)
 
 **Note:** Version bump only for package @ornikar/renovate-config

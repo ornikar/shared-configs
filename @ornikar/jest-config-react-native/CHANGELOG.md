@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.4.1](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react-native@7.4.0...@ornikar/jest-config-react-native@7.4.1) (2023-03-16)
+
+
+### Bug Fixes
+
+* **jest-config-react-native:** mark jest-environment-jsdom as optional ([2be6c62](https://github.com/ornikar/shared-configs/commit/2be6c627cab5ecdca119568c6f03527b5ec5a695))
+
+
+
+
+
 # [7.4.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react-native@7.3.3...@ornikar/jest-config-react-native@7.4.0) (2023-02-09)
 
 
