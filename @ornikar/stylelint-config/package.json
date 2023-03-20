@@ -32,7 +32,7 @@
     "stylelint": "^13.13.1"
   },
   "devDependencies": {
-    "prettier": "2.8.4",
+    "prettier": "2.8.5",
     "stylelint": "13.13.1"
   }
 }
