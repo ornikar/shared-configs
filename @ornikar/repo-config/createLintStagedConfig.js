@@ -30,7 +30,7 @@ module.exports = function createLintStagedConfig(options = {}) {
       const packagejsonFilenames = filenames.filter((filename) => filename.endsWith('.json'));
       return [
         'yarn dedupe',
-        packagejsonFilenames.length === 0 ? undefined : `prettier --write ${packagejsonFilenames.join(' ')}`,
+        packagejsonFilenames.length === 0 ? undefined : `npx prettier --write ${packagejsonFilenames.join(' ')}`,
         isLernaRepo && require.resolve('@ornikar/lerna-config/bin/generate-eslintrc-files.mjs'),
         shouldGenerateTsconfigInLernaRepo && require.resolve('@ornikar/lerna-config/bin/generate-tsconfig-files.mjs'),
         shouldRunCheckPkgJSScript && 'node ./scripts/check-packagejson.js',
@@ -38,15 +38,15 @@ module.exports = function createLintStagedConfig(options = {}) {
         'git add yarn.lock .yarn',
       ].filter(Boolean);
     },
-    '{.env*,!(package).json,*.{yml,yaml,md,html,env}}': ['prettier --write'],
+    '{.env*,!(package).json,*.{yml,yaml,md,html,env}}': ['npx prettier --write'],
     [`*.{${srcExtensions.join(',')}}`]: (filenames) => {
       if (filenames.length > 150) {
-        return ['prettier --write .', 'eslint --fix --quiet .'];
+        return ['npx prettier --write .', 'eslint --fix --quiet .'];
       }
-      return [`prettier --write -- ${filenames.join(' ')}`, `eslint --fix --quiet -- ${filenames.join(' ')}`];
+      return [`npx prettier --write -- ${filenames.join(' ')}`, `eslint --fix --quiet -- ${filenames.join(' ')}`];
     },
-    [`{.storybook,${srcDirectories}}/**/*.css`]: ['prettier --parser css --write', 'stylelint --quiet --fix'],
-    [`${srcDirectories}/**/*.{ts,tsx}`]: () => ['tsc'],
+    [`{.storybook,${srcDirectories}}/**/*.css`]: ['npx prettier --parser css --write', 'stylelint --quiet --fix'],
+    [`${srcDirectories}/**/*.{ts,tsx}`]: () => ['npx tsc'],
   };
 };
 
