@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.4.3](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react-native@7.4.2...@ornikar/jest-config-react-native@7.4.3) (2023-03-23)
+
+
+### Bug Fixes
+
+* use sucrase for most cases in custom transformers [no issue] ([#880](https://github.com/ornikar/shared-configs/issues/880)) ([e070b4a](https://github.com/ornikar/shared-configs/commit/e070b4ad4c9f543a06bebffdea0c49a4a51a6b28))
+
+
+
+
+
 ## [7.4.2](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react-native@7.4.1...@ornikar/jest-config-react-native@7.4.2) (2023-03-23)
 
 
