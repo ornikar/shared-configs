@@ -23,7 +23,6 @@ import { getGraphPackages } from '../index.mjs';
   const { packages, packageLocations } = await getGraphPackages();
 
   const tsconfigFiles = [];
-  const tsconfigBuildFiles = [];
 
   const tsPackages = packages.filter((pkg) => {
     const ornikarConfig = pkg.get('ornikar');
@@ -35,15 +34,20 @@ import { getGraphPackages } from '../index.mjs';
     packages.map(async (pkg, index) => {
       const packagePath = path.relative(path.resolve('.'), packageLocations[index]);
       const tsconfigPath = `${packagePath}/tsconfig.json`;
-      const tsconfigEslintPath = `${packagePath}/tsconfig.eslint.json`;
-      const tsconfigBuildPath = `${packagePath}/tsconfig.build.json`;
+      const legacyTsconfigBuildPath = `${packagePath}/tsconfig.build.json`;
+      const legacyTsconfigEslintPath = `${packagePath}/tsconfig.eslint.json`;
+
+      const removeLegacyTsconfigBuildPath = fs.unlink(legacyTsconfigBuildPath).catch(() => {});
+      const removeLegacyTsconfigEslintPath = fs.unlink(legacyTsconfigEslintPath).catch(() => {});
 
       if (!tsPackages.includes(pkg)) {
         await Promise.all([
           // tsconfig.json
           fs.unlink(tsconfigPath).catch(() => {}),
           // tsconfig.build.json
-          fs.unlink(tsconfigBuildPath).catch(() => {}),
+          removeLegacyTsconfigBuildPath,
+          // tsconfig.eslint.json
+          removeLegacyTsconfigEslintPath,
         ]);
         return;
       }
@@ -58,7 +62,8 @@ import { getGraphPackages } from '../index.mjs';
         : {};
 
       const filteredCurrentCompilerOptions = tsconfigCurrentContent.compilerOptions || {};
-      const isLegacyRootDirDot = !existsSync(path.join(packagePath, 'src'));
+      const isLegacyRootDirDot =
+        !existsSync(path.join(packagePath, 'src')) || existsSync(path.join(packagePath, '.storybook'));
       const compilerOptions = {
         rootDir: isLegacyRootDirDot ? '.' : 'src',
         baseUrl: isLegacyRootDirDot ? '.' : './src',
@@ -70,8 +75,8 @@ import { getGraphPackages } from '../index.mjs';
         declaration: true,
         declarationMap: true,
         emitDeclarationOnly: true,
-        outDir: `../../node_modules/.cache/tsc/${pkg.name}`,
-        tsBuildInfoFile: `../../node_modules/.cache/tsc/${pkg.name}/tsbuildinfo`,
+        outDir: pkg.private ? `../../node_modules/.cache/tsc/${pkg.name}` : 'dist/definitions',
+        tsBuildInfoFile: pkg.private ? `../../node_modules/.cache/tsc/${pkg.name}/tsbuildinfo` : 'dist/tsbuildinfo',
       };
       Object.keys(compilerOptions).forEach((key) => {
         delete filteredCurrentCompilerOptions[key];
@@ -90,41 +95,9 @@ import { getGraphPackages } from '../index.mjs';
       if (isLegacyRootDirDot) {
         tsconfigContent.exclude = tsconfigCurrentContent.exclude || ['node_modules'];
       }
-
-      const tsconfigEslintContent = {
-        extends: './tsconfig.json',
-        compilerOptions: {
-          noEmit: true,
-        },
-      };
-
-      const tsconfigBuildContent = {
-        extends: './tsconfig.json',
-        compilerOptions: {
-          outDir: 'dist/definitions',
-          tsBuildInfoFile: 'dist/tsbuildinfo',
-        },
-        exclude: [
-          'dist',
-          '**/__mocks__',
-          '**/__tests__',
-          '**/*.test.ts',
-          '**/*.test.tsx',
-          '**/*.stories.ts',
-          '**/*.stories.tsx',
-          '**/stories.ts',
-          '**/stories.tsx',
-          '**/stories/**',
-          '**/stories-list.ts',
-        ],
-      };
-
       // react-scripts doesn't like paths
       if (!pkg.private) {
         tsconfigContent.compilerOptions.paths = {
-          [pkg.name]: ['./index.ts'],
-        };
-        tsconfigBuildContent.compilerOptions.paths = {
           [pkg.name]: ['./index.ts'],
         };
       }
@@ -162,44 +135,26 @@ import { getGraphPackages } from '../index.mjs';
             path: `../../${pkgRelativePath}/tsconfig.json`,
           };
         });
-        tsconfigBuildContent.references = tsDependencies.map((pkgDep) => {
-          const pkgRelativePath = path.relative(pkgDep.rootPath, pkgDep.location);
-          return {
-            path: `../../${pkgRelativePath}/tsconfig.build.json`,
-          };
-        });
       }
 
       tsconfigFiles.push(tsconfigPath);
-      if (!pkg.private) tsconfigBuildFiles.push(tsconfigBuildPath);
 
-      await Promise.all([
-        // tsconfig.json
-        writeJsonFile(tsconfigPath, tsconfigContent),
-        // tsconfig.eslint.json
-        writeJsonFile(tsconfigEslintPath, tsconfigEslintContent),
-        // tsconfig.build.json
-        pkg.private
-          ? fs.unlink(tsconfigBuildPath).catch(() => {})
-          : writeJsonFile(tsconfigBuildPath, tsconfigBuildContent),
-      ]);
+      // tsconfig.json
+      await writeJsonFile(tsconfigPath, tsconfigContent);
     }),
   );
 
-  const [tsConfigContent, tsconfigBuildContent] = [tsconfigFiles, tsconfigBuildFiles].map((files) => {
-    const references = files.map((filePath) => ({ path: filePath }));
-    references.sort((a, b) => a.path.localeCompare(b.path, 'en'));
-    return {
-      files: [],
-      references,
-    };
-  });
+  const references = tsconfigFiles.map((filePath) => ({ path: filePath }));
+  references.sort((a, b) => a.path.localeCompare(b.path, 'en'));
+  const tsConfigContent = {
+    files: [],
+    references,
+  };
 
   await Promise.all([
     writeJsonFile('tsconfig.json', tsConfigContent),
-    tsconfigBuildFiles.length === 0
-      ? fs.unlink('tsconfig.build.json').catch(() => {})
-      : writeJsonFile('tsconfig.build.json', tsconfigBuildContent),
+
+    fs.unlink('tsconfig.build.json').catch(() => {}),
   ]);
 })().catch((error) => {
   console.error(error);
