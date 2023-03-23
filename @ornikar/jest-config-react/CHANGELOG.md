@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [10.4.1](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@10.4.0...@ornikar/jest-config-react@10.4.1) (2023-03-23)
+
+
+### Bug Fixes
+
+* update jest 29 [no issue] ([#878](https://github.com/ornikar/shared-configs/issues/878)) ([61a0f26](https://github.com/ornikar/shared-configs/commit/61a0f26136d961bdca04b137c44ec756365d9339))
+* update transformers for jest 29 [no issue] ([#877](https://github.com/ornikar/shared-configs/issues/877)) ([4171446](https://github.com/ornikar/shared-configs/commit/417144649d16d67d783cb6f5ed172785064f5a3e))
+
+
+
+
+
 # [10.4.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@10.3.1...@ornikar/jest-config-react@10.4.0) (2023-02-09)
 
 
