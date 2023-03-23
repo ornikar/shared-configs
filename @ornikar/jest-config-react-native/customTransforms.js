@@ -30,7 +30,6 @@ exports.customTransforms = {
   ],
   'node_modules/(@?(use-)?expo.*)/.*\\.(js|jsx|ts|tsx)$': ['@sucrase/jest-plugin', { transforms: ['imports'] }],
 
-  // compilation of most node_modules with sucrase for faster setup
-  'node_modules/(@react-.*|react-native-.*|.*/react-native|@?react-navigation.*|native-base)/.*\\.(js|jsx|ts|tsx)$':
-    '@sucrase/jest-plugin',
+  // compilation of rest node_modules with sucrase
+  'node_modules.*\\.(js|jsx|ts|tsx)$': '@sucrase/jest-plugin',
 };
