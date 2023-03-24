@@ -34,7 +34,8 @@
     "@lerna/project": "5.5.4",
     "@lerna/publish": "5.5.4",
     "@lerna/version": "5.5.4",
-    "@pob/pretty-eslint-config": "^3.0.0"
+    "@pob/pretty-eslint-config": "^3.0.0",
+    "conventional-changelog-conventionalcommits": "^5.0.0"
   },
   "scripts": {
     "lint:eslint": "yarn ../.. eslint --report-unused-disable-directives --quiet @ornikar/lerna-config"
