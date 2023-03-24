@@ -8,6 +8,7 @@ exports.createMainConfig = function createMainConfig({
   enableControls = false,
   disableDocsAddon = false,
   enableDocsAddonInDev = false,
+  disablePostcssAddon = false,
   addons = [],
   ...ornikarAddonOptions
 } = {}) {
@@ -21,6 +22,10 @@ exports.createMainConfig = function createMainConfig({
     );
   }
 
+  if (disablePostcssAddon && postcssImplementation) {
+    throw new Error('When disablePostcssAddon=true, you should not provide postcssImplementation');
+  }
+
   return {
     core: {
       builder: 'webpack5',
@@ -30,6 +35,7 @@ exports.createMainConfig = function createMainConfig({
     },
     stories: [`../${srcPath}/**/@(stories.ts?(x)|*.stories.ts?(x))`],
     addons: [
+      disablePostcssAddon ||
       // When cra preset is already installed, we should not have postcss addon
       addons.includes('@storybook/preset-create-react-app')
         ? null
