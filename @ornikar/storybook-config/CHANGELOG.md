@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.1.0](https://github.com/ornikar/shared-configs/compare/@ornikar/storybook-config@6.0.1...@ornikar/storybook-config@6.1.0) (2023-03-24)
+
+
+### Features
+
+* **storybook-config:** add option to disable postcss [no issue] ([#881](https://github.com/ornikar/shared-configs/issues/881)) ([4708b94](https://github.com/ornikar/shared-configs/commit/4708b9449a00ac7b8b2c7ceadbda105dc3234532))
+
+
+
+
+
 ## [6.0.1](https://github.com/ornikar/shared-configs/compare/@ornikar/storybook-config@6.0.0...@ornikar/storybook-config@6.0.1) (2023-03-16)
 
 **Note:** Version bump only for package @ornikar/storybook-config
