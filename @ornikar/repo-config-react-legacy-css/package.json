@@ -1,0 +1,27 @@
+{
+  "name": "@ornikar/repo-config-react-legacy-css",
+  "version": "10.0.0-pre",
+  "description": "🔧⚛️ react repo config legacy css",
+  "repository": {
+    "directory": "@ornikar/repo-config-react-legacy-css",
+    "type": "git",
+    "url": "https://github.com/ornikar/shared-configs.git"
+  },
+  "license": "ISC",
+  "engines": {
+    "node": ">=16.16.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "bin": {
+    "ornikar-ci-comment-pr": "./bin/ornikar-ci-comment-pr.mjs"
+  },
+  "dependencies": {
+    "@ornikar/repo-config-react": "^9.0.3",
+    "typed-css-modules": "0.7.2"
+  },
+  "scripts": {
+    "lint:eslint": "yarn ../.. eslint --report-unused-disable-directives --quiet @ornikar/repo-config-react-legacy-css"
+  }
+}
