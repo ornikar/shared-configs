@@ -1,6 +1,6 @@
 {
   "name": "@ornikar/prettier-config",
-  "version": "6.0.5",
+  "version": "6.0.6",
   "description": "🚨📄 prettier config files",
   "repository": {
     "directory": "@ornikar/prettier-config",
