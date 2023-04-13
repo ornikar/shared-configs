@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.0.2](https://github.com/ornikar/shared-configs/compare/@ornikar/commitlint-config@5.0.1...@ornikar/commitlint-config@5.0.2) (2023-03-16)
+
+**Note:** Version bump only for package @ornikar/commitlint-config
+
+
+
+
+
 ## [5.0.1](https://github.com/ornikar/shared-configs/compare/@ornikar/commitlint-config@5.0.0...@ornikar/commitlint-config@5.0.1) (2022-11-29)
 
 **Note:** Version bump only for package @ornikar/commitlint-config

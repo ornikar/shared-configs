@@ -29,13 +29,13 @@
     "@ornikar/*"
   ],
   "devDependencies": {
-    "@commitlint/cli": "17.4.4",
-    "@ornikar/eslint-config": "19.11.0",
-    "check-package-dependencies": "6.2.1",
-    "eslint": "8.35.0",
+    "@commitlint/cli": "17.5.1",
+    "@ornikar/eslint-config": "19.12.0",
+    "check-package-dependencies": "6.3.1",
+    "eslint": "8.38.0",
     "jest": "29.5.0",
-    "lint-staged": "13.2.0",
-    "prettier": "2.8.4"
+    "lint-staged": "13.2.1",
+    "prettier": "2.8.7"
   },
-  "packageManager": "yarn@3.4.1"
+  "packageManager": "yarn@3.5.0"
 }

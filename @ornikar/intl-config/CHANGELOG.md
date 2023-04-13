@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.0.3](https://github.com/ornikar/shared-configs/compare/@ornikar/intl-config@5.0.2...@ornikar/intl-config@5.0.3) (2023-03-27)
+
+
+### Bug Fixes
+
+* **intl-config:** add newline eof to match editorconfig [no issue] ([#884](https://github.com/ornikar/shared-configs/issues/884)) ([6125373](https://github.com/ornikar/shared-configs/commit/61253735a87910521ed99de0aba020cfa6ad7af3))
+
+
+
 ## [5.0.2](https://github.com/ornikar/shared-configs/compare/@ornikar/intl-config@5.0.1...@ornikar/intl-config@5.0.2) (2023-01-26)
 
 **Note:** Version bump only for package @ornikar/intl-config

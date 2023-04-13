@@ -79,7 +79,7 @@ module.exports = ({ paths, babelPluginFormatjsOptions = {}, defaultDestinationDi
     const destinationFolder = path.dirname(destinationFile);
 
     fs.mkdirSync(destinationFolder, { recursive: true });
-    fs.writeFileSync(destinationFile, JSON.stringify(sortedDefaultMessages, null, 2));
+    fs.writeFileSync(destinationFile, `${JSON.stringify(sortedDefaultMessages, null, 2)}\n`);
   });
   return { phraseSources, phraseTargets };
 };

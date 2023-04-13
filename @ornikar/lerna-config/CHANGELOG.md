@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [9.1.0](https://github.com/ornikar/shared-configs/compare/@ornikar/lerna-config@9.0.1...@ornikar/lerna-config@9.1.0) (2023-03-24)
+
+
+### Features
+
+* **lerna-config:** add explicit conventional-changelog-conventionalcommits dependency [no issue] ([#868](https://github.com/ornikar/shared-configs/issues/868)) ([98381bb](https://github.com/ornikar/shared-configs/commit/98381bba994080fd913bbdb7aa83fe006c5ecede))
+
+
+
+
+
 ## [9.0.1](https://github.com/ornikar/shared-configs/compare/@ornikar/lerna-config@9.0.0...@ornikar/lerna-config@9.0.1) (2022-11-29)
 
 **Note:** Version bump only for package @ornikar/lerna-config

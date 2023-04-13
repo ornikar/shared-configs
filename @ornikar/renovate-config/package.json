@@ -1,6 +1,6 @@
 {
   "name": "@ornikar/renovate-config",
-  "version": "4.3.1",
+  "version": "4.4.0",
   "description": "⬆️ renovate shared config",
   "repository": {
     "directory": "@ornikar/renovate-config",
@@ -31,6 +31,9 @@
       "reviewers": [
         "team:frontend-architects"
       ],
+      "labels": [
+        "dependencies"
+      ],
       "lockFileMaintenance": {
         "enabled": true,
         "schedule": []
@@ -60,7 +63,7 @@
           "matchUpdateTypes": [
             "pin"
           ],
-          "labels": [
+          "addLabels": [
             ":white_check_mark: bot approval"
           ],
           "rebaseStalePrs": true,
@@ -77,7 +80,7 @@
           "matchUpdateTypes": [
             "patch"
           ],
-          "labels": [
+          "addLabels": [
             ":white_check_mark: bot approval"
           ],
           "rebaseStalePrs": true,
@@ -100,7 +103,7 @@
             "minor",
             "patch"
           ],
-          "labels": [
+          "addLabels": [
             ":white_check_mark: bot approval"
           ],
           "reviewers": [],
@@ -143,7 +146,7 @@
           "matchUpdateTypes": [
             "patch"
           ],
-          "labels": [
+          "addLabels": [
             ":white_check_mark: bot approval"
           ],
           "reviewers": [],

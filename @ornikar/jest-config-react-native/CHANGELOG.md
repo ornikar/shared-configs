@@ -3,6 +3,39 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.4.3](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react-native@7.4.2...@ornikar/jest-config-react-native@7.4.3) (2023-03-23)
+
+
+### Bug Fixes
+
+* use sucrase for most cases in custom transformers [no issue] ([#880](https://github.com/ornikar/shared-configs/issues/880)) ([e070b4a](https://github.com/ornikar/shared-configs/commit/e070b4ad4c9f543a06bebffdea0c49a4a51a6b28))
+
+
+
+
+
+## [7.4.2](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react-native@7.4.1...@ornikar/jest-config-react-native@7.4.2) (2023-03-23)
+
+
+### Bug Fixes
+
+* update jest 29 [no issue] ([#878](https://github.com/ornikar/shared-configs/issues/878)) ([61a0f26](https://github.com/ornikar/shared-configs/commit/61a0f26136d961bdca04b137c44ec756365d9339))
+
+
+
+
+
+## [7.4.1](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react-native@7.4.0...@ornikar/jest-config-react-native@7.4.1) (2023-03-16)
+
+
+### Bug Fixes
+
+* **jest-config-react-native:** mark jest-environment-jsdom as optional ([2be6c62](https://github.com/ornikar/shared-configs/commit/2be6c627cab5ecdca119568c6f03527b5ec5a695))
+
+
+
+
+
 # [7.4.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react-native@7.3.3...@ornikar/jest-config-react-native@7.4.0) (2023-02-09)
 
 

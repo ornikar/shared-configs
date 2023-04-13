@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [10.4.3](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@10.4.2...@ornikar/repo-config@10.4.3) (2023-03-23)
+
+**Note:** Version bump only for package @ornikar/repo-config
+
+
+
+
+
+## [10.4.2](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@10.4.1...@ornikar/repo-config@10.4.2) (2023-03-16)
+
+**Note:** Version bump only for package @ornikar/repo-config
+
+
+
+
+
 ## [10.4.1](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@10.4.0...@ornikar/repo-config@10.4.1) (2023-03-04)
 
 **Note:** Version bump only for package @ornikar/repo-config
