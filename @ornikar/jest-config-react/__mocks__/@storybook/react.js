@@ -3,6 +3,7 @@
 'use strict';
 
 const decorateStory = (storyFn, decorators) =>
+  // eslint-disable-next-line unicorn/no-array-reduce
   decorators.reduce(
     (decorated, decorator) =>
       (context = {}) =>
