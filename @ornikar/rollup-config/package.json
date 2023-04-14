@@ -30,6 +30,9 @@
   "peerDependenciesMeta": {
     "@linaria/rollup": {
       "optional": true
+    },
+    "postcss": {
+      "optional": true
     }
   },
   "devDependencies": {

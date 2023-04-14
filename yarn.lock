@@ -3377,6 +3377,8 @@ __metadata:
   peerDependenciesMeta:
     "@linaria/rollup":
       optional: true
+    postcss:
+      optional: true
   languageName: unknown
   linkType: soft
 
