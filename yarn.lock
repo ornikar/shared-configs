@@ -3196,7 +3196,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@ornikar/jest-config-react-native@workspace:@ornikar/jest-config-react-native"
   dependencies:
-    "@ornikar/jest-config-react": ^10.4.1
+    "@ornikar/jest-config-react": ^10.4.2
     "@sucrase/jest-plugin": ^2.2.1
     "@testing-library/react-hooks": 7.0.2
     "@testing-library/react-native": 9.1.0
@@ -3225,7 +3225,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ornikar/jest-config-react@^10.4.1, @ornikar/jest-config-react@workspace:@ornikar/jest-config-react":
+"@ornikar/jest-config-react@^10.4.2, @ornikar/jest-config-react@workspace:@ornikar/jest-config-react":
   version: 0.0.0-use.local
   resolution: "@ornikar/jest-config-react@workspace:@ornikar/jest-config-react"
   dependencies:
@@ -3318,7 +3318,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@ornikar/repo-config-react@workspace:@ornikar/repo-config-react"
   dependencies:
-    "@ornikar/repo-config": ^10.4.3
+    "@ornikar/repo-config": ^10.4.4
     cross-env: ^7.0.0
     node-fetch: ^3.2.3
     svgo: ^2.8.0
@@ -3328,7 +3328,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ornikar/repo-config@^10.4.3, @ornikar/repo-config@workspace:@ornikar/repo-config":
+"@ornikar/repo-config@^10.4.4, @ornikar/repo-config@workspace:@ornikar/repo-config":
   version: 0.0.0-use.local
   resolution: "@ornikar/repo-config@workspace:@ornikar/repo-config"
   dependencies:
