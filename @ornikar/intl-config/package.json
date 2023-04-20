@@ -19,7 +19,7 @@
     "glob": "^7.1.6"
   },
   "devDependencies": {
-    "@babel/core": "7.18.9"
+    "@babel/core": "7.21.4"
   },
   "peerDependencies": {
     "@babel/core": "^7.13.0"
