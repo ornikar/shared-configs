@@ -18,7 +18,7 @@ module.exports = (
     srcDirectory = './src',
     enableReactNativeWeb = false,
     enableLinaria = false,
-    disableCssModules = false,
+    enableLegacyCssModules = false,
     modulesToAlias = {},
     nativeModulesToTranspile = [],
     envVariables,
@@ -47,7 +47,7 @@ module.exports = (
 
   const env = process.env.NODE_ENV !== 'production' ? 'dev' : 'production';
 
-  if (!disableCssModules) {
+  if (enableLegacyCssModules) {
     cssModulesRule(env, webpackConfig, srcDirectories);
   }
   svgRule(env, webpackConfig);
