@@ -15,7 +15,7 @@
     "access": "public"
   },
   "dependencies": {
-    "babel-plugin-formatjs": "^10.3.18",
+    "babel-plugin-formatjs": "^10.5.0",
     "glob": "^7.1.6"
   },
   "devDependencies": {
