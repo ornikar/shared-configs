@@ -21,8 +21,7 @@
     "@ornikar/repo-config": "^10.4.4",
     "cross-env": "^7.0.0",
     "node-fetch": "^3.2.3",
-    "svgo": "^2.8.0",
-    "typed-css-modules": "0.7.2"
+    "svgo": "^2.8.0"
   },
   "scripts": {
     "lint:eslint": "yarn ../.. eslint --report-unused-disable-directives --quiet @ornikar/repo-config-react"
