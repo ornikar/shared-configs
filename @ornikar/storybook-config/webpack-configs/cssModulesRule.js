@@ -8,11 +8,13 @@ module.exports = (env, webpackConfig, srcDirectories, isCRAPresetEnabled) => {
     const cssModuleRule = rules.find(
       (rule) => !rule.exclude && rule.test && rule.test.toString() === /\.module\.css$/.toString(),
     );
-    cssModuleRule.use = [
-      ...cssModuleRule.use.slice(0, -1),
-      '@chrp/typed-css-modules-loader',
-      ...cssModuleRule.use.slice(-1),
-    ];
+    if (process.env.NODE_ENV !== 'production') {
+      cssModuleRule.use = [
+        ...cssModuleRule.use.slice(0, -1),
+        '@chrp/typed-css-modules-loader',
+        ...cssModuleRule.use.slice(-1),
+      ];
+    }
 
     return;
   }
