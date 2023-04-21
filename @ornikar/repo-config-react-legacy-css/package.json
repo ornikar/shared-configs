@@ -1,6 +1,6 @@
 {
   "name": "@ornikar/repo-config-react-legacy-css",
-  "version": "10.0.0",
+  "version": "10.0.1",
   "description": "🔧⚛️ react repo config legacy css",
   "repository": {
     "directory": "@ornikar/repo-config-react-legacy-css",
@@ -18,7 +18,7 @@
     "ornikar-ci-comment-pr": "./bin/ornikar-ci-comment-pr.mjs"
   },
   "dependencies": {
-    "@ornikar/repo-config-react": "^10.0.0",
+    "@ornikar/repo-config-react": "^10.0.1",
     "typed-css-modules": "0.7.2"
   },
   "scripts": {
