@@ -3292,6 +3292,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@ornikar/repo-config-react-legacy-css@workspace:@ornikar/repo-config-react-legacy-css"
   dependencies:
+    "@chrp/typed-css-modules-loader": 0.7.0
     "@ornikar/repo-config-react": ^10.0.1
     typed-css-modules: 0.7.2
   bin:
@@ -3384,10 +3385,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@ornikar/storybook-config@workspace:@ornikar/storybook-config"
   dependencies:
-    "@chrp/typed-css-modules-loader": 0.7.0
     "@ornikar/webpack-config": ^6.0.0
     "@svgr/webpack": ^6.5.1
-    typed-css-modules: 0.7.2
     webpack: 5.76.0
   peerDependencies:
     "@storybook/addon-essentials": ^6.5.15

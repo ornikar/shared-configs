@@ -20,7 +20,7 @@ module.exports = (env, webpackConfig, srcDirectories) => {
           importLoaders: process.env.NODE_ENV !== 'production' ? 2 : 1,
         },
       },
-      process.env.NODE_ENV !== 'production' && require.resolve('@chrp/typed-css-modules-loader'),
+      process.env.NODE_ENV !== 'production' && '@chrp/typed-css-modules-loader',
       {
         loader: 'postcss-loader',
         options: {
