@@ -8,6 +8,7 @@ const pkg = require(path.resolve('package.json'));
 const workspaces = pkg.workspaces || false;
 const isLernaRepo = Boolean(pkg.devDependencies && pkg.devDependencies.lerna);
 const hasTypescript = Boolean(pkg.devDependencies && pkg.devDependencies.typescript);
+const hasDeprecatedStylelint = Boolean(pkg.devDependencies && pkg.devDependencies.stylelint);
 const shouldGenerateTsconfigInLernaRepo = isLernaRepo && hasTypescript;
 const shouldRunCheckPkgJSScript = fs.existsSync('./scripts/check-packagejson.js');
 const shouldRunCheckPkgMJSScript = fs.existsSync('./scripts/check-packagejson.mjs');
@@ -45,7 +46,10 @@ module.exports = function createLintStagedConfig(options = {}) {
       }
       return [`prettier --write -- ${filenames.join(' ')}`, `eslint --fix --quiet -- ${filenames.join(' ')}`];
     },
-    [`{.storybook,${srcDirectories}}/**/*.css`]: ['prettier --parser css --write', 'stylelint --quiet --fix'],
+    [`{.storybook,${srcDirectories}}/**/*.css`]: [
+      'prettier --parser css --write',
+      hasDeprecatedStylelint ? 'stylelint --quiet --fix' : undefined,
+    ].filter(Boolean),
     [`${srcDirectories}/**/*.{ts,tsx}`]: () => ['tsc'],
   };
 };
