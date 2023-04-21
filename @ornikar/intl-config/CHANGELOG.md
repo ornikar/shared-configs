@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.1.0](https://github.com/ornikar/shared-configs/compare/@ornikar/intl-config@5.0.3...@ornikar/intl-config@5.1.0) (2023-04-21)
+
+
+### Features
+
+* **intl-config:** update babel-plugin-formatjs to dedupe typescript ([683c165](https://github.com/ornikar/shared-configs/commit/683c16525e70aabcf4ccf25a8a83f812678512e5))
+
+
+
 ## [5.0.3](https://github.com/ornikar/shared-configs/compare/@ornikar/intl-config@5.0.2...@ornikar/intl-config@5.0.3) (2023-03-27)
 
 
