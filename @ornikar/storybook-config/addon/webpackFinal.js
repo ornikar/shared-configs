@@ -19,6 +19,7 @@ module.exports = (
     enableReactNativeWeb = false,
     enableLinaria = false,
     enableLegacyCssModules = false,
+    isCRAPresetEnabled = false,
     modulesToAlias = {},
     nativeModulesToTranspile = [],
     envVariables,
@@ -48,9 +49,11 @@ module.exports = (
   const env = process.env.NODE_ENV !== 'production' ? 'dev' : 'production';
 
   if (enableLegacyCssModules) {
-    cssModulesRule(env, webpackConfig, srcDirectories);
+    cssModulesRule(env, webpackConfig, srcDirectories, isCRAPresetEnabled);
   }
-  svgRule(env, webpackConfig);
+  if (!isCRAPresetEnabled) {
+    svgRule(env, webpackConfig);
+  }
   fixStorybookBabelRules(env, webpackConfig);
 
   if (enableLinaria) {
