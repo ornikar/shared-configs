@@ -11,13 +11,6 @@ await createCheckPackageWithWorkspaces({
           missingPeerDependency: ['styled-components'],
         },
       },
-
-      '@ornikar/jest-config-react-native': {
-        '@testing-library/react-native': {
-          // dont need to install react-native in this config package
-          missingPeerDependency: ['react-native'],
-        },
-      },
     },
   })
   .run();
