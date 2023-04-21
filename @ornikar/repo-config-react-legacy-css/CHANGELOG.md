@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [11.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config-react-legacy-css@10.0.1...@ornikar/repo-config-react-legacy-css@11.0.0) (2023-04-21)
+
+
+### ⚠ BREAKING CHANGES
+
+* move typed-css-modules dependencies to repo-config-react-legacy-css ; rename storybook param 
+
+### Features
+
+* move typed-css-modules dependencies to repo-config-react-legacy-css [no issue] ([#898](https://github.com/ornikar/shared-configs/issues/898)) ([7a926b8](https://github.com/ornikar/shared-configs/commit/7a926b8e1f99a98496b0075608f20bc038330394))
+
+
+
 ## [10.0.1](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config-react-legacy-css@10.0.0...@ornikar/repo-config-react-legacy-css@10.0.1) (2023-04-21)
 
 
