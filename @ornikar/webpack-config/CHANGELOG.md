@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.1.0](https://github.com/ornikar/shared-configs/compare/@ornikar/webpack-config@6.0.0...@ornikar/webpack-config@6.1.0) (2023-04-21)
+
+
+### Features
+
+* **webpack-config:** add option stringifyEnvValue in processEnv ([1c70f7e](https://github.com/ornikar/shared-configs/commit/1c70f7e10deb382545d91264771c427e1004462a))
+
+
+
 # [6.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/webpack-config@5.1.1...@ornikar/webpack-config@6.0.0) (2023-02-08)
 
 

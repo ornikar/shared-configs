@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.0.1](https://github.com/ornikar/shared-configs/compare/@ornikar/storybook-config@7.0.0...@ornikar/storybook-config@7.0.1) (2023-04-21)
+
+
+### Bug Fixes
+
+* **storybook-config:** usage with cra addon ECF-228 ([#900](https://github.com/ornikar/shared-configs/issues/900)) ([6839844](https://github.com/ornikar/shared-configs/commit/68398442ca1beb79bcfe25ae53d6b98b821255f9))
+
+
+
 ## [7.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/storybook-config@6.1.0...@ornikar/storybook-config@7.0.0) (2023-04-21)
 
 
