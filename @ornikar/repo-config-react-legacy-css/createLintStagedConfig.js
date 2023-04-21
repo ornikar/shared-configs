@@ -19,3 +19,5 @@ module.exports = function createLintStagedConfig(options = {}) {
 
   return config;
 };
+
+module.exports.getSrcDirectories = createBaseLintStagedConfig.getSrcDirectories;
