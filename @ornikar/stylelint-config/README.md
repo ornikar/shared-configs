@@ -1,5 +1,7 @@
 # @ornikar/stylelint-config
 
+DEPRECATED: with kitt-universal, use css in js which is linted by eslint and typescript.
+
 Ornikar stylelint config
 
 ## styled-components for the web
