@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.1.1](https://github.com/ornikar/shared-configs/compare/@ornikar/webpack-config@6.1.0...@ornikar/webpack-config@6.1.1) (2023-04-26)
+
+
+### Bug Fixes
+
+* **webpack-config:** add define process.version for jsonwebtoken [no issue] ([#901](https://github.com/ornikar/shared-configs/issues/901)) ([db405c7](https://github.com/ornikar/shared-configs/commit/db405c7908b16e23222396727221691500209874))
+
+
+
 ## [6.1.0](https://github.com/ornikar/shared-configs/compare/@ornikar/webpack-config@6.0.0...@ornikar/webpack-config@6.1.0) (2023-04-21)
 
 
