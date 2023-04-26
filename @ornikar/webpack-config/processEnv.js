@@ -12,6 +12,7 @@ module.exports = (env, webpackConfig, { definitions = {}, envVariables = {}, str
       // NOTE: process.env.NODE_ENV is defined by storybook and CRA5.
       'process.browser': true,
       'process.title': '"browser"',
+      'process.version': 'null',
       __DEV__: env !== 'production',
       ...definitions,
       ...Object.fromEntries(
