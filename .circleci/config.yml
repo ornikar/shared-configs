@@ -5,7 +5,7 @@ version: 2.1
 # -------------------------------------------------------------------------------------------------
 
 orbs:
-  frontend: ornikar/frontend-orb@9.4.0
+  frontend: ornikar/frontend-orb@dev:ff26a52
 
 # -------------------------------------------------------------------------------------------------
 # WORKFLOWS
@@ -31,7 +31,9 @@ workflows:
           type: approval
           filters:
             branches:
-              only: main
+              only:
+                - main
+                - /^main-.*/
 
       - frontend/monorepo-release:
           context: npm-publish
@@ -44,3 +46,18 @@ workflows:
           filters:
             branches:
               only: main
+
+      - frontend/monorepo-release:
+          name: release-main-branch
+          context: npm-publish
+          npm-publish: true
+          no-private: true
+          branch-release: true
+          branch-release-name: '${CIRCLE_BRANCH:5}'
+          requires:
+            - checks
+            - lint
+            - hold-release
+          filters:
+            branches:
+              only: /^main-.*/
