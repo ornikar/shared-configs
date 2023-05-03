@@ -30,7 +30,7 @@
   ],
   "devDependencies": {
     "@commitlint/cli": "17.6.1",
-    "@ornikar/eslint-config": "19.13.0",
+    "@ornikar/eslint-config": "19.14.0",
     "check-package-dependencies": "6.3.2",
     "eslint": "8.39.0",
     "jest": "29.5.0",
