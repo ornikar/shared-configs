@@ -3,6 +3,31 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [10.5.0](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@10.4.5...@ornikar/repo-config@10.5.0) (2023-04-25)
+
+
+### Features
+
+* deprecate stylelint [no issue] ([#899](https://github.com/ornikar/shared-configs/issues/899)) ([69da20e](https://github.com/ornikar/shared-configs/commit/69da20ee81b24fcd4a31fb454e0070a7145da70e))
+
+
+
+## [10.4.5](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@10.4.4...@ornikar/repo-config@10.4.5) (2023-04-20)
+
+**Note:** Version bump only for package @ornikar/repo-config
+
+
+
+
+
+## [10.4.4](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@10.4.3...@ornikar/repo-config@10.4.4) (2023-04-14)
+
+**Note:** Version bump only for package @ornikar/repo-config
+
+
+
+
+
 ## [10.4.3](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@10.4.2...@ornikar/repo-config@10.4.3) (2023-03-23)
 
 **Note:** Version bump only for package @ornikar/repo-config

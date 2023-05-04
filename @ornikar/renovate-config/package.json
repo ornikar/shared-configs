@@ -1,6 +1,6 @@
 {
   "name": "@ornikar/renovate-config",
-  "version": "4.4.0",
+  "version": "4.5.0",
   "description": "⬆️ renovate shared config",
   "repository": {
     "directory": "@ornikar/renovate-config",
@@ -38,6 +38,15 @@
         "enabled": true,
         "schedule": []
       },
+      "hostRules": [
+        {
+          "matchHost": "https://registry.npmjs.org/",
+          "hostType": "npm",
+          "encrypted": {
+            "token": "N5oUvSALI1hBRo8tKRocyecobIl5rFz83Tlbybac8lf9Hl1b7e/kE69MkEUC3VSfZ7xuUvat6+r5vwrUKXFLU8j9NDojKXmTE0ywe8PNBmTYg6OX+j3mkiVvgZy+wGL6T77s0enbRQduoU1SCEH2hOxkn4V8glgyvGZgi+eSjARaPCFtHbg7Yz7cwqgIw+JFCFoFZ940fw0h8X1jaqKqu5iWB+5KluoEB3dUwPODhp28MwgeTwbMbFnE2SFGPW834tOvjksQEQjdtK6nUhtWm2T2IK/Of1pvqEwpA0yhP6JeVtJlpUXES/y7JGEJ7Hr+J81bvdvLkAIa3u/BbG/5Ng=="
+          }
+        }
+      ],
       "packageRules": [
         {
           "matchDepTypes": [

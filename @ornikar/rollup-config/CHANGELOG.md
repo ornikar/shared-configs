@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.3.2](https://github.com/ornikar/shared-configs/compare/@ornikar/rollup-config@5.3.1...@ornikar/rollup-config@5.3.2) (2023-04-21)
+
+**Note:** Version bump only for package @ornikar/rollup-config
+
+
+
+
+
+## [5.3.1](https://github.com/ornikar/shared-configs/compare/@ornikar/rollup-config@5.3.0...@ornikar/rollup-config@5.3.1) (2023-04-14)
+
+
+### Bug Fixes
+
+* **rollup-config:** mark postcss as optional ([dd2781f](https://github.com/ornikar/shared-configs/commit/dd2781fdb69a600b9e6aaf0b7eebb6d8a09406a7))
+
+
+
 # [5.3.0](https://github.com/ornikar/shared-configs/compare/@ornikar/rollup-config@5.2.2...@ornikar/rollup-config@5.3.0) (2023-02-09)
 
 

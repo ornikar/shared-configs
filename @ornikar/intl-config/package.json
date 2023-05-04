@@ -1,6 +1,6 @@
 {
   "name": "@ornikar/intl-config",
-  "version": "5.0.3",
+  "version": "5.1.0",
   "description": "🌐 intl-config",
   "repository": {
     "directory": "@ornikar/intl-config",
@@ -15,11 +15,11 @@
     "access": "public"
   },
   "dependencies": {
-    "babel-plugin-formatjs": "^10.3.18",
+    "babel-plugin-formatjs": "^10.5.0",
     "glob": "^7.1.6"
   },
   "devDependencies": {
-    "@babel/core": "7.18.9"
+    "@babel/core": "7.21.4"
   },
   "peerDependencies": {
     "@babel/core": "^7.13.0"

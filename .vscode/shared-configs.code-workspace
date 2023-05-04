@@ -6,7 +6,7 @@
       "esbenp.prettier-vscode",
       "dbaeumer.vscode-eslint",
       "Orta.vscode-jest",
-      "ms-vsliveshare.vsliveshare-pack"
+      "MS-vsliveshare.vsliveshare"
     ],
     "unwantedRecommendations": []
   },
@@ -47,6 +47,7 @@
       "⬆️ renovate-config",
       "🔧 repo-config",
       "🔧⚛️ repo-config-react",
+      "🔧⚛️ repo-config-react-legacy-css",
       "📦 rollup-config",
       "📖 storybook-config",
       "🚨🎨 stylelint-config",
@@ -128,6 +129,10 @@
     {
       "name": "🔧⚛️ repo-config-react",
       "path": "../@ornikar/repo-config-react"
+    },
+    {
+      "name": "🔧⚛️ repo-config-react-legacy-css",
+      "path": "../@ornikar/repo-config-react-legacy-css"
     },
     {
       "name": "📦 rollup-config",

@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.1.0](https://github.com/ornikar/shared-configs/compare/@ornikar/stylelint-config@9.0.6...@ornikar/stylelint-config@9.1.0) (2023-04-25)
+
+
+### Features
+
+* deprecate stylelint [no issue] ([#899](https://github.com/ornikar/shared-configs/issues/899)) ([69da20e](https://github.com/ornikar/shared-configs/commit/69da20ee81b24fcd4a31fb454e0070a7145da70e))
+
+
+
 ## [9.0.6](https://github.com/ornikar/shared-configs/compare/@ornikar/stylelint-config@9.0.5...@ornikar/stylelint-config@9.0.6) (2023-03-27)
 
 **Note:** Version bump only for package @ornikar/stylelint-config

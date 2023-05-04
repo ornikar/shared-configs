@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.5.0](https://github.com/ornikar/shared-configs/compare/@ornikar/renovate-config@4.4.0...@ornikar/renovate-config@4.5.0) (2023-04-21)
+
+
+### Features
+
+* **renovate-config:** configure npm token for yarn berry [no issue] ([#895](https://github.com/ornikar/shared-configs/issues/895)) ([d15331d](https://github.com/ornikar/shared-configs/commit/d15331d12e8d5958a2309bb6012d89200c5f17eb))
+
+
+
 # [4.4.0](https://github.com/ornikar/shared-configs/compare/@ornikar/renovate-config@4.3.1...@ornikar/renovate-config@4.4.0) (2023-03-16)
 
 
