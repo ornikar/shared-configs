@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [11.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@10.4.2...@ornikar/jest-config-react@11.0.0) (2023-05-04)
+
+
+### ⚠ BREAKING CHANGES
+
+* requires react 18 
+
+### Features
+
+* migrate to react 18 ECF-193 ([#866](https://github.com/ornikar/shared-configs/issues/866)) ([0d5b3b0](https://github.com/ornikar/shared-configs/commit/0d5b3b0b1cda6a9e4b075bb3c8c3180740b0744d))
+
+
+
 ## [10.4.2](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@10.4.1...@ornikar/jest-config-react@10.4.2) (2023-04-14)
 
 **Note:** Version bump only for package @ornikar/jest-config-react
