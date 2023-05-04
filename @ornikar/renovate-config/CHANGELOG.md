@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.5.1](https://github.com/ornikar/shared-configs/compare/@ornikar/renovate-config@4.5.0...@ornikar/renovate-config@4.5.1) (2023-05-04)
+
+
+### Bug Fixes
+
+* **renovate-config:** add ornikar/repo-config-react-legacy-css in group ([ea8760b](https://github.com/ornikar/shared-configs/commit/ea8760b967a7eb002b60f4e45edef34c2e1b219a))
+
+
+
 ## [4.5.0](https://github.com/ornikar/shared-configs/compare/@ornikar/renovate-config@4.4.0...@ornikar/renovate-config@4.5.0) (2023-04-21)
 
 
