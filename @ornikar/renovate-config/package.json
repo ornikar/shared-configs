@@ -219,6 +219,7 @@
             "@ornikar/prettier-config",
             "@ornikar/repo-config",
             "@ornikar/repo-config-react",
+            "@ornikar/repo-config-react-legacy-css",
             "@ornikar/intl-config",
             "@ornikar/lerna-config"
           ]
