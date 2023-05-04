@@ -6,7 +6,7 @@ module.exports = (env, webpackConfig) => {
     exclude: /node_modules/,
     use: [
       {
-        loader: '@linaria/webpack-loader',
+        loader: '@linaria/webpack5-loader',
         options: {
           sourceMap: env !== 'production',
           extension: '.css',
