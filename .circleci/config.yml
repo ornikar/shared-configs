@@ -5,7 +5,7 @@ version: 2.1
 # -------------------------------------------------------------------------------------------------
 
 orbs:
-  frontend: ornikar/frontend-orb@9.4.0
+  frontend: ornikar/frontend-orb@9.5.0
 
 # -------------------------------------------------------------------------------------------------
 # WORKFLOWS
@@ -25,6 +25,27 @@ workflows:
           use-cache: false
           cache-version: none
           run-tsc: false
+
+      # prerelease
+      - hold-prerelease:
+          type: approval
+          filters:
+            branches:
+              ignore: main
+
+      - frontend/monorepo-release:
+          name: prerelease
+          context: npm-publish
+          npm-publish: true
+          no-private: true
+          branch-release: true
+          requires:
+            - checks
+            - lint
+            - hold-prerelease
+          filters:
+            branches:
+              ignore: main
 
       # release
       - hold-release:
