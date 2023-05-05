@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/webpack-config@6.1.1...@ornikar/webpack-config@7.0.0) (2023-05-05)
+
+
+### ⚠ BREAKING CHANGES
+
+* instead of @linaria/webpack-loader dependency, install @linaria/webpack5-loader 
+
+### Features
+
+* use linaria webpack5 loader [no issue] ([#909](https://github.com/ornikar/shared-configs/issues/909)) ([ea998a5](https://github.com/ornikar/shared-configs/commit/ea998a50a539cb45014c5daae79dcb6fd0eba510))
+
+
+
 ## [6.1.1](https://github.com/ornikar/shared-configs/compare/@ornikar/webpack-config@6.1.0...@ornikar/webpack-config@6.1.1) (2023-04-26)
 
 

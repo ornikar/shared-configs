@@ -3295,7 +3295,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@ornikar/storybook-config@workspace:@ornikar/storybook-config"
   dependencies:
-    "@ornikar/webpack-config": ^6.1.1
+    "@ornikar/webpack-config": ^7.0.0
     "@svgr/webpack": ^6.5.1
     webpack: 5.76.0
   peerDependencies:
@@ -3322,7 +3322,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ornikar/webpack-config@^6.1.1, @ornikar/webpack-config@workspace:@ornikar/webpack-config":
+"@ornikar/webpack-config@^7.0.0, @ornikar/webpack-config@workspace:@ornikar/webpack-config":
   version: 0.0.0-use.local
   resolution: "@ornikar/webpack-config@workspace:@ornikar/webpack-config"
   peerDependencies:
