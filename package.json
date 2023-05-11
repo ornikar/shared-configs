@@ -29,7 +29,7 @@
     "@ornikar/*"
   ],
   "devDependencies": {
-    "@commitlint/cli": "17.6.1",
+    "@commitlint/cli": "17.6.3",
     "@ornikar/eslint-config": "19.15.0",
     "check-package-dependencies": "6.4.0",
     "eslint": "8.40.0",
