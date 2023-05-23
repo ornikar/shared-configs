@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [8.1.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react-native@8.0.0...@ornikar/jest-config-react-native@8.1.0) (2023-05-23)
+
+
+### Features
+
+* **jest-config-react-native:** support RNTL v11 and v12 ([de87b7f](https://github.com/ornikar/shared-configs/commit/de87b7f6f8ff4685372c0cb302f606122b8529a6))
+
+
+
 ## [8.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react-native@7.4.4...@ornikar/jest-config-react-native@8.0.0) (2023-05-04)
 
 

@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [11.0.3](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config-react-legacy-css@11.0.2...@ornikar/repo-config-react-legacy-css@11.0.3) (2023-05-23)
+
+**Note:** Version bump only for package @ornikar/repo-config-react-legacy-css
+
+
+
+
+
 ## [11.0.2](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config-react-legacy-css@11.0.1...@ornikar/repo-config-react-legacy-css@11.0.2) (2023-05-04)
 
 **Note:** Version bump only for package @ornikar/repo-config-react-legacy-css
