@@ -26,6 +26,9 @@
     "react-native": ">=0.59"
   },
   "peerDependenciesMeta": {
+    "@testing-library/react": {
+      "optional": true
+    },
     "@testing-library/react-native": {
       "optional": true
     },

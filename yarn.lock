@@ -3114,6 +3114,8 @@ __metadata:
     react-dom: ^18.2.0
     react-native: ">=0.59"
   peerDependenciesMeta:
+    "@testing-library/react":
+      optional: true
     "@testing-library/react-native":
       optional: true
     jest-environment-jsdom:
