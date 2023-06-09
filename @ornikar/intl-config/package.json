@@ -16,7 +16,7 @@
   },
   "dependencies": {
     "babel-plugin-formatjs": "^10.5.0",
-    "glob": "^7.1.6"
+    "glob": "^10.0.0"
   },
   "devDependencies": {
     "@babel/core": "7.21.4"
