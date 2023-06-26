@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.2.0](https://github.com/ornikar/shared-configs/compare/@ornikar/intl-config@5.1.0...@ornikar/intl-config@5.2.0) (2023-06-26)
+
+
+### Features
+
+* **deps:** update dependency glob to v10 ([#920](https://github.com/ornikar/shared-configs/issues/920)) ([15e3752](https://github.com/ornikar/shared-configs/commit/15e37523f2b7dd554de9be128f7dfac1031ea5c9))
+
+
+
 ## [5.1.0](https://github.com/ornikar/shared-configs/compare/@ornikar/intl-config@5.0.3...@ornikar/intl-config@5.1.0) (2023-04-21)
 
 
