@@ -1,6 +1,6 @@
 {
   "name": "@ornikar/repo-config-react",
-  "version": "10.0.4",
+  "version": "10.1.0",
   "description": "🔧⚛️ react repo config",
   "repository": {
     "directory": "@ornikar/repo-config-react",
@@ -18,7 +18,7 @@
     "ornikar-ci-comment-pr": "./bin/ornikar-ci-comment-pr.mjs"
   },
   "dependencies": {
-    "@ornikar/repo-config": "^10.5.2",
+    "@ornikar/repo-config": "10.5.3",
     "cross-env": "^7.0.0",
     "node-fetch": "^3.2.3",
     "svgo": "^2.8.0"

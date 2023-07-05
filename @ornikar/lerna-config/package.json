@@ -1,6 +1,6 @@
 {
   "name": "@ornikar/lerna-config",
-  "version": "9.1.0",
+  "version": "9.2.0",
   "description": "📚 lerna config",
   "repository": {
     "directory": "@ornikar/lerna-config",

@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [10.1.0](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config-react@10.0.4...@ornikar/repo-config-react@10.1.0) (2023-07-05)
+
+
+### Features
+
+* **repo-config-react:** add optional peerdependency repo-config ([fd0027d](https://github.com/ornikar/shared-configs/commit/fd0027d42b3ee53437bb7bdf960dbdda6ca7d62c))
+
+
+
 ## [10.0.4](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config-react@10.0.3...@ornikar/repo-config-react@10.0.4) (2023-05-23)
 
 **Note:** Version bump only for package @ornikar/repo-config-react

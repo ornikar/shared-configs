@@ -3227,18 +3227,18 @@ __metadata:
   resolution: "@ornikar/repo-config-react-legacy-css@workspace:@ornikar/repo-config-react-legacy-css"
   dependencies:
     "@chrp/typed-css-modules-loader": 0.7.0
-    "@ornikar/repo-config-react": ^10.0.4
+    "@ornikar/repo-config-react": 10.1.0
     typed-css-modules: 0.7.2
   bin:
     ornikar-ci-comment-pr: ./bin/ornikar-ci-comment-pr.mjs
   languageName: unknown
   linkType: soft
 
-"@ornikar/repo-config-react@^10.0.4, @ornikar/repo-config-react@workspace:@ornikar/repo-config-react":
+"@ornikar/repo-config-react@10.1.0, @ornikar/repo-config-react@workspace:@ornikar/repo-config-react":
   version: 0.0.0-use.local
   resolution: "@ornikar/repo-config-react@workspace:@ornikar/repo-config-react"
   dependencies:
-    "@ornikar/repo-config": ^10.5.2
+    "@ornikar/repo-config": 10.5.3
     cross-env: ^7.0.0
     node-fetch: ^3.2.3
     svgo: ^2.8.0
@@ -3252,7 +3252,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ornikar/repo-config@^10.5.2, @ornikar/repo-config@workspace:@ornikar/repo-config":
+"@ornikar/repo-config@10.5.3, @ornikar/repo-config@workspace:@ornikar/repo-config":
   version: 0.0.0-use.local
   resolution: "@ornikar/repo-config@workspace:@ornikar/repo-config"
   dependencies:
