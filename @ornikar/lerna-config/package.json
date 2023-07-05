@@ -18,7 +18,8 @@
   "bin": {
     "lerna": "./bin/lerna",
     "lerna-config-generate-eslintrc-files": "./bin/generate-eslintrc-files.mjs",
-    "lerna-config-generate-tsconfig-files": "./bin/generate-tsconfig-files.mjs"
+    "lerna-config-generate-tsconfig-files": "./bin/generate-tsconfig-files.mjs",
+    "ornikar-monorepo-update-peer-dependencies": "./bin/update-peer-dependencies.mjs"
   },
   "peerDependencies": {
     "lerna": "0.0.0"

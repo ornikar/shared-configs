@@ -3188,6 +3188,7 @@ __metadata:
     lerna: ./bin/lerna
     lerna-config-generate-eslintrc-files: ./bin/generate-eslintrc-files.mjs
     lerna-config-generate-tsconfig-files: ./bin/generate-tsconfig-files.mjs
+    ornikar-monorepo-update-peer-dependencies: ./bin/update-peer-dependencies.mjs
   languageName: unknown
   linkType: soft
 
@@ -3241,6 +3242,11 @@ __metadata:
     cross-env: ^7.0.0
     node-fetch: ^3.2.3
     svgo: ^2.8.0
+  peerDependencies:
+    "@ornikar/repo-config": ^10.5.2
+  peerDependenciesMeta:
+    "@ornikar/repo-config":
+      optional: true
   bin:
     ornikar-ci-comment-pr: ./bin/ornikar-ci-comment-pr.mjs
   languageName: unknown
