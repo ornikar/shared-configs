@@ -3243,7 +3243,7 @@ __metadata:
     node-fetch: ^3.2.3
     svgo: ^2.8.0
   peerDependencies:
-    "@ornikar/repo-config": ^10.5.2
+    "@ornikar/repo-config": ^10.5.4
   peerDependenciesMeta:
     "@ornikar/repo-config":
       optional: true
