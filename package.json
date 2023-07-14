@@ -14,7 +14,7 @@
     "postinstall": "./@ornikar/repo-config/bin/ornikar-repo-config-postinstall.js",
     "release": "lerna publish --conventional-commits -m 'chore: release'",
     "test": "jest",
-    "version": "YARN_ENABLE_IMMUTABLE_INSTALLS=false yarn && git add yarn.lock"
+    "version": "./@ornikar/lerna-config/bin/update-peer-dependencies.mjs && YARN_ENABLE_IMMUTABLE_INSTALLS=false yarn && git add yarn.lock"
   },
   "prettier": "./@ornikar/prettier-config",
   "engines": {
@@ -31,7 +31,7 @@
   "devDependencies": {
     "@commitlint/cli": "17.6.6",
     "@ornikar/eslint-config": "19.16.0",
-    "check-package-dependencies": "6.4.1",
+    "check-package-dependencies": "6.7.0",
     "eslint": "8.44.0",
     "jest": "29.5.0",
     "lint-staged": "13.2.3",
