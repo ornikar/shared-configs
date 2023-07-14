@@ -28,6 +28,6 @@
     "@babel/preset-react": "^7.13.8"
   },
   "devDependencies": {
-    "@babel/core": "7.22.5"
+    "@babel/core": "7.22.9"
   }
 }
