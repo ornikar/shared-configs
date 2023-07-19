@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.5.2](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config@9.5.1...@ornikar/jest-config@9.5.2) (2023-07-19)
+
+**Note:** Version bump only for package @ornikar/jest-config
+
+
+
+
+
 ## [9.5.1](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config@9.5.0...@ornikar/jest-config@9.5.1) (2023-03-23)
 
 

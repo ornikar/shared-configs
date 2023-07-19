@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.3.0](https://github.com/ornikar/shared-configs/compare/@ornikar/lerna-config@9.2.0...@ornikar/lerna-config@9.3.0) (2023-07-19)
+
+
+### Features
+
+* **lerna-config:** generate tsconfig module detection to force [no issue] ([#941](https://github.com/ornikar/shared-configs/issues/941)) ([955993b](https://github.com/ornikar/shared-configs/commit/955993bec520479b2f3df0f2f7af22e6103b8840))
+
+
+
 ## [9.2.0](https://github.com/ornikar/shared-configs/compare/@ornikar/lerna-config@9.1.0...@ornikar/lerna-config@9.2.0) (2023-07-05)
 
 

@@ -1,6 +1,6 @@
 {
   "name": "@ornikar/storybook-config",
-  "version": "7.1.0",
+  "version": "7.1.1",
   "description": "📖 storybook config files",
   "repository": {
     "directory": "@ornikar/storybook-config",

@@ -3017,7 +3017,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ornikar/babel-preset-kitt-universal@2.1.4, @ornikar/babel-preset-kitt-universal@workspace:@ornikar/babel-preset-kitt-universal":
+"@ornikar/babel-preset-kitt-universal@2.1.5, @ornikar/babel-preset-kitt-universal@workspace:@ornikar/babel-preset-kitt-universal":
   version: 0.0.0-use.local
   resolution: "@ornikar/babel-preset-kitt-universal@workspace:@ornikar/babel-preset-kitt-universal"
   dependencies:
@@ -3035,7 +3035,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ornikar/babel-preset-react@2.0.4, @ornikar/babel-preset-react@workspace:@ornikar/babel-preset-react":
+"@ornikar/babel-preset-react@2.0.5, @ornikar/babel-preset-react@workspace:@ornikar/babel-preset-react":
   version: 0.0.0-use.local
   resolution: "@ornikar/babel-preset-react@workspace:@ornikar/babel-preset-react"
   dependencies:
@@ -3103,7 +3103,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@ornikar/jest-config-react-native@workspace:@ornikar/jest-config-react-native"
   dependencies:
-    "@ornikar/jest-config-react": ^11.0.0
+    "@ornikar/jest-config-react": 11.0.1
     "@sucrase/jest-plugin": ^3.0.0
     "@testing-library/react-native": 12.1.2
     jest-expo: 48.0.2
@@ -3133,11 +3133,11 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ornikar/jest-config-react@^11.0.0, @ornikar/jest-config-react@workspace:@ornikar/jest-config-react":
+"@ornikar/jest-config-react@11.0.1, @ornikar/jest-config-react@workspace:@ornikar/jest-config-react":
   version: 0.0.0-use.local
   resolution: "@ornikar/jest-config-react@workspace:@ornikar/jest-config-react"
   dependencies:
-    "@ornikar/jest-config": ^9.5.1
+    "@ornikar/jest-config": 9.5.2
     "@testing-library/react": 14.0.0
     identity-obj-proxy: ^3.0.0
     jest: 29.6.1
@@ -3152,7 +3152,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ornikar/jest-config@^9.5.1, @ornikar/jest-config@workspace:@ornikar/jest-config":
+"@ornikar/jest-config@9.5.2, @ornikar/jest-config@workspace:@ornikar/jest-config":
   version: 0.0.0-use.local
   resolution: "@ornikar/jest-config@workspace:@ornikar/jest-config"
   dependencies:
@@ -3226,14 +3226,14 @@ __metadata:
   resolution: "@ornikar/repo-config-react-legacy-css@workspace:@ornikar/repo-config-react-legacy-css"
   dependencies:
     "@chrp/typed-css-modules-loader": 0.7.0
-    "@ornikar/repo-config-react": 10.1.1
+    "@ornikar/repo-config-react": 10.1.2
     typed-css-modules: 0.7.2
   bin:
     ornikar-ci-comment-pr: ./bin/ornikar-ci-comment-pr.mjs
   languageName: unknown
   linkType: soft
 
-"@ornikar/repo-config-react@10.1.1, @ornikar/repo-config-react@workspace:@ornikar/repo-config-react":
+"@ornikar/repo-config-react@10.1.2, @ornikar/repo-config-react@workspace:@ornikar/repo-config-react":
   version: 0.0.0-use.local
   resolution: "@ornikar/repo-config-react@workspace:@ornikar/repo-config-react"
   dependencies:
@@ -3278,8 +3278,8 @@ __metadata:
     "@babel/core": 7.22.9
     "@babel/plugin-transform-runtime": ^7.13.8
     "@ornikar/babel-preset-base": ^2.0.1
-    "@ornikar/babel-preset-kitt-universal": 2.1.4
-    "@ornikar/babel-preset-react": 2.0.4
+    "@ornikar/babel-preset-kitt-universal": 2.1.5
+    "@ornikar/babel-preset-react": 2.0.5
     "@rollup/plugin-babel": ^5.3.1
     "@rollup/plugin-node-resolve": ^13.0.0
     "@rollup/plugin-replace": ^4.0.0

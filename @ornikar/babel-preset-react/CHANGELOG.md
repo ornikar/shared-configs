@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.5](https://github.com/ornikar/shared-configs/compare/@ornikar/babel-preset-react@2.0.4...@ornikar/babel-preset-react@2.0.5) (2023-07-19)
+
+**Note:** Version bump only for package @ornikar/babel-preset-react
+
+
+
+
+
 ## [2.0.4](https://github.com/ornikar/shared-configs/compare/@ornikar/babel-preset-react@2.0.3...@ornikar/babel-preset-react@2.0.4) (2023-06-26)
 
 **Note:** Version bump only for package @ornikar/babel-preset-react
