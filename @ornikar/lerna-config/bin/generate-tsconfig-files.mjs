@@ -65,6 +65,7 @@ import { getGraphPackages } from '../index.mjs';
         composite: true,
         incremental: true,
         isolatedModules: true,
+        moduleDetection: 'force',
         noEmit: false,
         noEmitOnError: true,
         declaration: true,
