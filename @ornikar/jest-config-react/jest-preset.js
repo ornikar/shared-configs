@@ -46,4 +46,8 @@ module.exports = {
     'storybook-react-router': require.resolve('./__mocks__/storybook-react-router'),
   },
   testEnvironment: 'jsdom',
+  testEnvironmentOptions: {
+    url: 'http://localhost',
+    customExportConditions: ['node', 'web', 'jest'],
+  },
 };
