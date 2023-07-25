@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [11.1.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@11.0.1...@ornikar/jest-config-react@11.1.0) (2023-07-25)
+
+
+### Features
+
+* **jest-config-react:** configure export custom conditions for web [no issue] ([#945](https://github.com/ornikar/shared-configs/issues/945)) ([150fe56](https://github.com/ornikar/shared-configs/commit/150fe566382afe2026802eb128ac5ac3fdab4f9e))
+
+
+
 ## [11.0.1](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@11.0.0...@ornikar/jest-config-react@11.0.1) (2023-07-19)
 
 **Note:** Version bump only for package @ornikar/jest-config-react
