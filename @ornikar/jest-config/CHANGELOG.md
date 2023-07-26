@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.5.3](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config@9.5.2...@ornikar/jest-config@9.5.3) (2023-07-26)
+
+
+### Bug Fixes
+
+* **jest-config:** ignore warning for react 18 ([f596c58](https://github.com/ornikar/shared-configs/commit/f596c58d1fa90476f26a73838d8e223ca64955ec))
+
+
+
 ## [9.5.2](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config@9.5.1...@ornikar/jest-config@9.5.2) (2023-07-19)
 
 **Note:** Version bump only for package @ornikar/jest-config

@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [8.3.1](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react-native@8.3.0...@ornikar/jest-config-react-native@8.3.1) (2023-07-26)
+
+
+### Bug Fixes
+
+* **jest-config-react-native:** fix override testEnvironmentOptions ([e630f1c](https://github.com/ornikar/shared-configs/commit/e630f1c0fef8a7c7cd6649e1e0c7e4dc338f1da4))
+
+
+
 ## [8.3.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react-native@8.2.1...@ornikar/jest-config-react-native@8.3.0) (2023-07-25)
 
 
