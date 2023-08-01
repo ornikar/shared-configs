@@ -25,9 +25,8 @@ module.exports = {
     baseJestPreset.setupFiles.at(-1),
   ],
   setupFilesAfterEnv: [
-    ...baseJestPreset.setupFilesAfterEnv.slice(0, -1),
+    // overrides test-setup-after-env from base config.
     require.resolve('./test-setup-after-env'),
-    baseJestPreset.setupFilesAfterEnv.at(-1),
   ],
   transform: {
     '\\.raw\\.svg$': require.resolve('./transformers/asset-name-transformer'),

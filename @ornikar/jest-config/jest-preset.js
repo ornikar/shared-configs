@@ -30,6 +30,7 @@ module.exports = {
     // project setup should always be placed last.
     '<rootDir>/test-setup.js',
   ],
+  setupFilesAfterEnv: [require.resolve('./test-setup-after-env')],
   globalSetup: require.resolve('./jest-global-setup.js'),
   clearMocks: true,
   // Explicitly set both reset/restoreMocks as their default
