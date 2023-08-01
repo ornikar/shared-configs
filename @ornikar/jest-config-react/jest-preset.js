@@ -24,6 +24,11 @@ module.exports = {
     require.resolve('./test-setup'),
     baseJestPreset.setupFiles.at(-1),
   ],
+  setupFilesAfterEnv: [
+    ...baseJestPreset.setupFilesAfterEnv.slice(0, -1),
+    require.resolve('./test-setup-after-env'),
+    baseJestPreset.setupFilesAfterEnv.at(-1),
+  ],
   transform: {
     '\\.raw\\.svg$': require.resolve('./transformers/asset-name-transformer'),
     // legacy support, use { ReactComponent } from .svg instead.
