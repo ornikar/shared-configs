@@ -3,6 +3,31 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [10.5.5](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@10.5.4...@ornikar/repo-config@10.5.5) (2023-07-25)
+
+**Note:** Version bump only for package @ornikar/repo-config
+
+
+
+
+
+## [10.5.4](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@10.5.3...@ornikar/repo-config@10.5.4) (2023-07-13)
+
+
+### Bug Fixes
+
+* **repo-config:** if ornikar-lint-staged missing run yarn [no issue] ([#934](https://github.com/ornikar/shared-configs/issues/934)) ([d68c10a](https://github.com/ornikar/shared-configs/commit/d68c10af2bb627a0bd7a216cee14f55a676ba5c7))
+
+
+
+## [10.5.3](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@10.5.2...@ornikar/repo-config@10.5.3) (2023-07-05)
+
+**Note:** Version bump only for package @ornikar/repo-config
+
+
+
+
+
 ## [10.5.2](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@10.5.1...@ornikar/repo-config@10.5.2) (2023-05-23)
 
 **Note:** Version bump only for package @ornikar/repo-config

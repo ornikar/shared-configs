@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.1.0](https://github.com/ornikar/shared-configs/compare/@ornikar/webpack-config@7.0.0...@ornikar/webpack-config@7.1.0) (2023-06-26)
+
+
+### Features
+
+* **webpack-config:** export workspaceAliases ([2eba7bb](https://github.com/ornikar/shared-configs/commit/2eba7bbe22372d76d1ba87a7172f98315cbbff7b))
+
+
+
 ## [7.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/webpack-config@6.1.1...@ornikar/webpack-config@7.0.0) (2023-05-05)
 
 

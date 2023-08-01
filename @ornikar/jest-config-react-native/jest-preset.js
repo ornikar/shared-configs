@@ -18,6 +18,8 @@ module.exports = {
     '@storybook/react$': require.resolve('./__mocks__/@storybook/react-native.jsx'),
     '^@storybook/react$': require.resolve('./__mocks__/@storybook/react-native.jsx'),
   },
+  testEnvironment: require.resolve('./ornikar-react-native-env.js'),
+  testEnvironmentOptions: expoPreset.testEnvironmentOptions || {},
   // override expo transformIgnorePatterns with custom config
   transformIgnorePatterns: [
     'node_modules/(?!(react-native.*|@react-native.*|expo.*|@expo(nent)?/.*|react-navigation.*|@react-navigation/.*|native-base)/)',

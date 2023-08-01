@@ -3,6 +3,58 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [8.3.1](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react-native@8.3.0...@ornikar/jest-config-react-native@8.3.1) (2023-07-26)
+
+
+### Bug Fixes
+
+* **jest-config-react-native:** fix override testEnvironmentOptions ([e630f1c](https://github.com/ornikar/shared-configs/commit/e630f1c0fef8a7c7cd6649e1e0c7e4dc338f1da4))
+
+
+
+## [8.3.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react-native@8.2.1...@ornikar/jest-config-react-native@8.3.0) (2023-07-25)
+
+
+### Features
+
+* **jest-config-react:** configure export custom conditions for web [no issue] ([#945](https://github.com/ornikar/shared-configs/issues/945)) ([150fe56](https://github.com/ornikar/shared-configs/commit/150fe566382afe2026802eb128ac5ac3fdab4f9e))
+
+
+
+## [8.2.1](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react-native@8.2.0...@ornikar/jest-config-react-native@8.2.1) (2023-07-19)
+
+**Note:** Version bump only for package @ornikar/jest-config-react-native
+
+
+
+
+
+## [8.2.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react-native@8.1.2...@ornikar/jest-config-react-native@8.2.0) (2023-07-13)
+
+
+### Features
+
+* **jest-config-react-native:** add testEnvironment config for native [no issue] ([#935](https://github.com/ornikar/shared-configs/issues/935)) ([d8fe9a8](https://github.com/ornikar/shared-configs/commit/d8fe9a8c163ef52b605967a9a25a15e22dd8503f))
+
+
+
+## [8.1.2](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react-native@8.1.1...@ornikar/jest-config-react-native@8.1.2) (2023-07-05)
+
+**Note:** Version bump only for package @ornikar/jest-config-react-native
+
+
+
+
+
+## [8.1.1](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react-native@8.1.0...@ornikar/jest-config-react-native@8.1.1) (2023-06-09)
+
+
+### Bug Fixes
+
+* **jest-config-react-native:** mark @testing-library/react as optional ([5abafa1](https://github.com/ornikar/shared-configs/commit/5abafa1acd8526c7e1327f5b73fc2f21903e480c))
+
+
+
 ## [8.1.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react-native@8.0.0...@ornikar/jest-config-react-native@8.1.0) (2023-05-23)
 
 

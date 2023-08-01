@@ -2,11 +2,10 @@
 
 'use strict';
 
-const fs = require('fs');
-const path = require('path');
 const linaria = require('@ornikar/webpack-config/linaria');
 const processEnv = require('@ornikar/webpack-config/processEnv');
 const reactNativeWeb = require('@ornikar/webpack-config/reactNativeWeb');
+const workspaceAliases = require('@ornikar/webpack-config/workspaceAliases');
 const cssModulesRule = require('../webpack-configs/cssModulesRule');
 const fixStorybookBabelRules = require('../webpack-configs/fixStorybookBabelRules');
 const svgRule = require('../webpack-configs/svgRule');
@@ -25,28 +24,9 @@ module.exports = (
     envVariables,
   } = defaultOptions,
 ) => {
-  const workspaceAliases = {};
-  let srcDirectories = [srcDirectory];
-
-  const pkg = JSON.parse(fs.readFileSync(path.resolve('./package.json')));
-
-  if (pkg.workspaces) {
-    // eslint-disable-next-line import/no-extraneous-dependencies, global-require
-    const { getSyncPackages } = require('@ornikar/lerna-config');
-
-    srcDirectories = [];
-
-    const packages = getSyncPackages(pkg.workspaces);
-    packages.forEach(({ name, location }) => {
-      const packageSrcDirectory = path.join(`./${location}`, srcDirectory);
-      const basePath = path.join(packageSrcDirectory, './index');
-      srcDirectories.push(packageSrcDirectory);
-      const isTs = fs.existsSync(path.resolve(`${basePath}.ts`));
-      workspaceAliases[`${name}$`] = path.resolve(`${basePath}.${isTs ? 'ts' : 'js'}`);
-    });
-  }
-
   const env = process.env.NODE_ENV !== 'production' ? 'dev' : 'production';
+
+  const { srcDirectories } = workspaceAliases(webpackConfig, { srcDirectory });
 
   if (enableLegacyCssModules) {
     cssModulesRule(env, webpackConfig, srcDirectories, isCRAPresetEnabled);
@@ -79,7 +59,6 @@ module.exports = (
 
   webpackConfig.resolve.alias = {
     ...webpackConfig.resolve.alias,
-    ...workspaceAliases,
     ...modulesToAlias,
   };
 

@@ -8,6 +8,8 @@ const ornikarReactNativePreset = require('../jest-preset');
 module.exports = {
   ...baseOrnikarPreset,
   ...expoPreset,
+  testEnvironment: baseOrnikarPreset.testEnvironment, // override testEnvironment in expo preset
+  testEnvironmentOptions: baseOrnikarPreset.testEnvironmentOptions,
   snapshotResolver: require.resolve('../snapshot-resolvers/resolver.web.js'),
   setupFiles: [...expoPreset.setupFiles, ...baseOrnikarPreset.setupFiles, require.resolve('../test-setup')],
   testMatch: [

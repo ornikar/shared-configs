@@ -1,6 +1,6 @@
 {
   "name": "@ornikar/lerna-config",
-  "version": "9.1.0",
+  "version": "9.3.0",
   "description": "📚 lerna config",
   "repository": {
     "directory": "@ornikar/lerna-config",
@@ -18,7 +18,8 @@
   "bin": {
     "lerna": "./bin/lerna",
     "lerna-config-generate-eslintrc-files": "./bin/generate-eslintrc-files.mjs",
-    "lerna-config-generate-tsconfig-files": "./bin/generate-tsconfig-files.mjs"
+    "lerna-config-generate-tsconfig-files": "./bin/generate-tsconfig-files.mjs",
+    "ornikar-monorepo-update-peer-dependencies": "./bin/update-peer-dependencies.mjs"
   },
   "peerDependencies": {
     "lerna": "0.0.0"
@@ -35,7 +36,7 @@
     "@lerna/publish": "5.5.4",
     "@lerna/version": "5.5.4",
     "@pob/pretty-eslint-config": "^3.0.0",
-    "conventional-changelog-conventionalcommits": "^5.0.0"
+    "conventional-changelog-conventionalcommits": "^6.0.0"
   },
   "scripts": {
     "lint:eslint": "yarn ../.. eslint --report-unused-disable-directives --quiet @ornikar/lerna-config"

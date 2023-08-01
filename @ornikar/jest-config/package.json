@@ -1,6 +1,6 @@
 {
   "name": "@ornikar/jest-config",
-  "version": "9.5.1",
+  "version": "9.5.3",
   "description": "✅ jest config",
   "repository": {
     "directory": "@ornikar/jest-config",
@@ -27,7 +27,7 @@
     "jest": "^29.5.0"
   },
   "devDependencies": {
-    "jest": "29.5.0"
+    "jest": "29.6.1"
   },
   "scripts": {
     "lint:eslint": "yarn ../.. eslint --report-unused-disable-directives --quiet @ornikar/jest-config"

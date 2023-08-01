@@ -1,6 +1,6 @@
 {
   "name": "@ornikar/storybook-config",
-  "version": "7.0.3",
+  "version": "7.1.1",
   "description": "📖 storybook config files",
   "repository": {
     "directory": "@ornikar/storybook-config",
@@ -22,11 +22,11 @@
     "webpack": "^5.75.0"
   },
   "dependencies": {
-    "@ornikar/webpack-config": "^7.0.0",
+    "@ornikar/webpack-config": "7.1.0",
     "@svgr/webpack": "^6.5.1"
   },
   "devDependencies": {
-    "webpack": "5.76.0"
+    "webpack": "5.88.1"
   },
   "scripts": {
     "lint:eslint": "yarn ../.. eslint --report-unused-disable-directives --quiet @ornikar/storybook-config"

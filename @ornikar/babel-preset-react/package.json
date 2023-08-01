@@ -1,6 +1,6 @@
 {
   "name": "@ornikar/babel-preset-react",
-  "version": "2.0.3",
+  "version": "2.0.5",
   "keywords": [],
   "repository": {
     "directory": "@ornikar/babel-preset-react",
@@ -28,6 +28,6 @@
     "@babel/preset-react": "^7.13.8"
   },
   "devDependencies": {
-    "@babel/core": "7.21.4"
+    "@babel/core": "7.22.9"
   }
 }
