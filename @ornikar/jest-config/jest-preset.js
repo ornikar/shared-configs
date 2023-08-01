@@ -25,7 +25,6 @@ module.exports = {
   testPathIgnorePatterns: [],
   moduleDirectories: useLerna ? ['node_modules', 'src'] : ['node_modules'],
   modulePaths: useLerna ? [] : ['<rootDir>/src'],
-  setupFilesAfterEnv: [require.resolve('./test-setup-after-env.js')],
   setupFiles: [
     require.resolve('./global-mocks.js'),
     // project setup should always be placed last.
