@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.6.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config@9.5.3...@ornikar/jest-config@9.6.0) (2023-08-01)
+
+
+### Features
+
+* add jest-fail-on-console setup on jest-config-react [no issue] ([#947](https://github.com/ornikar/shared-configs/issues/947)) ([1072200](https://github.com/ornikar/shared-configs/commit/1072200e2eb87d37796795582ee4e3f97eaa5e22))
+
+
+
 ## [9.5.3](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config@9.5.2...@ornikar/jest-config@9.5.3) (2023-07-26)
 
 

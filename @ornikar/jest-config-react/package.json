@@ -1,6 +1,6 @@
 {
   "name": "@ornikar/jest-config-react",
-  "version": "11.1.1",
+  "version": "11.2.0",
   "description": "✅⚛️ jest config for react",
   "repository": {
     "directory": "@ornikar/jest-config-react",
@@ -23,7 +23,7 @@
     "react-dom": "^18.2.0"
   },
   "dependencies": {
-    "@ornikar/jest-config": "9.5.3",
+    "@ornikar/jest-config": "9.6.0",
     "identity-obj-proxy": "^3.0.0",
     "jest-fail-on-console": "^3.1.1"
   },

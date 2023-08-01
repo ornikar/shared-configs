@@ -3103,7 +3103,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@ornikar/jest-config-react-native@workspace:@ornikar/jest-config-react-native"
   dependencies:
-    "@ornikar/jest-config-react": 11.1.1
+    "@ornikar/jest-config-react": 11.2.0
     "@sucrase/jest-plugin": ^3.0.0
     "@testing-library/react-native": 12.1.3
     jest-expo: 48.0.2
@@ -3133,11 +3133,11 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ornikar/jest-config-react@11.1.1, @ornikar/jest-config-react@workspace:@ornikar/jest-config-react":
+"@ornikar/jest-config-react@11.2.0, @ornikar/jest-config-react@workspace:@ornikar/jest-config-react":
   version: 0.0.0-use.local
   resolution: "@ornikar/jest-config-react@workspace:@ornikar/jest-config-react"
   dependencies:
-    "@ornikar/jest-config": 9.5.3
+    "@ornikar/jest-config": 9.6.0
     "@testing-library/react": 14.0.0
     identity-obj-proxy: ^3.0.0
     jest: 29.6.1
@@ -3153,7 +3153,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ornikar/jest-config@9.5.3, @ornikar/jest-config@workspace:@ornikar/jest-config":
+"@ornikar/jest-config@9.6.0, @ornikar/jest-config@workspace:@ornikar/jest-config":
   version: 0.0.0-use.local
   resolution: "@ornikar/jest-config@workspace:@ornikar/jest-config"
   dependencies:
