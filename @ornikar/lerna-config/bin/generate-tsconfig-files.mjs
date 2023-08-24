@@ -59,9 +59,10 @@ import { getGraphPackages } from '../index.mjs';
 
       const filteredCurrentCompilerOptions = tsconfigCurrentContent.compilerOptions || {};
       const isLegacyRootDirDot = !existsSync(path.join(packagePath, 'src'));
+      const isApp = !tsconfigBuildPath;
       const compilerOptions = {
         rootDir: isLegacyRootDirDot ? '.' : 'src',
-        baseUrl: isLegacyRootDirDot ? '.' : './src',
+        baseUrl: isApp ? undefined : isLegacyRootDirDot ? '.' : './src',
         composite: true,
         incremental: true,
         isolatedModules: true,
@@ -77,6 +78,9 @@ import { getGraphPackages } from '../index.mjs';
       Object.keys(compilerOptions).forEach((key) => {
         delete filteredCurrentCompilerOptions[key];
       });
+      if (!isApp) {
+        delete compilerOptions.baseUrl;
+      }
 
       const tsconfigContent = {
         extends: '../../tsconfig.base.json',
@@ -123,10 +127,10 @@ import { getGraphPackages } from '../index.mjs';
       // react-scripts doesn't like paths
       if (!pkg.private) {
         tsconfigContent.compilerOptions.paths = {
-          [pkg.name]: ['./index.ts'],
+          [pkg.name]: ['./src/index.ts'],
         };
         tsconfigBuildContent.compilerOptions.paths = {
-          [pkg.name]: ['./index.ts'],
+          [pkg.name]: ['./src/index.ts'],
         };
       }
 
@@ -150,7 +154,7 @@ import { getGraphPackages } from '../index.mjs';
       if (tsDependencies.length > 0) {
         tsDependencies.forEach((pkgDep) => {
           const pkgRelativePath = path.relative(pkgDep.rootPath, pkgDep.location);
-          const depPath = `../../../${pkgRelativePath}/src`;
+          const depPath = `../../${pkgRelativePath}/src`;
           if (!tsconfigContent.compilerOptions.paths) {
             tsconfigContent.compilerOptions.paths = {};
           }
