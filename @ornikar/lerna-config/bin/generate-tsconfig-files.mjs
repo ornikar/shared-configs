@@ -69,10 +69,10 @@ import { getGraphPackages } from '../index.mjs';
         moduleDetection: 'force',
         noEmit: false,
         noEmitOnError: true,
-        outDir: `../../node_modules/.cache/tsc/${pkg.name}`,
-        tsBuildInfoFile: `../../node_modules/.cache/tsc/${pkg.name}/tsbuildinfo`,
         declaration: true,
         declarationMap: true,
+        outDir: `../../node_modules/.cache/tsc/${pkg.name}`,
+        tsBuildInfoFile: `../../node_modules/.cache/tsc/${pkg.name}/tsbuildinfo`,
       };
 
       const hasReferences = tsPackages.some((lernaPkg) => {
@@ -86,6 +86,7 @@ import { getGraphPackages } from '../index.mjs';
 
       if (!hasReferences) {
         compilerOptions.noEmit = true;
+        delete compilerOptions.emitDeclarationOnly;
       } else {
         compilerOptions.noEmit = false;
         compilerOptions.emitDeclarationOnly = true;
@@ -143,6 +144,9 @@ import { getGraphPackages } from '../index.mjs';
       if (!hasReferences) {
         tsconfigBuildContent.compilerOptions.noEmit = false;
         tsconfigBuildContent.compilerOptions.emitDeclarationOnly = true;
+      } else {
+        delete tsconfigBuildContent.compilerOptions.noEmit;
+        delete tsconfigBuildContent.compilerOptions.emitDeclarationOnly;
       }
 
       // react-scripts doesn't like paths
