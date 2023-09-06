@@ -87,6 +87,7 @@ import { getGraphPackages } from '../index.mjs';
       if (!hasReferences) {
         compilerOptions.noEmit = true;
         delete compilerOptions.emitDeclarationOnly;
+        delete filteredCurrentCompilerOptions.emitDeclarationOnly;
       } else {
         compilerOptions.noEmit = false;
         compilerOptions.emitDeclarationOnly = true;
@@ -95,6 +96,7 @@ import { getGraphPackages } from '../index.mjs';
       Object.keys(compilerOptions).forEach((key) => {
         delete filteredCurrentCompilerOptions[key];
       });
+
       if (!isApp) {
         delete compilerOptions.baseUrl;
       }
