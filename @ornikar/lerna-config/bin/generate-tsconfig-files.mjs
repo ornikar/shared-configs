@@ -69,12 +69,28 @@ import { getGraphPackages } from '../index.mjs';
         moduleDetection: 'force',
         noEmit: false,
         noEmitOnError: true,
-        declaration: true,
-        declarationMap: true,
-        emitDeclarationOnly: true,
         outDir: `../../node_modules/.cache/tsc/${pkg.name}`,
         tsBuildInfoFile: `../../node_modules/.cache/tsc/${pkg.name}/tsbuildinfo`,
+        declaration: true,
+        declarationMap: true,
       };
+
+      const hasReferences = tsPackages.some((lernaPkg) => {
+        if (lernaPkg.name === pkg.name) return false;
+        return (
+          (lernaPkg.dependencies && lernaPkg.dependencies[pkg.name]) ||
+          (lernaPkg.devDependencies && lernaPkg.devDependencies[pkg.name]) ||
+          (lernaPkg.peerDependencies && lernaPkg.peerDependencies[pkg.name])
+        );
+      });
+
+      if (!hasReferences) {
+        compilerOptions.noEmit = true;
+      } else {
+        compilerOptions.noEmit = false;
+        compilerOptions.emitDeclarationOnly = true;
+      }
+
       Object.keys(compilerOptions).forEach((key) => {
         delete filteredCurrentCompilerOptions[key];
       });
@@ -123,6 +139,11 @@ import { getGraphPackages } from '../index.mjs';
           '**/stories-list.ts',
         ],
       };
+
+      if (!hasReferences) {
+        tsconfigBuildContent.compilerOptions.noEmit = false;
+        tsconfigBuildContent.compilerOptions.emitDeclarationOnly = true;
+      }
 
       // react-scripts doesn't like paths
       if (!pkg.private) {
