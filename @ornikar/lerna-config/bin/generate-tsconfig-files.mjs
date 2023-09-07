@@ -57,12 +57,24 @@ import { getGraphPackages } from '../index.mjs';
           )
         : {};
 
+      const hasReferences = tsPackages.some((lernaPkg) => {
+        if (lernaPkg.name === pkg.name) return false;
+        return (
+          (lernaPkg.dependencies && lernaPkg.dependencies[pkg.name]) ||
+          (lernaPkg.devDependencies && lernaPkg.devDependencies[pkg.name]) ||
+          (lernaPkg.peerDependencies && lernaPkg.peerDependencies[pkg.name])
+        );
+      });
+
       const filteredCurrentCompilerOptions = tsconfigCurrentContent.compilerOptions || {};
       const isLegacyRootDirDot = !existsSync(path.join(packagePath, 'src'));
-      const isApp = !tsconfigBuildPath;
+      const isApp = !!pkg.private && !hasReferences;
+      const isRootDirSrc = !(isLegacyRootDirDot || filteredCurrentCompilerOptions.rootDirs);
+      const isBaseUrlSrc = isApp && !isLegacyRootDirDot;
+
       const compilerOptions = {
-        rootDir: isLegacyRootDirDot ? '.' : 'src',
-        baseUrl: isApp ? undefined : isLegacyRootDirDot ? '.' : './src',
+        rootDir: isRootDirSrc ? 'src' : '.',
+        baseUrl: isApp ? (isLegacyRootDirDot ? '.' : './src') : undefined,
         composite: true,
         incremental: true,
         isolatedModules: true,
@@ -74,15 +86,6 @@ import { getGraphPackages } from '../index.mjs';
         outDir: `../../node_modules/.cache/tsc/${pkg.name}`,
         tsBuildInfoFile: `../../node_modules/.cache/tsc/${pkg.name}/tsbuildinfo`,
       };
-
-      const hasReferences = tsPackages.some((lernaPkg) => {
-        if (lernaPkg.name === pkg.name) return false;
-        return (
-          (lernaPkg.dependencies && lernaPkg.dependencies[pkg.name]) ||
-          (lernaPkg.devDependencies && lernaPkg.devDependencies[pkg.name]) ||
-          (lernaPkg.peerDependencies && lernaPkg.peerDependencies[pkg.name])
-        );
-      });
 
       if (!hasReferences) {
         compilerOptions.noEmit = true;
@@ -108,7 +111,7 @@ import { getGraphPackages } from '../index.mjs';
           ...compilerOptions,
           ...filteredCurrentCompilerOptions,
         },
-        include: tsconfigCurrentContent.include || [isLegacyRootDirDot ? '.' : 'src', '../../typings'],
+        include: tsconfigCurrentContent.include || [isRootDirSrc ? 'src' : '.', '../../typings'],
       };
 
       if (isLegacyRootDirDot) {
@@ -181,7 +184,7 @@ import { getGraphPackages } from '../index.mjs';
       if (tsDependencies.length > 0) {
         tsDependencies.forEach((pkgDep) => {
           const pkgRelativePath = path.relative(pkgDep.rootPath, pkgDep.location);
-          const depPath = `../../${pkgRelativePath}/src`;
+          const depPath = `../../${isBaseUrlSrc ? '../' : ''}${pkgRelativePath}/src`;
           if (!tsconfigContent.compilerOptions.paths) {
             tsconfigContent.compilerOptions.paths = {};
           }
