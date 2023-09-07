@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.4.0](https://github.com/ornikar/shared-configs/compare/@ornikar/lerna-config@9.3.0...@ornikar/lerna-config@9.4.0) (2023-09-07)
+
+
+### Features
+
+* **lerna-config:** disable emit declaration cache when tsconfig has no references [no issue] ([#962](https://github.com/ornikar/shared-configs/issues/962)) ([a032a89](https://github.com/ornikar/shared-configs/commit/a032a89052d1d028202c11e2d7a18d29bd6d0a4b))
+
+
+### Bug Fixes
+
+* **lerna-config:** fix generate tsconfig issues for applications ([dc776dc](https://github.com/ornikar/shared-configs/commit/dc776dcc6a621742f54188455c708f1e20621306))
+* **lerna-config:** tsconfig generation without baseurl [no issue] ([#957](https://github.com/ornikar/shared-configs/issues/957)) ([8296543](https://github.com/ornikar/shared-configs/commit/829654304798c85cf1219194b228748a7154eef8))
+
+
+
 ## [9.3.0](https://github.com/ornikar/shared-configs/compare/@ornikar/lerna-config@9.2.0...@ornikar/lerna-config@9.3.0) (2023-07-19)
 
 
