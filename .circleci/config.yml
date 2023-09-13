@@ -22,8 +22,6 @@ workflows:
 
       - frontend/lint-src:
           name: lint
-          use-cache: false
-          cache-version: none
           run-tsc: false
 
       # prerelease
