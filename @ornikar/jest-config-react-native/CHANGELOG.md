@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [8.4.1](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react-native@8.4.0...@ornikar/jest-config-react-native@8.4.1) (2023-09-13)
+
+
+### Bug Fixes
+
+* **jest-config-react-native:** storybook mock stories unmount after test [no issue] ([#968](https://github.com/ornikar/shared-configs/issues/968)) ([8f45256](https://github.com/ornikar/shared-configs/commit/8f45256feddedbed10b8fdcdbfadf70245c72e82))
+
+
+
 ## [8.4.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react-native@8.3.3...@ornikar/jest-config-react-native@8.4.0) (2023-09-07)
 
 
