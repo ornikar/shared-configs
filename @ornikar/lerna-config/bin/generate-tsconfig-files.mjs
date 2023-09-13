@@ -57,11 +57,24 @@ import { getGraphPackages } from '../index.mjs';
           )
         : {};
 
+      const hasReferences = tsPackages.some((lernaPkg) => {
+        if (lernaPkg.name === pkg.name) return false;
+        return (
+          (lernaPkg.dependencies && lernaPkg.dependencies[pkg.name]) ||
+          (lernaPkg.devDependencies && lernaPkg.devDependencies[pkg.name]) ||
+          (lernaPkg.peerDependencies && lernaPkg.peerDependencies[pkg.name])
+        );
+      });
+
       const filteredCurrentCompilerOptions = tsconfigCurrentContent.compilerOptions || {};
       const isLegacyRootDirDot = !existsSync(path.join(packagePath, 'src'));
+      const isApp = !!pkg.private && !hasReferences;
+      const isRootDirSrc = !(isLegacyRootDirDot || filteredCurrentCompilerOptions.rootDirs);
+      const isBaseUrlSrc = isApp && !isLegacyRootDirDot;
+
       const compilerOptions = {
-        rootDir: isLegacyRootDirDot ? '.' : 'src',
-        baseUrl: isLegacyRootDirDot ? '.' : './src',
+        rootDir: isRootDirSrc ? 'src' : '.',
+        baseUrl: isApp ? (isLegacyRootDirDot ? '.' : './src') : undefined,
         composite: true,
         incremental: true,
         isolatedModules: true,
@@ -70,13 +83,26 @@ import { getGraphPackages } from '../index.mjs';
         noEmitOnError: true,
         declaration: true,
         declarationMap: true,
-        emitDeclarationOnly: true,
         outDir: `../../node_modules/.cache/tsc/${pkg.name}`,
         tsBuildInfoFile: `../../node_modules/.cache/tsc/${pkg.name}/tsbuildinfo`,
       };
+
+      if (!hasReferences) {
+        compilerOptions.noEmit = true;
+        delete compilerOptions.emitDeclarationOnly;
+        delete filteredCurrentCompilerOptions.emitDeclarationOnly;
+      } else {
+        compilerOptions.noEmit = false;
+        compilerOptions.emitDeclarationOnly = true;
+      }
+
       Object.keys(compilerOptions).forEach((key) => {
         delete filteredCurrentCompilerOptions[key];
       });
+
+      if (!isApp) {
+        delete compilerOptions.baseUrl;
+      }
 
       const tsconfigContent = {
         extends: '../../tsconfig.base.json',
@@ -85,7 +111,7 @@ import { getGraphPackages } from '../index.mjs';
           ...compilerOptions,
           ...filteredCurrentCompilerOptions,
         },
-        include: tsconfigCurrentContent.include || [isLegacyRootDirDot ? '.' : 'src', '../../typings'],
+        include: tsconfigCurrentContent.include || [isRootDirSrc ? 'src' : '.', '../../typings'],
       };
 
       if (isLegacyRootDirDot) {
@@ -120,13 +146,21 @@ import { getGraphPackages } from '../index.mjs';
         ],
       };
 
+      if (!hasReferences) {
+        tsconfigBuildContent.compilerOptions.noEmit = false;
+        tsconfigBuildContent.compilerOptions.emitDeclarationOnly = true;
+      } else {
+        delete tsconfigBuildContent.compilerOptions.noEmit;
+        delete tsconfigBuildContent.compilerOptions.emitDeclarationOnly;
+      }
+
       // react-scripts doesn't like paths
       if (!pkg.private) {
         tsconfigContent.compilerOptions.paths = {
-          [pkg.name]: ['./index.ts'],
+          [pkg.name]: ['./src/index.ts'],
         };
         tsconfigBuildContent.compilerOptions.paths = {
-          [pkg.name]: ['./index.ts'],
+          [pkg.name]: ['./src/index.ts'],
         };
       }
 
@@ -150,7 +184,7 @@ import { getGraphPackages } from '../index.mjs';
       if (tsDependencies.length > 0) {
         tsDependencies.forEach((pkgDep) => {
           const pkgRelativePath = path.relative(pkgDep.rootPath, pkgDep.location);
-          const depPath = `../../../${pkgRelativePath}/src`;
+          const depPath = `../../${isBaseUrlSrc ? '../' : ''}${pkgRelativePath}/src`;
           if (!tsconfigContent.compilerOptions.paths) {
             tsconfigContent.compilerOptions.paths = {};
           }

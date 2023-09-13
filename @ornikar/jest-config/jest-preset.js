@@ -25,12 +25,12 @@ module.exports = {
   testPathIgnorePatterns: [],
   moduleDirectories: useLerna ? ['node_modules', 'src'] : ['node_modules'],
   modulePaths: useLerna ? [] : ['<rootDir>/src'],
-  setupFilesAfterEnv: [require.resolve('./test-setup-after-env.js')],
   setupFiles: [
     require.resolve('./global-mocks.js'),
     // project setup should always be placed last.
     '<rootDir>/test-setup.js',
   ],
+  setupFilesAfterEnv: [require.resolve('./test-setup-after-env')],
   globalSetup: require.resolve('./jest-global-setup.js'),
   clearMocks: true,
   // Explicitly set both reset/restoreMocks as their default

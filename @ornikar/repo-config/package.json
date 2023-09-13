@@ -1,6 +1,6 @@
 {
   "name": "@ornikar/repo-config",
-  "version": "10.5.5",
+  "version": "10.6.0",
   "description": "🔧 repo config",
   "repository": {
     "directory": "@ornikar/repo-config",
@@ -22,10 +22,10 @@
     "ornikar-repo-config-postinstall": "./bin/ornikar-repo-config-postinstall.js"
   },
   "dependencies": {
-    "@commitlint/cli": "17.6.7",
+    "@commitlint/cli": "17.7.1",
     "@ornikar/commitlint-config": "^5.0.2",
     "husky": "8.0.3",
-    "lint-staged": "13.2.3",
+    "lint-staged": "13.3.0",
     "prettier-plugin-properties": "0.2.0",
     "semver": "^7.3.5",
     "which-pm-runs": "^1.1.0"

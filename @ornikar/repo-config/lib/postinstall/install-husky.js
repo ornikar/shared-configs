@@ -148,12 +148,16 @@ fi
   const prePushHook = [];
 
   if (shouldRunTest()) {
-    prePushHookPreCommands.push(
-      '# autodetect main branch (usually master or main)',
-      'mainBranch=$(LANG=en_US git remote show origin | grep "HEAD branch" | cut -d\' \' -f5)',
-      '',
-    );
-    prePushHook.push(`CI=true ${pm.name} test --changedSince=origin/$mainBranch`);
+    if (pkg.scripts.test === 'node --test') {
+      prePushHook.push(`CI=true ${pm.name} test`);
+    } else {
+      prePushHookPreCommands.push(
+        '# autodetect main branch (usually master or main)',
+        'mainBranch=$(LANG=en_US git remote show origin | grep "HEAD branch" | cut -d\' \' -f5)',
+        '',
+      );
+      prePushHook.push(`CI=true ${pm.name} test --changedSince=origin/$mainBranch`);
+    }
   }
 
   if (shouldRunChecks()) {

@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [11.3.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@11.2.0...@ornikar/jest-config-react@11.3.0) (2023-08-28)
+
+
+### Features
+
+* silence warnings linked to react-native-web 19 INS-2508 ([#958](https://github.com/ornikar/shared-configs/issues/958)) ([4c3356a](https://github.com/ornikar/shared-configs/commit/4c3356a254ed9be32d27c894274e9560caf87040))
+
+
+
+## [11.2.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@11.1.1...@ornikar/jest-config-react@11.2.0) (2023-08-01)
+
+
+### Features
+
+* add jest-fail-on-console setup on jest-config-react [no issue] ([#947](https://github.com/ornikar/shared-configs/issues/947)) ([1072200](https://github.com/ornikar/shared-configs/commit/1072200e2eb87d37796795582ee4e3f97eaa5e22))
+
+
+
 ## [11.1.1](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@11.1.0...@ornikar/jest-config-react@11.1.1) (2023-07-26)
 
 **Note:** Version bump only for package @ornikar/jest-config-react

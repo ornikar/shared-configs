@@ -5,7 +5,7 @@ version: 2.1
 # -------------------------------------------------------------------------------------------------
 
 orbs:
-  frontend: ornikar/frontend-orb@9.7.0
+  frontend: ornikar/frontend-orb@9.11.1
 
 # -------------------------------------------------------------------------------------------------
 # WORKFLOWS
@@ -22,8 +22,6 @@ workflows:
 
       - frontend/lint-src:
           name: lint
-          use-cache: false
-          cache-version: none
           run-tsc: false
 
       # prerelease
