@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [10.6.0](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@10.5.6...@ornikar/repo-config@10.6.0) (2023-09-13)
+
+
+### Features
+
+* **repo-config:** add support for simple node test runner prepush hook [no issue] ([#965](https://github.com/ornikar/shared-configs/issues/965)) ([b9ff978](https://github.com/ornikar/shared-configs/commit/b9ff97845781e1e611184662272a983efe5aca52))
+
+
+
 ## [10.5.6](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@10.5.5...@ornikar/repo-config@10.5.6) (2023-08-28)
 
 **Note:** Version bump only for package @ornikar/repo-config
