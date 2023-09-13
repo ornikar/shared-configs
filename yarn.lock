@@ -3109,7 +3109,7 @@ __metadata:
     jest-expo: 49.0.0
     react: 18.2.0
     react-test-renderer: 18.2.0
-    sucrase: ^3.29.0
+    sucrase: ^3.34.0
   peerDependencies:
     "@testing-library/react": ^14.0.0
     "@testing-library/react-native": ^11.5.4 || ^12.1.2
@@ -13238,10 +13238,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"sucrase@npm:^3.20.0, sucrase@npm:^3.29.0":
-  version: 3.29.0
-  resolution: "sucrase@npm:3.29.0"
+"sucrase@npm:^3.20.0, sucrase@npm:^3.34.0":
+  version: 3.34.0
+  resolution: "sucrase@npm:3.34.0"
   dependencies:
+    "@jridgewell/gen-mapping": ^0.3.2
     commander: ^4.0.0
     glob: 7.1.6
     lines-and-columns: ^1.1.6
@@ -13251,7 +13252,7 @@ __metadata:
   bin:
     sucrase: bin/sucrase
     sucrase-node: bin/sucrase-node
-  checksum: fc8f04c34f29c0e9ca63109815df138182d62663dbe9565fcd94161b77a88a639f40c46559d0bb84d7acf9346ce23ea102476fd9168ec279330c7faecefb81eb
+  checksum: 61860063bdf6103413698e13247a3074d25843e91170825a9752e4af7668ffadd331b6e99e92fc32ee5b3c484ee134936f926fa9039d5711fafff29d017a2110
   languageName: node
   linkType: hard
 
