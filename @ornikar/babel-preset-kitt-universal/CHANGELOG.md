@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/babel-preset-kitt-universal@2.1.5...@ornikar/babel-preset-kitt-universal@3.0.0) (2023-09-14)
+
+
+### ⚠ BREAKING CHANGES
+
+* **babel-preset-kitt-universal:** disable styled-components plugins by default [no issue] (#970)
+
+### Features
+
+* **babel-preset-kitt-universal:** disable styled-components plugins by default [no issue] ([#970](https://github.com/ornikar/shared-configs/issues/970)) ([3f1804c](https://github.com/ornikar/shared-configs/commit/3f1804c151e0cc6d1c6027fce5b5e6ec62be8e78))
+
+
+
 ## [2.1.5](https://github.com/ornikar/shared-configs/compare/@ornikar/babel-preset-kitt-universal@2.1.4...@ornikar/babel-preset-kitt-universal@2.1.5) (2023-07-19)
 
 **Note:** Version bump only for package @ornikar/babel-preset-kitt-universal

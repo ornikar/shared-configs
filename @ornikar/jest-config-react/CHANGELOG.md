@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [11.3.2](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@11.3.1...@ornikar/jest-config-react@11.3.2) (2023-09-14)
+
+
+### Bug Fixes
+
+* fix unmount on stories tests [no issue] ([#971](https://github.com/ornikar/shared-configs/issues/971)) ([1180622](https://github.com/ornikar/shared-configs/commit/11806225cd18926ca4c59cb7a5ba0ebfcd789ba4))
+
+
+
 ## [11.3.1](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@11.3.0...@ornikar/jest-config-react@11.3.1) (2023-09-14)
 
 
