@@ -10,6 +10,8 @@ process.env.NODE_ENV = 'production';
 
 const sortFn = ([a], [b]) => a.toLowerCase().localeCompare(b.toLowerCase());
 
+const cwd = process.cwd()
+
 module.exports = ({ paths, babelPluginFormatjsOptions = {}, defaultDestinationDirectory }) => {
   const projectCollection = {};
   const phraseSources = [];
@@ -32,10 +34,12 @@ module.exports = ({ paths, babelPluginFormatjsOptions = {}, defaultDestinationDi
             ...babelPluginFormatjsOptions,
             onMsgExtracted(filename, descriptors) {
               if (descriptors.length === 0) return;
-              // eslint-disable-next-line security/detect-non-literal-regexp
+
+              const relativeFilename = path.relative(cwd, filename);
               const filenameRegExp = new RegExp(
-                `${filename.split('.')[0]}\\.((web|ios|android)\\.)*${filename.split('.').at(-1)}`,
+                `${relativeFilename.split('.')[0]}\\.((web|ios|android)\\.)*${relativeFilename.split('.').at(-1)}`,
               );
+
               descriptors.forEach(({ id, defaultMessage }) => {
                 if (
                   id in projectCollection &&
