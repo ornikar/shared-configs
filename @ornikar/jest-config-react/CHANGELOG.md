@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [11.3.1](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@11.3.0...@ornikar/jest-config-react@11.3.1) (2023-09-14)
+
+
+### Bug Fixes
+
+* storybook mocks should be in testSetupAfterEnv to make sure testing-library is cleanup properly [no issue] ([#969](https://github.com/ornikar/shared-configs/issues/969)) ([10ed164](https://github.com/ornikar/shared-configs/commit/10ed164f69c3003e9ee87c8b1c2cdfeb154a7ffe))
+
+
+
 ## [11.3.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@11.2.0...@ornikar/jest-config-react@11.3.0) (2023-08-28)
 
 

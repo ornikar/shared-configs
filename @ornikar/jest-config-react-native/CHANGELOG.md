@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [8.5.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react-native@8.4.1...@ornikar/jest-config-react-native@8.5.0) (2023-09-14)
+
+
+### Features
+
+* **jest-config-react-native:** update sucrase ([a8d8a63](https://github.com/ornikar/shared-configs/commit/a8d8a63c6a63ea52a41ed74ef67f3c1069d5d09a))
+
+
+### Bug Fixes
+
+* storybook mocks should be in testSetupAfterEnv to make sure testing-library is cleanup properly [no issue] ([#969](https://github.com/ornikar/shared-configs/issues/969)) ([10ed164](https://github.com/ornikar/shared-configs/commit/10ed164f69c3003e9ee87c8b1c2cdfeb154a7ffe))
+
+
+
 ## [8.4.1](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react-native@8.4.0...@ornikar/jest-config-react-native@8.4.1) (2023-09-13)
 
 
