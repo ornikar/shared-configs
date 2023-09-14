@@ -3,6 +3,7 @@
 exports.presetOptions = {
   isWeb: true,
   enableStyledComponentsReactNativeImport: true,
+  enableLegacyStyledComponents: true,
   styledComponentsOptions: { ssr: false },
 };
 
