@@ -82,11 +82,11 @@ exports.storiesOf = (groupName) => {
             : ({ children }) => decorateStory(() => children, [...localDecorators, ...globalDecorators])(context);
 
           const rtlApi = render(story(context), { wrapper: wrappingComponent });
-          const { asFragment } = rtlApi;
           if (waitForExpectation) {
             await waitFor(() => waitForExpectation(rtlApi, expect, { parameters }));
           }
-          expect(asFragment()).toMatchSnapshot();
+          expect(rtlApi.asFragment()).toMatchSnapshot();
+          rtlApi.unmount();
         });
       });
 
