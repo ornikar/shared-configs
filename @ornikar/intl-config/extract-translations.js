@@ -10,7 +10,7 @@ process.env.NODE_ENV = 'production';
 
 const sortFn = ([a], [b]) => a.toLowerCase().localeCompare(b.toLowerCase());
 
-const cwd = process.cwd()
+const cwd = process.cwd();
 
 module.exports = ({ paths, babelPluginFormatjsOptions = {}, defaultDestinationDirectory }) => {
   const projectCollection = {};
@@ -36,6 +36,7 @@ module.exports = ({ paths, babelPluginFormatjsOptions = {}, defaultDestinationDi
               if (descriptors.length === 0) return;
 
               const relativeFilename = path.relative(cwd, filename);
+              // eslint-disable-next-line security/detect-non-literal-regexp
               const filenameRegExp = new RegExp(
                 `${relativeFilename.split('.')[0]}\\.((web|ios|android)\\.)*${relativeFilename.split('.').at(-1)}`,
               );
