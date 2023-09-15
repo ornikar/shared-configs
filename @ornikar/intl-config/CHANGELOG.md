@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.2.2](https://github.com/ornikar/shared-configs/compare/@ornikar/intl-config@5.2.1...@ornikar/intl-config@5.2.2) (2023-09-15)
+
+
+### Bug Fixes
+
+* get relative path from extract translations file [no issue] ([#973](https://github.com/ornikar/shared-configs/issues/973)) ([7547e46](https://github.com/ornikar/shared-configs/commit/7547e46be8cd116227e8ab4786ac84fc2e8bfe77))
+
+
+
 ## [5.2.1](https://github.com/ornikar/shared-configs/compare/@ornikar/intl-config@5.2.0...@ornikar/intl-config@5.2.1) (2023-07-19)
 
 **Note:** Version bump only for package @ornikar/intl-config
