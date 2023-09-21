@@ -3091,11 +3091,11 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ornikar/eslint-config@npm:20.2.0":
-  version: 20.2.0
-  resolution: "@ornikar/eslint-config@npm:20.2.0"
+"@ornikar/eslint-config@npm:20.2.1":
+  version: 20.2.1
+  resolution: "@ornikar/eslint-config@npm:20.2.1"
   dependencies:
-    "@ornikar/eslint-plugin-ornikar": 20.2.0
+    "@ornikar/eslint-plugin-ornikar": 20.2.1
     eslint-config-airbnb-base: ^15.0.0
     eslint-config-prettier: ^8.2.0
     eslint-plugin-import: ^2.25.4
@@ -3104,22 +3104,22 @@ __metadata:
     eslint-plugin-n: ^16.0.0
     eslint-plugin-security: ^1.5.0
     eslint-plugin-simple-import-sort: ^10.0.0
-    eslint-plugin-unicorn: ^47.0.0
+    eslint-plugin-unicorn: ^48.0.0
   peerDependencies:
-    eslint: ^8.39.0
+    eslint: ^8.44.0
     prettier: ^2.2.1
-  checksum: 22c7607dce21e3f9183442aa69cc6f8094970285393b87490d2130297296e455c9f284850ad351371a609801d32d326e797af78eea38a931d14196432cf54b95
+  checksum: cc87569b1417904eca30c9dc21d60e7d890890b149df23b2e224f00dc2dfa752ee3fe69aab5151970aadac25f2dec72006917d5e93a46778c43f1887de92861c
   languageName: node
   linkType: hard
 
-"@ornikar/eslint-plugin-ornikar@npm:20.2.0":
-  version: 20.2.0
-  resolution: "@ornikar/eslint-plugin-ornikar@npm:20.2.0"
+"@ornikar/eslint-plugin-ornikar@npm:20.2.1":
+  version: 20.2.1
+  resolution: "@ornikar/eslint-plugin-ornikar@npm:20.2.1"
   dependencies:
     eslint-plugin-react: ^7.33.2
   peerDependencies:
     eslint: ^8.39.0
-  checksum: ac124f43a31096538cd9e520392211a39b2563cc36da5eace19ff6c70e8952de2889bb37083851861c8dda0284e91bd07c9a24c1625e8d97832fd0ccaecf47be
+  checksum: 155344f6fed9e5b65107f84348daf5a7412f1feeffa51c4aa6192b3be497db8bc5e607b142f738b7b4a8df4018731dc2fcd9276f9154d3d9bd8d12c91da3c209
   languageName: node
   linkType: hard
 
@@ -3354,7 +3354,7 @@ __metadata:
   resolution: "@ornikar/shared-configs@workspace:."
   dependencies:
     "@commitlint/cli": 17.7.1
-    "@ornikar/eslint-config": 20.2.0
+    "@ornikar/eslint-config": 20.2.1
     check-package-dependencies: 6.8.0
     eslint: 8.49.0
     jest: 29.6.1
@@ -7142,11 +7142,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-unicorn@npm:^47.0.0":
-  version: 47.0.0
-  resolution: "eslint-plugin-unicorn@npm:47.0.0"
+"eslint-plugin-unicorn@npm:^48.0.0":
+  version: 48.0.1
+  resolution: "eslint-plugin-unicorn@npm:48.0.1"
   dependencies:
-    "@babel/helper-validator-identifier": ^7.19.1
+    "@babel/helper-validator-identifier": ^7.22.5
     "@eslint-community/eslint-utils": ^4.4.0
     ci-info: ^3.8.0
     clean-regexp: ^1.0.0
@@ -7157,14 +7157,13 @@ __metadata:
     lodash: ^4.17.21
     pluralize: ^8.0.0
     read-pkg-up: ^7.0.1
-    regexp-tree: ^0.1.24
+    regexp-tree: ^0.1.27
     regjsparser: ^0.10.0
-    safe-regex: ^2.1.1
-    semver: ^7.3.8
+    semver: ^7.5.4
     strip-indent: ^3.0.0
   peerDependencies:
-    eslint: ">=8.38.0"
-  checksum: 8d93bd76d54fb44e134c6576e3bda72dbf4c9cb5bae90451ace6acf1c48e6d7329f1e36db1d19266a5da499afeff6bf0c647875d69adc92d546bcc2d8b765cca
+    eslint: ">=8.44.0"
+  checksum: e63112cbaa3a1347cbb427160d7b3c6a1f8cc8ef512075a0ab285c64761772356f4eb5f82c9fb1a8cde63d8794f8aa819eda02fa0a7c44bc9955c5113f87be78
   languageName: node
   linkType: hard
 
@@ -12582,12 +12581,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"regexp-tree@npm:^0.1.24, regexp-tree@npm:~0.1.1":
-  version: 0.1.24
-  resolution: "regexp-tree@npm:0.1.24"
+"regexp-tree@npm:^0.1.27, regexp-tree@npm:~0.1.1":
+  version: 0.1.27
+  resolution: "regexp-tree@npm:0.1.27"
   bin:
     regexp-tree: bin/regexp-tree
-  checksum: 5807013289d9205288d665e0f8d8cff94843dfd55fdedd1833eb9d9bbd07188a37dfa02942ec5cdc671180037f715148fac1ba6f18fd6be4268e5a8feb49d340
+  checksum: 129aebb34dae22d6694ab2ac328be3f99105143737528ab072ef624d599afecbcfae1f5c96a166fa9e5f64fa1ecf30b411c4691e7924c3e11bbaf1712c260c54
   languageName: node
   linkType: hard
 
@@ -13096,7 +13095,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"semver@npm:7.5.4, semver@npm:^7.0.0, semver@npm:^7.1.1, semver@npm:^7.3.4, semver@npm:^7.3.5, semver@npm:^7.3.7, semver@npm:^7.3.8, semver@npm:^7.5.3, semver@npm:^7.5.4":
+"semver@npm:7.5.4, semver@npm:^7.0.0, semver@npm:^7.1.1, semver@npm:^7.3.4, semver@npm:^7.3.5, semver@npm:^7.3.7, semver@npm:^7.5.3, semver@npm:^7.5.4":
   version: 7.5.4
   resolution: "semver@npm:7.5.4"
   dependencies:
