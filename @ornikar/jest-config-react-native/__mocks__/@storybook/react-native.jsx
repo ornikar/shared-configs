@@ -2,6 +2,12 @@
 
 'use strict';
 
+if (!global.afterAll) {
+  throw new Error(
+    'Missing afterAll global in mock @storybook/react-native. Please check your jest test-setup and make sure you use testSetupAfterEnv.',
+  );
+}
+
 const decorateStory = (storyFn, decorators) =>
   // eslint-disable-next-line unicorn/no-array-reduce
   decorators.reduce(
@@ -79,6 +85,7 @@ exports.storiesOf = (groupName) => {
           const rtlApi = render(story(context), { wrapper: WrappingComponent });
           if (waitForExpectation) await waitFor(() => waitForExpectation(rtlApi, expect, { parameters }));
           expect(rtlApi.toJSON()).toMatchSnapshot();
+          rtlApi.unmount();
         });
       });
 

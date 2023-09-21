@@ -10,12 +10,18 @@ const checkIsWebOption = (opts) => {
 
 module.exports = function preset(context, opts = {}) {
   checkIsWebOption(opts);
-  const { isWeb, styledComponentsOptions, enableStyledComponentsReactNativeImport, disableLinaria = !isWeb } = opts;
+  const {
+    isWeb,
+    styledComponentsOptions,
+    enableStyledComponentsReactNativeImport,
+    disableLinaria = !isWeb,
+    enableLegacyStyledComponents = false,
+  } = opts;
 
   return {
     plugins: [
       disableLinaria && 'babel-plugin-linaria-css-to-undefined',
-      [
+      enableLegacyStyledComponents && [
         'babel-plugin-styled-components',
         {
           ssr: isWeb,
@@ -26,7 +32,9 @@ module.exports = function preset(context, opts = {}) {
           ...styledComponentsOptions,
         },
       ],
-      enableStyledComponentsReactNativeImport && 'babel-plugin-styled-components-react-native-web',
+      enableLegacyStyledComponents &&
+        enableStyledComponentsReactNativeImport &&
+        'babel-plugin-styled-components-react-native-web',
       isWeb && ['babel-plugin-react-native', { OS: 'web' }],
     ].filter(Boolean),
   };

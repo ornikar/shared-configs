@@ -2,6 +2,12 @@
 
 'use strict';
 
+if (!global.afterAll) {
+  throw new Error(
+    'Missing afterAll global in mock @storybook/react. Please check your jest test-setup and make sure you use testSetupAfterEnv.',
+  );
+}
+
 const decorateStory = (storyFn, decorators) =>
   // eslint-disable-next-line unicorn/no-array-reduce
   decorators.reduce(
@@ -76,12 +82,11 @@ exports.storiesOf = (groupName) => {
             : ({ children }) => decorateStory(() => children, [...localDecorators, ...globalDecorators])(context);
 
           const rtlApi = render(story(context), { wrapper: wrappingComponent });
-          const { unmount, asFragment } = rtlApi;
           if (waitForExpectation) {
             await waitFor(() => waitForExpectation(rtlApi, expect, { parameters }));
           }
-          expect(asFragment()).toMatchSnapshot();
-          unmount();
+          expect(rtlApi.asFragment()).toMatchSnapshot();
+          rtlApi.unmount();
         });
       });
 
