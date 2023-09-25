@@ -16,8 +16,8 @@ describe('fixtures', () => {
         rootDir: `${testsPath}/${dirname}`,
       });
 
-      configs.forEach((config, index) => {
-        test(String(index), async () => {
+      configs.forEach((config) => {
+        test(path.relative(process.cwd(), config.output[0].file), async () => {
           const bundle = await rollup.rollup(config);
           const {
             output: [{ code: actual }],

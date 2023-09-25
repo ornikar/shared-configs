@@ -37,4 +37,7 @@ module.exports = {
   // See https://github.com/ornikar/shared-configs/pull/820#discussion_r1034570609
   resetMocks: false,
   restoreMocks: false,
+  // TODO [engine:node@>=22]: Reconsider this, see https://ornikar.atlassian.net/wiki/spaces/~763979384/pages/3755508377/jest+node+16.11 and https://github.com/jestjs/jest/issues/11956
+  workerIdleMemoryLimit: '4G',
+  workerThreads: true,
 };
