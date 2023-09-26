@@ -8,7 +8,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [16.x, 18.x]
+        node-version: [18.x, 20.x]
 
     steps:
       - uses: actions/checkout@v3
@@ -26,7 +26,7 @@ jobs:
 
       - name: Prettier
         run: yarn run lint:prettier
-        if: startsWith(matrix.node-version, '16.')
+        if: startsWith(matrix.node-version, '18.')
 
       - name: Eslint
         run: yarn run lint:eslint
@@ -35,7 +35,7 @@ jobs:
         run: yarn run test
 
       - name: Check working directory is clean
-        if: startsWith(matrix.node-version, '16.')
+        if: startsWith(matrix.node-version, '18.')
         run: |
           if [ -n "$(git status --porcelain)" ]; then
             echo "Working directory not clean:"
