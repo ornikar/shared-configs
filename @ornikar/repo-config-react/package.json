@@ -20,7 +20,6 @@
   "dependencies": {
     "@ornikar/repo-config": "10.6.0",
     "cross-env": "^7.0.0",
-    "node-fetch": "^3.2.3",
     "svgo": "^2.8.0"
   },
   "peerDependencies": {

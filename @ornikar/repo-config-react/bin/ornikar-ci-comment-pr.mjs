@@ -1,7 +1,5 @@
 #!/usr/bin/env node
 
-import fetch from 'node-fetch';
-
 const {
   GITHUB_TOKEN,
   CIRCLE_PROJECT_USERNAME: ORG,
