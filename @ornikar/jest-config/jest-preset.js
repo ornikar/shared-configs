@@ -1,7 +1,7 @@
 'use strict';
 
-const fs = require('fs');
-const path = require('path');
+const fs = require('node:fs');
+const path = require('node:path');
 
 const useLerna = fs.existsSync(path.resolve('lerna.json'));
 const useTypescript = fs.existsSync(path.resolve('tsconfig.json'));

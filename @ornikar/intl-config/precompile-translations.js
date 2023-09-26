@@ -1,7 +1,7 @@
 'use strict';
 
-const fs = require('fs');
-const path = require('path');
+const fs = require('node:fs');
+const path = require('node:path');
 const { compile } = require('@formatjs/cli-lib');
 const globSync = require('glob').sync;
 

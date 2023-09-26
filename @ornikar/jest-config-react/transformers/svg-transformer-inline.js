@@ -1,6 +1,6 @@
 'use strict';
 
-const path = require('path');
+const path = require('node:path');
 
 exports.process = function process(src, filePath) {
   const assetFilename = JSON.stringify(path.basename(filePath));

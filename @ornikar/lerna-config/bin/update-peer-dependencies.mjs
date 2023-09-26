@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import fs from 'fs/promises';
+import fs from 'node:fs/promises';
 import { getPackages } from '../index.mjs';
 
 const packages = await getPackages();

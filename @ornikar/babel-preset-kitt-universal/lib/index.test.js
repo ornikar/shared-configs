@@ -2,7 +2,7 @@
 
 /* eslint-disable global-require */
 
-const fs = require('fs');
+const fs = require('node:fs');
 const { transform } = require('@babel/core');
 
 const presetPath = require.resolve('.');

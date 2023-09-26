@@ -1,7 +1,7 @@
 'use strict';
 
-const fs = require('fs');
-const path = require('path');
+const fs = require('node:fs');
+const path = require('node:path');
 const babelCore = require('@babel/core');
 const babelPluginFormatjs = require('babel-plugin-formatjs');
 const globSync = require('glob').sync;
