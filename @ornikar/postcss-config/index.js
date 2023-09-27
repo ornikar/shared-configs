@@ -13,7 +13,12 @@ Notes:
 
 exports.syntaxPlugins = () => [require('postcss-nested')];
 
-exports.themePlugin = (customPropertiesOptions) => require('postcss-custom-properties')(customPropertiesOptions);
+exports.themePlugin = (customPropertiesOptions) =>
+  require('postcss-custom-properties')({
+    // we will hopefully remove this plugin before we need to update it thanks to our universal transition
+    disableDeprecationNotice: true,
+    ...customPropertiesOptions,
+  });
 
 exports.customMediaPlugin = (customMediaOptions) => require('postcss-custom-media')(customMediaOptions);
 
