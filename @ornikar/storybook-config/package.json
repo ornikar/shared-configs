@@ -1,6 +1,6 @@
 {
   "name": "@ornikar/storybook-config",
-  "version": "7.1.1",
+  "version": "8.0.0",
   "description": "📖 storybook config files",
   "repository": {
     "directory": "@ornikar/storybook-config",
@@ -22,7 +22,7 @@
     "webpack": "^5.75.0"
   },
   "dependencies": {
-    "@ornikar/webpack-config": "7.1.0",
+    "@ornikar/webpack-config": "8.0.0",
     "@svgr/webpack": "^6.5.1"
   },
   "devDependencies": {

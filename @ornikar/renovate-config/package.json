@@ -1,6 +1,6 @@
 {
   "name": "@ornikar/renovate-config",
-  "version": "4.5.3",
+  "version": "5.0.0",
   "description": "⬆️ renovate shared config",
   "repository": {
     "directory": "@ornikar/renovate-config",

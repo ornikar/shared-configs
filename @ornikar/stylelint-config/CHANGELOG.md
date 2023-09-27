@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [10.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/stylelint-config@9.1.1...@ornikar/stylelint-config@10.0.0) (2023-09-27)
+
+
+### ⚠ BREAKING CHANGES
+
+* **rollup-config:** requires node 18 and requires to update exports as dist path changed 
+
+### Features
+
+* **rollup-config:** update to node 18 ECF-281 ([#979](https://github.com/ornikar/shared-configs/issues/979)) ([26eaaf9](https://github.com/ornikar/shared-configs/commit/26eaaf9db689de9ec474919881ce87784427cc5c))
+
+
+
 ## [9.1.1](https://github.com/ornikar/shared-configs/compare/@ornikar/stylelint-config@9.1.0...@ornikar/stylelint-config@9.1.1) (2023-05-04)
 
 **Note:** Version bump only for package @ornikar/stylelint-config

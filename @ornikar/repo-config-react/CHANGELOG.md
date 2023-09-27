@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [11.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config-react@10.1.5...@ornikar/repo-config-react@11.0.0) (2023-09-27)
+
+
+### ⚠ BREAKING CHANGES
+
+* **rollup-config:** requires node 18 and requires to update exports as dist path changed 
+
+### Features
+
+* **rollup-config:** update to node 18 ECF-281 ([#979](https://github.com/ornikar/shared-configs/issues/979)) ([26eaaf9](https://github.com/ornikar/shared-configs/commit/26eaaf9db689de9ec474919881ce87784427cc5c))
+
+
+
 ## [10.1.5](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config-react@10.1.4...@ornikar/repo-config-react@10.1.5) (2023-09-13)
 
 **Note:** Version bump only for package @ornikar/repo-config-react

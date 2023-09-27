@@ -1,6 +1,6 @@
 {
   "name": "@ornikar/repo-config",
-  "version": "10.6.0",
+  "version": "11.0.0",
   "description": "🔧 repo config",
   "repository": {
     "directory": "@ornikar/repo-config",
@@ -23,7 +23,7 @@
   },
   "dependencies": {
     "@commitlint/cli": "17.7.1",
-    "@ornikar/commitlint-config": "^5.0.2",
+    "@ornikar/commitlint-config": "6.0.0",
     "husky": "8.0.3",
     "lint-staged": "13.3.0",
     "prettier-plugin-properties": "0.2.0",

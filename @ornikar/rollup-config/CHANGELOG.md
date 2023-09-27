@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/rollup-config@5.3.5...@ornikar/rollup-config@6.0.0) (2023-09-27)
+
+
+### ⚠ BREAKING CHANGES
+
+* **rollup-config:** requires node 18 and requires to update exports as dist path changed 
+
+### Features
+
+* **rollup-config:** update to node 18 ECF-281 ([#979](https://github.com/ornikar/shared-configs/issues/979)) ([26eaaf9](https://github.com/ornikar/shared-configs/commit/26eaaf9db689de9ec474919881ce87784427cc5c))
+
+
+
 ## [5.3.5](https://github.com/ornikar/shared-configs/compare/@ornikar/rollup-config@5.3.4...@ornikar/rollup-config@5.3.5) (2023-09-14)
 
 **Note:** Version bump only for package @ornikar/rollup-config

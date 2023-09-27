@@ -1,6 +1,6 @@
 {
   "name": "@ornikar/jest-config-react-native",
-  "version": "8.5.1",
+  "version": "9.0.0",
   "description": "✅⚛️📱 jest config for react-native",
   "repository": {
     "directory": "@ornikar/jest-config-react-native",
@@ -43,7 +43,7 @@
     }
   },
   "dependencies": {
-    "@ornikar/jest-config-react": "11.3.2",
+    "@ornikar/jest-config-react": "12.0.0",
     "@sucrase/jest-plugin": "^3.0.0",
     "sucrase": "^3.34.0"
   },
