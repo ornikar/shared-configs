@@ -1,6 +1,6 @@
 'use strict';
 
-const path = require('path');
+const path = require('node:path');
 const { process } = require('./svg-transformer-inline');
 
 exports.process = (src, filePath) => {

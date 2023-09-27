@@ -1,6 +1,6 @@
-import fsSync from 'fs';
-import fs from 'fs/promises';
-import path from 'path';
+import fsSync from 'node:fs';
+import fs from 'node:fs/promises';
+import path from 'node:path';
 import { PackageGraph } from '@lerna/package-graph';
 import { Project as LernaProject } from '@lerna/project';
 

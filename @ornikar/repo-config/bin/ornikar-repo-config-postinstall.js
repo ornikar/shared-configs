@@ -2,8 +2,8 @@
 
 'use strict';
 
-const fs = require('fs');
-const path = require('path');
+const fs = require('node:fs');
+const path = require('node:path');
 const whichPmRuns = require('which-pm-runs');
 
 if (!process.env.INIT_CWD) {

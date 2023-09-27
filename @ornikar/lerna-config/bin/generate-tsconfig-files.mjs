@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 
-import { existsSync } from 'fs';
-import fs from 'fs/promises';
-import path from 'path';
+import { existsSync } from 'node:fs';
+import fs from 'node:fs/promises';
+import path from 'node:path';
 // eslint-disable-next-line import/no-extraneous-dependencies
 import prettierOptions from '@ornikar/prettier-config';
 // eslint-disable-next-line import/no-extraneous-dependencies

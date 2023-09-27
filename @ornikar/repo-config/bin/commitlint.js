@@ -2,7 +2,7 @@
 
 'use strict';
 
-const path = require('path');
+const path = require('node:path');
 const pkg = require('@commitlint/cli/package.json');
 
 // eslint-disable-next-line import/no-dynamic-require
