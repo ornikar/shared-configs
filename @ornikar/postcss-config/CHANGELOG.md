@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.0.1](https://github.com/ornikar/shared-configs/compare/@ornikar/postcss-config@7.0.0...@ornikar/postcss-config@7.0.1) (2023-10-02)
+
+
+### Bug Fixes
+
+* **postcss-config:** disable deprecation notice ([2dd6463](https://github.com/ornikar/shared-configs/commit/2dd64639f57fbc9f9522a48312b0c5832bbe2ea0))
+
+
+
 ## [7.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/postcss-config@6.0.2...@ornikar/postcss-config@7.0.0) (2023-09-27)
 
 
