@@ -81,7 +81,7 @@ module.exports = function installHusky({ pkg }) {
     'pre-commit',
     `
 if [ ! -f node_modules/.bin/ornikar-lint-staged ]; then
-yarn
+  yarn
 fi
 
 yarn ornikar-lint-staged
