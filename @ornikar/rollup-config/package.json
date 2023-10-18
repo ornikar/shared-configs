@@ -22,7 +22,7 @@
   },
   "peerDependencies": {
     "@babel/core": "^7.0.0",
-    "@babel/runtime": "^7.13.8",
+    "@babel/runtime": "^7.23.2",
     "@linaria/rollup": "*",
     "postcss": "^8.3.0",
     "rollup": "^2.42.0"
@@ -36,12 +36,12 @@
     }
   },
   "devDependencies": {
-    "@babel/core": "7.22.9",
+    "@babel/core": "7.23.2",
     "postcss": "8.4.31",
     "rollup": "2.77.2"
   },
   "dependencies": {
-    "@babel/plugin-transform-runtime": "^7.13.8",
+    "@babel/plugin-transform-runtime": "^7.23.2",
     "@ornikar/babel-preset-base": "3.0.0",
     "@ornikar/babel-preset-kitt-universal": "4.0.0",
     "@ornikar/babel-preset-react": "3.0.0",
