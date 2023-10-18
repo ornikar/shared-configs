@@ -23,3 +23,4 @@ if (!pm) {
 const pkg = JSON.parse(fs.readFileSync(path.resolve('package.json')));
 
 require('../lib/postinstall/install-husky')({ pkg, pm });
+require('../lib/postinstall/update-nvmrc')();
