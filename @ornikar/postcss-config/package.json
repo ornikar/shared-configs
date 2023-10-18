@@ -22,7 +22,7 @@
     "postcss-nested": "^5.0.6"
   },
   "devDependencies": {
-    "postcss": "8.4.17"
+    "postcss": "8.4.31"
   },
   "peerDependencies": {
     "postcss": "^8.3.0"
