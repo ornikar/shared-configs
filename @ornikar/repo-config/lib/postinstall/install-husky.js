@@ -5,7 +5,6 @@
 const fs = require('node:fs');
 const path = require('node:path');
 const husky = require('husky');
-const semver = require('semver');
 const { readYarnConfigFile } = require('../yarn');
 const { phrasePrePush } = require('./phrase-pre-push');
 
@@ -56,10 +55,8 @@ const getPackagesLocations = (pkg) => {
   return ['.', ...packageLocations];
 };
 
-module.exports = function installHusky({ pkg, pm }) {
-  const yarnMajorVersion = pm.name === 'yarn' && semver.major(pm.version);
-  const isYarnBerry = pm.name === 'yarn' && yarnMajorVersion >= 2;
-  const isYarnPnp = isYarnBerry && !readYarnConfigFile().includes('nodeLinker: node-modules');
+module.exports = function installHusky({ pkg }) {
+  const isYarnPnp = !readYarnConfigFile().includes('nodeLinker: node-modules');
 
   /* Check legacy */
 
@@ -79,17 +76,15 @@ module.exports = function installHusky({ pkg, pm }) {
     // if the directory already exists, continue
   }
 
-  const pmExec = pm.name === 'npm' ? 'npx --no-install' : pm.name;
-
-  writeHook('commit-msg', `${pmExec} commitlint --edit $1`);
+  writeHook('commit-msg', 'yarn commitlint --edit $1');
   writeHook(
     'pre-commit',
     `
 if [ ! -f node_modules/.bin/ornikar-lint-staged ]; then
-  ${pmExec}
+  yarn
 fi
 
-${pmExec} ornikar-lint-staged
+yarn ornikar-lint-staged
   `,
   );
 
@@ -103,12 +98,8 @@ ${pmExec} ornikar-lint-staged
 if [ -n "$(git diff HEAD@{1}..HEAD@{0} -- yarn.lock)" ]; then
   ${[
     // https://yarnpkg.com/features/zero-installs
-    isYarnPnp
-      ? ''
-      : `yarn install ${
-          isYarnBerry ? '--immutable --immutable-cache' : '--prefer-offline --pure-lockfile --ignore-optional'
-        } || true`,
-    runCleanCache ? `${pmExec} clean:cache:on-dependencies-changes` : '',
+    isYarnPnp ? '' : 'yarn install --immutable --immutable-cache || true',
+    runCleanCache ? 'yarn clean:cache:on-dependencies-changes' : '',
   ]
     .filter(Boolean)
     .join('\n  ')}
@@ -149,19 +140,19 @@ fi
 
   if (shouldRunTest()) {
     if (pkg.scripts.test === 'node --test') {
-      prePushHook.push(`CI=true ${pm.name} test`);
+      prePushHook.push('CI=true yarn test');
     } else {
       prePushHookPreCommands.push(
         '# autodetect main branch (usually master or main)',
         'mainBranch=$(LANG=en_US git remote show origin | grep "HEAD branch" | cut -d\' \' -f5)',
         '',
       );
-      prePushHook.push(`CI=true ${pm.name} test --changedSince=origin/$mainBranch`);
+      prePushHook.push('CI=true yarn test --changedSince=origin/$mainBranch');
     }
   }
 
   if (shouldRunChecks()) {
-    prePushHook.push(`${pm.name} run checks`);
+    prePushHook.push('yarn run checks');
   }
 
   if (prePushHook.length > 0) {
