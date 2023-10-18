@@ -33,3 +33,4 @@ if (!isYarnBerry) {
 const pkg = JSON.parse(fs.readFileSync(path.resolve('package.json')));
 
 require('../lib/postinstall/install-husky')({ pkg });
+require('../lib/postinstall/update-nvmrc')();
