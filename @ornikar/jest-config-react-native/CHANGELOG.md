@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.0.1](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react-native@9.0.0...@ornikar/jest-config-react-native@9.0.1) (2023-10-19)
+
+
+### Bug Fixes
+
+* **jest-config-react-native:** add library not compatible with sucrase for expo 49 [no issue] ([#994](https://github.com/ornikar/shared-configs/issues/994)) ([c12a9f6](https://github.com/ornikar/shared-configs/commit/c12a9f6f8c05a18610b288d9777965ac9644de87))
+
+
+
 ## [9.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react-native@8.5.1...@ornikar/jest-config-react-native@9.0.0) (2023-09-27)
 
 
