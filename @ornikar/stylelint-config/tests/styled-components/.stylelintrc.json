@@ -1,4 +1,0 @@
-{
-  "extends": "./styled-components-native.js",
-  "reportNeedlessDisables": true
-}

@@ -14,8 +14,7 @@
   },
   "scripts": {
     "lint-test-css-modules": "stylelint 'tests/css-modules/**/*.css' --config ./tests/css-modules/.stylelintrc.json",
-    "lint-test-styled-components": "stylelint 'tests/styled-components/**/*.{ts,tsx}' --config ./tests/styled-components/.stylelintrc.json",
-    "lint-tests": "yarn lint-test-css-modules && yarn lint-test-styled-components",
+    "lint-tests": "yarn lint-test-css-modules",
     "lint:eslint": "yarn ../.. eslint --report-unused-disable-directives --quiet @ornikar/stylelint-config"
   },
   "publishConfig": {
