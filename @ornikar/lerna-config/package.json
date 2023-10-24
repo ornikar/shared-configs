@@ -33,7 +33,6 @@
     "@lerna/cli": "5.5.4",
     "@lerna/package-graph": "5.5.4",
     "@lerna/project": "5.5.4",
-    "@lerna/publish": "5.5.4",
     "@lerna/version": "5.5.4",
     "@pob/pretty-eslint-config": "^3.0.0",
     "conventional-changelog-conventionalcommits": "^6.0.0"

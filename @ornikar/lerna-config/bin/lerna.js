@@ -4,7 +4,6 @@
 
 const cli = require('@lerna/cli');
 const pkgLernaCli = require('@lerna/cli/package.json');
-const publishCmd = require('@lerna/publish/command');
 const versionCmd = require('@lerna/version/command');
 
 function main(argv) {
@@ -12,7 +11,7 @@ function main(argv) {
     lernaVersion: pkgLernaCli.version,
   };
 
-  return cli().command(publishCmd).command(versionCmd).parse(argv, context);
+  return cli().command(versionCmd).parse(argv, context);
 }
 
 main(process.argv.slice(2));
