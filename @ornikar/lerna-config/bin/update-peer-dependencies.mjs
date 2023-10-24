@@ -27,6 +27,6 @@ await Promise.all(
       }${lpkg.version}`;
     });
 
-    return fs.writeFile(lernaPackage.manifestLocation, JSON.stringify(pkg, null, 2));
+    return fs.writeFile(lernaPackage.manifestLocation, `${JSON.stringify(pkg, null, 2)}\n`);
   }),
 );
