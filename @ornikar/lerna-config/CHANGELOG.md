@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [11.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/lerna-config@10.0.1...@ornikar/lerna-config@11.0.0) (2023-10-24)
+
+
+### ⚠ BREAKING CHANGES
+
+* **lerna-config:** remove publish command [no issue] (#975)
+
+### Features
+
+* **lerna-config:** remove publish command [no issue] ([#975](https://github.com/ornikar/shared-configs/issues/975)) ([f205d16](https://github.com/ornikar/shared-configs/commit/f205d1680bcb8b025436d0bc0e6a05dbd5cbab83))
+
+
+
 ## [10.0.1](https://github.com/ornikar/shared-configs/compare/@ornikar/lerna-config@10.0.0...@ornikar/lerna-config@10.0.1) (2023-10-24)
 
 
