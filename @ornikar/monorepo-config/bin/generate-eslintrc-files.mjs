@@ -4,7 +4,7 @@ import fs from 'node:fs/promises';
 import { createRequire } from 'node:module';
 import path from 'node:path';
 import prettyEslintConfig from '@pob/pretty-eslint-config';
-import { createLernaProject, getPackages, readJsonFile } from '../index.mjs';
+import { getSyncWorkspaces, getTopLevelWorkspace, readJsonFile } from '../index.mjs';
 
 const overrideConfig = (config, override) => {
   return { ...config, ...override };
@@ -110,30 +110,31 @@ const generateAndWritePackageRootConfig = async (configPath, prettierOptions) =>
 (async () => {
   const require = createRequire(import.meta.url);
   const rootPath = path.resolve('.');
-  const lernaProject = createLernaProject(rootPath);
-  const lernaPackages = await getPackages(lernaProject);
-  const prettierConfig = lernaProject.manifest.get('prettier');
+  const topLevelWorkspace = getTopLevelWorkspace();
+  const workspaces = getSyncWorkspaces(topLevelWorkspace);
+  const childWorkspaces = workspaces.filter((workspace) => workspace !== topLevelWorkspace);
+  const prettierConfig = topLevelWorkspace.pkg.prettier;
   // eslint-disable-next-line import/no-dynamic-require
   const prettierOptions = require(prettierConfig.startsWith('./') ? path.resolve(prettierConfig) : prettierConfig);
   const eslintRootConfigPath = `${rootPath}/.eslintrc.json`;
 
-  const useRollupToBuild = lernaProject.manifest.devDependencies['@ornikar/rollup-config'] !== undefined;
+  const useRollupToBuild = topLevelWorkspace.pkg.devDependencies['@ornikar/rollup-config'] !== undefined;
 
   await Promise.all([
     generateAndWriteRootConfig(eslintRootConfigPath, prettierOptions),
 
-    ...lernaProject.packageParentDirs.map((parentDir) =>
+    ...childWorkspaces.map(({ location }) =>
       Promise.all([
-        fs.unlink(`${parentDir}/.eslintrc.js`).catch(() => {}),
-        fs.unlink(`${parentDir}/.eslintrc.project.json`).catch(() => {}),
+        fs.unlink(`${location}/.eslintrc.js`).catch(() => {}),
+        fs.unlink(`${location}/.eslintrc.project.json`).catch(() => {}),
       ]),
     ),
-    ...lernaPackages.map(async (pkg) => {
+    ...childWorkspaces.map(async ({ location, pkg }) => {
       if (pkg.private) return;
-      const ornikarConfig = pkg.get('ornikar');
+      const ornikarConfig = pkg.ornikar;
       const emptyEntries = ornikarConfig && ornikarConfig.entries ? ornikarConfig.entries.length === 0 : false;
 
-      const packagePath = path.relative(rootPath, pkg.location);
+      const packagePath = path.relative(rootPath, location);
 
       const eslintPackageConfigPath = `${packagePath}/.eslintrc.json`;
       const eslintSrcConfigPath = useRollupToBuild ? `${packagePath}/src/.eslintrc.json` : eslintPackageConfigPath;

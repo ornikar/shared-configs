@@ -7,7 +7,7 @@ import path from 'node:path';
 import prettierOptions from '@ornikar/prettier-config';
 // eslint-disable-next-line import/no-extraneous-dependencies
 import prettier from 'prettier';
-import { getGraphPackages } from '../index.mjs';
+import { getTopLevelWorkspace, getTopologicalOrderWorkspaces } from '../index.mjs';
 
 (async () => {
   const writeJsonFile = (jsonFilePath, content) => {
@@ -20,25 +20,27 @@ import { getGraphPackages } from '../index.mjs';
     );
   };
 
-  const { packages, packageLocations } = await getGraphPackages();
+  const topLevelWorkspace = getTopLevelWorkspace();
+  const workspaces = getTopologicalOrderWorkspaces(topLevelWorkspace);
+  const childWorkspaces = workspaces.filter((workspace) => workspace !== topLevelWorkspace);
 
   const tsconfigFiles = [];
   const tsconfigBuildFiles = [];
 
-  const tsPackages = packages.filter((pkg) => {
-    const ornikarConfig = pkg.get('ornikar');
+  const tsWorkspaces = childWorkspaces.filter(({ pkg }) => {
+    const ornikarConfig = pkg.ornikar;
     const hasEmptyEntries = ornikarConfig && ornikarConfig.entries ? ornikarConfig.entries.length === 0 : false;
     return !hasEmptyEntries;
   });
 
   await Promise.all(
-    packages.map(async (pkg, index) => {
-      const packagePath = path.relative(path.resolve('.'), packageLocations[index]);
+    childWorkspaces.map(async (workspace) => {
+      const { pkg, location: packagePath } = workspace;
       const tsconfigPath = `${packagePath}/tsconfig.json`;
       const tsconfigEslintPath = `${packagePath}/tsconfig.eslint.json`;
       const tsconfigBuildPath = `${packagePath}/tsconfig.build.json`;
 
-      if (!tsPackages.includes(pkg)) {
+      if (!tsWorkspaces.includes(workspace)) {
         await Promise.all([
           // tsconfig.json
           fs.unlink(tsconfigPath).catch(() => {}),
@@ -57,12 +59,12 @@ import { getGraphPackages } from '../index.mjs';
           )
         : {};
 
-      const hasReferences = tsPackages.some((lernaPkg) => {
-        if (lernaPkg.name === pkg.name) return false;
+      const hasReferences = tsWorkspaces.some(({ pkg: tsPkg }) => {
+        if (tsPkg.name === pkg.name) return false;
         return (
-          (lernaPkg.dependencies && lernaPkg.dependencies[pkg.name]) ||
-          (lernaPkg.devDependencies && lernaPkg.devDependencies[pkg.name]) ||
-          (lernaPkg.peerDependencies && lernaPkg.peerDependencies[pkg.name])
+          (tsPkg.dependencies && tsPkg.dependencies[pkg.name]) ||
+          (tsPkg.devDependencies && tsPkg.devDependencies[pkg.name]) ||
+          (tsPkg.peerDependencies && tsPkg.peerDependencies[pkg.name])
         );
       });
 
@@ -164,12 +166,12 @@ import { getGraphPackages } from '../index.mjs';
         };
       }
 
-      const tsDependencies = tsPackages.filter((lernaPkg) => {
-        if (lernaPkg.name === pkg.name) return false;
+      const tsDependencies = tsWorkspaces.filter(({ pkg: tsPkg }) => {
+        if (tsPkg.name === pkg.name) return false;
         return (
-          (pkg.dependencies && pkg.dependencies[lernaPkg.name]) ||
-          (pkg.devDependencies && pkg.devDependencies[lernaPkg.name]) ||
-          (pkg.peerDependencies && pkg.peerDependencies[lernaPkg.name])
+          (pkg.dependencies && pkg.dependencies[tsPkg.name]) ||
+          (pkg.devDependencies && pkg.devDependencies[tsPkg.name]) ||
+          (pkg.peerDependencies && pkg.peerDependencies[tsPkg.name])
         );
       });
 
@@ -182,25 +184,22 @@ import { getGraphPackages } from '../index.mjs';
       }
 
       if (tsDependencies.length > 0) {
-        tsDependencies.forEach((pkgDep) => {
-          const pkgRelativePath = path.relative(pkgDep.rootPath, pkgDep.location);
-          const depPath = `../../${isBaseUrlSrc ? '../' : ''}${pkgRelativePath}/src`;
+        tsDependencies.forEach(({ pkg: tsDependencyPkg, location: tsDependencyLocation }) => {
+          const depPath = `../../${isBaseUrlSrc ? '../' : ''}${tsDependencyLocation}/src`;
           if (!tsconfigContent.compilerOptions.paths) {
             tsconfigContent.compilerOptions.paths = {};
           }
-          tsconfigContent.compilerOptions.paths[pkgDep.name] = [depPath];
-          tsconfigContent.compilerOptions.paths[`${pkgDep.name}/*`] = [`${depPath}/*`];
+          tsconfigContent.compilerOptions.paths[tsDependencyPkg.name] = [depPath];
+          tsconfigContent.compilerOptions.paths[`${tsDependencyPkg.name}/*`] = [`${depPath}/*`];
         });
-        tsconfigContent.references = tsDependencies.map((pkgDep) => {
-          const pkgRelativePath = path.relative(pkgDep.rootPath, pkgDep.location);
+        tsconfigContent.references = tsDependencies.map(({ location: tsDependencyLocation }) => {
           return {
-            path: `../../${pkgRelativePath}/tsconfig.json`,
+            path: `../../${tsDependencyLocation}/tsconfig.json`,
           };
         });
-        tsconfigBuildContent.references = tsDependencies.map((pkgDep) => {
-          const pkgRelativePath = path.relative(pkgDep.rootPath, pkgDep.location);
+        tsconfigBuildContent.references = tsDependencies.map(({ location: tsDependencyLocation }) => {
           return {
-            path: `../../${pkgRelativePath}/tsconfig.build.json`,
+            path: `../../${tsDependencyLocation}/tsconfig.build.json`,
           };
         });
       }

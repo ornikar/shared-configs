@@ -3,7 +3,7 @@
   "private": true,
   "repository": "ornikar/shared-configs",
   "scripts": {
-    "lerna": "./@ornikar/lerna-config/bin/lerna.js",
+    "lerna": "./@ornikar/monorepo-config/bin/lerna.js",
     "lint": "yarn run lint:prettier && yarn run lint:eslint && yarn run lint:stylelint",
     "lint:eslint": "eslint --report-unused-disable-directives --quiet .",
     "lint:eslint:fix": "yarn lint:eslint --fix",
@@ -14,7 +14,7 @@
     "postinstall": "./@ornikar/repo-config/bin/ornikar-repo-config-postinstall.js",
     "release": "lerna publish --conventional-commits -m 'chore: release'",
     "test": "jest",
-    "version": "./@ornikar/lerna-config/bin/update-peer-dependencies.mjs && YARN_ENABLE_IMMUTABLE_INSTALLS=false yarn && git add yarn.lock"
+    "version": "./@ornikar/monorepo-config/bin/update-peer-dependencies.mjs && YARN_ENABLE_IMMUTABLE_INSTALLS=false yarn && git add yarn.lock"
   },
   "prettier": "./@ornikar/prettier-config",
   "engines": {

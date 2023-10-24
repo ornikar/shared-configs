@@ -12,18 +12,18 @@ module.exports = (webpackConfig, { srcDirectory = './src' } = {}) => {
 
   if (pkg.workspaces) {
     // eslint-disable-next-line import/no-extraneous-dependencies, global-require
-    const { getSyncPackages } = require('@ornikar/lerna-config');
+    const { getSyncWorkspaces } = require('@ornikar/monorepo-config');
 
     srcDirectories = [];
 
-    const packages = getSyncPackages(pkg.workspaces);
-    packages.forEach(({ name, location }) => {
+    const workspaces = getSyncWorkspaces({ pkg });
+    workspaces.forEach(({ pkg: childPkg, location }) => {
       const packageSrcDirectory = path.join(`./${location}`, srcDirectory);
       const basePath = path.join(packageSrcDirectory, './index');
       srcDirectories.push(packageSrcDirectory);
       // eslint-disable-next-line security/detect-non-literal-fs-filename
       const isTs = fs.existsSync(path.resolve(`${basePath}.ts`));
-      workspaceAliases[`${name}$`] = path.resolve(`${basePath}.${isTs ? 'ts' : 'js'}`);
+      workspaceAliases[`${childPkg.name}$`] = path.resolve(`${basePath}.${isTs ? 'ts' : 'js'}`);
     });
   }
 

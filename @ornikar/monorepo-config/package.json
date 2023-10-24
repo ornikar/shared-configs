@@ -1,9 +1,9 @@
 {
-  "name": "@ornikar/lerna-config",
+  "name": "@ornikar/monorepo-config",
   "version": "11.0.0",
-  "description": "📚 lerna config",
+  "description": "📚 monorepo config",
   "repository": {
-    "directory": "@ornikar/lerna-config",
+    "directory": "@ornikar/monorepo-config",
     "type": "git",
     "url": "https://github.com/ornikar/shared-configs.git"
   },
@@ -17,8 +17,8 @@
   "main": "./index.js",
   "bin": {
     "lerna": "./bin/lerna",
-    "lerna-config-generate-eslintrc-files": "./bin/generate-eslintrc-files.mjs",
-    "lerna-config-generate-tsconfig-files": "./bin/generate-tsconfig-files.mjs",
+    "monorepo-config-generate-eslintrc-files": "./bin/generate-eslintrc-files.mjs",
+    "monorepo-config-generate-tsconfig-files": "./bin/generate-tsconfig-files.mjs",
     "ornikar-monorepo-update-peer-dependencies": "./bin/update-peer-dependencies.mjs"
   },
   "peerDependencies": {
@@ -31,13 +31,11 @@
   },
   "dependencies": {
     "@lerna/cli": "5.5.4",
-    "@lerna/package-graph": "5.5.4",
-    "@lerna/project": "5.5.4",
     "@lerna/version": "5.5.4",
     "@pob/pretty-eslint-config": "^3.0.0",
     "conventional-changelog-conventionalcommits": "^6.0.0"
   },
   "scripts": {
-    "lint:eslint": "yarn ../.. eslint --report-unused-disable-directives --quiet @ornikar/lerna-config"
+    "lint:eslint": "yarn ../.. eslint --report-unused-disable-directives --quiet @ornikar/monorepo-config"
   }
 }
