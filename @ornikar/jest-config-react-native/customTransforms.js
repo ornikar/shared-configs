@@ -6,7 +6,7 @@
 
 exports.customTransforms = {
   // compilation of problematic node_modules has a simpler babel config
-  'node_modules/(react-native-(calendars|reanimated)|@react-native-community/netinfo)/.*\\.(js|jsx|ts|tsx)$':
+  'node_modules/(react-native-(calendars|reanimated)|@react-native-community/netinfo|@react-native/virtualized-lists)/.*\\.(js|jsx|ts|tsx)$':
     require.resolve('./transformers/babel-transformer-node-modules.js'),
 
   // dont transform node_modules when already compiled

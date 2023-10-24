@@ -1,6 +1,6 @@
 {
   "name": "@ornikar/babel-preset-react",
-  "version": "2.0.5",
+  "version": "4.0.0",
   "keywords": [],
   "repository": {
     "directory": "@ornikar/babel-preset-react",
@@ -9,7 +9,7 @@
   },
   "license": "MIT",
   "engines": {
-    "node": ">=16.16.0"
+    "node": ">=18.18.0"
   },
   "publishConfig": {
     "access": "public"
@@ -25,9 +25,9 @@
     "@babel/core": "^7.0.0"
   },
   "dependencies": {
-    "@babel/preset-react": "^7.13.8"
+    "@babel/preset-react": "^7.22.15"
   },
   "devDependencies": {
-    "@babel/core": "7.22.9"
+    "@babel/core": "7.23.2"
   }
 }

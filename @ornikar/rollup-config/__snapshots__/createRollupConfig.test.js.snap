@@ -1,15 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`fixtures test-monorepo 0 1`] = `
-"const sayHello = (name = 'world') => {
-  console.log(\`hello \${name}\`);
-};
-
-export { sayHello };
-"
-`;
-
-exports[`fixtures test-monorepo 1 1`] = `
+exports[`fixtures test-monorepo @ornikar/rollup-config/__fixtures__/test-monorepo/@ornikar/basic/dist/index.es.js 1`] = `
 "var sayHello = function () {
   var name = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 'world';
   console.log("hello ".concat(name));
@@ -19,25 +10,16 @@ export { sayHello };
 "
 `;
 
-exports[`fixtures test-monorepo 2 1`] = `
-"const sayHello = (...names) => {
-  console.log(\`hello \${names.join(', ')}\`);
-};
-const testSpread = ({
-  name,
-  ...rest
-} = {}) => {
-  console.log({
-    name,
-    ...rest
-  });
+exports[`fixtures test-monorepo @ornikar/rollup-config/__fixtures__/test-monorepo/@ornikar/basic/dist/index-node-18.18.es.mjs 1`] = `
+"const sayHello = (name = 'world') => {
+  console.log(\`hello \${name}\`);
 };
 
-export { sayHello, testSpread };
+export { sayHello };
 "
 `;
 
-exports[`fixtures test-monorepo 3 1`] = `
+exports[`fixtures test-monorepo @ornikar/rollup-config/__fixtures__/test-monorepo/@ornikar/using-runtime/dist/index.es.js 1`] = `
 "import _objectSpread from '@babel/runtime/helpers/objectSpread2';
 import _objectWithoutProperties from '@babel/runtime/helpers/objectWithoutProperties';
 
@@ -55,6 +37,24 @@ var testSpread = function () {
   console.log(_objectSpread({
     name: name
   }, rest));
+};
+
+export { sayHello, testSpread };
+"
+`;
+
+exports[`fixtures test-monorepo @ornikar/rollup-config/__fixtures__/test-monorepo/@ornikar/using-runtime/dist/index-node-18.18.es.mjs 1`] = `
+"const sayHello = (...names) => {
+  console.log(\`hello \${names.join(', ')}\`);
+};
+const testSpread = ({
+  name,
+  ...rest
+} = {}) => {
+  console.log({
+    name,
+    ...rest
+  });
 };
 
 export { sayHello, testSpread };

@@ -1,7 +1,7 @@
 'use strict';
 
-const fs = require('fs');
-const path = require('path');
+const fs = require('node:fs');
+const path = require('node:path');
 const createBaseLintStagedConfig = require('@ornikar/repo-config-react/createLintStagedConfig');
 
 const pkg = JSON.parse(fs.readFileSync(path.resolve('package.json')));

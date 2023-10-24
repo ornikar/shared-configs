@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import fs from 'fs/promises';
+import fs from 'node:fs/promises';
 import { getPackages } from '../index.mjs';
 
 const packages = await getPackages();
@@ -27,6 +27,6 @@ await Promise.all(
       }${lpkg.version}`;
     });
 
-    return fs.writeFile(lernaPackage.manifestLocation, JSON.stringify(pkg, null, 2));
+    return fs.writeFile(lernaPackage.manifestLocation, `${JSON.stringify(pkg, null, 2)}\n`);
   }),
 );

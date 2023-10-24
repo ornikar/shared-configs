@@ -1,5 +1,3 @@
-/* eslint-disable unicorn/no-unsafe-regex */
-
 'use strict';
 
 const inlineSvg = require('@ornikar/webpack-config/inlineSvg');

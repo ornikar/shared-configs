@@ -1,6 +1,6 @@
 {
   "name": "@ornikar/renovate-config",
-  "version": "4.5.3",
+  "version": "5.0.0",
   "description": "⬆️ renovate shared config",
   "repository": {
     "directory": "@ornikar/renovate-config",
@@ -8,7 +8,7 @@
     "url": "https://github.com/ornikar/shared-configs.git"
   },
   "engines": {
-    "node": ">=16.16.0"
+    "node": ">=18.18.0"
   },
   "publishConfig": {
     "access": "public"

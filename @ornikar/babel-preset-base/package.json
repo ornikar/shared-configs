@@ -1,6 +1,6 @@
 {
   "name": "@ornikar/babel-preset-base",
-  "version": "2.0.1",
+  "version": "4.0.0",
   "keywords": [],
   "repository": {
     "directory": "@ornikar/babel-preset-base",
@@ -9,7 +9,7 @@
   },
   "license": "MIT",
   "engines": {
-    "node": ">=16.16.0"
+    "node": ">=18.18.0"
   },
   "publishConfig": {
     "access": "public"
@@ -23,11 +23,11 @@
   },
   "peerDependencies": {
     "@babel/core": "^7.0.0",
-    "@babel/runtime": "^7.13.8"
+    "@babel/runtime": "^7.23.2"
   },
   "dependencies": {
-    "@babel/plugin-transform-runtime": "^7.13.8",
-    "@babel/preset-env": "^7.13.8",
-    "@babel/preset-typescript": "^7.13.8"
+    "@babel/plugin-transform-runtime": "^7.23.2",
+    "@babel/preset-env": "^7.23.2",
+    "@babel/preset-typescript": "^7.23.2"
   }
 }

@@ -1,6 +1,6 @@
 'use strict';
 
-const path = require('path');
+const path = require('node:path');
 
 module.exports = (env, webpackConfig) => {
   /* fix acorn rule in storybook docs - https://github.com/storybookjs/storybook/pull/17979 */

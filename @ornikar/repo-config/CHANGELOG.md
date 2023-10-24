@@ -3,6 +3,32 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [12.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@11.0.0...@ornikar/repo-config@12.0.0) (2023-10-18)
+
+
+### ⚠ BREAKING CHANGES
+
+* **repo-config:** automate nvmrc update in repo-config and update to 18.18.2 [no issue] (#993)
+
+### Features
+
+* **repo-config:** automate nvmrc update in repo-config and update to 18.18.2 [no issue] ([#993](https://github.com/ornikar/shared-configs/issues/993)) ([fc02ac8](https://github.com/ornikar/shared-configs/commit/fc02ac8e2db7b641faea1e5b27c4d73fcd9f5114))
+
+
+
+## [11.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@10.6.0...@ornikar/repo-config@11.0.0) (2023-09-27)
+
+
+### ⚠ BREAKING CHANGES
+
+* **rollup-config:** requires node 18 and requires to update exports as dist path changed 
+
+### Features
+
+* **rollup-config:** update to node 18 ECF-281 ([#979](https://github.com/ornikar/shared-configs/issues/979)) ([26eaaf9](https://github.com/ornikar/shared-configs/commit/26eaaf9db689de9ec474919881ce87784427cc5c))
+
+
+
 ## [10.6.0](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@10.5.6...@ornikar/repo-config@10.6.0) (2023-09-13)
 
 

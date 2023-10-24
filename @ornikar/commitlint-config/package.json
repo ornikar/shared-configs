@@ -1,6 +1,6 @@
 {
   "name": "@ornikar/commitlint-config",
-  "version": "5.0.2",
+  "version": "6.0.0",
   "description": "📓 commitlint config",
   "repository": {
     "directory": "@ornikar/commitlint-config",
@@ -10,7 +10,7 @@
   "main": "index.js",
   "license": "ISC",
   "engines": {
-    "node": ">=16.16.0"
+    "node": ">=18.18.0"
   },
   "publishConfig": {
     "access": "public"

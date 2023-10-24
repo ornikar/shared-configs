@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 
-import fs from 'fs/promises';
-import { createRequire } from 'module';
-import path from 'path';
+import fs from 'node:fs/promises';
+import { createRequire } from 'node:module';
+import path from 'node:path';
 import prettyEslintConfig from '@pob/pretty-eslint-config';
 import { createLernaProject, getPackages, readJsonFile } from '../index.mjs';
 

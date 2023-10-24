@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/renovate-config@4.5.3...@ornikar/renovate-config@5.0.0) (2023-09-27)
+
+
+### ⚠ BREAKING CHANGES
+
+* **rollup-config:** requires node 18 and requires to update exports as dist path changed 
+
+### Features
+
+* **rollup-config:** update to node 18 ECF-281 ([#979](https://github.com/ornikar/shared-configs/issues/979)) ([26eaaf9](https://github.com/ornikar/shared-configs/commit/26eaaf9db689de9ec474919881ce87784427cc5c))
+
+
+
 ## [4.5.3](https://github.com/ornikar/shared-configs/compare/@ornikar/renovate-config@4.5.2...@ornikar/renovate-config@4.5.3) (2023-05-23)
 
 **Note:** Version bump only for package @ornikar/renovate-config

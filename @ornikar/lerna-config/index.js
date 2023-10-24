@@ -1,8 +1,8 @@
 'use strict';
 
-const fsSync = require('fs');
-const fs = require('fs').promises;
-const path = require('path');
+const fsSync = require('node:fs');
+const fs = require('node:fs').promises;
+const path = require('node:path');
 let PackageGraph = require('@lerna/package-graph');
 let LernaProject = require('@lerna/project');
 

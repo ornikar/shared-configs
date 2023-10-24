@@ -2,8 +2,8 @@
 
 /* eslint-disable import/no-dynamic-require */
 
-const fs = require('fs');
-const path = require('path');
+const fs = require('node:fs');
+const path = require('node:path');
 const { default: babel } = require('@rollup/plugin-babel');
 const { default: resolve } = require('@rollup/plugin-node-resolve');
 const replace = require('@rollup/plugin-replace');
@@ -54,7 +54,8 @@ const createBuildsForPackage = (
   const linariaPlugin = useLinaria && require('@linaria/rollup').default;
 
   const createBuild = (entryName, target, version, formats, { exportCss, platformOS } = {}) => {
-    const preferConst = !(target === 'browser' && version !== 'modern');
+    const isForNativeOnly = platformOS && platformOS !== 'web';
+    const preferConst = target === 'node' || isForNativeOnly;
 
     const inputExt = extensions.find((ext) => fs.existsSync(path.resolve(`${inputBaseDir}${entryName}${ext}`)));
 
@@ -76,10 +77,26 @@ const createBuildsForPackage = (
       ],
     };
 
+    const getExtensionFromFormat = (format) => {
+      if (target !== 'node') return 'js';
+      if (pkg.type === 'module') {
+        return format === 'es' ? 'js' : 'cjs';
+      }
+      return format === 'es' ? 'mjs' : 'js';
+    };
+
     return {
       input: `${inputBaseDir}${entryName}${inputExt}`,
       output: formats.map((format) => ({
-        file: `${distPath}/${entryName}-${target}-${version}.${format}${platformOS ? `.${platformOS}` : ''}.js`,
+        file: [
+          `${distPath}/`,
+          entryName,
+          target ? `-${target}` : '',
+          version === 'all' ? '' : `-${version}`,
+          `.${format}`,
+          platformOS ? `.${platformOS}` : '',
+          `.${getExtensionFromFormat(format)}`,
+        ].join(''),
         format,
         sourcemap: true,
         exports: 'named',
@@ -161,6 +178,7 @@ const createBuildsForPackage = (
           babelHelpers: 'runtime',
           exclude: 'node_modules/**',
           presets: [
+            // Improve performance for native by reducing transformations: ` isForNativeOnly ? ['@babel/preset-typescript'] :`
             ['@ornikar/babel-preset-base', babelPresetBaseOptions],
             [
               require.resolve('@ornikar/babel-preset-kitt-universal'),
@@ -195,6 +213,7 @@ const createBuildsForPackage = (
             require.resolve('babel-plugin-discard-module-references'),
           ].filter(Boolean),
         }),
+        // Add replace typeof window === undefined
         replace({
           preventAssignment: true,
           values: {
@@ -217,28 +236,31 @@ const createBuildsForPackage = (
   };
 
   const hasPeerDependencyReactNative = !!(pkg.peerDependencies && pkg.peerDependencies['react-native']);
+  const nodeVersion = '18.18';
   return entries.flatMap((entryName) =>
     [
-      createBuild(entryName, 'node', '14.17', ['cjs'], { hasPlatformBuilds: hasPeerDependencyReactNative }),
-      ...(hasPeerDependencyReactNative
-        ? [createBuild(entryName, 'node', '14.17', ['cjs'], { platformOS: 'web' })]
-        : []),
-      createBuild(entryName, 'browser', 'all', ['es'], {
+      createBuild(entryName, '', 'all', ['es'], {
         hasPlatformBuilds: hasPeerDependencyReactNative,
         exportCss: !hasPeerDependencyReactNative,
       }),
       ...(hasPeerDependencyReactNative
         ? [
-            createBuild(entryName, 'browser', 'all', ['es'], { platformOS: 'web', exportCss: true }),
-            createBuild(entryName, 'browser', 'all', ['es'], { platformOS: 'ios' }),
-            createBuild(entryName, 'browser', 'all', ['es'], { platformOS: 'android' }),
+            createBuild(entryName, '', 'all', ['es'], { platformOS: 'web', exportCss: true }),
+            createBuild(entryName, '', 'all', ['es'], { platformOS: 'ios' }),
+            createBuild(entryName, '', 'all', ['es'], { platformOS: 'android' }),
           ]
+        : []),
+      createBuild(entryName, 'node', nodeVersion, ['es', 'cjs'], {
+        hasPlatformBuilds: hasPeerDependencyReactNative,
+      }),
+      ...(hasPeerDependencyReactNative
+        ? [createBuild(entryName, 'node', nodeVersion, ['es', 'cjs'], { platformOS: 'web' })]
         : []),
     ].filter(Boolean),
   );
 };
 
-module.exports = (options = {}) => {
+module.exports = function createRollupConfig(options = {}) {
   if (typeof options === 'string') {
     // eslint-disable-next-line no-param-reassign
     options = {

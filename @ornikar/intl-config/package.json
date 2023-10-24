@@ -1,6 +1,6 @@
 {
   "name": "@ornikar/intl-config",
-  "version": "5.2.2",
+  "version": "7.0.0",
   "description": "🌐 intl-config",
   "repository": {
     "directory": "@ornikar/intl-config",
@@ -9,17 +9,18 @@
   },
   "license": "ISC",
   "engines": {
-    "node": ">=16.16.0"
+    "node": ">=18.18.0"
   },
   "publishConfig": {
     "access": "public"
   },
   "dependencies": {
-    "babel-plugin-formatjs": "^10.5.0",
+    "@formatjs/cli-lib": "^6.1.5",
+    "babel-plugin-formatjs": "^10.5.5",
     "glob": "^10.0.0"
   },
   "devDependencies": {
-    "@babel/core": "7.22.9"
+    "@babel/core": "7.23.2"
   },
   "peerDependencies": {
     "@babel/core": "^7.13.0"
