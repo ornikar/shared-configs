@@ -29,7 +29,7 @@ exports.getSyncWorkspaces = function getSyncWorkspaces(topLevelWorkspace = expor
       const pkgPath = `${location}/package.json`;
       const pkg = JSON.parse(fsSync.readFileSync(pkgPath));
 
-      return { ...pkg, location };
+      return { pkg, location };
     }),
   ];
 };
