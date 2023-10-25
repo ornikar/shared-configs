@@ -1,6 +1,6 @@
 {
   "name": "@ornikar/monorepo-config",
-  "version": "11.0.0",
+  "version": "12.0.0",
   "description": "📚 monorepo config",
   "repository": {
     "directory": "@ornikar/monorepo-config",

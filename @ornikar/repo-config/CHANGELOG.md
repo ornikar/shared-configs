@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [13.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@12.0.0...@ornikar/repo-config@13.0.0) (2023-10-25)
+
+
+### ⚠ BREAKING CHANGES
+
+* monorepo-config rename lerna-config to monrepo-config and reduce lerna dependencies [no issue] (#1000)
+
+### Features
+
+* monorepo-config rename lerna-config to monrepo-config and reduce lerna dependencies [no issue] ([#1000](https://github.com/ornikar/shared-configs/issues/1000)) ([63bab23](https://github.com/ornikar/shared-configs/commit/63bab23fb7f9fd2870cbf4259908afa3fe70e9cd))
+
+
+
 ## [12.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@11.0.0...@ornikar/repo-config@12.0.0) (2023-10-18)
 
 
