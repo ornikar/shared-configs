@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [11.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/stylelint-config@10.0.0...@ornikar/stylelint-config@11.0.0) (2023-10-25)
+
+
+### ⚠ BREAKING CHANGES
+
+* **stylelint-config:** clean legacy styled-components config [no issue] (#999)
+
+### Code Refactoring
+
+* **stylelint-config:** clean legacy styled-components config [no issue] ([#999](https://github.com/ornikar/shared-configs/issues/999)) ([d50d8a8](https://github.com/ornikar/shared-configs/commit/d50d8a8be457661d6b40a9248fe546921b1a60e5))
+
+
+
 ## [10.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/stylelint-config@9.1.1...@ornikar/stylelint-config@10.0.0) (2023-09-27)
 
 
