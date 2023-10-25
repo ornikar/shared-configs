@@ -3116,9 +3116,11 @@ __metadata:
     jest: 29.6.1
     jest-fail-on-console: ^3.1.1
     mockdate: ^3.0.2
+    semver: ^7.3.5
   peerDependencies:
     jest: ^29.5.0
   bin:
+    ornikar-run-jest: ./bin/ornikar-run-jest.mjs
     ornikar-test-coverage: ./bin/test-coverage.sh
   languageName: unknown
   linkType: soft
