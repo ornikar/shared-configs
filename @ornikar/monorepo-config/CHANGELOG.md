@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [12.0.1](https://github.com/ornikar/shared-configs/compare/@ornikar/monorepo-config@12.0.0...@ornikar/monorepo-config@12.0.1) (2023-10-25)
+
+
+### Bug Fixes
+
+* dont spreaad pkg in getSyncWorkspaces ([b293c9b](https://github.com/ornikar/shared-configs/commit/b293c9b912d2be5355aa7eebcfe8e8cf19232f0a))
+
+
+
 ## 12.0.0 (2023-10-25)
 
 
