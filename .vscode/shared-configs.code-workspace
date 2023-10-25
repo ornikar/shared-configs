@@ -40,7 +40,7 @@
       "✅⚛️ jest-config-react",
       "✅⚛️📱 jest-config-react-native",
       "✅⚛️🌎 jest-config-react-native-web",
-      "📚 lerna-config",
+      "📚 monorepo-config",
       "🎨 postcss-config",
       "🚨📄 prettier-config",
       "⬆️ renovate-config",
@@ -106,8 +106,8 @@
       "path": "../@ornikar/jest-config-react-native-web"
     },
     {
-      "name": "📚 lerna-config",
-      "path": "../@ornikar/lerna-config"
+      "name": "📚 monorepo-config",
+      "path": "../@ornikar/monorepo-config"
     },
     {
       "name": "🎨 postcss-config",

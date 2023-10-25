@@ -49,9 +49,9 @@ const getPackagesLocations = (pkg) => {
   const isMonorepo = !!pkg.workspaces;
 
   if (!isMonorepo) return ['.'];
-  // eslint-disable-next-line import/no-extraneous-dependencies, global-require
-  const { getSyncPackageLocations } = require('@ornikar/lerna-config');
-  const packageLocations = getSyncPackageLocations(pkg.workspaces);
+  // eslint-disable-next-line global-require, import/no-extraneous-dependencies
+  const { getSyncPackageLocations } = require('@ornikar/monorepo-config');
+  const packageLocations = getSyncPackageLocations({ pkg });
   return ['.', ...packageLocations];
 };
 

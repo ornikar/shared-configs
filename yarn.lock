@@ -3124,13 +3124,11 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ornikar/lerna-config@workspace:@ornikar/lerna-config":
+"@ornikar/monorepo-config@workspace:@ornikar/monorepo-config":
   version: 0.0.0-use.local
-  resolution: "@ornikar/lerna-config@workspace:@ornikar/lerna-config"
+  resolution: "@ornikar/monorepo-config@workspace:@ornikar/monorepo-config"
   dependencies:
     "@lerna/cli": 5.5.4
-    "@lerna/package-graph": 5.5.4
-    "@lerna/project": 5.5.4
     "@lerna/version": 5.5.4
     "@pob/pretty-eslint-config": ^3.0.0
     conventional-changelog-conventionalcommits: ^6.0.0
@@ -3141,8 +3139,8 @@ __metadata:
       optional: true
   bin:
     lerna: ./bin/lerna
-    lerna-config-generate-eslintrc-files: ./bin/generate-eslintrc-files.mjs
-    lerna-config-generate-tsconfig-files: ./bin/generate-tsconfig-files.mjs
+    monorepo-config-generate-eslintrc-files: ./bin/generate-eslintrc-files.mjs
+    monorepo-config-generate-tsconfig-files: ./bin/generate-tsconfig-files.mjs
     ornikar-monorepo-update-peer-dependencies: ./bin/update-peer-dependencies.mjs
   languageName: unknown
   linkType: soft
