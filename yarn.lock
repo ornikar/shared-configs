@@ -3061,7 +3061,7 @@ __metadata:
   dependencies:
     "@ornikar/jest-config-react": 12.0.0
     "@sucrase/jest-plugin": ^3.0.0
-    "@testing-library/react-native": 12.3.0
+    "@testing-library/react-native": 12.3.1
     jest-expo: 49.0.0
     react: 18.2.0
     react-test-renderer: 18.2.0
@@ -3653,12 +3653,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@testing-library/react-native@npm:12.3.0":
-  version: 12.3.0
-  resolution: "@testing-library/react-native@npm:12.3.0"
+"@testing-library/react-native@npm:12.3.1":
+  version: 12.3.1
+  resolution: "@testing-library/react-native@npm:12.3.1"
   dependencies:
-    jest-matcher-utils: ^29.6.2
-    pretty-format: ^29.6.2
+    jest-matcher-utils: ^29.7.0
+    pretty-format: ^29.7.0
     redent: ^3.0.0
   peerDependencies:
     jest: ">=28.0.0"
@@ -3668,7 +3668,7 @@ __metadata:
   peerDependenciesMeta:
     jest:
       optional: true
-  checksum: 409b64207b4c7319926e5ce590adf84fe7ddb17ebdec4a92d4562c2ddcb3c23d7cf2ffd8f1810ab3241590817296b019869116f6d91f4125b452bb88c90e9031
+  checksum: ad50508e35b077533d5a711c01d96758a82da6bca255bc37f0c9f037c44cde67efbd5984862aec8cb7c4c0c8648b21f3f09378b2fe9e067aa593e5fcb49038e7
   languageName: node
   linkType: hard
 
@@ -9248,7 +9248,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"jest-matcher-utils@npm:^29.6.1, jest-matcher-utils@npm:^29.6.2":
+"jest-matcher-utils@npm:^29.6.1, jest-matcher-utils@npm:^29.7.0":
   version: 29.7.0
   resolution: "jest-matcher-utils@npm:29.7.0"
   dependencies:
@@ -11927,7 +11927,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"pretty-format@npm:^29.6.1, pretty-format@npm:^29.6.2, pretty-format@npm:^29.7.0":
+"pretty-format@npm:^29.6.1, pretty-format@npm:^29.7.0":
   version: 29.7.0
   resolution: "pretty-format@npm:29.7.0"
   dependencies:
