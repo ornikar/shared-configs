@@ -7,10 +7,8 @@ const nodeVersion = process.versions.node;
 
 if (lt(nodeVersion, '21.1.0')) {
   console.warn(
-    `WARNING: Use node version >= 21.1.0 to fix issue with jest. Actual: ${nodeVersion}. For more information, see https://github.com/jestjs/jest/issues/11956`,
+    `WARNING: Use node version >= 21.1.0 to fix issue with jest. Actual: ${nodeVersion}. For more information, see https://github.com/jestjs/jest/issues/11956\n\n`,
   );
-  console.log();
-  console.log();
   spawnSync(
     process.execPath,
     [...process.execArgv, '--no-compilation-cache', 'node_modules/jest/bin/jest.js', ...process.argv.slice(2)],
