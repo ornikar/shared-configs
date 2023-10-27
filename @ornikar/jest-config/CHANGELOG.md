@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [10.1.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config@10.0.0...@ornikar/jest-config@10.1.0) (2023-10-27)
+
+
+### Features
+
+* **jest-config:** add ornikar-run-jest [no issue] ([#1004](https://github.com/ornikar/shared-configs/issues/1004)) ([32d4fe5](https://github.com/ornikar/shared-configs/commit/32d4fe5b9888e22c81f25bff7518f7caf075f8d5))
+
+
+
 ## [10.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config@9.6.0...@ornikar/jest-config@10.0.0) (2023-09-27)
 
 
