@@ -2998,11 +2998,11 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ornikar/eslint-config@npm:21.1.0":
-  version: 21.1.0
-  resolution: "@ornikar/eslint-config@npm:21.1.0"
+"@ornikar/eslint-config@npm:21.2.0":
+  version: 21.2.0
+  resolution: "@ornikar/eslint-config@npm:21.2.0"
   dependencies:
-    "@ornikar/eslint-plugin-ornikar": 21.1.0
+    "@ornikar/eslint-plugin-ornikar": 21.2.0
     eslint-config-airbnb-base: ^15.0.0
     eslint-config-prettier: ^8.2.0
     eslint-plugin-import: ^2.25.4
@@ -3015,13 +3015,13 @@ __metadata:
   peerDependencies:
     eslint: ^8.44.0
     prettier: ^2.2.1
-  checksum: 5fd4b211a994b264b4c0b2a416af7a33687efe19b6cce2753d664830a0bd9bd4d7b391ca408a3ab6f536e8bbb5fb03846116d9db283ce0dcaca8d2f14929ce84
+  checksum: 29e27a5f16107da36f0b98e8d394448235dca00462acc7a0534c606fddbaadb5535dd9580d0f2aaf2417cb4c3ad94219e73fbcaaddc6fcc0906447b089380300
   languageName: node
   linkType: hard
 
-"@ornikar/eslint-plugin-ornikar@npm:21.1.0":
-  version: 21.1.0
-  resolution: "@ornikar/eslint-plugin-ornikar@npm:21.1.0"
+"@ornikar/eslint-plugin-ornikar@npm:21.2.0":
+  version: 21.2.0
+  resolution: "@ornikar/eslint-plugin-ornikar@npm:21.2.0"
   dependencies:
     "@typescript-eslint/utils": 6.8.0
     eslint-plugin-react: ^7.33.2
@@ -3032,7 +3032,7 @@ __metadata:
   peerDependenciesMeta:
     typescript:
       optional: true
-  checksum: 39247d4612d2a2426f205b913dc0c13d3798625451bfa21940868e9266af05d90ad7e95d46b2510f55d213be45b82361dce6cbbec9cc9b582a7b28d0341b11d0
+  checksum: eb3e43f92adb81ecb39561624eaa5e3776fa63269906705aa4fc9ba7d4e374c8fe5a6252697e8bc8fce96a7a88089d88404ddc8931bc8b03f2e1c649974cbfbb
   languageName: node
   linkType: hard
 
@@ -3264,7 +3264,7 @@ __metadata:
   resolution: "@ornikar/shared-configs@workspace:."
   dependencies:
     "@commitlint/cli": 17.8.1
-    "@ornikar/eslint-config": 21.1.0
+    "@ornikar/eslint-config": 21.2.0
     check-package-dependencies: 6.8.0
     eslint: 8.52.0
     jest: 29.6.1
