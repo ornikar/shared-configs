@@ -24,6 +24,14 @@ module.exports = (webpackConfig, { srcDirectory = './src' } = {}) => {
       // eslint-disable-next-line security/detect-non-literal-fs-filename
       const isTs = fs.existsSync(path.resolve(`${basePath}.ts`));
       workspaceAliases[`${childPkg.name}$`] = path.resolve(`${basePath}.${isTs ? 'ts' : 'js'}`);
+      if (childPkg.ornikar?.entries) {
+        childPkg.ornikar?.entries.forEach((entryName) => {
+          if (entryName === 'index') return;
+          workspaceAliases[`${childPkg.name}/${entryName}$`] = path.resolve(
+            `${path.join(packageSrcDirectory, entryName)}.${isTs ? 'ts' : 'js'}`,
+          );
+        });
+      }
     });
   }
 
