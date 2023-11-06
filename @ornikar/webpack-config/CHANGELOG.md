@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.1.0](https://github.com/ornikar/shared-configs/compare/@ornikar/webpack-config@9.0.0...@ornikar/webpack-config@9.1.0) (2023-11-06)
+
+
+### Features
+
+* **webpack-config:** add support for entries [no issue] ([#1008](https://github.com/ornikar/shared-configs/issues/1008)) ([28cb91d](https://github.com/ornikar/shared-configs/commit/28cb91d256f6e832e276b734a0af241947e6d546))
+
+
+
 ## [9.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/webpack-config@8.0.0...@ornikar/webpack-config@9.0.0) (2023-10-25)
 
 
