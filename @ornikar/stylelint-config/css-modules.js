@@ -13,6 +13,7 @@ module.exports = {
     'selector-class-pattern': null,
     'media-feature-range-notation': null,
     'declaration-block-no-redundant-longhand-properties': null,
+    'function-no-unknown': null,
 
     // override default rule to disable for composes, used in css modules
     // https://stylelint.io/user-guide/rules/value-keyword-case
