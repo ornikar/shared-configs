@@ -3202,7 +3202,7 @@ __metadata:
     "@ornikar/commitlint-config": 6.0.0
     husky: 8.0.3
     lint-staged: 13.3.0
-    prettier-plugin-properties: 0.2.0
+    prettier-plugin-properties: 0.3.0
     semver: ^7.3.5
     which-pm-runs: ^1.1.0
   bin:
@@ -11745,12 +11745,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier-plugin-properties@npm:0.2.0":
-  version: 0.2.0
-  resolution: "prettier-plugin-properties@npm:0.2.0"
+"prettier-plugin-properties@npm:0.3.0":
+  version: 0.3.0
+  resolution: "prettier-plugin-properties@npm:0.3.0"
   dependencies:
     dot-properties: ^1.0.0
-  checksum: 0109ca2a5862bf02ea3326ab39b0b308b3be9cec468642d840dfa867ea7a5d643cc5f01f18985072ad0248b1b2713dbda24c6a09b9d8eccef5c26155f8780a59
+  peerDependencies:
+    prettier: ">= 2.3.0"
+  checksum: 4516d3c68b61fc0093686d1bf851b117d79905ad73174e916efc2702ec030e5248410850af9390d82233eeabf39011dcd7cb0be1d22f53f94bf9f73a8b0b6d69
   languageName: node
   linkType: hard
 

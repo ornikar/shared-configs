@@ -26,7 +26,7 @@
     "@ornikar/commitlint-config": "6.0.0",
     "husky": "8.0.3",
     "lint-staged": "13.3.0",
-    "prettier-plugin-properties": "0.2.0",
+    "prettier-plugin-properties": "0.3.0",
     "semver": "^7.3.5",
     "which-pm-runs": "^1.1.0"
   },
