@@ -20,7 +20,7 @@
   "dependencies": {
     "@chrp/typed-css-modules-loader": "0.7.0",
     "@ornikar/repo-config-react": "11.0.3",
-    "typed-css-modules": "0.7.2"
+    "typed-css-modules": "0.8.1"
   },
   "scripts": {
     "lint:eslint": "yarn ../.. eslint --report-unused-disable-directives --quiet @ornikar/repo-config-react-legacy-css"
