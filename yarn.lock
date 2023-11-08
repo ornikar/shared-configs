@@ -2987,7 +2987,7 @@ __metadata:
     "@linaria/babel-preset": 4.2.0
     "@linaria/shaker": 4.2.0
     babel-plugin-linaria-css-to-undefined: ^0.3.0
-    babel-plugin-react-native: ^1.0.1
+    babel-plugin-react-native: ^2.0.0
     babel-plugin-styled-components: ^2.0.2
     babel-plugin-styled-components-react-native-web: ^0.2.2
     react-refresh: 0.14.0
@@ -4959,12 +4959,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"babel-plugin-react-native@npm:^1.0.1":
-  version: 1.0.1
-  resolution: "babel-plugin-react-native@npm:1.0.1"
+"babel-plugin-react-native@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "babel-plugin-react-native@npm:2.0.0"
   peerDependencies:
     "@babel/core": ^7.0.0
-  checksum: f329b1016c14479c2545e1caded8ebd1785c685ea4fdac2a4215648f4971643a9b452255d697815d968d97b2f407bd65bbfb46cadbc3827c79008f531fdb26cb
+  checksum: ba440b1396fb52348b8162d42d92e0dd57d6066b022aaa18af314c10df092627fefb25ac6031b201572ecb583f9b287fa1480d9d34c4eff5e332733d78b9e770
   languageName: node
   linkType: hard
 
