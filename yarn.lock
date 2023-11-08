@@ -3170,7 +3170,7 @@ __metadata:
   resolution: "@ornikar/repo-config-react-legacy-css@workspace:@ornikar/repo-config-react-legacy-css"
   dependencies:
     "@ornikar/repo-config-react": 11.0.3
-    "@ornikar/typed-css-modules-loader": 0.7.0
+    "@ornikar/typed-css-modules-loader": 0.8.1
     typed-css-modules: 0.7.2
   bin:
     ornikar-ci-comment-pr: ./bin/ornikar-ci-comment-pr.mjs
@@ -3293,14 +3293,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ornikar/typed-css-modules-loader@npm:0.7.0":
-  version: 0.7.0
-  resolution: "@ornikar/typed-css-modules-loader@npm:0.7.0"
-  dependencies:
-    loader-utils: ^1.1.0
+"@ornikar/typed-css-modules-loader@npm:0.8.1":
+  version: 0.8.1
+  resolution: "@ornikar/typed-css-modules-loader@npm:0.8.1"
   peerDependencies:
-    typed-css-modules: ^0.7.0
-  checksum: e41e2848602f503c87914dd42725a000757321d1b31cba505cb77ea44971039f267889ddf5bb926d2fe9e6d6818f033499186575cd88d62645b3e3a5d999bc22
+    typed-css-modules: ^0.8.1
+  checksum: 703fbdc13315ac8f578ba20d00b7dcef72d4bba07e25b2d55b2dc246779204ac515d90f6cc1840bad2b5364e820b077a725a5802e890a1ad3c5e7cdc5e3682e4
   languageName: node
   linkType: hard
 
@@ -5129,13 +5127,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"big.js@npm:^5.2.2":
-  version: 5.2.2
-  resolution: "big.js@npm:5.2.2"
-  checksum: b89b6e8419b097a8fb4ed2399a1931a68c612bce3cfd5ca8c214b2d017531191070f990598de2fc6f3f993d91c0f08aa82697717f6b3b8732c9731866d233c9e
-  languageName: node
-  linkType: hard
-
 "binary-extensions@npm:^2.0.0":
   version: 2.2.0
   resolution: "binary-extensions@npm:2.2.0"
@@ -6671,13 +6662,6 @@ __metadata:
   version: 9.2.2
   resolution: "emoji-regex@npm:9.2.2"
   checksum: 8487182da74aabd810ac6d6f1994111dfc0e331b01271ae01ec1eb0ad7b5ecc2bbbbd2f053c05cb55a1ac30449527d819bbfbf0e3de1023db308cbcb47f86601
-  languageName: node
-  linkType: hard
-
-"emojis-list@npm:^3.0.0":
-  version: 3.0.0
-  resolution: "emojis-list@npm:3.0.0"
-  checksum: ddaaa02542e1e9436c03970eeed445f4ed29a5337dfba0fe0c38dfdd2af5da2429c2a0821304e8a8d1cadf27fdd5b22ff793571fa803ae16852a6975c65e8e70
   languageName: node
   linkType: hard
 
@@ -9692,7 +9676,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"json5@npm:^1.0.1, json5@npm:^1.0.2":
+"json5@npm:^1.0.2":
   version: 1.0.2
   resolution: "json5@npm:1.0.2"
   dependencies:
@@ -9896,17 +9880,6 @@ __metadata:
   version: 4.3.0
   resolution: "loader-runner@npm:4.3.0"
   checksum: a90e00dee9a16be118ea43fec3192d0b491fe03a32ed48a4132eb61d498f5536a03a1315531c19d284392a8726a4ecad71d82044c28d7f22ef62e029bf761569
-  languageName: node
-  linkType: hard
-
-"loader-utils@npm:^1.1.0":
-  version: 1.4.2
-  resolution: "loader-utils@npm:1.4.2"
-  dependencies:
-    big.js: ^5.2.2
-    emojis-list: ^3.0.0
-    json5: ^1.0.1
-  checksum: eb6fb622efc0ffd1abdf68a2022f9eac62bef8ec599cf8adb75e94d1d338381780be6278534170e99edc03380a6d29bc7eb1563c89ce17c5fed3a0b17f1ad804
   languageName: node
   linkType: hard
 
