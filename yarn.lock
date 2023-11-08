@@ -3131,7 +3131,7 @@ __metadata:
   dependencies:
     "@lerna/cli": 5.5.4
     "@lerna/version": 5.5.4
-    "@pob/pretty-eslint-config": ^3.0.0
+    "@pob/pretty-eslint-config": ^5.0.0
     conventional-changelog-conventionalcommits: ^6.0.0
   peerDependencies:
     lerna: 0.0.0
@@ -3319,31 +3319,31 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@pob/pretty-eslint-config@npm:^3.0.0":
-  version: 3.3.0
-  resolution: "@pob/pretty-eslint-config@npm:3.3.0"
+"@pob/pretty-eslint-config@npm:^5.0.0":
+  version: 5.2.0
+  resolution: "@pob/pretty-eslint-config@npm:5.2.0"
   dependencies:
-    "@pob/sort-eslint-config": 3.1.0
+    "@pob/sort-eslint-config": 5.1.0
     prettier: ^2.6.2
   bin:
-    pretty-eslint-config: bin/pretty-eslint-config.js
-  checksum: 21dcf2bf17f5a5abd6317794f841651322810de96d1a6c29d083afd922f7f2e47814e1215f7470e4fd7079b0820fa83953176d54912bf1a4613e728ec5387707
+    pretty-eslint-config: ./bin/pretty-eslint-config.js
+  checksum: ed02e15e6ff48e7e9253545ea5b1b092af96abd424db6dec3c2a624e202e3f0d2f8b33678d619907913eaa344a68cd12f69057b15ddd544dce8de801666b9563
   languageName: node
   linkType: hard
 
-"@pob/sort-eslint-config@npm:3.1.0":
-  version: 3.1.0
-  resolution: "@pob/sort-eslint-config@npm:3.1.0"
+"@pob/sort-eslint-config@npm:5.1.0":
+  version: 5.1.0
+  resolution: "@pob/sort-eslint-config@npm:5.1.0"
   dependencies:
-    "@pob/sort-object": 4.1.0
-  checksum: 058209a080d025fbf575bfd8048200c33e4ffcddc25b2804bdc87568c825d7c78ec03c0f6aa5b01879c923a17172650cbd386d7c14a5c980d6e36fccaf063d2b
+    "@pob/sort-object": 6.1.0
+  checksum: 12c3f51dbff73d025021674cd93b169510d5546ffe61c39b37ba65523251b63a61ec2dcbc2a8da500bccfd738dec96f2e62130a00742053893198d04cf9f124d
   languageName: node
   linkType: hard
 
-"@pob/sort-object@npm:4.1.0":
-  version: 4.1.0
-  resolution: "@pob/sort-object@npm:4.1.0"
-  checksum: 8f8348dbce592fb2da7489e9660cba356fea2c83638fde77fb0ffb2efe35a86a4cea4deaf8ccf29dec1589b399a17df942f40c02214cc7b5c571dd8440670194
+"@pob/sort-object@npm:6.1.0":
+  version: 6.1.0
+  resolution: "@pob/sort-object@npm:6.1.0"
+  checksum: 4d43a423e7a4d29843643ca84bbbb17e929121ecd6beed10b2535f44056363c75030c11324adf6933cb7b66d90335f6ae606d9d11d91f9b5310e4e63f74848f3
   languageName: node
   linkType: hard
 
