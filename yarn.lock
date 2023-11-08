@@ -3205,6 +3205,8 @@ __metadata:
     prettier-plugin-properties: 0.3.0
     semver: ^7.3.5
     which-pm-runs: ^1.1.0
+  peerDependencies:
+    prettier: ^2.3.0
   bin:
     commitlint: ./bin/commitlint.js
     ornikar-lint-staged: ./bin/ornikar-lint-staged.mjs

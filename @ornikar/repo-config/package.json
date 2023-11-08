@@ -21,6 +21,9 @@
     "ornikar-prettier-fix": "./bin/ornikar-prettier-fix.sh",
     "ornikar-repo-config-postinstall": "./bin/ornikar-repo-config-postinstall.js"
   },
+  "peerDependencies": {
+    "prettier": "^2.3.0"
+  },
   "dependencies": {
     "@commitlint/cli": "17.8.1",
     "@ornikar/commitlint-config": "6.0.0",
