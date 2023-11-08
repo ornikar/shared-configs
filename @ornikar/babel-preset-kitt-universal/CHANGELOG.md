@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.1.0](https://github.com/ornikar/shared-configs/compare/@ornikar/babel-preset-kitt-universal@5.0.0...@ornikar/babel-preset-kitt-universal@5.1.0) (2023-11-08)
+
+
+### Features
+
+* **deps:** update dependency babel-plugin-react-native to v2 ([#1022](https://github.com/ornikar/shared-configs/issues/1022)) ([12666d3](https://github.com/ornikar/shared-configs/commit/12666d3db05548f09180b09138564e1c9b173a26))
+
+
+
 ## [5.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/babel-preset-kitt-universal@4.0.0...@ornikar/babel-preset-kitt-universal@5.0.0) (2023-10-19)
 
 

@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [12.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/stylelint-config@11.0.0...@ornikar/stylelint-config@12.0.0) (2023-11-08)
+
+
+### ⚠ BREAKING CHANGES
+
+* **deps:** update stylelint 
+
+### Features
+
+* **deps:** update dependency stylelint to v15 ([#1018](https://github.com/ornikar/shared-configs/issues/1018)) ([1a5f483](https://github.com/ornikar/shared-configs/commit/1a5f48361d76b633199a681d663f5614c1e1f012))
+
+
+
 ## [11.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/stylelint-config@10.0.0...@ornikar/stylelint-config@11.0.0) (2023-10-25)
 
 

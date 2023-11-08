@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [13.1.0](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@13.0.1...@ornikar/repo-config@13.1.0) (2023-11-08)
+
+
+### Features
+
+* **deps:** update dependency prettier-plugin-properties to v0.3.0 ([#1019](https://github.com/ornikar/shared-configs/issues/1019)) ([804b254](https://github.com/ornikar/shared-configs/commit/804b2547acaccabb00694293ce448be4a00e77b6))
+
+
+
 ## [13.0.1](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@13.0.0...@ornikar/repo-config@13.0.1) (2023-10-25)
 
 **Note:** Version bump only for package @ornikar/repo-config
