@@ -1506,17 +1506,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@chrp/typed-css-modules-loader@npm:0.7.0":
-  version: 0.7.0
-  resolution: "@chrp/typed-css-modules-loader@npm:0.7.0"
-  dependencies:
-    loader-utils: ^1.1.0
-  peerDependencies:
-    typed-css-modules: ^0.7.0
-  checksum: 0de6c5b6a349dfeffa9336500688b28d0ae617eda0a66b11494c0e6df21e0aa5d69f5ab7b7cd1ca0d96d5d1e1158df3479abf0b0a80afa6eac653a745bcd6223
-  languageName: node
-  linkType: hard
-
 "@commitlint/cli@npm:17.8.1":
   version: 17.8.1
   resolution: "@commitlint/cli@npm:17.8.1"
@@ -3180,8 +3169,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@ornikar/repo-config-react-legacy-css@workspace:@ornikar/repo-config-react-legacy-css"
   dependencies:
-    "@chrp/typed-css-modules-loader": 0.7.0
     "@ornikar/repo-config-react": 11.0.3
+    "@ornikar/typed-css-modules-loader": 0.7.0
     typed-css-modules: 0.7.2
   bin:
     ornikar-ci-comment-pr: ./bin/ornikar-ci-comment-pr.mjs
@@ -3303,6 +3292,17 @@ __metadata:
     stylelint: ^13.13.1
   languageName: unknown
   linkType: soft
+
+"@ornikar/typed-css-modules-loader@npm:0.7.0":
+  version: 0.7.0
+  resolution: "@ornikar/typed-css-modules-loader@npm:0.7.0"
+  dependencies:
+    loader-utils: ^1.1.0
+  peerDependencies:
+    typed-css-modules: ^0.7.0
+  checksum: e41e2848602f503c87914dd42725a000757321d1b31cba505cb77ea44971039f267889ddf5bb926d2fe9e6d6818f033499186575cd88d62645b3e3a5d999bc22
+  languageName: node
+  linkType: hard
 
 "@ornikar/webpack-config@9.1.0, @ornikar/webpack-config@workspace:@ornikar/webpack-config":
   version: 0.0.0-use.local
