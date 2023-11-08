@@ -26,7 +26,7 @@
   },
   "dependencies": {
     "babel-plugin-linaria-css-to-undefined": "^0.3.0",
-    "babel-plugin-react-native": "^1.0.1",
+    "babel-plugin-react-native": "^2.0.0",
     "babel-plugin-styled-components": "^2.0.2",
     "babel-plugin-styled-components-react-native-web": "^0.2.2"
   },
