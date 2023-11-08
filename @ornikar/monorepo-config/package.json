@@ -1,6 +1,6 @@
 {
   "name": "@ornikar/monorepo-config",
-  "version": "12.0.1",
+  "version": "12.1.0",
   "description": "📚 monorepo config",
   "repository": {
     "directory": "@ornikar/monorepo-config",
@@ -32,7 +32,7 @@
   "dependencies": {
     "@lerna/cli": "5.5.4",
     "@lerna/version": "5.5.4",
-    "@pob/pretty-eslint-config": "^3.0.0",
+    "@pob/pretty-eslint-config": "^5.0.0",
     "conventional-changelog-conventionalcommits": "^6.0.0"
   },
   "scripts": {
