@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [12.1.0](https://github.com/ornikar/shared-configs/compare/@ornikar/monorepo-config@12.0.1...@ornikar/monorepo-config@12.1.0) (2023-11-08)
+
+
+### Features
+
+* **deps:** update dependency @pob/pretty-eslint-config to v5 ([#1013](https://github.com/ornikar/shared-configs/issues/1013)) ([2005434](https://github.com/ornikar/shared-configs/commit/2005434f72851c4c2d174286821cb4cfdf36d6ca))
+
+
+
 ## [12.0.1](https://github.com/ornikar/shared-configs/compare/@ornikar/monorepo-config@12.0.0...@ornikar/monorepo-config@12.0.1) (2023-10-25)
 
 
