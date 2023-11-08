@@ -18,8 +18,8 @@
     "ornikar-ci-comment-pr": "./bin/ornikar-ci-comment-pr.mjs"
   },
   "dependencies": {
-    "@chrp/typed-css-modules-loader": "0.7.0",
     "@ornikar/repo-config-react": "11.0.3",
+    "@ornikar/typed-css-modules-loader": "0.7.0",
     "typed-css-modules": "0.7.2"
   },
   "scripts": {

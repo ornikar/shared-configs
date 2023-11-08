@@ -11,7 +11,7 @@ module.exports = (env, webpackConfig, srcDirectories, isCRAPresetEnabled) => {
     if (process.env.NODE_ENV !== 'production') {
       cssModuleRule.use = [
         ...cssModuleRule.use.slice(0, -1),
-        '@chrp/typed-css-modules-loader',
+        '@ornikar/typed-css-modules-loader',
         ...cssModuleRule.use.slice(-1),
       ];
     }
@@ -36,7 +36,7 @@ module.exports = (env, webpackConfig, srcDirectories, isCRAPresetEnabled) => {
           importLoaders: process.env.NODE_ENV !== 'production' ? 2 : 1,
         },
       },
-      process.env.NODE_ENV !== 'production' && '@chrp/typed-css-modules-loader',
+      process.env.NODE_ENV !== 'production' && '@ornikar/typed-css-modules-loader',
       {
         loader: 'postcss-loader',
         options: {
