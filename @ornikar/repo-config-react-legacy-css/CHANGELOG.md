@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [13.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config-react-legacy-css@12.0.3...@ornikar/repo-config-react-legacy-css@13.0.0) (2023-11-08)
+
+
+### ⚠ BREAKING CHANGES
+
+* **deps:** update dependency typed-css-modules to v0.8.1 (#1012)
+
+### Features
+
+* **deps:** update dependency typed-css-modules to v0.8.1 ([#1012](https://github.com/ornikar/shared-configs/issues/1012)) ([cac98b7](https://github.com/ornikar/shared-configs/commit/cac98b7f90b4612371f5413b72f456fc227aea16))
+* typed-css-modules-loader changed owner [no issue] ([#1016](https://github.com/ornikar/shared-configs/issues/1016)) ([c98310d](https://github.com/ornikar/shared-configs/commit/c98310de451c6e2676c61daf510234646aa8b1ee))
+
+
+
 ## [12.0.3](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config-react-legacy-css@12.0.2...@ornikar/repo-config-react-legacy-css@12.0.3) (2023-10-25)
 
 **Note:** Version bump only for package @ornikar/repo-config-react-legacy-css

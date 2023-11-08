@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [8.1.0](https://github.com/ornikar/shared-configs/compare/@ornikar/storybook-config@8.0.2...@ornikar/storybook-config@8.1.0) (2023-11-08)
+
+
+### Features
+
+* typed-css-modules-loader changed owner [no issue] ([#1016](https://github.com/ornikar/shared-configs/issues/1016)) ([c98310d](https://github.com/ornikar/shared-configs/commit/c98310de451c6e2676c61daf510234646aa8b1ee))
+
+
+
 ## [8.0.2](https://github.com/ornikar/shared-configs/compare/@ornikar/storybook-config@8.0.1...@ornikar/storybook-config@8.0.2) (2023-11-06)
 
 **Note:** Version bump only for package @ornikar/storybook-config
