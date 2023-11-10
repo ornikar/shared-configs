@@ -83,7 +83,10 @@ exports.storiesOf = (groupName) => {
 
           const rtlApi = render(story(context), { wrapper: wrappingComponent });
           if (waitForExpectation) {
-            await waitFor(async () => await waitForExpectation(rtlApi, expect, { parameters }));
+            await waitFor(async () => {
+              // eslint-disable-next-line no-return-await
+              return await waitForExpectation(rtlApi, expect, { parameters });
+            });
           }
           expect(rtlApi.asFragment()).toMatchSnapshot();
           rtlApi.unmount();
