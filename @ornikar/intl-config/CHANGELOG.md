@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.0.1](https://github.com/ornikar/shared-configs/compare/@ornikar/intl-config@7.0.0...@ornikar/intl-config@7.0.1) (2023-11-14)
+
+
+### Bug Fixes
+
+* add missing new line ([f07b688](https://github.com/ornikar/shared-configs/commit/f07b688b497c6bcb4afe44174f4e51ae43194b8f))
+
+
+
 ## [7.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/intl-config@6.0.0...@ornikar/intl-config@7.0.0) (2023-10-19)
 
 
