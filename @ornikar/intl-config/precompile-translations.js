@@ -24,7 +24,7 @@ module.exports = ({ paths, defaultExtractedDestinationDirectory, defaultCompiled
           path.relative(extractedDestinationDirectory, filePath),
         );
         fs.mkdirSync(path.dirname(compiledFilePath), { recursive: true });
-        fs.writeFileSync(compiledFilePath, result);
+        fs.writeFileSync(compiledFilePath, `${result}\n`);
       });
     },
   );
