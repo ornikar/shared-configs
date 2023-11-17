@@ -6,7 +6,41 @@ const fs = require('node:fs');
 const path = require('node:path');
 const husky = require('husky');
 const { readYarnConfigFile } = require('../yarn');
+const { noPushOnMain } = require('./no-push-on-main');
 const { phrasePrePush } = require('./phrase-pre-push');
+
+function createPrepushHook(commands, prePushHookPostContent) {
+  const script = `
+# get current branch name
+currentBranch=$(git rev-parse --abbrev-ref HEAD)
+
+# get current branch ref
+branch_ref=$(git symbolic-ref HEAD)
+
+# autodetect main branch (usually master or main)
+mainBranch=$(LANG=en_US git remote show origin | grep "HEAD branch" | cut -d' ' -f5)
+
+# z40 is the value matching the empty blob/commit/tree SHA (zero x 40)
+z40=0000000000000000000000000000000000000000
+
+while read local_ref local_sha remote_ref remote_sha
+do
+  if [[ "$local_ref" == "$branch_ref" ]]
+  then
+    ${noPushOnMain.trim().split('\n').join('\n    ')}
+    ${commands.join(' && ')}${
+    (prePushHookPostContent || '') &&
+    `
+    if [ "$?" = 0 ]
+    then
+      ${prePushHookPostContent}
+    fi`
+  }
+  fi
+done
+`;
+  return `${script.trim()}\n`;
+}
 
 const ensureLegacyHuskyConfigDeleted = () => {
   try {
@@ -135,39 +169,28 @@ fi
     writeHook('post-rewrite', postHookContent);
   }
 
-  const prePushHookPreCommands = [];
-  const prePushHook = [];
+  const prePushHookCommands = [];
 
   if (shouldRunTest()) {
     if (pkg.scripts.test === 'node --test') {
-      prePushHook.push('CI=true yarn test');
+      prePushHookCommands.push('CI=true yarn test');
     } else {
-      prePushHookPreCommands.push(
-        '# autodetect main branch (usually master or main)',
-        'mainBranch=$(LANG=en_US git remote show origin | grep "HEAD branch" | cut -d\' \' -f5)',
-        '',
-      );
-      prePushHook.push('CI=true yarn test --changedSince=origin/$mainBranch');
+      prePushHookCommands.push('CI=true yarn test --changedSince=origin/$mainBranch');
     }
   }
 
   if (shouldRunChecks()) {
-    prePushHook.push('yarn run checks');
+    prePushHookCommands.push('yarn run checks');
   }
 
-  if (prePushHook.length > 0) {
+  if (prePushHookCommands.length > 0) {
     let prePushHookPostContent = '';
     const phraseConfigPath = '.phrase.yml';
     if (fs.existsSync(phraseConfigPath)) {
       prePushHookPostContent += phrasePrePush;
     }
 
-    writeHook(
-      'pre-push',
-      (prePushHookPreCommands ? [...prePushHookPreCommands, ''].join('\n') : '') +
-        prePushHook.join(' && ') +
-        prePushHookPostContent,
-    );
+    writeHook('pre-push', createPrepushHook(prePushHookCommands, prePushHookPostContent));
   } else {
     ensureHookDeleted('pre-push');
   }
