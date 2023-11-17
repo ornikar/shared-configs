@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [13.2.0](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@13.1.1...@ornikar/repo-config@13.2.0) (2023-11-17)
+
+
+### Features
+
+* **repo-config:** add husky no push on main prepush hook [no issue] ([#1032](https://github.com/ornikar/shared-configs/issues/1032)) ([390dcce](https://github.com/ornikar/shared-configs/commit/390dcce9fef422bbc6e47ff3911f2400d875dc0a))
+
+
+
 ## [13.1.1](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@13.1.0...@ornikar/repo-config@13.1.1) (2023-11-14)
 
 **Note:** Version bump only for package @ornikar/repo-config

@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [8.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/rollup-config@7.0.1...@ornikar/rollup-config@8.0.0) (2023-11-17)
+
+
+### ⚠ BREAKING CHANGES
+
+* **rollup-config:** change react-native builds for metro [no issue] (#1034)
+
+### Features
+
+* **rollup-config:** change react-native builds for metro [no issue] ([#1034](https://github.com/ornikar/shared-configs/issues/1034)) ([7163372](https://github.com/ornikar/shared-configs/commit/716337217697bd0ec73e9bdc12e7d3a2e591a431))
+
+
+
 ## [7.0.1](https://github.com/ornikar/shared-configs/compare/@ornikar/rollup-config@7.0.0...@ornikar/rollup-config@7.0.1) (2023-11-08)
 
 **Note:** Version bump only for package @ornikar/rollup-config

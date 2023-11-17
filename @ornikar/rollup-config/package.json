@@ -1,6 +1,6 @@
 {
   "name": "@ornikar/rollup-config",
-  "version": "7.0.1",
+  "version": "8.0.0",
   "description": "📦 rollup config files",
   "repository": {
     "directory": "@ornikar/rollup-config",
