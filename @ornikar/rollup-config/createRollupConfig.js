@@ -62,11 +62,27 @@ const createBuildsForPackage = (
     if (!inputExt) throw new Error(`Could not find ${entryName} file for package ${packageName}`);
     const isLinariaEnabledForPlatform = useLinaria && ((!platformOS && !hasPlatformBuilds) || platformOS === 'web');
 
+    const getPresetEnvTargets = () => {
+      if (target === 'node') {
+        return { node: version };
+      }
+      if (platformOS && platformOS !== 'web') {
+        return {
+          // minimal transpilation as we target for metro which will reuse babel transforms anyway.
+          // The transpilation is needed to allow rollup to understand the code.
+          // We need to not transpile too much as reanimated plugin will happen on the app's side so the plugin have to understand the code.
+          esmodules: true,
+        };
+      }
+      // transpile for browsers supported by browserslist's config defined in package.json.
+      return undefined;
+    };
+
     const babelPresetBaseOptions = {
       babelRuntimeMinVersion,
       'preset-env': {
         modules: false,
-        targets: target === 'node' ? { node: version } : undefined,
+        targets: getPresetEnvTargets(),
       },
     };
 
@@ -246,8 +262,8 @@ const createBuildsForPackage = (
       ...(hasPeerDependencyReactNative
         ? [
             createBuild(entryName, '', 'all', ['es'], { platformOS: 'web', exportCss: true }),
-            createBuild(entryName, '', 'all', ['es'], { platformOS: 'ios' }),
-            createBuild(entryName, '', 'all', ['es'], { platformOS: 'android' }),
+            createBuild(entryName, 'metro', 'all', ['es'], { platformOS: 'ios' }),
+            createBuild(entryName, 'metro', 'all', ['es'], { platformOS: 'android' }),
           ]
         : []),
       createBuild(entryName, 'node', nodeVersion, ['es', 'cjs'], {
