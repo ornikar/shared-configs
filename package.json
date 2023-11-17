@@ -33,7 +33,7 @@
     "@ornikar/eslint-config": "21.3.0",
     "check-package-dependencies": "7.0.0",
     "eslint": "8.53.0",
-    "jest": "29.6.1",
+    "jest": "29.7.0",
     "lint-staged": "15.1.0",
     "prettier": "2.8.8"
   },
