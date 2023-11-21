@@ -94,6 +94,11 @@ exports.storiesOf = (groupName) => {
 
     addParameters(parameters) {
       Object.assign(localParameters, parameters);
+
+      if (parameters?.jest?.beforeAll) {
+        parameters.jest.beforeAll();
+      }
+
       return api;
     },
 
