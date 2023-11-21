@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.1.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react-native@9.0.5...@ornikar/jest-config-react-native@9.1.0) (2023-11-21)
+
+
+### Features
+
+* **jest-config-react-native:** add beforeAll parameters [no issue] ([#1040](https://github.com/ornikar/shared-configs/issues/1040)) ([5b86741](https://github.com/ornikar/shared-configs/commit/5b86741c35fa4e9e4b40da470498f7d2af5cbe65))
+
+
+
 ## [9.0.5](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react-native@9.0.4...@ornikar/jest-config-react-native@9.0.5) (2023-11-14)
 
 **Note:** Version bump only for package @ornikar/jest-config-react-native
