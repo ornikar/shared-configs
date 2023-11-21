@@ -44,10 +44,6 @@ exports.addDecorator = (decorator) => {
 // Mocked version of `import { addParameters } from '@storybook/react-native'`.
 exports.addParameters = (parameters) => {
   Object.assign(globalParameters, parameters);
-
-  if (parameters?.jest?.beforeAll) {
-    parameters.jest.beforeAll();
-  }
 };
 
 // Mocked version of `import { action } from '@storybook/react-native'`.
@@ -98,6 +94,11 @@ exports.storiesOf = (groupName) => {
 
     addParameters(parameters) {
       Object.assign(localParameters, parameters);
+
+      if (parameters?.jest?.beforeAll) {
+        parameters.jest.beforeAll();
+      }
+
       return api;
     },
 
