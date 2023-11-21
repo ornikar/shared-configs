@@ -1,6 +1,6 @@
 {
   "name": "@ornikar/jest-config-react",
-  "version": "12.1.0",
+  "version": "12.1.1",
   "description": "✅⚛️ jest config for react",
   "repository": {
     "directory": "@ornikar/jest-config-react",
