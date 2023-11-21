@@ -42,6 +42,10 @@ exports.addDecorator = (decorator) => {
 // Mocked version of `import { addParameters } from '@storybook/react'`.
 exports.addParameters = (parameters) => {
   Object.assign(globalParameters, parameters);
+
+  if (parameters?.jest?.beforeAll) {
+    parameters.jest.beforeAll();
+  }
 };
 
 // Mocked version of `import { action } from '@storybook/react'`.
