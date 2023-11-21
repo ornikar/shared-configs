@@ -5,6 +5,10 @@
  */
 
 exports.customTransforms = {
+  // compilation of ornikar packages
+  'node_modules/@ornikar/kitt-universal/.*\\.(js|cjs|mjs)$':
+    require.resolve('./transformers/babel-transformer-ornikar-packages.js'),
+
   // compilation of problematic node_modules has a simpler babel config
   'node_modules/(react-native-(calendars|reanimated)|@react-native-community/netinfo|@react-native/virtualized-lists)/.*\\.(js|jsx|ts|tsx)$':
     require.resolve('./transformers/babel-transformer-node-modules.js'),
