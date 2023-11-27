@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.2.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react-native@9.1.1...@ornikar/jest-config-react-native@9.2.0) (2023-11-27)
+
+
+### Features
+
+* add reanimated transform for ornikar packages on jest [no issue] ([#1043](https://github.com/ornikar/shared-configs/issues/1043)) ([366a518](https://github.com/ornikar/shared-configs/commit/366a518e534a6f24438bf2dd33396a5c1c22211f))
+
+
+
 ## [9.1.1](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react-native@9.1.0...@ornikar/jest-config-react-native@9.1.1) (2023-11-21)
 
 **Note:** Version bump only for package @ornikar/jest-config-react-native

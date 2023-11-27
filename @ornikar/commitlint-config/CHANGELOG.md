@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.0.1](https://github.com/ornikar/shared-configs/compare/@ornikar/commitlint-config@6.0.0...@ornikar/commitlint-config@6.0.1) (2023-11-27)
+
+
+### Bug Fixes
+
+* **commitlint-config:** remove max length not in specification [no issue] ([#1039](https://github.com/ornikar/shared-configs/issues/1039)) ([a9e5a8e](https://github.com/ornikar/shared-configs/commit/a9e5a8e53a930ae12dce89138afd2833a121da34))
+
+
+
 ## [6.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/commitlint-config@5.0.2...@ornikar/commitlint-config@6.0.0) (2023-09-27)
 
 

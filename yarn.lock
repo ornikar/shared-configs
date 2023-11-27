@@ -3013,7 +3013,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ornikar/commitlint-config@npm:6.0.0, @ornikar/commitlint-config@workspace:@ornikar/commitlint-config":
+"@ornikar/commitlint-config@npm:6.0.1, @ornikar/commitlint-config@workspace:@ornikar/commitlint-config":
   version: 0.0.0-use.local
   resolution: "@ornikar/commitlint-config@workspace:@ornikar/commitlint-config"
   dependencies:
@@ -3204,7 +3204,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@ornikar/repo-config-react-legacy-css@workspace:@ornikar/repo-config-react-legacy-css"
   dependencies:
-    "@ornikar/repo-config-react": "npm:11.0.6"
+    "@ornikar/repo-config-react": "npm:11.0.7"
     "@ornikar/typed-css-modules-loader": "npm:0.8.1"
     typed-css-modules: "npm:0.8.1"
   bin:
@@ -3212,15 +3212,15 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ornikar/repo-config-react@npm:11.0.6, @ornikar/repo-config-react@workspace:@ornikar/repo-config-react":
+"@ornikar/repo-config-react@npm:11.0.7, @ornikar/repo-config-react@workspace:@ornikar/repo-config-react":
   version: 0.0.0-use.local
   resolution: "@ornikar/repo-config-react@workspace:@ornikar/repo-config-react"
   dependencies:
-    "@ornikar/repo-config": "npm:13.2.0"
+    "@ornikar/repo-config": "npm:13.2.1"
     cross-env: "npm:^7.0.0"
     svgo: "npm:^2.8.0"
   peerDependencies:
-    "@ornikar/repo-config": ^13.2.0
+    "@ornikar/repo-config": ^13.2.1
   peerDependenciesMeta:
     "@ornikar/repo-config":
       optional: true
@@ -3229,12 +3229,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ornikar/repo-config@npm:13.2.0, @ornikar/repo-config@workspace:@ornikar/repo-config":
+"@ornikar/repo-config@npm:13.2.1, @ornikar/repo-config@workspace:@ornikar/repo-config":
   version: 0.0.0-use.local
   resolution: "@ornikar/repo-config@workspace:@ornikar/repo-config"
   dependencies:
     "@commitlint/cli": "npm:17.8.1"
-    "@ornikar/commitlint-config": "npm:6.0.0"
+    "@ornikar/commitlint-config": "npm:6.0.1"
     husky: "npm:8.0.3"
     lint-staged: "npm:15.1.0"
     prettier-plugin-properties: "npm:0.3.0"
