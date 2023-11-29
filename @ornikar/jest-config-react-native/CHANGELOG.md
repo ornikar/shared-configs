@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [10.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react-native@9.2.0...@ornikar/jest-config-react-native@10.0.0) (2023-11-29)
+
+
+### ⚠ BREAKING CHANGES
+
+* expo 49 OSE-1664 (#1044)
+
+### Features
+
+* expo 49 OSE-1664 ([#1044](https://github.com/ornikar/shared-configs/issues/1044)) ([a5b8ae8](https://github.com/ornikar/shared-configs/commit/a5b8ae8b684443248359f7a2155cf9ab8c654d8a))
+
+
+### Bug Fixes
+
+* ornikar package custom transform [no issue] ([#1046](https://github.com/ornikar/shared-configs/issues/1046)) ([b939716](https://github.com/ornikar/shared-configs/commit/b939716ecf236dca10a18c2046b9a8708b0398f3))
+
+
+
 ## [9.2.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react-native@9.1.1...@ornikar/jest-config-react-native@9.2.0) (2023-11-27)
 
 
