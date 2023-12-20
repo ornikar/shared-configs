@@ -1,6 +1,6 @@
 {
   "name": "@ornikar/jest-config",
-  "version": "10.1.1",
+  "version": "11.0.0",
   "description": "✅ jest config",
   "repository": {
     "directory": "@ornikar/jest-config",
