@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [12.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config-react@11.0.7...@ornikar/repo-config-react@12.0.0) (2023-12-20)
+
+
+### ⚠ BREAKING CHANGES
+
+* node 20 OSE-6084 (#1053)
+
+### Features
+
+* node 20 OSE-6084 ([#1053](https://github.com/ornikar/shared-configs/issues/1053)) ([a86e2ba](https://github.com/ornikar/shared-configs/commit/a86e2bad41fa2469a9b7bfcad8dbaf41224a30e2))
+
+
+
 ## [11.0.7](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config-react@11.0.6...@ornikar/repo-config-react@11.0.7) (2023-11-27)
 
 **Note:** Version bump only for package @ornikar/repo-config-react

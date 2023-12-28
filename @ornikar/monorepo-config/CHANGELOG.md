@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [13.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/monorepo-config@12.1.0...@ornikar/monorepo-config@13.0.0) (2023-12-20)
+
+
+### ⚠ BREAKING CHANGES
+
+* node 20 OSE-6084 (#1053)
+
+### Features
+
+* node 20 OSE-6084 ([#1053](https://github.com/ornikar/shared-configs/issues/1053)) ([a86e2ba](https://github.com/ornikar/shared-configs/commit/a86e2bad41fa2469a9b7bfcad8dbaf41224a30e2))
+
+
+
 ## [12.1.0](https://github.com/ornikar/shared-configs/compare/@ornikar/monorepo-config@12.0.1...@ornikar/monorepo-config@12.1.0) (2023-11-08)
 
 

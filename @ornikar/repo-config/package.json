@@ -1,6 +1,6 @@
 {
   "name": "@ornikar/repo-config",
-  "version": "13.2.1",
+  "version": "14.0.0",
   "description": "🔧 repo config",
   "repository": {
     "directory": "@ornikar/repo-config",
@@ -9,7 +9,7 @@
   },
   "license": "ISC",
   "engines": {
-    "node": ">=18.18.0"
+    "node": ">=20.10.0"
   },
   "publishConfig": {
     "access": "public"
@@ -26,7 +26,7 @@
   },
   "dependencies": {
     "@commitlint/cli": "17.8.1",
-    "@ornikar/commitlint-config": "6.0.1",
+    "@ornikar/commitlint-config": "7.0.0",
     "husky": "8.0.3",
     "lint-staged": "15.2.0",
     "prettier-plugin-properties": "0.3.0",

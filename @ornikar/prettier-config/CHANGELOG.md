@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [8.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/prettier-config@7.0.0...@ornikar/prettier-config@8.0.0) (2023-12-20)
+
+
+### ⚠ BREAKING CHANGES
+
+* node 20 OSE-6084 (#1053)
+
+### Features
+
+* node 20 OSE-6084 ([#1053](https://github.com/ornikar/shared-configs/issues/1053)) ([a86e2ba](https://github.com/ornikar/shared-configs/commit/a86e2bad41fa2469a9b7bfcad8dbaf41224a30e2))
+
+
+
 ## [7.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/prettier-config@6.0.7...@ornikar/prettier-config@7.0.0) (2023-09-27)
 
 
