@@ -2965,7 +2965,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@ornikar/babel-preset-base@npm:4.0.0, @ornikar/babel-preset-base@workspace:@ornikar/babel-preset-base":
+"@ornikar/babel-preset-base@npm:5.0.0, @ornikar/babel-preset-base@workspace:@ornikar/babel-preset-base":
   version: 0.0.0-use.local
   resolution: "@ornikar/babel-preset-base@workspace:@ornikar/babel-preset-base"
   dependencies:
@@ -2978,7 +2978,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ornikar/babel-preset-kitt-universal@npm:5.1.1, @ornikar/babel-preset-kitt-universal@workspace:@ornikar/babel-preset-kitt-universal":
+"@ornikar/babel-preset-kitt-universal@npm:6.0.0, @ornikar/babel-preset-kitt-universal@workspace:@ornikar/babel-preset-kitt-universal":
   version: 0.0.0-use.local
   resolution: "@ornikar/babel-preset-kitt-universal@workspace:@ornikar/babel-preset-kitt-universal"
   dependencies:
@@ -2996,7 +2996,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ornikar/babel-preset-react@npm:4.0.1, @ornikar/babel-preset-react@workspace:@ornikar/babel-preset-react":
+"@ornikar/babel-preset-react@npm:5.0.0, @ornikar/babel-preset-react@workspace:@ornikar/babel-preset-react":
   version: 0.0.0-use.local
   resolution: "@ornikar/babel-preset-react@workspace:@ornikar/babel-preset-react"
   dependencies:
@@ -3013,7 +3013,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ornikar/commitlint-config@npm:6.0.1, @ornikar/commitlint-config@workspace:@ornikar/commitlint-config":
+"@ornikar/commitlint-config@npm:7.0.0, @ornikar/commitlint-config@workspace:@ornikar/commitlint-config":
   version: 0.0.0-use.local
   resolution: "@ornikar/commitlint-config@workspace:@ornikar/commitlint-config"
   dependencies:
@@ -3022,11 +3022,11 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ornikar/eslint-config@npm:21.3.0":
-  version: 21.3.0
-  resolution: "@ornikar/eslint-config@npm:21.3.0"
+"@ornikar/eslint-config@npm:22.0.0":
+  version: 22.0.0
+  resolution: "@ornikar/eslint-config@npm:22.0.0"
   dependencies:
-    "@ornikar/eslint-plugin-ornikar": "npm:21.3.0"
+    "@ornikar/eslint-plugin-ornikar": "npm:22.0.0"
     eslint-config-airbnb-base: "npm:^15.0.0"
     eslint-config-prettier: "npm:^9.0.0"
     eslint-plugin-import: "npm:^2.25.4"
@@ -3039,13 +3039,13 @@ __metadata:
   peerDependencies:
     eslint: ^8.44.0
     prettier: ^2.2.1
-  checksum: 236af9ee0b720ff07279827881c28d1ba54750175993c511caa4d6eccda8b29e9284dbc50c903f168f1e56d5157b7a2d2bbb2f284b7faf8f3eedde4d85b0b0cc
+  checksum: 7c52c6a0239ad7b1c3e846e5e31a0c8074e0c1be4e5899d2323ab5ac188da5879e1c3f1eefdbb0c01e615d3688146784a56ddffb55332ed28c9d9668c346067a
   languageName: node
   linkType: hard
 
-"@ornikar/eslint-plugin-ornikar@npm:21.3.0":
-  version: 21.3.0
-  resolution: "@ornikar/eslint-plugin-ornikar@npm:21.3.0"
+"@ornikar/eslint-plugin-ornikar@npm:22.0.0":
+  version: 22.0.0
+  resolution: "@ornikar/eslint-plugin-ornikar@npm:22.0.0"
   dependencies:
     "@typescript-eslint/utils": "npm:6.10.0"
     eslint-plugin-react: "npm:^7.33.2"
@@ -3056,7 +3056,7 @@ __metadata:
   peerDependenciesMeta:
     typescript:
       optional: true
-  checksum: f6b6edb245d45b791c6b646152e6d084dc3cde53cc9752747911da4d4efd64523c4abe4d44837bee83bd0e63d3dbe100e6eb4be934b84b43dfc72984b8583603
+  checksum: c686d25df9219bb7918e343d2acd87123da2109c8f74bc7747a0ca1f2b307ea38054b7e5952a86edd702a2dec8a8ac0f5010ac6c58aa7528d86ad9ea78eb223b
   languageName: node
   linkType: hard
 
@@ -3083,7 +3083,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@ornikar/jest-config-react-native@workspace:@ornikar/jest-config-react-native"
   dependencies:
-    "@ornikar/jest-config-react": "npm:12.1.1"
+    "@ornikar/jest-config-react": "npm:13.0.0"
     "@sucrase/jest-plugin": "npm:^3.0.0"
     "@testing-library/react-native": "npm:12.4.2"
     jest-expo: "npm:49.0.0"
@@ -3113,11 +3113,11 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ornikar/jest-config-react@npm:12.1.1, @ornikar/jest-config-react@workspace:@ornikar/jest-config-react":
+"@ornikar/jest-config-react@npm:13.0.0, @ornikar/jest-config-react@workspace:@ornikar/jest-config-react":
   version: 0.0.0-use.local
   resolution: "@ornikar/jest-config-react@workspace:@ornikar/jest-config-react"
   dependencies:
-    "@ornikar/jest-config": "npm:10.1.1"
+    "@ornikar/jest-config": "npm:11.0.0"
     "@testing-library/react": "npm:14.1.2"
     identity-obj-proxy: "npm:^3.0.0"
     jest: "npm:29.7.0"
@@ -3133,7 +3133,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ornikar/jest-config@npm:10.1.1, @ornikar/jest-config@workspace:@ornikar/jest-config":
+"@ornikar/jest-config@npm:11.0.0, @ornikar/jest-config@workspace:@ornikar/jest-config":
   version: 0.0.0-use.local
   resolution: "@ornikar/jest-config@workspace:@ornikar/jest-config"
   dependencies:
@@ -3204,7 +3204,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@ornikar/repo-config-react-legacy-css@workspace:@ornikar/repo-config-react-legacy-css"
   dependencies:
-    "@ornikar/repo-config-react": "npm:11.0.7"
+    "@ornikar/repo-config-react": "npm:12.0.0"
     "@ornikar/typed-css-modules-loader": "npm:0.8.1"
     typed-css-modules: "npm:0.8.1"
   bin:
@@ -3212,15 +3212,15 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ornikar/repo-config-react@npm:11.0.7, @ornikar/repo-config-react@workspace:@ornikar/repo-config-react":
+"@ornikar/repo-config-react@npm:12.0.0, @ornikar/repo-config-react@workspace:@ornikar/repo-config-react":
   version: 0.0.0-use.local
   resolution: "@ornikar/repo-config-react@workspace:@ornikar/repo-config-react"
   dependencies:
-    "@ornikar/repo-config": "npm:13.2.1"
+    "@ornikar/repo-config": "npm:14.0.0"
     cross-env: "npm:^7.0.0"
     svgo: "npm:^2.8.0"
   peerDependencies:
-    "@ornikar/repo-config": ^13.2.1
+    "@ornikar/repo-config": ^14.0.0
   peerDependenciesMeta:
     "@ornikar/repo-config":
       optional: true
@@ -3229,12 +3229,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ornikar/repo-config@npm:13.2.1, @ornikar/repo-config@workspace:@ornikar/repo-config":
+"@ornikar/repo-config@npm:14.0.0, @ornikar/repo-config@workspace:@ornikar/repo-config":
   version: 0.0.0-use.local
   resolution: "@ornikar/repo-config@workspace:@ornikar/repo-config"
   dependencies:
     "@commitlint/cli": "npm:17.8.1"
-    "@ornikar/commitlint-config": "npm:6.0.1"
+    "@ornikar/commitlint-config": "npm:7.0.0"
     husky: "npm:8.0.3"
     lint-staged: "npm:15.2.0"
     prettier-plugin-properties: "npm:0.3.0"
@@ -3257,9 +3257,9 @@ __metadata:
   dependencies:
     "@babel/core": "npm:7.23.3"
     "@babel/plugin-transform-runtime": "npm:^7.23.2"
-    "@ornikar/babel-preset-base": "npm:4.0.0"
-    "@ornikar/babel-preset-kitt-universal": "npm:5.1.1"
-    "@ornikar/babel-preset-react": "npm:4.0.1"
+    "@ornikar/babel-preset-base": "npm:5.0.0"
+    "@ornikar/babel-preset-kitt-universal": "npm:6.0.0"
+    "@ornikar/babel-preset-react": "npm:5.0.0"
     "@rollup/plugin-babel": "npm:^5.3.1"
     "@rollup/plugin-node-resolve": "npm:^13.0.0"
     "@rollup/plugin-replace": "npm:^4.0.0"
@@ -3290,7 +3290,7 @@ __metadata:
   resolution: "@ornikar/shared-configs@workspace:."
   dependencies:
     "@commitlint/cli": "npm:17.8.1"
-    "@ornikar/eslint-config": "npm:21.3.0"
+    "@ornikar/eslint-config": "npm:22.0.0"
     check-package-dependencies: "npm:7.0.0"
     eslint: "npm:8.55.0"
     jest: "npm:29.7.0"
@@ -3303,7 +3303,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@ornikar/storybook-config@workspace:@ornikar/storybook-config"
   dependencies:
-    "@ornikar/webpack-config": "npm:9.1.0"
+    "@ornikar/webpack-config": "npm:10.0.0"
     "@svgr/webpack": "npm:^6.5.1"
     webpack: "npm:5.88.1"
   peerDependencies:
@@ -3338,7 +3338,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@ornikar/webpack-config@npm:9.1.0, @ornikar/webpack-config@workspace:@ornikar/webpack-config":
+"@ornikar/webpack-config@npm:10.0.0, @ornikar/webpack-config@workspace:@ornikar/webpack-config":
   version: 0.0.0-use.local
   resolution: "@ornikar/webpack-config@workspace:@ornikar/webpack-config"
   peerDependencies:

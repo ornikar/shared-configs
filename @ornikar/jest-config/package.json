@@ -1,6 +1,6 @@
 {
   "name": "@ornikar/jest-config",
-  "version": "10.1.1",
+  "version": "11.0.0",
   "description": "✅ jest config",
   "repository": {
     "directory": "@ornikar/jest-config",
@@ -10,7 +10,7 @@
   "main": "jest-preset.js",
   "license": "ISC",
   "engines": {
-    "node": ">=18.18.0"
+    "node": ">=20.10.0"
   },
   "publishConfig": {
     "access": "public"

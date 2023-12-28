@@ -1,6 +1,6 @@
 {
   "name": "@ornikar/jest-config-react-native",
-  "version": "10.0.0",
+  "version": "11.0.0",
   "description": "✅⚛️📱 jest config for react-native",
   "repository": {
     "directory": "@ornikar/jest-config-react-native",
@@ -10,7 +10,7 @@
   "main": "jest-preset.js",
   "license": "ISC",
   "engines": {
-    "node": ">=18.18.0"
+    "node": ">=20.10.0"
   },
   "publishConfig": {
     "access": "public"
@@ -43,7 +43,7 @@
     }
   },
   "dependencies": {
-    "@ornikar/jest-config-react": "12.1.1",
+    "@ornikar/jest-config-react": "13.0.0",
     "@sucrase/jest-plugin": "^3.0.0",
     "sucrase": "^3.34.0"
   },

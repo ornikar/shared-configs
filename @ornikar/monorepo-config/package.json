@@ -1,6 +1,6 @@
 {
   "name": "@ornikar/monorepo-config",
-  "version": "12.1.0",
+  "version": "13.0.0",
   "description": "📚 monorepo config",
   "repository": {
     "directory": "@ornikar/monorepo-config",
@@ -9,7 +9,7 @@
   },
   "license": "ISC",
   "engines": {
-    "node": ">=18.18.0"
+    "node": ">=20.10.0"
   },
   "publishConfig": {
     "access": "public"
