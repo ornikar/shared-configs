@@ -3022,11 +3022,11 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ornikar/eslint-config@npm:21.3.0":
-  version: 21.3.0
-  resolution: "@ornikar/eslint-config@npm:21.3.0"
+"@ornikar/eslint-config@npm:22.0.0":
+  version: 22.0.0
+  resolution: "@ornikar/eslint-config@npm:22.0.0"
   dependencies:
-    "@ornikar/eslint-plugin-ornikar": "npm:21.3.0"
+    "@ornikar/eslint-plugin-ornikar": "npm:22.0.0"
     eslint-config-airbnb-base: "npm:^15.0.0"
     eslint-config-prettier: "npm:^9.0.0"
     eslint-plugin-import: "npm:^2.25.4"
@@ -3039,13 +3039,13 @@ __metadata:
   peerDependencies:
     eslint: ^8.44.0
     prettier: ^2.2.1
-  checksum: 236af9ee0b720ff07279827881c28d1ba54750175993c511caa4d6eccda8b29e9284dbc50c903f168f1e56d5157b7a2d2bbb2f284b7faf8f3eedde4d85b0b0cc
+  checksum: 7c52c6a0239ad7b1c3e846e5e31a0c8074e0c1be4e5899d2323ab5ac188da5879e1c3f1eefdbb0c01e615d3688146784a56ddffb55332ed28c9d9668c346067a
   languageName: node
   linkType: hard
 
-"@ornikar/eslint-plugin-ornikar@npm:21.3.0":
-  version: 21.3.0
-  resolution: "@ornikar/eslint-plugin-ornikar@npm:21.3.0"
+"@ornikar/eslint-plugin-ornikar@npm:22.0.0":
+  version: 22.0.0
+  resolution: "@ornikar/eslint-plugin-ornikar@npm:22.0.0"
   dependencies:
     "@typescript-eslint/utils": "npm:6.10.0"
     eslint-plugin-react: "npm:^7.33.2"
@@ -3056,7 +3056,7 @@ __metadata:
   peerDependenciesMeta:
     typescript:
       optional: true
-  checksum: f6b6edb245d45b791c6b646152e6d084dc3cde53cc9752747911da4d4efd64523c4abe4d44837bee83bd0e63d3dbe100e6eb4be934b84b43dfc72984b8583603
+  checksum: c686d25df9219bb7918e343d2acd87123da2109c8f74bc7747a0ca1f2b307ea38054b7e5952a86edd702a2dec8a8ac0f5010ac6c58aa7528d86ad9ea78eb223b
   languageName: node
   linkType: hard
 
@@ -3290,7 +3290,7 @@ __metadata:
   resolution: "@ornikar/shared-configs@workspace:."
   dependencies:
     "@commitlint/cli": "npm:17.8.1"
-    "@ornikar/eslint-config": "npm:21.3.0"
+    "@ornikar/eslint-config": "npm:22.0.0"
     check-package-dependencies: "npm:7.0.0"
     eslint: "npm:8.55.0"
     jest: "npm:29.7.0"
