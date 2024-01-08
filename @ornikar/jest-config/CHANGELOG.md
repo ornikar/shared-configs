@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [11.1.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config@11.0.0...@ornikar/jest-config@11.1.0) (2024-01-08)
+
+
+### Features
+
+* remove node 21 usage on test [no issue] ([#1057](https://github.com/ornikar/shared-configs/issues/1057)) ([6b8ecb8](https://github.com/ornikar/shared-configs/commit/6b8ecb8bf2c3dd9876a5224240478cd5baced1d8))
+
+
+
 ## [11.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config@10.1.1...@ornikar/jest-config@11.0.0) (2023-12-20)
 
 
