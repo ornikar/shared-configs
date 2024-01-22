@@ -22,7 +22,7 @@ module.exports = {
   testEnvironmentOptions: expoPreset.testEnvironmentOptions || {},
   // override expo transformIgnorePatterns with custom config
   transformIgnorePatterns: [
-    'node_modules/(?!(react-native.*|@react-native.*|expo.*|@expo(nent)?/.*|react-navigation.*|@react-navigation/.*|native-base|@ornikar/.*)/)',
+    'node_modules/(?!(react-native.*|@react-native.*|expo.*|@expo(nent)?/.*|react-navigation.*|@react-navigation/.*|native-base|@ornikar/.*)/|mixpanel-react-native|axios|solito)',
   ],
   transform: {
     ...customTransforms,
