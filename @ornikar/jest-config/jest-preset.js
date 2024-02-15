@@ -18,12 +18,12 @@ module.exports = {
   testMatch: [
     // This first testMatch is used in jest-config-react
     `<rootDir>/${src}/**/__tests__/**/*.${useTypescript ? '{js,ts,tsx}' : 'js'}`,
-    `<rootDir>/${src}/**/*.test.${useTypescript ? '{js,ts,tsx}' : 'js'}`,
-    '<rootDir>/{config,scripts}/**/__tests__/**/*.test.js',
-    '<rootDir>/{config,scripts}/**/*.test.js',
+    `<rootDir>/${src}/**/*.(spec|test).${useTypescript ? '{js,ts,tsx}' : 'js'}`,
+    '<rootDir>/{config,scripts}/**/__tests__/**/*.(spec|test).js',
+    '<rootDir>/{config,scripts}/**/*.(spec|test).js',
   ],
   testPathIgnorePatterns: [],
-  moduleDirectories: useLerna ? ['node_modules', 'src'] : ['node_modules'],
+  moduleDirectories: ['node_modules', 'src'],
   modulePaths: useLerna ? [] : ['<rootDir>/src'],
   setupFiles: [
     require.resolve('./global-mocks.js'),
