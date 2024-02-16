@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [11.1.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react-native@11.0.1...@ornikar/jest-config-react-native@11.1.0) (2024-02-16)
+
+
+### Features
+
+* unify `jest` configs between insurance and education repositories [no issue] ([#1059](https://github.com/ornikar/shared-configs/issues/1059)) ([620d711](https://github.com/ornikar/shared-configs/commit/620d7119fd73231c6f8ba3c7066becb127ad4bfa))
+
+
+
 ## [11.0.1](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react-native@11.0.0...@ornikar/jest-config-react-native@11.0.1) (2024-01-08)
 
 **Note:** Version bump only for package @ornikar/jest-config-react-native
