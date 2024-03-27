@@ -33,7 +33,6 @@ exports.customTransforms = {
     '@sucrase/jest-plugin',
     { transforms: ['flow', 'imports'] },
   ],
-  'node_modules/(@?(use-)?expo.*)/.*\\.(js|jsx|ts|tsx)$': ['@sucrase/jest-plugin', { transforms: ['imports'] }],
 
   // compilation of rest node_modules with sucrase
   'node_modules.*\\.(js|jsx|ts|tsx)$': '@sucrase/jest-plugin',
