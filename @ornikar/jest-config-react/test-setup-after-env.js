@@ -38,6 +38,7 @@ failOnConsole({
     if (message.startsWith('accessibilityLabel is deprecated. Use aria-label.')) return true;
     if (message.startsWith('editable is deprecated. Use readOnly.')) return true;
     if (message.startsWith('props.pointerEvents is deprecated. Use style.pointerEvents')) return true;
+    if (/"transform" style array value is deprecated/.test(message)) return true;
     // Native base does not support role prop and needs accessibilityRole which is deprecated by react-native-web
     if (message.startsWith('accessibilityRole is deprecated. Use role.')) return true;
 
