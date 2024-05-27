@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [14.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@13.0.2...@ornikar/jest-config-react@14.0.0) (2024-05-27)
+
+
+### ⚠ BREAKING CHANGES
+
+* **jest-config-react-native:** bump jest-expo [no issue] (#1068)
+
+### Features
+
+* **jest-config-react-native:** bump jest-expo [no issue] ([#1068](https://github.com/ornikar/shared-configs/issues/1068)) ([09341bc](https://github.com/ornikar/shared-configs/commit/09341bc1e7e839d7ec0b54bf546ad242f8ed91d2))
+
+
+
 ## [13.0.2](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@13.0.1...@ornikar/jest-config-react@13.0.2) (2024-02-16)
 
 **Note:** Version bump only for package @ornikar/jest-config-react

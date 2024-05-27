@@ -1,6 +1,6 @@
 {
   "name": "@ornikar/repo-config",
-  "version": "14.0.0",
+  "version": "14.0.1",
   "description": "🔧 repo config",
   "repository": {
     "directory": "@ornikar/repo-config",
