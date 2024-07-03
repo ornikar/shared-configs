@@ -30,8 +30,8 @@
     }
   },
   "dependencies": {
-    "@lerna/cli": "5.5.4",
-    "@lerna/version": "5.5.4",
+    "@lerna/cli": "6.4.1",
+    "@lerna/version": "6.6.2",
     "@pob/pretty-eslint-config": "^5.0.0",
     "conventional-changelog-conventionalcommits": "^6.0.0"
   },

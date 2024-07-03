@@ -4,7 +4,7 @@
 
 const cli = require('@lerna/cli');
 const pkgLernaCli = require('@lerna/cli/package.json');
-const versionCmd = require('@lerna/version/command');
+const versionCmd = require('@lerna/version/dist/index');
 
 function main(argv) {
   const context = {

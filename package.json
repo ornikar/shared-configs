@@ -3,7 +3,7 @@
   "private": true,
   "repository": "ornikar/shared-configs",
   "scripts": {
-    "lerna": "./@ornikar/monorepo-config/bin/lerna.js",
+    "lerna": "./node_modules/.bin/lerna",
     "lint": "yarn run lint:prettier && yarn run lint:eslint && yarn run lint:stylelint",
     "lint:eslint": "eslint --report-unused-disable-directives --quiet .",
     "lint:eslint:fix": "yarn lint:eslint --fix",
