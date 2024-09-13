@@ -19,14 +19,14 @@
     "@storybook/addon-essentials": "^6.5.15",
     "@storybook/addons": "^6.5.15",
     "@storybook/builder-webpack5": "^6.5.15",
-    "webpack": "^5.75.0"
+    "webpack": "^5.94.0"
   },
   "dependencies": {
     "@ornikar/webpack-config": "10.0.0",
     "@svgr/webpack": "^6.5.1"
   },
   "devDependencies": {
-    "webpack": "5.88.1"
+    "webpack": "5.94.0"
   },
   "scripts": {
     "lint:eslint": "yarn ../.. eslint --report-unused-disable-directives --quiet @ornikar/storybook-config"
