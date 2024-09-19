@@ -48,7 +48,7 @@
     "sucrase": "^3.34.0"
   },
   "devDependencies": {
-    "@testing-library/react-native": "12.6.1",
+    "@testing-library/react-native": "12.7.2",
     "jest-expo": "50.0.3",
     "react": "18.2.0",
     "react-test-renderer": "18.2.0"
