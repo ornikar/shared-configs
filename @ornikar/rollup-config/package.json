@@ -38,7 +38,7 @@
   "devDependencies": {
     "@babel/core": "7.23.3",
     "postcss": "8.4.31",
-    "rollup": "2.77.2"
+    "rollup": "2.79.2"
   },
   "dependencies": {
     "@babel/plugin-transform-runtime": "^7.23.2",
