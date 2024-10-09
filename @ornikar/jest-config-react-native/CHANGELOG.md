@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [12.0.1](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react-native@12.0.0...@ornikar/jest-config-react-native@12.0.1) (2024-10-09)
+
+**Note:** Version bump only for package @ornikar/jest-config-react-native
+
+
+
+
+
 ## [12.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react-native@11.1.0...@ornikar/jest-config-react-native@12.0.0) (2024-05-27)
 
 
