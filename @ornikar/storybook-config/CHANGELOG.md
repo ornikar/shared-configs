@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.1.0](https://github.com/ornikar/shared-configs/compare/@ornikar/storybook-config@9.0.0...@ornikar/storybook-config@9.1.0) (2024-10-09)
+
+
+### Features
+
+* **deps:** update dependency webpack to v5.94.0 [security] ([#1100](https://github.com/ornikar/shared-configs/issues/1100)) ([fb85a62](https://github.com/ornikar/shared-configs/commit/fb85a62b9e33da30602f4d91b415d2d124024108))
+
+
+
 ## [9.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/storybook-config@8.1.0...@ornikar/storybook-config@9.0.0) (2023-12-20)
 
 

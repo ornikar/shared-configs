@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [14.1.0](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@14.0.2...@ornikar/repo-config@14.1.0) (2024-11-27)
+
+
+### Features
+
+* do not add pod-install if expo managed project [no issue] ([#1107](https://github.com/ornikar/shared-configs/issues/1107)) ([5dccb1f](https://github.com/ornikar/shared-configs/commit/5dccb1fb1f07382546cb693ed79e950a7f55aefc))
+
+
+
+## [14.0.2](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@14.0.1...@ornikar/repo-config@14.0.2) (2024-10-09)
+
+**Note:** Version bump only for package @ornikar/repo-config
+
+
+
+
+
 ## [14.0.1](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@14.0.0...@ornikar/repo-config@14.0.1) (2024-05-27)
 
 **Note:** Version bump only for package @ornikar/repo-config
