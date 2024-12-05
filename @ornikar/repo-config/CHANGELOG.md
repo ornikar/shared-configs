@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [14.1.1](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@14.1.0...@ornikar/repo-config@14.1.1) (2024-12-05)
+
+
+### Bug Fixes
+
+* husky pod install rules [no issue] ([#1109](https://github.com/ornikar/shared-configs/issues/1109)) ([07c1790](https://github.com/ornikar/shared-configs/commit/07c1790934badbb63b5737815052dc770ace1196))
+
+
+
 ## [14.1.0](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@14.0.2...@ornikar/repo-config@14.1.0) (2024-11-27)
 
 

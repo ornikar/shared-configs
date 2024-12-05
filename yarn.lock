@@ -3232,7 +3232,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@ornikar/repo-config-react-legacy-css@workspace:@ornikar/repo-config-react-legacy-css"
   dependencies:
-    "@ornikar/repo-config-react": "npm:12.0.3"
+    "@ornikar/repo-config-react": "npm:12.0.4"
     "@ornikar/typed-css-modules-loader": "npm:0.8.1"
     typed-css-modules: "npm:0.8.1"
   bin:
@@ -3240,15 +3240,15 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ornikar/repo-config-react@npm:12.0.3, @ornikar/repo-config-react@workspace:@ornikar/repo-config-react":
+"@ornikar/repo-config-react@npm:12.0.4, @ornikar/repo-config-react@workspace:@ornikar/repo-config-react":
   version: 0.0.0-use.local
   resolution: "@ornikar/repo-config-react@workspace:@ornikar/repo-config-react"
   dependencies:
-    "@ornikar/repo-config": "npm:14.1.0"
+    "@ornikar/repo-config": "npm:14.1.1"
     cross-env: "npm:^7.0.0"
     svgo: "npm:^2.8.0"
   peerDependencies:
-    "@ornikar/repo-config": ^14.1.0
+    "@ornikar/repo-config": ^14.1.1
   peerDependenciesMeta:
     "@ornikar/repo-config":
       optional: true
@@ -3257,7 +3257,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ornikar/repo-config@npm:14.1.0, @ornikar/repo-config@workspace:@ornikar/repo-config":
+"@ornikar/repo-config@npm:14.1.1, @ornikar/repo-config@workspace:@ornikar/repo-config":
   version: 0.0.0-use.local
   resolution: "@ornikar/repo-config@workspace:@ornikar/repo-config"
   dependencies:
