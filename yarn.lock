@@ -3050,11 +3050,11 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ornikar/eslint-config@npm:22.2.0":
-  version: 22.2.0
-  resolution: "@ornikar/eslint-config@npm:22.2.0"
+"@ornikar/eslint-config@npm:22.3.0":
+  version: 22.3.0
+  resolution: "@ornikar/eslint-config@npm:22.3.0"
   dependencies:
-    "@ornikar/eslint-plugin-ornikar": "npm:22.2.0"
+    "@ornikar/eslint-plugin-ornikar": "npm:22.3.0"
     eslint-config-airbnb-base: "npm:^15.0.0"
     eslint-config-prettier: "npm:^9.0.0"
     eslint-plugin-import: "npm:^2.25.4"
@@ -3067,13 +3067,13 @@ __metadata:
   peerDependencies:
     eslint: ^8.44.0
     prettier: ^2.2.1
-  checksum: 10c0/047c795c0f7ae931b601fb862d55199d11209a39c8adb179c40715fa09bc6107f29113ea84ff61e5a5c74027b3130a3b09eddb450f59d0f00307b27dc518584f
+  checksum: 10c0/ceb5408794b27ba92cb48db75f432d8cabaade86a65630837c6c864072586429fc9780189354367f557c8dd22cf0bb4cb085261f11e8f7b393b454c8e5c7d35c
   languageName: node
   linkType: hard
 
-"@ornikar/eslint-plugin-ornikar@npm:22.2.0":
-  version: 22.2.0
-  resolution: "@ornikar/eslint-plugin-ornikar@npm:22.2.0"
+"@ornikar/eslint-plugin-ornikar@npm:22.3.0":
+  version: 22.3.0
+  resolution: "@ornikar/eslint-plugin-ornikar@npm:22.3.0"
   dependencies:
     "@typescript-eslint/utils": "npm:6.21.0"
     eslint-plugin-react: "npm:^7.33.2"
@@ -3084,7 +3084,7 @@ __metadata:
   peerDependenciesMeta:
     typescript:
       optional: true
-  checksum: 10c0/12d0ed7ccaba3a18774a2acd056c9666b443cb57dd6a7a3022bf453c280a58ec2c882c530cefbfe4991ffa712fc9827ac44964deb23f4f606876457b040bef14
+  checksum: 10c0/a51c2d34a80da29691afc3668868955efcd92d1c1bef86d22fbad8f72b73f7dd44cd809ba1322487a0fdba19a3fa6b39b1bf0c8aaf36a8dc77d592a1e333c47a
   languageName: node
   linkType: hard
 
@@ -3318,7 +3318,7 @@ __metadata:
   resolution: "@ornikar/shared-configs@workspace:."
   dependencies:
     "@commitlint/cli": "npm:17.8.1"
-    "@ornikar/eslint-config": "npm:22.2.0"
+    "@ornikar/eslint-config": "npm:22.3.0"
     check-package-dependencies: "npm:7.2.0"
     eslint: "npm:8.57.1"
     jest: "npm:29.7.0"
