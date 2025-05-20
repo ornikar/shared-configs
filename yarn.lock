@@ -3149,7 +3149,7 @@ __metadata:
     "@testing-library/react": "npm:14.3.1"
     identity-obj-proxy: "npm:^3.0.0"
     jest: "npm:29.7.0"
-    jest-fail-on-console: "npm:^3.1.1"
+    jest-fail-on-console: "npm:^3.2.0"
     react: "npm:18.2.0"
     react-dom: "npm:18.2.0"
   peerDependencies:
@@ -3166,7 +3166,7 @@ __metadata:
   resolution: "@ornikar/jest-config@workspace:@ornikar/jest-config"
   dependencies:
     jest: "npm:29.7.0"
-    jest-fail-on-console: "npm:^3.1.1"
+    jest-fail-on-console: "npm:^3.2.0"
     mockdate: "npm:^3.0.2"
     semver: "npm:^7.3.5"
   peerDependencies:
@@ -9052,12 +9052,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"jest-fail-on-console@npm:^3.1.1":
-  version: 3.1.1
-  resolution: "jest-fail-on-console@npm:3.1.1"
-  dependencies:
-    chalk: "npm:^4.1.0"
-  checksum: 10c0/8df3529c5d1c8f6ca20ba362d3138863ea1d2372b95150c8404a0fe8be8238cc30fb87b40e866ae898d0b7da324422a84d6790e33535a1d4dc1f9bfe8f273bde
+"jest-fail-on-console@npm:^3.2.0":
+  version: 3.3.1
+  resolution: "jest-fail-on-console@npm:3.3.1"
+  checksum: 10c0/eac050ef24dc97021bf461bc950feed2c891bb0a6531f2c348dd698fd4563d6ccb3afa2feb6e0c6388c4c80b5e13f5574fba4ea974914d859bad4c69af107e27
   languageName: node
   linkType: hard
 
