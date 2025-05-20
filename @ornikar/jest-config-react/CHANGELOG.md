@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [14.1.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@14.0.0...@ornikar/jest-config-react@14.1.0) (2025-05-20)
+
+
+### Features
+
+* allow react 19 deprecation messages [no issue] ([#1118](https://github.com/ornikar/shared-configs/issues/1118)) ([e019c5c](https://github.com/ornikar/shared-configs/commit/e019c5c67c7706385d5c86b6b893d0f8f4ffb5b7))
+
+
+
 ## [14.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@13.0.2...@ornikar/jest-config-react@14.0.0) (2024-05-27)
 
 
