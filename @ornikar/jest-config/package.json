@@ -1,6 +1,6 @@
 {
   "name": "@ornikar/jest-config",
-  "version": "11.2.0",
+  "version": "11.3.0",
   "description": "✅ jest config",
   "repository": {
     "directory": "@ornikar/jest-config",
@@ -20,7 +20,7 @@
     "ornikar-test-coverage": "./bin/test-coverage.sh"
   },
   "dependencies": {
-    "jest-fail-on-console": "^3.1.1",
+    "jest-fail-on-console": "^3.2.0",
     "mockdate": "^3.0.2",
     "semver": "^7.3.5"
   },

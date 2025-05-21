@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.0.1](https://github.com/ornikar/shared-configs/compare/@ornikar/browserslist-config@7.0.0...@ornikar/browserslist-config@7.0.1) (2025-05-06)
+
+
+### Bug Fixes
+
+* add not dead to browserlist config [no issue] ([#1119](https://github.com/ornikar/shared-configs/issues/1119)) ([96dd672](https://github.com/ornikar/shared-configs/commit/96dd672773127eedaf3887387b398af438f6bedc))
+
+
+
 ## [7.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/browserslist-config@6.0.0...@ornikar/browserslist-config@7.0.0) (2023-12-20)
 
 
