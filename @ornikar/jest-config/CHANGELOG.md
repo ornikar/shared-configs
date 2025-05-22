@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [11.4.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config@11.3.0...@ornikar/jest-config@11.4.0) (2025-05-22)
+
+
+### Features
+
+* fix jest-fail-on-console version [no issue] ([#1120](https://github.com/ornikar/shared-configs/issues/1120)) ([db26824](https://github.com/ornikar/shared-configs/commit/db26824008d980ae8e30ffcd8856407099e01c4d))
+
+
+
 ## [11.3.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config@11.2.0...@ornikar/jest-config@11.3.0) (2025-05-20)
 
 
