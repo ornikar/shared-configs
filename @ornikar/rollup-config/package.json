@@ -1,6 +1,6 @@
 {
   "name": "@ornikar/rollup-config",
-  "version": "9.0.0",
+  "version": "9.0.1",
   "description": "📦 rollup config files",
   "repository": {
     "directory": "@ornikar/rollup-config",
@@ -43,7 +43,7 @@
   "dependencies": {
     "@babel/plugin-transform-runtime": "^7.23.2",
     "@ornikar/babel-preset-base": "5.0.0",
-    "@ornikar/babel-preset-kitt-universal": "6.0.0",
+    "@ornikar/babel-preset-kitt-universal": "6.0.1",
     "@ornikar/babel-preset-react": "5.0.0",
     "@rollup/plugin-babel": "^5.3.1",
     "@rollup/plugin-node-resolve": "^13.0.0",
