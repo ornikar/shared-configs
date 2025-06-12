@@ -20,7 +20,7 @@
     "ornikar-test-coverage": "./bin/test-coverage.sh"
   },
   "dependencies": {
-    "jest-fail-on-console": "3.2.0",
+    "jest-fail-on-console": "3.3.1",
     "mockdate": "^3.0.2",
     "semver": "^7.3.5"
   },
