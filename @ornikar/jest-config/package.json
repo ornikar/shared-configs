@@ -25,10 +25,10 @@
     "semver": "^7.3.5"
   },
   "peerDependencies": {
-    "jest": "^29.5.0"
+    "jest": "^30.0.0"
   },
   "devDependencies": {
-    "jest": "29.7.0"
+    "jest": "30.0.0"
   },
   "scripts": {
     "lint:eslint": "yarn ../.. eslint --report-unused-disable-directives --quiet @ornikar/jest-config"
