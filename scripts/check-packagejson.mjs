@@ -11,11 +11,6 @@ await createCheckPackageWithWorkspaces({
           missingPeerDependency: ['styled-components'],
         },
       },
-      '@ornikar/jest-config-react-native': {
-        'jest-expo': {
-          duplicateDirectDependency: ['react-test-renderer'],
-        },
-      },
     },
   })
   .run();
