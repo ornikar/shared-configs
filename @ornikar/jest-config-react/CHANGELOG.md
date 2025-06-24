@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [15.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@14.2.1...@ornikar/jest-config-react@15.0.0) (2025-06-24)
+
+
+### ⚠ BREAKING CHANGES
+
+* upgrade jest to v30 OSE-18109 (#1121)
+
+### Features
+
+* upgrade jest to v30 OSE-18109 ([#1121](https://github.com/ornikar/shared-configs/issues/1121)) ([38b728a](https://github.com/ornikar/shared-configs/commit/38b728ade6294995edb3022a1f5f35b4ec619dae))
+
+
+
 ## [14.2.1](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@14.2.0...@ornikar/jest-config-react@14.2.1) (2025-06-02)
 
 **Note:** Version bump only for package @ornikar/jest-config-react

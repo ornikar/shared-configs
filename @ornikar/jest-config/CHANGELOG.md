@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [12.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config@11.4.0...@ornikar/jest-config@12.0.0) (2025-06-24)
+
+
+### ⚠ BREAKING CHANGES
+
+* upgrade jest to v30 OSE-18109 (#1121)
+
+### Features
+
+* upgrade jest to v30 OSE-18109 ([#1121](https://github.com/ornikar/shared-configs/issues/1121)) ([38b728a](https://github.com/ornikar/shared-configs/commit/38b728ade6294995edb3022a1f5f35b4ec619dae))
+
+
+
 ## [11.4.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config@11.3.0...@ornikar/jest-config@11.4.0) (2025-05-22)
 
 
