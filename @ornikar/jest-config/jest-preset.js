@@ -31,7 +31,7 @@ module.exports = {
     '<rootDir>/test-setup.js',
   ],
   setupFilesAfterEnv: [require.resolve('./test-setup-after-env')],
-  globalSetup: require.resolve('./jest-global-setup.js'),
+  // globalSetup: require.resolve('./jest-global-setup.js'),
   clearMocks: true,
   // Explicitly set both reset/restoreMocks as their default
   // See https://github.com/ornikar/shared-configs/pull/820#discussion_r1034570609
