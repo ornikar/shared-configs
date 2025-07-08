@@ -252,7 +252,7 @@ const createBuildsForPackage = (
   };
 
   const hasPeerDependencyReactNative = !!(pkg.peerDependencies && pkg.peerDependencies['react-native']);
-  const nodeVersion = '20.10';
+  const nodeVersion = '22.17.0';
   return entries.flatMap((entryName) =>
     [
       createBuild(entryName, '', 'all', ['es'], {
