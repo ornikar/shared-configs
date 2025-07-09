@@ -1,9 +1,5 @@
 # https://help.github.com/en/articles/about-code-owners
 
-## catch all
-
-* @ornikar/frontend-configs-maintainers
-
 ## let renovate automerge on passing tests
 
 package.json
