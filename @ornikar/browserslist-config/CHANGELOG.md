@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [8.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/browserslist-config@7.0.1...@ornikar/browserslist-config@8.0.0) (2025-07-10)
+
+
+### ⚠ BREAKING CHANGES
+
+* upgrade to Node 22 OSE-18334 (#1125)
+
+### Features
+
+* upgrade to Node 22 OSE-18334 ([#1125](https://github.com/ornikar/shared-configs/issues/1125)) ([7b3ccd1](https://github.com/ornikar/shared-configs/commit/7b3ccd13ec1cb1bce776a15f889039e70a47d72e))
+
+
+
 ## [7.0.1](https://github.com/ornikar/shared-configs/compare/@ornikar/browserslist-config@7.0.0...@ornikar/browserslist-config@7.0.1) (2025-05-06)
 
 

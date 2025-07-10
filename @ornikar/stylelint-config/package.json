@@ -1,6 +1,6 @@
 {
   "name": "@ornikar/stylelint-config",
-  "version": "13.0.0",
+  "version": "14.0.0",
   "description": "🚨🎨 stylelint config files",
   "repository": {
     "directory": "@ornikar/stylelint-config",

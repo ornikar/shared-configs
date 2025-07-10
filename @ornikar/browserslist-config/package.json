@@ -1,6 +1,6 @@
 {
   "name": "@ornikar/browserslist-config",
-  "version": "7.0.1",
+  "version": "8.0.0",
   "description": "🦔 browserslist config files",
   "repository": {
     "directory": "@ornikar/browserslist-config",
