@@ -1,6 +1,6 @@
 {
   "name": "@ornikar/storybook-config",
-  "version": "9.1.0",
+  "version": "10.0.0",
   "description": "📖 storybook config files",
   "repository": {
     "directory": "@ornikar/storybook-config",
@@ -10,7 +10,7 @@
   "main": "index.js",
   "license": "ISC",
   "engines": {
-    "node": ">=20.10.0"
+    "node": ">=22.17.0"
   },
   "publishConfig": {
     "access": "public"
@@ -22,7 +22,7 @@
     "webpack": "^5.94.0"
   },
   "dependencies": {
-    "@ornikar/webpack-config": "10.1.0",
+    "@ornikar/webpack-config": "11.0.0",
     "@svgr/webpack": "^6.5.1"
   },
   "devDependencies": {

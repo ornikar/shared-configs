@@ -1,4 +1,4 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
 exports[`fixtures test-monorepo @ornikar/rollup-config/__fixtures__/test-monorepo/@ornikar/basic/dist/index.es.js 1`] = `
 "var sayHello = function () {
@@ -10,7 +10,7 @@ export { sayHello };
 "
 `;
 
-exports[`fixtures test-monorepo @ornikar/rollup-config/__fixtures__/test-monorepo/@ornikar/basic/dist/index-node-20.10.es.mjs 1`] = `
+exports[`fixtures test-monorepo @ornikar/rollup-config/__fixtures__/test-monorepo/@ornikar/basic/dist/index-node-22.17.es.mjs 1`] = `
 "const sayHello = (name = 'world') => {
   console.log(\`hello \${name}\`);
 };
@@ -43,7 +43,7 @@ export { sayHello, testSpread };
 "
 `;
 
-exports[`fixtures test-monorepo @ornikar/rollup-config/__fixtures__/test-monorepo/@ornikar/using-runtime/dist/index-node-20.10.es.mjs 1`] = `
+exports[`fixtures test-monorepo @ornikar/rollup-config/__fixtures__/test-monorepo/@ornikar/using-runtime/dist/index-node-22.17.es.mjs 1`] = `
 "const sayHello = (...names) => {
   console.log(\`hello \${names.join(', ')}\`);
 };
