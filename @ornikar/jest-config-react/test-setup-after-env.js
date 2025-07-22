@@ -18,6 +18,11 @@ failOnConsole({
       return true;
     }
 
+    // Silence a warning from react-native-reanimated to "avoid confusion" (see https://docs.swmansion.com/react-native-reanimated/docs/guides/troubleshooting/#reduced-motion-setting-is-enabled-on-this-device).
+    if (message.includes('[Reanimated] Reduced motion setting is enabled on this device.')) {
+      return true;
+    }
+
     // Do not ignore the act / await warning anymore once we are on React 18
     if (message.includes('You called act(async () => ...) without await')) return true;
 
