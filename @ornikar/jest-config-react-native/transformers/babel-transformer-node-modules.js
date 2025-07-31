@@ -8,4 +8,7 @@ module.exports = babelJest.createTransformer({
   presets: [['babel-preset-expo', { jsxRuntime: 'automatic' }]],
   babelrc: false,
   configFile: false,
+  caller: {
+    platform: 'ios',
+  },
 });
