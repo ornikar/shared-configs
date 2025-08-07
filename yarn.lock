@@ -3566,7 +3566,7 @@ __metadata:
     babel-plugin-minify-dead-code-elimination: "npm:^0.5.1"
     babel-plugin-minify-replace: "npm:^0.5.0"
     postcss: "npm:8.4.31"
-    rollup: "npm:2.77.2"
+    rollup: "npm:2.79.2"
     rollup-config-external-dependencies: "npm:^2.0.0"
     rollup-plugin-postcss: "npm:4.0.2"
     rollup-plugin-svgr: "npm:1.0.0"
@@ -13176,9 +13176,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"rollup@npm:2.77.2":
-  version: 2.77.2
-  resolution: "rollup@npm:2.77.2"
+"rollup@npm:2.79.2":
+  version: 2.79.2
+  resolution: "rollup@npm:2.79.2"
   dependencies:
     fsevents: "npm:~2.3.2"
   dependenciesMeta:
@@ -13186,7 +13186,7 @@ __metadata:
       optional: true
   bin:
     rollup: dist/bin/rollup
-  checksum: 10c0/627f20c634084f020b703c9c170b041ac90309ea8a392d3802e1ef0ef21b2fb15d922c09f9833e46d3d23731ad513e723a0481b7f06d1268377412d5389dd4b8
+  checksum: 10c0/bc3746c988d903c2211266ddc539379d53d92689b9cc5c2b4e3ae161689de9af491957a567c629b6cc81f48d0928a7591fc4c383fba68a48d2966c9fb8a2bce9
   languageName: node
   linkType: hard
 
