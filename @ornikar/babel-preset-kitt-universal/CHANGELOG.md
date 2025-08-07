@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.1.0](https://github.com/ornikar/shared-configs/compare/@ornikar/babel-preset-kitt-universal@7.0.0...@ornikar/babel-preset-kitt-universal@7.1.0) (2025-08-07)
+
+
+### Features
+
+* remove styled-components relative configuration [no issue] ([#1128](https://github.com/ornikar/shared-configs/issues/1128)) ([4e6852a](https://github.com/ornikar/shared-configs/commit/4e6852ad0bddd5f918d03c6debdf1511559b36c5))
+
+
+
 ## [7.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/babel-preset-kitt-universal@6.0.1...@ornikar/babel-preset-kitt-universal@7.0.0) (2025-07-10)
 
 
