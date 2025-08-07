@@ -4,9 +4,6 @@
 
 exports.presetOptions = {
   isWeb: true,
-  enableLegacyStyledComponents: true,
-  enableStyledComponentsReactNativeImport: true,
-  styledComponentsOptions: { ssr: false },
 };
 
 exports.babelPresets = [['@babel/preset-react', { runtime: 'automatic' }]];
@@ -25,12 +22,11 @@ function TestComponentUsingButton() {
 `;
 
 exports.expected = `
-import * as BabelPluginStyledComponentsReactNative from "react-native";
 import styled from 'styled-components/native';
 import { jsx as _jsx } from "react/jsx-runtime";
-const Button = /*#__PURE__*/styled(BabelPluginStyledComponentsReactNative.View).withConfig({
-  displayName: "web-with-react-refresh__Button"
-})(["display:flex;"]);
+const Button = styled.View\`
+  display: flex;
+\`;
 _c = Button;
 function TestComponentUsingButton() {
   return /*#__PURE__*/_jsx(Button, {});

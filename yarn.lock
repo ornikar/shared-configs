@@ -121,7 +121,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/helper-annotate-as-pure@npm:^7.16.0, @babel/helper-annotate-as-pure@npm:^7.22.5":
+"@babel/helper-annotate-as-pure@npm:^7.22.5":
   version: 7.22.5
   resolution: "@babel/helper-annotate-as-pure@npm:7.22.5"
   dependencies:
@@ -234,7 +234,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/helper-module-imports@npm:^7.10.4, @babel/helper-module-imports@npm:^7.16.0, @babel/helper-module-imports@npm:^7.18.6, @babel/helper-module-imports@npm:^7.22.15, @babel/helper-module-imports@npm:^7.22.5, @babel/helper-module-imports@npm:^7.27.1":
+"@babel/helper-module-imports@npm:^7.10.4, @babel/helper-module-imports@npm:^7.18.6, @babel/helper-module-imports@npm:^7.22.15, @babel/helper-module-imports@npm:^7.22.5, @babel/helper-module-imports@npm:^7.27.1":
   version: 7.27.1
   resolution: "@babel/helper-module-imports@npm:7.27.1"
   dependencies:
@@ -3290,8 +3290,6 @@ __metadata:
     "@linaria/shaker": "npm:4.2.0"
     babel-plugin-linaria-css-to-undefined: "npm:^0.3.0"
     babel-plugin-react-native: "npm:^2.0.0"
-    babel-plugin-styled-components: "npm:^2.0.2"
-    babel-plugin-styled-components-react-native-web: "npm:^0.2.2"
     react-refresh: "npm:0.17.0"
   peerDependencies:
     "@babel/core": ^7.0.0
@@ -5476,37 +5474,6 @@ __metadata:
   peerDependencies:
     "@babel/core": ^7.0.0
   checksum: 10c0/c6762ffeff78bf1194541cc12f8a34c2facb16f93c6eab0c14c07c07d69d74c6dc5344b5331a0bfe38b926c55382b8242064bb6b6c599c0fd34def62ff302204
-  languageName: node
-  linkType: hard
-
-"babel-plugin-styled-components-react-native-web@npm:^0.2.2":
-  version: 0.2.2
-  resolution: "babel-plugin-styled-components-react-native-web@npm:0.2.2"
-  peerDependencies:
-    "@babel/core": ^7.0.0
-  checksum: 10c0/5fec4f4d429a5433c006fa08ce4ed40d01ceacdffff34fef2b9a0d9133c6e307d084e0f67de1e52106bb50b4d80456e55c60b2de842dc579a976b0aceb24b77d
-  languageName: node
-  linkType: hard
-
-"babel-plugin-styled-components@npm:^2.0.2":
-  version: 2.0.6
-  resolution: "babel-plugin-styled-components@npm:2.0.6"
-  dependencies:
-    "@babel/helper-annotate-as-pure": "npm:^7.16.0"
-    "@babel/helper-module-imports": "npm:^7.16.0"
-    babel-plugin-syntax-jsx: "npm:^6.18.0"
-    lodash: "npm:^4.17.11"
-    picomatch: "npm:^2.3.0"
-  peerDependencies:
-    styled-components: ">= 2"
-  checksum: 10c0/3056e12bea47524aa092a8a76ee430824f18ec45243d1ec305aab437704ea260c6cb77067fdc500b64221253a223f520c2783dc2b8b44a374597ac460b52ac93
-  languageName: node
-  linkType: hard
-
-"babel-plugin-syntax-jsx@npm:^6.18.0":
-  version: 6.18.0
-  resolution: "babel-plugin-syntax-jsx@npm:6.18.0"
-  checksum: 10c0/d5954e9c2a3dd519f23e78674ecfba61394a8fae63499afdeca4214fad68997556ebd15ce012bbc4d527ae0e3cecc98d3e8f78004a68707122642d0df4ab7213
   languageName: node
   linkType: hard
 
@@ -11781,7 +11748,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"picomatch@npm:^2.0.4, picomatch@npm:^2.2.1, picomatch@npm:^2.2.2, picomatch@npm:^2.2.3, picomatch@npm:^2.3.0, picomatch@npm:^2.3.1":
+"picomatch@npm:^2.0.4, picomatch@npm:^2.2.1, picomatch@npm:^2.2.2, picomatch@npm:^2.2.3, picomatch@npm:^2.3.1":
   version: 2.3.1
   resolution: "picomatch@npm:2.3.1"
   checksum: 10c0/26c02b8d06f03206fc2ab8d16f19960f2ff9e81a658f831ecb656d8f17d9edc799e8364b1f4a7873e89d9702dff96204be0fa26fe4181f6843f040f819dac4be
