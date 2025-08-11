@@ -19,7 +19,6 @@ module.exports = (
     ...webpackConfig.resolve.alias,
     'react-native$': 'react-native-web',
     '@storybook/react-native$': '@storybook/react',
-    'styled-components$': 'styled-components/native',
   };
 
   const babelLoaderConfig = {

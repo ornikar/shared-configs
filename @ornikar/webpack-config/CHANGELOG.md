@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [11.1.0](https://github.com/ornikar/shared-configs/compare/@ornikar/webpack-config@11.0.0...@ornikar/webpack-config@11.1.0) (2025-08-07)
+
+
+### Features
+
+* remove styled-components relative configuration [no issue] ([#1128](https://github.com/ornikar/shared-configs/issues/1128)) ([4e6852a](https://github.com/ornikar/shared-configs/commit/4e6852ad0bddd5f918d03c6debdf1511559b36c5))
+
+
+
 ## [11.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/webpack-config@10.1.0...@ornikar/webpack-config@11.0.0) (2025-07-10)
 
 

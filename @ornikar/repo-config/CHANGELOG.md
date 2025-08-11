@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [15.1.0](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@15.0.0...@ornikar/repo-config@15.1.0) (2025-08-07)
+
+
+### Features
+
+* **deps:** update dependency lint-staged to v15.5.2 ([#1113](https://github.com/ornikar/shared-configs/issues/1113)) ([9b30d84](https://github.com/ornikar/shared-configs/commit/9b30d8410165e5b56ef062f3d892e9277ccc87fc))
+
+
+
 ## [15.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@14.1.1...@ornikar/repo-config@15.0.0) (2025-07-10)
 
 
