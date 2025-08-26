@@ -2,7 +2,6 @@
 
 const baseOrnikarPreset = require('@ornikar/jest-config-react/jest-preset');
 const expoPreset = require('jest-expo/web/jest-preset');
-const { customTransforms } = require('../customTransforms');
 const ornikarReactNativePreset = require('../jest-preset');
 
 module.exports = {
@@ -24,7 +23,6 @@ module.exports = {
   },
   transformIgnorePatterns: ornikarReactNativePreset.transformIgnorePatterns,
   transform: {
-    ...customTransforms,
     ...baseOrnikarPreset.transform,
   },
 };

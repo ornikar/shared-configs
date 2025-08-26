@@ -2,7 +2,6 @@
 
 const baseOrnikarPreset = require('@ornikar/jest-config-react/jest-preset');
 const expoPreset = require('jest-expo/jest-preset');
-const { customTransforms } = require('./customTransforms');
 
 module.exports = {
   ...baseOrnikarPreset,
@@ -25,8 +24,6 @@ module.exports = {
     'node_modules/(?!(react-native.*|@react-native.*|expo.*|@expo(nent)?/.*|react-navigation.*|@react-navigation/.*|native-base|@ornikar/.*)/|mixpanel-react-native|axios|solito)',
   ],
   transform: {
-    ...customTransforms,
-
     // remove svg asset transformer from expo config, as we configure svg with custom metro transformer
     ...Object.fromEntries(
       Object.entries(expoPreset.transform).map(([key, value]) => {
