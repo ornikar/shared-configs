@@ -85,6 +85,7 @@ import { getTopLevelWorkspace, getTopologicalOrderWorkspaces } from '../index.mj
         noEmitOnError: true,
         declaration: true,
         declarationMap: true,
+        noUncheckedIndexedAccess: true,
         outDir: `../../node_modules/.cache/tsc/${pkg.name}`,
         tsBuildInfoFile: `../../node_modules/.cache/tsc/${pkg.name}/tsbuildinfo`,
       };
