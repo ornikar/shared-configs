@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [14.1.0](https://github.com/ornikar/shared-configs/compare/@ornikar/monorepo-config@14.0.0...@ornikar/monorepo-config@14.1.0) (2025-10-02)
+
+
+### Features
+
+* add noUncheckedIndexedAccess to tsconfig geenrator [no issue] ([#1131](https://github.com/ornikar/shared-configs/issues/1131)) ([e112104](https://github.com/ornikar/shared-configs/commit/e11210447cc68bc28d3bf16667d12b09f2a442cc))
+
+
+
 ## [14.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/monorepo-config@13.0.0...@ornikar/monorepo-config@14.0.0) (2025-07-10)
 
 

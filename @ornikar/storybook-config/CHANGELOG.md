@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [10.1.0](https://github.com/ornikar/shared-configs/compare/@ornikar/storybook-config@10.0.1...@ornikar/storybook-config@10.1.0) (2025-10-02)
+
+
+### Features
+
+* bump storybook v7 peer deps [no issue] ([#1132](https://github.com/ornikar/shared-configs/issues/1132)) ([0c81a77](https://github.com/ornikar/shared-configs/commit/0c81a77276ce51332715d7f4340dd0de66ac8847))
+
+
+
 ## [10.0.1](https://github.com/ornikar/shared-configs/compare/@ornikar/storybook-config@10.0.0...@ornikar/storybook-config@10.0.1) (2025-08-07)
 
 **Note:** Version bump only for package @ornikar/storybook-config
