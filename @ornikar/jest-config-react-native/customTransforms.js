@@ -20,18 +20,15 @@ exports.customTransforms = {
   ),
 
   // compilation of react-native with sucrase fails since expo 48 update
-  'node_modules/react-native/.*\\.(js|jsx|ts|tsx)$': require.resolve(
+  // compilation of expo packages with sucrase fails since expo 52 update
+  'node_modules/(expo|expo-.*|@expo.*|react-native)/.*\\.(js|jsx|ts|tsx)$': require.resolve(
     './transformers/babel-transformer-node-modules.js',
   ),
 
   // https://github.com/expo/expo/blob/d5d454eb585bdd8fb1a07e2910ba99dca8fd8786/packages/@expo/metro-config/src/transformer/createMultiRuleTransformer.ts#L207
-  'node_modules/(expo-processing|@expo/vector-icons)/.*\\.(js|jsx|ts|tsx)$': [
+  'node_modules/(expo-processing|@expo/vector-icons|expo-assets-utils)/.*\\.(js|jsx|ts|tsx)$': [
     '@sucrase/jest-plugin',
     { transforms: ['jsx', 'imports'] },
-  ],
-  'node_modules/(expo-assets-utils)/.*\\.(js|jsx|ts|tsx)$': [
-    '@sucrase/jest-plugin',
-    { transforms: ['flow', 'imports'] },
   ],
 
   // compilation of rest node_modules with sucrase
