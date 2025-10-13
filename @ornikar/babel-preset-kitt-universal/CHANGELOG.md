@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.2.0](https://github.com/ornikar/shared-configs/compare/@ornikar/babel-preset-kitt-universal@7.1.0...@ornikar/babel-preset-kitt-universal@7.2.0) (2025-10-13)
+
+
+### Features
+
+* expo 52 [no issue] ([#1115](https://github.com/ornikar/shared-configs/issues/1115)) ([cdd2542](https://github.com/ornikar/shared-configs/commit/cdd25427d155ac14eab2017553fd267fb235a82b))
+
+
+
 ## [7.1.0](https://github.com/ornikar/shared-configs/compare/@ornikar/babel-preset-kitt-universal@7.0.0...@ornikar/babel-preset-kitt-universal@7.1.0) (2025-08-07)
 
 
