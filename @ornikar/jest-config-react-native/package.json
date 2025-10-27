@@ -23,7 +23,7 @@
     "jest-expo": "^53.0.10",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-native": ">=0.76"
+    "react-native": ">=0.79"
   },
   "peerDependenciesMeta": {
     "@testing-library/react": {
