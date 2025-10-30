@@ -43,9 +43,7 @@
     }
   },
   "dependencies": {
-    "@ornikar/jest-config-react": "17.0.0",
-    "@sucrase/jest-plugin": "^3.0.0",
-    "sucrase": "^3.34.0"
+    "@ornikar/jest-config-react": "17.0.0"
   },
   "devDependencies": {
     "@testing-library/react-native": "12.9.0",
