@@ -19,18 +19,9 @@ exports.customTransforms = {
     './transformers/identity-transformer.js',
   ),
 
-  // compilation of react-native with sucrase fails since expo 48 update
-  // compilation of expo packages with sucrase fails since expo 52 update
+  // The default Expo babel preset is not applied as we have our own babel config
+  // See https://github.com/expo/expo/blob/sdk-52/packages/jest-expo/src/resolveBabelConfig.js
   'node_modules/(expo|expo-.*|@expo.*|react-native)/.*\\.(js|jsx|ts|tsx)$': require.resolve(
     './transformers/babel-transformer-node-modules.js',
   ),
-
-  // https://github.com/expo/expo/blob/d5d454eb585bdd8fb1a07e2910ba99dca8fd8786/packages/@expo/metro-config/src/transformer/createMultiRuleTransformer.ts#L207
-  'node_modules/(expo-processing|@expo/vector-icons|expo-assets-utils)/.*\\.(js|jsx|ts|tsx)$': [
-    '@sucrase/jest-plugin',
-    { transforms: ['jsx', 'imports'] },
-  ],
-
-  // compilation of rest node_modules with sucrase
-  'node_modules.*\\.(js|jsx|ts|tsx)$': '@sucrase/jest-plugin',
 };
