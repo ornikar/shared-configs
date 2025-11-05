@@ -10,8 +10,9 @@ exports.customTransforms = {
     './transformers/babel-transformer-ornikar-packages.js',
   ),
 
-  // compilation of problematic node_modules has a simpler babel config
-  'node_modules/(react-native-(calendars|reanimated)|@react-native-community/netinfo|@react-native/virtualized-lists)/.*\\.(js|jsx|ts|tsx)$':
+  // The default Expo babel preset is not applied as we have our own babel config
+  // See https://github.com/expo/expo/blob/sdk-52/packages/jest-expo/src/resolveBabelConfig.js
+  'node_modules/(expo|expo-.*|@expo.*|react-native|react-native-(calendars|reanimated)|@react-native-community/netinfo|@react-native/virtualized-lists)/.*\\.(js|jsx|ts|tsx)$':
     require.resolve('./transformers/babel-transformer-node-modules.js'),
 
   // dont transform node_modules when already compiled
@@ -19,9 +20,6 @@ exports.customTransforms = {
     './transformers/identity-transformer.js',
   ),
 
-  // The default Expo babel preset is not applied as we have our own babel config
-  // See https://github.com/expo/expo/blob/sdk-52/packages/jest-expo/src/resolveBabelConfig.js
-  'node_modules/(expo|expo-.*|@expo.*|react-native)/.*\\.(js|jsx|ts|tsx)$': require.resolve(
-    './transformers/babel-transformer-node-modules.js',
-  ),
+  // compilation of rest node_modules with sucrase
+  'node_modules.*\\.(js|jsx|ts|tsx)$': '@sucrase/jest-plugin',
 };
