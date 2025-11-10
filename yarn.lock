@@ -3405,9 +3405,11 @@ __metadata:
   resolution: "@ornikar/jest-config-react-native@workspace:@ornikar/jest-config-react-native"
   dependencies:
     "@ornikar/jest-config-react": "npm:17.0.0"
+    "@sucrase/jest-plugin": "npm:^3.0.0"
     "@testing-library/react-native": "npm:12.9.0"
     jest-expo: "npm:52.0.6"
     react: "npm:18.3.1"
+    sucrase: "npm:^3.34.0"
   peerDependencies:
     "@testing-library/react": ^14.0.0
     "@testing-library/react-native": ^11.5.4 || ^12.1.2
@@ -3822,6 +3824,16 @@ __metadata:
   dependencies:
     "@sinonjs/commons": "npm:^3.0.1"
   checksum: 10c0/a707476efd523d2138ef6bba916c83c4a377a8372ef04fad87499458af9f01afc58f4f245c5fd062793d6d70587309330c6f96947b5bd5697961c18004dc3e26
+  languageName: node
+  linkType: hard
+
+"@sucrase/jest-plugin@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "@sucrase/jest-plugin@npm:3.0.0"
+  peerDependencies:
+    jest: ">=27"
+    sucrase: ">=3.25.0"
+  checksum: 10c0/c8317981fc75fa8a35d8e71318c9051ffe3b75d85d94ee5b1cba2e0553a6b0e0c08dabf87a35e0fd16dd2a60a2718e87e4ef0a5c935f059ebda4c1298d11f6f1
   languageName: node
   linkType: hard
 
@@ -14502,7 +14514,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"sucrase@npm:3.35.0":
+"sucrase@npm:3.35.0, sucrase@npm:^3.34.0":
   version: 3.35.0
   resolution: "sucrase@npm:3.35.0"
   dependencies:
