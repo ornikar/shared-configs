@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [15.2.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react-native@15.1.0...@ornikar/jest-config-react-native@15.2.0) (2025-11-13)
+
+
+### Features
+
+* **jest-config-react-native:** remove sucrase OSE-19637 ([#1134](https://github.com/ornikar/shared-configs/issues/1134)) ([e35dc36](https://github.com/ornikar/shared-configs/commit/e35dc360588b09ad67e7fccca8d42c2c9fb27922))
+
+
+
 ## [15.1.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react-native@15.0.0...@ornikar/jest-config-react-native@15.1.0) (2025-10-13)
 
 
