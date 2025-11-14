@@ -5,9 +5,10 @@
  */
 
 exports.customTransforms = {
-  // compilation of ornikar packages
+  // Compilation of Ornikar packages through babel-preset-expo, which applies the platform, jsxRuntime and reanimated plugin.
+  // See https://www.npmjs.com/package/babel-preset-expo?activeTab=readme
   'node_modules/@ornikar/(.[a-z-]*)/dist/.*\\.(js|cjs|mjs)$': require.resolve(
-    './transformers/babel-transformer-ornikar-packages.js',
+    './transformers/babel-transformer-node-modules.js',
   ),
 
   // The default Expo babel preset is not applied as we have our own babel config
