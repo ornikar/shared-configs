@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [15.4.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react-native@15.3.0...@ornikar/jest-config-react-native@15.4.0) (2025-11-25)
+
+
+### Features
+
+* upgrade RTL [OSE-18110] ([#1141](https://github.com/ornikar/shared-configs/issues/1141)) ([a03e874](https://github.com/ornikar/shared-configs/commit/a03e8748d3a16303870175f9221e900ea991b05a))
+
+
+
 ## [15.3.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react-native@15.2.0...@ornikar/jest-config-react-native@15.3.0) (2025-11-14)
 
 
