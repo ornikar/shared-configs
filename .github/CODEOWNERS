@@ -1,5 +1,7 @@
 # https://help.github.com/en/articles/about-code-owners
 
+* @ornikar/core-edu-frontend
+
 ## let renovate automerge on passing tests
 
 package.json
