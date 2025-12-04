@@ -20,10 +20,10 @@
     "@testing-library/react-native": "^11.5.4 || ^12.1.2 || ^13.0.0",
     "jest": "^30.0.0",
     "jest-environment-jsdom": "^30.0.0",
-    "jest-expo": "^52.0.6",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "react-native": ">=0.76"
+    "jest-expo": "^53.0.10",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-native": ">=0.79"
   },
   "peerDependenciesMeta": {
     "@testing-library/react": {
@@ -49,8 +49,8 @@
   },
   "devDependencies": {
     "@testing-library/react-native": "13.3.3",
-    "jest-expo": "52.0.6",
-    "react": "18.3.1"
+    "jest-expo": "53.0.10",
+    "react": "19.0.0"
   },
   "scripts": {
     "lint:eslint": "yarn ../.. eslint --report-unused-disable-directives --quiet @ornikar/jest-config-react-native"
