@@ -1,6 +1,6 @@
 {
   "name": "@ornikar/jest-config-react-native",
-  "version": "15.3.0",
+  "version": "15.4.0",
   "description": "✅⚛️📱 jest config for react-native",
   "repository": {
     "directory": "@ornikar/jest-config-react-native",
@@ -16,8 +16,8 @@
     "access": "public"
   },
   "peerDependencies": {
-    "@testing-library/react": "^16.1.0",
-    "@testing-library/react-native": "^11.5.4 || ^12.1.2",
+    "@testing-library/react": "^14.0.0 || ^15.0.0 || ^16.0.0",
+    "@testing-library/react-native": "^11.5.4 || ^12.1.2 || ^13.0.0",
     "jest": "^30.0.0",
     "jest-environment-jsdom": "^30.0.0",
     "jest-expo": "^53.0.10",
@@ -43,12 +43,12 @@
     }
   },
   "dependencies": {
-    "@ornikar/jest-config-react": "17.0.0",
+    "@ornikar/jest-config-react": "17.1.0",
     "@sucrase/jest-plugin": "^3.0.0",
     "sucrase": "^3.34.0"
   },
   "devDependencies": {
-    "@testing-library/react-native": "12.9.0",
+    "@testing-library/react-native": "13.3.3",
     "jest-expo": "53.0.10",
     "react": "19.0.0"
   },

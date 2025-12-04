@@ -1,6 +1,6 @@
 {
   "name": "@ornikar/jest-config-react",
-  "version": "17.0.0",
+  "version": "17.1.0",
   "description": "✅⚛️ jest config for react",
   "repository": {
     "directory": "@ornikar/jest-config-react",
@@ -16,7 +16,7 @@
     "access": "public"
   },
   "peerDependencies": {
-    "@testing-library/react": "^16.1.0",
+    "@testing-library/react": "^14.0.0 || ^15.0.0 || ^16.0.0",
     "jest": "^30.0.0",
     "jest-environment-jsdom": "^30.0.0",
     "react": "^19.0.0",
@@ -28,7 +28,8 @@
     "jest-fail-on-console": "3.3.1"
   },
   "devDependencies": {
-    "@testing-library/react": "16.1.0",
+    "@testing-library/dom": "10.4.1",
+    "@testing-library/react": "16.3.0",
     "jest": "30.0.0",
     "react": "19.0.0",
     "react-dom": "19.0.0"
