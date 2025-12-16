@@ -3653,7 +3653,7 @@ __metadata:
     webpack: "npm:5.94.0"
   peerDependencies:
     "@storybook/addon-essentials": ^8.3.5
-    "@storybook/addons": ^8.3.5
+    "@storybook/preview-api": ^8.3.5
     "@storybook/react-webpack5": ^8.3.5
     webpack: ^5.94.0
   languageName: unknown
