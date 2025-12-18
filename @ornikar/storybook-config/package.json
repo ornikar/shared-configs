@@ -16,9 +16,9 @@
     "access": "public"
   },
   "peerDependencies": {
-    "@storybook/addon-essentials": "^7.6.20",
-    "@storybook/addons": "^7.6.20",
-    "@storybook/react-webpack5": "^7.6.20",
+    "@storybook/addon-essentials": "^8.3.5",
+    "@storybook/react-webpack5": "^8.3.5",
+    "@storyboook/preview-api": "^8.3.5",
     "webpack": "^5.94.0"
   },
   "dependencies": {
