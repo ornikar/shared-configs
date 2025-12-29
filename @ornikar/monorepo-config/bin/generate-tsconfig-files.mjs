@@ -82,7 +82,6 @@ import { getTopLevelWorkspace, getTopologicalOrderWorkspaces } from '../index.mj
         isolatedModules: true,
         moduleDetection: 'force',
         noEmit: false,
-        noEmitOnError: true,
         declaration: true,
         declarationMap: true,
         noUncheckedIndexedAccess: true,
