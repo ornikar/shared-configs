@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [14.2.0](https://github.com/ornikar/shared-configs/compare/@ornikar/monorepo-config@14.1.0...@ornikar/monorepo-config@14.2.0) (2026-01-09)
+
+
+### Features
+
+* disable TS noEmitOnError [no issue] ([#1147](https://github.com/ornikar/shared-configs/issues/1147)) ([9d694a8](https://github.com/ornikar/shared-configs/commit/9d694a8f0456a2c2faa9eb4658c178ae63fb9f4e))
+
+
+
 ## [14.1.0](https://github.com/ornikar/shared-configs/compare/@ornikar/monorepo-config@14.0.0...@ornikar/monorepo-config@14.1.0) (2025-10-02)
 
 
