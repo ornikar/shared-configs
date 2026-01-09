@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.1.1](https://github.com/ornikar/shared-configs/compare/@ornikar/intl-config@9.1.0...@ornikar/intl-config@9.1.1) (2026-01-09)
+
+
+### Bug Fixes
+
+* update babel-plugin-formatjs [OSE-22426] ([#1148](https://github.com/ornikar/shared-configs/issues/1148)) ([07d0fd9](https://github.com/ornikar/shared-configs/commit/07d0fd9f0d9a281976e40522fc665442f4a9c648))
+
+
+
 ## [9.1.0](https://github.com/ornikar/shared-configs/compare/@ornikar/intl-config@9.0.0...@ornikar/intl-config@9.1.0) (2025-10-13)
 
 
