@@ -3732,9 +3732,9 @@ __metadata:
     "@svgr/webpack": "npm:^6.5.1"
     webpack: "npm:5.94.0"
   peerDependencies:
-    "@storybook/addon-essentials": ^7.6.20
-    "@storybook/addons": ^7.6.20
-    "@storybook/react-webpack5": ^7.6.20
+    "@storybook/addon-essentials": ^8.6.15
+    "@storybook/preview-api": ^8.6.15
+    "@storybook/react-webpack5": ^8.6.15
     webpack: ^5.94.0
   languageName: unknown
   linkType: soft
