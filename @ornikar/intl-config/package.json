@@ -1,6 +1,6 @@
 {
   "name": "@ornikar/intl-config",
-  "version": "9.1.0",
+  "version": "9.1.1",
   "description": "🌐 intl-config",
   "repository": {
     "directory": "@ornikar/intl-config",
@@ -16,7 +16,7 @@
   },
   "dependencies": {
     "@formatjs/cli-lib": "^6.1.5",
-    "babel-plugin-formatjs": "^10.5.5",
+    "babel-plugin-formatjs": "^10.5.41",
     "glob": "^10.0.0"
   },
   "devDependencies": {

@@ -1,6 +1,6 @@
 {
   "name": "@ornikar/storybook-config",
-  "version": "10.1.0",
+  "version": "11.0.0",
   "description": "📖 storybook config files",
   "repository": {
     "directory": "@ornikar/storybook-config",
@@ -16,9 +16,9 @@
     "access": "public"
   },
   "peerDependencies": {
-    "@storybook/addon-essentials": "^7.6.20",
-    "@storybook/addons": "^7.6.20",
-    "@storybook/react-webpack5": "^7.6.20",
+    "@storybook/addon-essentials": "^8.6.15",
+    "@storybook/preview-api": "^8.6.15",
+    "@storybook/react-webpack5": "^8.6.15",
     "webpack": "^5.94.0"
   },
   "dependencies": {

@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [11.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/storybook-config@10.1.0...@ornikar/storybook-config@11.0.0) (2026-01-12)
+
+
+### ⚠ BREAKING CHANGES
+
+* **storybook-config:** upgrade storybook v8 [OSE-22426] (#1145)
+
+### Features
+
+* **storybook-config:** upgrade storybook v8 [OSE-22426] ([#1145](https://github.com/ornikar/shared-configs/issues/1145)) ([15d89d8](https://github.com/ornikar/shared-configs/commit/15d89d8614190de3880e0223dde6ac032790e026))
+
+
+
 ## [10.1.0](https://github.com/ornikar/shared-configs/compare/@ornikar/storybook-config@10.0.1...@ornikar/storybook-config@10.1.0) (2025-10-02)
 
 
