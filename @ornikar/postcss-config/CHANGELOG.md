@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.0.1](https://github.com/ornikar/shared-configs/compare/@ornikar/postcss-config@9.0.0...@ornikar/postcss-config@9.0.1) (2026-01-14)
+
+
+### Bug Fixes
+
+* **deps:** update node.js to v22.22.0 ([#1151](https://github.com/ornikar/shared-configs/issues/1151)) ([9cad3fa](https://github.com/ornikar/shared-configs/commit/9cad3faf68e0ace1089a733b461c6c93d6929662))
+
+
+
 ## [9.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/postcss-config@8.0.0...@ornikar/postcss-config@9.0.0) (2025-07-10)
 
 
