@@ -1,6 +1,6 @@
 {
   "name": "@ornikar/commitlint-config",
-  "version": "8.1.0",
+  "version": "8.1.1",
   "description": "📓 commitlint config",
   "repository": {
     "directory": "@ornikar/commitlint-config",

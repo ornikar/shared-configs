@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [8.1.1](https://github.com/ornikar/shared-configs/compare/@ornikar/commitlint-config@8.1.0...@ornikar/commitlint-config@8.1.1) (2026-01-16)
+
+
+### Bug Fixes
+
+* revert commitlint bump [no issue] ([#1153](https://github.com/ornikar/shared-configs/issues/1153)) ([6fb50a6](https://github.com/ornikar/shared-configs/commit/6fb50a6a227f5ce4840041696e3cb417a8f5be55))
+
+
+
 ## [8.1.0](https://github.com/ornikar/shared-configs/compare/@ornikar/commitlint-config@8.0.1...@ornikar/commitlint-config@8.1.0) (2026-01-16)
 
 
