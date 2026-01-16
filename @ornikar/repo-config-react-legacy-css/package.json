@@ -1,6 +1,6 @@
 {
   "name": "@ornikar/repo-config-react-legacy-css",
-  "version": "15.0.2",
+  "version": "15.0.3",
   "description": "🔧⚛️ react repo config legacy css",
   "repository": {
     "directory": "@ornikar/repo-config-react-legacy-css",
@@ -18,7 +18,7 @@
     "ornikar-ci-comment-pr": "./bin/ornikar-ci-comment-pr.mjs"
   },
   "dependencies": {
-    "@ornikar/repo-config-react": "13.0.2",
+    "@ornikar/repo-config-react": "13.0.3",
     "@ornikar/typed-css-modules-loader": "0.8.1",
     "typed-css-modules": "0.8.1"
   },
