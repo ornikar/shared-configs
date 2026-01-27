@@ -13,8 +13,14 @@ const deprecatedReactLifeCycleMethods = [
 
 failOnConsole({
   silenceMessage: (message) => {
-    // setNativeProps is used by @react-spring, so we can't do anything about it
+    // React 19 warning about outdated JSX transform
+    // runtime: 'automatic' will be default on babel 8
+    if (message.includes('Your app (or one of its dependencies) is using an outdated JSX transform.')) {
+      return true;
+    }
+
     if (message.includes('setNativeProps is deprecated. Please update props using React state instead.')) {
+      // setNativeProps is used by @react-spring, so we can't do anything about it
       return true;
     }
 
@@ -56,6 +62,10 @@ failOnConsole({
       message.includes('is deprecated and will be removed in the next major release') &&
       message.includes('https://reactjs.org')
     ) {
+      return true;
+    }
+
+    if (message.includes('Each child in a list should have a unique "key" prop.')) {
       return true;
     }
 
