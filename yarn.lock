@@ -3694,7 +3694,30 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ornikar/repo-config@npm:15.2.1, @ornikar/repo-config@workspace:@ornikar/repo-config":
+"@ornikar/repo-config@npm:15.2.1":
+  version: 15.2.1
+  resolution: "@ornikar/repo-config@npm:15.2.1::__archiveUrl=https%3A%2F%2Feurope-west1-npm.pkg.dev%2Fornikar-images%2Fnpm-packages%2F%40ornikar%2Frepo-config%2F-%2F%40ornikar%2Frepo-config-15.2.1.tgz"
+  dependencies:
+    "@commitlint/cli": "npm:17.8.1"
+    "@ornikar/commitlint-config": "npm:8.1.1"
+    husky: "npm:8.0.3"
+    lint-staged: "npm:15.5.2"
+    prettier-plugin-properties: "npm:0.3.0"
+    semver: "npm:^7.3.5"
+    which-pm-runs: "npm:^1.1.0"
+  peerDependencies:
+    prettier: ^2.3.0
+  bin:
+    commitlint: ./bin/commitlint.js
+    ornikar-lint-staged: ./bin/ornikar-lint-staged.mjs
+    ornikar-prettier-check: ./bin/ornikar-prettier-check.sh
+    ornikar-prettier-fix: ./bin/ornikar-prettier-fix.sh
+    ornikar-repo-config-postinstall: ./bin/ornikar-repo-config-postinstall.js
+  checksum: 10c0/eb98c435936058c23cffad4ca430b380739ee37e26b55dcf608b72b895433b1dded2c9e08866a582d675caacd246260df4086baf978573884e74aafa4e03a392
+  languageName: node
+  linkType: hard
+
+"@ornikar/repo-config@workspace:@ornikar/repo-config":
   version: 0.0.0-use.local
   resolution: "@ornikar/repo-config@workspace:@ornikar/repo-config"
   dependencies:
