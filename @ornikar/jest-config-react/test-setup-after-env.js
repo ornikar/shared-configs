@@ -55,16 +55,7 @@ failOnConsole({
 
     return false;
   },
-  // TODO [react@>=19]: Remove this when we upgrade to React 19
   allowMessage: (message, methodName, context) => {
-    // React 18.3 deprecation warning to prepare migration on React 19
-    if (
-      message.includes('is deprecated and will be removed in the next major release') &&
-      message.includes('https://reactjs.org')
-    ) {
-      return true;
-    }
-
     if (message.includes('Each child in a list should have a unique "key" prop.')) {
       return true;
     }
