@@ -3,6 +3,7 @@
   "private": true,
   "repository": "ornikar/shared-configs",
   "scripts": {
+    "preinstall": "test -n \"$NOYARNPREINSTALL\" || yarn dlx google-artifactregistry-auth --credential-config-yarn=$HOME/.yarnrc.yml",
     "lerna": "./@ornikar/monorepo-config/bin/lerna.js",
     "lint": "yarn run lint:prettier && yarn run lint:eslint && yarn run lint:stylelint",
     "lint:eslint": "eslint --report-unused-disable-directives --quiet .",
