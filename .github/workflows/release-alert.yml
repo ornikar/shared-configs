@@ -1,9 +1,0 @@
-name: ReleaseAlert
-
-on:
-  release:
-    types: [published]
-
-jobs:
-  alert:
-    uses: ornikar/.github/workflows/release-alert.yml@main
