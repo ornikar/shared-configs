@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [17.1.2](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@17.1.1...@ornikar/jest-config-react@17.1.2) (2026-01-14)
+
+
+### Bug Fixes
+
+* **deps:** update node.js to v22.22.0 ([#1151](https://github.com/ornikar/shared-configs/issues/1151)) ([9cad3fa](https://github.com/ornikar/shared-configs/commit/9cad3faf68e0ace1089a733b461c6c93d6929662))
+
+
+
 ## [17.1.1](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react@17.1.0...@ornikar/jest-config-react@17.1.1) (2026-01-09)
 
 **Note:** Version bump only for package @ornikar/jest-config-react

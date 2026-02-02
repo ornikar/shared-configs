@@ -1,6 +1,6 @@
 {
   "name": "@ornikar/repo-config-react-legacy-css",
-  "version": "15.0.1",
+  "version": "15.0.4",
   "description": "🔧⚛️ react repo config legacy css",
   "repository": {
     "directory": "@ornikar/repo-config-react-legacy-css",
@@ -9,7 +9,7 @@
   },
   "license": "ISC",
   "engines": {
-    "node": ">=22.17.0"
+    "node": ">=22.22.0"
   },
   "publishConfig": {
     "access": "public"
@@ -18,7 +18,7 @@
     "ornikar-ci-comment-pr": "./bin/ornikar-ci-comment-pr.mjs"
   },
   "dependencies": {
-    "@ornikar/repo-config-react": "13.0.1",
+    "@ornikar/repo-config-react": "13.0.4",
     "@ornikar/typed-css-modules-loader": "0.8.1",
     "typed-css-modules": "0.8.1"
   },

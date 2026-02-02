@@ -3,6 +3,33 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [8.1.1](https://github.com/ornikar/shared-configs/compare/@ornikar/commitlint-config@8.1.0...@ornikar/commitlint-config@8.1.1) (2026-01-16)
+
+
+### Bug Fixes
+
+* revert commitlint bump [no issue] ([#1153](https://github.com/ornikar/shared-configs/issues/1153)) ([6fb50a6](https://github.com/ornikar/shared-configs/commit/6fb50a6a227f5ce4840041696e3cb417a8f5be55))
+
+
+
+## [8.1.0](https://github.com/ornikar/shared-configs/compare/@ornikar/commitlint-config@8.0.1...@ornikar/commitlint-config@8.1.0) (2026-01-16)
+
+
+### Features
+
+* **deps:** update commitlint monorepo to v20 (major) ([#1152](https://github.com/ornikar/shared-configs/issues/1152)) ([16cde32](https://github.com/ornikar/shared-configs/commit/16cde327d37036481840b91b2eb0b3e930aa2bfb))
+
+
+
+## [8.0.1](https://github.com/ornikar/shared-configs/compare/@ornikar/commitlint-config@8.0.0...@ornikar/commitlint-config@8.0.1) (2026-01-14)
+
+
+### Bug Fixes
+
+* **deps:** update node.js to v22.22.0 ([#1151](https://github.com/ornikar/shared-configs/issues/1151)) ([9cad3fa](https://github.com/ornikar/shared-configs/commit/9cad3faf68e0ace1089a733b461c6c93d6929662))
+
+
+
 ## [8.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/commitlint-config@7.0.0...@ornikar/commitlint-config@8.0.0) (2025-07-10)
 
 

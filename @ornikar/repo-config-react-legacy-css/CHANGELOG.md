@@ -3,6 +3,31 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [15.0.4](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config-react-legacy-css@15.0.3...@ornikar/repo-config-react-legacy-css@15.0.4) (2026-01-16)
+
+**Note:** Version bump only for package @ornikar/repo-config-react-legacy-css
+
+
+
+
+
+## [15.0.3](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config-react-legacy-css@15.0.2...@ornikar/repo-config-react-legacy-css@15.0.3) (2026-01-16)
+
+**Note:** Version bump only for package @ornikar/repo-config-react-legacy-css
+
+
+
+
+
+## [15.0.2](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config-react-legacy-css@15.0.1...@ornikar/repo-config-react-legacy-css@15.0.2) (2026-01-14)
+
+
+### Bug Fixes
+
+* **deps:** update node.js to v22.22.0 ([#1151](https://github.com/ornikar/shared-configs/issues/1151)) ([9cad3fa](https://github.com/ornikar/shared-configs/commit/9cad3faf68e0ace1089a733b461c6c93d6929662))
+
+
+
 ## [15.0.1](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config-react-legacy-css@15.0.0...@ornikar/repo-config-react-legacy-css@15.0.1) (2025-08-07)
 
 **Note:** Version bump only for package @ornikar/repo-config-react-legacy-css

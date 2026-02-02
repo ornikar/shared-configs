@@ -1,6 +1,6 @@
 {
   "name": "@ornikar/rollup-config",
-  "version": "10.1.0",
+  "version": "10.1.1",
   "description": "📦 rollup config files",
   "repository": {
     "directory": "@ornikar/rollup-config",
@@ -11,7 +11,7 @@
   "types": "./runtime.d.ts",
   "license": "ISC",
   "engines": {
-    "node": ">=22.17.0"
+    "node": ">=22.22.0"
   },
   "publishConfig": {
     "access": "public"
@@ -42,9 +42,9 @@
   },
   "dependencies": {
     "@babel/plugin-transform-runtime": "^7.23.2",
-    "@ornikar/babel-preset-base": "6.0.0",
-    "@ornikar/babel-preset-kitt-universal": "7.2.0",
-    "@ornikar/babel-preset-react": "6.1.0",
+    "@ornikar/babel-preset-base": "6.0.1",
+    "@ornikar/babel-preset-kitt-universal": "7.2.1",
+    "@ornikar/babel-preset-react": "6.1.1",
     "@rollup/plugin-babel": "^5.3.1",
     "@rollup/plugin-node-resolve": "^13.0.0",
     "@rollup/plugin-replace": "^4.0.0",
