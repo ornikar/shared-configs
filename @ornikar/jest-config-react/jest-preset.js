@@ -42,12 +42,6 @@ module.exports = {
   transformIgnorePatterns: ['[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$', '^.+\\.css$'],
   moduleNameMapper: {
     '\\.css$': 'identity-obj-proxy',
-    '@storybook/react$': require.resolve('./__mocks__/@storybook/react'),
-    '@storybook/react-native$': require.resolve('./__mocks__/@storybook/react'),
-    '@storybook/addons': require.resolve('./__mocks__/@storybook/addons'),
-    '@storybook/addon-actions': require.resolve('./__mocks__/@storybook/addon-actions'),
-    '@storybook/addon-knobs': require.resolve('./__mocks__/@storybook/addon-knobs'),
-    'storybook-react-router': require.resolve('./__mocks__/storybook-react-router'),
   },
   testEnvironment: 'jsdom',
   testEnvironmentOptions: {
