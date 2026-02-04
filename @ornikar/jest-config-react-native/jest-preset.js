@@ -11,12 +11,6 @@ module.exports = {
   testMatch: baseOrnikarPreset.testMatch,
   moduleNameMapper: {
     ...expoPreset.moduleNameMapper,
-    '@storybook/addons': require.resolve('@ornikar/jest-config-react/__mocks__/@storybook/addons'),
-    '^@storybook/addon-actions$': require.resolve('./__mocks__/@storybook/addon-actions.js'),
-    '@storybook/react-native$': require.resolve('./__mocks__/@storybook/react-native.jsx'),
-    '^@storybook/react-native$': require.resolve('./__mocks__/@storybook/react-native.jsx'),
-    '@storybook/react$': require.resolve('./__mocks__/@storybook/react-native.jsx'),
-    '^@storybook/react$': require.resolve('./__mocks__/@storybook/react-native.jsx'),
   },
   testEnvironment: require.resolve('./ornikar-react-native-env.js'),
   testEnvironmentOptions: expoPreset.testEnvironmentOptions || {},
