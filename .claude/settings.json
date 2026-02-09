@@ -1,0 +1,24 @@
+{
+  "marketplace": {
+    "ornikar/skills": {
+      "source": "github"
+    }
+  },
+  "plugins": ["edu-frontend-plugin@ornikar-plugins", "common-plugin@ornikar-plugins"],
+  "permissions": {
+    "allow": ["Skill(common-plugin:*)", "Skill(edu-frontend-plugin:*)"]
+  },
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "startup",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "yarn"
+          }
+        ]
+      }
+    ]
+  }
+}
