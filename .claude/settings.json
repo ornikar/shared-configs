@@ -12,6 +12,7 @@
     "SessionStart": [
       {
         "matcher": "startup",
+        "environment": "remote",
         "hooks": [
           {
             "type": "command",
