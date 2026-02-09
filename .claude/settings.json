@@ -15,7 +15,8 @@
         "hooks": [
           {
             "type": "command",
-            "command": "yarn"
+            "command": "yarn",
+            "status_message": "Installing dependencies with yarn"
           }
         ]
       }
