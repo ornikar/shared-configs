@@ -1,0 +1,20 @@
+{
+  "extraKnownMarketplaces": {
+    "ornikar-plugins": {
+      "source": {
+        "source": "github",
+        "repo": "ornikar/skills"
+      }
+    }
+  },
+  "enabledPlugins": {
+    "edu-frontend-plugin@ornikar-plugins": true,
+    "common-plugin@ornikar-plugins": true
+  },
+  "permissions": {
+    "allow": [
+      "Skill(common-plugin:*)",
+      "Skill(edu-frontend-plugin:*)"
+    ]
+  }
+}
