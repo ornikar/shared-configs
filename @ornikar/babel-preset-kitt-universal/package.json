@@ -25,14 +25,11 @@
     "@babel/core": "^7.0.0"
   },
   "dependencies": {
-    "babel-plugin-linaria-css-to-undefined": "^0.3.0",
     "babel-plugin-react-native": "^2.0.0"
   },
   "devDependencies": {
     "@babel/core": "7.27.1",
     "@babel/preset-react": "7.27.1",
-    "@linaria/babel-preset": "4.2.0",
-    "@linaria/shaker": "4.2.0",
     "react-refresh": "0.17.0"
   }
 }
