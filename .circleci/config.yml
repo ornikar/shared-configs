@@ -54,7 +54,7 @@ workflows:
               ignore: main
 
       - frontend/monorepo-release-gcp:
-          name: prerelease
+          name: prerelease-gcp
           context: npm-gcp
           npm-publish: true
           no-private: true
