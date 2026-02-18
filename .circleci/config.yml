@@ -16,7 +16,6 @@ workflows:
     jobs:
       - frontend/dependencies:
           name: dependencies
-          context: npm
           is-monorepo: true
 
       - frontend/checks:
