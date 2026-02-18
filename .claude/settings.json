@@ -1,0 +1,31 @@
+{
+  "extraKnownMarketplaces": {
+    "company-tools": {
+      "source": {
+        "source": "github",
+        "repo": "ornikar/skills"
+      }
+    }
+  },
+  "enabledPlugins": {
+    "edu-frontend-plugin@ornikar-plugins": true,
+    "common-plugin@ornikar-plugins": true
+  },
+  "permissions": {
+    "allow": ["Skill(common-plugin:*)", "Skill(edu-frontend-plugin:*)"]
+  },
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "startup",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash -c '[ \"$CLAUDE_CODE_REMOTE\" = \"true\" ] && yarn install || true'",
+            "statusMessage": "Installing dependencies with yarn..."
+          }
+        ]
+      }
+    ]
+  }
+}
