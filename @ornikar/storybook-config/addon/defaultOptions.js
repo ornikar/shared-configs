@@ -3,7 +3,6 @@
 exports.defaultOptions = {
   srcDirectory: './src',
   enableReactNativeWeb: false,
-  enableLinaria: false,
   enableLegacyCssModules: false,
   modulesToAlias: [],
   nativeModulesToTranspile: [],
