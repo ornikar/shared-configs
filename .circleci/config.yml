@@ -55,7 +55,7 @@ workflows:
 
       - frontend/monorepo-release-gcp:
           name: prerelease-gcp
-          context: npm-publish
+          context: npm-gcp
           npm-publish: true
           no-private: true
           branch-release: true
