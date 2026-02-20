@@ -23,14 +23,10 @@
   "peerDependencies": {
     "@babel/core": "^7.0.0",
     "@babel/runtime": "^7.23.2",
-    "@linaria/rollup": "*",
     "postcss": "^8.3.0",
     "rollup": "^2.42.0"
   },
   "peerDependenciesMeta": {
-    "@linaria/rollup": {
-      "optional": true
-    },
     "postcss": {
       "optional": true
     }

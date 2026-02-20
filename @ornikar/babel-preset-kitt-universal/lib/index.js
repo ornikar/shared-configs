@@ -10,12 +10,9 @@ const checkIsWebOption = (opts) => {
 
 module.exports = function preset(context, opts = {}) {
   checkIsWebOption(opts);
-  const { isWeb, disableLinaria = !isWeb } = opts;
+  const { isWeb } = opts;
 
   return {
-    plugins: [
-      disableLinaria && 'babel-plugin-linaria-css-to-undefined',
-      isWeb && ['babel-plugin-react-native', { OS: 'web' }],
-    ].filter(Boolean),
+    plugins: [isWeb && ['babel-plugin-react-native', { OS: 'web' }]].filter(Boolean),
   };
 };

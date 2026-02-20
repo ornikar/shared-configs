@@ -2,7 +2,6 @@
 
 'use strict';
 
-const linaria = require('@ornikar/webpack-config/linaria');
 const processEnv = require('@ornikar/webpack-config/processEnv');
 const reactNativeWeb = require('@ornikar/webpack-config/reactNativeWeb');
 const workspaceAliases = require('@ornikar/webpack-config/workspaceAliases');
@@ -16,7 +15,6 @@ module.exports = (
   {
     srcDirectory = './src',
     enableReactNativeWeb = false,
-    enableLinaria = false,
     enableLegacyCssModules = false,
     isCRAPresetEnabled = false,
     modulesToAlias = {},
@@ -35,10 +33,6 @@ module.exports = (
     svgRule(env, webpackConfig);
   }
   fixStorybookBabelRules(env, webpackConfig);
-
-  if (enableLinaria) {
-    linaria(env, webpackConfig);
-  }
 
   if (enableReactNativeWeb) {
     reactNativeWeb(env, webpackConfig, {

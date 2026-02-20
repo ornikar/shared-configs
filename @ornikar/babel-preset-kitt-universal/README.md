@@ -2,7 +2,7 @@
 
 ## Features
 
-This preset is for using kitt-universal with styled-components and linaria, for both web and native with react-native.
+This preset is for using kitt-universal with styled-components, for both web and native with react-native.
 
 ## Install
 

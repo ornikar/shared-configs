@@ -24,7 +24,7 @@ const browserOnlyExtensions = ['.css'];
 const createBuildsForPackage = (
   packagesDir,
   packageName,
-  { hasPlatformBuilds, shouldUseLinaria, additionalPlugins = [], rootDir = '.' } = {},
+  { hasPlatformBuilds, additionalPlugins = [], rootDir = '.' } = {},
 ) => {
   // eslint-disable-next-line global-require
   const pkg = require(path.resolve(`${rootDir}/${packagesDir}/${packageName}/package.json`));
@@ -49,9 +49,6 @@ const createBuildsForPackage = (
   const resolvedPackagePath = path.resolve(`${packagesDir}/${packageName}`);
   const distPath = `${rootDir}/${packagesDir}/${packageName}/dist`;
   const inputBaseDir = `${rootDir}/${packagesDir}/${packageName}/src/`;
-  const useLinaria = shouldUseLinaria && shouldUseLinaria(packageName);
-  // eslint-disable-next-line import/no-unresolved, global-require -- in peer dependencies, no gain to install it as devDependencies
-  const linariaPlugin = useLinaria && require('@linaria/rollup').default;
 
   const createBuild = (entryName, target, version, formats, { exportCss, platformOS } = {}) => {
     const isForNativeOnly = platformOS && platformOS !== 'web';
@@ -60,7 +57,6 @@ const createBuildsForPackage = (
     const inputExt = extensions.find((ext) => fs.existsSync(path.resolve(`${inputBaseDir}${entryName}${ext}`)));
 
     if (!inputExt) throw new Error(`Could not find ${entryName} file for package ${packageName}`);
-    const isLinariaEnabledForPlatform = useLinaria && ((!platformOS && !hasPlatformBuilds) || platformOS === 'web');
 
     const getPresetEnvTargets = () => {
       if (target === 'node') {
@@ -137,40 +133,23 @@ const createBuildsForPackage = (
       },
 
       plugins: [
-        isLinariaEnabledForPlatform &&
-          linariaPlugin({
-            sourceMap: true,
-            classNameSlug: `${(pkg.ornikar && pkg.ornikar.linariaClassnamePrefix) || packageName}_[title]_[hash]`,
-            babelOptions: {
-              configFile: true,
-              babelrc: false,
-              browserslistConfigFile: false,
-            },
-          }),
         // ignore node_modules css imports for node target. imports in browser target will be resolved by webpack.
         target === 'node' &&
           ignoreImport({
             extensions: browserOnlyExtensions,
             exclude: /\.module\.css$/, // exclude needs to be defined because default is `node_modules/**`. We ignore files that will be processed by postcss plugin.
           }),
-        postcss(
-          useLinaria
-            ? {
-                extract: exportCss ? path.resolve(`${distPath}/styles.css`) : true,
-                config: false,
-              }
-            : {
-                include: /\.module\.css$/,
-                extract: exportCss ? path.resolve(`${distPath}/styles.css`) : true,
-                autoModules: false,
-                modules: {
-                  generateScopedName: `${packageName}_[local]_[hash:base64:5]`,
-                },
-                config: false,
-                plugins: exportCss && postcssConfig ? postcssConfig.plugins : false,
-                minimize: false,
-              },
-        ),
+        postcss({
+          include: /\.module\.css$/,
+          extract: exportCss ? path.resolve(`${distPath}/styles.css`) : true,
+          autoModules: false,
+          modules: {
+            generateScopedName: `${packageName}_[local]_[hash:base64:5]`,
+          },
+          config: false,
+          plugins: exportCss && postcssConfig ? postcssConfig.plugins : false,
+          minimize: false,
+        }),
         // legacy inline support
         svgr({
           include: '**/*.inline.svg',
@@ -200,7 +179,6 @@ const createBuildsForPackage = (
               require.resolve('@ornikar/babel-preset-kitt-universal'),
               {
                 isWeb: platformOS === 'web',
-                disableLinaria: !isLinariaEnabledForPlatform,
                 enableStyledComponentsReactNativeImport: platformOS === 'web',
                 styledComponentsOptions: {
                   namespace: packageName,
@@ -208,7 +186,6 @@ const createBuildsForPackage = (
                 },
               },
             ],
-            isLinariaEnabledForPlatform && '@linaria/babel-preset',
           ].filter(Boolean),
           plugins: [
             [
