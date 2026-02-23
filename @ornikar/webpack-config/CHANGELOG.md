@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [12.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/webpack-config@11.1.1...@ornikar/webpack-config@12.0.0) (2026-02-23)
+
+
+### ⚠ BREAKING CHANGES
+
+* remove linaria OSE-18331 (#1163)
+
+### Miscellaneous Chores
+
+* remove linaria OSE-18331 ([#1163](https://github.com/ornikar/shared-configs/issues/1163)) ([a67b572](https://github.com/ornikar/shared-configs/commit/a67b572476bafad9b378f98ef788cda08adb5ef7))
+
+
+
 ## [11.1.1](https://github.com/ornikar/shared-configs/compare/@ornikar/webpack-config@11.1.0...@ornikar/webpack-config@11.1.1) (2026-01-14)
 
 

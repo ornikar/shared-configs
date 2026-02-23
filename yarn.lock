@@ -3248,7 +3248,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ornikar/babel-preset-kitt-universal@npm:7.2.1, @ornikar/babel-preset-kitt-universal@workspace:@ornikar/babel-preset-kitt-universal":
+"@ornikar/babel-preset-kitt-universal@npm:8.0.0, @ornikar/babel-preset-kitt-universal@workspace:@ornikar/babel-preset-kitt-universal":
   version: 0.0.0-use.local
   resolution: "@ornikar/babel-preset-kitt-universal@workspace:@ornikar/babel-preset-kitt-universal"
   dependencies:
@@ -3348,7 +3348,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@ornikar/jest-config-react-native@workspace:@ornikar/jest-config-react-native"
   dependencies:
-    "@ornikar/jest-config-react": "npm:17.1.2"
+    "@ornikar/jest-config-react": "npm:18.0.0"
     "@sucrase/jest-plugin": "npm:^3.0.0"
     "@testing-library/react-native": "npm:13.3.3"
     jest-expo: "npm:53.0.10"
@@ -3377,7 +3377,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ornikar/jest-config-react@npm:17.1.2, @ornikar/jest-config-react@workspace:@ornikar/jest-config-react":
+"@ornikar/jest-config-react@npm:18.0.0, @ornikar/jest-config-react@workspace:@ornikar/jest-config-react":
   version: 0.0.0-use.local
   resolution: "@ornikar/jest-config-react@workspace:@ornikar/jest-config-react"
   dependencies:
@@ -3523,7 +3523,7 @@ __metadata:
     "@babel/core": "npm:7.27.1"
     "@babel/plugin-transform-runtime": "npm:^7.23.2"
     "@ornikar/babel-preset-base": "npm:6.0.1"
-    "@ornikar/babel-preset-kitt-universal": "npm:7.2.1"
+    "@ornikar/babel-preset-kitt-universal": "npm:8.0.0"
     "@ornikar/babel-preset-react": "npm:6.1.1"
     "@rollup/plugin-babel": "npm:^5.3.1"
     "@rollup/plugin-node-resolve": "npm:^13.0.0"
@@ -3566,7 +3566,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@ornikar/storybook-config@workspace:@ornikar/storybook-config"
   dependencies:
-    "@ornikar/webpack-config": "npm:11.1.1"
+    "@ornikar/webpack-config": "npm:12.0.0"
     "@svgr/webpack": "npm:^6.5.1"
     webpack: "npm:5.104.1"
   peerDependencies:
@@ -3601,7 +3601,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@ornikar/webpack-config@npm:11.1.1, @ornikar/webpack-config@workspace:@ornikar/webpack-config":
+"@ornikar/webpack-config@npm:12.0.0, @ornikar/webpack-config@workspace:@ornikar/webpack-config":
   version: 0.0.0-use.local
   resolution: "@ornikar/webpack-config@workspace:@ornikar/webpack-config"
   peerDependencies:

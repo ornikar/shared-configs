@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [16.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react-native@15.4.2...@ornikar/jest-config-react-native@16.0.0) (2026-02-23)
+
+
+### ⚠ BREAKING CHANGES
+
+* upgrade to Expo 53 [OSE-20840] (#1133)
+
+### Features
+
+* upgrade to Expo 53 [OSE-20840] ([#1133](https://github.com/ornikar/shared-configs/issues/1133)) ([ec53f82](https://github.com/ornikar/shared-configs/commit/ec53f8234f807a7c31822d1809781b1331d80f36))
+
+
+
 ## [15.4.2](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react-native@15.4.1...@ornikar/jest-config-react-native@15.4.2) (2026-01-14)
 
 
