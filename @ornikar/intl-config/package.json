@@ -15,15 +15,15 @@
     "access": "public"
   },
   "dependencies": {
-    "@formatjs/cli-lib": "^6.1.5",
-    "babel-plugin-formatjs": "^10.5.41",
+    "@formatjs/cli-lib": "^8.0.1",
+    "babel-plugin-formatjs": "^11.0.8",
     "glob": "^10.0.0"
   },
   "devDependencies": {
-    "@babel/core": "7.27.1"
+    "@babel/core": "7.28.5"
   },
   "peerDependencies": {
-    "@babel/core": "^7.13.0"
+    "@babel/core": "^7.28.5"
   },
   "scripts": {
     "lint:eslint": "yarn ../.. eslint --report-unused-disable-directives --quiet @ornikar/intl-config"

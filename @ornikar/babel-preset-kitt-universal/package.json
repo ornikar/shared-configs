@@ -28,7 +28,7 @@
     "babel-plugin-react-native": "^2.0.0"
   },
   "devDependencies": {
-    "@babel/core": "7.27.1",
+    "@babel/core": "7.28.5",
     "@babel/preset-react": "7.27.1",
     "react-refresh": "0.17.0"
   }
