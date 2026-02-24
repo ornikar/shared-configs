@@ -32,7 +32,7 @@
     }
   },
   "devDependencies": {
-    "@babel/core": "7.28.5",
+    "@babel/core": "7.29.0",
     "postcss": "8.4.31",
     "rollup": "2.79.2"
   },
