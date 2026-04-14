@@ -22,6 +22,7 @@
     "webpack": "^5.94.0"
   },
   "dependencies": {
+    "@chromatic-com/storybook": "^3.2.7",
     "@ornikar/webpack-config": "12.0.0",
     "@svgr/webpack": "^6.5.1"
   },
