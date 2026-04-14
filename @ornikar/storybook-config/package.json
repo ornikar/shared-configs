@@ -19,6 +19,7 @@
     "@storybook/addon-essentials": "^8.6.15",
     "@storybook/preview-api": "^8.6.15",
     "@storybook/react-webpack5": "^8.6.15",
+    "storybook": "^8.6.15",
     "webpack": "^5.94.0"
   },
   "dependencies": {
