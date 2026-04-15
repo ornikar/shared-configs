@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [12.1.0](https://github.com/ornikar/shared-configs/compare/@ornikar/storybook-config@12.0.0...@ornikar/storybook-config@12.1.0) (2026-04-15)
+
+
+### Features
+
+* **storybook-config:** add Chromatic addon [no-issue] ([#1172](https://github.com/ornikar/shared-configs/issues/1172)) ([90e3862](https://github.com/ornikar/shared-configs/commit/90e38620b8ed7aa4776c006ec70b04a9523ca375))
+
+
+
 ## [12.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/storybook-config@11.0.1...@ornikar/storybook-config@12.0.0) (2026-02-23)
 
 
