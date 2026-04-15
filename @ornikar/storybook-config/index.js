@@ -60,6 +60,7 @@ exports.createMainConfig = function createMainConfig({
         },
       },
       ...addons,
+      '@chromatic-com/storybook',
       { name: require.resolve('./preset'), options: { ...ornikarAddonOptions, isCRAPresetEnabled } },
     ].filter(Boolean),
   };
