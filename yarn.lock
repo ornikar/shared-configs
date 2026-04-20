@@ -3542,6 +3542,9 @@ __metadata:
     jest-environment-jsdom: "npm:30.0.0"
     lint-staged: "npm:15.5.2"
     prettier: "npm:2.8.8"
+  dependenciesMeta:
+    unrs-resolver:
+      built: true
   languageName: unknown
   linkType: soft
 
