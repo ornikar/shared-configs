@@ -1,0 +1,27 @@
+name: Claude PR Review
+
+on:
+  pull_request:
+    types: [opened, ready_for_review]
+  issue_comment:
+    types: [created]
+
+jobs:
+  review:
+    if: |
+      (github.event_name == 'pull_request' &&
+       github.event.pull_request.draft == false &&
+       github.event.pull_request.user.login != 'ornikar-renovate[bot]' &&
+       github.event.pull_request.user.login != 'renovate[bot]' &&
+       github.event.pull_request.user.login != 'dependabot[bot]') ||
+      (github.event_name == 'issue_comment' &&
+       github.event.issue.pull_request &&
+       contains(github.event.comment.body, '@claude') &&
+       github.event.comment.user.type != 'Bot')
+    uses: ornikar/.github/.github/workflows/claude-pr-review.yml@master
+    secrets: inherit
+    with:
+      plugins: |
+        common-plugin@ornikar-plugins
+        edu-frontend-plugin@ornikar-plugins
+        common-frontend-plugin@ornikar-plugins
