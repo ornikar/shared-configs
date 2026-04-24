@@ -22,10 +22,10 @@
     "postcss-nested": "^5.0.6"
   },
   "devDependencies": {
-    "postcss": "8.4.31"
+    "postcss": "8.5.10"
   },
   "peerDependencies": {
-    "postcss": "^8.3.0"
+    "postcss": "^8.5.10"
   },
   "scripts": {
     "lint:eslint": "yarn ../.. eslint --report-unused-disable-directives --quiet @ornikar/postcss-config"
