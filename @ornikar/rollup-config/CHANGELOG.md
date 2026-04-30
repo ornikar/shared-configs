@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [11.1.0](https://github.com/ornikar/shared-configs/compare/@ornikar/rollup-config@11.0.1...@ornikar/rollup-config@11.1.0) (2026-04-30)
+
+
+### Features
+
+* **deps:** update dependency postcss to v8.5.10 [security] ([#1177](https://github.com/ornikar/shared-configs/issues/1177)) ([f92cb43](https://github.com/ornikar/shared-configs/commit/f92cb43e1d7cd36a11d9a022a170c63bf5189ff1))
+
+
+
 ## [11.0.1](https://github.com/ornikar/shared-configs/compare/@ornikar/rollup-config@11.0.0...@ornikar/rollup-config@11.0.1) (2026-03-30)
 
 **Note:** Version bump only for package @ornikar/rollup-config
