@@ -16,22 +16,15 @@
   },
   "main": "./index.js",
   "bin": {
-    "lerna": "./bin/lerna",
+    "lerna": "./bin/lerna.mjs",
     "monorepo-config-generate-eslintrc-files": "./bin/generate-eslintrc-files.mjs",
     "monorepo-config-generate-tsconfig-files": "./bin/generate-tsconfig-files.mjs",
     "ornikar-monorepo-update-peer-dependencies": "./bin/update-peer-dependencies.mjs"
   },
-  "peerDependencies": {
-    "lerna": "0.0.0"
-  },
-  "peerDependenciesMeta": {
-    "lerna": {
-      "optional": true
-    }
-  },
   "dependencies": {
-    "@lerna/cli": "5.5.4",
-    "@lerna/version": "5.5.4",
+    "@lerna-lite/cli": "^5.2.0",
+    "@lerna-lite/publish": "^5.2.0",
+    "@lerna-lite/version": "^5.2.0",
     "@pob/pretty-eslint-config": "^5.0.0",
     "conventional-changelog-conventionalcommits": "^6.0.0"
   },
