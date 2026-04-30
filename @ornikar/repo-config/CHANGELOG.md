@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [15.3.0](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@15.2.1...@ornikar/repo-config@15.3.0) (2026-04-30)
+
+
+### Features
+
+* **deps:** update commitlint monorepo to v20 (major) ([#1179](https://github.com/ornikar/shared-configs/issues/1179)) ([50b2c2f](https://github.com/ornikar/shared-configs/commit/50b2c2f688ed55319127b8325aa6d177d7036455))
+
+
+
 ## [15.2.1](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@15.2.0...@ornikar/repo-config@15.2.1) (2026-01-16)
 
 

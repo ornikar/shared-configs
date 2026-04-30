@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.1.0](https://github.com/ornikar/shared-configs/compare/@ornikar/postcss-config@9.0.1...@ornikar/postcss-config@9.1.0) (2026-04-30)
+
+
+### Features
+
+* **deps:** update dependency postcss to v8.5.10 [security] ([#1177](https://github.com/ornikar/shared-configs/issues/1177)) ([f92cb43](https://github.com/ornikar/shared-configs/commit/f92cb43e1d7cd36a11d9a022a170c63bf5189ff1))
+
+
+
 ## [9.0.1](https://github.com/ornikar/shared-configs/compare/@ornikar/postcss-config@9.0.0...@ornikar/postcss-config@9.0.1) (2026-01-14)
 
 
