@@ -12,7 +12,6 @@
     "lint:stylelint": "yarn workspace @ornikar/stylelint-config lint-tests",
     "ornikar-lint-staged": "./@ornikar/repo-config/bin/ornikar-lint-staged.mjs",
     "postinstall": "./@ornikar/repo-config/bin/ornikar-repo-config-postinstall.js",
-    "release": "lerna publish --conventional-commits -m 'chore: release'",
     "test": "jest",
     "version": "./@ornikar/monorepo-config/bin/update-peer-dependencies.mjs && YARN_ENABLE_IMMUTABLE_INSTALLS=false yarn && git add yarn.lock"
   },
