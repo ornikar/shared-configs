@@ -23,7 +23,6 @@
   },
   "dependencies": {
     "@lerna-lite/cli": "^5.2.0",
-    "@lerna-lite/publish": "^5.2.0",
     "@lerna-lite/version": "^5.2.0",
     "@pob/pretty-eslint-config": "^5.0.0",
     "conventional-changelog-conventionalcommits": "^6.0.0"
