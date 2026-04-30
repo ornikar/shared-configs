@@ -33,8 +33,7 @@ module.exports = function createLintStagedConfig(options = {}) {
         'yarn dedupe',
         packagejsonFilenames.length === 0 ? undefined : `prettier --write ${packagejsonFilenames.join(' ')}`,
         isMonorepo && require.resolve('@ornikar/monorepo-config/bin/generate-eslintrc-files.mjs'),
-        shouldGenerateTsconfigInMonorepo &&
-          require.resolve('@ornikar/monorepo-config/bin/generate-tsconfig-files.mjs'),
+        shouldGenerateTsconfigInMonorepo && require.resolve('@ornikar/monorepo-config/bin/generate-tsconfig-files.mjs'),
         shouldRunCheckPkgJSScript && 'node ./scripts/check-packagejson.js',
         shouldRunCheckPkgMJSScript && 'node ./scripts/check-packagejson.mjs',
         'git add yarn.lock .yarn',
