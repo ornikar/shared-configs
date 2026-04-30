@@ -3317,7 +3317,7 @@ __metadata:
     "@lerna-lite/cli": "npm:^5.2.0"
     "@lerna-lite/version": "npm:^5.2.0"
     "@pob/pretty-eslint-config": "npm:^5.0.0"
-    conventional-changelog-conventionalcommits: "npm:^6.0.0"
+    conventional-changelog-conventionalcommits: "npm:^9.0.0"
   bin:
     lerna: ./bin/lerna.mjs
     monorepo-config-generate-eslintrc-files: ./bin/generate-eslintrc-files.mjs
@@ -6016,16 +6016,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"conventional-changelog-conventionalcommits@npm:^6.0.0":
-  version: 6.1.0
-  resolution: "conventional-changelog-conventionalcommits@npm:6.1.0"
-  dependencies:
-    compare-func: "npm:^2.0.0"
-  checksum: 10c0/b313f5c0160d109f58d976566e1331ede3a25ab19fbf43f86763b280659195de00a68551f7f3930bf1cbf39a5e707d94f2a25b79996e59043fa9ee0bed68a79f
-  languageName: node
-  linkType: hard
-
-"conventional-changelog-conventionalcommits@npm:^9.2.0":
+"conventional-changelog-conventionalcommits@npm:^9.0.0, conventional-changelog-conventionalcommits@npm:^9.2.0":
   version: 9.3.1
   resolution: "conventional-changelog-conventionalcommits@npm:9.3.1"
   dependencies:
