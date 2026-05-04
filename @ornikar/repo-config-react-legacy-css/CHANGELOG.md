@@ -3,49 +3,35 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [15.1.0](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config-react-legacy-css@15.0.5...@ornikar/repo-config-react-legacy-css@15.1.0) (2026-05-04)
+
+### Features
+
+* migrate from lerna to lerna-lite OSE-12308 ([#1178](https://github.com/ornikar/shared-configs/issues/1178)) ([a0f8fa1](https://github.com/ornikar/shared-configs/commit/a0f8fa1c2060507dc685b224feedcea68921b0f0))
+
 ## [15.0.5](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config-react-legacy-css@15.0.4...@ornikar/repo-config-react-legacy-css@15.0.5) (2026-04-30)
 
 **Note:** Version bump only for package @ornikar/repo-config-react-legacy-css
-
-
-
-
 
 ## [15.0.4](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config-react-legacy-css@15.0.3...@ornikar/repo-config-react-legacy-css@15.0.4) (2026-01-16)
 
 **Note:** Version bump only for package @ornikar/repo-config-react-legacy-css
 
-
-
-
-
 ## [15.0.3](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config-react-legacy-css@15.0.2...@ornikar/repo-config-react-legacy-css@15.0.3) (2026-01-16)
 
 **Note:** Version bump only for package @ornikar/repo-config-react-legacy-css
 
-
-
-
-
 ## [15.0.2](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config-react-legacy-css@15.0.1...@ornikar/repo-config-react-legacy-css@15.0.2) (2026-01-14)
-
 
 ### Bug Fixes
 
 * **deps:** update node.js to v22.22.0 ([#1151](https://github.com/ornikar/shared-configs/issues/1151)) ([9cad3fa](https://github.com/ornikar/shared-configs/commit/9cad3faf68e0ace1089a733b461c6c93d6929662))
 
-
-
 ## [15.0.1](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config-react-legacy-css@15.0.0...@ornikar/repo-config-react-legacy-css@15.0.1) (2025-08-07)
 
 **Note:** Version bump only for package @ornikar/repo-config-react-legacy-css
 
-
-
-
-
 ## [15.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config-react-legacy-css@14.0.4...@ornikar/repo-config-react-legacy-css@15.0.0) (2025-07-10)
-
 
 ### ⚠ BREAKING CHANGES
 
@@ -55,42 +41,23 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 * upgrade to Node 22 OSE-18334 ([#1125](https://github.com/ornikar/shared-configs/issues/1125)) ([7b3ccd1](https://github.com/ornikar/shared-configs/commit/7b3ccd13ec1cb1bce776a15f889039e70a47d72e))
 
-
-
 ## [14.0.4](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config-react-legacy-css@14.0.3...@ornikar/repo-config-react-legacy-css@14.0.4) (2024-12-05)
 
 **Note:** Version bump only for package @ornikar/repo-config-react-legacy-css
-
-
-
-
 
 ## [14.0.3](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config-react-legacy-css@14.0.2...@ornikar/repo-config-react-legacy-css@14.0.3) (2024-11-27)
 
 **Note:** Version bump only for package @ornikar/repo-config-react-legacy-css
 
-
-
-
-
 ## [14.0.2](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config-react-legacy-css@14.0.1...@ornikar/repo-config-react-legacy-css@14.0.2) (2024-10-09)
 
 **Note:** Version bump only for package @ornikar/repo-config-react-legacy-css
-
-
-
-
 
 ## [14.0.1](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config-react-legacy-css@14.0.0...@ornikar/repo-config-react-legacy-css@14.0.1) (2024-05-27)
 
 **Note:** Version bump only for package @ornikar/repo-config-react-legacy-css
 
-
-
-
-
 ## [14.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config-react-legacy-css@13.0.4...@ornikar/repo-config-react-legacy-css@14.0.0) (2023-12-20)
-
 
 ### ⚠ BREAKING CHANGES
 
@@ -100,42 +67,23 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 * node 20 OSE-6084 ([#1053](https://github.com/ornikar/shared-configs/issues/1053)) ([a86e2ba](https://github.com/ornikar/shared-configs/commit/a86e2bad41fa2469a9b7bfcad8dbaf41224a30e2))
 
-
-
 ## [13.0.4](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config-react-legacy-css@13.0.3...@ornikar/repo-config-react-legacy-css@13.0.4) (2023-11-27)
 
 **Note:** Version bump only for package @ornikar/repo-config-react-legacy-css
-
-
-
-
 
 ## [13.0.3](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config-react-legacy-css@13.0.2...@ornikar/repo-config-react-legacy-css@13.0.3) (2023-11-17)
 
 **Note:** Version bump only for package @ornikar/repo-config-react-legacy-css
 
-
-
-
-
 ## [13.0.2](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config-react-legacy-css@13.0.1...@ornikar/repo-config-react-legacy-css@13.0.2) (2023-11-14)
 
 **Note:** Version bump only for package @ornikar/repo-config-react-legacy-css
-
-
-
-
 
 ## [13.0.1](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config-react-legacy-css@13.0.0...@ornikar/repo-config-react-legacy-css@13.0.1) (2023-11-08)
 
 **Note:** Version bump only for package @ornikar/repo-config-react-legacy-css
 
-
-
-
-
 ## [13.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config-react-legacy-css@12.0.3...@ornikar/repo-config-react-legacy-css@13.0.0) (2023-11-08)
-
 
 ### ⚠ BREAKING CHANGES
 
@@ -146,34 +94,19 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 * **deps:** update dependency typed-css-modules to v0.8.1 ([#1012](https://github.com/ornikar/shared-configs/issues/1012)) ([cac98b7](https://github.com/ornikar/shared-configs/commit/cac98b7f90b4612371f5413b72f456fc227aea16))
 * typed-css-modules-loader changed owner [no issue] ([#1016](https://github.com/ornikar/shared-configs/issues/1016)) ([c98310d](https://github.com/ornikar/shared-configs/commit/c98310de451c6e2676c61daf510234646aa8b1ee))
 
-
-
 ## [12.0.3](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config-react-legacy-css@12.0.2...@ornikar/repo-config-react-legacy-css@12.0.3) (2023-10-25)
 
 **Note:** Version bump only for package @ornikar/repo-config-react-legacy-css
-
-
-
-
 
 ## [12.0.2](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config-react-legacy-css@12.0.1...@ornikar/repo-config-react-legacy-css@12.0.2) (2023-10-25)
 
 **Note:** Version bump only for package @ornikar/repo-config-react-legacy-css
 
-
-
-
-
 ## [12.0.1](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config-react-legacy-css@12.0.0...@ornikar/repo-config-react-legacy-css@12.0.1) (2023-10-18)
 
 **Note:** Version bump only for package @ornikar/repo-config-react-legacy-css
 
-
-
-
-
 ## [12.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config-react-legacy-css@11.0.9...@ornikar/repo-config-react-legacy-css@12.0.0) (2023-09-27)
-
 
 ### ⚠ BREAKING CHANGES
 
@@ -183,82 +116,43 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 * **rollup-config:** update to node 18 ECF-281 ([#979](https://github.com/ornikar/shared-configs/issues/979)) ([26eaaf9](https://github.com/ornikar/shared-configs/commit/26eaaf9db689de9ec474919881ce87784427cc5c))
 
-
-
 ## [11.0.9](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config-react-legacy-css@11.0.8...@ornikar/repo-config-react-legacy-css@11.0.9) (2023-09-13)
 
 **Note:** Version bump only for package @ornikar/repo-config-react-legacy-css
-
-
-
-
 
 ## [11.0.8](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config-react-legacy-css@11.0.7...@ornikar/repo-config-react-legacy-css@11.0.8) (2023-08-28)
 
 **Note:** Version bump only for package @ornikar/repo-config-react-legacy-css
 
-
-
-
-
 ## [11.0.7](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config-react-legacy-css@11.0.6...@ornikar/repo-config-react-legacy-css@11.0.7) (2023-07-25)
 
 **Note:** Version bump only for package @ornikar/repo-config-react-legacy-css
-
-
-
-
 
 ## [11.0.6](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config-react-legacy-css@11.0.5...@ornikar/repo-config-react-legacy-css@11.0.6) (2023-07-19)
 
 **Note:** Version bump only for package @ornikar/repo-config-react-legacy-css
 
-
-
-
-
 ## [11.0.5](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config-react-legacy-css@11.0.4...@ornikar/repo-config-react-legacy-css@11.0.5) (2023-07-13)
 
 **Note:** Version bump only for package @ornikar/repo-config-react-legacy-css
-
-
-
-
 
 ## [11.0.4](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config-react-legacy-css@11.0.3...@ornikar/repo-config-react-legacy-css@11.0.4) (2023-07-05)
 
 **Note:** Version bump only for package @ornikar/repo-config-react-legacy-css
 
-
-
-
-
 ## [11.0.3](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config-react-legacy-css@11.0.2...@ornikar/repo-config-react-legacy-css@11.0.3) (2023-05-23)
 
 **Note:** Version bump only for package @ornikar/repo-config-react-legacy-css
-
-
-
-
 
 ## [11.0.2](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config-react-legacy-css@11.0.1...@ornikar/repo-config-react-legacy-css@11.0.2) (2023-05-04)
 
 **Note:** Version bump only for package @ornikar/repo-config-react-legacy-css
 
-
-
-
-
 ## [11.0.1](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config-react-legacy-css@11.0.0...@ornikar/repo-config-react-legacy-css@11.0.1) (2023-04-25)
 
 **Note:** Version bump only for package @ornikar/repo-config-react-legacy-css
 
-
-
-
-
 ## [11.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config-react-legacy-css@10.0.1...@ornikar/repo-config-react-legacy-css@11.0.0) (2023-04-21)
-
 
 ### ⚠ BREAKING CHANGES
 
@@ -268,19 +162,13 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 * move typed-css-modules dependencies to repo-config-react-legacy-css [no issue] ([#898](https://github.com/ornikar/shared-configs/issues/898)) ([7a926b8](https://github.com/ornikar/shared-configs/commit/7a926b8e1f99a98496b0075608f20bc038330394))
 
-
-
 ## [10.0.1](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config-react-legacy-css@10.0.0...@ornikar/repo-config-react-legacy-css@10.0.1) (2023-04-21)
-
 
 ### Bug Fixes
 
 * exports getSrcDirectories ([222e76e](https://github.com/ornikar/shared-configs/commit/222e76e0b5f41ee19a537d9d7d86af4c10f65918))
 
-
-
 ## 10.0.0 (2023-04-20)
-
 
 ### ⚠ BREAKING CHANGES
 
