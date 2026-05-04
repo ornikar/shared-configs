@@ -1481,20 +1481,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@commitlint/cli@npm:20.5.2":
-  version: 20.5.2
-  resolution: "@commitlint/cli@npm:20.5.2"
+"@commitlint/cli@npm:20.5.3":
+  version: 20.5.3
+  resolution: "@commitlint/cli@npm:20.5.3"
   dependencies:
     "@commitlint/format": "npm:^20.5.0"
-    "@commitlint/lint": "npm:^20.5.0"
-    "@commitlint/load": "npm:^20.5.2"
+    "@commitlint/lint": "npm:^20.5.3"
+    "@commitlint/load": "npm:^20.5.3"
     "@commitlint/read": "npm:^20.5.0"
     "@commitlint/types": "npm:^20.5.0"
     tinyexec: "npm:^1.0.0"
     yargs: "npm:^17.0.0"
   bin:
     commitlint: ./cli.js
-  checksum: 10c0/38c67775bba17217c31411911a5af220bfaf4070cb3c634e055e23a2e77a7670119d4a1d2309b0bd32d27c66dc660f2bca6dc73068359148a3e6b86c3d74c3eb
+  checksum: 10c0/8d7bdf704a14a206f5f55a142a350b90f85e019784f0051659195c217add458d6bd07e9b85700e26d08d3e64554ea505b96976938f417d53ad30c59ee5a2dc62
   languageName: node
   linkType: hard
 
@@ -1579,7 +1579,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@commitlint/lint@npm:^20.5.0":
+"@commitlint/lint@npm:^20.5.3":
   version: 20.5.3
   resolution: "@commitlint/lint@npm:20.5.3"
   dependencies:
@@ -1591,7 +1591,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@commitlint/load@npm:^20.5.2":
+"@commitlint/load@npm:^20.5.3":
   version: 20.5.3
   resolution: "@commitlint/load@npm:20.5.3"
   dependencies:
@@ -3484,7 +3484,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@ornikar/repo-config@workspace:@ornikar/repo-config"
   dependencies:
-    "@commitlint/cli": "npm:20.5.2"
+    "@commitlint/cli": "npm:20.5.3"
     "@ornikar/commitlint-config": "npm:8.2.0"
     husky: "npm:8.0.3"
     lint-staged: "npm:15.5.2"
@@ -3537,7 +3537,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@ornikar/shared-configs@workspace:."
   dependencies:
-    "@commitlint/cli": "npm:20.5.2"
+    "@commitlint/cli": "npm:20.5.3"
     "@ornikar/eslint-config": "npm:22.6.0"
     check-package-dependencies: "npm:7.2.0"
     eslint: "npm:8.57.1"
