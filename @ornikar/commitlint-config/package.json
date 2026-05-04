@@ -16,8 +16,8 @@
     "access": "public"
   },
   "dependencies": {
-    "@commitlint/config-conventional": "^20.0.0",
-    "@commitlint/config-lerna-scopes": "^20.0.0"
+    "@commitlint/config-conventional": "^20.5.3",
+    "@commitlint/config-workspace-scopes": "^20.4.3"
   },
   "scripts": {
     "lint:eslint": "yarn ../.. eslint --report-unused-disable-directives --quiet @ornikar/commitlint-config"
