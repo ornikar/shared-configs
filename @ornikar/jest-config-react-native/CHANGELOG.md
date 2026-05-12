@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [17.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react-native@16.0.1...@ornikar/jest-config-react-native@17.0.0) (2026-05-12)
+
+### ⚠ BREAKING CHANGES
+
+* **jest-config-react-native:** allow react-intl v10 + formatjs ESM packages through Babel [no issue] (#1182)
+
+### Features
+
+* **jest-config-react-native:** allow react-intl v10 + formatjs ESM packages through Babel [no issue] ([#1182](https://github.com/ornikar/shared-configs/issues/1182)) ([84f04c0](https://github.com/ornikar/shared-configs/commit/84f04c065ec9772f31e79a4b7dce9cf27d9959b0))
+
 ## [16.0.1](https://github.com/ornikar/shared-configs/compare/@ornikar/jest-config-react-native@16.0.0...@ornikar/jest-config-react-native@16.0.1) (2026-05-06)
 
 ### Bug Fixes
