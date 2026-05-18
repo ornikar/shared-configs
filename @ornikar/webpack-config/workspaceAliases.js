@@ -7,7 +7,6 @@ module.exports = (webpackConfig, { srcDirectory = './src' } = {}) => {
   const workspaceAliases = {};
   let srcDirectories = [srcDirectory];
 
-  // eslint-disable-next-line security/detect-non-literal-fs-filename
   const pkg = JSON.parse(fs.readFileSync(path.resolve('./package.json')));
 
   if (pkg.workspaces) {
