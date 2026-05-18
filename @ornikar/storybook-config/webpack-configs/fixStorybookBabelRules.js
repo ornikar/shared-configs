@@ -9,7 +9,6 @@ module.exports = (env, webpackConfig) => {
       rule.test &&
       rule.test.toString() === /\.js$/.toString() &&
       rule.include &&
-      // eslint-disable-next-line security/detect-non-literal-regexp
       rule.include.toString() === new RegExp(`node_modules\\${path.sep}acorn-jsx`).toString(),
   );
   if (!acornJsxRule) {
