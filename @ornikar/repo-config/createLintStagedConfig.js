@@ -6,10 +6,10 @@ const path = require('node:path');
 // eslint-disable-next-line import/no-dynamic-require
 const pkg = require(path.resolve('package.json'));
 const workspaces = pkg.workspaces || false;
-const isLernaRepo = Boolean(pkg.devDependencies && pkg.devDependencies.lerna);
+const isMonoRepo = Boolean(workspaces && workspaces.length > 0);
 const hasTypescript = Boolean(pkg.devDependencies && pkg.devDependencies.typescript);
 const hasDeprecatedStylelint = Boolean(pkg.devDependencies && pkg.devDependencies.stylelint);
-const shouldGenerateTsconfigInLernaRepo = isLernaRepo && hasTypescript;
+const shouldGenerateTsconfigInMonoRepo = isMonoRepo && hasTypescript;
 const shouldRunCheckPkgJSScript = fs.existsSync('./scripts/check-packagejson.js');
 const shouldRunCheckPkgMJSScript = fs.existsSync('./scripts/check-packagejson.mjs');
 
@@ -32,9 +32,8 @@ module.exports = function createLintStagedConfig(options = {}) {
       return [
         'yarn dedupe',
         packagejsonFilenames.length === 0 ? undefined : `prettier --write ${packagejsonFilenames.join(' ')}`,
-        isLernaRepo && require.resolve('@ornikar/monorepo-config/bin/generate-eslintrc-files.mjs'),
-        shouldGenerateTsconfigInLernaRepo &&
-          require.resolve('@ornikar/monorepo-config/bin/generate-tsconfig-files.mjs'),
+        isMonoRepo && require.resolve('@ornikar/monorepo-config/bin/generate-eslintrc-files.mjs'),
+        shouldGenerateTsconfigInMonoRepo && require.resolve('@ornikar/monorepo-config/bin/generate-tsconfig-files.mjs'),
         shouldRunCheckPkgJSScript && 'node ./scripts/check-packagejson.js',
         shouldRunCheckPkgMJSScript && 'node ./scripts/check-packagejson.mjs',
         'git add yarn.lock .yarn',

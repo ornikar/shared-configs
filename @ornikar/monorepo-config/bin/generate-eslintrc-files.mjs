@@ -65,9 +65,6 @@ const generateAndWritePackageSourceConfig = async (configPath, prettierOptions, 
         root: true,
 
         parser: '@typescript-eslint/parser',
-        parserOptions: {
-          project: `${packagePath}/tsconfig.eslint.json`,
-        },
       },
       callback: (configParam) => {
         const config = { ...configParam };
@@ -86,8 +83,8 @@ const generateAndWritePackageSourceConfig = async (configPath, prettierOptions, 
         if (!config.settings) config.settings = {};
 
         config.settings['import/resolver'] = {
-          node: {
-            moduleDirectory: ['node_modules', 'src'],
+          typescript: {
+            project: `${packagePath}/tsconfig.json`,
           },
         };
 
