@@ -19,10 +19,6 @@
     "eslint.codeActionsOnSave.mode": "all",
     "eslint.format.enable": false,
     "eslint.lintTask.enable": true,
-    "eslint.options": {
-      "resolvePluginsRelativeTo": ".",
-      "reportUnusedDisableDirectives": "error"
-    },
     "eslint.useESLintClass": true,
     "eslint.workingDirectories": ["."],
     "jest.autoRun": {

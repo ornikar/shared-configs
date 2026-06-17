@@ -24,10 +24,6 @@
   // eslint config
   "eslint.workingDirectories": ["."],
   "eslint.useESLintClass": true,
-  "eslint.options": {
-    "resolvePluginsRelativeTo": ".",
-    "reportUnusedDisableDirectives": "error"
-  },
   "eslint.lintTask.enable": true,
 
   // eslint & prettier formatter
