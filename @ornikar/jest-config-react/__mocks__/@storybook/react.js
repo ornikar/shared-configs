@@ -1,4 +1,4 @@
-/* eslint-env jest */
+/* global jest, describe, it, test, expect, beforeEach, afterEach */
 
 'use strict';
 
