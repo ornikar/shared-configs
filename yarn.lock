@@ -3384,7 +3384,7 @@ __metadata:
     graphql: "npm:15.8.0"
   peerDependencies:
     "@apollo/client": ^3.0.0
-    graphql: ^15.0.0 || ^16.0.0
+    graphql: ^15.0.0
   bin:
     ornikar-check-graphql-prod-compat: ./bin/check-graphql-prod-compat.js
   languageName: unknown
