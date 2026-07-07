@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [10.0.1](https://github.com/ornikar/shared-configs/compare/@ornikar/intl-config@10.0.0...@ornikar/intl-config@10.0.1) (2026-07-07)
+
+**Note:** Version bump only for package @ornikar/intl-config
+
 ## [10.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/intl-config@9.1.3...@ornikar/intl-config@10.0.0) (2026-05-12)
 
 ### ⚠ BREAKING CHANGES

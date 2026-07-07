@@ -3,16 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [8.0.2](https://github.com/ornikar/shared-configs/compare/@ornikar/babel-preset-kitt-universal@8.0.1...@ornikar/babel-preset-kitt-universal@8.0.2) (2026-07-07)
+
+**Note:** Version bump only for package @ornikar/babel-preset-kitt-universal
+
 ## [8.0.1](https://github.com/ornikar/shared-configs/compare/@ornikar/babel-preset-kitt-universal@8.0.0...@ornikar/babel-preset-kitt-universal@8.0.1) (2026-03-30)
 
 **Note:** Version bump only for package @ornikar/babel-preset-kitt-universal
 
-
-
-
-
 ## [8.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/babel-preset-kitt-universal@7.2.1...@ornikar/babel-preset-kitt-universal@8.0.0) (2026-02-23)
-
 
 ### ⚠ BREAKING CHANGES
 
@@ -22,37 +21,25 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 * remove linaria OSE-18331 ([#1163](https://github.com/ornikar/shared-configs/issues/1163)) ([a67b572](https://github.com/ornikar/shared-configs/commit/a67b572476bafad9b378f98ef788cda08adb5ef7))
 
-
-
 ## [7.2.1](https://github.com/ornikar/shared-configs/compare/@ornikar/babel-preset-kitt-universal@7.2.0...@ornikar/babel-preset-kitt-universal@7.2.1) (2026-01-14)
-
 
 ### Bug Fixes
 
 * **deps:** update node.js to v22.22.0 ([#1151](https://github.com/ornikar/shared-configs/issues/1151)) ([9cad3fa](https://github.com/ornikar/shared-configs/commit/9cad3faf68e0ace1089a733b461c6c93d6929662))
 
-
-
 ## [7.2.0](https://github.com/ornikar/shared-configs/compare/@ornikar/babel-preset-kitt-universal@7.1.0...@ornikar/babel-preset-kitt-universal@7.2.0) (2025-10-13)
-
 
 ### Features
 
 * expo 52 [no issue] ([#1115](https://github.com/ornikar/shared-configs/issues/1115)) ([cdd2542](https://github.com/ornikar/shared-configs/commit/cdd25427d155ac14eab2017553fd267fb235a82b))
 
-
-
 ## [7.1.0](https://github.com/ornikar/shared-configs/compare/@ornikar/babel-preset-kitt-universal@7.0.0...@ornikar/babel-preset-kitt-universal@7.1.0) (2025-08-07)
-
 
 ### Features
 
 * remove styled-components relative configuration [no issue] ([#1128](https://github.com/ornikar/shared-configs/issues/1128)) ([4e6852a](https://github.com/ornikar/shared-configs/commit/4e6852ad0bddd5f918d03c6debdf1511559b36c5))
 
-
-
 ## [7.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/babel-preset-kitt-universal@6.0.1...@ornikar/babel-preset-kitt-universal@7.0.0) (2025-07-10)
-
 
 ### ⚠ BREAKING CHANGES
 
@@ -62,18 +49,11 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 * upgrade to Node 22 OSE-18334 ([#1125](https://github.com/ornikar/shared-configs/issues/1125)) ([7b3ccd1](https://github.com/ornikar/shared-configs/commit/7b3ccd13ec1cb1bce776a15f889039e70a47d72e))
 
-
-
 ## [6.0.1](https://github.com/ornikar/shared-configs/compare/@ornikar/babel-preset-kitt-universal@6.0.0...@ornikar/babel-preset-kitt-universal@6.0.1) (2025-06-02)
 
 **Note:** Version bump only for package @ornikar/babel-preset-kitt-universal
 
-
-
-
-
 ## [6.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/babel-preset-kitt-universal@5.1.1...@ornikar/babel-preset-kitt-universal@6.0.0) (2023-12-20)
-
 
 ### ⚠ BREAKING CHANGES
 
@@ -83,27 +63,17 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 * node 20 OSE-6084 ([#1053](https://github.com/ornikar/shared-configs/issues/1053)) ([a86e2ba](https://github.com/ornikar/shared-configs/commit/a86e2bad41fa2469a9b7bfcad8dbaf41224a30e2))
 
-
-
 ## [5.1.1](https://github.com/ornikar/shared-configs/compare/@ornikar/babel-preset-kitt-universal@5.1.0...@ornikar/babel-preset-kitt-universal@5.1.1) (2023-11-21)
 
 **Note:** Version bump only for package @ornikar/babel-preset-kitt-universal
 
-
-
-
-
 ## [5.1.0](https://github.com/ornikar/shared-configs/compare/@ornikar/babel-preset-kitt-universal@5.0.0...@ornikar/babel-preset-kitt-universal@5.1.0) (2023-11-08)
-
 
 ### Features
 
 * **deps:** update dependency babel-plugin-react-native to v2 ([#1022](https://github.com/ornikar/shared-configs/issues/1022)) ([12666d3](https://github.com/ornikar/shared-configs/commit/12666d3db05548f09180b09138564e1c9b173a26))
 
-
-
 ## [5.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/babel-preset-kitt-universal@4.0.0...@ornikar/babel-preset-kitt-universal@5.0.0) (2023-10-19)
-
 
 ### ⚠ BREAKING CHANGES
 
@@ -113,10 +83,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 * **deps:** bump @babel/traverse from 7.22.8 to 7.23.2 ([#990](https://github.com/ornikar/shared-configs/issues/990)) ([8a79155](https://github.com/ornikar/shared-configs/commit/8a791554b6c0b027edc86cdacfe6e3c8ea63338f))
 
-
-
 ## [4.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/babel-preset-kitt-universal@3.0.0...@ornikar/babel-preset-kitt-universal@4.0.0) (2023-09-27)
-
 
 ### ⚠ BREAKING CHANGES
 
@@ -126,10 +93,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 * **rollup-config:** update to node 18 ECF-281 ([#979](https://github.com/ornikar/shared-configs/issues/979)) ([26eaaf9](https://github.com/ornikar/shared-configs/commit/26eaaf9db689de9ec474919881ce87784427cc5c))
 
-
-
 ## [3.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/babel-preset-kitt-universal@2.1.5...@ornikar/babel-preset-kitt-universal@3.0.0) (2023-09-14)
-
 
 ### ⚠ BREAKING CHANGES
 
@@ -139,104 +103,57 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 * **babel-preset-kitt-universal:** disable styled-components plugins by default [no issue] ([#970](https://github.com/ornikar/shared-configs/issues/970)) ([3f1804c](https://github.com/ornikar/shared-configs/commit/3f1804c151e0cc6d1c6027fce5b5e6ec62be8e78))
 
-
-
 ## [2.1.5](https://github.com/ornikar/shared-configs/compare/@ornikar/babel-preset-kitt-universal@2.1.4...@ornikar/babel-preset-kitt-universal@2.1.5) (2023-07-19)
 
 **Note:** Version bump only for package @ornikar/babel-preset-kitt-universal
-
-
-
-
 
 ## [2.1.4](https://github.com/ornikar/shared-configs/compare/@ornikar/babel-preset-kitt-universal@2.1.3...@ornikar/babel-preset-kitt-universal@2.1.4) (2023-06-26)
 
 **Note:** Version bump only for package @ornikar/babel-preset-kitt-universal
 
-
-
-
-
 ## [2.1.3](https://github.com/ornikar/shared-configs/compare/@ornikar/babel-preset-kitt-universal@2.1.2...@ornikar/babel-preset-kitt-universal@2.1.3) (2023-04-21)
 
 **Note:** Version bump only for package @ornikar/babel-preset-kitt-universal
-
-
-
-
 
 ## [2.1.2](https://github.com/ornikar/shared-configs/compare/@ornikar/babel-preset-kitt-universal@2.1.1...@ornikar/babel-preset-kitt-universal@2.1.2) (2023-01-26)
 
 **Note:** Version bump only for package @ornikar/babel-preset-kitt-universal
 
-
-
-
-
 ## [2.1.1](https://github.com/ornikar/shared-configs/compare/@ornikar/babel-preset-kitt-universal@2.1.0...@ornikar/babel-preset-kitt-universal@2.1.1) (2022-11-29)
 
 **Note:** Version bump only for package @ornikar/babel-preset-kitt-universal
 
-
-
-
-
 # [2.1.0](https://github.com/ornikar/shared-configs/compare/@ornikar/babel-preset-kitt-universal@2.0.0...@ornikar/babel-preset-kitt-universal@2.1.0) (2022-10-28)
-
 
 ### Features
 
 * update linaria to v4 ARCH-1593 ([#788](https://github.com/ornikar/shared-configs/issues/788)) ([2eebb91](https://github.com/ornikar/shared-configs/commit/2eebb91dc91a8c6b6ca3c8e88bb42843aa252dca))
 
-
-
-
-
 # [2.0.0](https://github.com/ornikar/shared-configs/compare/@ornikar/babel-preset-kitt-universal@1.1.2...@ornikar/babel-preset-kitt-universal@2.0.0) (2022-08-17)
-
 
 ### chore
 
 * **deps:** update dependency @ornikar/eslint-config to v19 ([#759](https://github.com/ornikar/shared-configs/issues/759)) ([e05eecb](https://github.com/ornikar/shared-configs/commit/e05eecb898d047b44277ce4f65fc724831bb2ece))
 
-
 ### BREAKING CHANGES
 
 * **deps:** drop node 14 
-
-
-
-
 
 ## [1.1.2](https://github.com/ornikar/shared-configs/compare/@ornikar/babel-preset-kitt-universal@1.1.1...@ornikar/babel-preset-kitt-universal@1.1.2) (2022-07-29)
 
 **Note:** Version bump only for package @ornikar/babel-preset-kitt-universal
 
-
-
-
-
 ## [1.1.1](https://github.com/ornikar/shared-configs/compare/@ornikar/babel-preset-kitt-universal@1.1.0...@ornikar/babel-preset-kitt-universal@1.1.1) (2022-06-20)
 
 **Note:** Version bump only for package @ornikar/babel-preset-kitt-universal
 
-
-
-
-
 # [1.1.0](https://github.com/ornikar/shared-configs/compare/@ornikar/babel-preset-kitt-universal@1.0.0...@ornikar/babel-preset-kitt-universal@1.1.0) (2022-04-12)
-
 
 ### Features
 
 * **deps:** update dependency babel-plugin-linaria-css-to-undefined to ^0.3.0 ([#690](https://github.com/ornikar/shared-configs/issues/690)) ([4a9b1a7](https://github.com/ornikar/shared-configs/commit/4a9b1a7c0d217daa67ea37d37a428989a72d2063))
 
-
-
-
-
 # 1.0.0 (2022-03-29)
-
 
 ### Features
 
