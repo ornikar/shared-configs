@@ -8,6 +8,9 @@ module.exports = {
     return {
       hooks: {
         validateProject: async (project) => {
+          if (process.env.SKIP_YARN_PREINSTALL === 'true') {
+            return;
+          }
           const pkgJsonPath = path.join(project.cwd, 'package.json');
           if (existsSync(pkgJsonPath)) {
             const pkgJson = JSON.parse(readFileSync(pkgJsonPath, 'utf8'));
