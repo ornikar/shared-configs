@@ -17,6 +17,7 @@ workflows:
       - frontend/dependencies:
           name: dependencies
           is-monorepo: true
+          context: npm-gcp
 
       - frontend/checks:
           name: checks
