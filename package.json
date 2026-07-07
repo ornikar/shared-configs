@@ -11,6 +11,7 @@
     "lint:prettier:fix": "prettier --no-error-on-unmatched-pattern --write . '**/.env*' '**/*.env'",
     "lint:stylelint": "yarn workspace @ornikar/stylelint-config lint-tests",
     "ornikar-lint-staged": "./@ornikar/repo-config/bin/ornikar-lint-staged.mjs",
+    "preinstall": "yarn dlx google-artifactregistry-auth --credential-config-yarn=$HOME/.yarnrc.yml",
     "postinstall": "./@ornikar/repo-config/bin/ornikar-repo-config-postinstall.js",
     "test": "jest",
     "version": "./@ornikar/monorepo-config/bin/update-peer-dependencies.mjs && YARN_ENABLE_IMMUTABLE_INSTALLS=false yarn && git add yarn.lock"

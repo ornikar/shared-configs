@@ -5,7 +5,7 @@ version: 2.1
 # -------------------------------------------------------------------------------------------------
 
 orbs:
-  frontend: ornikar/frontend-orb@16.8.2
+  frontend: ornikar/frontend-orb@17.0.0
 
 # -------------------------------------------------------------------------------------------------
 # WORKFLOWS
@@ -17,6 +17,7 @@ workflows:
       - frontend/dependencies:
           name: dependencies
           is-monorepo: true
+          context: npm-gcp
 
       - frontend/checks:
           name: checks
