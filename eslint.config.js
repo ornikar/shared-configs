@@ -58,6 +58,12 @@ module.exports = defineConfig([
     extends: [nodeConfig],
   },
 
+  // ===== @ornikar/graphql-config =====
+  {
+    files: ['@ornikar/graphql-config/**/*.{js,cjs,mjs}'],
+    extends: [nodeConfig],
+  },
+
   // ===== @ornikar/intl-config =====
   {
     files: ['@ornikar/intl-config/**/*.{js,cjs,mjs}'],

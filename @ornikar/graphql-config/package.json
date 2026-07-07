@@ -1,0 +1,36 @@
+{
+  "name": "@ornikar/graphql-config",
+  "version": "1.0.0",
+  "description": "🧬 graphql config and checks",
+  "repository": {
+    "directory": "@ornikar/graphql-config",
+    "type": "git",
+    "url": "https://github.com/ornikar/shared-configs.git"
+  },
+  "license": "ISC",
+  "engines": {
+    "node": ">=22.22.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "bin": {
+    "ornikar-check-graphql-prod-compat": "./bin/check-graphql-prod-compat.js"
+  },
+  "dependencies": {
+    "@graphql-tools/code-file-loader": "^8.0.0",
+    "@graphql-tools/graphql-file-loader": "^8.0.0",
+    "@graphql-tools/load": "^8.1.0"
+  },
+  "peerDependencies": {
+    "@apollo/client": "^3.0.0",
+    "graphql": "^15.0.0"
+  },
+  "devDependencies": {
+    "@apollo/client": "3.13.9",
+    "graphql": "15.8.0"
+  },
+  "scripts": {
+    "lint:eslint": "yarn ../.. eslint --report-unused-disable-directives --quiet @ornikar/graphql-config"
+  }
+}
