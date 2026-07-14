@@ -43,5 +43,9 @@
       "built": true
     }
   },
-  "packageManager": "yarn@4.13.0"
+  "packageManager": "yarn@4.13.0",
+  "bugs": {
+    "url": "https://github.com/ornikar/shared-configs/issues"
+  },
+  "homepage": "https://github.com/ornikar/shared-configs"
 }
