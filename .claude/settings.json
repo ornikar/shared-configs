@@ -9,10 +9,11 @@
   },
   "enabledPlugins": {
     "edu-frontend-plugin@ornikar-plugins": true,
-    "common-plugin@ornikar-plugins": true
+    "common-plugin@ornikar-plugins": true,
+    "common-frontend-plugin@ornikar-plugins": true
   },
   "permissions": {
-    "allow": ["Skill(common-plugin:*)", "Skill(edu-frontend-plugin:*)"]
+    "allow": ["Skill(common-plugin:*)", "Skill(edu-frontend-plugin:*)", "Skill(common-frontend-plugin:*)"]
   },
   "hooks": {
     "SessionStart": [
