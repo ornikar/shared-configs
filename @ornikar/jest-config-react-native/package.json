@@ -16,11 +16,12 @@
     "access": "public"
   },
   "peerDependencies": {
+    "@react-native/jest-preset": "^0.85.0",
     "@testing-library/react": "^14.0.0 || ^15.0.0 || ^16.0.0",
     "@testing-library/react-native": "^11.5.4 || ^12.1.2 || ^13.0.0",
     "jest": "^30.0.0",
     "jest-environment-jsdom": "^30.0.0",
-    "jest-expo": "^53.0.10",
+    "jest-expo": "^56.0.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-native": ">=0.79"
@@ -48,9 +49,10 @@
     "sucrase": "^3.34.0"
   },
   "devDependencies": {
+    "@react-native/jest-preset": "0.85.3",
     "@testing-library/react-native": "13.3.3",
-    "jest-expo": "53.0.14",
-    "react": "19.0.0"
+    "jest-expo": "56.0.5",
+    "react": "19.2.3"
   },
   "scripts": {
     "lint:eslint": "yarn ../.. eslint --report-unused-disable-directives --quiet @ornikar/jest-config-react-native"
