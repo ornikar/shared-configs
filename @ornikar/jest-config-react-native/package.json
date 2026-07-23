@@ -19,12 +19,13 @@
     "@react-native/jest-preset": "^0.85.0",
     "@testing-library/react": "^14.0.0 || ^15.0.0 || ^16.0.0",
     "@testing-library/react-native": "^11.5.4 || ^12.1.2 || ^13.0.0",
+    "expo": "^56.0.0",
     "jest": "^30.0.0",
     "jest-environment-jsdom": "^30.0.0",
     "jest-expo": "^56.0.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "react-native": ">=0.79"
+    "react-native": ">=0.85"
   },
   "peerDependenciesMeta": {
     "@testing-library/react": {
