@@ -23,7 +23,7 @@
   "peerDependencies": {
     "@babel/core": "^7.0.0",
     "@babel/runtime": "^7.23.2",
-    "postcss": "^8.5.10",
+    "postcss": "^8.5.12",
     "rollup": "^2.42.0"
   },
   "peerDependenciesMeta": {
@@ -33,7 +33,7 @@
   },
   "devDependencies": {
     "@babel/core": "7.29.6",
-    "postcss": "8.5.10",
+    "postcss": "8.5.12",
     "rollup": "2.80.0"
   },
   "dependencies": {
