@@ -11,13 +11,19 @@ module.exports = {
   testEnvironment: baseOrnikarPreset.testEnvironment, // override testEnvironment in expo preset
   testEnvironmentOptions: baseOrnikarPreset.testEnvironmentOptions,
   snapshotResolver: require.resolve('../snapshot-resolvers/resolver.web.js'),
-  setupFiles: [...expoPreset.setupFiles, ...baseOrnikarPreset.setupFiles, require.resolve('../test-setup')],
+  setupFiles: [...expoPreset.setupFiles, ...baseOrnikarPreset.setupFiles, require.resolve('./test-setup-web')],
   testMatch: [
     ...baseOrnikarPreset.testMatch,
     baseOrnikarPreset.testMatch[0].replace('**/__tests__/**/*.', '**/stories.'),
     baseOrnikarPreset.testMatch[0].replace('**/__tests__/**/*.', '**/*.stories.'),
   ],
   moduleNameMapper: {
+    // [Expo 56]
+    // The base web preset's `^react-native($|/.*)` mapping also catches bare `react-native`
+    // imports and routes them to the real react-native package, whose `Platform` module can't
+    // load under jsdom (RN 0.85). Map the bare specifier to react-native-web first (higher
+    // priority) so web tests use the web implementation. Subpaths still fall through to the base.
+    '^react-native$': 'react-native-web',
     ...baseOrnikarPreset.moduleNameMapper,
     ...expoPreset.moduleNameMapper,
     '^react-native-svg$': 'react-native-svg-web',
