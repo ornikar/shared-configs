@@ -7,7 +7,7 @@ const { customTransforms } = require('./customTransforms');
 module.exports = {
   ...baseOrnikarPreset,
   ...expoPreset,
-  setupFiles: [...expoPreset.setupFiles, ...baseOrnikarPreset.setupFiles, require.resolve('./test-setup')],
+  setupFiles: [...expoPreset.setupFiles, ...baseOrnikarPreset.setupFiles, require.resolve('./test-setup-native')],
   testMatch: baseOrnikarPreset.testMatch,
   moduleNameMapper: {
     ...expoPreset.moduleNameMapper,
