@@ -154,19 +154,6 @@ if [ -n "$(git diff HEAD@{1}..HEAD@{0} -- ${gemfilePath})" ]; then
 fi
 `;
       }
-
-      const podfilePath = path.join(packageLocation, 'ios/Podfile.lock');
-
-      if (fs.existsSync(podfilePath)) {
-        const gitIgnorePath = path.join(packageLocation, '.gitignore');
-        if (fs.existsSync(gitIgnorePath) && !fs.readFileSync(gitIgnorePath, 'utf8').includes('/ios/\n')) {
-          postHookContent += `
-  if [ -n "$(git diff HEAD@{1}..HEAD@{0} -- ${podfilePath})" ]; then
-    ${[cdToPackageLocation, 'yarn pod-install || true', cdToRoot].filter(Boolean).join('\n  ')}
-  fi
-        `;
-        }
-      }
     });
     writeHook('post-checkout', postHookContent);
     writeHook('post-merge', postHookContent);

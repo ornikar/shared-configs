@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [15.3.3](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@15.3.2...@ornikar/repo-config@15.3.3) (2026-07-22)
+
+### Bug Fixes
+
+* remove obsolete pod-install husky hook [no issue] ([#1197](https://github.com/ornikar/shared-configs/issues/1197)) ([8ba88ef](https://github.com/ornikar/shared-configs/commit/8ba88ef0541e0a0fb28409aeb1b86608153e37f5))
+
 ## [15.3.2](https://github.com/ornikar/shared-configs/compare/@ornikar/repo-config@15.3.1...@ornikar/repo-config@15.3.2) (2026-07-07)
 
 **Note:** Version bump only for package @ornikar/repo-config
