@@ -13,7 +13,7 @@ exports.customTransforms = {
 
   // The default Expo babel preset is not applied as we have our own babel config
   // See https://github.com/expo/expo/blob/sdk-52/packages/jest-expo/src/resolveBabelConfig.js
-  'node_modules/(expo|expo-.*|@expo.*|react-native|react-native-(calendars|reanimated)|@react-native-community/netinfo|@react-native/virtualized-lists)/.*\\.(js|jsx|ts|tsx)$':
+  'node_modules/(expo|expo-.*|@expo.*|react-native|react-native-(calendars|reanimated)|@react-native-community/netinfo|@react-native/virtualized-lists|@react-native/jest-preset)/.*\\.(js|jsx|ts|tsx)$':
     require.resolve('./transformers/babel-transformer-node-modules.js'),
 
   // dont transform node_modules when already compiled
