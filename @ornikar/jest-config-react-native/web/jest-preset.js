@@ -4,6 +4,7 @@ const baseOrnikarPreset = require('@ornikar/jest-config-react/jest-preset');
 const expoPreset = require('jest-expo/web/jest-preset');
 const { customTransforms } = require('../customTransforms');
 const ornikarReactNativePreset = require('../jest-preset');
+const { vfileModuleNameMapper } = require('../remarkEsm');
 
 module.exports = {
   ...baseOrnikarPreset,
@@ -20,6 +21,7 @@ module.exports = {
   moduleNameMapper: {
     ...baseOrnikarPreset.moduleNameMapper,
     ...expoPreset.moduleNameMapper,
+    ...vfileModuleNameMapper,
     '^react-native-svg$': 'react-native-svg-web',
   },
   transformIgnorePatterns: ornikarReactNativePreset.transformIgnorePatterns,

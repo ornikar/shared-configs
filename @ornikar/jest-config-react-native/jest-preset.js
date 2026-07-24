@@ -3,6 +3,7 @@
 const baseOrnikarPreset = require('@ornikar/jest-config-react/jest-preset');
 const expoPreset = require('jest-expo/jest-preset');
 const { customTransforms } = require('./customTransforms');
+const { remarkEsmDeps, vfileModuleNameMapper } = require('./remarkEsm');
 
 module.exports = {
   ...baseOrnikarPreset,
@@ -11,6 +12,7 @@ module.exports = {
   testMatch: baseOrnikarPreset.testMatch,
   moduleNameMapper: {
     ...expoPreset.moduleNameMapper,
+    ...vfileModuleNameMapper,
     '@storybook/addons': require.resolve('@ornikar/jest-config-react/__mocks__/@storybook/addons'),
     '^@storybook/addon-actions$': require.resolve('./__mocks__/@storybook/addon-actions.js'),
     '@storybook/react-native$': require.resolve('./__mocks__/@storybook/react-native.jsx'),
@@ -22,7 +24,7 @@ module.exports = {
   testEnvironmentOptions: expoPreset.testEnvironmentOptions || {},
   // override expo transformIgnorePatterns with custom config
   transformIgnorePatterns: [
-    'node_modules/(?!(react-native.*|@react-native.*|expo.*|@expo(nent)?/.*|react-navigation.*|@react-navigation/.*|native-base|@ornikar/.*)/|mixpanel-react-native|axios|solito|react-intl|intl-messageformat|@formatjs)',
+    `node_modules/(?!(react-native.*|@react-native.*|expo.*|@expo(nent)?/.*|react-navigation.*|@react-navigation/.*|native-base|@ornikar/.*|${remarkEsmDeps})/|mixpanel-react-native|axios|solito|react-intl|intl-messageformat|@formatjs)`,
   ],
   transform: {
     ...customTransforms,
